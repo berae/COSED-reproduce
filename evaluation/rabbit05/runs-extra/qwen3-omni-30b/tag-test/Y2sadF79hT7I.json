@@ -1,0 +1,86 @@
+{
+  "clip_id": "Y2sadF79hT7I",
+  "labels": [
+    "people are talking in a busy area",
+    "a horn honks"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y2sadF79hT7I.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 5.4159791469573975,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          3.528,
+          "people are talking in a busy area"
+        ],
+        [
+          3.647,
+          6.297,
+          "a horn honks"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-98c7c2959a321616",
+            "object": "chat.completion",
+            "created": 1792780756,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 3.528\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 3.647,\n      \"end\": 6.297\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 292,
+              "total_tokens": 374,
+              "completion_tokens": 82,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      3.647,
+      6.297,
+      "a horn honks"
+    ],
+    [
+      0.0,
+      3.528,
+      "people are talking in a busy area"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 5.4159791469573975
+}

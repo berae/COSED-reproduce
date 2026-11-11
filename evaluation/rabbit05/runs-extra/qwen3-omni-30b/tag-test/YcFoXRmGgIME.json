@@ -1,0 +1,86 @@
+{
+  "clip_id": "YcFoXRmGgIME",
+  "labels": [
+    "a train horn honking",
+    "sounds the train horn"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/YcFoXRmGgIME.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 5.43769097328186,
+      "status": "complete",
+      "events": [
+        [
+          1.672,
+          3.452,
+          "a train horn honking"
+        ],
+        [
+          4.982,
+          6.022,
+          "sounds the train horn"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a23d262f1fcd4387",
+            "object": "chat.completion",
+            "created": 1792782548,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 1.672,\n      \"end\": 3.452\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 4.982,\n      \"end\": 6.022\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 290,
+              "total_tokens": 372,
+              "completion_tokens": 82,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      1.672,
+      3.452,
+      "a train horn honking"
+    ],
+    [
+      4.982,
+      6.022,
+      "sounds the train horn"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 5.43769097328186
+}

@@ -1,0 +1,288 @@
+{
+  "clip_id": "341608",
+  "labels": [
+    "A sports car passes by.",
+    "A car is driving in the distance.",
+    "Birds chirping.",
+    "A car accelerates loudly.",
+    "A bird calls quietly outdoors.",
+    "A bird chirps.",
+    "A bird calls out repeatedly outdoors."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/341608.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 16.36758589744568,
+      "status": "complete",
+      "events": [
+        [
+          7.89,
+          9.52,
+          "A sports car passes by."
+        ],
+        [
+          0.0,
+          10.0,
+          "A car is driving in the distance."
+        ],
+        [
+          0.0,
+          10.0,
+          "Birds chirping."
+        ],
+        [
+          7.89,
+          9.52,
+          "A car accelerates loudly."
+        ],
+        [
+          0.0,
+          10.0,
+          "A bird calls quietly outdoors."
+        ],
+        [
+          0.0,
+          10.0,
+          "A bird chirps."
+        ],
+        [
+          0.0,
+          10.0,
+          "A bird calls out repeatedly outdoors."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b6c4c3d1dfc5f8bd",
+            "object": "chat.completion",
+            "created": 1792830615,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 7.89,\n      \"end\": 9.52\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.00,\n      \"end\": 10.00\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.00,\n      \"end\": 10.00\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 7.89,\n      \"end\": 9.52\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 0.00,\n      \"end\": 10.00\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 0.00,\n      \"end\": 10.00\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 0.00,\n      \"end\": 10.00\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 332,
+              "total_tokens": 575,
+              "completion_tokens": 243,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 16.017054319381714,
+      "status": "complete",
+      "events": [
+        [
+          3.789,
+          7.879,
+          "A sports car passes by."
+        ],
+        [
+          0.0,
+          10.0,
+          "A car is driving in the distance."
+        ],
+        [
+          0.0,
+          10.0,
+          "Birds chirping."
+        ],
+        [
+          3.789,
+          7.879,
+          "A car accelerates loudly."
+        ],
+        [
+          0.0,
+          10.0,
+          "A bird calls quietly outdoors."
+        ],
+        [
+          0.0,
+          10.0,
+          "A bird chirps."
+        ],
+        [
+          0.0,
+          10.0,
+          "A bird calls out repeatedly outdoors."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-81bd1074ad89a2ca",
+            "object": "chat.completion",
+            "created": 1792830632,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 3.789,\n      \"end\": 7.879\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.0,\n      \"end\": 10.0\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.0,\n      \"end\": 10.0\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 3.789,\n      \"end\": 7.879\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 0.0,\n      \"end\": 10.0\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 0.0,\n      \"end\": 10.0\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 0.0,\n      \"end\": 10.0\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 332,
+              "total_tokens": 569,
+              "completion_tokens": 237,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 7.6089375,
+      "seconds": 5.199387311935425,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          2.81,
+          "A car accelerates loudly."
+        ],
+        [
+          0.0,
+          7.6089375,
+          "A car is driving in the distance."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8b79b9afdb83695c",
+            "object": "chat.completion",
+            "created": 1792830648,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 3,\n      \"start\": 0.0,\n      \"end\": 2.81\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.0,\n      \"end\": 7.609\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 299,
+              "total_tokens": 376,
+              "completion_tokens": 77,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      15.0,
+      "A bird calls out repeatedly outdoors."
+    ],
+    [
+      0.0,
+      15.0,
+      "A bird calls quietly outdoors."
+    ],
+    [
+      0.0,
+      15.0,
+      "A bird chirps."
+    ],
+    [
+      7.89,
+      12.879,
+      "A car accelerates loudly."
+    ],
+    [
+      0.0,
+      17.6089375,
+      "A car is driving in the distance."
+    ],
+    [
+      7.89,
+      12.879,
+      "A sports car passes by."
+    ],
+    [
+      0.0,
+      15.0,
+      "Birds chirping."
+    ]
+  ],
+  "duration": 17.6089375,
+  "inference_seconds": 37.58402752876282
+}

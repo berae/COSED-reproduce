@@ -1,0 +1,96 @@
+{
+  "clip_id": "Y1AjYKvdjOJM",
+  "labels": [
+    "a small dog barks",
+    "a man speaks"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y1AjYKvdjOJM.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 9.4645,
+      "seconds": 7.3484954833984375,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          0.57,
+          "a small dog barks"
+        ],
+        [
+          3.28,
+          4.88,
+          "a small dog barks"
+        ],
+        [
+          0.82,
+          1.98,
+          "a man speaks"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8a32cad76ee1ef6a",
+            "object": "chat.completion",
+            "created": 1792779514,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 0.57\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 3.28,\n      \"end\": 4.88\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.82,\n      \"end\": 1.98\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 280,
+              "total_tokens": 389,
+              "completion_tokens": 109,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.82,
+      1.98,
+      "a man speaks"
+    ],
+    [
+      0.0,
+      0.57,
+      "a small dog barks"
+    ],
+    [
+      3.28,
+      4.88,
+      "a small dog barks"
+    ]
+  ],
+  "duration": 9.4645,
+  "inference_seconds": 7.3484954833984375
+}

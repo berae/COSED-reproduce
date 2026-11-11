@@ -1,0 +1,26 @@
+Traceback (most recent call last):
+  File "/home/zhanghc/projects/ov-sed/benchmark/scripts/score_benchmarks.py", line 209, in <module>
+    main()
+  File "/home/zhanghc/projects/ov-sed/benchmark/scripts/score_benchmarks.py", line 179, in main
+    values = (score_tacos if dataset == 'tacos-test' else score_maestro)(model, manifest)
+  File "/home/zhanghc/projects/ov-sed/benchmark/scripts/score_benchmarks.py", line 118, in score_maestro
+    assert abs(independently[c] - result[c]) < 1e-8, (c, independently[c], result[c])
+AssertionError: ('birds_singing', 0.9245695778945436, 0.8563249700556922)
+Traceback (most recent call last):
+  File "/home/zhanghc/projects/ov-sed/benchmark/scripts/score_benchmarks.py", line 212, in <module>
+    main()
+  File "/home/zhanghc/projects/ov-sed/benchmark/scripts/score_benchmarks.py", line 182, in main
+    values = (score_tacos if dataset == 'tacos-test' else score_maestro)(model, manifest)
+  File "/home/zhanghc/projects/ov-sed/benchmark/scripts/score_benchmarks.py", line 121, in score_maestro
+    assert abs(independently[c] - result[c]) < 1e-8, (c, independently[c], result[c])
+AssertionError: ('birds_singing', 0.8566821979996327, 0.8563249700556922)
+maestro-development dasm 0.5282141922476509
+maestro-development finelap 0.5172694602782095
+maestro-development flexsed 0.4020034935114634
+maestro-development mga-clap 0.5487500351759736
+maestro-development openflam 0.5385501443576
+tacos-test dasm 0.059509490920939226
+tacos-test finelap 0.07660764642522157
+tacos-test flexsed 0.06840452049551243
+tacos-test mga-clap 0.05925931138177686
+tacos-test openflam 0.04824952906224235

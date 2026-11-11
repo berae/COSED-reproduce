@@ -1,0 +1,136 @@
+{
+  "clip_id": "Y0vOgLGk1dt0",
+  "labels": [
+    "a woman speaks",
+    "a dog barks"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y0vOgLGk1dt0.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 5.4486634731292725,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          5.489,
+          "a woman speaks"
+        ],
+        [
+          1.627,
+          2.317,
+          "a dog barks"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8cd1a030707f6eb1",
+            "object": "chat.completion",
+            "created": 1792780257,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 5.489\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 1.627,\n      \"end\": 2.317\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 288,
+              "total_tokens": 370,
+              "completion_tokens": 82,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 5.000375,
+      "seconds": 0.854386568069458,
+      "status": "complete",
+      "events": [],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-aa5136828df955b6",
+            "object": "chat.completion",
+            "created": 1792780262,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": []\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 222,
+              "total_tokens": 234,
+              "completion_tokens": 12,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      1.627,
+      2.317,
+      "a dog barks"
+    ],
+    [
+      0.0,
+      5.489,
+      "a woman speaks"
+    ]
+  ],
+  "duration": 10.000375,
+  "inference_seconds": 6.3030500411987305
+}

@@ -1,0 +1,176 @@
+{
+  "clip_id": "26801",
+  "labels": [
+    "A loud banging noise from hammering metal in an industrial workshop.",
+    "Hammering metal in an industrial workshop with steady, rhythmic banging."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/26801.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 3.234734058380127,
+      "status": "complete",
+      "events": [
+        [
+          7.238,
+          8.458,
+          "A loud banging noise from hammering metal in an industrial workshop."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a70bf08de783bdcf",
+            "object": "chat.completion",
+            "created": 1792800935,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 7.238,\n      \"end\": 8.458\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 307,
+              "total_tokens": 355,
+              "completion_tokens": 48,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 0.8773794174194336,
+      "status": "complete",
+      "events": [],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b595cee539e80b75",
+            "object": "chat.completion",
+            "created": 1792800938,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": []\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 307,
+              "total_tokens": 319,
+              "completion_tokens": 12,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 7.2095,
+      "seconds": 0.8726415634155273,
+      "status": "complete",
+      "events": [],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-87083df62be66f17",
+            "object": "chat.completion",
+            "created": 1792800939,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": []\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 269,
+              "total_tokens": 281,
+              "completion_tokens": 12,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      7.238,
+      8.458,
+      "A loud banging noise from hammering metal in an industrial workshop."
+    ]
+  ],
+  "duration": 17.2095,
+  "inference_seconds": 4.984755039215088
+}

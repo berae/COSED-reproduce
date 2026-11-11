@@ -1,0 +1,68 @@
+Traceback (most recent call last):
+  File "/home/zhanghc/projects/ov-sed/benchmark/runner-v1.py", line 237, in <module>
+    elif args.action=='run':run(args)
+  File "/home/zhanghc/projects/ov-sed/benchmark/runner-v1.py", line 159, in run
+    import numpy as np, librosa, torch
+  File "/home/zhanghc/venvs/dasm/lib/python3.10/site-packages/librosa/__init__.py", line 208, in <module>
+    from ._cache import cache
+  File "/home/zhanghc/venvs/dasm/lib/python3.10/site-packages/librosa/_cache.py", line 6, in <module>
+    from joblib import Memory
+  File "/home/zhanghc/venvs/dasm/lib/python3.10/site-packages/joblib/__init__.py", line 114, in <module>
+    from ._cloudpickle_wrapper import wrap_non_picklable_objects
+  File "/home/zhanghc/venvs/dasm/lib/python3.10/site-packages/joblib/_cloudpickle_wrapper.py", line 14, in <module>
+    from .externals.loky import wrap_non_picklable_objects
+  File "/home/zhanghc/venvs/dasm/lib/python3.10/site-packages/joblib/externals/loky/__init__.py", line 19, in <module>
+    from .backend.context import cpu_count
+  File "/home/zhanghc/venvs/dasm/lib/python3.10/site-packages/joblib/externals/loky/backend/__init__.py", line 4, in <module>
+    from .context import get_context
+  File "/home/zhanghc/venvs/dasm/lib/python3.10/site-packages/joblib/externals/loky/backend/context.py", line 24, in <module>
+    from concurrent.futures.process import _MAX_WINDOWS_WORKERS
+  File "/home/zhanghc/miniconda3/envs/nape/lib/python3.10/concurrent/futures/process.py", line 50, in <module>
+    import queue
+  File "/home/zhanghc/projects/ov-sed/benchmark/queue.py", line 13, in <module>
+    p=subprocess.run(cmd,stdout=f,stderr=subprocess.STDOUT,env=env)
+  File "/home/zhanghc/miniconda3/envs/nape/lib/python3.10/subprocess.py", line 503, in run
+    with Popen(*popenargs, **kwargs) as process:
+  File "/home/zhanghc/miniconda3/envs/nape/lib/python3.10/subprocess.py", line 971, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/zhanghc/miniconda3/envs/nape/lib/python3.10/subprocess.py", line 1863, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/zhanghc/venvs/--model/bin/python'
+/home/zhanghc/venvs/dasm/lib/python3.10/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+/home/zhanghc/venvs/dasm/lib/python3.10/site-packages/huggingface_hub/file_download.py:1142: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertModel: ['bert.pooler.dense.weight', 'cls.predictions.transform.dense.bias', 'bert.pooler.dense.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.seq_relationship.bias', 'cls.predictions.decoder.weight', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.seq_relationship.weight', 'cls.predictions.bias']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+/home/zhanghc/venvs/dasm/lib/python3.10/site-packages/torch/nn/modules/activation.py:1144: UserWarning: Converting mask without torch.bool dtype to bool; this will negatively affect performance. Prefer to use a boolean mask directly. (Triggered internally at ../aten/src/ATen/native/transformers/attention.cpp:150.)
+  return torch._native_multi_head_attention(
+{"model": "dasm", "dataset": "desed-public", "total": 692, "completed": 1, "status": "running", "pid": 3881806, "started": 1792114561.002162, "load_seconds": 17.950825929641724, "updated": 1792114580.9697034, "elapsed_seconds": 19.967541456222534}
+{"model": "dasm", "dataset": "desed-public", "total": 692, "completed": 25, "status": "running", "pid": 3881806, "started": 1792114561.002162, "load_seconds": 17.950825929641724, "updated": 1792114586.7043564, "elapsed_seconds": 25.702194690704346}
+{"model": "dasm", "dataset": "desed-public", "total": 692, "completed": 50, "status": "running", "pid": 3881806, "started": 1792114561.002162, "load_seconds": 17.950825929641724, "updated": 1792114592.3487933, "elapsed_seconds": 31.34663152694702}
+{"model": "dasm", "dataset": "desed-public", "total": 692, "completed": 75, "status": "running", "pid": 3881806, "started": 1792114561.002162, "load_seconds": 17.950825929641724, "updated": 1792114597.9902399, "elapsed_seconds": 36.988078117370605}
+{"model": "dasm", "dataset": "desed-public", "total": 692, "completed": 100, "status": "running", "pid": 3881806, "started": 1792114561.002162, "load_seconds": 17.950825929641724, "updated": 1792114603.7325177, "elapsed_seconds": 42.730355978012085}
+{"model": "dasm", "dataset": "desed-public", "total": 692, "completed": 125, "status": "running", "pid": 3881806, "started": 1792114561.002162, "load_seconds": 17.950825929641724, "updated": 1792114609.4012935, "elapsed_seconds": 48.399131774902344}
+{"model": "dasm", "dataset": "desed-public", "total": 692, "completed": 150, "status": "running", "pid": 3881806, "started": 1792114561.002162, "load_seconds": 17.950825929641724, "updated": 1792114615.045155, "elapsed_seconds": 54.04299330711365}
+{"model": "dasm", "dataset": "desed-public", "total": 692, "completed": 175, "status": "running", "pid": 3881806, "started": 1792114561.002162, "load_seconds": 17.950825929641724, "updated": 1792114620.4578917, "elapsed_seconds": 59.455729961395264}
+{"model": "dasm", "dataset": "desed-public", "total": 692, "completed": 200, "status": "running", "pid": 3881806, "started": 1792114561.002162, "load_seconds": 17.950825929641724, "updated": 1792114626.116743, "elapsed_seconds": 65.11458134651184}
+{"model": "dasm", "dataset": "desed-public", "total": 692, "completed": 225, "status": "running", "pid": 3881806, "started": 1792114561.002162, "load_seconds": 17.950825929641724, "updated": 1792114631.6767042, "elapsed_seconds": 70.67454242706299}
+{"model": "dasm", "dataset": "desed-public", "total": 692, "completed": 250, "status": "running", "pid": 3881806, "started": 1792114561.002162, "load_seconds": 17.950825929641724, "updated": 1792114637.3801126, "elapsed_seconds": 76.37795090675354}
+{"model": "dasm", "dataset": "desed-public", "total": 692, "completed": 275, "status": "running", "pid": 3881806, "started": 1792114561.002162, "load_seconds": 17.950825929641724, "updated": 1792114643.1880097, "elapsed_seconds": 82.1858479976654}
+{"model": "dasm", "dataset": "desed-public", "total": 692, "completed": 300, "status": "running", "pid": 3881806, "started": 1792114561.002162, "load_seconds": 17.950825929641724, "updated": 1792114648.8744862, "elapsed_seconds": 87.87232446670532}
+{"model": "dasm", "dataset": "desed-public", "total": 692, "completed": 325, "status": "running", "pid": 3881806, "started": 1792114561.002162, "load_seconds": 17.950825929641724, "updated": 1792114654.5392175, "elapsed_seconds": 93.5370557308197}
+{"model": "dasm", "dataset": "desed-public", "total": 692, "completed": 350, "status": "running", "pid": 3881806, "started": 1792114561.002162, "load_seconds": 17.950825929641724, "updated": 1792114660.168806, "elapsed_seconds": 99.16664433479309}
+{"model": "dasm", "dataset": "desed-public", "total": 692, "completed": 375, "status": "running", "pid": 3881806, "started": 1792114561.002162, "load_seconds": 17.950825929641724, "updated": 1792114665.8319235, "elapsed_seconds": 104.82976174354553}
+{"model": "dasm", "dataset": "desed-public", "total": 692, "completed": 400, "status": "running", "pid": 3881806, "started": 1792114561.002162, "load_seconds": 17.950825929641724, "updated": 1792114671.428867, "elapsed_seconds": 110.4267053604126}
+{"model": "dasm", "dataset": "desed-public", "total": 692, "completed": 425, "status": "running", "pid": 3881806, "started": 1792114561.002162, "load_seconds": 17.950825929641724, "updated": 1792114677.1780977, "elapsed_seconds": 116.175936460495}
+{"model": "dasm", "dataset": "desed-public", "total": 692, "completed": 450, "status": "running", "pid": 3881806, "started": 1792114561.002162, "load_seconds": 17.950825929641724, "updated": 1792114682.9626577, "elapsed_seconds": 121.96049618721008}
+{"model": "dasm", "dataset": "desed-public", "total": 692, "completed": 475, "status": "running", "pid": 3881806, "started": 1792114561.002162, "load_seconds": 17.950825929641724, "updated": 1792114688.7050197, "elapsed_seconds": 127.7028579711914}
+{"model": "dasm", "dataset": "desed-public", "total": 692, "completed": 500, "status": "running", "pid": 3881806, "started": 1792114561.002162, "load_seconds": 17.950825929641724, "updated": 1792114694.2254145, "elapsed_seconds": 133.2232527732849}
+{"model": "dasm", "dataset": "desed-public", "total": 692, "completed": 525, "status": "running", "pid": 3881806, "started": 1792114561.002162, "load_seconds": 17.950825929641724, "updated": 1792114699.923885, "elapsed_seconds": 138.9217231273651}
+{"model": "dasm", "dataset": "desed-public", "total": 692, "completed": 550, "status": "running", "pid": 3881806, "started": 1792114561.002162, "load_seconds": 17.950825929641724, "updated": 1792114705.6769943, "elapsed_seconds": 144.67483258247375}
+{"model": "dasm", "dataset": "desed-public", "total": 692, "completed": 575, "status": "running", "pid": 3881806, "started": 1792114561.002162, "load_seconds": 17.950825929641724, "updated": 1792114711.3393455, "elapsed_seconds": 150.33718371391296}
+{"model": "dasm", "dataset": "desed-public", "total": 692, "completed": 600, "status": "running", "pid": 3881806, "started": 1792114561.002162, "load_seconds": 17.950825929641724, "updated": 1792114717.048265, "elapsed_seconds": 156.04610323905945}
+{"model": "dasm", "dataset": "desed-public", "total": 692, "completed": 625, "status": "running", "pid": 3881806, "started": 1792114561.002162, "load_seconds": 17.950825929641724, "updated": 1792114722.7925544, "elapsed_seconds": 161.7903928756714}
+{"model": "dasm", "dataset": "desed-public", "total": 692, "completed": 650, "status": "running", "pid": 3881806, "started": 1792114561.002162, "load_seconds": 17.950825929641724, "updated": 1792114728.5131872, "elapsed_seconds": 167.51102542877197}
+{"model": "dasm", "dataset": "desed-public", "total": 692, "completed": 675, "status": "running", "pid": 3881806, "started": 1792114561.002162, "load_seconds": 17.950825929641724, "updated": 1792114734.0683925, "elapsed_seconds": 173.06623077392578}
+PSDS1 0.4686193521770787

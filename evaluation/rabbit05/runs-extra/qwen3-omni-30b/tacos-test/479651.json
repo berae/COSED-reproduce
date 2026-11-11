@@ -1,0 +1,304 @@
+{
+  "clip_id": "479651",
+  "labels": [
+    "A lamb bleats repeatedly with a high-pitched sound.",
+    "A short pop from a microphone.",
+    "Quiet, steady background noise."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/479651.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 14.493806600570679,
+      "status": "complete",
+      "events": [
+        [
+          1.638,
+          2.548,
+          "A lamb bleats repeatedly with a high-pitched sound."
+        ],
+        [
+          4.278,
+          5.298,
+          "A lamb bleats repeatedly with a high-pitched sound."
+        ],
+        [
+          7.028,
+          8.048,
+          "A lamb bleats repeatedly with a high-pitched sound."
+        ],
+        [
+          9.518,
+          10.0,
+          "A lamb bleats repeatedly with a high-pitched sound."
+        ],
+        [
+          0.0,
+          0.088,
+          "A short pop from a microphone."
+        ],
+        [
+          0.0,
+          10.0,
+          "Quiet, steady background noise."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-bde90f3f6e23193e",
+            "object": "chat.completion",
+            "created": 1792810488,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 1.638,\n      \"end\": 2.548\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 4.278,\n      \"end\": 5.298\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 7.028,\n      \"end\": 8.048\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 9.518,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 0.088\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 307,
+              "total_tokens": 527,
+              "completion_tokens": 220,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 12.193786382675171,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          0.45,
+          "A lamb bleats repeatedly with a high-pitched sound."
+        ],
+        [
+          1.98,
+          2.76,
+          "A lamb bleats repeatedly with a high-pitched sound."
+        ],
+        [
+          4.63,
+          5.41,
+          "A lamb bleats repeatedly with a high-pitched sound."
+        ],
+        [
+          7.3,
+          8.08,
+          "A lamb bleats repeatedly with a high-pitched sound."
+        ],
+        [
+          0.0,
+          10.0,
+          "Quiet, steady background noise."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a9941e307d6fabaa",
+            "object": "chat.completion",
+            "created": 1792810502,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 0.450\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 1.980,\n      \"end\": 2.760\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 4.630,\n      \"end\": 5.410\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 7.300,\n      \"end\": 8.080\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 307,
+              "total_tokens": 492,
+              "completion_tokens": 185,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 9.4055,
+      "seconds": 14.159957885742188,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          0.738,
+          "A lamb bleats repeatedly with a high-pitched sound."
+        ],
+        [
+          2.368,
+          3.178,
+          "A lamb bleats repeatedly with a high-pitched sound."
+        ],
+        [
+          4.978,
+          5.828,
+          "A lamb bleats repeatedly with a high-pitched sound."
+        ],
+        [
+          7.618,
+          8.428,
+          "A lamb bleats repeatedly with a high-pitched sound."
+        ],
+        [
+          8.928,
+          9.405,
+          "A short pop from a microphone."
+        ],
+        [
+          0.0,
+          9.405,
+          "Quiet, steady background noise."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8df247690b86296e",
+            "object": "chat.completion",
+            "created": 1792810514,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 0.738\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 2.368,\n      \"end\": 3.178\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 4.978,\n      \"end\": 5.828\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 7.618,\n      \"end\": 8.428\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 8.928,\n      \"end\": 9.405\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.0,\n      \"end\": 9.405\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 298,
+              "total_tokens": 512,
+              "completion_tokens": 214,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      1.638,
+      2.548,
+      "A lamb bleats repeatedly with a high-pitched sound."
+    ],
+    [
+      4.278,
+      5.45,
+      "A lamb bleats repeatedly with a high-pitched sound."
+    ],
+    [
+      6.98,
+      8.048,
+      "A lamb bleats repeatedly with a high-pitched sound."
+    ],
+    [
+      9.518,
+      10.738,
+      "A lamb bleats repeatedly with a high-pitched sound."
+    ],
+    [
+      12.3,
+      13.178,
+      "A lamb bleats repeatedly with a high-pitched sound."
+    ],
+    [
+      14.978,
+      15.828,
+      "A lamb bleats repeatedly with a high-pitched sound."
+    ],
+    [
+      17.618000000000002,
+      18.428,
+      "A lamb bleats repeatedly with a high-pitched sound."
+    ],
+    [
+      0.0,
+      0.088,
+      "A short pop from a microphone."
+    ],
+    [
+      18.928,
+      19.405,
+      "A short pop from a microphone."
+    ],
+    [
+      0.0,
+      19.405,
+      "Quiet, steady background noise."
+    ]
+  ],
+  "duration": 19.4055,
+  "inference_seconds": 40.84755086898804
+}

@@ -1,0 +1,314 @@
+{
+  "clip_id": "654255",
+  "labels": [
+    "A person humming continuously.",
+    "A human humming briefly.",
+    "A very short hum followed by a long hum.",
+    "A short humming sound.",
+    "A short hum followed by a long hum.",
+    "A woman hums with a variable pitch.",
+    "A woman hums loudly with multiple changes in pitch.",
+    "Two hums with a short pause between them."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/654255.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 12.092597484588623,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          2.0,
+          "A person humming continuously."
+        ],
+        [
+          3.98,
+          4.18,
+          "A human humming briefly."
+        ],
+        [
+          4.18,
+          9.18,
+          "A very short hum followed by a long hum."
+        ],
+        [
+          4.18,
+          9.18,
+          "A short humming sound."
+        ],
+        [
+          4.18,
+          9.18,
+          "A woman hums with a variable pitch."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8c19ffaef826aae4",
+            "object": "chat.completion",
+            "created": 1792816846,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 2.000\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 3.980,\n      \"end\": 4.180\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 4.180,\n      \"end\": 9.180\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 4.180,\n      \"end\": 9.180\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 4.180,\n      \"end\": 9.180\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 356,
+              "total_tokens": 540,
+              "completion_tokens": 184,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 7.713259220123291,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          6.89,
+          "A person humming continuously."
+        ],
+        [
+          8.51,
+          9.21,
+          "A human humming briefly."
+        ],
+        [
+          0.0,
+          6.89,
+          "A woman hums with a variable pitch."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-87b0b2d792ee04e0",
+            "object": "chat.completion",
+            "created": 1792816858,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 6.890\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 8.510,\n      \"end\": 9.210\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 0.000,\n      \"end\": 6.890\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 356,
+              "total_tokens": 472,
+              "completion_tokens": 116,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 7.04675,
+      "seconds": 17.42406463623047,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          1.38,
+          "A person humming continuously."
+        ],
+        [
+          3.59,
+          4.42,
+          "A human humming briefly."
+        ],
+        [
+          0.0,
+          1.38,
+          "A very short hum followed by a long hum."
+        ],
+        [
+          5.72,
+          6.22,
+          "A short humming sound."
+        ],
+        [
+          0.0,
+          1.38,
+          "A short hum followed by a long hum."
+        ],
+        [
+          0.0,
+          1.38,
+          "A woman hums with a variable pitch."
+        ],
+        [
+          3.59,
+          4.42,
+          "A woman hums loudly with multiple changes in pitch."
+        ],
+        [
+          0.0,
+          1.38,
+          "Two hums with a short pause between them."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-9465725cc285b936",
+            "object": "chat.completion",
+            "created": 1792816866,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 1.38\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 3.59,\n      \"end\": 4.42\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.0,\n      \"end\": 1.38\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 5.72,\n      \"end\": 6.22\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 0.0,\n      \"end\": 1.38\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 0.0,\n      \"end\": 1.38\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 3.59,\n      \"end\": 4.42\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 0.0,\n      \"end\": 1.38\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 316,
+              "total_tokens": 581,
+              "completion_tokens": 265,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      3.98,
+      4.18,
+      "A human humming briefly."
+    ],
+    [
+      13.51,
+      14.42,
+      "A human humming briefly."
+    ],
+    [
+      0.0,
+      2.0,
+      "A person humming continuously."
+    ],
+    [
+      5.0,
+      11.89,
+      "A person humming continuously."
+    ],
+    [
+      10.0,
+      11.379999999999999,
+      "A short hum followed by a long hum."
+    ],
+    [
+      4.18,
+      9.18,
+      "A short humming sound."
+    ],
+    [
+      15.719999999999999,
+      16.22,
+      "A short humming sound."
+    ],
+    [
+      4.18,
+      9.18,
+      "A very short hum followed by a long hum."
+    ],
+    [
+      10.0,
+      11.379999999999999,
+      "A very short hum followed by a long hum."
+    ],
+    [
+      13.59,
+      14.42,
+      "A woman hums loudly with multiple changes in pitch."
+    ],
+    [
+      4.18,
+      11.89,
+      "A woman hums with a variable pitch."
+    ],
+    [
+      10.0,
+      11.379999999999999,
+      "Two hums with a short pause between them."
+    ]
+  ],
+  "duration": 17.04675,
+  "inference_seconds": 37.22992134094238
+}

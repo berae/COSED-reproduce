@@ -1,0 +1,362 @@
+{
+  "clip_id": "622446",
+  "labels": [
+    "A person makes silly, loud choking noises.",
+    "A person coughs loudly nearby.",
+    "A person makes short choking noises.",
+    "A person makes loud, short choking noises.",
+    "A person exhales softly.",
+    "A person is softly exhaling repeatedly.",
+    "A person coughs loudly and rapidly nearby.",
+    "A person breathes and exhales softly several times.",
+    "A person sneezes loudly.",
+    "A person is breathing softly."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/622446.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 26.24644136428833,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          1.2,
+          "A person makes silly, loud choking noises."
+        ],
+        [
+          0.0,
+          1.2,
+          "A person coughs loudly nearby."
+        ],
+        [
+          2.0,
+          2.5,
+          "A person makes short choking noises."
+        ],
+        [
+          3.4,
+          3.8,
+          "A person makes short choking noises."
+        ],
+        [
+          4.7,
+          5.8,
+          "A person makes loud, short choking noises."
+        ],
+        [
+          6.8,
+          7.1,
+          "A person exhales softly."
+        ],
+        [
+          7.9,
+          8.8,
+          "A person is softly exhaling repeatedly."
+        ],
+        [
+          0.0,
+          1.2,
+          "A person coughs loudly and rapidly nearby."
+        ],
+        [
+          0.0,
+          10.0,
+          "A person breathes and exhales softly several times."
+        ],
+        [
+          0.0,
+          1.2,
+          "A person sneezes loudly."
+        ],
+        [
+          0.0,
+          10.0,
+          "A person is breathing softly."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-bdeaccdc8b1427dd",
+            "object": "chat.completion",
+            "created": 1792786112,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 1.200\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 1.200\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 2.000,\n      \"end\": 2.500\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 3.400,\n      \"end\": 3.800\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 4.700,\n      \"end\": 5.800\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 6.800,\n      \"end\": 7.100\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 7.900,\n      \"end\": 8.800\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 0.000,\n      \"end\": 1.200\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 8,\n      \"start\": 0.000,\n      \"end\": 1.200\n    },\n    {\n      \"query_id\": 9,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 375,
+              "total_tokens": 765,
+              "completion_tokens": 390,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 23.718865156173706,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          1.0,
+          "A person makes silly, loud choking noises."
+        ],
+        [
+          0.0,
+          1.0,
+          "A person coughs loudly nearby."
+        ],
+        [
+          2.0,
+          2.2,
+          "A person makes short choking noises."
+        ],
+        [
+          4.8,
+          5.8,
+          "A person makes loud, short choking noises."
+        ],
+        [
+          6.0,
+          6.2,
+          "A person exhales softly."
+        ],
+        [
+          6.0,
+          6.2,
+          "A person is softly exhaling repeatedly."
+        ],
+        [
+          6.0,
+          6.2,
+          "A person coughs loudly and rapidly nearby."
+        ],
+        [
+          6.0,
+          6.2,
+          "A person breathes and exhales softly several times."
+        ],
+        [
+          6.0,
+          6.2,
+          "A person sneezes loudly."
+        ],
+        [
+          6.0,
+          6.2,
+          "A person is breathing softly."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b2f11e294ae64d6a",
+            "object": "chat.completion",
+            "created": 1792786138,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 1.000\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 1.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 2.000,\n      \"end\": 2.200\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 4.800,\n      \"end\": 5.800\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 6.000,\n      \"end\": 6.200\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 6.000,\n      \"end\": 6.200\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 6.000,\n      \"end\": 6.200\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 6.000,\n      \"end\": 6.200\n    },\n    {\n      \"query_id\": 8,\n      \"start\": 6.000,\n      \"end\": 6.200\n    },\n    {\n      \"query_id\": 9,\n      \"start\": 6.000,\n      \"end\": 6.200\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 375,
+              "total_tokens": 729,
+              "completion_tokens": 354,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 9.9310625,
+      "seconds": 310.32200050354004,
+      "status": "failed",
+      "events": null,
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b18628ed03425748",
+            "object": "chat.completion",
+            "created": 1792786162,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 0.92\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.0,\n      \"end\": 0.92\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.0,\n      \"end\": 0.92\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.0,\n      \"end\": 0.92\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 1.12,\n      \"end\": 1.28\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 1.12,\n      \"end\": 1.28\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 1.12,\n      \"end\": 1.28\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 1.12,\n      \"end\": 1.28\n    },\n    {\n      \"query_id\": 8,\n      \"start\": 1.12,\n      \"end\": 1.28\n    },\n    {\n      \"query_id\": 9,\n      \"start\": 1.12,\n      \"end\": 1.28\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 1.48,\n      \"end\": 1.64\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 1.48,\n      \"end\": 1.64\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 1.48,\n      \"end\": 1.64\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 1.48,\n      \"end\": 1.64\n    },\n    {\n      \"query_id\": 8,\n      \"start\": 1.48,\n      \"end\": 1.64\n    },\n    {\n      \"query_id\": 9,\n      \"start\": 1.48,\n      \"end\": 1.64\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 1.84,\n      \"end\": 2.0\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 1.84,\n      \"end\": 2.0\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 1.84,\n      \"end\": 2.0\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 1.84,\n      \"end\": 2.0\n    },\n    {\n      \"query_id\": 8,\n      \"start\": 1.84,\n      \"end\": 2.0\n    },\n    {\n      \"query_id\": 9,\n      \"start\": 1.84,\n      \"end\": 2.0\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 2.2,\n      \"end\": 2.36\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 2.2,\n      \"end\": 2.36\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 2.2,\n      \"end\": 2.36\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 2.2,\n      \"end\": 2.36\n    },\n    {\n      \"query_id\": 8,\n      \"start\": 2.2,\n      \"end\": 2.36\n    },\n    {\n      \"query_id\": 9,\n      \"start\": 2.2,\n      \"end\": 2.36\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 2.56,\n      \"end\": 2.72\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 2.56,\n      \"end\": 2.72\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 2.56,\n      \"end\": 2.72\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 2.56,\n      \"end\": 2.72\n    },\n    {\n      \"query_id\": 8,\n      \"start\": 2.56,\n      \"end\": 2.72\n    },\n    {\n      \"query_id\": 9,\n      \"start\": 2.56,\n      \"end\": 2.72\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 2.92,\n      \"end\": 3.08\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 2.92,\n      \"end\": 3.08\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 2.92,\n      \"end\": 3.08\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 2.92,\n      \"end\": 3.08\n    },\n    {\n      \"query_id\": 8,\n      \"start\": 2.92,\n      \"end\": 3.08\n    },\n    {\n      \"query_id\": 9,\n      \"start\": 2.92,\n      \"end\": 3.08\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 3.28,\n      \"end\": 3.44\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 3.28,\n      \"end\": 3.44\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 3.28,\n      \"end\": 3.44\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 3.28,\n      \"end\": 3.44\n    },\n    {\n      \"query_id\": 8,\n      \"start\": 3.28,\n      \"end\": 3.44\n    },\n    {\n      \"query_id\": 9,\n      \"start\": 3.28,\n      \"end\": 3.44\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 3.64,\n      \"end\": 3.8\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 3.64,\n      \"end\": 3.8\n    },\n    {\n      \"query_id\": 6",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "length",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 372,
+              "total_tokens": 1908,
+              "completion_tokens": 1536,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          }
+        },
+        {
+          "error": "ValueError('Output truncated')"
+        },
+        {
+          "reply": {
+            "id": "chatcmpl-b22ae5231f39178f",
+            "object": "chat.completion",
+            "created": 1792786266,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 0.92\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.0,\n      \"end\": 0.92\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.0,\n      \"end\": 0.92\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.0,\n      \"end\": 0.92\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 1.12,\n      \"end\": 1.28\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 1.12,\n      \"end\": 1.28\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 1.12,\n      \"end\": 1.28\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 1.12,\n      \"end\": 1.28\n    },\n    {\n      \"query_id\": 8,\n      \"start\": 1.12,\n      \"end\": 1.28\n    },\n    {\n      \"query_id\": 9,\n      \"start\": 1.12,\n      \"end\": 1.28\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 1.48,\n      \"end\": 1.64\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 1.48,\n      \"end\": 1.64\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 1.48,\n      \"end\": 1.64\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 1.48,\n      \"end\": 1.64\n    },\n    {\n      \"query_id\": 8,\n      \"start\": 1.48,\n      \"end\": 1.64\n    },\n    {\n      \"query_id\": 9,\n      \"start\": 1.48,\n      \"end\": 1.64\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 1.84,\n      \"end\": 2.0\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 1.84,\n      \"end\": 2.0\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 1.84,\n      \"end\": 2.0\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 1.84,\n      \"end\": 2.0\n    },\n    {\n      \"query_id\": 8,\n      \"start\": 1.84,\n      \"end\": 2.0\n    },\n    {\n      \"query_id\": 9,\n      \"start\": 1.84,\n      \"end\": 2.0\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 2.2,\n      \"end\": 2.36\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 2.2,\n      \"end\": 2.36\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 2.2,\n      \"end\": 2.36\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 2.2,\n      \"end\": 2.36\n    },\n    {\n      \"query_id\": 8,\n      \"start\": 2.2,\n      \"end\": 2.36\n    },\n    {\n      \"query_id\": 9,\n      \"start\": 2.2,\n      \"end\": 2.36\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 2.56,\n      \"end\": 2.72\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 2.56,\n      \"end\": 2.72\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 2.56,\n      \"end\": 2.72\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 2.56,\n      \"end\": 2.72\n    },\n    {\n      \"query_id\": 8,\n      \"start\": 2.56,\n      \"end\": 2.72\n    },\n    {\n      \"query_id\": 9,\n      \"start\": 2.56,\n      \"end\": 2.72\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 2.92,\n      \"end\": 3.08\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 2.92,\n      \"end\": 3.08\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 2.92,\n      \"end\": 3.08\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 2.92,\n      \"end\": 3.08\n    },\n    {\n      \"query_id\": 8,\n      \"start\": 2.92,\n      \"end\": 3.08\n    },\n    {\n      \"query_id\": 9,\n      \"start\": 2.92,\n      \"end\": 3.08\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 3.28,\n      \"end\": 3.44\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 3.28,\n      \"end\": 3.44\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 3.28,\n      \"end\": 3.44\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 3.28,\n      \"end\": 3.44\n    },\n    {\n      \"query_id\": 8,\n      \"start\": 3.28,\n      \"end\": 3.44\n    },\n    {\n      \"query_id\": 9,\n      \"start\": 3.28,\n      \"end\": 3.44\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 3.64,\n      \"end\": 3.8\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 3.64,\n      \"end\": 3.8\n    },\n    {\n      \"query_id\": 6",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "length",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 372,
+              "total_tokens": 1908,
+              "completion_tokens": 1536,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          }
+        },
+        {
+          "error": "ValueError('Output truncated')"
+        },
+        {
+          "reply": {
+            "id": "chatcmpl-aa861f8d62300a9b",
+            "object": "chat.completion",
+            "created": 1792786369,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 0.92\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.0,\n      \"end\": 0.92\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.0,\n      \"end\": 0.92\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.0,\n      \"end\": 0.92\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 1.12,\n      \"end\": 1.28\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 1.12,\n      \"end\": 1.28\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 1.12,\n      \"end\": 1.28\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 1.12,\n      \"end\": 1.28\n    },\n    {\n      \"query_id\": 8,\n      \"start\": 1.12,\n      \"end\": 1.28\n    },\n    {\n      \"query_id\": 9,\n      \"start\": 1.12,\n      \"end\": 1.28\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 1.48,\n      \"end\": 1.64\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 1.48,\n      \"end\": 1.64\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 1.48,\n      \"end\": 1.64\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 1.48,\n      \"end\": 1.64\n    },\n    {\n      \"query_id\": 8,\n      \"start\": 1.48,\n      \"end\": 1.64\n    },\n    {\n      \"query_id\": 9,\n      \"start\": 1.48,\n      \"end\": 1.64\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 1.84,\n      \"end\": 2.0\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 1.84,\n      \"end\": 2.0\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 1.84,\n      \"end\": 2.0\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 1.84,\n      \"end\": 2.0\n    },\n    {\n      \"query_id\": 8,\n      \"start\": 1.84,\n      \"end\": 2.0\n    },\n    {\n      \"query_id\": 9,\n      \"start\": 1.84,\n      \"end\": 2.0\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 2.2,\n      \"end\": 2.36\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 2.2,\n      \"end\": 2.36\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 2.2,\n      \"end\": 2.36\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 2.2,\n      \"end\": 2.36\n    },\n    {\n      \"query_id\": 8,\n      \"start\": 2.2,\n      \"end\": 2.36\n    },\n    {\n      \"query_id\": 9,\n      \"start\": 2.2,\n      \"end\": 2.36\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 2.56,\n      \"end\": 2.72\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 2.56,\n      \"end\": 2.72\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 2.56,\n      \"end\": 2.72\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 2.56,\n      \"end\": 2.72\n    },\n    {\n      \"query_id\": 8,\n      \"start\": 2.56,\n      \"end\": 2.72\n    },\n    {\n      \"query_id\": 9,\n      \"start\": 2.56,\n      \"end\": 2.72\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 2.92,\n      \"end\": 3.08\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 2.92,\n      \"end\": 3.08\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 2.92,\n      \"end\": 3.08\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 2.92,\n      \"end\": 3.08\n    },\n    {\n      \"query_id\": 8,\n      \"start\": 2.92,\n      \"end\": 3.08\n    },\n    {\n      \"query_id\": 9,\n      \"start\": 2.92,\n      \"end\": 3.08\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 3.28,\n      \"end\": 3.44\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 3.28,\n      \"end\": 3.44\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 3.28,\n      \"end\": 3.44\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 3.28,\n      \"end\": 3.44\n    },\n    {\n      \"query_id\": 8,\n      \"start\": 3.28,\n      \"end\": 3.44\n    },\n    {\n      \"query_id\": 9,\n      \"start\": 3.28,\n      \"end\": 3.44\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 3.64,\n      \"end\": 3.8\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 3.64,\n      \"end\": 3.8\n    },\n    {\n      \"query_id\": 6",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "length",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 372,
+              "total_tokens": 1908,
+              "completion_tokens": 1536,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          }
+        },
+        {
+          "error": "ValueError('Output truncated')"
+        }
+      ]
+    }
+  ],
+  "status": "running"
+}

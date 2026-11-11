@@ -1,0 +1,106 @@
+{
+  "clip_id": "Y1AejlUdd5gs",
+  "labels": [
+    "dogs yipping",
+    "barking"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y1AejlUdd5gs.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 9.794487714767456,
+      "status": "complete",
+      "events": [
+        [
+          3.829,
+          5.479,
+          "dogs yipping"
+        ],
+        [
+          0.0,
+          0.619,
+          "barking"
+        ],
+        [
+          2.429,
+          2.829,
+          "barking"
+        ],
+        [
+          4.829,
+          5.129,
+          "barking"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-9b0bf8323d33577b",
+            "object": "chat.completion",
+            "created": 1792780334,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 3.829,\n      \"end\": 5.479\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.0,\n      \"end\": 0.619\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 2.429,\n      \"end\": 2.829\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 4.829,\n      \"end\": 5.129\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 286,
+              "total_tokens": 434,
+              "completion_tokens": 148,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      0.619,
+      "barking"
+    ],
+    [
+      2.429,
+      2.829,
+      "barking"
+    ],
+    [
+      4.829,
+      5.129,
+      "barking"
+    ],
+    [
+      3.829,
+      5.479,
+      "dogs yipping"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 9.794487714767456
+}

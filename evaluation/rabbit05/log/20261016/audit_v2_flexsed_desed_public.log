@@ -1,0 +1,97 @@
+/home/zhanghc/venvs/flexsed/lib/python3.10/site-packages/transformers/utils/hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/home/zhanghc/projects/ov-sed/FlexSED/src/models/dasheng.py:44: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+/home/zhanghc/projects/ov-sed/FlexSED/src/models/transformer.py:200: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=False):
+/home/zhanghc/projects/ov-sed/FlexSED/src/models/transformer.py:209: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=False):
+attention mode is flash
+Loading Dasheng weights for decoders...
+Block 6:
+✅ Expected missing keys: ['adaln.weight', 'adaln.bias']
+Block 7:
+✅ Expected missing keys: ['adaln.weight', 'adaln.bias']
+Block 8:
+✅ Expected missing keys: ['adaln.weight', 'adaln.bias']
+Block 9:
+✅ Expected missing keys: ['adaln.weight', 'adaln.bias']
+Block 10:
+✅ Expected missing keys: ['adaln.weight', 'adaln.bias']
+Block 11:
+✅ Expected missing keys: ['adaln.weight', 'adaln.bias']
+Traceback (most recent call last):
+  File "/home/zhanghc/projects/ov-sed/benchmark/runner-source-audit-v2.py", line 255, in <module>
+    elif args.action=='run':run(args)
+  File "/home/zhanghc/projects/ov-sed/benchmark/runner-source-audit-v2.py", line 194, in run
+    arr=a.window(audio[offset:offset+10*a.sr],labels)
+  File "/home/zhanghc/projects/ov-sed/benchmark/runner-source-audit-v2.py", line 153, in window
+    s=self.model(self.model.forward_to_spec(x),q).sigmoid().squeeze(1).T
+  File "/home/zhanghc/venvs/flexsed/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/zhanghc/venvs/flexsed/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/zhanghc/projects/ov-sed/FlexSED/src/models/sed_decoder.py", line 213, in forward
+    x = self.forward_encoder(x)
+  File "/home/zhanghc/projects/ov-sed/FlexSED/src/models/sed_decoder.py", line 209, in forward_encoder
+    x = self.encoder(x)
+  File "/home/zhanghc/venvs/flexsed/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/zhanghc/venvs/flexsed/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/zhanghc/projects/ov-sed/FlexSED/src/models/transformer.py", line 213, in forward
+    x = self.forward_features(x)
+  File "/home/zhanghc/projects/ov-sed/FlexSED/src/models/transformer.py", line 143, in forward_features
+    x = x + self.time_pos_embed[:, :, :, :t]
+RuntimeError: The size of tensor a (1500) must match the size of tensor b (252) at non-singleton dimension 3
+/home/zhanghc/venvs/flexsed/lib/python3.10/site-packages/transformers/utils/hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/home/zhanghc/projects/ov-sed/FlexSED/src/models/dasheng.py:44: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+/home/zhanghc/projects/ov-sed/FlexSED/src/models/transformer.py:200: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=False):
+/home/zhanghc/projects/ov-sed/FlexSED/src/models/transformer.py:209: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=False):
+attention mode is flash
+Loading Dasheng weights for decoders...
+Block 6:
+✅ Expected missing keys: ['adaln.weight', 'adaln.bias']
+Block 7:
+✅ Expected missing keys: ['adaln.weight', 'adaln.bias']
+Block 8:
+✅ Expected missing keys: ['adaln.weight', 'adaln.bias']
+Block 9:
+✅ Expected missing keys: ['adaln.weight', 'adaln.bias']
+Block 10:
+✅ Expected missing keys: ['adaln.weight', 'adaln.bias']
+Block 11:
+✅ Expected missing keys: ['adaln.weight', 'adaln.bias']
+{"model": "flexsed", "dataset": "desed-public", "total": 692, "completed": 1, "status": "running", "pid": 4127769, "started": 1792130925.724526, "load_seconds": 5.434685707092285, "updated": 1792130932.3683484, "elapsed_seconds": 6.643822431564331}
+{"model": "flexsed", "dataset": "desed-public", "total": 692, "completed": 25, "status": "running", "pid": 4127769, "started": 1792130925.724526, "load_seconds": 5.434685707092285, "updated": 1792130933.1201982, "elapsed_seconds": 7.395672559738159}
+{"model": "flexsed", "dataset": "desed-public", "total": 692, "completed": 50, "status": "running", "pid": 4127769, "started": 1792130925.724526, "load_seconds": 5.434685707092285, "updated": 1792130933.8765194, "elapsed_seconds": 8.151993751525879}
+{"model": "flexsed", "dataset": "desed-public", "total": 692, "completed": 75, "status": "running", "pid": 4127769, "started": 1792130925.724526, "load_seconds": 5.434685707092285, "updated": 1792130934.6456702, "elapsed_seconds": 8.921144485473633}
+{"model": "flexsed", "dataset": "desed-public", "total": 692, "completed": 100, "status": "running", "pid": 4127769, "started": 1792130925.724526, "load_seconds": 5.434685707092285, "updated": 1792130935.3976822, "elapsed_seconds": 9.673156499862671}
+{"model": "flexsed", "dataset": "desed-public", "total": 692, "completed": 125, "status": "running", "pid": 4127769, "started": 1792130925.724526, "load_seconds": 5.434685707092285, "updated": 1792130936.1755788, "elapsed_seconds": 10.451053142547607}
+{"model": "flexsed", "dataset": "desed-public", "total": 692, "completed": 150, "status": "running", "pid": 4127769, "started": 1792130925.724526, "load_seconds": 5.434685707092285, "updated": 1792130936.9529228, "elapsed_seconds": 11.228397130966187}
+{"model": "flexsed", "dataset": "desed-public", "total": 692, "completed": 175, "status": "running", "pid": 4127769, "started": 1792130925.724526, "load_seconds": 5.434685707092285, "updated": 1792130937.7106445, "elapsed_seconds": 11.986118793487549}
+{"model": "flexsed", "dataset": "desed-public", "total": 692, "completed": 200, "status": "running", "pid": 4127769, "started": 1792130925.724526, "load_seconds": 5.434685707092285, "updated": 1792130938.4814582, "elapsed_seconds": 12.756932497024536}
+{"model": "flexsed", "dataset": "desed-public", "total": 692, "completed": 225, "status": "running", "pid": 4127769, "started": 1792130925.724526, "load_seconds": 5.434685707092285, "updated": 1792130939.237302, "elapsed_seconds": 13.512776374816895}
+{"model": "flexsed", "dataset": "desed-public", "total": 692, "completed": 250, "status": "running", "pid": 4127769, "started": 1792130925.724526, "load_seconds": 5.434685707092285, "updated": 1792130939.998378, "elapsed_seconds": 14.273852348327637}
+{"model": "flexsed", "dataset": "desed-public", "total": 692, "completed": 275, "status": "running", "pid": 4127769, "started": 1792130925.724526, "load_seconds": 5.434685707092285, "updated": 1792130940.7861474, "elapsed_seconds": 15.06162166595459}
+{"model": "flexsed", "dataset": "desed-public", "total": 692, "completed": 300, "status": "running", "pid": 4127769, "started": 1792130925.724526, "load_seconds": 5.434685707092285, "updated": 1792130941.542127, "elapsed_seconds": 15.817601203918457}
+{"model": "flexsed", "dataset": "desed-public", "total": 692, "completed": 325, "status": "running", "pid": 4127769, "started": 1792130925.724526, "load_seconds": 5.434685707092285, "updated": 1792130942.2815292, "elapsed_seconds": 16.557003498077393}
+{"model": "flexsed", "dataset": "desed-public", "total": 692, "completed": 350, "status": "running", "pid": 4127769, "started": 1792130925.724526, "load_seconds": 5.434685707092285, "updated": 1792130943.018577, "elapsed_seconds": 17.2940514087677}
+{"model": "flexsed", "dataset": "desed-public", "total": 692, "completed": 375, "status": "running", "pid": 4127769, "started": 1792130925.724526, "load_seconds": 5.434685707092285, "updated": 1792130943.7963846, "elapsed_seconds": 18.071858882904053}
+{"model": "flexsed", "dataset": "desed-public", "total": 692, "completed": 400, "status": "running", "pid": 4127769, "started": 1792130925.724526, "load_seconds": 5.434685707092285, "updated": 1792130944.5668736, "elapsed_seconds": 18.842347860336304}
+{"model": "flexsed", "dataset": "desed-public", "total": 692, "completed": 425, "status": "running", "pid": 4127769, "started": 1792130925.724526, "load_seconds": 5.434685707092285, "updated": 1792130945.3169286, "elapsed_seconds": 19.592402935028076}
+{"model": "flexsed", "dataset": "desed-public", "total": 692, "completed": 450, "status": "running", "pid": 4127769, "started": 1792130925.724526, "load_seconds": 5.434685707092285, "updated": 1792130946.1217813, "elapsed_seconds": 20.397255659103394}
+{"model": "flexsed", "dataset": "desed-public", "total": 692, "completed": 475, "status": "running", "pid": 4127769, "started": 1792130925.724526, "load_seconds": 5.434685707092285, "updated": 1792130946.8944712, "elapsed_seconds": 21.16994547843933}
+{"model": "flexsed", "dataset": "desed-public", "total": 692, "completed": 500, "status": "running", "pid": 4127769, "started": 1792130925.724526, "load_seconds": 5.434685707092285, "updated": 1792130947.6566505, "elapsed_seconds": 21.932124853134155}
+{"model": "flexsed", "dataset": "desed-public", "total": 692, "completed": 525, "status": "running", "pid": 4127769, "started": 1792130925.724526, "load_seconds": 5.434685707092285, "updated": 1792130948.4233341, "elapsed_seconds": 22.698808431625366}
+{"model": "flexsed", "dataset": "desed-public", "total": 692, "completed": 550, "status": "running", "pid": 4127769, "started": 1792130925.724526, "load_seconds": 5.434685707092285, "updated": 1792130949.1958416, "elapsed_seconds": 23.47131586074829}
+{"model": "flexsed", "dataset": "desed-public", "total": 692, "completed": 575, "status": "running", "pid": 4127769, "started": 1792130925.724526, "load_seconds": 5.434685707092285, "updated": 1792130949.9684627, "elapsed_seconds": 24.243937015533447}
+{"model": "flexsed", "dataset": "desed-public", "total": 692, "completed": 600, "status": "running", "pid": 4127769, "started": 1792130925.724526, "load_seconds": 5.434685707092285, "updated": 1792130950.8444896, "elapsed_seconds": 25.119963884353638}
+{"model": "flexsed", "dataset": "desed-public", "total": 692, "completed": 625, "status": "running", "pid": 4127769, "started": 1792130925.724526, "load_seconds": 5.434685707092285, "updated": 1792130951.6277978, "elapsed_seconds": 25.90327215194702}
+{"model": "flexsed", "dataset": "desed-public", "total": 692, "completed": 650, "status": "running", "pid": 4127769, "started": 1792130925.724526, "load_seconds": 5.434685707092285, "updated": 1792130952.4093344, "elapsed_seconds": 26.68480896949768}
+{"model": "flexsed", "dataset": "desed-public", "total": 692, "completed": 675, "status": "running", "pid": 4127769, "started": 1792130925.724526, "load_seconds": 5.434685707092285, "updated": 1792130953.1704452, "elapsed_seconds": 27.44591975212097}
+PSDS1 0.16053987751098525

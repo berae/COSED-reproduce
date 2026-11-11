@@ -1,0 +1,127 @@
+{
+  "clip_id": "Yx5cuQjOdM3E",
+  "labels": [
+    "a cat meows",
+    "a woman speaks",
+    "a young woman speaks"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Yx5cuQjOdM3E.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 14.330376863479614,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          0.45,
+          "a cat meows"
+        ],
+        [
+          1.67,
+          2.18,
+          "a cat meows"
+        ],
+        [
+          7.39,
+          8.0,
+          "a cat meows"
+        ],
+        [
+          8.48,
+          9.0,
+          "a cat meows"
+        ],
+        [
+          2.18,
+          4.5,
+          "a woman speaks"
+        ],
+        [
+          6.5,
+          7.1,
+          "a young woman speaks"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-9e4c0be69471b5e6",
+            "object": "chat.completion",
+            "created": 1792779563,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 0.450\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 1.670,\n      \"end\": 2.180\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 7.390,\n      \"end\": 8.000\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 8.480,\n      \"end\": 9.000\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 2.180,\n      \"end\": 4.500\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 6.500,\n      \"end\": 7.100\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 295,
+              "total_tokens": 513,
+              "completion_tokens": 218,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      0.45,
+      "a cat meows"
+    ],
+    [
+      1.67,
+      2.18,
+      "a cat meows"
+    ],
+    [
+      7.39,
+      8.0,
+      "a cat meows"
+    ],
+    [
+      8.48,
+      9.0,
+      "a cat meows"
+    ],
+    [
+      2.18,
+      4.5,
+      "a woman speaks"
+    ],
+    [
+      6.5,
+      7.1,
+      "a young woman speaks"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 14.330376863479614
+}

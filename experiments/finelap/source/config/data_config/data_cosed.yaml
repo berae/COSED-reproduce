@@ -1,0 +1,31 @@
+data_args:
+  basic_data_args:
+    sample_rate: 16000
+    max_length: 10
+    time_resolution: 0.15625
+    return_type: mel
+  train_data_args:
+    batch_size: 32
+    num_workers: 4
+    metadata_files:
+    - /work/zhanghc/Myllm/FineLAP/data/cosed/audioset_strong.jsonl
+    - /work/zhanghc/Myllm/FineLAP/data/cosed/finelap100k.jsonl
+    - /work/zhanghc/Myllm/FineLAP/data/cosed/audiocaps.jsonl
+    - /work/zhanghc/Myllm/FineLAP/data/cosed/audiocaps.jsonl
+    - /work/zhanghc/Myllm/FineLAP/data/cosed/tacos.jsonl
+    - /work/zhanghc/Myllm/FineLAP/data/cosed/tacos.jsonl
+    - /work/zhanghc/Myllm/FineLAP/data/cosed/tacos.jsonl
+    - /work/zhanghc/Myllm/FineLAP/data/cosed/tacos.jsonl
+    - /work/zhanghc/Myllm/FineLAP/data/cosed/tacos.jsonl
+    - /work/zhanghc/Myllm/FineLAP/data/cosed/clotho.jsonl
+    - /work/zhanghc/Myllm/FineLAP/data/cosed/clotho.jsonl
+    - /work/zhanghc/Myllm/FineLAP/data/cosed/clotho.jsonl
+    - /work/zhanghc/Myllm/FineLAP/data/cosed/clotho.jsonl
+    spec_aug: true
+    max_split_segments: 1
+    max_chosen_segments: 1
+    max_phrases: 20
+    random_crop: true
+    strict_audio: true
+    warn_unknown_phrases: false
+    audio_backend: soundfile

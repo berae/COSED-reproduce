@@ -1,0 +1,97 @@
+{
+  "clip_id": "Y0G-Qx3Gv01s",
+  "labels": [
+    "a guy talking",
+    "freaking out",
+    "a cat meowing"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y0G-Qx3Gv01s.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 7.639375,
+      "seconds": 7.717740058898926,
+      "status": "complete",
+      "events": [
+        [
+          0.845,
+          3.125,
+          "a guy talking"
+        ],
+        [
+          3.125,
+          5.125,
+          "freaking out"
+        ],
+        [
+          0.0,
+          1.125,
+          "a cat meowing"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-9e31c8c1f385578d",
+            "object": "chat.completion",
+            "created": 1792780127,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.845,\n      \"end\": 3.125\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 3.125,\n      \"end\": 5.125\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.0,\n      \"end\": 1.125\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 260,
+              "total_tokens": 374,
+              "completion_tokens": 114,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      1.125,
+      "a cat meowing"
+    ],
+    [
+      0.845,
+      3.125,
+      "a guy talking"
+    ],
+    [
+      3.125,
+      5.125,
+      "freaking out"
+    ]
+  ],
+  "duration": 7.639375,
+  "inference_seconds": 7.717740058898926
+}

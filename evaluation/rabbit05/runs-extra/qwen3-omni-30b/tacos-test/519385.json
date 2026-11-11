@@ -1,0 +1,410 @@
+{
+  "clip_id": "519385",
+  "labels": [
+    "Multiple dogs barking in the distance.",
+    "A dog barks once nearby.",
+    "A dog barks repeatedly nearby."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/519385.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 19.013399124145508,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          0.35,
+          "A dog barks once nearby."
+        ],
+        [
+          1.78,
+          2.14,
+          "A dog barks repeatedly nearby."
+        ],
+        [
+          2.96,
+          3.32,
+          "A dog barks repeatedly nearby."
+        ],
+        [
+          4.14,
+          4.5,
+          "A dog barks repeatedly nearby."
+        ],
+        [
+          5.32,
+          5.68,
+          "A dog barks repeatedly nearby."
+        ],
+        [
+          6.5,
+          6.86,
+          "A dog barks repeatedly nearby."
+        ],
+        [
+          7.68,
+          8.04,
+          "A dog barks repeatedly nearby."
+        ],
+        [
+          8.86,
+          9.22,
+          "A dog barks repeatedly nearby."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-98bd21e88e944199",
+            "object": "chat.completion",
+            "created": 1792829629,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 0.350\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 1.780,\n      \"end\": 2.140\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 2.960,\n      \"end\": 3.320\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 4.140,\n      \"end\": 4.500\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 5.320,\n      \"end\": 5.680\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 6.500,\n      \"end\": 6.860\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 7.680,\n      \"end\": 8.040\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 8.860,\n      \"end\": 9.220\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 304,
+              "total_tokens": 590,
+              "completion_tokens": 286,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 16.772446870803833,
+      "status": "complete",
+      "events": [
+        [
+          0.678,
+          1.038,
+          "A dog barks once nearby."
+        ],
+        [
+          2.048,
+          2.408,
+          "A dog barks once nearby."
+        ],
+        [
+          3.598,
+          4.718,
+          "A dog barks repeatedly nearby."
+        ],
+        [
+          5.278,
+          5.638,
+          "A dog barks once nearby."
+        ],
+        [
+          6.278,
+          6.638,
+          "A dog barks once nearby."
+        ],
+        [
+          7.998,
+          8.358,
+          "A dog barks once nearby."
+        ],
+        [
+          8.998,
+          9.998,
+          "A dog barks repeatedly nearby."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-9f6126da7fc8aa9f",
+            "object": "chat.completion",
+            "created": 1792829648,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 1,\n      \"start\": 0.678,\n      \"end\": 1.038\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 2.048,\n      \"end\": 2.408\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 3.598,\n      \"end\": 4.718\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 5.278,\n      \"end\": 5.638\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 6.278,\n      \"end\": 6.638\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 7.998,\n      \"end\": 8.358\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 8.998,\n      \"end\": 9.998\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 304,
+              "total_tokens": 556,
+              "completion_tokens": 252,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 10.0,
+      "seconds": 9.953409194946289,
+      "status": "complete",
+      "events": [
+        [
+          3.984,
+          9.754,
+          "Multiple dogs barking in the distance."
+        ],
+        [
+          0.0,
+          0.6,
+          "A dog barks once nearby."
+        ],
+        [
+          1.2,
+          1.8,
+          "A dog barks once nearby."
+        ],
+        [
+          2.984,
+          9.754,
+          "A dog barks repeatedly nearby."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b4d65d8478e3480d",
+            "object": "chat.completion",
+            "created": 1792829665,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 3.984,\n      \"end\": 9.754\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 0.600\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 1.200,\n      \"end\": 1.800\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 2.984,\n      \"end\": 9.754\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 304,
+              "total_tokens": 454,
+              "completion_tokens": 150,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 240000,
+      "start": 15.0,
+      "duration": 6.4575,
+      "seconds": 7.4434285163879395,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          6.457,
+          "Multiple dogs barking in the distance."
+        ],
+        [
+          3.089,
+          3.279,
+          "A dog barks once nearby."
+        ],
+        [
+          0.0,
+          6.457,
+          "A dog barks repeatedly nearby."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-ac9c3c141f94fed4",
+            "object": "chat.completion",
+            "created": 1792829675,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 6.457\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 3.089,\n      \"end\": 3.279\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.0,\n      \"end\": 6.457\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 256,
+              "total_tokens": 368,
+              "completion_tokens": 112,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      0.35,
+      "A dog barks once nearby."
+    ],
+    [
+      5.678,
+      6.038,
+      "A dog barks once nearby."
+    ],
+    [
+      7.048,
+      7.4079999999999995,
+      "A dog barks once nearby."
+    ],
+    [
+      10.0,
+      10.638,
+      "A dog barks once nearby."
+    ],
+    [
+      11.2,
+      11.8,
+      "A dog barks once nearby."
+    ],
+    [
+      12.998000000000001,
+      13.358,
+      "A dog barks once nearby."
+    ],
+    [
+      18.089,
+      18.279,
+      "A dog barks once nearby."
+    ],
+    [
+      1.78,
+      2.14,
+      "A dog barks repeatedly nearby."
+    ],
+    [
+      2.96,
+      3.32,
+      "A dog barks repeatedly nearby."
+    ],
+    [
+      4.14,
+      4.5,
+      "A dog barks repeatedly nearby."
+    ],
+    [
+      5.32,
+      5.68,
+      "A dog barks repeatedly nearby."
+    ],
+    [
+      6.5,
+      6.86,
+      "A dog barks repeatedly nearby."
+    ],
+    [
+      7.68,
+      8.04,
+      "A dog barks repeatedly nearby."
+    ],
+    [
+      8.597999999999999,
+      9.718,
+      "A dog barks repeatedly nearby."
+    ],
+    [
+      12.984,
+      21.457,
+      "A dog barks repeatedly nearby."
+    ],
+    [
+      13.984,
+      21.457,
+      "Multiple dogs barking in the distance."
+    ]
+  ],
+  "duration": 21.4575,
+  "inference_seconds": 53.18268370628357
+}

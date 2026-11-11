@@ -1,0 +1,116 @@
+{
+  "clip_id": "Y_SHrBNEes38",
+  "labels": [
+    "a small dog barks repeatedly",
+    "a person talks in the background"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y_SHrBNEes38.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 12.076265811920166,
+      "status": "complete",
+      "events": [
+        [
+          0.472,
+          1.352,
+          "a small dog barks repeatedly"
+        ],
+        [
+          1.982,
+          2.612,
+          "a small dog barks repeatedly"
+        ],
+        [
+          3.172,
+          3.802,
+          "a small dog barks repeatedly"
+        ],
+        [
+          5.572,
+          9.772,
+          "a small dog barks repeatedly"
+        ],
+        [
+          7.522,
+          9.272,
+          "a person talks in the background"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8bece9b3e5b8c0c0",
+            "object": "chat.completion",
+            "created": 1792782484,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.472,\n      \"end\": 1.352\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 1.982,\n      \"end\": 2.612\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 3.172,\n      \"end\": 3.802\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 5.572,\n      \"end\": 9.772\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 7.522,\n      \"end\": 9.272\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 293,
+              "total_tokens": 477,
+              "completion_tokens": 184,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      7.522,
+      9.272,
+      "a person talks in the background"
+    ],
+    [
+      0.472,
+      1.352,
+      "a small dog barks repeatedly"
+    ],
+    [
+      1.982,
+      2.612,
+      "a small dog barks repeatedly"
+    ],
+    [
+      3.172,
+      3.802,
+      "a small dog barks repeatedly"
+    ],
+    [
+      5.572,
+      9.772,
+      "a small dog barks repeatedly"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 12.076265811920166
+}

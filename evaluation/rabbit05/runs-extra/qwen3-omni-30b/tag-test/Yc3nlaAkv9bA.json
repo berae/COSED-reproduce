@@ -1,0 +1,97 @@
+{
+  "clip_id": "Yc3nlaAkv9bA",
+  "labels": [
+    "a man talking",
+    "goats baaing",
+    "a cow mooing"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Yc3nlaAkv9bA.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 9.7535,
+      "seconds": 7.202093601226807,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          3.68,
+          "a man talking"
+        ],
+        [
+          4.02,
+          5.02,
+          "goats baaing"
+        ],
+        [
+          6.28,
+          7.12,
+          "a cow mooing"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b5f9ee631e84048a",
+            "object": "chat.completion",
+            "created": 1792782540,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 3.68\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 4.02,\n      \"end\": 5.02\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 6.28,\n      \"end\": 7.12\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 290,
+              "total_tokens": 399,
+              "completion_tokens": 109,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      6.28,
+      7.12,
+      "a cow mooing"
+    ],
+    [
+      0.0,
+      3.68,
+      "a man talking"
+    ],
+    [
+      4.02,
+      5.02,
+      "goats baaing"
+    ]
+  ],
+  "duration": 9.7535,
+  "inference_seconds": 7.202093601226807
+}

@@ -1,0 +1,94 @@
+{
+  "clip_id": "oCajJ7h0Ze8_34_44",
+  "labels": [
+    "Alarm_bell_ringing",
+    "Blender",
+    "Cat",
+    "Dishes",
+    "Dog",
+    "Electric_shaver_toothbrush",
+    "Frying",
+    "Running_water",
+    "Speech",
+    "Vacuum_cleaner"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/desed/data/4560759/audio/eval/public/oCajJ7h0Ze8_34_44.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 5.276507377624512,
+      "status": "complete",
+      "events": [
+        [
+          2.81,
+          3.81,
+          "Dog"
+        ],
+        [
+          7.91,
+          8.21,
+          "Dog"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-ae4ae4dea4602b06",
+            "object": "chat.completion",
+            "created": 1792740792,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 4,\n      \"start\": 2.81,\n      \"end\": 3.81\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 7.91,\n      \"end\": 8.21\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 329,
+              "total_tokens": 407,
+              "completion_tokens": 78,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      2.81,
+      3.81,
+      "Dog"
+    ],
+    [
+      7.91,
+      8.21,
+      "Dog"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 5.276507377624512
+}

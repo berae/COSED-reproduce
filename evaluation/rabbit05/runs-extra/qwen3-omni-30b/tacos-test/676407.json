@@ -1,0 +1,229 @@
+{
+  "clip_id": "676407",
+  "labels": [
+    "A cow moos.",
+    "A dog barks.",
+    "A dog barks once."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/676407.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 3.253713607788086,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          9.578,
+          "A dog barks."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-83ebc47bf5ba2cbf",
+            "object": "chat.completion",
+            "created": 1792808618,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 9.578\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 298,
+              "total_tokens": 346,
+              "completion_tokens": 48,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 5.292532920837402,
+      "status": "complete",
+      "events": [
+        [
+          6.879,
+          7.959,
+          "A cow moos."
+        ],
+        [
+          0.0,
+          10.0,
+          "A dog barks."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a86558272fea3647",
+            "object": "chat.completion",
+            "created": 1792808622,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 6.879,\n      \"end\": 7.959\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.0,\n      \"end\": 10.0\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 298,
+              "total_tokens": 377,
+              "completion_tokens": 79,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 8.4813125,
+      "seconds": 12.078933715820312,
+      "status": "complete",
+      "events": [
+        [
+          1.759,
+          3.069,
+          "A cow moos."
+        ],
+        [
+          0.0,
+          1.589,
+          "A dog barks."
+        ],
+        [
+          3.379,
+          5.379,
+          "A dog barks."
+        ],
+        [
+          5.759,
+          6.379,
+          "A dog barks."
+        ],
+        [
+          7.159,
+          8.481,
+          "A dog barks."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a25cd0841c7df3c5",
+            "object": "chat.completion",
+            "created": 1792808627,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 1.759,\n      \"end\": 3.069\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.0,\n      \"end\": 1.589\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 3.379,\n      \"end\": 5.379\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 5.759,\n      \"end\": 6.379\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 7.159,\n      \"end\": 8.481\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 277,
+              "total_tokens": 459,
+              "completion_tokens": 182,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      11.759,
+      13.068999999999999,
+      "A cow moos."
+    ],
+    [
+      0.0,
+      15.379,
+      "A dog barks."
+    ],
+    [
+      15.759,
+      16.378999999999998,
+      "A dog barks."
+    ],
+    [
+      17.159,
+      18.481,
+      "A dog barks."
+    ]
+  ],
+  "duration": 18.4813125,
+  "inference_seconds": 20.6251802444458
+}

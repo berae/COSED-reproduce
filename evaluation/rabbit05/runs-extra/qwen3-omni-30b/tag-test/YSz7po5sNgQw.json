@@ -1,0 +1,117 @@
+{
+  "clip_id": "YSz7po5sNgQw",
+  "labels": [
+    "a small dog howls",
+    "a woman speaks",
+    "a man speaks"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/YSz7po5sNgQw.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 12.121669054031372,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          2.358,
+          "a small dog howls"
+        ],
+        [
+          2.478,
+          4.698,
+          "a woman speaks"
+        ],
+        [
+          5.558,
+          7.158,
+          "a small dog howls"
+        ],
+        [
+          7.158,
+          8.758,
+          "a woman speaks"
+        ],
+        [
+          8.758,
+          9.558,
+          "a man speaks"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a3fbe71577f5a235",
+            "object": "chat.completion",
+            "created": 1792782392,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 2.358\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 2.478,\n      \"end\": 4.698\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 5.558,\n      \"end\": 7.158\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 7.158,\n      \"end\": 8.758\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 8.758,\n      \"end\": 9.558\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 295,
+              "total_tokens": 479,
+              "completion_tokens": 184,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      8.758,
+      9.558,
+      "a man speaks"
+    ],
+    [
+      0.0,
+      2.358,
+      "a small dog howls"
+    ],
+    [
+      5.558,
+      7.158,
+      "a small dog howls"
+    ],
+    [
+      2.478,
+      4.698,
+      "a woman speaks"
+    ],
+    [
+      7.158,
+      8.758,
+      "a woman speaks"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 12.121669054031372
+}

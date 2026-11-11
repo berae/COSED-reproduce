@@ -1,0 +1,96 @@
+{
+  "clip_id": "Y1F7JD5A9iTI",
+  "labels": [
+    "someone is speaking",
+    "a dog barks in the background"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y1F7JD5A9iTI.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 6.9215967655181885,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          4.2,
+          "someone is speaking"
+        ],
+        [
+          3.8,
+          4.5,
+          "a dog barks in the background"
+        ],
+        [
+          6.7,
+          7.4,
+          "a dog barks in the background"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b6857d9364d8073f",
+            "object": "chat.completion",
+            "created": 1792780343,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 4.2\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 3.8,\n      \"end\": 4.5\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 6.7,\n      \"end\": 7.4\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 291,
+              "total_tokens": 395,
+              "completion_tokens": 104,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      3.8,
+      4.5,
+      "a dog barks in the background"
+    ],
+    [
+      6.7,
+      7.4,
+      "a dog barks in the background"
+    ],
+    [
+      0.0,
+      4.2,
+      "someone is speaking"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 6.9215967655181885
+}

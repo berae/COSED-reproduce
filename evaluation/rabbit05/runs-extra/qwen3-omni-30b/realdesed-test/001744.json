@@ -1,0 +1,496 @@
+{
+  "clip_id": "001744",
+  "labels": [
+    "bell_ringing",
+    "coffee_machine",
+    "cutlery_dishes",
+    "door_open_close",
+    "footsteps",
+    "keyboard_typing",
+    "keychain",
+    "light_switch",
+    "microwave",
+    "phone_ringing",
+    "running_water",
+    "toilet_flushing",
+    "vacuum_cleaner",
+    "wardrobe_drawer_open_close",
+    "window_open_close"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/realdesed/data/20056072/test/audio/001744.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 3.1565537452697754,
+      "status": "complete",
+      "events": [
+        [
+          2.58,
+          9.28,
+          "running_water"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a36a1e6655d34996",
+            "object": "chat.completion",
+            "created": 1792750238,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 10,\n      \"start\": 2.58,\n      \"end\": 9.28\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 365,
+              "total_tokens": 412,
+              "completion_tokens": 47,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 5.646361827850342,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          4.5,
+          "running_water"
+        ],
+        [
+          8.0,
+          9.0,
+          "keychain"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-812de9015350c520",
+            "object": "chat.completion",
+            "created": 1792750241,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 10,\n      \"start\": 0.000,\n      \"end\": 4.500\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 8.000,\n      \"end\": 9.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 365,
+              "total_tokens": 448,
+              "completion_tokens": 83,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 8.708,
+      "seconds": 63.199758768081665,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          0.22,
+          "cutlery_dishes"
+        ],
+        [
+          0.32,
+          0.52,
+          "cutlery_dishes"
+        ],
+        [
+          0.62,
+          0.82,
+          "cutlery_dishes"
+        ],
+        [
+          0.92,
+          1.12,
+          "cutlery_dishes"
+        ],
+        [
+          1.22,
+          1.42,
+          "cutlery_dishes"
+        ],
+        [
+          1.52,
+          1.72,
+          "cutlery_dishes"
+        ],
+        [
+          1.82,
+          2.02,
+          "cutlery_dishes"
+        ],
+        [
+          2.12,
+          2.32,
+          "cutlery_dishes"
+        ],
+        [
+          2.42,
+          2.62,
+          "cutlery_dishes"
+        ],
+        [
+          2.72,
+          2.92,
+          "cutlery_dishes"
+        ],
+        [
+          3.02,
+          3.22,
+          "cutlery_dishes"
+        ],
+        [
+          3.32,
+          3.52,
+          "cutlery_dishes"
+        ],
+        [
+          3.62,
+          3.82,
+          "cutlery_dishes"
+        ],
+        [
+          3.92,
+          4.12,
+          "cutlery_dishes"
+        ],
+        [
+          4.22,
+          4.42,
+          "cutlery_dishes"
+        ],
+        [
+          4.52,
+          4.72,
+          "cutlery_dishes"
+        ],
+        [
+          4.82,
+          5.02,
+          "cutlery_dishes"
+        ],
+        [
+          5.12,
+          5.32,
+          "cutlery_dishes"
+        ],
+        [
+          5.42,
+          5.62,
+          "cutlery_dishes"
+        ],
+        [
+          5.72,
+          5.92,
+          "cutlery_dishes"
+        ],
+        [
+          6.02,
+          6.22,
+          "cutlery_dishes"
+        ],
+        [
+          6.32,
+          6.52,
+          "cutlery_dishes"
+        ],
+        [
+          6.62,
+          6.82,
+          "cutlery_dishes"
+        ],
+        [
+          6.92,
+          7.12,
+          "cutlery_dishes"
+        ],
+        [
+          7.22,
+          7.42,
+          "cutlery_dishes"
+        ],
+        [
+          7.52,
+          7.72,
+          "cutlery_dishes"
+        ],
+        [
+          7.82,
+          8.02,
+          "cutlery_dishes"
+        ],
+        [
+          8.12,
+          8.32,
+          "cutlery_dishes"
+        ],
+        [
+          8.42,
+          8.62,
+          "cutlery_dishes"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a157e5185d1117e1",
+            "object": "chat.completion",
+            "created": 1792750247,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 2,\n      \"start\": 0.0,\n      \"end\": 0.22\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.32,\n      \"end\": 0.52\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.62,\n      \"end\": 0.82\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.92,\n      \"end\": 1.12\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 1.22,\n      \"end\": 1.42\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 1.52,\n      \"end\": 1.72\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 1.82,\n      \"end\": 2.02\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 2.12,\n      \"end\": 2.32\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 2.42,\n      \"end\": 2.62\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 2.72,\n      \"end\": 2.92\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 3.02,\n      \"end\": 3.22\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 3.32,\n      \"end\": 3.52\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 3.62,\n      \"end\": 3.82\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 3.92,\n      \"end\": 4.12\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 4.22,\n      \"end\": 4.42\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 4.52,\n      \"end\": 4.72\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 4.82,\n      \"end\": 5.02\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 5.12,\n      \"end\": 5.32\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 5.42,\n      \"end\": 5.62\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 5.72,\n      \"end\": 5.92\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 6.02,\n      \"end\": 6.22\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 6.32,\n      \"end\": 6.52\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 6.62,\n      \"end\": 6.82\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 6.92,\n      \"end\": 7.12\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 7.22,\n      \"end\": 7.42\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 7.52,\n      \"end\": 7.72\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 7.82,\n      \"end\": 8.02\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 8.12,\n      \"end\": 8.32\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 8.42,\n      \"end\": 8.62\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 346,
+              "total_tokens": 1287,
+              "completion_tokens": 941,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      10.0,
+      10.22,
+      "cutlery_dishes"
+    ],
+    [
+      10.32,
+      10.52,
+      "cutlery_dishes"
+    ],
+    [
+      10.62,
+      10.82,
+      "cutlery_dishes"
+    ],
+    [
+      10.92,
+      11.120000000000001,
+      "cutlery_dishes"
+    ],
+    [
+      11.22,
+      11.42,
+      "cutlery_dishes"
+    ],
+    [
+      11.52,
+      11.72,
+      "cutlery_dishes"
+    ],
+    [
+      11.82,
+      12.02,
+      "cutlery_dishes"
+    ],
+    [
+      12.120000000000001,
+      12.32,
+      "cutlery_dishes"
+    ],
+    [
+      12.42,
+      12.620000000000001,
+      "cutlery_dishes"
+    ],
+    [
+      12.72,
+      12.92,
+      "cutlery_dishes"
+    ],
+    [
+      13.02,
+      13.22,
+      "cutlery_dishes"
+    ],
+    [
+      13.32,
+      13.52,
+      "cutlery_dishes"
+    ],
+    [
+      13.620000000000001,
+      13.82,
+      "cutlery_dishes"
+    ],
+    [
+      13.92,
+      14.120000000000001,
+      "cutlery_dishes"
+    ],
+    [
+      14.219999999999999,
+      14.42,
+      "cutlery_dishes"
+    ],
+    [
+      14.52,
+      14.719999999999999,
+      "cutlery_dishes"
+    ],
+    [
+      14.82,
+      15.02,
+      "cutlery_dishes"
+    ],
+    [
+      15.120000000000001,
+      15.32,
+      "cutlery_dishes"
+    ],
+    [
+      15.42,
+      15.620000000000001,
+      "cutlery_dishes"
+    ],
+    [
+      15.719999999999999,
+      15.92,
+      "cutlery_dishes"
+    ],
+    [
+      16.02,
+      16.22,
+      "cutlery_dishes"
+    ],
+    [
+      16.32,
+      16.52,
+      "cutlery_dishes"
+    ],
+    [
+      16.62,
+      16.82,
+      "cutlery_dishes"
+    ],
+    [
+      16.92,
+      17.12,
+      "cutlery_dishes"
+    ],
+    [
+      17.22,
+      17.42,
+      "cutlery_dishes"
+    ],
+    [
+      17.52,
+      17.72,
+      "cutlery_dishes"
+    ],
+    [
+      17.82,
+      18.02,
+      "cutlery_dishes"
+    ],
+    [
+      18.119999999999997,
+      18.32,
+      "cutlery_dishes"
+    ],
+    [
+      18.42,
+      18.619999999999997,
+      "cutlery_dishes"
+    ],
+    [
+      13.0,
+      14.0,
+      "keychain"
+    ],
+    [
+      2.58,
+      9.5,
+      "running_water"
+    ]
+  ],
+  "duration": 18.708,
+  "inference_seconds": 72.00267434120178
+}

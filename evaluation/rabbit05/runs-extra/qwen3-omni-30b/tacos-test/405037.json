@@ -1,0 +1,209 @@
+{
+  "clip_id": "405037",
+  "labels": [
+    "A motor vehicle passes by in heavy traffic.",
+    "Ambient road noise with distant cars as a motorcycle or motorized rickshaw passes by, its engine sound growing louder then fading away.",
+    "A car horn honks sharply and briefly once."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/405037.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 7.816266775131226,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          9.783,
+          "A motor vehicle passes by in heavy traffic."
+        ],
+        [
+          0.0,
+          9.783,
+          "Ambient road noise with distant cars as a motorcycle or motorized rickshaw passes by, its engine sound growing louder then fading away."
+        ],
+        [
+          3.145,
+          3.605,
+          "A car horn honks sharply and briefly once."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-9758ca82e880bc4d",
+            "object": "chat.completion",
+            "created": 1792805520,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 9.783\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 9.783\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 3.145,\n      \"end\": 3.605\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 328,
+              "total_tokens": 444,
+              "completion_tokens": 116,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 3.365654230117798,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          10.0,
+          "Ambient road noise with distant cars as a motorcycle or motorized rickshaw passes by, its engine sound growing louder then fading away."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-ad8d62da330c1bed",
+            "object": "chat.completion",
+            "created": 1792805528,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 328,
+              "total_tokens": 377,
+              "completion_tokens": 49,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 9.4551875,
+      "seconds": 3.1474390029907227,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          9.455,
+          "Ambient road noise with distant cars as a motorcycle or motorized rickshaw passes by, its engine sound growing louder then fading away."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-953e304a8c5652c7",
+            "object": "chat.completion",
+            "created": 1792805531,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 1,\n      \"start\": 0.0,\n      \"end\": 9.455\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 319,
+              "total_tokens": 365,
+              "completion_tokens": 46,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      3.145,
+      3.605,
+      "A car horn honks sharply and briefly once."
+    ],
+    [
+      0.0,
+      9.783,
+      "A motor vehicle passes by in heavy traffic."
+    ],
+    [
+      0.0,
+      19.455,
+      "Ambient road noise with distant cars as a motorcycle or motorized rickshaw passes by, its engine sound growing louder then fading away."
+    ]
+  ],
+  "duration": 19.4551875,
+  "inference_seconds": 14.329360008239746
+}

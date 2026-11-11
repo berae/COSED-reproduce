@@ -1,0 +1,229 @@
+{
+  "clip_id": "675263",
+  "labels": [
+    "A vehicle horn sounds loudly with an intense pitch that rises then gradually fades away.",
+    "A vehicle engine gradually increases in volume as it approaches.",
+    "A vehicle's engine sound fades away gradually."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/675263.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 7.9116058349609375,
+      "status": "complete",
+      "events": [
+        [
+          5.489,
+          9.739,
+          "A vehicle horn sounds loudly with an intense pitch that rises then gradually fades away."
+        ],
+        [
+          0.0,
+          5.489,
+          "A vehicle engine gradually increases in volume as it approaches."
+        ],
+        [
+          9.739,
+          10.0,
+          "A vehicle's engine sound fades away gradually."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8524ed822ea7049b",
+            "object": "chat.completion",
+            "created": 1792795821,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 5.489,\n      \"end\": 9.739\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.0,\n      \"end\": 5.489\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 9.739,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 318,
+              "total_tokens": 433,
+              "completion_tokens": 115,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 8.070002794265747,
+      "status": "complete",
+      "events": [
+        [
+          0.859,
+          5.379,
+          "A vehicle horn sounds loudly with an intense pitch that rises then gradually fades away."
+        ],
+        [
+          0.0,
+          10.0,
+          "A vehicle engine gradually increases in volume as it approaches."
+        ],
+        [
+          0.0,
+          10.0,
+          "A vehicle's engine sound fades away gradually."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-973c8db079de69c0",
+            "object": "chat.completion",
+            "created": 1792795829,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.859,\n      \"end\": 5.379\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 318,
+              "total_tokens": 436,
+              "completion_tokens": 118,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 6.4253125,
+      "seconds": 7.390604257583618,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          1.375,
+          "A vehicle horn sounds loudly with an intense pitch that rises then gradually fades away."
+        ],
+        [
+          0.0,
+          6.425,
+          "A vehicle engine gradually increases in volume as it approaches."
+        ],
+        [
+          0.0,
+          6.425,
+          "A vehicle's engine sound fades away gradually."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-9159e2c7f37ac1b6",
+            "object": "chat.completion",
+            "created": 1792795837,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 1.375\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.0,\n      \"end\": 6.425\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.0,\n      \"end\": 6.425\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 270,
+              "total_tokens": 380,
+              "completion_tokens": 110,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      16.425,
+      "A vehicle engine gradually increases in volume as it approaches."
+    ],
+    [
+      5.489,
+      11.375,
+      "A vehicle horn sounds loudly with an intense pitch that rises then gradually fades away."
+    ],
+    [
+      5.0,
+      16.425,
+      "A vehicle's engine sound fades away gradually."
+    ]
+  ],
+  "duration": 16.4253125,
+  "inference_seconds": 23.372212886810303
+}

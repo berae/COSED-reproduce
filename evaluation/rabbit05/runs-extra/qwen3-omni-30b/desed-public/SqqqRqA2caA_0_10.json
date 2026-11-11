@@ -1,0 +1,174 @@
+{
+  "clip_id": "SqqqRqA2caA_0_10",
+  "labels": [
+    "Alarm_bell_ringing",
+    "Blender",
+    "Cat",
+    "Dishes",
+    "Dog",
+    "Electric_shaver_toothbrush",
+    "Frying",
+    "Running_water",
+    "Speech",
+    "Vacuum_cleaner"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/desed/data/4560759/audio/eval/public/SqqqRqA2caA_0_10.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 22.63131356239319,
+      "status": "complete",
+      "events": [
+        [
+          0.97,
+          1.11,
+          "Dog"
+        ],
+        [
+          1.41,
+          1.55,
+          "Dog"
+        ],
+        [
+          1.87,
+          2.01,
+          "Dog"
+        ],
+        [
+          2.27,
+          5.22,
+          "Running_water"
+        ],
+        [
+          5.87,
+          6.01,
+          "Dog"
+        ],
+        [
+          6.97,
+          7.11,
+          "Dog"
+        ],
+        [
+          7.37,
+          7.51,
+          "Dog"
+        ],
+        [
+          7.77,
+          7.91,
+          "Dog"
+        ],
+        [
+          8.17,
+          8.31,
+          "Dog"
+        ],
+        [
+          8.57,
+          8.71,
+          "Dog"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8c8901f2dfe613c4",
+            "object": "chat.completion",
+            "created": 1792739538,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 4,\n      \"start\": 0.97,\n      \"end\": 1.11\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 1.41,\n      \"end\": 1.55\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 1.87,\n      \"end\": 2.01\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 2.27,\n      \"end\": 5.22\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 5.87,\n      \"end\": 6.01\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 6.97,\n      \"end\": 7.11\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 7.37,\n      \"end\": 7.51\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 7.77,\n      \"end\": 7.91\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 8.17,\n      \"end\": 8.31\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 8.57,\n      \"end\": 8.71\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 329,
+              "total_tokens": 663,
+              "completion_tokens": 334,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.97,
+      1.11,
+      "Dog"
+    ],
+    [
+      1.41,
+      1.55,
+      "Dog"
+    ],
+    [
+      1.87,
+      2.01,
+      "Dog"
+    ],
+    [
+      5.87,
+      6.01,
+      "Dog"
+    ],
+    [
+      6.97,
+      7.11,
+      "Dog"
+    ],
+    [
+      7.37,
+      7.51,
+      "Dog"
+    ],
+    [
+      7.77,
+      7.91,
+      "Dog"
+    ],
+    [
+      8.17,
+      8.31,
+      "Dog"
+    ],
+    [
+      8.57,
+      8.71,
+      "Dog"
+    ],
+    [
+      2.27,
+      5.22,
+      "Running_water"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 22.63131356239319
+}

@@ -1,0 +1,104 @@
+{
+  "clip_id": "y06xeitDfcs_0_10",
+  "labels": [
+    "Alarm_bell_ringing",
+    "Blender",
+    "Cat",
+    "Dishes",
+    "Dog",
+    "Electric_shaver_toothbrush",
+    "Frying",
+    "Running_water",
+    "Speech",
+    "Vacuum_cleaner"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/desed/data/4560759/audio/eval/public/y06xeitDfcs_0_10.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 7.8878374099731445,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          0.5,
+          "Cat"
+        ],
+        [
+          1.8,
+          2.5,
+          "Cat"
+        ],
+        [
+          3.9,
+          4.7,
+          "Cat"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-88ddbc9875c384d4",
+            "object": "chat.completion",
+            "created": 1792741457,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 0.500\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 1.800,\n      \"end\": 2.500\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 3.900,\n      \"end\": 4.700\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 329,
+              "total_tokens": 445,
+              "completion_tokens": 116,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      0.5,
+      "Cat"
+    ],
+    [
+      1.8,
+      2.5,
+      "Cat"
+    ],
+    [
+      3.9,
+      4.7,
+      "Cat"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 7.8878374099731445
+}

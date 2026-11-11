@@ -1,0 +1,393 @@
+{
+  "clip_id": "159989",
+  "labels": [
+    "A vehicle compartment closes with a solid thud.",
+    "Wet footsteps approaching.",
+    "A light, quiet chuckle.",
+    "Wet footsteps.",
+    "Ambient traffic noise with distant voices in the background."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/159989.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 10.019560813903809,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          0.589,
+          "A vehicle compartment closes with a solid thud."
+        ],
+        [
+          3.769,
+          4.219,
+          "Wet footsteps approaching."
+        ],
+        [
+          4.979,
+          5.279,
+          "Wet footsteps."
+        ],
+        [
+          0.0,
+          10.0,
+          "Ambient traffic noise with distant voices in the background."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-99ece95fc7ba8260",
+            "object": "chat.completion",
+            "created": 1792834026,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 0.589\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 3.769,\n      \"end\": 4.219\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 4.979,\n      \"end\": 5.279\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 320,
+              "total_tokens": 471,
+              "completion_tokens": 151,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 3.3021280765533447,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          10.0,
+          "Ambient traffic noise with distant voices in the background."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-828ab91e5b492706",
+            "object": "chat.completion",
+            "created": 1792834036,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 4,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 320,
+              "total_tokens": 369,
+              "completion_tokens": 49,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 10.0,
+      "seconds": 5.524446725845337,
+      "status": "complete",
+      "events": [
+        [
+          7.689,
+          8.159,
+          "A vehicle compartment closes with a solid thud."
+        ],
+        [
+          0.0,
+          10.0,
+          "Ambient traffic noise with distant voices in the background."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-948cdf9ba61bd42f",
+            "object": "chat.completion",
+            "created": 1792834039,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 7.689,\n      \"end\": 8.159\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 320,
+              "total_tokens": 403,
+              "completion_tokens": 83,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 240000,
+      "start": 15.0,
+      "duration": 10.0,
+      "seconds": 9.979413032531738,
+      "status": "complete",
+      "events": [
+        [
+          5.978,
+          6.478,
+          "A vehicle compartment closes with a solid thud."
+        ],
+        [
+          6.878,
+          7.278,
+          "Wet footsteps approaching."
+        ],
+        [
+          7.778,
+          8.178,
+          "Wet footsteps."
+        ],
+        [
+          0.0,
+          10.0,
+          "Ambient traffic noise with distant voices in the background."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b4dee460db262075",
+            "object": "chat.completion",
+            "created": 1792834044,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 5.978,\n      \"end\": 6.478\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 6.878,\n      \"end\": 7.278\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 7.778,\n      \"end\": 8.178\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 320,
+              "total_tokens": 471,
+              "completion_tokens": 151,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 320000,
+      "start": 20.0,
+      "duration": 6.3996875,
+      "seconds": 9.793465375900269,
+      "status": "complete",
+      "events": [
+        [
+          1.358,
+          1.798,
+          "A vehicle compartment closes with a solid thud."
+        ],
+        [
+          2.178,
+          2.578,
+          "Wet footsteps approaching."
+        ],
+        [
+          2.178,
+          2.578,
+          "Wet footsteps."
+        ],
+        [
+          0.0,
+          6.3996875,
+          "Ambient traffic noise with distant voices in the background."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b786517530947108",
+            "object": "chat.completion",
+            "created": 1792834054,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 1.358,\n      \"end\": 1.798\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 2.178,\n      \"end\": 2.578\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 2.178,\n      \"end\": 2.578\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 0.0,\n      \"end\": 6.400\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 271,
+              "total_tokens": 419,
+              "completion_tokens": 148,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      0.589,
+      "A vehicle compartment closes with a solid thud."
+    ],
+    [
+      17.689,
+      18.159,
+      "A vehicle compartment closes with a solid thud."
+    ],
+    [
+      20.978,
+      21.798000000000002,
+      "A vehicle compartment closes with a solid thud."
+    ],
+    [
+      0.0,
+      26.3996875,
+      "Ambient traffic noise with distant voices in the background."
+    ],
+    [
+      3.769,
+      4.219,
+      "Wet footsteps approaching."
+    ],
+    [
+      21.878,
+      22.578,
+      "Wet footsteps approaching."
+    ],
+    [
+      4.979,
+      5.279,
+      "Wet footsteps."
+    ],
+    [
+      22.178,
+      22.578,
+      "Wet footsteps."
+    ],
+    [
+      22.778,
+      23.178,
+      "Wet footsteps."
+    ]
+  ],
+  "duration": 26.3996875,
+  "inference_seconds": 38.6190140247345
+}

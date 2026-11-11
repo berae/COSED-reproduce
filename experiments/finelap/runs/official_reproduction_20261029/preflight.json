@@ -1,0 +1,116 @@
+{
+  "status": "preparing_not_started",
+  "source_commit": "ad82bc1e242de4f56b80cf36f6d9f3009bb96c7b",
+  "metadata": [
+    {
+      "config_path": "./data/AudioSet_SL/finelap_metadata_em_filtered.jsonl",
+      "path": "/work/zhanghc/Myllm/FineLAP/data/AudioSet_SL/finelap_metadata_em_filtered.jsonl",
+      "exists": false
+    },
+    {
+      "config_path": "./data/DESED/Meta_FineLAP/desed_strong_em.jsonl",
+      "path": "/work/zhanghc/Myllm/FineLAP/data/DESED/Meta_FineLAP/desed_strong_em.jsonl",
+      "exists": false
+    },
+    {
+      "config_path": "./data/AudioCaps/Meta_FineLAP/train_em.jsonl",
+      "path": "/work/zhanghc/Myllm/FineLAP/data/AudioCaps/Meta_FineLAP/train_em.jsonl",
+      "exists": false
+    },
+    {
+      "config_path": "./data/Clotho/Meta_FineLAP/train_em_5.jsonl",
+      "path": "/work/zhanghc/Myllm/FineLAP/data/Clotho/Meta_FineLAP/train_em_5.jsonl",
+      "exists": false
+    },
+    {
+      "config_path": "./data/WavCaps/Meta_FineLAP/FreeSound_em.jsonl",
+      "path": "/work/zhanghc/Myllm/FineLAP/data/WavCaps/Meta_FineLAP/FreeSound_em.jsonl",
+      "exists": false
+    },
+    {
+      "config_path": "./data/WavCaps/Meta_FineLAP/BBC_Sound_Effects_em.jsonl",
+      "path": "/work/zhanghc/Myllm/FineLAP/data/WavCaps/Meta_FineLAP/BBC_Sound_Effects_em.jsonl",
+      "exists": false
+    },
+    {
+      "config_path": "./data/WavCaps/Meta_FineLAP/SoundBible_em.jsonl",
+      "path": "/work/zhanghc/Myllm/FineLAP/data/WavCaps/Meta_FineLAP/SoundBible_em.jsonl",
+      "exists": false
+    },
+    {
+      "config_path": "../../data/FSD50K/clips/dev_simulated_sed_data/sed_metadata.jsonl",
+      "path": "/work/zhanghc/data/FSD50K/clips/dev_simulated_sed_data/sed_metadata.jsonl",
+      "exists": false
+    },
+    {
+      "config_path": "./data/AudioSet/unbal_train_em_filtered.jsonl",
+      "path": "/work/zhanghc/Myllm/FineLAP/data/AudioSet/unbal_train_em_filtered.jsonl",
+      "exists": false
+    },
+    {
+      "config_path": "./data/UrbanSED/urbansed_train.jsonl",
+      "path": "/work/zhanghc/Myllm/FineLAP/data/UrbanSED/urbansed_train.jsonl",
+      "exists": false
+    }
+  ],
+  "dependencies": {
+    "torch": {
+      "ok": true,
+      "version": "2.4.1+cu121"
+    },
+    "torchaudio": {
+      "ok": true,
+      "version": "2.4.1+cu121"
+    },
+    "fairseq": {
+      "ok": true,
+      "version": "unknown"
+    },
+    "transformers": {
+      "ok": true,
+      "version": "4.57.6"
+    },
+    "sentence_transformers": {
+      "ok": true,
+      "version": "5.1.2"
+    },
+    "torchlibrosa": {
+      "ok": true,
+      "version": "0.1.0"
+    },
+    "sed_scores_eval": {
+      "ok": true,
+      "version": "unknown"
+    },
+    "psds_eval": {
+      "ok": true,
+      "version": "0.5.3"
+    },
+    "wandb": {
+      "ok": true,
+      "version": "0.26.1"
+    },
+    "h5py": {
+      "ok": true,
+      "version": "3.14.0"
+    },
+    "pandas": {
+      "ok": true,
+      "version": "2.3.3"
+    },
+    "pyarrow": {
+      "ok": true,
+      "version": "21.0.0"
+    },
+    "ipdb": {
+      "ok": true,
+      "version": "unknown"
+    }
+  },
+  "audioset_root": "/work/zhangyu/AED/audioset_tagging_cnn/datasets/audios",
+  "audioset_top_level_entries": {
+    "balanced_train_segments": 20550,
+    "unbalanced_train_segments": 42,
+    "eval_segments": 18887
+  }
+}

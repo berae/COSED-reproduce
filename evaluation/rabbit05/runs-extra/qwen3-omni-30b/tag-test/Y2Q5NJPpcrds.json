@@ -1,0 +1,126 @@
+{
+  "clip_id": "Y2Q5NJPpcrds",
+  "labels": [
+    "a small dog growls",
+    "barks ferociously"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y2Q5NJPpcrds.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 9.235375,
+      "seconds": 14.20859146118164,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          9.235,
+          "a small dog growls"
+        ],
+        [
+          1.178,
+          1.468,
+          "barks ferociously"
+        ],
+        [
+          2.028,
+          2.318,
+          "barks ferociously"
+        ],
+        [
+          3.358,
+          3.648,
+          "barks ferociously"
+        ],
+        [
+          4.198,
+          4.488,
+          "barks ferociously"
+        ],
+        [
+          6.178,
+          6.468,
+          "barks ferociously"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a3b1be205ebc86ef",
+            "object": "chat.completion",
+            "created": 1792780630,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 9.235\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 1.178,\n      \"end\": 1.468\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 2.028,\n      \"end\": 2.318\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 3.358,\n      \"end\": 3.648\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 4.198,\n      \"end\": 4.488\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 6.178,\n      \"end\": 6.468\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 279,
+              "total_tokens": 495,
+              "completion_tokens": 216,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      9.235,
+      "a small dog growls"
+    ],
+    [
+      1.178,
+      1.468,
+      "barks ferociously"
+    ],
+    [
+      2.028,
+      2.318,
+      "barks ferociously"
+    ],
+    [
+      3.358,
+      3.648,
+      "barks ferociously"
+    ],
+    [
+      4.198,
+      4.488,
+      "barks ferociously"
+    ],
+    [
+      6.178,
+      6.468,
+      "barks ferociously"
+    ]
+  ],
+  "duration": 9.235375,
+  "inference_seconds": 14.20859146118164
+}

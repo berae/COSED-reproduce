@@ -1,0 +1,213 @@
+{
+  "clip_id": "691533",
+  "labels": [
+    "A car is driving by.",
+    "Rain falling loudly on the road."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/691533.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 5.596398115158081,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          10.0,
+          "A car is driving by."
+        ],
+        [
+          0.0,
+          10.0,
+          "Rain falling loudly on the road."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a4bd1ae231c7d764",
+            "object": "chat.completion",
+            "created": 1792825864,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 293,
+              "total_tokens": 377,
+              "completion_tokens": 84,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 5.530308246612549,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          2.458,
+          "A car is driving by."
+        ],
+        [
+          0.0,
+          10.0,
+          "Rain falling loudly on the road."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-827630f3d679585c",
+            "object": "chat.completion",
+            "created": 1792825870,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 2.458\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 293,
+              "total_tokens": 376,
+              "completion_tokens": 83,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 7.927375,
+      "seconds": 5.371438026428223,
+      "status": "complete",
+      "events": [
+        [
+          3.458,
+          4.688,
+          "A car is driving by."
+        ],
+        [
+          0.0,
+          7.927,
+          "Rain falling loudly on the road."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b0f2289ba2bc5796",
+            "object": "chat.completion",
+            "created": 1792825875,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 3.458,\n      \"end\": 4.688\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.0,\n      \"end\": 7.927\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 264,
+              "total_tokens": 344,
+              "completion_tokens": 80,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      10.0,
+      "A car is driving by."
+    ],
+    [
+      13.458,
+      14.687999999999999,
+      "A car is driving by."
+    ],
+    [
+      0.0,
+      17.927,
+      "Rain falling loudly on the road."
+    ]
+  ],
+  "duration": 17.927375,
+  "inference_seconds": 16.498144388198853
+}

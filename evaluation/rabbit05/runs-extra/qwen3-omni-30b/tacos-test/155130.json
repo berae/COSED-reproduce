@@ -1,0 +1,389 @@
+{
+  "clip_id": "155130",
+  "labels": [
+    "A truck passes by, with the engine and tires making noise on the road.",
+    "Cars pass by, with the noise of engines and tires on the road.",
+    "Average traffic passing by with indistinguishable cars and faint human voices in the background.",
+    "Trucks honk their horns, cutting through the regular traffic noise.",
+    "Cars and trucks pass by, alternating between becoming very quiet and then a bit louder, with faint human voices in the background.",
+    "Traffic passes by with a steady flow of cars and trucks at an average volume."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/155130.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 12.471081972122192,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          3.789,
+          "A truck passes by, with the engine and tires making noise on the road."
+        ],
+        [
+          0.0,
+          3.789,
+          "Cars pass by, with the noise of engines and tires on the road."
+        ],
+        [
+          0.0,
+          10.0,
+          "Average traffic passing by with indistinguishable cars and faint human voices in the background."
+        ],
+        [
+          0.0,
+          10.0,
+          "Cars and trucks pass by, alternating between becoming very quiet and then a bit louder, with faint human voices in the background."
+        ],
+        [
+          0.0,
+          10.0,
+          "Traffic passes by with a steady flow of cars and trucks at an average volume."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-9f539d7bc3d4b84b",
+            "object": "chat.completion",
+            "created": 1792808345,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 3.789\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 3.789\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 390,
+              "total_tokens": 577,
+              "completion_tokens": 187,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 14.68349289894104,
+      "status": "complete",
+      "events": [
+        [
+          7.896,
+          9.716,
+          "A truck passes by, with the engine and tires making noise on the road."
+        ],
+        [
+          7.896,
+          9.716,
+          "Cars pass by, with the noise of engines and tires on the road."
+        ],
+        [
+          0.0,
+          10.0,
+          "Average traffic passing by with indistinguishable cars and faint human voices in the background."
+        ],
+        [
+          7.186,
+          7.486,
+          "Trucks honk their horns, cutting through the regular traffic noise."
+        ],
+        [
+          0.0,
+          10.0,
+          "Cars and trucks pass by, alternating between becoming very quiet and then a bit louder, with faint human voices in the background."
+        ],
+        [
+          0.0,
+          10.0,
+          "Traffic passes by with a steady flow of cars and trucks at an average volume."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-9f1d0beab9e42e3f",
+            "object": "chat.completion",
+            "created": 1792808357,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 7.896,\n      \"end\": 9.716\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 7.896,\n      \"end\": 9.716\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 7.186,\n      \"end\": 7.486\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 390,
+              "total_tokens": 611,
+              "completion_tokens": 221,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 10.0,
+      "seconds": 14.69550895690918,
+      "status": "complete",
+      "events": [
+        [
+          2.978,
+          6.018,
+          "A truck passes by, with the engine and tires making noise on the road."
+        ],
+        [
+          2.978,
+          6.018,
+          "Cars pass by, with the noise of engines and tires on the road."
+        ],
+        [
+          0.0,
+          10.0,
+          "Average traffic passing by with indistinguishable cars and faint human voices in the background."
+        ],
+        [
+          1.978,
+          2.278,
+          "Trucks honk their horns, cutting through the regular traffic noise."
+        ],
+        [
+          0.0,
+          10.0,
+          "Cars and trucks pass by, alternating between becoming very quiet and then a bit louder, with faint human voices in the background."
+        ],
+        [
+          0.0,
+          10.0,
+          "Traffic passes by with a steady flow of cars and trucks at an average volume."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-95c443c0eb06d406",
+            "object": "chat.completion",
+            "created": 1792808372,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 2.978,\n      \"end\": 6.018\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 2.978,\n      \"end\": 6.018\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 1.978,\n      \"end\": 2.278\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 390,
+              "total_tokens": 611,
+              "completion_tokens": 221,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 240000,
+      "start": 15.0,
+      "duration": 10.0,
+      "seconds": 45.73534655570984,
+      "status": "failed",
+      "events": null,
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-af1ced349767afa9",
+            "object": "chat.completion",
+            "created": 1792808386,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n[\n  {\n    \"query_id\": 0,\n    \"start\": 4.879,\n    \"end\": 6.119\n  },\n  {\n    \"query_id\": 1,\n    \"start\": 0.0,\n    \"end\": 10.0\n  },\n  {\n    \"query_id\": 2,\n    \"start\": 0.0,\n    \"end\": 10.0\n  },\n  {\n    \"query_id\": 3,\n    \"start\": 0.0,\n    \"end\": 10.0\n  },\n  {\n    \"query_id\": 4,\n    \"start\": 0.0,\n    \"end\": 10.0\n  },\n  {\n    \"query_id\": 5,\n    \"start\": 0.0,\n    \"end\": 10.0\n  }\n]\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 390,
+              "total_tokens": 586,
+              "completion_tokens": 196,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          }
+        },
+        {
+          "error": "ValueError('Missing events list')"
+        },
+        {
+          "reply": {
+            "id": "chatcmpl-a8c291180bc4d217",
+            "object": "chat.completion",
+            "created": 1792808402,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n[\n  {\n    \"query_id\": 0,\n    \"start\": 4.879,\n    \"end\": 6.119\n  },\n  {\n    \"query_id\": 1,\n    \"start\": 0.0,\n    \"end\": 10.0\n  },\n  {\n    \"query_id\": 2,\n    \"start\": 0.0,\n    \"end\": 10.0\n  },\n  {\n    \"query_id\": 3,\n    \"start\": 0.0,\n    \"end\": 10.0\n  },\n  {\n    \"query_id\": 4,\n    \"start\": 0.0,\n    \"end\": 10.0\n  },\n  {\n    \"query_id\": 5,\n    \"start\": 0.0,\n    \"end\": 10.0\n  }\n]\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 390,
+              "total_tokens": 586,
+              "completion_tokens": 196,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          }
+        },
+        {
+          "error": "ValueError('Missing events list')"
+        },
+        {
+          "reply": {
+            "id": "chatcmpl-b726effdba6449ce",
+            "object": "chat.completion",
+            "created": 1792808417,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n[\n  {\n    \"query_id\": 0,\n    \"start\": 4.879,\n    \"end\": 6.119\n  },\n  {\n    \"query_id\": 1,\n    \"start\": 0.0,\n    \"end\": 10.0\n  },\n  {\n    \"query_id\": 2,\n    \"start\": 0.0,\n    \"end\": 10.0\n  },\n  {\n    \"query_id\": 3,\n    \"start\": 0.0,\n    \"end\": 10.0\n  },\n  {\n    \"query_id\": 4,\n    \"start\": 0.0,\n    \"end\": 10.0\n  },\n  {\n    \"query_id\": 5,\n    \"start\": 0.0,\n    \"end\": 10.0\n  }\n]\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 390,
+              "total_tokens": 586,
+              "completion_tokens": 196,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          }
+        },
+        {
+          "error": "ValueError('Missing events list')"
+        }
+      ]
+    }
+  ],
+  "status": "running"
+}

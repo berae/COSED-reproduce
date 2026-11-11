@@ -1,0 +1,136 @@
+{
+  "clip_id": "YDRSiR-dkmU8",
+  "labels": [
+    "a small dog barks",
+    "some rustling"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/YDRSiR-dkmU8.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 16.48023223876953,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          0.35,
+          "a small dog barks"
+        ],
+        [
+          1.62,
+          3.47,
+          "a small dog barks"
+        ],
+        [
+          4.98,
+          6.2,
+          "a small dog barks"
+        ],
+        [
+          7.4,
+          8.0,
+          "a small dog barks"
+        ],
+        [
+          9.1,
+          9.5,
+          "a small dog barks"
+        ],
+        [
+          3.8,
+          4.5,
+          "some rustling"
+        ],
+        [
+          8.0,
+          8.5,
+          "some rustling"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-9e37dfd0bb6c8e92",
+            "object": "chat.completion",
+            "created": 1792782011,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 0.350\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 1.620,\n      \"end\": 3.470\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 4.980,\n      \"end\": 6.200\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 7.400,\n      \"end\": 8.000\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 9.100,\n      \"end\": 9.500\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 3.800,\n      \"end\": 4.500\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 8.000,\n      \"end\": 8.500\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 289,
+              "total_tokens": 541,
+              "completion_tokens": 252,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      0.35,
+      "a small dog barks"
+    ],
+    [
+      1.62,
+      3.47,
+      "a small dog barks"
+    ],
+    [
+      4.98,
+      6.2,
+      "a small dog barks"
+    ],
+    [
+      7.4,
+      8.0,
+      "a small dog barks"
+    ],
+    [
+      9.1,
+      9.5,
+      "a small dog barks"
+    ],
+    [
+      3.8,
+      4.5,
+      "some rustling"
+    ],
+    [
+      8.0,
+      8.5,
+      "some rustling"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 16.48023223876953
+}

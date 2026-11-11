@@ -1,0 +1,117 @@
+{
+  "clip_id": "Y4N01YFev3lo",
+  "labels": [
+    "a dog growls",
+    "barks",
+    "a man speaks"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y4N01YFev3lo.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 12.138699054718018,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          1.348,
+          "a dog growls"
+        ],
+        [
+          2.576,
+          3.096,
+          "barks"
+        ],
+        [
+          6.276,
+          6.796,
+          "barks"
+        ],
+        [
+          9.156,
+          9.676,
+          "barks"
+        ],
+        [
+          1.428,
+          2.576,
+          "a man speaks"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-82b088cc51c82231",
+            "object": "chat.completion",
+            "created": 1792781079,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 1.348\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 2.576,\n      \"end\": 3.096\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 6.276,\n      \"end\": 6.796\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 9.156,\n      \"end\": 9.676\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 1.428,\n      \"end\": 2.576\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 293,
+              "total_tokens": 477,
+              "completion_tokens": 184,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      1.348,
+      "a dog growls"
+    ],
+    [
+      1.428,
+      2.576,
+      "a man speaks"
+    ],
+    [
+      2.576,
+      3.096,
+      "barks"
+    ],
+    [
+      6.276,
+      6.796,
+      "barks"
+    ],
+    [
+      9.156,
+      9.676,
+      "barks"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 12.138699054718018
+}

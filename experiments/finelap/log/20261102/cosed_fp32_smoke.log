@@ -1,0 +1,50 @@
+⚙️  Running in WANDB offline mode
+⚙️  Running in WANDB offline mode
+⚙️  Running in WANDB offline mode
+2026-11-02 19:36:04.828 | INFO     | utils.utils:init_distributed_mode:164 - | distributed init (rank 0): env://
+2026-11-02 19:36:04.996 | INFO     | utils.utils:init_distributed_mode:164 - | distributed init (rank 1): env://
+2026-11-02 19:36:05.011 | INFO     | utils.utils:init_distributed_mode:164 - | distributed init (rank 2): env://
+[34m[2026-11-02 19:36:05][0m [1mINFO    [0m | train.py:312 | [1mConfig: {'data_args': {'basic_data_args': {'max_length': 10, 'return_type': 'mel', 'sample_rate': 16000, 'time_resolution': 0.15625}, 'train_data_args': {'audio_backend': 'soundfile', 'batch_size': 32, 'max_chosen_segments': 1, 'max_phrases': 20, 'max_split_segments': 1, 'metadata_files': ['/work/zhanghc/Myllm/FineLAP/data/cosed/audioset_strong.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/finelap100k.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/audiocaps.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/audiocaps.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/tacos.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/tacos.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/tacos.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/tacos.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/tacos.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/clotho.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/clotho.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/clotho.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/clotho.jsonl'], 'num_workers': 4, 'random_crop': True, 'spec_aug': True, 'strict_audio': True, 'warn_unknown_phrases': False}}, 'dist_args': {'dist_backend': 'nccl', 'dist_url': 'env://', 'distributed': True, 'gpu': 0, 'rank': 0, 'world_size': 3}, 'model_args': {'audio_encoder_args': {'audio_encoder_ckpt': './weights/EAT-base_epoch30_ft.pt', 'type': 'eat'}, 'b_global': -10, 'b_local': -10, 'ckpt_path': '', 'embed_size': 1024, 'local_audio_proj_type': 'transformer', 'normalize_dense_audio_embeds': True, 'temp_global': 0.1, 'temp_local': 0.1, 'text_encoder_args': {'text_encoder_ckpt': './weights/roberta-base', 'type': 'roberta-base'}, 'unify_audio_proj': False}, 'optim_args': {'betas': [0.9, 0.999], 'eps': 1e-08, 'lr': 5e-05, 'momentum': 0.9, 'optimizer_name': 'adam', 'warmup_epochs': 2, 'warmup_steps': 1000}, 'training': {'alpha': 1.0, 'beta': 5.0, 'clip_grad': 2, 'device': 'cuda', 'dist_impl': 'gather', 'dropout': 0.2, 'epochs': 1, 'freeze_audio_adapter': False, 'freeze_audio_encoder': False, 'freeze_audio_proj': False, 'freeze_text_encoder': False, 'freeze_text_proj': False, 'gamma': 1, 'loss_type': ['sigmoid', 'grounding'], 'precision': 'fp32', 'seed': 31415926, 'activation_checkpointing': True, 'max_steps': 3}}[0m
+[34m[2026-11-02 19:36:05][0m [1mINFO    [0m | train.py:316 | [1mConfig saved to: /work/zhanghc/Myllm/FineLAP/exps/finelap_cosed_fp32_20261102/preflight/config.yaml[0m
+[34m[2026-11-02 19:36:05][0m [1mINFO    [0m | audio_encoder.py:47 | [1mInitializing EAT ... [0m
+[34m[2026-11-02 19:36:05][0m [1mINFO    [0m | audio_encoder.py:47 | [1mInitializing EAT ... [0m
+[34m[2026-11-02 19:36:05][0m [1mINFO    [0m | audio_encoder.py:47 | [1mInitializing EAT ... [0m
+2026-11-02 19:36:08 | INFO | EAT.models.EAT_pretraining | making target model
+2026-11-02 19:36:08 | INFO | EAT.models.EAT_pretraining | making target model
+2026-11-02 19:36:08 | INFO | EAT.models.EAT_pretraining | making target model
+[34m[2026-11-02 19:36:09][0m [1mINFO    [0m | finelap.py:109 | [1mNormalize dense audio embeds: True[0m
+[34m[2026-11-02 19:36:09][0m [1mINFO    [0m | finelap.py:110 | [1mUnify audio proj: False[0m
+[34m[2026-11-02 19:36:09][0m [1mINFO    [0m | train.py:336 | [1mActivation recomputation enabled for 26 transformer blocks[0m
+[34m[2026-11-02 19:36:09][0m [1mINFO    [0m | train.py:359 | [1mTotal numer of parameters: 244.09M[0m
+[34m[2026-11-02 19:36:09][0m [1mINFO    [0m | train.py:360 | [1mTotal numer of learnable parameters: 239.37M[0m
+[34m[2026-11-02 19:36:09][0m [1mINFO    [0m | train.py:361 | [1mTotal number of non-trainable parameters: 4.72M[0m
+[34m[2026-11-02 19:36:09][0m [1mINFO    [0m | train.py:362 | [1mNon-trainable parameter names:[0m
+[34m[2026-11-02 19:36:09][0m [1mINFO    [0m | train.py:365 | [1m  audio_encoder.audio_enc.model.modality_encoders.IMAGE.fixed_positional_encoder.positions: torch.Size([1, 6144, 768]) (4.72M parameters)[0m
+[34m[2026-11-02 19:36:09][0m [1mINFO    [0m | train.py:366 | [1mModel Parameter breakdown: [0m
+[34m[2026-11-02 19:36:09][0m [1mINFO    [0m | train.py:369 | [1m- Audio Encoder: 90.38M total, 85.66M trainable[0m
+[34m[2026-11-02 19:36:09][0m [1mINFO    [0m | train.py:373 | [1m- Audio Global Projector: 1.84M total, 1.84M trainable[0m
+[34m[2026-11-02 19:36:09][0m [1mINFO    [0m | train.py:377 | [1m- Audio Local Projector: 25.98M total, 25.98M trainable[0m
+[34m[2026-11-02 19:36:09][0m [1mINFO    [0m | train.py:381 | [1m- Text Encoder: 124.06M total, 124.06M trainable[0m
+[34m[2026-11-02 19:36:09][0m [1mINFO    [0m | train.py:385 | [1m- Text Projector: 1.84M total, 1.84M trainable[0m
+[34m[2026-11-02 19:36:09][0m [1mINFO    [0m | mix_dataset.py:73 | [1mMax phrases for sample: 20[0m
+[34m[2026-11-02 19:36:09][0m [1mINFO    [0m | mix_dataset.py:73 | [1mMax phrases for sample: 20[0m
+[34m[2026-11-02 19:36:09][0m [1mINFO    [0m | mix_dataset.py:73 | [1mMax phrases for sample: 20[0m
+[34m[2026-11-02 19:36:15][0m [1mINFO    [0m | mix_dataset.py:103 | [1mNumber of clusters: 491, number of all phrases: 673[0m
+[34m[2026-11-02 19:36:15][0m [1mINFO    [0m | mix_dataset.py:104 | [1mNumber of data with grounding: 254615, number of data without grounding: 113480, total number of data: 368095[0m
+[34m[2026-11-02 19:36:15][0m [1mINFO    [0m | mix_dataset.py:103 | [1mNumber of clusters: 491, number of all phrases: 673[0m
+[34m[2026-11-02 19:36:15][0m [1mINFO    [0m | mix_dataset.py:104 | [1mNumber of data with grounding: 254615, number of data without grounding: 113480, total number of data: 368095[0m
+[34m[2026-11-02 19:36:15][0m [1mINFO    [0m | train.py:460 | [1mSize of training set: 368095, number of batches: 3835[0m
+[34m[2026-11-02 19:36:15][0m [1mINFO    [0m | mix_dataset.py:103 | [1mNumber of clusters: 491, number of all phrases: 673[0m
+[34m[2026-11-02 19:36:15][0m [1mINFO    [0m | mix_dataset.py:104 | [1mNumber of data with grounding: 254615, number of data without grounding: 113480, total number of data: 368095[0m
+[34m[2026-11-02 19:36:16][0m [1mINFO    [0m | train.py:641 | [1mTraining for epoch [1][0m
+[34m[2026-11-02 19:36:16][0m [1mINFO    [0m | finelap.py:122 | [1mUpdating loss functions: rank=2, world_size=3, dist_impl=gather[0m
+[34m[2026-11-02 19:36:16][0m [1mINFO    [0m | finelap.py:122 | [1mUpdating loss functions: rank=0, world_size=3, dist_impl=gather[0m
+[34m[2026-11-02 19:36:16][0m [1mINFO    [0m | finelap.py:122 | [1mUpdating loss functions: rank=1, world_size=3, dist_impl=gather[0m
+  0%|[32m          [0m| 0/3835 [00:00<?, ?it/s]  0%|[32m          [0m| 0/3835 [00:13<?, ?it/s, total=14.2578, clip=9.9233, ground=0.8669, distill=0.0000]  0%|[32m          [0m| 1/3835 [00:13<14:27:47, 13.58s/it, total=14.2578, clip=9.9233, ground=0.8669, distill=0.0000]  0%|[32m          [0m| 1/3835 [00:15<14:27:47, 13.58s/it, total=13.2859, clip=9.9198, ground=0.6732, distill=0.0000]  0%|[32m          [0m| 2/3835 [00:15<7:22:20,  6.92s/it, total=13.2859, clip=9.9198, ground=0.6732, distill=0.0000]   0%|[32m          [0m| 2/3835 [00:18<7:22:20,  6.92s/it, total=13.8606, clip=9.8924, ground=0.7936, distill=0.0000]  0%|[32m          [0m| 2/3835 [00:18<9:38:58,  9.06s/it, total=13.8606, clip=9.8924, ground=0.7936, distill=0.0000]
+[34m[2026-11-02 19:36:34][0m [1mINFO    [0m | train.py:656 | [1mTraining statistics:	loss for epoch [1]: 13.801 (clip: 9.912, grounding: 0.778, distillation: 0.000), time: 18.5, lr: 0.000000.[0m
+[34m[2026-11-02 19:36:34][0m [1mINFO    [0m | train.py:89 | [1mTrain loss history saved to /work/zhanghc/Myllm/FineLAP/exps/finelap_cosed_fp32_20261102/preflight/metrics/train_loss.csv, /work/zhanghc/Myllm/FineLAP/exps/finelap_cosed_fp32_20261102/preflight/metrics/train_loss.json; curve saved to /work/zhanghc/Myllm/FineLAP/exps/finelap_cosed_fp32_20261102/preflight/plots/train_loss_curve.png[0m
+[34m[2026-11-02 19:36:35][0m [1mINFO    [0m | train.py:772 | [1mSaving model ckpt for epoch 1: /work/zhanghc/Myllm/FineLAP/exps/finelap_cosed_fp32_20261102/preflight/models/epoch_001.pt[0m
+[34m[2026-11-02 19:36:37][0m [1mINFO    [0m | train.py:776 | [1mSaving model ckpt for last epoch 1...[0m
+[34m[2026-11-02 19:36:40][0m [1mINFO    [0m | train.py:787 | [1m========================================== Evaluation start ==========================================[0m
+[34m[2026-11-02 19:36:40][0m [1mINFO    [0m | train.py:860 | [1mDone.[0m
+[rank0]:[W1102 19:36:41.886343092 ProcessGroupNCCL.cpp:1168] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())

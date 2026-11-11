@@ -1,2 +1,7 @@
 * text=auto eol=lf
 *.sh text eol=lf
+# Preserve collected evidence byte-for-byte, including source identity hashes.
+experiments/** -text !eol
+evaluation/** -text !eol
+research/** -text !eol
+third_party/** -text !eol

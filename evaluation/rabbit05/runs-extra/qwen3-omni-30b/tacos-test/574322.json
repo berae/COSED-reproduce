@@ -1,0 +1,345 @@
+{
+  "clip_id": "574322",
+  "labels": [
+    "A small engine starts with a kick.",
+    "A motorbike starts and drives away."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/574322.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 3.2496609687805176,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          9.45,
+          "A small engine starts with a kick."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b04cc5f4b4898655",
+            "object": "chat.completion",
+            "created": 1792812635,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 9.450\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 296,
+              "total_tokens": 344,
+              "completion_tokens": 48,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 7.758954048156738,
+      "status": "complete",
+      "events": [
+        [
+          1.527,
+          2.487,
+          "A small engine starts with a kick."
+        ],
+        [
+          3.467,
+          4.427,
+          "A small engine starts with a kick."
+        ],
+        [
+          5.987,
+          9.997,
+          "A motorbike starts and drives away."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-862aea9c24adb6f4",
+            "object": "chat.completion",
+            "created": 1792812638,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 1.527,\n      \"end\": 2.487\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 3.467,\n      \"end\": 4.427\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 5.987,\n      \"end\": 9.997\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 296,
+              "total_tokens": 412,
+              "completion_tokens": 116,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 10.0,
+      "seconds": 5.493568658828735,
+      "status": "complete",
+      "events": [
+        [
+          1.427,
+          2.357,
+          "A small engine starts with a kick."
+        ],
+        [
+          1.427,
+          9.867,
+          "A motorbike starts and drives away."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-ac2102810a84cdd1",
+            "object": "chat.completion",
+            "created": 1792812646,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 1.427,\n      \"end\": 2.357\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 1.427,\n      \"end\": 9.867\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 296,
+              "total_tokens": 378,
+              "completion_tokens": 82,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 240000,
+      "start": 15.0,
+      "duration": 10.0,
+      "seconds": 5.496227502822876,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          0.52,
+          "A small engine starts with a kick."
+        ],
+        [
+          0.0,
+          9.87,
+          "A motorbike starts and drives away."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b0945062c28db4f6",
+            "object": "chat.completion",
+            "created": 1792812652,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 0.520\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 9.870\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 296,
+              "total_tokens": 378,
+              "completion_tokens": 82,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 320000,
+      "start": 20.0,
+      "duration": 9.896875,
+      "seconds": 5.185152530670166,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          2.43,
+          "A small engine starts with a kick."
+        ],
+        [
+          0.0,
+          9.896875,
+          "A motorbike starts and drives away."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-83a9d6908039fde8",
+            "object": "chat.completion",
+            "created": 1792812657,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 2.43\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.0,\n      \"end\": 9.897\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 293,
+              "total_tokens": 370,
+              "completion_tokens": 77,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      10.987,
+      29.896875,
+      "A motorbike starts and drives away."
+    ],
+    [
+      0.0,
+      9.45,
+      "A small engine starts with a kick."
+    ],
+    [
+      11.427,
+      12.357,
+      "A small engine starts with a kick."
+    ],
+    [
+      15.0,
+      15.52,
+      "A small engine starts with a kick."
+    ],
+    [
+      20.0,
+      22.43,
+      "A small engine starts with a kick."
+    ]
+  ],
+  "duration": 29.896875,
+  "inference_seconds": 27.183563709259033
+}

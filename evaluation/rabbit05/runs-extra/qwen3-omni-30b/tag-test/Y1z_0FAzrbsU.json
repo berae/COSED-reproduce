@@ -1,0 +1,97 @@
+{
+  "clip_id": "Y1z_0FAzrbsU",
+  "labels": [
+    "people speaking",
+    "laughing",
+    "dog barks"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y1z_0FAzrbsU.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 9.4935,
+      "seconds": 7.516578912734985,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          9.493,
+          "people speaking"
+        ],
+        [
+          5.678,
+          9.493,
+          "laughing"
+        ],
+        [
+          2.218,
+          2.528,
+          "dog barks"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8d2dfe894d983042",
+            "object": "chat.completion",
+            "created": 1792780545,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 9.493\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 5.678,\n      \"end\": 9.493\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 2.218,\n      \"end\": 2.528\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 282,
+              "total_tokens": 396,
+              "completion_tokens": 114,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      2.218,
+      2.528,
+      "dog barks"
+    ],
+    [
+      5.678,
+      9.493,
+      "laughing"
+    ],
+    [
+      0.0,
+      9.493,
+      "people speaking"
+    ]
+  ],
+  "duration": 9.4935,
+  "inference_seconds": 7.516578912734985
+}

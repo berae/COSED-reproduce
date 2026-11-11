@@ -1,0 +1,178 @@
+{
+  "clip_id": "YkY1wpO7_pMs",
+  "labels": [
+    "man talking",
+    "dog growling",
+    "scratching",
+    "dog barking loudly"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/YkY1wpO7_pMs.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 25.583650588989258,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          0.68,
+          "man talking"
+        ],
+        [
+          4.59,
+          5.78,
+          "man talking"
+        ],
+        [
+          6.2,
+          6.88,
+          "man talking"
+        ],
+        [
+          7.1,
+          8.0,
+          "man talking"
+        ],
+        [
+          8.2,
+          9.5,
+          "man talking"
+        ],
+        [
+          1.0,
+          1.7,
+          "dog growling"
+        ],
+        [
+          2.3,
+          3.0,
+          "dog growling"
+        ],
+        [
+          3.4,
+          3.7,
+          "scratching"
+        ],
+        [
+          0.0,
+          0.3,
+          "dog barking loudly"
+        ],
+        [
+          8.0,
+          8.3,
+          "dog barking loudly"
+        ],
+        [
+          8.7,
+          9.0,
+          "dog barking loudly"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-87812f2649616a74",
+            "object": "chat.completion",
+            "created": 1792782663,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 0.680\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 4.590,\n      \"end\": 5.780\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 6.200,\n      \"end\": 6.880\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 7.100,\n      \"end\": 8.000\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 8.200,\n      \"end\": 9.500\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 1.000,\n      \"end\": 1.700\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 2.300,\n      \"end\": 3.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 3.400,\n      \"end\": 3.700\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.000,\n      \"end\": 0.300\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 8.000,\n      \"end\": 8.300\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 8.700,\n      \"end\": 9.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 297,
+              "total_tokens": 685,
+              "completion_tokens": 388,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      0.3,
+      "dog barking loudly"
+    ],
+    [
+      8.0,
+      8.3,
+      "dog barking loudly"
+    ],
+    [
+      8.7,
+      9.0,
+      "dog barking loudly"
+    ],
+    [
+      1.0,
+      1.7,
+      "dog growling"
+    ],
+    [
+      2.3,
+      3.0,
+      "dog growling"
+    ],
+    [
+      0.0,
+      0.68,
+      "man talking"
+    ],
+    [
+      4.59,
+      5.78,
+      "man talking"
+    ],
+    [
+      6.2,
+      6.88,
+      "man talking"
+    ],
+    [
+      7.1,
+      8.0,
+      "man talking"
+    ],
+    [
+      8.2,
+      9.5,
+      "man talking"
+    ],
+    [
+      3.4,
+      3.7,
+      "scratching"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 25.583650588989258
+}

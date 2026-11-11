@@ -1,0 +1,155 @@
+{
+  "clip_id": "soundscape_test_bimodal32",
+  "labels": [
+    "air_conditioner",
+    "car_horn",
+    "children_playing",
+    "dog_bark",
+    "drilling",
+    "engine_idling",
+    "gun_shot",
+    "jackhammer",
+    "siren",
+    "street_music"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/urbansed/data/1324404/URBAN-SED_v2.0.0/audio/test/soundscape_test_bimodal32.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 312.8228154182434,
+      "status": "failed",
+      "events": null,
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-818921f19a8e75c8",
+            "object": "chat.completion",
+            "created": 1792767792,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 3,\n      \"start\": 0.000,\n      \"end\": 0.200\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.200,\n      \"end\": 0.400\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.400,\n      \"end\": 0.600\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.600,\n      \"end\": 0.800\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.800,\n      \"end\": 1.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 1.000,\n      \"end\": 1.200\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 1.200,\n      \"end\": 1.400\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 1.400,\n      \"end\": 1.600\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 1.600,\n      \"end\": 1.800\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 1.800,\n      \"end\": 2.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 2.000,\n      \"end\": 2.200\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 2.200,\n      \"end\": 2.400\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 2.400,\n      \"end\": 2.600\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 2.600,\n      \"end\": 2.800\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 2.800,\n      \"end\": 3.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 3.000,\n      \"end\": 3.200\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 3.200,\n      \"end\": 3.400\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 3.400,\n      \"end\": 3.600\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 3.600,\n      \"end\": 3.800\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 3.800,\n      \"end\": 4.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 4.000,\n      \"end\": 4.200\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 4.200,\n      \"end\": 4.400\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 4.400,\n      \"end\": 4.600\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 4.600,\n      \"end\": 4.800\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 4.800,\n      \"end\": 5.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 5.000,\n      \"end\": 5.200\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 5.200,\n      \"end\": 5.400\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 5.400,\n      \"end\": 5.600\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 5.600,\n      \"end\": 5.800\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 5.800,\n      \"end\": 6.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 6.000,\n      \"end\": 6.200\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 6.200,\n      \"end\": 6.400\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 6.400,\n      \"end\": 6.600\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 6.600,\n      \"end\": 6.800\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 6.800,\n      \"end\": 7.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 7.000,\n      \"end\": 7.200\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 7.200,\n      \"end\": 7.400\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 7.400,\n      \"end\": 7.600\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 7.600,\n      \"end\": 7.800\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 7.800,\n      \"end\": 8.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 8.000,\n      \"end\": 8.200\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 8.200,\n      \"end\": 8.400\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 8.400,\n      \"end\": 8.600\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 8.600,\n      \"end\": 8.800\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 8.800,\n      \"end\": 9.000",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "length",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 328,
+              "total_tokens": 1864,
+              "completion_tokens": 1536,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          }
+        },
+        {
+          "error": "ValueError('Output truncated')"
+        },
+        {
+          "reply": {
+            "id": "chatcmpl-bd31ed14dfdd412f",
+            "object": "chat.completion",
+            "created": 1792767896,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 3,\n      \"start\": 0.000,\n      \"end\": 0.200\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.200,\n      \"end\": 0.400\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.400,\n      \"end\": 0.600\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.600,\n      \"end\": 0.800\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.800,\n      \"end\": 1.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 1.000,\n      \"end\": 1.200\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 1.200,\n      \"end\": 1.400\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 1.400,\n      \"end\": 1.600\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 1.600,\n      \"end\": 1.800\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 1.800,\n      \"end\": 2.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 2.000,\n      \"end\": 2.200\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 2.200,\n      \"end\": 2.400\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 2.400,\n      \"end\": 2.600\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 2.600,\n      \"end\": 2.800\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 2.800,\n      \"end\": 3.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 3.000,\n      \"end\": 3.200\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 3.200,\n      \"end\": 3.400\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 3.400,\n      \"end\": 3.600\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 3.600,\n      \"end\": 3.800\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 3.800,\n      \"end\": 4.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 4.000,\n      \"end\": 4.200\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 4.200,\n      \"end\": 4.400\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 4.400,\n      \"end\": 4.600\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 4.600,\n      \"end\": 4.800\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 4.800,\n      \"end\": 5.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 5.000,\n      \"end\": 5.200\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 5.200,\n      \"end\": 5.400\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 5.400,\n      \"end\": 5.600\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 5.600,\n      \"end\": 5.800\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 5.800,\n      \"end\": 6.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 6.000,\n      \"end\": 6.200\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 6.200,\n      \"end\": 6.400\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 6.400,\n      \"end\": 6.600\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 6.600,\n      \"end\": 6.800\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 6.800,\n      \"end\": 7.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 7.000,\n      \"end\": 7.200\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 7.200,\n      \"end\": 7.400\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 7.400,\n      \"end\": 7.600\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 7.600,\n      \"end\": 7.800\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 7.800,\n      \"end\": 8.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 8.000,\n      \"end\": 8.200\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 8.200,\n      \"end\": 8.400\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 8.400,\n      \"end\": 8.600\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 8.600,\n      \"end\": 8.800\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 8.800,\n      \"end\": 9.000",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "length",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 328,
+              "total_tokens": 1864,
+              "completion_tokens": 1536,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          }
+        },
+        {
+          "error": "ValueError('Output truncated')"
+        },
+        {
+          "reply": {
+            "id": "chatcmpl-935c5cf6142d2ffa",
+            "object": "chat.completion",
+            "created": 1792768001,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 3,\n      \"start\": 0.000,\n      \"end\": 0.200\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.200,\n      \"end\": 0.400\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.400,\n      \"end\": 0.600\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.600,\n      \"end\": 0.800\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.800,\n      \"end\": 1.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 1.000,\n      \"end\": 1.200\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 1.200,\n      \"end\": 1.400\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 1.400,\n      \"end\": 1.600\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 1.600,\n      \"end\": 1.800\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 1.800,\n      \"end\": 2.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 2.000,\n      \"end\": 2.200\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 2.200,\n      \"end\": 2.400\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 2.400,\n      \"end\": 2.600\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 2.600,\n      \"end\": 2.800\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 2.800,\n      \"end\": 3.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 3.000,\n      \"end\": 3.200\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 3.200,\n      \"end\": 3.400\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 3.400,\n      \"end\": 3.600\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 3.600,\n      \"end\": 3.800\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 3.800,\n      \"end\": 4.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 4.000,\n      \"end\": 4.200\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 4.200,\n      \"end\": 4.400\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 4.400,\n      \"end\": 4.600\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 4.600,\n      \"end\": 4.800\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 4.800,\n      \"end\": 5.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 5.000,\n      \"end\": 5.200\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 5.200,\n      \"end\": 5.400\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 5.400,\n      \"end\": 5.600\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 5.600,\n      \"end\": 5.800\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 5.800,\n      \"end\": 6.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 6.000,\n      \"end\": 6.200\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 6.200,\n      \"end\": 6.400\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 6.400,\n      \"end\": 6.600\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 6.600,\n      \"end\": 6.800\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 6.800,\n      \"end\": 7.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 7.000,\n      \"end\": 7.200\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 7.200,\n      \"end\": 7.400\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 7.400,\n      \"end\": 7.600\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 7.600,\n      \"end\": 7.800\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 7.800,\n      \"end\": 8.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 8.000,\n      \"end\": 8.200\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 8.200,\n      \"end\": 8.400\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 8.400,\n      \"end\": 8.600\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 8.600,\n      \"end\": 8.800\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 8.800,\n      \"end\": 9.000",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "length",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 328,
+              "total_tokens": 1864,
+              "completion_tokens": 1536,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          }
+        },
+        {
+          "error": "ValueError('Output truncated')"
+        }
+      ]
+    }
+  ],
+  "status": "running"
+}

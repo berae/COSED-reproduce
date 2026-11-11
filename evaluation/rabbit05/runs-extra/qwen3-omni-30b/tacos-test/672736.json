@@ -1,0 +1,258 @@
+{
+  "clip_id": "672736",
+  "labels": [
+    "A deep growl from a large dog."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/672736.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 3.2657270431518555,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          10.0,
+          "A deep growl from a large dog."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-9b9a63828757204d",
+            "object": "chat.completion",
+            "created": 1792818677,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 287,
+              "total_tokens": 336,
+              "completion_tokens": 49,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 3.2077279090881348,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          9.25,
+          "A deep growl from a large dog."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b8ee446f474e843b",
+            "object": "chat.completion",
+            "created": 1792818680,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 9.250\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 287,
+              "total_tokens": 335,
+              "completion_tokens": 48,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 10.0,
+      "seconds": 20.921722888946533,
+      "status": "failed",
+      "events": null,
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a0acbd37e7b1bb2f",
+            "object": "chat.completion",
+            "created": 1792818684,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n[\n  {\n    \"query_id\": 0,\n    \"start\": 0.000,\n    \"end\": 4.250\n  },\n  {\n    \"query_id\": 0,\n    \"start\": 4.870,\n    \"end\": 9.360\n  }\n]\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 287,
+              "total_tokens": 362,
+              "completion_tokens": 75,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          }
+        },
+        {
+          "error": "ValueError('Missing events list')"
+        },
+        {
+          "reply": {
+            "id": "chatcmpl-81c276bb088637ae",
+            "object": "chat.completion",
+            "created": 1792818691,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n[\n  {\n    \"query_id\": 0,\n    \"start\": 0.000,\n    \"end\": 4.250\n  },\n  {\n    \"query_id\": 0,\n    \"start\": 4.870,\n    \"end\": 9.360\n  }\n]\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 287,
+              "total_tokens": 362,
+              "completion_tokens": 75,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          }
+        },
+        {
+          "error": "ValueError('Missing events list')"
+        },
+        {
+          "reply": {
+            "id": "chatcmpl-bab2425a7847ffc8",
+            "object": "chat.completion",
+            "created": 1792818698,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n[\n  {\n    \"query_id\": 0,\n    \"start\": 0.000,\n    \"end\": 4.250\n  },\n  {\n    \"query_id\": 0,\n    \"start\": 4.870,\n    \"end\": 9.360\n  }\n]\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 287,
+              "total_tokens": 362,
+              "completion_tokens": 75,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          }
+        },
+        {
+          "error": "ValueError('Missing events list')"
+        }
+      ]
+    }
+  ],
+  "status": "running"
+}

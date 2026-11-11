@@ -1,0 +1,765 @@
+{
+  "source_counts": [
+    {
+      "source": "audioset_strong",
+      "queries": 447,
+      "valid": 447000,
+      "positive": 5030.0,
+      "negative": 441970.0
+    },
+    {
+      "source": "finelap100k",
+      "queries": 9,
+      "valid": 9000,
+      "positive": 774.0,
+      "negative": 8226.0
+    },
+    {
+      "source": "audiocaps",
+      "queries": 4,
+      "valid": 16,
+      "positive": 4.0,
+      "negative": 12.0
+    },
+    {
+      "source": "tacos",
+      "queries": 6,
+      "valid": 6000,
+      "positive": 970.0,
+      "negative": 5030.0
+    },
+    {
+      "source": "clotho",
+      "queries": 4,
+      "valid": 16,
+      "positive": 4.0,
+      "negative": 12.0
+    }
+  ],
+  "samples": [
+    {
+      "source": "tacos",
+      "path": "/work/zhanghc/datasets/TACOS/audio/663781.mp3",
+      "start": 455519
+    },
+    {
+      "source": "finelap100k",
+      "path": "/work/zhanghc/datasets/FineLAP-100k/audio/mix_76203.wav",
+      "start": 0
+    },
+    {
+      "source": "clotho",
+      "path": "/work/zhanghc/Myllm/ASU-LLM/data/CLOTHO_v2.1/clotho_audio_files/development/Silencyo_COUNTRY_NIGHT_Crickets_Distant_Frogs_Turtledove.wav",
+      "start": 207755
+    },
+    {
+      "source": "audiocaps",
+      "path": "/work/zhangyu/AED/audioset_tagging_cnn/datasets/audios/unbalanced_train_segments/unpacked/YuGyRLcQLZd8.wav",
+      "start": 0
+    },
+    {
+      "source": "audiocaps",
+      "path": "/work/zhangyu/AED/audioset_tagging_cnn/datasets/audios/unbalanced_train_segments/unpacked/YF5wf6IXXwtg.wav",
+      "start": 0
+    },
+    {
+      "source": "clotho",
+      "path": "/work/zhanghc/Myllm/ASU-LLM/data/CLOTHO_v2.1/clotho_audio_files/development/cat_breath.wav",
+      "start": 292048
+    },
+    {
+      "source": "audioset_strong",
+      "path": "/work/zhanghc/datasets/WavCaps/audio/AudioSet_SL/mnt/fast/nobackup/scratch4weeks/xm00178/WavCaps/data/waveforms/AudioSet_SL_flac/YX8LsD1x5Ot8.flac",
+      "start": 0
+    },
+    {
+      "source": "tacos",
+      "path": "/work/zhanghc/datasets/TACOS/audio/13428.mp3",
+      "start": 2266
+    },
+    {
+      "source": "clotho",
+      "path": "/work/zhanghc/Myllm/ASU-LLM/data/CLOTHO_v2.1/clotho_audio_files/development/kidsontrain.wav",
+      "start": 592336
+    },
+    {
+      "source": "finelap100k",
+      "path": "/work/zhanghc/datasets/FineLAP-100k/audio/mix_19977.wav",
+      "start": 0
+    },
+    {
+      "source": "audioset_strong",
+      "path": "/work/zhanghc/datasets/WavCaps/audio/AudioSet_SL/mnt/fast/nobackup/scratch4weeks/xm00178/WavCaps/data/waveforms/AudioSet_SL_flac/Y8EQGvxCX57E.flac",
+      "start": 0
+    },
+    {
+      "source": "finelap100k",
+      "path": "/work/zhanghc/datasets/FineLAP-100k/audio/mix_78986.wav",
+      "start": 0
+    },
+    {
+      "source": "audioset_strong",
+      "path": "/work/zhanghc/datasets/WavCaps/audio/AudioSet_SL/mnt/fast/nobackup/scratch4weeks/xm00178/WavCaps/data/waveforms/AudioSet_SL_flac/YYfZEatG_TkA.flac",
+      "start": 0
+    },
+    {
+      "source": "audioset_strong",
+      "path": "/work/zhanghc/datasets/WavCaps/audio/AudioSet_SL/mnt/fast/nobackup/scratch4weeks/xm00178/WavCaps/data/waveforms/AudioSet_SL_flac/Y1wsyT7v1BqA.flac",
+      "start": 0
+    },
+    {
+      "source": "tacos",
+      "path": "/work/zhanghc/datasets/TACOS/audio/580945.mp3",
+      "start": 146309
+    },
+    {
+      "source": "audiocaps",
+      "path": "/work/zhangyu/AED/audioset_tagging_cnn/datasets/audios/unbalanced_train_segments/unpacked/Y2Lej8aE00uw.wav",
+      "start": 0
+    },
+    {
+      "source": "audiocaps",
+      "path": "/work/zhangyu/AED/audioset_tagging_cnn/datasets/audios/unbalanced_train_segments/unpacked/Y1sZrw4WR4Bo.wav",
+      "start": 0
+    },
+    {
+      "source": "finelap100k",
+      "path": "/work/zhanghc/datasets/FineLAP-100k/audio/mix_8809.wav",
+      "start": 0
+    },
+    {
+      "source": "tacos",
+      "path": "/work/zhanghc/datasets/TACOS/audio/371553.mp3",
+      "start": 265277
+    },
+    {
+      "source": "clotho",
+      "path": "/work/zhanghc/Myllm/ASU-LLM/data/CLOTHO_v2.1/clotho_audio_files/development/Car_Driveby_Ford Fiesta_Puddles-Mud-Gravel.wav",
+      "start": 201695
+    }
+  ],
+  "tests": {
+    "dense_fp32": {
+      "loss": 0.039824433624744415,
+      "blocks": [
+        0.020748868584632874,
+        0.009650437161326408,
+        0.009425128810107708
+      ]
+    },
+    "fp32_micro2": {
+      "loss": 0.039825040847063065,
+      "preclip_norm": 0.06106714531779289,
+      "gradients": {
+        "scale": {
+          "relative_l2": 0.002386782904377366,
+          "cosine": 0.9999986501604001,
+          "max_abs": 1.1404510587453842e-05
+        },
+        "bias": {
+          "relative_l2": 0.002746973604976629,
+          "cosine": 0.9999985097574249,
+          "max_abs": 1.390744000673294e-05
+        },
+        "audio": {
+          "relative_l2": 0.049634383397102855,
+          "cosine": 0.9987677619829789,
+          "max_abs": 7.266522152349353e-05
+        },
+        "text": {
+          "relative_l2": 0.03594812083845238,
+          "cosine": 0.999422981497645,
+          "max_abs": 3.098807064816356e-05
+        },
+        "temporal": {
+          "relative_l2": 0.06409897181967442,
+          "cosine": 0.9982144690584122,
+          "max_abs": 4.394833013066091e-06
+        },
+        "clip": {
+          "relative_l2": 0.05199449300669,
+          "cosine": 0.9987270554607384,
+          "max_abs": 1.8819970136974007e-05
+        }
+      }
+    },
+    "fp32_micro8": {
+      "loss": 0.039822425693273544,
+      "preclip_norm": 0.06119033694267273,
+      "gradients": {
+        "scale": {
+          "relative_l2": 0.00027380976137884535,
+          "cosine": 0.9999999644632052,
+          "max_abs": 1.402106136083603e-06
+        },
+        "bias": {
+          "relative_l2": 0.00027343712082696504,
+          "cosine": 0.9999999669930438,
+          "max_abs": 1.3611279428005219e-06
+        },
+        "audio": {
+          "relative_l2": 0.01759085081517134,
+          "cosine": 0.9998453431223107,
+          "max_abs": 3.356277011334896e-05
+        },
+        "text": {
+          "relative_l2": 0.004183386298286272,
+          "cosine": 0.9999926153911292,
+          "max_abs": 3.1477247830480337e-06
+        },
+        "temporal": {
+          "relative_l2": 0.015270942793949445,
+          "cosine": 0.9998921532080752,
+          "max_abs": 1.3822718756273389e-06
+        },
+        "clip": {
+          "relative_l2": 0.004820487355964033,
+          "cosine": 0.9999895320850727,
+          "max_abs": 4.879620973952115e-07
+        }
+      }
+    },
+    "dense_bf16": {
+      "loss": 0.03981354460120201,
+      "blocks": [
+        0.020747516304254532,
+        0.009649761952459812,
+        0.009416267275810242
+      ]
+    },
+    "bf16_micro2": {
+      "loss": 0.039792899042367935,
+      "preclip_norm": 0.06116671487689018,
+      "gradients": {
+        "scale": {
+          "relative_l2": 0.0020810453746845274,
+          "cosine": 0.9999996717580024,
+          "max_abs": 1.1511612683534622e-05
+        },
+        "bias": {
+          "relative_l2": 0.002732645623124575,
+          "cosine": 0.999998473683787,
+          "max_abs": 1.374073326587677e-05
+        },
+        "audio": {
+          "relative_l2": 0.04958261474520093,
+          "cosine": 0.9987707251917075,
+          "max_abs": 7.092952728271484e-05
+        },
+        "text": {
+          "relative_l2": 0.0385389355861417,
+          "cosine": 0.9993328915005333,
+          "max_abs": 3.242288948968053e-05
+        },
+        "temporal": {
+          "relative_l2": 0.06279752182704812,
+          "cosine": 0.9982888605194743,
+          "max_abs": 4.2892643250525e-06
+        },
+        "clip": {
+          "relative_l2": 0.05462920718618802,
+          "cosine": 0.9986619950298772,
+          "max_abs": 1.9162893295288086e-05
+        }
+      }
+    },
+    "bf16_micro8": {
+      "loss": 0.03979814425110817,
+      "preclip_norm": 0.06131626293063164,
+      "gradients": {
+        "scale": {
+          "relative_l2": 0.000831697783938913,
+          "cosine": 0.9999996569294223,
+          "max_abs": 4.662899300456047e-06
+        },
+        "bias": {
+          "relative_l2": 0.00029797385401290276,
+          "cosine": 0.9999999570404164,
+          "max_abs": 1.608976162970066e-06
+        },
+        "audio": {
+          "relative_l2": 0.018572190677771508,
+          "cosine": 0.999827567995824,
+          "max_abs": 4.38690185546875e-05
+        },
+        "text": {
+          "relative_l2": 0.009217299755809136,
+          "cosine": 0.9999597017056995,
+          "max_abs": 5.7220458984375e-06
+        },
+        "temporal": {
+          "relative_l2": 0.015345694574946596,
+          "cosine": 0.9998917276433649,
+          "max_abs": 1.396538209519349e-06
+        },
+        "clip": {
+          "relative_l2": 0.008074948615773672,
+          "cosine": 0.999979324780259,
+          "max_abs": 8.344650268554688e-07
+        }
+      }
+    },
+    "four_rank_fp32": {
+      "loss": 0.03983722999691963,
+      "preclip_norm": 0.060509875416755676,
+      "gradients": {
+        "scale": {
+          "relative_l2": 0.008390477748071936,
+          "cosine": 0.9999999470481866,
+          "max_abs": 4.5942142605781555e-05
+        },
+        "bias": {
+          "relative_l2": 0.010441203871985869,
+          "cosine": 0.9999999947074711,
+          "max_abs": 5.914829671382904e-05
+        },
+        "audio": {
+          "relative_l2": 0.05991885660207385,
+          "cosine": 0.9982543358029675,
+          "max_abs": 0.0001442021457478404
+        },
+        "text": {
+          "relative_l2": 0.038897393631150114,
+          "cosine": 0.9992887957940633,
+          "max_abs": 3.397435648366809e-05
+        },
+        "temporal": {
+          "relative_l2": 0.2216271662665936,
+          "cosine": 0.9776891994895107,
+          "max_abs": 1.0109657523571514e-05
+        },
+        "clip": {
+          "relative_l2": 0.054557025725707774,
+          "cosine": 0.9986276530904649,
+          "max_abs": 1.893572334665805e-05
+        }
+      }
+    }
+  },
+  "denominators": {
+    "class_mass": 447000,
+    "frame_caption_positive": 1744.0,
+    "frame_caption_negative": 13256.0,
+    "clip_caption_positive": 8.0,
+    "clip_caption_negative": 24.0
+  },
+  "micro_only_query_counts": [
+    [],
+    [
+      0,
+      1,
+      2,
+      5
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      2
+    ],
+    [
+      0,
+      1
+    ]
+  ],
+  "source_hashes": {
+    "train.py": "016f10ca9e396e64bf59f9051596d592735a220fc44394513e447208482c1fe2",
+    "model.py": "25f47e87eac93132ff010ccc4544bddaa7db2d3a08987069ad911c0ce92a3057",
+    "data.py": "7b6fa479e21b2c48f53b400e80010cf48d887ba98105c2104b177380b79f8f38"
+  },
+  "fixed_mel_control": {
+    "source_counts": [
+      {
+        "source": "audioset_strong",
+        "queries": 447,
+        "valid": 447000,
+        "positive": 5030.0,
+        "negative": 441970.0
+      },
+      {
+        "source": "finelap100k",
+        "queries": 9,
+        "valid": 9000,
+        "positive": 774.0,
+        "negative": 8226.0
+      },
+      {
+        "source": "audiocaps",
+        "queries": 4,
+        "valid": 16,
+        "positive": 4.0,
+        "negative": 12.0
+      },
+      {
+        "source": "tacos",
+        "queries": 6,
+        "valid": 6000,
+        "positive": 970.0,
+        "negative": 5030.0
+      },
+      {
+        "source": "clotho",
+        "queries": 4,
+        "valid": 16,
+        "positive": 4.0,
+        "negative": 12.0
+      }
+    ],
+    "samples": [
+      {
+        "source": "tacos",
+        "path": "/work/zhanghc/datasets/TACOS/audio/663781.mp3",
+        "start": 455519
+      },
+      {
+        "source": "finelap100k",
+        "path": "/work/zhanghc/datasets/FineLAP-100k/audio/mix_76203.wav",
+        "start": 0
+      },
+      {
+        "source": "clotho",
+        "path": "/work/zhanghc/Myllm/ASU-LLM/data/CLOTHO_v2.1/clotho_audio_files/development/Silencyo_COUNTRY_NIGHT_Crickets_Distant_Frogs_Turtledove.wav",
+        "start": 207755
+      },
+      {
+        "source": "audiocaps",
+        "path": "/work/zhangyu/AED/audioset_tagging_cnn/datasets/audios/unbalanced_train_segments/unpacked/YuGyRLcQLZd8.wav",
+        "start": 0
+      },
+      {
+        "source": "audiocaps",
+        "path": "/work/zhangyu/AED/audioset_tagging_cnn/datasets/audios/unbalanced_train_segments/unpacked/YF5wf6IXXwtg.wav",
+        "start": 0
+      },
+      {
+        "source": "clotho",
+        "path": "/work/zhanghc/Myllm/ASU-LLM/data/CLOTHO_v2.1/clotho_audio_files/development/cat_breath.wav",
+        "start": 292048
+      },
+      {
+        "source": "audioset_strong",
+        "path": "/work/zhanghc/datasets/WavCaps/audio/AudioSet_SL/mnt/fast/nobackup/scratch4weeks/xm00178/WavCaps/data/waveforms/AudioSet_SL_flac/YX8LsD1x5Ot8.flac",
+        "start": 0
+      },
+      {
+        "source": "tacos",
+        "path": "/work/zhanghc/datasets/TACOS/audio/13428.mp3",
+        "start": 2266
+      },
+      {
+        "source": "clotho",
+        "path": "/work/zhanghc/Myllm/ASU-LLM/data/CLOTHO_v2.1/clotho_audio_files/development/kidsontrain.wav",
+        "start": 592336
+      },
+      {
+        "source": "finelap100k",
+        "path": "/work/zhanghc/datasets/FineLAP-100k/audio/mix_19977.wav",
+        "start": 0
+      },
+      {
+        "source": "audioset_strong",
+        "path": "/work/zhanghc/datasets/WavCaps/audio/AudioSet_SL/mnt/fast/nobackup/scratch4weeks/xm00178/WavCaps/data/waveforms/AudioSet_SL_flac/Y8EQGvxCX57E.flac",
+        "start": 0
+      },
+      {
+        "source": "finelap100k",
+        "path": "/work/zhanghc/datasets/FineLAP-100k/audio/mix_78986.wav",
+        "start": 0
+      },
+      {
+        "source": "audioset_strong",
+        "path": "/work/zhanghc/datasets/WavCaps/audio/AudioSet_SL/mnt/fast/nobackup/scratch4weeks/xm00178/WavCaps/data/waveforms/AudioSet_SL_flac/YYfZEatG_TkA.flac",
+        "start": 0
+      },
+      {
+        "source": "audioset_strong",
+        "path": "/work/zhanghc/datasets/WavCaps/audio/AudioSet_SL/mnt/fast/nobackup/scratch4weeks/xm00178/WavCaps/data/waveforms/AudioSet_SL_flac/Y1wsyT7v1BqA.flac",
+        "start": 0
+      },
+      {
+        "source": "tacos",
+        "path": "/work/zhanghc/datasets/TACOS/audio/580945.mp3",
+        "start": 146309
+      },
+      {
+        "source": "audiocaps",
+        "path": "/work/zhangyu/AED/audioset_tagging_cnn/datasets/audios/unbalanced_train_segments/unpacked/Y2Lej8aE00uw.wav",
+        "start": 0
+      },
+      {
+        "source": "audiocaps",
+        "path": "/work/zhangyu/AED/audioset_tagging_cnn/datasets/audios/unbalanced_train_segments/unpacked/Y1sZrw4WR4Bo.wav",
+        "start": 0
+      },
+      {
+        "source": "finelap100k",
+        "path": "/work/zhanghc/datasets/FineLAP-100k/audio/mix_8809.wav",
+        "start": 0
+      },
+      {
+        "source": "tacos",
+        "path": "/work/zhanghc/datasets/TACOS/audio/371553.mp3",
+        "start": 265277
+      },
+      {
+        "source": "clotho",
+        "path": "/work/zhanghc/Myllm/ASU-LLM/data/CLOTHO_v2.1/clotho_audio_files/development/Car_Driveby_Ford Fiesta_Puddles-Mud-Gravel.wav",
+        "start": 201695
+      }
+    ],
+    "tests": {
+      "dense_fp32": {
+        "loss": 0.039824433624744415,
+        "blocks": [
+          0.020748868584632874,
+          0.009650437161326408,
+          0.009425128810107708
+        ]
+      },
+      "fp32_micro2": {
+        "loss": 0.039824433624744415,
+        "preclip_norm": 0.06122713163495064,
+        "gradients": {
+          "scale": {
+            "relative_l2": 9.235535002911449e-08,
+            "cosine": 0.9999999999999998,
+            "max_abs": 4.656612873077393e-10
+          },
+          "bias": {
+            "relative_l2": 1.0088549694846376e-07,
+            "cosine": 0.999999999999999,
+            "max_abs": 4.656612873077393e-10
+          },
+          "audio": {
+            "relative_l2": 1.3491838929723002e-06,
+            "cosine": 0.999999999999092,
+            "max_abs": 4.423782229423523e-09
+          },
+          "text": {
+            "relative_l2": 6.445098979719065e-07,
+            "cosine": 0.9999999999997989,
+            "max_abs": 4.0745362639427185e-10
+          },
+          "temporal": {
+            "relative_l2": 1.7820147848211314e-06,
+            "cosine": 0.9999999999984681,
+            "max_abs": 1.4551915228366852e-10
+          },
+          "clip": {
+            "relative_l2": 4.126551959173357e-07,
+            "cosine": 0.9999999999999153,
+            "max_abs": 5.093170329928398e-11
+          }
+        }
+      },
+      "fp32_micro8": {
+        "loss": 0.039824433624744415,
+        "preclip_norm": 0.06122712418437004,
+        "gradients": {
+          "scale": {
+            "relative_l2": 1.664959750466985e-07,
+            "cosine": 0.9999999999999987,
+            "max_abs": 9.313225746154785e-10
+          },
+          "bias": {
+            "relative_l2": 8.070839755877101e-08,
+            "cosine": 0.9999999999999998,
+            "max_abs": 4.656612873077393e-10
+          },
+          "audio": {
+            "relative_l2": 1.2291127889889995e-06,
+            "cosine": 0.9999999999992562,
+            "max_abs": 6.28642737865448e-09
+          },
+          "text": {
+            "relative_l2": 5.699814495837776e-07,
+            "cosine": 0.999999999999839,
+            "max_abs": 3.7834979593753815e-10
+          },
+          "temporal": {
+            "relative_l2": 2.0129420094492807e-06,
+            "cosine": 0.999999999997988,
+            "max_abs": 1.8735590856522322e-10
+          },
+          "clip": {
+            "relative_l2": 4.5480653537650203e-07,
+            "cosine": 0.9999999999999086,
+            "max_abs": 6.548361852765083e-11
+          }
+        }
+      },
+      "dense_bf16": {
+        "loss": 0.03981354460120201,
+        "blocks": [
+          0.020747516304254532,
+          0.009649761952459812,
+          0.009416267275810242
+        ]
+      },
+      "bf16_micro2": {
+        "loss": 0.039799220860004425,
+        "preclip_norm": 0.06129259988665581,
+        "gradients": {
+          "scale": {
+            "relative_l2": 0.0007154341854321037,
+            "cosine": 0.9999997449082607,
+            "max_abs": 3.99397686123848e-06
+          },
+          "bias": {
+            "relative_l2": 0.00028137608099243223,
+            "cosine": 0.9999999741048041,
+            "max_abs": 1.1771917343139648e-06
+          },
+          "audio": {
+            "relative_l2": 0.004940907325026319,
+            "cosine": 0.9999882186554473,
+            "max_abs": 1.3396143913269043e-05
+          },
+          "text": {
+            "relative_l2": 0.00838650240834553,
+            "cosine": 0.9999659875880229,
+            "max_abs": 5.7220458984375e-06
+          },
+          "temporal": {
+            "relative_l2": 0.001010745943090427,
+            "cosine": 0.9999995461788049,
+            "max_abs": 4.5192791731096804e-08
+          },
+          "clip": {
+            "relative_l2": 0.00860759255346693,
+            "cosine": 0.999986993920417,
+            "max_abs": 9.611248970031738e-07
+          }
+        }
+      },
+      "bf16_micro8": {
+        "loss": 0.0398108996450901,
+        "preclip_norm": 0.061291325837373734,
+        "gradients": {
+          "scale": {
+            "relative_l2": 0.00072624779506433,
+            "cosine": 0.9999997375181346,
+            "max_abs": 4.060915671288967e-06
+          },
+          "bias": {
+            "relative_l2": 0.0006003993806073722,
+            "cosine": 0.9999998197972386,
+            "max_abs": 3.400607965886593e-06
+          },
+          "audio": {
+            "relative_l2": 0.004857717945460745,
+            "cosine": 0.999988692450594,
+            "max_abs": 1.89109705388546e-05
+          },
+          "text": {
+            "relative_l2": 0.0075833866255496625,
+            "cosine": 0.9999716494759312,
+            "max_abs": 3.814697265625e-06
+          },
+          "temporal": {
+            "relative_l2": 0.0006743130062640668,
+            "cosine": 0.9999997744427973,
+            "max_abs": 3.5592165659181774e-08
+          },
+          "clip": {
+            "relative_l2": 0.006511873021871754,
+            "cosine": 0.999989006479997,
+            "max_abs": 5.960464477539062e-07
+          }
+        }
+      },
+      "four_rank_fp32": {
+        "loss": 0.039824437350034714,
+        "preclip_norm": 0.06122713163495064,
+        "gradients": {
+          "scale": {
+            "relative_l2": 8.514742554622671e-08,
+            "cosine": 1.0,
+            "max_abs": 4.656612873077393e-10
+          },
+          "bias": {
+            "relative_l2": 1.0088549694846376e-07,
+            "cosine": 0.999999999999999,
+            "max_abs": 4.656612873077393e-10
+          },
+          "audio": {
+            "relative_l2": 1.3511958771168734e-06,
+            "cosine": 0.9999999999990895,
+            "max_abs": 4.190951585769653e-09
+          },
+          "text": {
+            "relative_l2": 8.673029490541496e-07,
+            "cosine": 0.9999999999996311,
+            "max_abs": 6.111804395914078e-10
+          },
+          "temporal": {
+            "relative_l2": 1.7393016315276241e-06,
+            "cosine": 0.9999999999985462,
+            "max_abs": 1.5506884665228426e-10
+          },
+          "clip": {
+            "relative_l2": 3.846506920723685e-07,
+            "cosine": 0.999999999999929,
+            "max_abs": 4.3655745685100555e-11
+          }
+        }
+      }
+    },
+    "denominators": {
+      "class_mass": 447000,
+      "frame_caption_positive": 1744.0,
+      "frame_caption_negative": 13256.0,
+      "clip_caption_positive": 8.0,
+      "clip_caption_negative": 24.0
+    },
+    "micro_only_query_counts": [
+      [],
+      [
+        0,
+        1,
+        2,
+        5
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "source_hashes": {
+      "train.py": "016f10ca9e396e64bf59f9051596d592735a220fc44394513e447208482c1fe2",
+      "model.py": "25f47e87eac93132ff010ccc4544bddaa7db2d3a08987069ad911c0ce92a3057",
+      "data.py": "7b6fa479e21b2c48f53b400e80010cf48d887ba98105c2104b177380b79f8f38"
+    },
+    "mel_batch_dependence": {
+      "1": {
+        "max_abs": 0.241790771484375,
+        "changed_fraction": 0.41077670454978943
+      },
+      "2": {
+        "max_abs": 0.18508976697921753,
+        "changed_fraction": 0.4107361435890198
+      },
+      "8": {
+        "max_abs": 0.061307311058044434,
+        "changed_fraction": 0.06618693470954895
+      }
+    }
+  },
+  "per_clip_db_control": {
+    "per_clip_vs_old_singleton_max_abs": 4.83393669128418e-05,
+    "per_clip_full_vs_micro2": 4.83393669128418e-05,
+    "per_clip_full_vs_micro8": 2.384185791015625e-07
+  }
+}

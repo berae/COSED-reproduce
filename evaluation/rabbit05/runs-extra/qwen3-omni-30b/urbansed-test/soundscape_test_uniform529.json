@@ -1,0 +1,144 @@
+{
+  "clip_id": "soundscape_test_uniform529",
+  "labels": [
+    "air_conditioner",
+    "car_horn",
+    "children_playing",
+    "dog_bark",
+    "drilling",
+    "engine_idling",
+    "gun_shot",
+    "jackhammer",
+    "siren",
+    "street_music"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/urbansed/data/1324404/URBAN-SED_v2.0.0/audio/test/soundscape_test_uniform529.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 15.798023462295532,
+      "status": "complete",
+      "events": [
+        [
+          0.99,
+          1.52,
+          "car_horn"
+        ],
+        [
+          1.71,
+          2.12,
+          "car_horn"
+        ],
+        [
+          2.29,
+          2.71,
+          "car_horn"
+        ],
+        [
+          2.89,
+          3.31,
+          "car_horn"
+        ],
+        [
+          3.49,
+          3.91,
+          "car_horn"
+        ],
+        [
+          4.71,
+          6.71,
+          "drilling"
+        ],
+        [
+          7.11,
+          9.51,
+          "jackhammer"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-995f544343bda78c",
+            "object": "chat.completion",
+            "created": 1792773828,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 1,\n      \"start\": 0.99,\n      \"end\": 1.52\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 1.71,\n      \"end\": 2.12\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 2.29,\n      \"end\": 2.71\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 2.89,\n      \"end\": 3.31\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 3.49,\n      \"end\": 3.91\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 4.71,\n      \"end\": 6.71\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 7.11,\n      \"end\": 9.51\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 328,
+              "total_tokens": 566,
+              "completion_tokens": 238,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.99,
+      1.52,
+      "car_horn"
+    ],
+    [
+      1.71,
+      2.12,
+      "car_horn"
+    ],
+    [
+      2.29,
+      2.71,
+      "car_horn"
+    ],
+    [
+      2.89,
+      3.31,
+      "car_horn"
+    ],
+    [
+      3.49,
+      3.91,
+      "car_horn"
+    ],
+    [
+      4.71,
+      6.71,
+      "drilling"
+    ],
+    [
+      7.11,
+      9.51,
+      "jackhammer"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 15.798023462295532
+}

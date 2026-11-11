@@ -1,0 +1,116 @@
+{
+  "clip_id": "Y1jD2iUXynFo",
+  "labels": [
+    "a vacuum is going",
+    "dog is bow-wow"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y1jD2iUXynFo.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 9.999625,
+      "seconds": 12.078873634338379,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          9.824,
+          "a vacuum is going"
+        ],
+        [
+          1.735,
+          2.365,
+          "dog is bow-wow"
+        ],
+        [
+          3.875,
+          4.475,
+          "dog is bow-wow"
+        ],
+        [
+          6.155,
+          6.755,
+          "dog is bow-wow"
+        ],
+        [
+          7.155,
+          7.755,
+          "dog is bow-wow"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-af0e30bc119a143f",
+            "object": "chat.completion",
+            "created": 1792780466,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 9.824\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 1.735,\n      \"end\": 2.365\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 3.875,\n      \"end\": 4.475\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 6.155,\n      \"end\": 6.755\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 7.155,\n      \"end\": 7.755\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 289,
+              "total_tokens": 473,
+              "completion_tokens": 184,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      9.824,
+      "a vacuum is going"
+    ],
+    [
+      1.735,
+      2.365,
+      "dog is bow-wow"
+    ],
+    [
+      3.875,
+      4.475,
+      "dog is bow-wow"
+    ],
+    [
+      6.155,
+      6.755,
+      "dog is bow-wow"
+    ],
+    [
+      7.155,
+      7.755,
+      "dog is bow-wow"
+    ]
+  ],
+  "duration": 9.999625,
+  "inference_seconds": 12.078873634338379
+}

@@ -1,0 +1,282 @@
+{
+  "clip_id": "726845",
+  "labels": [
+    "A button is being pushed.",
+    "A vacuum cleaner hums loudly and monotonously indoors.",
+    "The vacuum cleaner is turned off, gradually decreasing in volume.",
+    "A button is pushed suddenly once in the distance indoors.",
+    "A button is pressed suddenly once in the distance indoors."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/726845.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 7.824297189712524,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          0.189,
+          "A button is being pushed."
+        ],
+        [
+          0.189,
+          9.579,
+          "A vacuum cleaner hums loudly and monotonously indoors."
+        ],
+        [
+          9.579,
+          10.0,
+          "The vacuum cleaner is turned off, gradually decreasing in volume."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-bcc87641de361030",
+            "object": "chat.completion",
+            "created": 1792831738,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 0.189\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.189,\n      \"end\": 9.579\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 9.579,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 338,
+              "total_tokens": 455,
+              "completion_tokens": 117,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 3.338073968887329,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          10.0,
+          "A vacuum cleaner hums loudly and monotonously indoors."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-917332ec9ca601d4",
+            "object": "chat.completion",
+            "created": 1792831746,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 338,
+              "total_tokens": 387,
+              "completion_tokens": 49,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 10.0,
+      "seconds": 5.5175087451934814,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          5.0,
+          "A vacuum cleaner hums loudly and monotonously indoors."
+        ],
+        [
+          5.0,
+          9.0,
+          "The vacuum cleaner is turned off, gradually decreasing in volume."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8703f626271c5571",
+            "object": "chat.completion",
+            "created": 1792831749,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 5.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 5.000,\n      \"end\": 9.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 338,
+              "total_tokens": 420,
+              "completion_tokens": 82,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 240000,
+      "start": 15.0,
+      "duration": 7.764875,
+      "seconds": 5.238302230834961,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          3.89,
+          "A vacuum cleaner hums loudly and monotonously indoors."
+        ],
+        [
+          3.89,
+          7.764875,
+          "The vacuum cleaner is turned off, gradually decreasing in volume."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-92d204c85f7b1477",
+            "object": "chat.completion",
+            "created": 1792831755,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 1,\n      \"start\": 0.0,\n      \"end\": 3.89\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 3.89,\n      \"end\": 7.765\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 307,
+              "total_tokens": 385,
+              "completion_tokens": 78,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      0.189,
+      "A button is being pushed."
+    ],
+    [
+      0.189,
+      18.89,
+      "A vacuum cleaner hums loudly and monotonously indoors."
+    ],
+    [
+      9.579,
+      10.0,
+      "The vacuum cleaner is turned off, gradually decreasing in volume."
+    ],
+    [
+      15.0,
+      22.764875,
+      "The vacuum cleaner is turned off, gradually decreasing in volume."
+    ]
+  ],
+  "duration": 22.764875,
+  "inference_seconds": 21.918182134628296
+}

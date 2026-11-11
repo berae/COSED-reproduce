@@ -1,0 +1,86 @@
+{
+  "clip_id": "Y-VCN1giSq7c",
+  "labels": [
+    "multiple people talk to each other",
+    "a barking sound is heard"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y-VCN1giSq7c.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 9.7535,
+      "seconds": 5.214287757873535,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          2.38,
+          "multiple people talk to each other"
+        ],
+        [
+          2.62,
+          3.02,
+          "a barking sound is heard"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-9d643555f9de5bdf",
+            "object": "chat.completion",
+            "created": 1792779961,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 2.38\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 2.62,\n      \"end\": 3.02\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 288,
+              "total_tokens": 365,
+              "completion_tokens": 77,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      2.62,
+      3.02,
+      "a barking sound is heard"
+    ],
+    [
+      0.0,
+      2.38,
+      "multiple people talk to each other"
+    ]
+  ],
+  "duration": 9.7535,
+  "inference_seconds": 5.214287757873535
+}

@@ -1,0 +1,117 @@
+{
+  "clip_id": "Y3VfzEumJgcQ",
+  "labels": [
+    "blasts occur",
+    "two adult males speak",
+    "laugh"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y3VfzEumJgcQ.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 9.9444375,
+      "seconds": 11.365856647491455,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          0.53,
+          "blasts occur"
+        ],
+        [
+          1.67,
+          2.81,
+          "blasts occur"
+        ],
+        [
+          3.98,
+          5.12,
+          "two adult males speak"
+        ],
+        [
+          6.27,
+          7.88,
+          "two adult males speak"
+        ],
+        [
+          8.29,
+          8.72,
+          "laugh"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b10bb99eacd415c5",
+            "object": "chat.completion",
+            "created": 1792780911,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 0.53\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 1.67,\n      \"end\": 2.81\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 3.98,\n      \"end\": 5.12\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 6.27,\n      \"end\": 7.88\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 8.29,\n      \"end\": 8.72\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 288,
+              "total_tokens": 461,
+              "completion_tokens": 173,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      0.53,
+      "blasts occur"
+    ],
+    [
+      1.67,
+      2.81,
+      "blasts occur"
+    ],
+    [
+      8.29,
+      8.72,
+      "laugh"
+    ],
+    [
+      3.98,
+      5.12,
+      "two adult males speak"
+    ],
+    [
+      6.27,
+      7.88,
+      "two adult males speak"
+    ]
+  ],
+  "duration": 9.9444375,
+  "inference_seconds": 11.365856647491455
+}

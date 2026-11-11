@@ -1,0 +1,372 @@
+{
+  "clip_id": "766887",
+  "labels": [
+    "A loud beeping sound is repeated.",
+    "Water flows rapidly.",
+    "A machine is whirring quietly indoors.",
+    "An echoing sound of wet items moving or falling."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/766887.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 10.031302213668823,
+      "status": "complete",
+      "events": [
+        [
+          4.587,
+          9.687,
+          "A loud beeping sound is repeated."
+        ],
+        [
+          0.0,
+          4.587,
+          "Water flows rapidly."
+        ],
+        [
+          4.587,
+          9.687,
+          "A machine is whirring quietly indoors."
+        ],
+        [
+          0.0,
+          4.587,
+          "An echoing sound of wet items moving or falling."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8fc1d8540e9893ac",
+            "object": "chat.completion",
+            "created": 1792786546,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 4.587,\n      \"end\": 9.687\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.0,\n      \"end\": 4.587\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 4.587,\n      \"end\": 9.687\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.0,\n      \"end\": 4.587\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 315,
+              "total_tokens": 461,
+              "completion_tokens": 146,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 5.567593097686768,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          10.0,
+          "A loud beeping sound is repeated."
+        ],
+        [
+          0.0,
+          10.0,
+          "Water flows rapidly."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-aa24329def8c409a",
+            "object": "chat.completion",
+            "created": 1792786556,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 315,
+              "total_tokens": 399,
+              "completion_tokens": 84,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 10.0,
+      "seconds": 5.566565036773682,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          10.0,
+          "A loud beeping sound is repeated."
+        ],
+        [
+          0.0,
+          10.0,
+          "A machine is whirring quietly indoors."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b54c8f2b8283a9a2",
+            "object": "chat.completion",
+            "created": 1792786562,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 315,
+              "total_tokens": 399,
+              "completion_tokens": 84,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 240000,
+      "start": 15.0,
+      "duration": 10.0,
+      "seconds": 7.670647621154785,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          4.758,
+          "A loud beeping sound is repeated."
+        ],
+        [
+          4.758,
+          9.608,
+          "Water flows rapidly."
+        ],
+        [
+          0.0,
+          4.758,
+          "A machine is whirring quietly indoors."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-befb6047993ae598",
+            "object": "chat.completion",
+            "created": 1792786567,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 4.758\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 4.758,\n      \"end\": 9.608\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 4.758\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 315,
+              "total_tokens": 431,
+              "completion_tokens": 116,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 320000,
+      "start": 20.0,
+      "duration": 7.6646875,
+      "seconds": 5.192523717880249,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          7.6646875,
+          "A loud beeping sound is repeated."
+        ],
+        [
+          0.0,
+          7.6646875,
+          "Water flows rapidly."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8037890e23d4b430",
+            "object": "chat.completion",
+            "created": 1792786575,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 7.665\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.0,\n      \"end\": 7.665\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 283,
+              "total_tokens": 361,
+              "completion_tokens": 78,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      4.587,
+      27.6646875,
+      "A loud beeping sound is repeated."
+    ],
+    [
+      4.587,
+      9.687,
+      "A machine is whirring quietly indoors."
+    ],
+    [
+      10.0,
+      20.0,
+      "A machine is whirring quietly indoors."
+    ],
+    [
+      0.0,
+      4.587,
+      "An echoing sound of wet items moving or falling."
+    ],
+    [
+      0.0,
+      4.587,
+      "Water flows rapidly."
+    ],
+    [
+      5.0,
+      15.0,
+      "Water flows rapidly."
+    ],
+    [
+      19.758,
+      27.6646875,
+      "Water flows rapidly."
+    ]
+  ],
+  "duration": 27.6646875,
+  "inference_seconds": 34.02863168716431
+}

@@ -1,0 +1,74 @@
+{
+  "baseline": "/work/zhanghc/Myllm/FineLAP/exps/finelap_cosed_mix_20261029",
+  "changes": [
+    "BF16 autocast -> FP32",
+    "activation recomputation, previously loss/gradient-equivalent to plain FP32"
+  ],
+  "configuration_otherwise_identical": true,
+  "metadata_sha256": {
+    "/work/zhanghc/Myllm/FineLAP/data/cosed/audioset_strong.jsonl": "0e78ec52a8f43fc260d68d938626b9bd783f9c054c2adf4c8e78e2ad551f05df",
+    "/work/zhanghc/Myllm/FineLAP/data/cosed/finelap100k.jsonl": "d5b29b1cf17f792b4a73ea6bfa12e0665f984720bbad8622ec3a59b3bc55d54d",
+    "/work/zhanghc/Myllm/FineLAP/data/cosed/audiocaps.jsonl": "8d3641caf9df6d2a8f5927ee7779d8f5f67726fc1bd15b5882e97262c595400b",
+    "/work/zhanghc/Myllm/FineLAP/data/cosed/tacos.jsonl": "0498ea000d089551d69719fe1f5c4ac4b3cad7ec45ac5da48e240bd69da1b20f",
+    "/work/zhanghc/Myllm/FineLAP/data/cosed/clotho.jsonl": "5958c076bb3265575fa834e051a89b484dfe62b8c6e2eb7f0625ea97471f0fa6"
+  },
+  "mixture": {
+    "counts": {
+      "audioset_strong": 102825,
+      "finelap100k": 100000,
+      "audiocaps": 49062,
+      "tacos": 10358,
+      "clotho": 3839
+    },
+    "repeat_factors": {
+      "audioset_strong": 1,
+      "finelap100k": 1,
+      "audiocaps": 2,
+      "tacos": 5,
+      "clotho": 4
+    },
+    "weighted_counts": {
+      "audioset_strong": 102825,
+      "finelap100k": 100000,
+      "audiocaps": 98124,
+      "tacos": 51790,
+      "clotho": 15356
+    },
+    "smoke_only": false,
+    "differences": [
+      "Full public TACOS development split; COSED speech exclusion IDs unavailable",
+      "FineLAP architecture, objectives, phrase bank and 10-epoch optimizer recipe retained",
+      "AS captions use WavCaps when available, otherwise deterministic label template",
+      "Free-text TACOS queries retained literally; unknown phrases use original FineLAP fallback",
+      "TAG test and AudioCaps val/test IDs excluded from both AS and AudioCaps"
+    ]
+  },
+  "source_sha256": {
+    "train.py": "b5bd60b9cd951c98a8045b540dee4c85210843e62ae58b3cf9279b5d3bd0556e",
+    "scripts/train_cosed.py": "21e17a4086dfd4c9b74cd653aad815e5d420f8d9a19c8acb11c019e0d9565d93",
+    "data_handling/mix_dataset.py": "41875f65403c0f14819bd9b8b691e3d63e063d9e226134627b7c5122a144647a",
+    "models/finelap.py": "2e9f8600356badc2775d27f24255149f825ca5e1c2de43e3dd9ef2621aefa32e",
+    "models/losses.py": "b05861f84aa88b62fc129a626804df2f9428f12e5e2841293cd6062552287224",
+    "models/audio_encoder.py": "f5c66384dbba0f8c8b4727a77fb3a6c961f131176a893e7cc7dd554f608cf6b8",
+    "models/text_encoder.py": "eedd12cefb0271023258162f76716cc721a7926f74883094affc7007232e3168",
+    "models/feature_extractor.py": "ce22c3505a455ce9aae4764c94d9eff602468f9cb0dec366b7f2a86ffaf45a2c",
+    "data/phrase_bank_new_with_FSDLabel_UrbanSED.jsonl": "1e9558adfabbd1fc7edb41419360d6bb08db537b5ad4b2b0382bdae82237111c"
+  },
+  "initialization": "same EAT/RoBERTa checkpoints, from scratch; not resumed from trained FineLAP",
+  "initializer_sha256": {
+    "weights/EAT-base_epoch30_ft.pt": "0dbef5f1214ed92c7ae670501c183b0c109f6c1ce7dcadc16da2044478da4b11",
+    "weights/roberta-base/model.safetensors": "5bde1d28afb363d0103324efeb5afc8b2b397fe5e04beabb9b1ef355255ade81",
+    "weights/roberta-base/merges.txt": "1ce1664773c50f3e0cc8842619a93edc4624525b728b188a9e0be33b7726adc5",
+    "weights/roberta-base/tokenizer.json": "847bbeab6174d66a88898f729d52fa8d355fafe1bea101cf960dd404581df70e",
+    "weights/roberta-base/pytorch_model.bin": "278b7a95739c4392fae9b818bb5343dde20be1b89318f37a6d939e1e1b9e461b",
+    "weights/roberta-base/config.json": "ef0185e2aae6e06c5f105a285006952c340e20c7dbf43c86ec82601b13fc45e9",
+    "weights/roberta-base/vocab.json": "9e7f63c2d15d666b52e21d250d2e513b87c9b713cfa6987a82ed89e5e6e50655",
+    "weights/roberta-base/tokenizer_config.json": "994f46754c5bf4014f1aa92d34b1374319c3a6b3f702105cd5b742beaecd18ce"
+  },
+  "packages": {
+    "torch": "2.4.1+cu121",
+    "torchaudio": "2.4.1+cu121",
+    "transformers": "4.57.6",
+    "soundfile": "0.13.1"
+  }
+}

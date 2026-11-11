@@ -1,0 +1,108 @@
+{
+  "clip_id": "Y1ATOT2TZ5Gg",
+  "labels": [
+    "birds are cooing",
+    "people are speaking in the background",
+    "chirping",
+    "the wind is blowing"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y1ATOT2TZ5Gg.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 9.7735,
+      "seconds": 9.44461989402771,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          9.7735,
+          "birds are cooing"
+        ],
+        [
+          0.0,
+          9.7735,
+          "people are speaking in the background"
+        ],
+        [
+          0.0,
+          9.7735,
+          "chirping"
+        ],
+        [
+          0.0,
+          9.7735,
+          "the wind is blowing"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a57195ee32be0fee",
+            "object": "chat.completion",
+            "created": 1792780324,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 9.774\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.0,\n      \"end\": 9.774\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.0,\n      \"end\": 9.774\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.0,\n      \"end\": 9.774\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 299,
+              "total_tokens": 441,
+              "completion_tokens": 142,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      9.7735,
+      "birds are cooing"
+    ],
+    [
+      0.0,
+      9.7735,
+      "chirping"
+    ],
+    [
+      0.0,
+      9.7735,
+      "people are speaking in the background"
+    ],
+    [
+      0.0,
+      9.7735,
+      "the wind is blowing"
+    ]
+  ],
+  "duration": 9.7735,
+  "inference_seconds": 9.44461989402771
+}

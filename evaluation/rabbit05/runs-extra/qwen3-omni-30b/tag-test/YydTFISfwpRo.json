@@ -1,0 +1,158 @@
+{
+  "clip_id": "YydTFISfwpRo",
+  "labels": [
+    "a vehicle engine running idle",
+    "accelerating",
+    "a man shouting in the distance"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/YydTFISfwpRo.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 7.650779485702515,
+      "status": "complete",
+      "events": [
+        [
+          3.457,
+          5.897,
+          "a vehicle engine running idle"
+        ],
+        [
+          5.897,
+          9.607,
+          "accelerating"
+        ],
+        [
+          2.617,
+          3.117,
+          "a man shouting in the distance"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-92f20d569f6c954f",
+            "object": "chat.completion",
+            "created": 1792783003,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 3.457,\n      \"end\": 5.897\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 5.897,\n      \"end\": 9.607\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 2.617,\n      \"end\": 3.117\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 296,
+              "total_tokens": 412,
+              "completion_tokens": 116,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 5.0004375,
+      "seconds": 5.420478343963623,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          5.0,
+          "a vehicle engine running idle"
+        ],
+        [
+          0.637,
+          4.987,
+          "accelerating"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b456bca4a0404f57",
+            "object": "chat.completion",
+            "created": 1792783011,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 5.000\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.637,\n      \"end\": 4.987\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 230,
+              "total_tokens": 312,
+              "completion_tokens": 82,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      2.617,
+      3.117,
+      "a man shouting in the distance"
+    ],
+    [
+      3.457,
+      10.0,
+      "a vehicle engine running idle"
+    ],
+    [
+      5.6370000000000005,
+      9.987,
+      "accelerating"
+    ]
+  ],
+  "duration": 10.0004375,
+  "inference_seconds": 13.071257829666138
+}

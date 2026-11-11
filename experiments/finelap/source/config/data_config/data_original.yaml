@@ -1,0 +1,28 @@
+data_args:
+  basic_data_args:
+    sample_rate: 16000
+    max_length: 10
+    time_resolution: 0.15625
+    return_type: mel
+  train_data_args:
+    batch_size: 128
+    num_workers: 4
+    metadata_files:
+    - /work/zhanghc/Myllm/FineLAP/data/finelap_original/audioset_strong.jsonl
+    - /work/zhanghc/Myllm/FineLAP/data/finelap_original/desed_strong.jsonl
+    - /work/zhanghc/Myllm/FineLAP/data/finelap_original/audiocaps.jsonl
+    - /work/zhanghc/Myllm/FineLAP/data/finelap_original/clotho.jsonl
+    - /work/zhanghc/Myllm/FineLAP/data/finelap_original/wavcaps_freesound.jsonl
+    - /work/zhanghc/Myllm/FineLAP/data/finelap_original/wavcaps_bbc_sound_effects.jsonl
+    - /work/zhanghc/Myllm/FineLAP/data/finelap_original/wavcaps_soundbible.jsonl
+    - /work/zhanghc/Myllm/FineLAP/data/finelap_original/finelap100k.jsonl
+    - /work/zhanghc/Myllm/FineLAP/data/finelap_original/audiosetcaps_weak.jsonl
+    - /work/zhanghc/Myllm/FineLAP/data/finelap_original/urbansed.jsonl
+    spec_aug: true
+    max_split_segments: 1
+    max_chosen_segments: 1
+    max_phrases: 20
+    random_crop: false
+    strict_audio: true
+    audio_backend: soundfile
+    warn_unknown_phrases: false

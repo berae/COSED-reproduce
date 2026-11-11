@@ -1,0 +1,481 @@
+{
+  "clip_id": "649896",
+  "labels": [
+    "A bird chirps loudly in a repeating pattern.",
+    "A loud, muffled thump.",
+    "A bird chirps with a high-pitched tone in the distance.",
+    "A car engine whirs muffledly, increasing in intensity in the distance.",
+    "A bird chirps loudly and repeatedly in the distance.",
+    "Wind blowing constantly in the distance.",
+    "People talking muffledly in the distance in a constant pattern.",
+    "A bird chirps loudly in a repeating pattern in the distance."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/649896.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 18.04685688018799,
+      "status": "complete",
+      "events": [
+        [
+          3.89,
+          4.42,
+          "A bird chirps loudly in a repeating pattern."
+        ],
+        [
+          4.57,
+          5.01,
+          "A loud, muffled thump."
+        ],
+        [
+          6.98,
+          7.22,
+          "A bird chirps with a high-pitched tone in the distance."
+        ],
+        [
+          0.0,
+          10.0,
+          "A car engine whirs muffledly, increasing in intensity in the distance."
+        ],
+        [
+          7.52,
+          7.77,
+          "A bird chirps loudly and repeatedly in the distance."
+        ],
+        [
+          0.0,
+          10.0,
+          "Wind blowing constantly in the distance."
+        ],
+        [
+          0.0,
+          10.0,
+          "People talking muffledly in the distance in a constant pattern."
+        ],
+        [
+          8.12,
+          8.37,
+          "A bird chirps loudly in a repeating pattern in the distance."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-890aa929a3f2a7b7",
+            "object": "chat.completion",
+            "created": 1792815161,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 3.89,\n      \"end\": 4.42\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 4.57,\n      \"end\": 5.01\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 6.98,\n      \"end\": 7.22\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.00,\n      \"end\": 10.00\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 7.52,\n      \"end\": 7.77\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 0.00,\n      \"end\": 10.00\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 0.00,\n      \"end\": 10.00\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 8.12,\n      \"end\": 8.37\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 384,
+              "total_tokens": 657,
+              "completion_tokens": 273,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 12.250316381454468,
+      "status": "complete",
+      "events": [
+        [
+          2.289,
+          2.529,
+          "A bird chirps loudly in a repeating pattern."
+        ],
+        [
+          3.289,
+          3.529,
+          "A bird chirps with a high-pitched tone in the distance."
+        ],
+        [
+          4.529,
+          4.769,
+          "A bird chirps loudly and repeatedly in the distance."
+        ],
+        [
+          0.0,
+          10.0,
+          "People talking muffledly in the distance in a constant pattern."
+        ],
+        [
+          7.289,
+          7.529,
+          "A bird chirps loudly in a repeating pattern in the distance."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-9a6ea98a28df7766",
+            "object": "chat.completion",
+            "created": 1792815179,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 2.289,\n      \"end\": 2.529\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 3.289,\n      \"end\": 3.529\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 4.529,\n      \"end\": 4.769\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 7.289,\n      \"end\": 7.529\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 384,
+              "total_tokens": 569,
+              "completion_tokens": 185,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 10.0,
+      "seconds": 5.553955078125,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          10.0,
+          "People talking muffledly in the distance in a constant pattern."
+        ],
+        [
+          8.9,
+          9.2,
+          "A bird chirps loudly in a repeating pattern in the distance."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-ad231832628ff15d",
+            "object": "chat.completion",
+            "created": 1792815191,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 6,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 8.900,\n      \"end\": 9.200\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 384,
+              "total_tokens": 467,
+              "completion_tokens": 83,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 240000,
+      "start": 15.0,
+      "duration": 10.0,
+      "seconds": 9.493486166000366,
+      "status": "complete",
+      "events": [
+        [
+          3.89,
+          4.42,
+          "A bird chirps loudly in a repeating pattern."
+        ],
+        [
+          5.01,
+          5.52,
+          "A bird chirps with a high-pitched tone in the distance."
+        ],
+        [
+          6.82,
+          9.01,
+          "A car engine whirs muffledly, increasing in intensity in the distance."
+        ],
+        [
+          0.0,
+          10.0,
+          "People talking muffledly in the distance in a constant pattern."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-ae7415e28524c7ef",
+            "object": "chat.completion",
+            "created": 1792815197,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 3.89,\n      \"end\": 4.42\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 5.01,\n      \"end\": 5.52\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 6.82,\n      \"end\": 9.01\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 0.00,\n      \"end\": 10.00\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 384,
+              "total_tokens": 527,
+              "completion_tokens": 143,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 320000,
+      "start": 20.0,
+      "duration": 7.3925625,
+      "seconds": 9.492508888244629,
+      "status": "complete",
+      "events": [
+        [
+          6.58,
+          7.3925625,
+          "A bird chirps loudly in a repeating pattern."
+        ],
+        [
+          3.12,
+          3.88,
+          "A bird chirps with a high-pitched tone in the distance."
+        ],
+        [
+          0.0,
+          7.3925625,
+          "A car engine whirs muffledly, increasing in intensity in the distance."
+        ],
+        [
+          0.0,
+          7.3925625,
+          "People talking muffledly in the distance in a constant pattern."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b4a304fc96938af9",
+            "object": "chat.completion",
+            "created": 1792815206,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 6.58,\n      \"end\": 7.393\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 3.12,\n      \"end\": 3.88\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.0,\n      \"end\": 7.393\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 0.0,\n      \"end\": 7.393\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 348,
+              "total_tokens": 491,
+              "completion_tokens": 143,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      7.52,
+      7.77,
+      "A bird chirps loudly and repeatedly in the distance."
+    ],
+    [
+      9.529,
+      9.769,
+      "A bird chirps loudly and repeatedly in the distance."
+    ],
+    [
+      8.12,
+      8.37,
+      "A bird chirps loudly in a repeating pattern in the distance."
+    ],
+    [
+      12.289,
+      12.529,
+      "A bird chirps loudly in a repeating pattern in the distance."
+    ],
+    [
+      18.9,
+      19.2,
+      "A bird chirps loudly in a repeating pattern in the distance."
+    ],
+    [
+      3.89,
+      4.42,
+      "A bird chirps loudly in a repeating pattern."
+    ],
+    [
+      7.289,
+      7.529,
+      "A bird chirps loudly in a repeating pattern."
+    ],
+    [
+      18.89,
+      19.42,
+      "A bird chirps loudly in a repeating pattern."
+    ],
+    [
+      26.58,
+      27.3925625,
+      "A bird chirps loudly in a repeating pattern."
+    ],
+    [
+      6.98,
+      7.22,
+      "A bird chirps with a high-pitched tone in the distance."
+    ],
+    [
+      8.289,
+      8.529,
+      "A bird chirps with a high-pitched tone in the distance."
+    ],
+    [
+      20.009999999999998,
+      20.52,
+      "A bird chirps with a high-pitched tone in the distance."
+    ],
+    [
+      23.12,
+      23.88,
+      "A bird chirps with a high-pitched tone in the distance."
+    ],
+    [
+      0.0,
+      10.0,
+      "A car engine whirs muffledly, increasing in intensity in the distance."
+    ],
+    [
+      20.0,
+      27.3925625,
+      "A car engine whirs muffledly, increasing in intensity in the distance."
+    ],
+    [
+      4.57,
+      5.01,
+      "A loud, muffled thump."
+    ],
+    [
+      0.0,
+      27.3925625,
+      "People talking muffledly in the distance in a constant pattern."
+    ],
+    [
+      0.0,
+      10.0,
+      "Wind blowing constantly in the distance."
+    ]
+  ],
+  "duration": 27.3925625,
+  "inference_seconds": 54.83712339401245
+}

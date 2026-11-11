@@ -1,0 +1,138 @@
+2026-10-19 | 用户授权清理重复文件。
+查询：检查本机/服务器 analysis 文件清单及 Markdown、HTML、脚本引用。
+删除：results.html（旧总览）、classwise/index.html（重复全量网页）、render_classwise.py（对应生成器）、desed/analysis.ipynb（计分脚本副本）、desed/research_analysis.py（本机旧诊断脚本副本，服务器无此文件）。
+修改：classwise/README.md 仅保留查询明细和来源；更新 class_results.md、comparison.html、experiment_summary.md、desed/README.md 的链接；AGENTS.md 记录文件复用与日志约定。
+保留：comparison.html、class_results.md 为主要入口；实验说明、专项诊断、音频和图像、统计 JSON、复算脚本均保留；原始数据和模型预测未动。
+新增：本维护日志，后续增删改查持续追加，不按次建立新文件。
+验证：主要文档的相对链接检查通过；本机 5 个重复文件、服务器 4 个重复文件已删除。
+
+2026-10-19 | 修复 class_results.md 总体表预览：表头/数据为 9 列，分隔行误写 10 列；改为 9 列。逐一验证全部 7 张表的表头、分隔行、数据列数一致，数值未改。
+
+2026-10-19 | DESED Public Test 科研诊断。
+修改：复用 desed/research/analysis.py，增加 public/validation 数据集选择；README.md 增补 public 的 Speech、Dishes 全量诊断及具体案例，保留并区分 validation；class_results.md 增加分析入口。
+新增：research/public/ 下统计 JSON、类别图与 6 个案例的音频、响应图、索引和单一浏览页，用于隔离两个 split。
+验证：服务器脚本完成（692 条 public 音频）；人工查看 Speech、Dishes 差异案例响应图；未完成听音确认。主评分、原始预测和权重未变。运行日志：log/20261019/desed_public_analysis.log。
+
+2026-10-19 | 独立审查后二次核实与协议修正。
+核实：服务器 FineLAP HEAD ad82bc1e242de4f56b80cf36f6d9f3009bb96c7b 的 evaluate.py，TAG PSDS 使用原始帧分数，三帧滤波在 th-AUC 分支；483 个预测逐一验证 scores == median_filter(raw,(3,1))。独立重算 TAG raw=0.647915642383797，legacy=0.6601616054768732。
+核实：692 条 DASM Dishes 最大分数 0.3923189640045166；MGA-CLAP Speech_high 最小分数 0.015351551584899426、最大 0.0980769470334053，阈值 0 覆盖整段，片内 AUC=1。任意阈值不能支撑跨模型事件边界/误报/漏报比较。
+修改：移除 analysis.py 及 Public/Validation cases.html 中任意阈值表和相关判断，清除 index.json 展示区间；保留音频、图、连续分数及 AUC。正式操作点仍待验证集选择，本次不另选阈值。
+修改：统一 score_benchmarks.py 接入 TACOS exact/semantic/both、TAG legacy/official/both；分别原子保存 metrics.<policy>.json，不覆盖历史 metrics.json。run_benchmark.py 自动接入相同参数，保留冻结 runner 字节与原始 NPZ；保护其历史 metrics.json 不被内置旧计分覆盖。
+修改：tacos_audit.py 普通核查保留 semantic，语义计分全部成功后才原子替换 audit.json，复用统一 scorer；save_json 使用唯一临时文件原子替换。
+修改：class_results.md、comparison.html、experiment_summary.md 同步 FineLAP TAG 及 TACOS 当前协议与排名；查询明细显式标记 legacy/exact。scripts/README.md 修正启动路径并补充复算说明；runners/README.md 标注旧计分入口限制。
+结果：统一入口五模型 TACOS exact/semantic、TAG legacy/official 全部完成。TACOS semantic 最高 MGA-CLAP=0.13257236846295004，FineLAP=0.12387846718627696。日志 log/20261019/protocol_correction.log。
+限制：TAG official 仅表示 FineLAP 未滤波分支，不宣称完整官方等价；没有重新验证全部前向、没有完成人工听辨，COSED 精确清单、编码器等仍未确认。
+验证完成：五模型 TACOS 新入口 exact/semantic 与既有独立审计分数逐项一致（误差 <1e-12）；10 组历史 metrics.json 数值保留；普通审计保留 semantic，模拟语义计分失败后 audit.json 字节不变；统一队列 dry-run 正确转发两种配置；脚本语法及 Markdown 列数通过。查询 statistics.json 与生成器增加 legacy/exact 元数据。详见 log/20261019/protocol_regression.log。
+
+2026-10-19 | 独立参与模型瓶颈与科研设计审阅。
+新增：analysis/desed/research/bottlenecks.py、bottlenecks.json、bottlenecks.png/pdf；在现有 README.md 文首整合结果，不覆盖原有分析。
+范围：Public 692 条、Validation 1068 条，五模型，共 8800 个保存预测；Speech、Dishes、Dog、Vacuum_cleaner 四类。没有训练、重新推理或改写原始预测、主指标、权重。
+方法：固定 raw 输出对照当前中值平滑；全数据标准逐类 PSD；仅剔除完全阴性音频响应的 GT oracle；逐事件全部阈值组件诊断（不是召回率或 PSDS 上界）；按源录音分组配对 bootstrap、孤立短事件复核；跨数据集标注时长概况。
+结果：MGA-CLAP 0.25-0.5 秒 Dishes 事件的单事件可达比例 Public 38.2%->4.9%、Validation 41.3%->5.6%；对应完整 Dishes PSD 0.1555->0.0974、0.1789->0.1294。FineLAP 平滑反而改善完整 Dishes PSD。FineLAP Speech 排除阴性音频响应明显改善，Dishes 的 DASM/FineLAP/MGA 改善很小。详见 README，不作单一架构因果或新颖性宣称。
+验证：当前平滑 PSD 与既有标准文件 40 项误差 <1e-10；8800 个文件核对 raw->median->scores；组件枚举、AUC、1320 个网格案例与独立暴力实现/库对照通过；检查所有事件分数可达蕴含网格可达；PNG 人工检查无裁切；完整计算与补充统计日志保存在 log/20261019/。
+限制：允许逐事件选择阈值的诊断不能当部署召回；GT gate 不可部署，不可做加性误差分解；跨数据集语义/声学/训练来源混杂；人工盲听、训练源重叠审计仍未完成，Public 已用于探索。
+
+2026-10-22 | 六套 benchmark 全量失败候选整理（待人工听辨）。
+修改：复用 scripts/negative_review.py，由三划分每类 top-5 背景筛查扩展为五模型 × 六套主评测清单，新增 --render-only；本机维护同脚本镜像 negative-review/negative_review.py。DESED Public，MAESTRO Development；FineLAP TAG raw，TACOS 当前 semantic 真值。
+方法：不设模型手写阈值；事件/背景加权 AUC、背景峰值、跨阈值单连续区间最佳 IoU 与可行性、固定类别跨录音排序候选；MAESTRO 使用一秒加权分数与软真值。GT 辅助区间仅作诊断，不是正式 FP/FN、统一部署点或错误率。
+结果：扫描 31,155 份模型预测（6,231 条音频 × 5），生成 92,954 条模型/查询/区间候选。DESED 8,366；RealDESED 15,331；UrbanSED 20,653；TAG 3,345；TACOS 34,830；MAESTRO 10,429。类型可重叠。
+文件：更新 negative-review/candidates.json、candidates.csv、summary.json、review.html、README.md；新增六份按数据集分开的 CSV 和 60 条代表试听 WAV（listen/）。页面支持筛选、分页、稳定案例 ID、局部响应曲线和人工笔记导出。旧 notebook 标记为历史入口，避免误用新 schema。
+验证：120 组随机含并列分数的连通区间枚举与暴力遍历全阈值一致；AUC 正序/倒序/并列检查通过；92,954 ID 唯一、30 项覆盖齐全、六 CSV 行数一致、时间及指标边界正确、TAG 分数字段正确。
+保留：原音频、全部 NPZ、模型权重、主结果与旧协议成绩均未改。未听辨，不推断失败原因；全量列出符合筛选规则的候选，不声称穷尽唯一正式失败集合。
+日志：log/20261022/failure_candidates.log。
+页面验证：嵌入 JavaScript 实际执行通过，六数据集筛选数量与 CSV 一致，60 条代表样本过滤、详情音频/SVG 生成、分页通过；scripts/README.md 同步六套候选范围。
+
+2026-10-22 | 按用户澄清将复核单位改为“一条音频一道题”。
+修改：review.html 主列表按 dataset + audio_id 唯一聚合，所有查询、事件与五模型细项收进同一题。按音频保存人工笔记；代表片段增加五模型同查询响应对照；未触发规则标为待复核，不等于答对。
+修改：六份 benchmark CSV 改为逐音频清单，包含全部 6,231 条音频与五模型现象汇总。candidates.json / candidates.csv 保留 92,954 条诊断细项，不作为题目数。summary.json 增加 audio_total/audio_flagged/audio_by_dataset 与 count_unit，README 类型数量按音频去重。
+数量：DESED 636/692；RealDESED 997/1007；UrbanSED 1998/2000；TAG 366/483；TACOS 1821/2000；MAESTRO Development 49/49；合计 5,867/6,231 条有候选标记。该比例不当作错误率。
+验证：六 CSV 音频 ID 无重复，行数与各数据集 manifest 一致，候选音频数与 summary 一致。复用既有诊断，没有重新推理。
+2026-10-22 | 用户截图触发筛查定义复核：DESED -0H7vrzA80U_4_14，Cat 五段 GT。
+发现：旧背景峰值把只要含少量背景的跨 GT 边界帧也作为背景。FineLAP 8.4375–8.59375 与 8.519 起猫叫重叠，MGA-CLAP 同类问题；不能据此称为背景误报。
+修正：背景峰值仅使用与全部同类 GT 零重叠的完整帧；复用已有候选、已有预测重算这一标记，撤销 11,112 个边界混合帧造成的标记，保留 85,141 条仍触发其他/新规则的诊断细项。脚本 --refresh-background 可复算；不改变官方评分。
+界面：五模型详情逐一列出全部 GT，包括未触发规则的事件，注明既不能视为漏检也不能视为答对。补充 GT 辅助区间性质。FineLAP/MGA-CLAP 此例旧背景峰值标记撤回；FlexSED 6.760–6.800 高峰距下一 GT 6.804 仅 4 ms，作为边界附近响应复核线索，不认定背景误报。
+文档：README 修正背景定义；音频候选数量按新结果自动更新；原音频、模型权重、NPZ、主评测分数未改。
+
+2026-10-22 | 修正复核页面方向：实际模型分数优先。
+主视图改为一条音频的完整音频、全部 GT、五模型完整时间轴分数与逐 GT 均值/峰值；撤下“未触发规则”和 GT 辅助最佳区间等主视图筛查状态。筛查细项保留为历史辅助资料。
+复用 negative_review.py，新增 --render-output-view 和 --serve；服务器只监听本地 18765，通过本机 SSH 转发按需读取已有预测/完整音频。无 GPU、无重新推理。启动服务日志 log/20261022/output_review_service.log；本机转发进程 PID 22284。
+页面猫叫五段 GT 与五模型完整原始数值嵌入，其他题目按需读取。已验证本机 API 的五段 GT、五模型完整时间戳与分数、完整 WAV；浏览器实际显示已核实。
+2026-10-23 | 恢复逐音频查看页：rabbit05 服务 PID 129772 正常，本机 18765 无监听，SSH 转发已退出。重建隐藏 SSH 通道 PID 17424，加入保活设置。验证网页 HTTP 200、Cat 五模型完整分数 API 正常。VPN/电脑休眠后通道仍可能需要重连。
+2026-10-23 | 用户授权本地 Omni 跑六套 benchmark。恢复 Qwen3-Omni-30B-A3B，GPU 3、4，8901；新 scripts/run_omni_benchmark.py 复用现有 manifests 和保存工具，10s/5s 滑窗，原查询/类别提示，不含 GT。窗口级原始回复与 JSON 语法修复记录、事件区间、运行配置与状态保存在 runs-extra/qwen3-omni-30b。单实例串行、原子保存、断点续跑。原始服务不变，SED 预测不改。先六套小批量，再全量；区间 intersection F1 / MAESTRO segment F1 单列，不伪造帧分数 PSDS。已验证括号语法修复与无效时间拒绝、完美样例官方 F1=1。日志 log/20261023/omni_benchmark.log。
+2026-10-23 | 初始小批量已完成六套验证并短暂进入 DESED；观察到跨音频重复时间示例0.2–1.3，消除具体时间锚点后重启正式队列（PID1572912）。初批配置与输出完整移入 runs-extra/qwen3-omni-30b/archive-initial-smoke，不和正式结果混算。正式提示词仅字段类型，无具体事件时间示例。选择依据是格式/输入一致性，不按测试集性能择优。
+
+2026-10-23 | 计算 OVSED 漏检与误报的阈值关系。
+新增 analysis/error_rates.py，复用五模型现有预测和官方 sed_scores_eval 匹配统计。事件任务 FN/GT；FP/真实连续预测区间总数；另列 FP/小时。多对多匹配下不以官方 TP+FP 代替预测总数。MAESTRO 使用十一类×一秒段，分别计算 FN/阳性、FP/阴性、FP/预测阳性。
+所有原生匹配变化点与预测数重建信息存 analysis/error_rates/*.npz；分数分位阈值201点加两端展示到各 benchmark CSV 与 review.html，未用 GT 选择操作点。无任意手写模型阈值。
+验证：构造已知真值，官方匹配正确；阈值等号及无预测分母正确；预测区间计数与直接二值化计数一致。主 PSDS/mpAUC、原始 NPZ 和模型未变。日志 log/20261023/error_rates.log。
+2026-10-23 | 漏检/误报计算完成：六数据集×五模型，共6090展示操作点。六CSV与交互查看页已同步本机，全部原生统计NPZ保存在服务器。验证30组齐全、FN/FP范围、零预测分母、CSV行数、曲线点击和模型阈值表正常。
+2026-10-23 | error_rates 页面兼容事件级/Clip级切换。保留6090条原事件/秒段操作点和原NPZ，新增6090条Clip操作点；--clip-only只读取现有预测补算，不重跑模型。Clip按每条音频每类最大分数判断出现，重复GT同类只计一次、忽略时间；另列按音频去重的至少漏一类/多报一类数量及分母。TAG/TACOS无阴性查询时误报不可测，MAESTRO沿用十一类与软GT>0.5。六CSV通过mode区分，README与服务器同步。验证合成样例、音频去重、阴性分母、零预测、正查询限制；12种数据集/模式组合及曲线点击逻辑均通过。浏览器file协议访问被工具策略阻止，未做浏览器目视验证。日志 log/20261023/error_rates_clip.log。
+
+2026-10-26 | 核查Omni队列：5839成功、392未完成，旧全量计分遇未完成音频断言失败。维护原runner增加--score-complete-only，新增完整成功子集的区间/秒段F1与Clip presence计数，coverage保留排除ID；不改原推理、原metrics.json或回复。analysis/omni_results.md汇总；TAG/TACOS无阴性查询FPR不可测。抽查裸数组被严格解析器拒绝，未将其作为模型漏检。
+
+2026-10-26 | Omni成功子集补算Clip Precision、音频–类别准确率、整音频exact match与二值mAP。原runner维护，无新计分入口；binary AP使用sklearn并列处理，逐类宏平均，不伪造模型置信度；TAG/TACOS阳性查询AP退化不报告。原区间/秒段F1不变。验证已知二值AP与accuracy计数恒等式。同步omni_results.md。
+
+2026-10-26 | 维护原Omni runner新增--compare-clip，复用五个OVSED预测，在Omni相同成功子集上计算四套固定类别benchmark的Clip mAP。OVSED用帧最大分数(MAESTRO一秒加权后最大)，Omni二值生成presence；同GT/类/AP实现。保存clip-comparison.json逐类AP与ID，更新原omni_results.md，不改主表/原预测。TAG/TACOS仅阳性查询不作Clip mAP；不按测试GT挑选固定阈值。验证覆盖数、唯一ID、六模型类别一致、Omni AP与原结果一致。日志log/20261023/omni_clip_comparison.log。
+2026-10-26 | 应用户要求将逐音频五模型分数图纵轴固定为0–1，添加0/0.25/0.5/0.75/1刻度与参考线。只改render_outputs模板和生成页面，不归一化、不修改预测与计分；超范围分数注明原始范围，坐标框裁切防止曲线越界。服务器和本机review.html同步；浏览器刷新确认五模型均显示相同刻度，HTTP200。
+
+2026-10-29 | rabbit02 下载 AudioSet Strong 官方四份 TSV 到 /work/zhanghc/datasets/AudioSet/metadata/strong/，本机中转、SHA256 两端校验；train 103463/934821事件、eval 16996/139538事件、网格正负标注14203/958528行、456类映射。WavCaps匹配训练92450、测试15867；旧合并清单含15710条Strong eval，不能直接用作官方训练划分。记录1条零时长事件，原文不改。核查FineLAP固定commit源码、论文、作者issue，维护rabbit02原resources/training.md并同步本文件夹experiment_summary.md；记录AudioSetCaps依赖、FSD50K合成前置筛选、494簇673短语、batch512/论文1024差异和未发布过滤清单。未启动训练，未修改训练代码、旧清单或测评结果。
+
+2026-10-29 | 按用户要求在 rabbit02 配置 FineLAP + COSED 五源数据试训：AS Strong×1、FineLAP100K×1、AudioCaps×2、TACOS×5、Clotho×4。新增必要的 prepare_cosed_data.py 数据适配与 train_cosed.py 后台入口；维护原 mix_dataset.py 的可选随机裁剪/标签平移/严格读音频、train.py 的可选 BF16/短测试，GroundingLoss BCE 在FP32执行以兼容AMP。未改共享fairseq，项目隔离上游main commit 3d262bb；soundfile读取TACOS MP3。三卡2/3/4、batch32每卡（全局96）3步训练与保存通过，loss有限；保留EAT/RoBERTa初始化、原FineLAP结构和loss，计划10epochs、lr5e-5。AS102830/AC49063/Clotho3839已转换，TACOS10358音频与FineLAP100k余5分片继续后台补齐；完整训练尚未开始，校验/短测试/空闲GPU检查后自动启动，PID3732105（状态以远端job.pid为准）。TACOS未套用COSED未公开的1401语音ID排除，AS10752条使用类别模板caption，跨源监督仍为FineLAP；明确本轮不是完整COSED复现。维护resources/training.md与本地experiment_summary.md，纠正phrase bank为494行/491唯一簇/673替代表述。原始数据、旧训练文件改动和benchmark结果保留。
+
+2026-10-30 | 用户要求启动实验。确认前次10/29 17:44启动、17:54因坏FLAC退出且无完整epoch权重。维护原prepare_cosed_data.py增加--validate-existing，257177独立音频逐文件解码，发现5个FLAC头时长异常；仅过滤本轮AS Strong 5条、AudioCaps 1条，原文件保留，audio_validation.json记录原因及IDs。最终AS102825/FL100000/AC49062/TAC10358/Clotho3839，重复采样368095/epoch。维护原train_cosed.py支持--prepared/--wait-validation、审计成功门控、拒绝覆盖已有checkpoint及显式alpha1/beta5。01:03重新启动GPU2/3/4、batch32每卡、BF16、10epochs，原EAT/RoBERTa初始化，已观察有限clip/frame loss及实际optimizer训练。更新原resources/training.md和experiment_summary.md；旧失败日志保留，新日志追加。
+
+2026-10-30 | 核查FineLAP COSED mix训练完成：01:03至15:08，10轮38350步，状态completed，2/3/4卡释放；10份epoch权重及last_epoch.pt齐全，CPU mmap读取last_epoch.pt确认epoch10、389个model键、optimizer/config保留。10轮loss有限且逐轮下降，日志Total 2.9798→0.6701、Clip 2.3432→0.4296、Frame 0.1273→0.0481。维护原training.md及experiment_summary.md；尚未运行新checkpoint的benchmark，不将训练loss当泛化成绩。
+
+2026-10-30 | 启动epoch010测评：rabbit02 GPU2原生FineLAP strict加载，冻结复用05 core/grounding/score_benchmarks及7份清单（六benchmark+DESED validation），新evaluation目录隔离原成绩。发现02计分库版本旧，dependencies/scoring单独安装sed_scores_eval0.0.4后重启；PID30174，已观察DESED Public前10条推理成功。TAG raw官方分支、TAC exact/semantic双口径，semantic复用05同一MiniLM生成的5151配对GT并集。05当前GPU占用，公开音频通过内网限定清单HTTP服务40918传到02缓存；服务PID2664240，测评结束应关闭。重绘原训练loss PNG为加权贡献+独立Frame BCE两面板，去除未启用蒸馏零线；本地analysis/finelap_cosed/train_loss_curve.png。更新training.md/experiment_summary.md；未生成或声称验证loss曲线，完整benchmark成绩仍在计算。
+
+2026-10-30 | 用户要求先用02本地数据跑一个benchmark：确认TACOS完整zip包含2000test，解出并核对与10358train文件名交集0。停止仅本任务旧测评PID30174，保留DESED预测，把现有evaluate_cosed.py顺序改为TACOS优先，重启PID34333。TACOS全2000/5151配对完成，exact PSDS1=0.2143399379924205、semantic=0.24441382961386332；原版分别0.07660764642522157/0.12387846718627696，manifest哈希与protocol逐项相同。新增训练曝光差异说明，未声称超过COSED或泛化全面提升。维护training.md/experiment_summary.md，同一队列已恢复DESED Public。
+
+2026-10-30 | 按用户要求将05全部六套benchmark复制到02 /work/zhanghc/datasets/cosed-benchmarks。核查源105001文件条目、31266文件软链接（20895外部）、1目录软链接；解引用完整复制约85.5GB，02余3.4TB。新增必要sync_benchmarks.py后台入口，PID44622，rsync部分文件续传/3次重试/锁/完成后dry-run核对，不删除目标既有audio缓存，不改源数据。05只读内网rsync40919限02访问，72h自动退出，supervisor2678110；配置及日志统一benchmark/log/20261030。02状态/传输日志统一FineLAP/log/20261030/benchmark_transfer.*，已见实际接收，暂未完成。维护原training.md；epoch010 DESED测评PID34333和40918音频服务保留。
+
+2026-10-30 | 用户要求已有数据不再传输。停止整树传输PID44622，保留已收文件；维护原sync_benchmarks.py，改为SHA256核实复用02已有TACOS/AudioSet/WavCaps/缓存等、本地相对软链接及仅缺失文件清单传输，不再解引用重复搬运全部数据。候选33747条/17,325,313,204字节，尚待内容校验确认；105002条源清单含内部链接，统一存入双方当日日志目录。源端哈希校验进行中，新增脱离SSH的10分钟后缺失重算保障PID2688990；只读transfermeta内网模块供02取最终哈希。02新版后台管线PID60028等待哈希、自动核对本地后生成benchmark_missing.files再续传；复用证据存benchmark_reuse_verified.json.gz，完成时校验缺失传输与本地链接可用性。更新原training.md，未删除任何原始数据、训练权重或旧测评结果。
+
+2026-10-30 | 检查benchmark补传：33747候选全部SHA256匹配，已复用17,325,313,204字节；原进程60028已收到约1.18GB，约1.4–1.9MiB/s。发现DESED 6444477/metadata原有空目录导致内部目录链接未转换，rsync跟随绝对目录链接报EXDEV；确认目标4639776/metadata标注齐备后仅移除空目录并建立本地相对链接，从网络清单删除该别名。维护原sync_benchmarks.py处理空目录别名并恢复重启时审计统计；保留部分文件，重启PID76019。现内部链接10372，缺失清单60883条/52,414,345,445字节（包含下载归档），继续后台补传；尚未宣称完成。测评队列已完成TACOS和DESED Public，正在DESED Validation。
+
+2026-10-30 | 按用户要求改在rabbit05本地数据上测新FineLAP：02保留原2.89GB checkpoint，导出model/config/epoch为976528340字节，SHA256 8038225773b6adefa377189af1add9884db3023c70e8fbae448bd4fd4dfa6275，参数值不变；只读内网02:40920限05访问24h。停止02测评34333，保留三项完成成绩及TAG部分npz，打包迁移。05原venv新增项目隔离fairseq/runtime，原生CPU初始化389键通过；GPU5同结构初始化权重预检峰值allocated0.97665GiB/reserved1.03320GiB，非训练权重精度结果。维护evaluate_cosed.py可bootstrap/指定GPU/优先RealDESED，后台PID2725992等权重传输2720693完成，SHA256与三条02帧预测对照通过后自动续跑，误差门限rtol1e-4/atol2e-5；结果独立FineLAP/exps/finelap_cosed_mix_20261029/evaluation，不覆盖原版成绩。权重约24%尚未完成，未声称RealDESED已启动。短暂停数据补传后确认未提速，已取消自动等待并恢复02数据补传。维护两端training.md。
+
+2026-10-30 | 确认epoch010测评于17:26:23全部完成，05进程已退出；7项NPZ计数与输入清单一致、清单SHA256与原benchmark一致、protocol与冻结原版一致。05/02三条DESED raw及scores最大绝对误差均0。记录PSDS1 Public.23239452/Real.08117181/Urban.22537389、TAG raw.62684720、TAC semantic.24441383、MAESTRO mpAUC.41883798、Val.22341212；Val仍缺100条/MAESTRO development限制保留。更新原experiment_summary.md中失效的等待状态并补齐总表，未改原版指标或预测。
+
+2026-10-30 | rabbit02补充AudioSetCaps官方caption CSV，版本683e2487c9c9435fd0a8dcb04874cb377c6169d6，374495515bytes，SHA256与官方一致。维护现有prepare_cosed_data.py新增--prepare-audiosetcaps，扫描已有AudioSet WAV 1932684 ID；1910920文本匹配保留1908730，2190 heldout视频排除，无audio_not_indexed。随机100条完整解码通过；旧5个坏FLAC对应WAV零帧，加入拒绝规则但未额外减少此次清单。产物data/finelap_original/，原文本datasets/AudioSetCaps/；维护原resources/training.md。用户接受2190条排除无需补回；未宣称全量解码或完全复现作者未发布过滤，未启动新训练，旧数据/权重/结果保留。
+
+2026-10-31 | 用户要求FineLAP原版细节训练，明确选择公开代码global batch512（论文1024不采用）。02五卡空闲、benchmark全量传输已验证完成；维护prepare_cosed_data.py新增原版十源公开重建，保持旧COSED；维护train_cosed.py新增--original独立实验finelap_original_20261031，后台准备298435、管理300318。直接128/card FP32 OOM；train.py添加可选26个Transformer block激活重计算，小批次损失/梯度对照最大误差0，128/card FP32 16strong两步成功峰值12.742GiB。计划0-3四卡512真batch、10epoch、1:1损失、原first10s/自然混合，无TACOS/旧倍率。已维护training.md，原始未发布过滤/Urban模板及train+val推断等差异明确记录；当前仍准备数据，四卡smoke和正式训练由门禁顺序启动。
+
+2026-10-31 | 十源代表样本四卡提前预检成功：0-3 GPU，128/card真实global512，FP32，26层激活重计算，2048样本/25%强标注/3个更新。total10.56752268、clip9.90907669、ground0.65844605，checkpoint2888561047bytes及曲线保存，311654进程正常结束。AudioSet原始初始化权重8文件SHA256和torch2.4.1/cu121、transformers4.57.6版本加入原memory_probe。准备中已完成AC49062/Clotho3839/FL100k100000/ASStrong91974/DESED3398/Urban8000/FreeSound257866/BBC31200/SoundBible1232；新音频头异常445条排除。最后AudioSet弱监督已检查262144条无异常，管理300318仍在等待全部检查完成，之后最终门禁及正式10epoch自动启动；尚未宣称正式训练已开始。更新既有training.md，无旧结果覆盖。
+
+2026-11-02 | 确认FineLAP原代码配方重建训练10epoch完成，10份逐轮权重及last_epoch均保存，第10轮total2.1960779846/clip2.1431843933/frame0.0528935918；9→10总loss下降1.18%。维护既有evaluate_cosed.py增加--experiment/--gpu及02本地路径映射，7299条音频路径全部存在。启动02 GPU0后台测评920141，全部六benchmark及独立DESEDValidation，沿用冻结评分配置，输出本轮独立evaluation，日志log/20261102/original_evaluation.log。维护training.md；尚无最终测试成绩，不以训练loss断言泛化收敛。
+
+2026-11-02 | 本轮FineLAP epoch010测评已完成全部7划分，预测数量与清单一致、runner及manifest哈希与上轮一致。Public .34007747/Real .19036881/Urban .42771465/TAGraw .65661473/TACsemantic .12091639/MAESTROdev .53977454/DESEDVal .33245336。维护experiment_summary.md三模型对比表及training.md，旧协议/原始预测/旧结果保留。标明TACOS训练曝光不同、MAESTROdevelopment和Val缺100条等限制，不做单因素归因或最优epoch断言。
+
+2026-11-02 | 用户要求补COSED配比精度对照；维护现有train_cosed.py新增--fp32-cosed，实验finelap_cosed_fp32_20261102。复制旧实验实际config，断言除BF16→FP32与梯度等价激活重计算外一致；复用同一五源JSONL、倍率1/1/2/5/4、batch96(2/3/4卡各32)、loss1:5、随机裁剪、10epoch、seed与初始化。管理PID1017153，三卡预检通过后自动从初始化正式训练；日志统一log/20261102/cosed_fp32_*，源码及数据hash独立保存，旧结果保留。维护training.md，尚待确认正式训练启动。
+
+2026-11-02 | FP32五源精度对照正式训练已启动并确认12次更新，三卡预检成功。正式config与旧实验逐字段比较仅precision/activation_checkpointing两处差异；GPU2/3/4各8.3GB、100%，初期约2.3s/step。状态training，旧batch96/loss1:5等全部保留。更新training.md启动记录。
+2026-11-04 | 核实五源 FP32 训练完成，启动并完成 GPU0 epoch010 六套测评与独立 DESED Validation，共 7299 份预测。比对 BF16 的清单、runner 哈希、协议和条数；更新既有 experiment_summary.md 精度对照表。
+2026-11-04 | 在 cosed/ 和 rabbit02 /work/zhanghc/Myllm/COSED 建立独立 COSED 论文重建。上游 ATST-F weak、MGA 文本分支严格载入并有权重指纹，447 类、五源、来源掩码和逻辑batch1024，EMA在AS-S选模。已修正频谱增广广播、验证同类重复/相接事件合并，四卡真实两步训练、EMA验证与七划分推理预检通过。正式单种子训练和结束后评测由run.sh接续，旧实验未改；实际数据过滤和实现假设记在README。
+2026-11-05 | 核实 COSED seed31415926 第 10 轮中断，保留训练权重；在现有 evaluate.py 增加中断后的 EMA/在线权重评测。第 1、9 轮 EMA 补测六套 benchmark，第 9 轮在线权重单独复核 DESED Public。查验 447 类文本余弦、692 条逐帧及片段 AUROC、AS-S 短语映射，更新既有 experiment_summary.md。
+2026-11-05 | 按归档源码、真实首批与第9轮优化器记录确认 BiGRU FP16 梯度下溢。已将时序分支改为 FP32，增加首批零梯度检查，修正后四卡同批 16/16 组梯度非零。旧权重保留，新训练使用独立运行名；本次未启动新训练。
+2026-11-05 | rabbit02 已独立启动 seed31415926_grufp32，核验正式首步和四卡状态。训练日志新增首步及每百步 BiGRU 梯度组数与范数。
+2026-11-06 | 核查修正版 COSED 第10轮状态、持续时序梯度和9轮AS-S验证；GPU4完成epoch9 EMA及在线权重DESED Public 692条中间测评，补算片段mAP/AUROC和逐帧AUROC，追加既有实验总结。
+2026-11-06 | 复用epoch9预测复算PSDS逐类曲线与alpha_st=0诊断，定位EMA和在线权重零分来源；正式评分不变。
+2026-11-06 | 只读计算32条AS-S训练样本在初始化及epoch9权重下的正负logit梯度、分数范围与相似度。原训练继续运行，无参数修改。
+2026-11-06 | 按用户要求暂停 COSED seed31415926_grufp32；已停止启动器、torchrun及四个worker，确认显存释放；status标为paused。停止时日志第11轮step3800，最近完整checkpoint为epoch10/step3570，10轮AS-S验证PSDS1均为0。等待作者回复后再决定恢复。
+2026-11-06 | 暂停状态下完成epoch10 EMA与在线DESED Public全量补测；复算mAP/AUROC及同一32条AS-S训练样本诊断，记录原因假设。无训练更新。
+2026-11-06 | 新增可复用audit_gradients.py，对20条固定五源样本执行独立dense与实际update的FP32/BF16/四卡梯度对照。确认当前全局caption池和分母一致，定位Mel top_db跨batch依赖；固定Mel后四卡梯度误差<2e-6。保存同一JSON结果和实验总结，训练仍暂停。
+2026-11-06 表征直接核查：新增可复算 audit_representations.py（本地cosed/及rabbit02 COSED/），保留log/representation_audit.json并取回本地cosed/。epoch10 step3570 init/online/EMA同输入、五源各10条音频、447类query+50caption；检查跨音频余弦、单位表征中心方差、有效秩。EMA文本和音频分支均严重趋同；在线仍有差异但低维集中。更新experiment_summary.md，并将此前“正/负例质量”更名为标签总量。无训练/权重/预处理修改，训练仍暂停。50条均不同路径、非静音。未据此归因训练失败。
+2026-11-09 根据用户提供的作者回信更新experiment_summary.md及cosed/README.md：实际乘法scale初始化10，保留并微调codebook；明确旧实现0.1不一致，计划单变量短程对照。未改代码/权重/远端配置，未启动训练。
+2026-11-09 按授权修改model.py默认scale=10；train.py增加初始化配置/恢复校验/codebook优化组断言；run.sh切独立scale10目录；历史审计显式scale=.1；同步rabbit02。实际update零学习率20条检查通过，codebook/scale/bias/BiGRU梯度有效。更新README与实验总结。未启动训练、未修改旧权重或Mel。
+2026-11-09 用户授权重新预训练：rabbit02空闲GPU0–3启动scale10独立实验，后台launcher PID214808，四卡READY。无邮件发送。详情追加experiment_summary.md。
+2026-11-09 scale10误中断无checkpoint：保留日志与旧源码，新增每50步原子断点、轮内/RNG恢复、参数变化检查；恢复一致性临时测试通过。PID357249重新四卡从初始化启动，更新README和实验总结。
+2026-11-09 修复诊断抽样FP32索引越界为int64，重启PID360187。正式参数差值/Adam检查通过，首步3.37GB断点可读取且含四卡RNG，已推进step2。
+2026-11-09 用户请求结构图与参数量：CPU实例化当前COSED逐模块统计，总计210845956；将Mermaid结构图、精确参数表和存储口径补入现有cosed/README.md，未改变训练。
+2026-11-10 查询scale10进展：epoch21，最佳AS-S PSDS1=.23119668@epoch11，epoch20=.22230045。GPU4零学习率micro8/16/32测试完成，32峰值allocated8.81GiB、单rank约1.36倍吞吐。接近早停且micro改变预处理/增强，保留正在运行配置；只更新实验记录，未中断训练。
+2026-11-11 六benchmark已自动完成：核对best指纹、预测覆盖/有限数值，取回cosed/benchmark_summary.json；更新experiment_summary.md及comparison.html重建行。run.sh末尾CR仅在评测完成后导致退出码错误，已改LF并bash语法检查。未重跑或覆盖原始预测。
+2026-11-11 邮件草稿前再次只读核验：scale10源码归档、config.json、last.pt校准字段一致，resume=false；最佳AS-S epoch11 step3927；best.pt指纹7d401db9e827...与benchmark目录对应。原文指标类型及Table1数字对齐，但精确划分/推理细节/TACOS编码器仍未确认，MAESTRO本地development、单种子对论文三种子均值。仅准备草稿，未发送邮件。
+2026-11-11 创建私有GitHub仓库https://github.com/berae/COSED-reproduce；提交a7fdb6402f1a8f37b684a1c58445bd89190f7785，13个源码/文档/结果文件。本地D:/codex/COSED-reproduce。README说明独立重建及外部数据/权重/vendor/scoring依赖，未上传大型数据、密钥、邮件、逐样本诊断JSON。原实验服务器未修改。
+
+## 2026-11-11 私有仓库完整研究归档
+
+按用户要求将当前 OVSED / FineLAP / COSED / Omni benchmark 研究线归档至 berae/COSED-reproduce。收集 rabbit02、rabbit05 和本地分析文件，加入历史源码快照、训练配置/日志/成绩、五模型实际源码、冻结评分组件和清单。9,745 个导出文件逐项 SHA256 核对通过。新增 docs/START_HERE.md、docs/ARCHIVE.md 与根 AGENTS.md，更新 README 和归档换行/忽略规则。保留原服务器实验不动；未上传音频、权重和大型预测数组，排除项见 inventory。未运行新训练或改变既有分数；旧协议、候选筛查和旧退化诊断均标明适用范围。本条记录为归档后追加，故当前 maintenance.log 与导出清单中的原始哈希不同。

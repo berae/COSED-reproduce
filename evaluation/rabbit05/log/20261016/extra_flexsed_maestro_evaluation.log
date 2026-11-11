@@ -1,0 +1,24 @@
+/home/zhanghc/venvs/flexsed/lib/python3.10/site-packages/transformers/utils/hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/home/zhanghc/projects/ov-sed/FlexSED/src/models/dasheng.py:44: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+/home/zhanghc/projects/ov-sed/FlexSED/src/models/transformer.py:200: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=False):
+/home/zhanghc/projects/ov-sed/FlexSED/src/models/transformer.py:209: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=False):
+attention mode is flash
+Loading Dasheng weights for decoders...
+Block 6:
+✅ Expected missing keys: ['adaln.weight', 'adaln.bias']
+Block 7:
+✅ Expected missing keys: ['adaln.weight', 'adaln.bias']
+Block 8:
+✅ Expected missing keys: ['adaln.weight', 'adaln.bias']
+Block 9:
+✅ Expected missing keys: ['adaln.weight', 'adaln.bias']
+Block 10:
+✅ Expected missing keys: ['adaln.weight', 'adaln.bias']
+Block 11:
+✅ Expected missing keys: ['adaln.weight', 'adaln.bias']
+{"model": "flexsed", "dataset": "maestro-evaluation", "total": 26, "completed": 1, "status": "running", "pid": 4147246, "started": 1792131730.1257231, "load_seconds": 6.333822965621948, "updated": 1792131739.074315, "elapsed_seconds": 8.948592185974121}
+{"model": "flexsed", "dataset": "maestro-evaluation", "total": 26, "completed": 25, "status": "running", "pid": 4147246, "started": 1792131730.1257231, "load_seconds": 6.333822965621948, "updated": 1792131781.0412712, "elapsed_seconds": 50.91554832458496}

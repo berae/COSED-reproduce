@@ -1,0 +1,114 @@
+{
+  "clip_id": "CZX4OfrejSU_118_128",
+  "labels": [
+    "Alarm_bell_ringing",
+    "Blender",
+    "Cat",
+    "Dishes",
+    "Dog",
+    "Electric_shaver_toothbrush",
+    "Frying",
+    "Running_water",
+    "Speech",
+    "Vacuum_cleaner"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/desed/data/4560759/audio/eval/public/CZX4OfrejSU_118_128.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 9.466660737991333,
+      "status": "complete",
+      "events": [
+        [
+          0.82,
+          1.82,
+          "Cat"
+        ],
+        [
+          2.82,
+          3.82,
+          "Cat"
+        ],
+        [
+          5.22,
+          6.22,
+          "Cat"
+        ],
+        [
+          7.22,
+          8.22,
+          "Cat"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a4c0b2140717de49",
+            "object": "chat.completion",
+            "created": 1792738386,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 2,\n      \"start\": 0.82,\n      \"end\": 1.82\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 2.82,\n      \"end\": 3.82\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 5.22,\n      \"end\": 6.22\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 7.22,\n      \"end\": 8.22\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 329,
+              "total_tokens": 471,
+              "completion_tokens": 142,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.82,
+      1.82,
+      "Cat"
+    ],
+    [
+      2.82,
+      3.82,
+      "Cat"
+    ],
+    [
+      5.22,
+      6.22,
+      "Cat"
+    ],
+    [
+      7.22,
+      8.22,
+      "Cat"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 9.466660737991333
+}

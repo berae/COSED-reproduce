@@ -1,0 +1,75 @@
+{
+  "clip_id": "YlDtptH9Odf4",
+  "labels": [
+    "a man speaking after"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/YlDtptH9Odf4.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 7.1535,
+      "seconds": 3.2210164070129395,
+      "status": "complete",
+      "events": [
+        [
+          4.823,
+          6.953,
+          "a man speaking after"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-bb2f31e9fcaf8b29",
+            "object": "chat.completion",
+            "created": 1792782700,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 4.823,\n      \"end\": 6.953\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 243,
+              "total_tokens": 291,
+              "completion_tokens": 48,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      4.823,
+      6.953,
+      "a man speaking after"
+    ]
+  ],
+  "duration": 7.1535,
+  "inference_seconds": 3.2210164070129395
+}

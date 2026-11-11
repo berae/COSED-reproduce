@@ -1,0 +1,116 @@
+{
+  "clip_id": "Y-HVUL5tNzdo",
+  "labels": [
+    "a man is speaking",
+    "an animal sound"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y-HVUL5tNzdo.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 12.179080486297607,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          1.48,
+          "a man is speaking"
+        ],
+        [
+          3.52,
+          4.67,
+          "a man is speaking"
+        ],
+        [
+          6.49,
+          7.85,
+          "a man is speaking"
+        ],
+        [
+          1.48,
+          3.52,
+          "an animal sound"
+        ],
+        [
+          7.85,
+          9.5,
+          "an animal sound"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-9d5a3bf24a758bc4",
+            "object": "chat.completion",
+            "created": 1792779918,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 1.480\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 3.520,\n      \"end\": 4.670\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 6.490,\n      \"end\": 7.850\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 1.480,\n      \"end\": 3.520\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 7.850,\n      \"end\": 9.500\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 288,
+              "total_tokens": 472,
+              "completion_tokens": 184,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      1.48,
+      "a man is speaking"
+    ],
+    [
+      3.52,
+      4.67,
+      "a man is speaking"
+    ],
+    [
+      6.49,
+      7.85,
+      "a man is speaking"
+    ],
+    [
+      1.48,
+      3.52,
+      "an animal sound"
+    ],
+    [
+      7.85,
+      9.5,
+      "an animal sound"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 12.179080486297607
+}

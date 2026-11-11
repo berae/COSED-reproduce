@@ -1,0 +1,460 @@
+{
+  "clip_id": "188896",
+  "labels": [
+    "A drill operating continuously.",
+    "Short, abruptly ending sounds of a drill working.",
+    "A drill spinning."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/188896.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 14.43275761604309,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          1.157,
+          "A drill operating continuously."
+        ],
+        [
+          3.248,
+          6.098,
+          "A drill operating continuously."
+        ],
+        [
+          6.988,
+          7.578,
+          "Short, abruptly ending sounds of a drill working."
+        ],
+        [
+          8.278,
+          8.868,
+          "Short, abruptly ending sounds of a drill working."
+        ],
+        [
+          0.0,
+          1.157,
+          "A drill spinning."
+        ],
+        [
+          3.248,
+          6.098,
+          "A drill spinning."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8a8a975b99408bbd",
+            "object": "chat.completion",
+            "created": 1792796968,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 1.157\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 3.248,\n      \"end\": 6.098\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 6.988,\n      \"end\": 7.578\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 8.278,\n      \"end\": 8.868\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 1.157\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 3.248,\n      \"end\": 6.098\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 301,
+              "total_tokens": 519,
+              "completion_tokens": 218,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 16.628880500793457,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          1.148,
+          "A drill operating continuously."
+        ],
+        [
+          1.975,
+          2.365,
+          "Short, abruptly ending sounds of a drill working."
+        ],
+        [
+          2.855,
+          3.405,
+          "Short, abruptly ending sounds of a drill working."
+        ],
+        [
+          3.975,
+          4.525,
+          "Short, abruptly ending sounds of a drill working."
+        ],
+        [
+          5.075,
+          5.625,
+          "Short, abruptly ending sounds of a drill working."
+        ],
+        [
+          6.175,
+          6.725,
+          "Short, abruptly ending sounds of a drill working."
+        ],
+        [
+          8.775,
+          9.165,
+          "A drill spinning."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-94e66bbd4194951c",
+            "object": "chat.completion",
+            "created": 1792796982,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 1.148\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 1.975,\n      \"end\": 2.365\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 2.855,\n      \"end\": 3.405\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 3.975,\n      \"end\": 4.525\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 5.075,\n      \"end\": 5.625\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 6.175,\n      \"end\": 6.725\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 8.775,\n      \"end\": 9.165\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 301,
+              "total_tokens": 553,
+              "completion_tokens": 252,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 10.0,
+      "seconds": 9.952457427978516,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          0.578,
+          "A drill operating continuously."
+        ],
+        [
+          1.493,
+          2.068,
+          "A drill operating continuously."
+        ],
+        [
+          4.493,
+          5.068,
+          "Short, abruptly ending sounds of a drill working."
+        ],
+        [
+          8.493,
+          9.068,
+          "A drill spinning."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-af0c8a1d57fe15ec",
+            "object": "chat.completion",
+            "created": 1792796999,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 0.578\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 1.493,\n      \"end\": 2.068\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 4.493,\n      \"end\": 5.068\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 8.493,\n      \"end\": 9.068\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 301,
+              "total_tokens": 451,
+              "completion_tokens": 150,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 240000,
+      "start": 15.0,
+      "duration": 8.60075,
+      "seconds": 20.8441321849823,
+      "status": "complete",
+      "events": [
+        [
+          6.739,
+          8.60075,
+          "A drill operating continuously."
+        ],
+        [
+          0.0,
+          0.459,
+          "Short, abruptly ending sounds of a drill working."
+        ],
+        [
+          1.029,
+          1.459,
+          "Short, abruptly ending sounds of a drill working."
+        ],
+        [
+          4.459,
+          4.859,
+          "Short, abruptly ending sounds of a drill working."
+        ],
+        [
+          5.459,
+          5.859,
+          "Short, abruptly ending sounds of a drill working."
+        ],
+        [
+          0.0,
+          0.459,
+          "A drill spinning."
+        ],
+        [
+          1.029,
+          1.459,
+          "A drill spinning."
+        ],
+        [
+          4.459,
+          4.859,
+          "A drill spinning."
+        ],
+        [
+          5.459,
+          5.859,
+          "A drill spinning."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-ae38912695cfe391",
+            "object": "chat.completion",
+            "created": 1792797009,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 6.739,\n      \"end\": 8.601\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.0,\n      \"end\": 0.459\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 1.029,\n      \"end\": 1.459\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 4.459,\n      \"end\": 4.859\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 5.459,\n      \"end\": 5.859\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.0,\n      \"end\": 0.459\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 1.029,\n      \"end\": 1.459\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 4.459,\n      \"end\": 4.859\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 5.459,\n      \"end\": 5.859\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 281,
+              "total_tokens": 597,
+              "completion_tokens": 316,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      1.157,
+      "A drill operating continuously."
+    ],
+    [
+      3.248,
+      6.148,
+      "A drill operating continuously."
+    ],
+    [
+      10.0,
+      10.578,
+      "A drill operating continuously."
+    ],
+    [
+      11.493,
+      12.068,
+      "A drill operating continuously."
+    ],
+    [
+      21.739,
+      23.600749999999998,
+      "A drill operating continuously."
+    ],
+    [
+      0.0,
+      1.157,
+      "A drill spinning."
+    ],
+    [
+      3.248,
+      6.098,
+      "A drill spinning."
+    ],
+    [
+      13.775,
+      14.165,
+      "A drill spinning."
+    ],
+    [
+      15.0,
+      15.459,
+      "A drill spinning."
+    ],
+    [
+      16.029,
+      16.459,
+      "A drill spinning."
+    ],
+    [
+      18.493000000000002,
+      19.067999999999998,
+      "A drill spinning."
+    ],
+    [
+      19.459,
+      19.859,
+      "A drill spinning."
+    ],
+    [
+      20.459,
+      20.859,
+      "A drill spinning."
+    ],
+    [
+      6.975,
+      7.578,
+      "Short, abruptly ending sounds of a drill working."
+    ],
+    [
+      7.855,
+      8.868,
+      "Short, abruptly ending sounds of a drill working."
+    ],
+    [
+      8.975,
+      9.525,
+      "Short, abruptly ending sounds of a drill working."
+    ],
+    [
+      10.075,
+      10.625,
+      "Short, abruptly ending sounds of a drill working."
+    ],
+    [
+      11.175,
+      11.725,
+      "Short, abruptly ending sounds of a drill working."
+    ],
+    [
+      14.493,
+      15.459,
+      "Short, abruptly ending sounds of a drill working."
+    ],
+    [
+      16.029,
+      16.459,
+      "Short, abruptly ending sounds of a drill working."
+    ],
+    [
+      19.459,
+      19.859,
+      "Short, abruptly ending sounds of a drill working."
+    ],
+    [
+      20.459,
+      20.859,
+      "Short, abruptly ending sounds of a drill working."
+    ]
+  ],
+  "duration": 23.60075,
+  "inference_seconds": 61.85822772979736
+}

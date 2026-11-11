@@ -1,0 +1,116 @@
+{
+  "clip_id": "Y0QSg9bSOgbA",
+  "labels": [
+    "male giving a dog a command",
+    "dog responding with a bark"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y0QSg9bSOgbA.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 9.450625,
+      "seconds": 12.102967500686646,
+      "status": "complete",
+      "events": [
+        [
+          0.278,
+          0.638,
+          "male giving a dog a command"
+        ],
+        [
+          0.638,
+          1.878,
+          "dog responding with a bark"
+        ],
+        [
+          4.278,
+          4.638,
+          "male giving a dog a command"
+        ],
+        [
+          4.638,
+          5.878,
+          "dog responding with a bark"
+        ],
+        [
+          7.578,
+          7.938,
+          "male giving a dog a command"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-93e918db4dcfc529",
+            "object": "chat.completion",
+            "created": 1792780158,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.278,\n      \"end\": 0.638\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.638,\n      \"end\": 1.878\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 4.278,\n      \"end\": 4.638\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 4.638,\n      \"end\": 5.878\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 7.578,\n      \"end\": 7.938\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 283,
+              "total_tokens": 467,
+              "completion_tokens": 184,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.638,
+      1.878,
+      "dog responding with a bark"
+    ],
+    [
+      4.638,
+      5.878,
+      "dog responding with a bark"
+    ],
+    [
+      0.278,
+      0.638,
+      "male giving a dog a command"
+    ],
+    [
+      4.278,
+      4.638,
+      "male giving a dog a command"
+    ],
+    [
+      7.578,
+      7.938,
+      "male giving a dog a command"
+    ]
+  ],
+  "duration": 9.450625,
+  "inference_seconds": 12.102967500686646
+}

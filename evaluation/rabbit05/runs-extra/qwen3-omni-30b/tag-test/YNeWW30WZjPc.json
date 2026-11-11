@@ -1,0 +1,127 @@
+{
+  "clip_id": "YNeWW30WZjPc",
+  "labels": [
+    "a dog barking",
+    "growling",
+    "plastic rattles"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/YNeWW30WZjPc.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 14.337212800979614,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          0.435,
+          "a dog barking"
+        ],
+        [
+          1.078,
+          1.698,
+          "a dog barking"
+        ],
+        [
+          2.898,
+          3.333,
+          "a dog barking"
+        ],
+        [
+          0.435,
+          1.078,
+          "growling"
+        ],
+        [
+          1.698,
+          2.898,
+          "growling"
+        ],
+        [
+          5.0,
+          6.0,
+          "plastic rattles"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-90f15887c3d3ac19",
+            "object": "chat.completion",
+            "created": 1792782273,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 0.435\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 1.078,\n      \"end\": 1.698\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 2.898,\n      \"end\": 3.333\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.435,\n      \"end\": 1.078\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 1.698,\n      \"end\": 2.898\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 5.000,\n      \"end\": 6.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 293,
+              "total_tokens": 511,
+              "completion_tokens": 218,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      0.435,
+      "a dog barking"
+    ],
+    [
+      1.078,
+      1.698,
+      "a dog barking"
+    ],
+    [
+      2.898,
+      3.333,
+      "a dog barking"
+    ],
+    [
+      0.435,
+      1.078,
+      "growling"
+    ],
+    [
+      1.698,
+      2.898,
+      "growling"
+    ],
+    [
+      5.0,
+      6.0,
+      "plastic rattles"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 14.337212800979614
+}

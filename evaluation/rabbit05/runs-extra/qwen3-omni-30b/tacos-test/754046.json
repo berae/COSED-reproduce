@@ -1,0 +1,292 @@
+{
+  "clip_id": "754046",
+  "labels": [
+    "Loud noise from a machine in a factory.",
+    "Factory machine making crackling sounds.",
+    "A machine clicks repeatedly.",
+    "A chainsaw is running in the background.",
+    "Factory background noise.",
+    "Conveyor belt running."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/754046.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 9.93327784538269,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          2.879,
+          "Loud noise from a machine in a factory."
+        ],
+        [
+          2.879,
+          4.659,
+          "Factory machine making crackling sounds."
+        ],
+        [
+          4.659,
+          5.0,
+          "A machine clicks repeatedly."
+        ],
+        [
+          5.0,
+          10.0,
+          "Factory background noise."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-ac3fc248fe0ca63d",
+            "object": "chat.completion",
+            "created": 1792818333,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 2.879\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 2.879,\n      \"end\": 4.659\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 4.659,\n      \"end\": 5.000\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 5.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 326,
+              "total_tokens": 477,
+              "completion_tokens": 151,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 7.845765590667725,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          10.0,
+          "Loud noise from a machine in a factory."
+        ],
+        [
+          0.0,
+          10.0,
+          "Factory machine making crackling sounds."
+        ],
+        [
+          0.0,
+          10.0,
+          "Factory background noise."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-bd4c977badbeb0c7",
+            "object": "chat.completion",
+            "created": 1792818343,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 326,
+              "total_tokens": 445,
+              "completion_tokens": 119,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 7.4876875,
+      "seconds": 15.975809335708618,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          7.4876875,
+          "Loud noise from a machine in a factory."
+        ],
+        [
+          0.0,
+          7.4876875,
+          "Factory machine making crackling sounds."
+        ],
+        [
+          2.698,
+          2.978,
+          "A machine clicks repeatedly."
+        ],
+        [
+          4.718,
+          4.998,
+          "A machine clicks repeatedly."
+        ],
+        [
+          6.598,
+          6.878,
+          "A machine clicks repeatedly."
+        ],
+        [
+          0.0,
+          7.4876875,
+          "Factory background noise."
+        ],
+        [
+          0.0,
+          7.4876875,
+          "Conveyor belt running."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8431fd9ed918b2fd",
+            "object": "chat.completion",
+            "created": 1792818351,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 7.488\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.0,\n      \"end\": 7.488\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 2.698,\n      \"end\": 2.978\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 4.718,\n      \"end\": 4.998\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 6.598,\n      \"end\": 6.878\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 0.0,\n      \"end\": 7.488\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 0.0,\n      \"end\": 7.488\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 292,
+              "total_tokens": 536,
+              "completion_tokens": 244,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      4.659,
+      5.0,
+      "A machine clicks repeatedly."
+    ],
+    [
+      12.698,
+      12.978,
+      "A machine clicks repeatedly."
+    ],
+    [
+      14.718,
+      14.998000000000001,
+      "A machine clicks repeatedly."
+    ],
+    [
+      16.598,
+      16.878,
+      "A machine clicks repeatedly."
+    ],
+    [
+      10.0,
+      17.4876875,
+      "Conveyor belt running."
+    ],
+    [
+      5.0,
+      17.4876875,
+      "Factory background noise."
+    ],
+    [
+      2.879,
+      4.659,
+      "Factory machine making crackling sounds."
+    ],
+    [
+      5.0,
+      17.4876875,
+      "Factory machine making crackling sounds."
+    ],
+    [
+      0.0,
+      2.879,
+      "Loud noise from a machine in a factory."
+    ],
+    [
+      5.0,
+      17.4876875,
+      "Loud noise from a machine in a factory."
+    ]
+  ],
+  "duration": 17.4876875,
+  "inference_seconds": 33.75485277175903
+}

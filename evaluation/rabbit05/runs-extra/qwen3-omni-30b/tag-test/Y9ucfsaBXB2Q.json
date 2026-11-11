@@ -1,0 +1,96 @@
+{
+  "clip_id": "Y9ucfsaBXB2Q",
+  "labels": [
+    "a man speaks",
+    "a woman laughs"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y9ucfsaBXB2Q.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 9.5575,
+      "seconds": 7.68784499168396,
+      "status": "complete",
+      "events": [
+        [
+          0.823,
+          2.463,
+          "a man speaks"
+        ],
+        [
+          3.583,
+          4.583,
+          "a man speaks"
+        ],
+        [
+          5.183,
+          9.557,
+          "a woman laughs"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a7bf586d8e3a2c81",
+            "object": "chat.completion",
+            "created": 1792781835,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.823,\n      \"end\": 2.463\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 3.583,\n      \"end\": 4.583\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 5.183,\n      \"end\": 9.557\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 279,
+              "total_tokens": 395,
+              "completion_tokens": 116,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.823,
+      2.463,
+      "a man speaks"
+    ],
+    [
+      3.583,
+      4.583,
+      "a man speaks"
+    ],
+    [
+      5.183,
+      9.557,
+      "a woman laughs"
+    ]
+  ],
+  "duration": 9.5575,
+  "inference_seconds": 7.68784499168396
+}

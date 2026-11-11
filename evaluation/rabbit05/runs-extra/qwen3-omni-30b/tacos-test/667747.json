@@ -1,0 +1,219 @@
+{
+  "clip_id": "667747",
+  "labels": [
+    "A wind is gradually increasing in intensity and blowing loudly outside.",
+    "A bird whistles sonorously, gradually decreasing in volume.",
+    "Air is escaping loudly and continuously from a pressurized pipe."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/667747.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 7.8242762088775635,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          10.0,
+          "A wind is gradually increasing in intensity and blowing loudly outside."
+        ],
+        [
+          0.0,
+          0.85,
+          "A bird whistles sonorously, gradually decreasing in volume."
+        ],
+        [
+          0.0,
+          10.0,
+          "Air is escaping loudly and continuously from a pressurized pipe."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a3c381dededd06ca",
+            "object": "chat.completion",
+            "created": 1792815457,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 0.850\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 320,
+              "total_tokens": 438,
+              "completion_tokens": 118,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 5.5624542236328125,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          10.0,
+          "A wind is gradually increasing in intensity and blowing loudly outside."
+        ],
+        [
+          0.0,
+          10.0,
+          "Air is escaping loudly and continuously from a pressurized pipe."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a020507ad498ef7a",
+            "object": "chat.completion",
+            "created": 1792815464,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 320,
+              "total_tokens": 404,
+              "completion_tokens": 84,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 8.754625,
+      "seconds": 5.1958091259002686,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          8.754625,
+          "A wind is gradually increasing in intensity and blowing loudly outside."
+        ],
+        [
+          0.0,
+          8.754625,
+          "Air is escaping loudly and continuously from a pressurized pipe."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-9bd97d2473b43709",
+            "object": "chat.completion",
+            "created": 1792815470,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 8.755\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.0,\n      \"end\": 8.755\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 302,
+              "total_tokens": 380,
+              "completion_tokens": 78,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      0.85,
+      "A bird whistles sonorously, gradually decreasing in volume."
+    ],
+    [
+      0.0,
+      18.754625,
+      "A wind is gradually increasing in intensity and blowing loudly outside."
+    ],
+    [
+      0.0,
+      18.754625,
+      "Air is escaping loudly and continuously from a pressurized pipe."
+    ]
+  ],
+  "duration": 18.754625,
+  "inference_seconds": 18.582539558410645
+}

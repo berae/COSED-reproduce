@@ -1,0 +1,155 @@
+{
+  "clip_id": "soundscape_test_bimodal0",
+  "labels": [
+    "air_conditioner",
+    "car_horn",
+    "children_playing",
+    "dog_bark",
+    "drilling",
+    "engine_idling",
+    "gun_shot",
+    "jackhammer",
+    "siren",
+    "street_music"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/urbansed/data/1324404/URBAN-SED_v2.0.0/audio/test/soundscape_test_bimodal0.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 3.618351697921753,
+      "status": "complete",
+      "events": [
+        [
+          3.098,
+          3.528,
+          "gun_shot"
+        ],
+        [
+          4.218,
+          6.528,
+          "jackhammer"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-97815b3ead921b3e",
+            "object": "chat.completion",
+            "created": 1792737221,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\"events\":[{\"query_id\":6,\"start\":3.098,\"end\":3.528},{\"query_id\":7,\"start\":4.218,\"end\":6.528}]}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 309,
+              "total_tokens": 360,
+              "completion_tokens": 51,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 5.0000625,
+      "seconds": 1.7866461277008057,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          2.1,
+          "engine_idling"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b1b599c60a3bf4a3",
+            "object": "chat.completion",
+            "created": 1792737225,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\"events\":[{\"query_id\":5,\"start\":0.0,\"end\":2.1}]}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 243,
+              "total_tokens": 269,
+              "completion_tokens": 26,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      5.0,
+      7.1,
+      "engine_idling"
+    ],
+    [
+      3.098,
+      3.528,
+      "gun_shot"
+    ],
+    [
+      4.218,
+      6.528,
+      "jackhammer"
+    ]
+  ],
+  "duration": 10.0000625,
+  "inference_seconds": 5.404997825622559
+}

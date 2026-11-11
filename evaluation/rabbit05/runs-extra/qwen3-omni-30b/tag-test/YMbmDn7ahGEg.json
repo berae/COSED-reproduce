@@ -1,0 +1,86 @@
+{
+  "clip_id": "YMbmDn7ahGEg",
+  "labels": [
+    "white noise together",
+    "distant speech"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/YMbmDn7ahGEg.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 9.0135,
+      "seconds": 5.2960100173950195,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          9.0135,
+          "white noise together"
+        ],
+        [
+          2.537,
+          8.067,
+          "distant speech"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a1c919c61a3c5af3",
+            "object": "chat.completion",
+            "created": 1792782246,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 9.014\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 2.537,\n      \"end\": 8.067\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 272,
+              "total_tokens": 352,
+              "completion_tokens": 80,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      2.537,
+      8.067,
+      "distant speech"
+    ],
+    [
+      0.0,
+      9.0135,
+      "white noise together"
+    ]
+  ],
+  "duration": 9.0135,
+  "inference_seconds": 5.2960100173950195
+}

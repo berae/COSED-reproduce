@@ -1,0 +1,342 @@
+{
+  "clip_id": "262482",
+  "labels": [
+    "A siren wails, increasing in volume before decreasing and fading into the background.",
+    "Thumping noise of a car door closing.",
+    "A car engine is starting.",
+    "A car is driving away."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/262482.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 10.00310230255127,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          0.45,
+          "Thumping noise of a car door closing."
+        ],
+        [
+          2.17,
+          2.62,
+          "Thumping noise of a car door closing."
+        ],
+        [
+          2.62,
+          3.89,
+          "A car engine is starting."
+        ],
+        [
+          3.89,
+          9.99,
+          "A siren wails, increasing in volume before decreasing and fading into the background."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-98525b50dd66faee",
+            "object": "chat.completion",
+            "created": 1792811436,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 0.450\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 2.170,\n      \"end\": 2.620\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 2.620,\n      \"end\": 3.890\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 3.890,\n      \"end\": 9.990\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 322,
+              "total_tokens": 472,
+              "completion_tokens": 150,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 5.581095933914185,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          9.875,
+          "A siren wails, increasing in volume before decreasing and fading into the background."
+        ],
+        [
+          0.0,
+          10.0,
+          "A car is driving away."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b5f26d70d892037a",
+            "object": "chat.completion",
+            "created": 1792811446,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 9.875\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 322,
+              "total_tokens": 405,
+              "completion_tokens": 83,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 10.0,
+      "seconds": 3.2859387397766113,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          9.875,
+          "A siren wails, increasing in volume before decreasing and fading into the background."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b72a4bde4ed939aa",
+            "object": "chat.completion",
+            "created": 1792811451,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 9.875\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 322,
+              "total_tokens": 370,
+              "completion_tokens": 48,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 240000,
+      "start": 15.0,
+      "duration": 10.0,
+      "seconds": 3.293156862258911,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          9.75,
+          "A siren wails, increasing in volume before decreasing and fading into the background."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8730c8db6294770a",
+            "object": "chat.completion",
+            "created": 1792811454,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 9.750\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 322,
+              "total_tokens": 370,
+              "completion_tokens": 48,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 320000,
+      "start": 20.0,
+      "duration": 5.5678125,
+      "seconds": 3.1442394256591797,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          5.5678125,
+          "A siren wails, increasing in volume before decreasing and fading into the background."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-989bdab1a55660aa",
+            "object": "chat.completion",
+            "created": 1792811458,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 5.568\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 263,
+              "total_tokens": 309,
+              "completion_tokens": 46,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      2.62,
+      3.89,
+      "A car engine is starting."
+    ],
+    [
+      5.0,
+      15.0,
+      "A car is driving away."
+    ],
+    [
+      3.89,
+      25.5678125,
+      "A siren wails, increasing in volume before decreasing and fading into the background."
+    ],
+    [
+      0.0,
+      0.45,
+      "Thumping noise of a car door closing."
+    ],
+    [
+      2.17,
+      2.62,
+      "Thumping noise of a car door closing."
+    ]
+  ],
+  "duration": 25.5678125,
+  "inference_seconds": 25.307533264160156
+}

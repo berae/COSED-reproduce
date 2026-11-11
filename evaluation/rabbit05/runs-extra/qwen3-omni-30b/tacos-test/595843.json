@@ -1,0 +1,615 @@
+{
+  "clip_id": "595843",
+  "labels": [
+    "An engine hums in the distance.",
+    "A dog barks loudly outside.",
+    "A dog barks outdoors.",
+    "A dog barks with an echo.",
+    "A dog barks.",
+    "A dog woofs faintly.",
+    "A woman is speaking loudly in the distance.",
+    "A woman is talking in the distance.",
+    "Footsteps sound faintly.",
+    "Someone is speaking faintly in the distance.",
+    "Footsteps sound faintly outdoors.",
+    "An ambient humming noise outdoors.",
+    "Objects clattering quietly."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/595843.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 23.696927547454834,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          1.5,
+          "A dog barks loudly outside."
+        ],
+        [
+          0.0,
+          1.5,
+          "A dog barks outdoors."
+        ],
+        [
+          0.0,
+          1.5,
+          "A dog barks with an echo."
+        ],
+        [
+          0.0,
+          1.5,
+          "A dog barks."
+        ],
+        [
+          2.0,
+          2.5,
+          "A dog woofs faintly."
+        ],
+        [
+          2.9,
+          3.5,
+          "A woman is talking in the distance."
+        ],
+        [
+          4.5,
+          5.0,
+          "Someone is speaking faintly in the distance."
+        ],
+        [
+          6.0,
+          6.5,
+          "Footsteps sound faintly."
+        ],
+        [
+          6.0,
+          6.5,
+          "Footsteps sound faintly outdoors."
+        ],
+        [
+          0.0,
+          10.0,
+          "An ambient humming noise outdoors."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-840218fa7946c3db",
+            "object": "chat.completion",
+            "created": 1792825387,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 1.500\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 1.500\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.000,\n      \"end\": 1.500\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 0.000,\n      \"end\": 1.500\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 2.000,\n      \"end\": 2.500\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 2.900,\n      \"end\": 3.500\n    },\n    {\n      \"query_id\": 9,\n      \"start\": 4.500,\n      \"end\": 5.000\n    },\n    {\n      \"query_id\": 8,\n      \"start\": 6.000,\n      \"end\": 6.500\n    },\n    {\n      \"query_id\": 10,\n      \"start\": 6.000,\n      \"end\": 6.500\n    },\n    {\n      \"query_id\": 11,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 396,
+              "total_tokens": 753,
+              "completion_tokens": 357,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 30.37665843963623,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          10.0,
+          "An engine hums in the distance."
+        ],
+        [
+          2.5,
+          2.8,
+          "A dog barks loudly outside."
+        ],
+        [
+          2.5,
+          2.8,
+          "A dog barks outdoors."
+        ],
+        [
+          2.5,
+          2.8,
+          "A dog barks with an echo."
+        ],
+        [
+          2.5,
+          2.8,
+          "A dog barks."
+        ],
+        [
+          2.5,
+          2.8,
+          "A dog woofs faintly."
+        ],
+        [
+          3.0,
+          3.4,
+          "A woman is speaking loudly in the distance."
+        ],
+        [
+          3.0,
+          3.4,
+          "A woman is talking in the distance."
+        ],
+        [
+          6.8,
+          9.0,
+          "Footsteps sound faintly."
+        ],
+        [
+          3.0,
+          3.4,
+          "Someone is speaking faintly in the distance."
+        ],
+        [
+          6.8,
+          9.0,
+          "Footsteps sound faintly outdoors."
+        ],
+        [
+          0.0,
+          10.0,
+          "An ambient humming noise outdoors."
+        ],
+        [
+          4.0,
+          4.4,
+          "Objects clattering quietly."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-92436fe7d0968ec2",
+            "object": "chat.completion",
+            "created": 1792825410,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 2.500,\n      \"end\": 2.800\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 2.500,\n      \"end\": 2.800\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 2.500,\n      \"end\": 2.800\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 2.500,\n      \"end\": 2.800\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 2.500,\n      \"end\": 2.800\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 3.000,\n      \"end\": 3.400\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 3.000,\n      \"end\": 3.400\n    },\n    {\n      \"query_id\": 8,\n      \"start\": 6.800,\n      \"end\": 9.000\n    },\n    {\n      \"query_id\": 9,\n      \"start\": 3.000,\n      \"end\": 3.400\n    },\n    {\n      \"query_id\": 10,\n      \"start\": 6.800,\n      \"end\": 9.000\n    },\n    {\n      \"query_id\": 11,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 12,\n      \"start\": 4.000,\n      \"end\": 4.400\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 396,
+              "total_tokens": 857,
+              "completion_tokens": 461,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 10.0,
+      "seconds": 23.53946805000305,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          10.0,
+          "An engine hums in the distance."
+        ],
+        [
+          6.91,
+          7.41,
+          "A dog barks loudly outside."
+        ],
+        [
+          6.91,
+          7.41,
+          "A dog barks outdoors."
+        ],
+        [
+          6.91,
+          7.41,
+          "A dog barks with an echo."
+        ],
+        [
+          6.91,
+          7.41,
+          "A dog barks."
+        ],
+        [
+          8.11,
+          8.61,
+          "A dog woofs faintly."
+        ],
+        [
+          8.11,
+          8.61,
+          "A dog barks outdoors."
+        ],
+        [
+          8.11,
+          8.61,
+          "A dog barks with an echo."
+        ],
+        [
+          8.11,
+          8.61,
+          "A dog barks."
+        ],
+        [
+          0.0,
+          10.0,
+          "An ambient humming noise outdoors."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-97aa2f57b80679f0",
+            "object": "chat.completion",
+            "created": 1792825441,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 6.910,\n      \"end\": 7.410\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 6.910,\n      \"end\": 7.410\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 6.910,\n      \"end\": 7.410\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 6.910,\n      \"end\": 7.410\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 8.110,\n      \"end\": 8.610\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 8.110,\n      \"end\": 8.610\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 8.110,\n      \"end\": 8.610\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 8.110,\n      \"end\": 8.610\n    },\n    {\n      \"query_id\": 11,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 396,
+              "total_tokens": 753,
+              "completion_tokens": 357,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 240000,
+      "start": 15.0,
+      "duration": 9.639625,
+      "seconds": 21.954322338104248,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          9.639625,
+          "An engine hums in the distance."
+        ],
+        [
+          1.87,
+          2.42,
+          "A dog barks loudly outside."
+        ],
+        [
+          1.87,
+          2.42,
+          "A dog barks outdoors."
+        ],
+        [
+          1.87,
+          2.42,
+          "A dog barks with an echo."
+        ],
+        [
+          1.87,
+          2.42,
+          "A dog barks."
+        ],
+        [
+          3.98,
+          4.52,
+          "A dog woofs faintly."
+        ],
+        [
+          3.98,
+          4.52,
+          "A dog barks outdoors."
+        ],
+        [
+          3.98,
+          4.52,
+          "A dog barks with an echo."
+        ],
+        [
+          3.98,
+          4.52,
+          "A dog barks."
+        ],
+        [
+          0.0,
+          9.639625,
+          "An ambient humming noise outdoors."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-9802865005edb955",
+            "object": "chat.completion",
+            "created": 1792825464,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 9.64\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 1.87,\n      \"end\": 2.42\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 1.87,\n      \"end\": 2.42\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 1.87,\n      \"end\": 2.42\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 1.87,\n      \"end\": 2.42\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 3.98,\n      \"end\": 4.52\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 3.98,\n      \"end\": 4.52\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 3.98,\n      \"end\": 4.52\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 3.98,\n      \"end\": 4.52\n    },\n    {\n      \"query_id\": 11,\n      \"start\": 0.0,\n      \"end\": 9.64\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 389,
+              "total_tokens": 722,
+              "completion_tokens": 333,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      1.5,
+      "A dog barks loudly outside."
+    ],
+    [
+      7.5,
+      7.8,
+      "A dog barks loudly outside."
+    ],
+    [
+      16.87,
+      17.42,
+      "A dog barks loudly outside."
+    ],
+    [
+      0.0,
+      1.5,
+      "A dog barks outdoors."
+    ],
+    [
+      7.5,
+      7.8,
+      "A dog barks outdoors."
+    ],
+    [
+      16.87,
+      17.42,
+      "A dog barks outdoors."
+    ],
+    [
+      18.11,
+      18.61,
+      "A dog barks outdoors."
+    ],
+    [
+      18.98,
+      19.52,
+      "A dog barks outdoors."
+    ],
+    [
+      0.0,
+      1.5,
+      "A dog barks with an echo."
+    ],
+    [
+      7.5,
+      7.8,
+      "A dog barks with an echo."
+    ],
+    [
+      16.87,
+      17.42,
+      "A dog barks with an echo."
+    ],
+    [
+      18.11,
+      18.61,
+      "A dog barks with an echo."
+    ],
+    [
+      18.98,
+      19.52,
+      "A dog barks with an echo."
+    ],
+    [
+      0.0,
+      1.5,
+      "A dog barks."
+    ],
+    [
+      7.5,
+      7.8,
+      "A dog barks."
+    ],
+    [
+      16.87,
+      17.42,
+      "A dog barks."
+    ],
+    [
+      18.11,
+      18.61,
+      "A dog barks."
+    ],
+    [
+      18.98,
+      19.52,
+      "A dog barks."
+    ],
+    [
+      2.0,
+      2.5,
+      "A dog woofs faintly."
+    ],
+    [
+      7.5,
+      7.8,
+      "A dog woofs faintly."
+    ],
+    [
+      18.11,
+      18.61,
+      "A dog woofs faintly."
+    ],
+    [
+      18.98,
+      19.52,
+      "A dog woofs faintly."
+    ],
+    [
+      8.0,
+      8.4,
+      "A woman is speaking loudly in the distance."
+    ],
+    [
+      2.9,
+      3.5,
+      "A woman is talking in the distance."
+    ],
+    [
+      8.0,
+      8.4,
+      "A woman is talking in the distance."
+    ],
+    [
+      0.0,
+      24.639625,
+      "An ambient humming noise outdoors."
+    ],
+    [
+      5.0,
+      24.639625,
+      "An engine hums in the distance."
+    ],
+    [
+      6.0,
+      6.5,
+      "Footsteps sound faintly outdoors."
+    ],
+    [
+      11.8,
+      14.0,
+      "Footsteps sound faintly outdoors."
+    ],
+    [
+      6.0,
+      6.5,
+      "Footsteps sound faintly."
+    ],
+    [
+      11.8,
+      14.0,
+      "Footsteps sound faintly."
+    ],
+    [
+      9.0,
+      9.4,
+      "Objects clattering quietly."
+    ],
+    [
+      4.5,
+      5.0,
+      "Someone is speaking faintly in the distance."
+    ],
+    [
+      8.0,
+      8.4,
+      "Someone is speaking faintly in the distance."
+    ]
+  ],
+  "duration": 24.639625,
+  "inference_seconds": 99.56737637519836
+}

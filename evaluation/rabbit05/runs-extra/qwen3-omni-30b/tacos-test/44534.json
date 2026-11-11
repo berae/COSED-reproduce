@@ -1,0 +1,366 @@
+{
+  "clip_id": "44534",
+  "labels": [
+    "A dog barks repeatedly in the distance.",
+    "Pan pipes playing a loud, high-pitched melody.",
+    "Motorized traffic passes by, producing a steady hum."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/44534.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 10.114437580108643,
+      "status": "complete",
+      "events": [
+        [
+          1.578,
+          2.948,
+          "A dog barks repeatedly in the distance."
+        ],
+        [
+          3.678,
+          6.178,
+          "Pan pipes playing a loud, high-pitched melody."
+        ],
+        [
+          6.878,
+          9.178,
+          "Pan pipes playing a loud, high-pitched melody."
+        ],
+        [
+          0.0,
+          10.0,
+          "Motorized traffic passes by, producing a steady hum."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-90e72581850e445c",
+            "object": "chat.completion",
+            "created": 1792830265,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 1.578,\n      \"end\": 2.948\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 3.678,\n      \"end\": 6.178\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 6.878,\n      \"end\": 9.178\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 313,
+              "total_tokens": 464,
+              "completion_tokens": 151,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 5.622410774230957,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          4.358,
+          "Pan pipes playing a loud, high-pitched melody."
+        ],
+        [
+          0.0,
+          10.0,
+          "Motorized traffic passes by, producing a steady hum."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8e576ca299e964dc",
+            "object": "chat.completion",
+            "created": 1792830275,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 4.358\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 313,
+              "total_tokens": 396,
+              "completion_tokens": 83,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 10.0,
+      "seconds": 5.35449481010437,
+      "status": "complete",
+      "events": [
+        [
+          3.589,
+          4.679,
+          "A dog barks repeatedly in the distance."
+        ],
+        [
+          0.0,
+          10.0,
+          "Motorized traffic passes by, producing a steady hum."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8c65df7bec1ad874",
+            "object": "chat.completion",
+            "created": 1792830281,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 3.589,\n      \"end\": 4.679\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.0,\n      \"end\": 10.0\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 313,
+              "total_tokens": 392,
+              "completion_tokens": 79,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 240000,
+      "start": 15.0,
+      "duration": 10.0,
+      "seconds": 5.455045461654663,
+      "status": "complete",
+      "events": [
+        [
+          6.358,
+          9.478,
+          "A dog barks repeatedly in the distance."
+        ],
+        [
+          0.0,
+          10.0,
+          "Motorized traffic passes by, producing a steady hum."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-9cbf7d2c22dd87b2",
+            "object": "chat.completion",
+            "created": 1792830286,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 6.358,\n      \"end\": 9.478\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.0,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 313,
+              "total_tokens": 394,
+              "completion_tokens": 81,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 320000,
+      "start": 20.0,
+      "duration": 8.5715,
+      "seconds": 7.53948712348938,
+      "status": "complete",
+      "events": [
+        [
+          0.93,
+          4.62,
+          "A dog barks repeatedly in the distance."
+        ],
+        [
+          4.71,
+          8.5715,
+          "Pan pipes playing a loud, high-pitched melody."
+        ],
+        [
+          0.0,
+          8.5715,
+          "Motorized traffic passes by, producing a steady hum."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-99b5ffa98577a446",
+            "object": "chat.completion",
+            "created": 1792830292,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.93,\n      \"end\": 4.62\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 4.71,\n      \"end\": 8.572\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.0,\n      \"end\": 8.572\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 293,
+              "total_tokens": 404,
+              "completion_tokens": 111,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      1.578,
+      2.948,
+      "A dog barks repeatedly in the distance."
+    ],
+    [
+      13.589,
+      14.679,
+      "A dog barks repeatedly in the distance."
+    ],
+    [
+      20.93,
+      24.62,
+      "A dog barks repeatedly in the distance."
+    ],
+    [
+      0.0,
+      28.5715,
+      "Motorized traffic passes by, producing a steady hum."
+    ],
+    [
+      3.678,
+      9.358,
+      "Pan pipes playing a loud, high-pitched melody."
+    ],
+    [
+      24.71,
+      28.5715,
+      "Pan pipes playing a loud, high-pitched melody."
+    ]
+  ],
+  "duration": 28.5715,
+  "inference_seconds": 34.08587574958801
+}

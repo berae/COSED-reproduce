@@ -1,0 +1,234 @@
+{
+  "clip_id": "31913",
+  "labels": [
+    "A man is singing.",
+    "A man is muttering melodically.",
+    "A man is speaking."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/31913.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 7.745814800262451,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          2.34,
+          "A man is singing."
+        ],
+        [
+          6.57,
+          8.19,
+          "A man is muttering melodically."
+        ],
+        [
+          6.57,
+          8.19,
+          "A man is speaking."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-884e6a54ea3115d1",
+            "object": "chat.completion",
+            "created": 1792814506,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 2.340\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 6.570,\n      \"end\": 8.190\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 6.570,\n      \"end\": 8.190\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 300,
+              "total_tokens": 416,
+              "completion_tokens": 116,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 5.4815514087677,
+      "status": "complete",
+      "events": [
+        [
+          1.578,
+          3.468,
+          "A man is singing."
+        ],
+        [
+          6.198,
+          8.088,
+          "A man is singing."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a95fbace45982f96",
+            "object": "chat.completion",
+            "created": 1792814513,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 1.578,\n      \"end\": 3.468\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 6.198,\n      \"end\": 8.088\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 300,
+              "total_tokens": 382,
+              "completion_tokens": 82,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 5.658375,
+      "seconds": 5.518971920013428,
+      "status": "complete",
+      "events": [
+        [
+          0.973,
+          2.453,
+          "A man is singing."
+        ],
+        [
+          0.973,
+          2.453,
+          "A man is speaking."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a2040ef1035ae7fe",
+            "object": "chat.completion",
+            "created": 1792814519,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.973,\n      \"end\": 2.453\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.973,\n      \"end\": 2.453\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 242,
+              "total_tokens": 324,
+              "completion_tokens": 82,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      6.57,
+      8.19,
+      "A man is muttering melodically."
+    ],
+    [
+      0.0,
+      2.34,
+      "A man is singing."
+    ],
+    [
+      6.578,
+      8.468,
+      "A man is singing."
+    ],
+    [
+      10.973,
+      13.088,
+      "A man is singing."
+    ],
+    [
+      6.57,
+      8.19,
+      "A man is speaking."
+    ],
+    [
+      10.973,
+      12.453,
+      "A man is speaking."
+    ]
+  ],
+  "duration": 15.658375,
+  "inference_seconds": 18.74633812904358
+}

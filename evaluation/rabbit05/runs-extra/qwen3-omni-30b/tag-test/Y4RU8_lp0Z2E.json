@@ -1,0 +1,158 @@
+{
+  "clip_id": "Y4RU8_lp0Z2E",
+  "labels": [
+    "farting noise",
+    "talking",
+    "a woman",
+    "child laughing"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y4RU8_lp0Z2E.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 20.999753713607788,
+      "status": "complete",
+      "events": [
+        [
+          0.458,
+          0.978,
+          "farting noise"
+        ],
+        [
+          1.268,
+          1.558,
+          "farting noise"
+        ],
+        [
+          3.998,
+          4.318,
+          "farting noise"
+        ],
+        [
+          7.358,
+          8.158,
+          "talking"
+        ],
+        [
+          8.258,
+          8.958,
+          "talking"
+        ],
+        [
+          7.358,
+          8.158,
+          "a woman"
+        ],
+        [
+          8.258,
+          8.958,
+          "a woman"
+        ],
+        [
+          2.258,
+          2.758,
+          "child laughing"
+        ],
+        [
+          4.958,
+          5.658,
+          "child laughing"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-9aa415200f4c96b7",
+            "object": "chat.completion",
+            "created": 1792781110,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.458,\n      \"end\": 0.978\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 1.268,\n      \"end\": 1.558\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 3.998,\n      \"end\": 4.318\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 7.358,\n      \"end\": 8.158\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 8.258,\n      \"end\": 8.958\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 7.358,\n      \"end\": 8.158\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 8.258,\n      \"end\": 8.958\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 2.258,\n      \"end\": 2.758\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 4.958,\n      \"end\": 5.658\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 295,
+              "total_tokens": 615,
+              "completion_tokens": 320,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      7.358,
+      8.158,
+      "a woman"
+    ],
+    [
+      8.258,
+      8.958,
+      "a woman"
+    ],
+    [
+      2.258,
+      2.758,
+      "child laughing"
+    ],
+    [
+      4.958,
+      5.658,
+      "child laughing"
+    ],
+    [
+      0.458,
+      0.978,
+      "farting noise"
+    ],
+    [
+      1.268,
+      1.558,
+      "farting noise"
+    ],
+    [
+      3.998,
+      4.318,
+      "farting noise"
+    ],
+    [
+      7.358,
+      8.158,
+      "talking"
+    ],
+    [
+      8.258,
+      8.958,
+      "talking"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 20.999753713607788
+}

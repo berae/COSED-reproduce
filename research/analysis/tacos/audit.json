@@ -1,0 +1,381 @@
+{
+  "test_files": 2000,
+  "missing_files": 0,
+  "annotation_rows": 7712,
+  "models": {
+    "dasm": {
+      "prediction_files": 2000,
+      "max_end_time_error": 0.0,
+      "median_frame_step": 0.019999999999999574
+    },
+    "finelap": {
+      "prediction_files": 2000,
+      "max_end_time_error": 3.125000000281375e-05,
+      "median_frame_step": 0.15625
+    },
+    "flexsed": {
+      "prediction_files": 2000,
+      "max_end_time_error": 3.125000000281375e-05,
+      "median_frame_step": 0.040000000000000036
+    },
+    "mga-clap": {
+      "prediction_files": 2000,
+      "max_end_time_error": 0.0,
+      "median_frame_step": 0.3125
+    },
+    "openflam": {
+      "prediction_files": 2000,
+      "max_end_time_error": 1.0416666668788821e-05,
+      "median_frame_step": 0.3125
+    }
+  },
+  "audio_errors": [],
+  "max_audio_duration_error": 0.0,
+  "boundary_clipped_rows": 316,
+  "pairs": 5151,
+  "semantic": {
+    "encoder": "sentence-transformers/all-MiniLM-L6-v2",
+    "cosine_threshold": 0.8,
+    "method": "direct neighbors, not transitive components; keep original queries and predictions",
+    "changed_pairs": 1287,
+    "changed_files": 430,
+    "examples": [
+      {
+        "file": "133991",
+        "query": "Soft raindrops falling.",
+        "neighbors": [
+          "Rain falling.",
+          "Soft raindrops falling."
+        ],
+        "exact": [
+          [
+            0.0999549407391822,
+            8.063031886294036,
+            "event"
+          ]
+        ],
+        "merged": [
+          [
+            0.0999549407391822,
+            8.063031886294036,
+            "event"
+          ],
+          [
+            24.07248156135306,
+            25.855,
+            "event"
+          ]
+        ]
+      },
+      {
+        "file": "133991",
+        "query": "Rain falling.",
+        "neighbors": [
+          "Rain falling.",
+          "Soft raindrops falling."
+        ],
+        "exact": [
+          [
+            24.07248156135306,
+            25.855,
+            "event"
+          ]
+        ],
+        "merged": [
+          [
+            0.0999549407391822,
+            8.063031886294036,
+            "event"
+          ],
+          [
+            24.07248156135306,
+            25.855,
+            "event"
+          ]
+        ]
+      },
+      {
+        "file": "451423",
+        "query": "A bell chimes.",
+        "neighbors": [
+          "A bell chimes multiple times.",
+          "A bell chimes rhythmically.",
+          "A bell chimes."
+        ],
+        "exact": [
+          [
+            2.930050125313284,
+            4.069514062935115,
+            "event"
+          ]
+        ],
+        "merged": [
+          [
+            2.930050125313284,
+            4.069514062935115,
+            "event"
+          ],
+          [
+            4.441583920117755,
+            6.394950670326611,
+            "event"
+          ],
+          [
+            13.72007598360982,
+            21.20796875,
+            "event"
+          ]
+        ]
+      },
+      {
+        "file": "451423",
+        "query": "A bell chimes multiple times.",
+        "neighbors": [
+          "A bell chimes multiple times.",
+          "A bell chimes rhythmically.",
+          "A bell chimes.",
+          "Bell chimes multiple times, increasing in speed."
+        ],
+        "exact": [
+          [
+            4.441583920117755,
+            6.394950670326611,
+            "event"
+          ]
+        ],
+        "merged": [
+          [
+            2.930050125313284,
+            4.069514062935115,
+            "event"
+          ],
+          [
+            4.441583920117755,
+            6.394950670326611,
+            "event"
+          ],
+          [
+            6.72051179536142,
+            21.20796875,
+            "event"
+          ]
+        ]
+      },
+      {
+        "file": "451423",
+        "query": "Bell chimes multiple times, increasing in speed.",
+        "neighbors": [
+          "A bell chimes multiple times.",
+          "Bell chimes multiple times, increasing in speed."
+        ],
+        "exact": [
+          [
+            6.72051179536142,
+            13.743330349683731,
+            "event"
+          ]
+        ],
+        "merged": [
+          [
+            4.441583920117755,
+            6.394950670326611,
+            "event"
+          ],
+          [
+            6.72051179536142,
+            13.743330349683731,
+            "event"
+          ]
+        ]
+      },
+      {
+        "file": "451423",
+        "query": "A bell chimes rhythmically.",
+        "neighbors": [
+          "A bell chimes multiple times.",
+          "A bell chimes rhythmically.",
+          "A bell chimes."
+        ],
+        "exact": [
+          [
+            13.72007598360982,
+            21.20796875,
+            "event"
+          ]
+        ],
+        "merged": [
+          [
+            2.930050125313284,
+            4.069514062935115,
+            "event"
+          ],
+          [
+            4.441583920117755,
+            6.394950670326611,
+            "event"
+          ],
+          [
+            13.72007598360982,
+            21.20796875,
+            "event"
+          ]
+        ]
+      },
+      {
+        "file": "41337",
+        "query": "Church bells ringing with an echo.",
+        "neighbors": [
+          "Church bells ringing nearby with an echo.",
+          "Church bells ringing with an echo."
+        ],
+        "exact": [
+          [
+            0.0206989654752246,
+            3.2566372347686707,
+            "event"
+          ]
+        ],
+        "merged": [
+          [
+            0.0206989654752246,
+            3.2566372347686707,
+            "event"
+          ],
+          [
+            3.6223189581643056,
+            6.320084125101912,
+            "event"
+          ],
+          [
+            7.168741709586121,
+            9.8458079110485,
+            "event"
+          ]
+        ]
+      },
+      {
+        "file": "41337",
+        "query": "Church bells ringing nearby with an echo.",
+        "neighbors": [
+          "Church bells ringing nearby with an echo.",
+          "Church bells ringing with an echo."
+        ],
+        "exact": [
+          [
+            3.6223189581643056,
+            6.320084125101912,
+            "event"
+          ],
+          [
+            7.168741709586121,
+            9.8458079110485,
+            "event"
+          ]
+        ],
+        "merged": [
+          [
+            0.0206989654752246,
+            3.2566372347686707,
+            "event"
+          ],
+          [
+            3.6223189581643056,
+            6.320084125101912,
+            "event"
+          ],
+          [
+            7.168741709586121,
+            9.8458079110485,
+            "event"
+          ]
+        ]
+      },
+      {
+        "file": "198843",
+        "query": "A noisy church bell ringing with an echo.",
+        "neighbors": [
+          "A noisy church bell ringing with an echo.",
+          "An echoing church bell rings, slowly fading away."
+        ],
+        "exact": [
+          [
+            0.0521763790801084,
+            1.7739968887236883,
+            "event"
+          ],
+          [
+            1.8000850782637428,
+            9.60045375073996,
+            "event"
+          ]
+        ],
+        "merged": [
+          [
+            0.0521763790801084,
+            1.7739968887236883,
+            "event"
+          ],
+          [
+            1.8000850782637428,
+            15.000708985531189,
+            "event"
+          ]
+        ]
+      },
+      {
+        "file": "198843",
+        "query": "An echoing church bell rings, slowly fading away.",
+        "neighbors": [
+          "A noisy church bell ringing with an echo.",
+          "An echoing church bell rings, slowly fading away."
+        ],
+        "exact": [
+          [
+            9.60045375073996,
+            15.000708985531189,
+            "event"
+          ]
+        ],
+        "merged": [
+          [
+            0.0521763790801084,
+            1.7739968887236883,
+            "event"
+          ],
+          [
+            1.8000850782637428,
+            15.000708985531189,
+            "event"
+          ]
+        ]
+      }
+    ],
+    "scores": {
+      "dasm": {
+        "raw": 0.059509490920939226,
+        "merged": 0.11333937730769408,
+        "difference": 0.05382988638675486
+      },
+      "finelap": {
+        "raw": 0.07660764642522157,
+        "merged": 0.12387846718627696,
+        "difference": 0.04727082076105539
+      },
+      "flexsed": {
+        "raw": 0.06840452049551243,
+        "merged": 0.1268240960955853,
+        "difference": 0.058419575600072854
+      },
+      "mga-clap": {
+        "raw": 0.05925931138177686,
+        "merged": 0.13257236846295004,
+        "difference": 0.07331305708117317
+      },
+      "openflam": {
+        "raw": 0.04824952906224235,
+        "merged": 0.08781052125565016,
+        "difference": 0.03956099219340781
+      }
+    }
+  }
+}

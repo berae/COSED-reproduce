@@ -1,0 +1,228 @@
+{
+  "clip_id": "141704",
+  "labels": [
+    "A crowd of people cheering loudly in an arena.",
+    "A crowd of people making noise in an arena.",
+    "A man is speaking muffled.",
+    "Muffled crowd talking.",
+    "A person is whistling in the distance.",
+    "A large crowd cheering in an arena.",
+    "A muffled thumping sound in the background.",
+    "Multiple men chanting muffled words.",
+    "A man is speaking in Spanish.",
+    "A crowd boos and whistles together.",
+    "A woman celebrates with a high-pitched whoop.",
+    "A woman is yelling in Spanish."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/141704.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 10.200446128845215,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          10.0,
+          "A crowd of people cheering loudly in an arena."
+        ],
+        [
+          0.0,
+          10.0,
+          "A crowd of people making noise in an arena."
+        ],
+        [
+          0.0,
+          10.0,
+          "A large crowd cheering in an arena."
+        ],
+        [
+          0.0,
+          10.0,
+          "A woman celebrates with a high-pitched whoop."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-be072cdd4c7bbe4b",
+            "object": "chat.completion",
+            "created": 1792822328,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 10,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 403,
+              "total_tokens": 558,
+              "completion_tokens": 155,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 88.74354839324951,
+      "status": "failed",
+      "events": null,
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-9502d08cb922be93",
+            "object": "chat.completion",
+            "created": 1792822339,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n[\n  {\n    \"query_id\": 0,\n    \"start\": 0.000,\n    \"end\": 4.000\n  },\n  {\n    \"query_id\": 1,\n    \"start\": 0.000,\n    \"end\": 10.000\n  },\n  {\n    \"query_id\": 2,\n    \"start\": 7.000,\n    \"end\": 8.000\n  },\n  {\n    \"query_id\": 3,\n    \"start\": 0.000,\n    \"end\": 10.000\n  },\n  {\n    \"query_id\": 4,\n    \"start\": 0.000,\n    \"end\": 10.000\n  },\n  {\n    \"query_id\": 5,\n    \"start\": 0.000,\n    \"end\": 4.000\n  },\n  {\n    \"query_id\": 6,\n    \"start\": 0.000,\n    \"end\": 10.000\n  },\n  {\n    \"query_id\": 7,\n    \"start\": 0.000,\n    \"end\": 10.000\n  },\n  {\n    \"query_id\": 8,\n    \"start\": 7.000,\n    \"end\": 8.000\n  },\n  {\n    \"query_id\": 9,\n    \"start\": 0.000,\n    \"end\": 4.000\n  },\n  {\n    \"query_id\": 10,\n    \"start\": 0.000,\n    \"end\": 4.000\n  },\n  {\n    \"query_id\": 11,\n    \"start\": 7.000,\n    \"end\": 8.000\n  }\n]\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 403,
+              "total_tokens": 825,
+              "completion_tokens": 422,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          }
+        },
+        {
+          "error": "ValueError('Missing events list')"
+        },
+        {
+          "reply": {
+            "id": "chatcmpl-b66494dbd8a5d6be",
+            "object": "chat.completion",
+            "created": 1792822368,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n[\n  {\n    \"query_id\": 0,\n    \"start\": 0.000,\n    \"end\": 4.000\n  },\n  {\n    \"query_id\": 1,\n    \"start\": 0.000,\n    \"end\": 10.000\n  },\n  {\n    \"query_id\": 2,\n    \"start\": 7.000,\n    \"end\": 8.000\n  },\n  {\n    \"query_id\": 3,\n    \"start\": 0.000,\n    \"end\": 10.000\n  },\n  {\n    \"query_id\": 4,\n    \"start\": 0.000,\n    \"end\": 10.000\n  },\n  {\n    \"query_id\": 5,\n    \"start\": 0.000,\n    \"end\": 4.000\n  },\n  {\n    \"query_id\": 6,\n    \"start\": 0.000,\n    \"end\": 10.000\n  },\n  {\n    \"query_id\": 7,\n    \"start\": 0.000,\n    \"end\": 10.000\n  },\n  {\n    \"query_id\": 8,\n    \"start\": 7.000,\n    \"end\": 8.000\n  },\n  {\n    \"query_id\": 9,\n    \"start\": 0.000,\n    \"end\": 4.000\n  },\n  {\n    \"query_id\": 10,\n    \"start\": 0.000,\n    \"end\": 4.000\n  },\n  {\n    \"query_id\": 11,\n    \"start\": 7.000,\n    \"end\": 8.000\n  }\n]\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 403,
+              "total_tokens": 825,
+              "completion_tokens": 422,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          }
+        },
+        {
+          "error": "ValueError('Missing events list')"
+        },
+        {
+          "reply": {
+            "id": "chatcmpl-95ccd678e0fb3df9",
+            "object": "chat.completion",
+            "created": 1792822398,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n[\n  {\n    \"query_id\": 0,\n    \"start\": 0.000,\n    \"end\": 4.000\n  },\n  {\n    \"query_id\": 1,\n    \"start\": 0.000,\n    \"end\": 10.000\n  },\n  {\n    \"query_id\": 2,\n    \"start\": 7.000,\n    \"end\": 8.000\n  },\n  {\n    \"query_id\": 3,\n    \"start\": 0.000,\n    \"end\": 10.000\n  },\n  {\n    \"query_id\": 4,\n    \"start\": 0.000,\n    \"end\": 10.000\n  },\n  {\n    \"query_id\": 5,\n    \"start\": 0.000,\n    \"end\": 4.000\n  },\n  {\n    \"query_id\": 6,\n    \"start\": 0.000,\n    \"end\": 10.000\n  },\n  {\n    \"query_id\": 7,\n    \"start\": 0.000,\n    \"end\": 10.000\n  },\n  {\n    \"query_id\": 8,\n    \"start\": 7.000,\n    \"end\": 8.000\n  },\n  {\n    \"query_id\": 9,\n    \"start\": 0.000,\n    \"end\": 4.000\n  },\n  {\n    \"query_id\": 10,\n    \"start\": 0.000,\n    \"end\": 4.000\n  },\n  {\n    \"query_id\": 11,\n    \"start\": 7.000,\n    \"end\": 8.000\n  }\n]\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 403,
+              "total_tokens": 825,
+              "completion_tokens": 422,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          }
+        },
+        {
+          "error": "ValueError('Missing events list')"
+        }
+      ]
+    }
+  ],
+  "status": "running"
+}

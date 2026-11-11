@@ -1,0 +1,356 @@
+{
+  "clip_id": "61215",
+  "labels": [
+    "A gong is struck multiple times, each producing a loud, resonant tone that gradually fades before the next strike.",
+    "People talking indistinctly in the background.",
+    "A gong is struck, producing a loud, resonant tone that gradually fades."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/61215.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 5.471364259719849,
+      "status": "complete",
+      "events": [
+        [
+          0.963,
+          9.783,
+          "A gong is struck, producing a loud, resonant tone that gradually fades."
+        ],
+        [
+          0.963,
+          9.783,
+          "A gong is struck multiple times, each producing a loud, resonant tone that gradually fades before the next strike."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-836accf622205424",
+            "object": "chat.completion",
+            "created": 1792797986,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 2,\n      \"start\": 0.963,\n      \"end\": 9.783\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 0.963,\n      \"end\": 9.783\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 333,
+              "total_tokens": 415,
+              "completion_tokens": 82,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 3.2563400268554688,
+      "status": "complete",
+      "events": [
+        [
+          4.573,
+          9.863,
+          "A gong is struck, producing a loud, resonant tone that gradually fades."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-91f06f4189a30619",
+            "object": "chat.completion",
+            "created": 1792797992,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 2,\n      \"start\": 4.573,\n      \"end\": 9.863\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 333,
+              "total_tokens": 381,
+              "completion_tokens": 48,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 10.0,
+      "seconds": 7.802428245544434,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          7.583,
+          "A gong is struck multiple times, each producing a loud, resonant tone that gradually fades before the next strike."
+        ],
+        [
+          0.0,
+          10.0,
+          "People talking indistinctly in the background."
+        ],
+        [
+          0.0,
+          7.583,
+          "A gong is struck, producing a loud, resonant tone that gradually fades."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-aff3a90d6d4c4d25",
+            "object": "chat.completion",
+            "created": 1792797995,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 7.583\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 7.583\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 333,
+              "total_tokens": 450,
+              "completion_tokens": 117,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 240000,
+      "start": 15.0,
+      "duration": 10.0,
+      "seconds": 7.5885279178619385,
+      "status": "complete",
+      "events": [
+        [
+          5.978,
+          6.848,
+          "A gong is struck multiple times, each producing a loud, resonant tone that gradually fades before the next strike."
+        ],
+        [
+          3.018,
+          5.118,
+          "People talking indistinctly in the background."
+        ],
+        [
+          0.0,
+          2.518,
+          "A gong is struck, producing a loud, resonant tone that gradually fades."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a88d5841667d82bf",
+            "object": "chat.completion",
+            "created": 1792798003,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 5.978,\n      \"end\": 6.848\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 3.018,\n      \"end\": 5.118\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.0,\n      \"end\": 2.518\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 333,
+              "total_tokens": 447,
+              "completion_tokens": 114,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 320000,
+      "start": 20.0,
+      "duration": 9.957125,
+      "seconds": 5.504497289657593,
+      "status": "complete",
+      "events": [
+        [
+          1.348,
+          4.628,
+          "A gong is struck multiple times, each producing a loud, resonant tone that gradually fades before the next strike."
+        ],
+        [
+          5.718,
+          8.128,
+          "A gong is struck, producing a loud, resonant tone that gradually fades."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-859205ac6221dbef",
+            "object": "chat.completion",
+            "created": 1792798010,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 1.348,\n      \"end\": 4.628\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 5.718,\n      \"end\": 8.128\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 330,
+              "total_tokens": 412,
+              "completion_tokens": 82,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.963,
+      9.783,
+      "A gong is struck multiple times, each producing a loud, resonant tone that gradually fades before the next strike."
+    ],
+    [
+      10.0,
+      17.583,
+      "A gong is struck multiple times, each producing a loud, resonant tone that gradually fades before the next strike."
+    ],
+    [
+      20.978,
+      24.628,
+      "A gong is struck multiple times, each producing a loud, resonant tone that gradually fades before the next strike."
+    ],
+    [
+      0.963,
+      17.583,
+      "A gong is struck, producing a loud, resonant tone that gradually fades."
+    ],
+    [
+      25.718,
+      28.128,
+      "A gong is struck, producing a loud, resonant tone that gradually fades."
+    ],
+    [
+      10.0,
+      20.118000000000002,
+      "People talking indistinctly in the background."
+    ]
+  ],
+  "duration": 29.957125,
+  "inference_seconds": 29.623157739639282
+}

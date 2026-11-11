@@ -1,0 +1,140 @@
+Traceback (most recent call last):
+  File "/home/zhanghc/projects/ov-sed/benchmark/runner-v1.py", line 237, in <module>
+    elif args.action=='run':run(args)
+  File "/home/zhanghc/projects/ov-sed/benchmark/runner-v1.py", line 159, in run
+    import numpy as np, librosa, torch
+  File "/home/zhanghc/venvs/dasm/lib/python3.10/site-packages/librosa/__init__.py", line 208, in <module>
+    from ._cache import cache
+  File "/home/zhanghc/venvs/dasm/lib/python3.10/site-packages/librosa/_cache.py", line 6, in <module>
+    from joblib import Memory
+  File "/home/zhanghc/venvs/dasm/lib/python3.10/site-packages/joblib/__init__.py", line 114, in <module>
+    from ._cloudpickle_wrapper import wrap_non_picklable_objects
+  File "/home/zhanghc/venvs/dasm/lib/python3.10/site-packages/joblib/_cloudpickle_wrapper.py", line 14, in <module>
+    from .externals.loky import wrap_non_picklable_objects
+  File "/home/zhanghc/venvs/dasm/lib/python3.10/site-packages/joblib/externals/loky/__init__.py", line 19, in <module>
+    from .backend.context import cpu_count
+  File "/home/zhanghc/venvs/dasm/lib/python3.10/site-packages/joblib/externals/loky/backend/__init__.py", line 4, in <module>
+    from .context import get_context
+  File "/home/zhanghc/venvs/dasm/lib/python3.10/site-packages/joblib/externals/loky/backend/context.py", line 24, in <module>
+    from concurrent.futures.process import _MAX_WINDOWS_WORKERS
+  File "/home/zhanghc/miniconda3/envs/nape/lib/python3.10/concurrent/futures/process.py", line 50, in <module>
+    import queue
+  File "/home/zhanghc/projects/ov-sed/benchmark/queue.py", line 13, in <module>
+    p=subprocess.run(cmd,stdout=f,stderr=subprocess.STDOUT,env=env)
+  File "/home/zhanghc/miniconda3/envs/nape/lib/python3.10/subprocess.py", line 503, in run
+    with Popen(*popenargs, **kwargs) as process:
+  File "/home/zhanghc/miniconda3/envs/nape/lib/python3.10/subprocess.py", line 971, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/zhanghc/miniconda3/envs/nape/lib/python3.10/subprocess.py", line 1863, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/zhanghc/venvs/--model/bin/python'
+/home/zhanghc/venvs/dasm/lib/python3.10/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+/home/zhanghc/venvs/dasm/lib/python3.10/site-packages/huggingface_hub/file_download.py:1142: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertModel: ['cls.predictions.decoder.weight', 'cls.predictions.transform.dense.bias', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.weight', 'bert.pooler.dense.bias', 'bert.pooler.dense.weight', 'cls.predictions.bias', 'cls.seq_relationship.weight', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.LayerNorm.bias']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+/home/zhanghc/venvs/dasm/lib/python3.10/site-packages/torch/nn/modules/activation.py:1144: UserWarning: Converting mask without torch.bool dtype to bool; this will negatively affect performance. Prefer to use a boolean mask directly. (Triggered internally at ../aten/src/ATen/native/transformers/attention.cpp:150.)
+  return torch._native_multi_head_attention(
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 1, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121578.2732265, "elapsed_seconds": 8.39238953590393}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 25, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121583.6627166, "elapsed_seconds": 13.781879663467407}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 50, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121589.2773287, "elapsed_seconds": 19.396491765975952}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 75, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121594.8902345, "elapsed_seconds": 25.009397506713867}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 100, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121600.4700983, "elapsed_seconds": 30.589261293411255}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 125, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121606.0321794, "elapsed_seconds": 36.15134239196777}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 150, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121611.5279744, "elapsed_seconds": 41.64713740348816}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 175, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121616.9729156, "elapsed_seconds": 47.0920786857605}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 200, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121622.4397688, "elapsed_seconds": 52.558931827545166}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 225, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121627.9659672, "elapsed_seconds": 58.08513021469116}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 250, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121633.4007156, "elapsed_seconds": 63.51987862586975}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 275, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121638.8333192, "elapsed_seconds": 68.95248222351074}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 300, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121644.3213456, "elapsed_seconds": 74.44050860404968}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 325, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121649.7895076, "elapsed_seconds": 79.90867066383362}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 350, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121655.2455342, "elapsed_seconds": 85.36469721794128}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 375, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121660.6968694, "elapsed_seconds": 90.81603217124939}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 400, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121666.1492229, "elapsed_seconds": 96.268385887146}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 425, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121671.6895127, "elapsed_seconds": 101.80867576599121}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 450, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121677.1953757, "elapsed_seconds": 107.3145387172699}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 475, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121682.6693301, "elapsed_seconds": 112.7884931564331}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 500, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121688.1505992, "elapsed_seconds": 118.26976227760315}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 525, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121693.6390264, "elapsed_seconds": 123.75818943977356}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 550, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121699.130531, "elapsed_seconds": 129.249694108963}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 575, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121704.6239479, "elapsed_seconds": 134.74311089515686}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 600, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121710.0803072, "elapsed_seconds": 140.19947028160095}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 625, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121715.5889878, "elapsed_seconds": 145.70815086364746}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 650, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121721.0730727, "elapsed_seconds": 151.1922357082367}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 675, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121726.5408597, "elapsed_seconds": 156.6600227355957}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 700, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121732.0791912, "elapsed_seconds": 162.19835424423218}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 725, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121737.5979974, "elapsed_seconds": 167.71716046333313}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 750, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121743.0858984, "elapsed_seconds": 173.20506143569946}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 775, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121748.561371, "elapsed_seconds": 178.6805341243744}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 800, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121753.999666, "elapsed_seconds": 184.11882901191711}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 825, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121759.492379, "elapsed_seconds": 189.61154198646545}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 850, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121764.988177, "elapsed_seconds": 195.10734009742737}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 875, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121770.4514165, "elapsed_seconds": 200.5705795288086}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 900, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121775.9596627, "elapsed_seconds": 206.0788254737854}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 925, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121781.531059, "elapsed_seconds": 211.65022206306458}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 950, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121787.019771, "elapsed_seconds": 217.138934135437}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 975, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121792.568611, "elapsed_seconds": 222.6877739429474}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 1000, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121798.0576937, "elapsed_seconds": 228.17685675621033}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 1025, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121803.5578308, "elapsed_seconds": 233.6769938468933}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 1050, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121808.978972, "elapsed_seconds": 239.09813499450684}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 1075, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121814.4350147, "elapsed_seconds": 244.55417776107788}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 1100, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121819.9481328, "elapsed_seconds": 250.0672960281372}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 1125, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121825.7379262, "elapsed_seconds": 255.85708928108215}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 1150, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121831.1431653, "elapsed_seconds": 261.26232838630676}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 1175, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121836.5129755, "elapsed_seconds": 266.6321384906769}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 1200, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121841.8754773, "elapsed_seconds": 271.9946403503418}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 1225, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121847.2697096, "elapsed_seconds": 277.3888726234436}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 1250, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121852.6496592, "elapsed_seconds": 282.76882219314575}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 1275, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121858.0519524, "elapsed_seconds": 288.171115398407}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 1300, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121863.415842, "elapsed_seconds": 293.53500509262085}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 1325, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121868.7993927, "elapsed_seconds": 298.91855573654175}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 1350, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121874.148532, "elapsed_seconds": 304.26769495010376}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 1375, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121879.4794233, "elapsed_seconds": 309.5985863208771}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 1400, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121884.8550406, "elapsed_seconds": 314.97420358657837}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 1425, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121890.194734, "elapsed_seconds": 320.31389713287354}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 1450, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121895.56853, "elapsed_seconds": 325.6876931190491}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 1475, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121900.9254014, "elapsed_seconds": 331.04456424713135}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 1500, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121906.2626922, "elapsed_seconds": 336.3818550109863}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 1525, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121911.6329374, "elapsed_seconds": 341.7521004676819}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 1550, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121917.0135534, "elapsed_seconds": 347.1327164173126}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 1575, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121922.3320074, "elapsed_seconds": 352.4511704444885}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 1600, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121927.6917353, "elapsed_seconds": 357.8108983039856}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 1625, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121933.0649817, "elapsed_seconds": 363.1841444969177}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 1650, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121938.394947, "elapsed_seconds": 368.5141100883484}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 1675, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121943.721516, "elapsed_seconds": 373.8406789302826}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 1700, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121949.0538301, "elapsed_seconds": 379.172993183136}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 1725, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121954.431336, "elapsed_seconds": 384.55049896240234}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 1750, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121959.7898586, "elapsed_seconds": 389.9090213775635}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 1775, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121965.1097305, "elapsed_seconds": 395.2288935184479}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 1800, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121970.4646585, "elapsed_seconds": 400.5838215351105}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 1825, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121975.8076289, "elapsed_seconds": 405.9267919063568}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 1850, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121981.1908898, "elapsed_seconds": 411.3100528717041}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 1875, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121986.551673, "elapsed_seconds": 416.6708359718323}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 1900, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121991.9252086, "elapsed_seconds": 422.04437160491943}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 1925, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792121997.3242233, "elapsed_seconds": 427.44338631629944}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 1950, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792122002.7154455, "elapsed_seconds": 432.8346085548401}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 1975, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792122008.1062393, "elapsed_seconds": 438.2254023551941}
+{"model": "dasm", "dataset": "urbansed-test", "total": 2000, "completed": 2000, "status": "running", "pid": 3951368, "started": 1792121569.8808372, "load_seconds": 6.742590427398682, "updated": 1792122013.4881668, "elapsed_seconds": 443.60733008384705}
+Traceback (most recent call last):
+  File "/home/zhanghc/projects/ov-sed/benchmark/runner-v1.py", line 237, in <module>
+    elif args.action=='run':run(args)
+  File "/home/zhanghc/projects/ov-sed/benchmark/runner-v1.py", line 211, in run
+    if not args.limit: score(args,out,manifest,items)
+  File "/home/zhanghc/projects/ov-sed/benchmark/runner-v1.py", line 227, in score
+    result=sed_scores_eval.intersection_based.psds(scores,gt,durations,dtc_threshold=.7,gtc_threshold=.7,cttc_threshold=None,alpha_ct=0,alpha_st=1,max_efpr=100,num_jobs=4)
+  File "/home/zhanghc/venvs/dasm/lib/python3.10/site-packages/sed_scores_eval/intersection_based/psds.py", line 98, in psds
+    (effective_tp_rate, effective_fp_rate), single_class_psd_rocs = psd_roc(
+  File "/home/zhanghc/venvs/dasm/lib/python3.10/site-packages/sed_scores_eval/intersection_based/psds.py", line 195, in psd_roc
+    intermediate_statistics, audio_ids = accumulated_intermediate_statistics(
+  File "/home/zhanghc/venvs/dasm/lib/python3.10/site-packages/sed_scores_eval/intersection_based/intermediate_statistics.py", line 168, in accumulated_intermediate_statistics
+    scores, ground_truth, audio_ids = parse_inputs(scores, ground_truth)
+  File "/home/zhanghc/venvs/dasm/lib/python3.10/site-packages/sed_scores_eval/base_modules/io.py", line 35, in parse_inputs
+    ground_truth = parse_ground_truth(ground_truth, tagging=tagging, audio_ids=audio_ids)
+  File "/home/zhanghc/venvs/dasm/lib/python3.10/site-packages/sed_scores_eval/base_modules/io.py", line 68, in parse_ground_truth
+    assert_non_connected_events(ground_truth)
+  File "/home/zhanghc/venvs/dasm/lib/python3.10/site-packages/sed_scores_eval/base_modules/io.py", line 90, in assert_non_connected_events
+    assert event[0] > current_offset, f'Connected/overlapping {event[2]} events found for clip {clip_id}: {class_events}'
+AssertionError: Connected/overlapping gun_shot events found for clip soundscape_test_bimodal101: [(7.665626, 9.041054, 'gun_shot'), (7.908620000000001, 8.913138, 'gun_shot')]

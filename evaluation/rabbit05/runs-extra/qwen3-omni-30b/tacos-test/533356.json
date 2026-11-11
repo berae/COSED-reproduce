@@ -1,0 +1,763 @@
+{
+  "clip_id": "533356",
+  "labels": [
+    "An alien animal screams rhythmically with gradually increasing volume.",
+    "An alien animal makes a quiet sound in the distance.",
+    "An animal screams loudly.",
+    "An alien animal screams loudly with an echo at the end.",
+    "An alien animal screams rhythmically with an echo at the end.",
+    "An alien animal sound is heard in the distance.",
+    "An alien animal sound with an echo at the end.",
+    "A bird tweets quietly in the distance.",
+    "A single short bird tweet is heard in the distance.",
+    "An alien animal makes irregular sounds.",
+    "An alien animal rhythmically repeats sounds.",
+    "An alien animal makes quiet, repeated sounds in the distance."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/533356.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 49.1843376159668,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          3.7,
+          "An alien animal makes a quiet sound in the distance."
+        ],
+        [
+          0.0,
+          3.7,
+          "An alien animal makes quiet, repeated sounds in the distance."
+        ],
+        [
+          0.0,
+          3.7,
+          "An alien animal makes irregular sounds."
+        ],
+        [
+          0.0,
+          3.7,
+          "An alien animal rhythmically repeats sounds."
+        ],
+        [
+          3.7,
+          4.7,
+          "An animal screams loudly."
+        ],
+        [
+          3.7,
+          4.7,
+          "An alien animal screams loudly with an echo at the end."
+        ],
+        [
+          3.7,
+          4.7,
+          "An alien animal screams rhythmically with an echo at the end."
+        ],
+        [
+          5.1,
+          6.1,
+          "An animal screams loudly."
+        ],
+        [
+          5.1,
+          6.1,
+          "An alien animal screams loudly with an echo at the end."
+        ],
+        [
+          5.1,
+          6.1,
+          "An alien animal screams rhythmically with an echo at the end."
+        ],
+        [
+          6.5,
+          7.5,
+          "An animal screams loudly."
+        ],
+        [
+          6.5,
+          7.5,
+          "An alien animal screams loudly with an echo at the end."
+        ],
+        [
+          6.5,
+          7.5,
+          "An alien animal screams rhythmically with an echo at the end."
+        ],
+        [
+          7.9,
+          8.9,
+          "An animal screams loudly."
+        ],
+        [
+          7.9,
+          8.9,
+          "An alien animal screams loudly with an echo at the end."
+        ],
+        [
+          7.9,
+          8.9,
+          "An alien animal screams rhythmically with an echo at the end."
+        ],
+        [
+          0.0,
+          3.7,
+          "An alien animal sound is heard in the distance."
+        ],
+        [
+          3.7,
+          4.7,
+          "An alien animal sound with an echo at the end."
+        ],
+        [
+          5.1,
+          6.1,
+          "An alien animal sound with an echo at the end."
+        ],
+        [
+          6.5,
+          7.5,
+          "An alien animal sound with an echo at the end."
+        ],
+        [
+          7.9,
+          8.9,
+          "An alien animal sound with an echo at the end."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-bc8028be2e02cd1a",
+            "object": "chat.completion",
+            "created": 1792830670,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 3.700\n    },\n    {\n      \"query_id\": 11,\n      \"start\": 0.000,\n      \"end\": 3.700\n    },\n    {\n      \"query_id\": 9,\n      \"start\": 0.000,\n      \"end\": 3.700\n    },\n    {\n      \"query_id\": 10,\n      \"start\": 0.000,\n      \"end\": 3.700\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 3.700,\n      \"end\": 4.700\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 3.700,\n      \"end\": 4.700\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 3.700,\n      \"end\": 4.700\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 5.100,\n      \"end\": 6.100\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 5.100,\n      \"end\": 6.100\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 5.100,\n      \"end\": 6.100\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 6.500,\n      \"end\": 7.500\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 6.500,\n      \"end\": 7.500\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 6.500,\n      \"end\": 7.500\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 7.900,\n      \"end\": 8.900\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 7.900,\n      \"end\": 8.900\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 7.900,\n      \"end\": 8.900\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 0.000,\n      \"end\": 3.700\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 3.700,\n      \"end\": 4.700\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 5.100,\n      \"end\": 6.100\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 6.500,\n      \"end\": 7.500\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 7.900,\n      \"end\": 8.900\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 421,
+              "total_tokens": 1151,
+              "completion_tokens": 730,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 42.05936121940613,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          4.5,
+          "An alien animal screams rhythmically with gradually increasing volume."
+        ],
+        [
+          4.5,
+          5.5,
+          "An alien animal makes a quiet sound in the distance."
+        ],
+        [
+          0.0,
+          1.0,
+          "An animal screams loudly."
+        ],
+        [
+          1.5,
+          2.5,
+          "An animal screams loudly."
+        ],
+        [
+          2.5,
+          3.5,
+          "An animal screams loudly."
+        ],
+        [
+          0.0,
+          1.0,
+          "An alien animal screams loudly with an echo at the end."
+        ],
+        [
+          1.5,
+          2.5,
+          "An alien animal screams loudly with an echo at the end."
+        ],
+        [
+          2.5,
+          3.5,
+          "An alien animal screams loudly with an echo at the end."
+        ],
+        [
+          0.0,
+          4.5,
+          "An alien animal screams rhythmically with an echo at the end."
+        ],
+        [
+          4.5,
+          5.5,
+          "An alien animal sound is heard in the distance."
+        ],
+        [
+          0.0,
+          1.0,
+          "An alien animal sound with an echo at the end."
+        ],
+        [
+          1.5,
+          2.5,
+          "An alien animal sound with an echo at the end."
+        ],
+        [
+          2.5,
+          3.5,
+          "An alien animal sound with an echo at the end."
+        ],
+        [
+          5.5,
+          6.5,
+          "A bird tweets quietly in the distance."
+        ],
+        [
+          8.5,
+          9.0,
+          "A single short bird tweet is heard in the distance."
+        ],
+        [
+          4.5,
+          5.5,
+          "An alien animal makes irregular sounds."
+        ],
+        [
+          0.0,
+          4.5,
+          "An alien animal rhythmically repeats sounds."
+        ],
+        [
+          4.5,
+          5.5,
+          "An alien animal makes quiet, repeated sounds in the distance."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-bc1a4fd2ca7e077d",
+            "object": "chat.completion",
+            "created": 1792830719,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 4.500\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 4.500,\n      \"end\": 5.500\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 1.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 1.500,\n      \"end\": 2.500\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 2.500,\n      \"end\": 3.500\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.000,\n      \"end\": 1.000\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 1.500,\n      \"end\": 2.500\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 2.500,\n      \"end\": 3.500\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 0.000,\n      \"end\": 4.500\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 4.500,\n      \"end\": 5.500\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 0.000,\n      \"end\": 1.000\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 1.500,\n      \"end\": 2.500\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 2.500,\n      \"end\": 3.500\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 5.500,\n      \"end\": 6.500\n    },\n    {\n      \"query_id\": 8,\n      \"start\": 8.500,\n      \"end\": 9.000\n    },\n    {\n      \"query_id\": 9,\n      \"start\": 4.500,\n      \"end\": 5.500\n    },\n    {\n      \"query_id\": 10,\n      \"start\": 0.000,\n      \"end\": 4.500\n    },\n    {\n      \"query_id\": 11,\n      \"start\": 4.500,\n      \"end\": 5.500\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 421,
+              "total_tokens": 1049,
+              "completion_tokens": 628,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 9.175625,
+      "seconds": 63.47163796424866,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          0.78,
+          "An animal screams loudly."
+        ],
+        [
+          0.0,
+          0.78,
+          "An alien animal screams loudly with an echo at the end."
+        ],
+        [
+          0.0,
+          0.78,
+          "An alien animal screams rhythmically with an echo at the end."
+        ],
+        [
+          0.0,
+          0.78,
+          "An alien animal sound with an echo at the end."
+        ],
+        [
+          0.0,
+          0.78,
+          "An alien animal makes a quiet sound in the distance."
+        ],
+        [
+          0.0,
+          0.78,
+          "An alien animal rhythmically repeats sounds."
+        ],
+        [
+          0.0,
+          0.78,
+          "An alien animal makes quiet, repeated sounds in the distance."
+        ],
+        [
+          0.0,
+          0.78,
+          "An alien animal sound is heard in the distance."
+        ],
+        [
+          0.0,
+          0.78,
+          "An alien animal makes irregular sounds."
+        ],
+        [
+          1.42,
+          1.62,
+          "An alien animal makes a quiet sound in the distance."
+        ],
+        [
+          1.42,
+          1.62,
+          "An alien animal makes quiet, repeated sounds in the distance."
+        ],
+        [
+          1.42,
+          1.62,
+          "An alien animal sound is heard in the distance."
+        ],
+        [
+          1.42,
+          1.62,
+          "An alien animal makes irregular sounds."
+        ],
+        [
+          2.58,
+          2.82,
+          "An alien animal makes a quiet sound in the distance."
+        ],
+        [
+          2.58,
+          2.82,
+          "An alien animal makes quiet, repeated sounds in the distance."
+        ],
+        [
+          2.58,
+          2.82,
+          "An alien animal sound is heard in the distance."
+        ],
+        [
+          2.58,
+          2.82,
+          "An alien animal makes irregular sounds."
+        ],
+        [
+          5.98,
+          6.18,
+          "An alien animal makes a quiet sound in the distance."
+        ],
+        [
+          5.98,
+          6.18,
+          "An alien animal makes quiet, repeated sounds in the distance."
+        ],
+        [
+          5.98,
+          6.18,
+          "An alien animal sound is heard in the distance."
+        ],
+        [
+          5.98,
+          6.18,
+          "An alien animal makes irregular sounds."
+        ],
+        [
+          7.38,
+          7.58,
+          "An alien animal makes a quiet sound in the distance."
+        ],
+        [
+          7.38,
+          7.58,
+          "An alien animal makes quiet, repeated sounds in the distance."
+        ],
+        [
+          7.38,
+          7.58,
+          "An alien animal sound is heard in the distance."
+        ],
+        [
+          7.38,
+          7.58,
+          "An alien animal makes irregular sounds."
+        ],
+        [
+          7.82,
+          8.02,
+          "An alien animal makes a quiet sound in the distance."
+        ],
+        [
+          7.82,
+          8.02,
+          "An alien animal makes quiet, repeated sounds in the distance."
+        ],
+        [
+          7.82,
+          8.02,
+          "An alien animal sound is heard in the distance."
+        ],
+        [
+          7.82,
+          8.02,
+          "An alien animal makes irregular sounds."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-873a5f6d86fb5956",
+            "object": "chat.completion",
+            "created": 1792830761,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 2,\n      \"start\": 0.0,\n      \"end\": 0.78\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.0,\n      \"end\": 0.78\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 0.0,\n      \"end\": 0.78\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 0.0,\n      \"end\": 0.78\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.0,\n      \"end\": 0.78\n    },\n    {\n      \"query_id\": 10,\n      \"start\": 0.0,\n      \"end\": 0.78\n    },\n    {\n      \"query_id\": 11,\n      \"start\": 0.0,\n      \"end\": 0.78\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 0.0,\n      \"end\": 0.78\n    },\n    {\n      \"query_id\": 9,\n      \"start\": 0.0,\n      \"end\": 0.78\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 1.42,\n      \"end\": 1.62\n    },\n    {\n      \"query_id\": 11,\n      \"start\": 1.42,\n      \"end\": 1.62\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 1.42,\n      \"end\": 1.62\n    },\n    {\n      \"query_id\": 9,\n      \"start\": 1.42,\n      \"end\": 1.62\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 2.58,\n      \"end\": 2.82\n    },\n    {\n      \"query_id\": 11,\n      \"start\": 2.58,\n      \"end\": 2.82\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 2.58,\n      \"end\": 2.82\n    },\n    {\n      \"query_id\": 9,\n      \"start\": 2.58,\n      \"end\": 2.82\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 5.98,\n      \"end\": 6.18\n    },\n    {\n      \"query_id\": 11,\n      \"start\": 5.98,\n      \"end\": 6.18\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 5.98,\n      \"end\": 6.18\n    },\n    {\n      \"query_id\": 9,\n      \"start\": 5.98,\n      \"end\": 6.18\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 7.38,\n      \"end\": 7.58\n    },\n    {\n      \"query_id\": 11,\n      \"start\": 7.38,\n      \"end\": 7.58\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 7.38,\n      \"end\": 7.58\n    },\n    {\n      \"query_id\": 9,\n      \"start\": 7.38,\n      \"end\": 7.58\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 7.82,\n      \"end\": 8.02\n    },\n    {\n      \"query_id\": 11,\n      \"start\": 7.82,\n      \"end\": 8.02\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 7.82,\n      \"end\": 8.02\n    },\n    {\n      \"query_id\": 9,\n      \"start\": 7.82,\n      \"end\": 8.02\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 409,
+              "total_tokens": 1349,
+              "completion_tokens": 940,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      10.5,
+      11.5,
+      "A bird tweets quietly in the distance."
+    ],
+    [
+      13.5,
+      14.0,
+      "A single short bird tweet is heard in the distance."
+    ],
+    [
+      0.0,
+      3.7,
+      "An alien animal makes a quiet sound in the distance."
+    ],
+    [
+      9.5,
+      10.78,
+      "An alien animal makes a quiet sound in the distance."
+    ],
+    [
+      11.42,
+      11.620000000000001,
+      "An alien animal makes a quiet sound in the distance."
+    ],
+    [
+      12.58,
+      12.82,
+      "An alien animal makes a quiet sound in the distance."
+    ],
+    [
+      15.98,
+      16.18,
+      "An alien animal makes a quiet sound in the distance."
+    ],
+    [
+      17.38,
+      17.58,
+      "An alien animal makes a quiet sound in the distance."
+    ],
+    [
+      17.82,
+      18.02,
+      "An alien animal makes a quiet sound in the distance."
+    ],
+    [
+      0.0,
+      3.7,
+      "An alien animal makes irregular sounds."
+    ],
+    [
+      9.5,
+      10.78,
+      "An alien animal makes irregular sounds."
+    ],
+    [
+      11.42,
+      11.620000000000001,
+      "An alien animal makes irregular sounds."
+    ],
+    [
+      12.58,
+      12.82,
+      "An alien animal makes irregular sounds."
+    ],
+    [
+      15.98,
+      16.18,
+      "An alien animal makes irregular sounds."
+    ],
+    [
+      17.38,
+      17.58,
+      "An alien animal makes irregular sounds."
+    ],
+    [
+      17.82,
+      18.02,
+      "An alien animal makes irregular sounds."
+    ],
+    [
+      0.0,
+      3.7,
+      "An alien animal makes quiet, repeated sounds in the distance."
+    ],
+    [
+      9.5,
+      10.78,
+      "An alien animal makes quiet, repeated sounds in the distance."
+    ],
+    [
+      11.42,
+      11.620000000000001,
+      "An alien animal makes quiet, repeated sounds in the distance."
+    ],
+    [
+      12.58,
+      12.82,
+      "An alien animal makes quiet, repeated sounds in the distance."
+    ],
+    [
+      15.98,
+      16.18,
+      "An alien animal makes quiet, repeated sounds in the distance."
+    ],
+    [
+      17.38,
+      17.58,
+      "An alien animal makes quiet, repeated sounds in the distance."
+    ],
+    [
+      17.82,
+      18.02,
+      "An alien animal makes quiet, repeated sounds in the distance."
+    ],
+    [
+      0.0,
+      3.7,
+      "An alien animal rhythmically repeats sounds."
+    ],
+    [
+      5.0,
+      9.5,
+      "An alien animal rhythmically repeats sounds."
+    ],
+    [
+      10.0,
+      10.78,
+      "An alien animal rhythmically repeats sounds."
+    ],
+    [
+      3.7,
+      4.7,
+      "An alien animal screams loudly with an echo at the end."
+    ],
+    [
+      5.0,
+      6.1,
+      "An alien animal screams loudly with an echo at the end."
+    ],
+    [
+      6.5,
+      8.9,
+      "An alien animal screams loudly with an echo at the end."
+    ],
+    [
+      10.0,
+      10.78,
+      "An alien animal screams loudly with an echo at the end."
+    ],
+    [
+      3.7,
+      4.7,
+      "An alien animal screams rhythmically with an echo at the end."
+    ],
+    [
+      5.0,
+      9.5,
+      "An alien animal screams rhythmically with an echo at the end."
+    ],
+    [
+      10.0,
+      10.78,
+      "An alien animal screams rhythmically with an echo at the end."
+    ],
+    [
+      5.0,
+      9.5,
+      "An alien animal screams rhythmically with gradually increasing volume."
+    ],
+    [
+      0.0,
+      3.7,
+      "An alien animal sound is heard in the distance."
+    ],
+    [
+      9.5,
+      10.78,
+      "An alien animal sound is heard in the distance."
+    ],
+    [
+      11.42,
+      11.620000000000001,
+      "An alien animal sound is heard in the distance."
+    ],
+    [
+      12.58,
+      12.82,
+      "An alien animal sound is heard in the distance."
+    ],
+    [
+      15.98,
+      16.18,
+      "An alien animal sound is heard in the distance."
+    ],
+    [
+      17.38,
+      17.58,
+      "An alien animal sound is heard in the distance."
+    ],
+    [
+      17.82,
+      18.02,
+      "An alien animal sound is heard in the distance."
+    ],
+    [
+      3.7,
+      4.7,
+      "An alien animal sound with an echo at the end."
+    ],
+    [
+      5.0,
+      6.1,
+      "An alien animal sound with an echo at the end."
+    ],
+    [
+      6.5,
+      8.9,
+      "An alien animal sound with an echo at the end."
+    ],
+    [
+      10.0,
+      10.78,
+      "An alien animal sound with an echo at the end."
+    ],
+    [
+      3.7,
+      4.7,
+      "An animal screams loudly."
+    ],
+    [
+      5.0,
+      6.1,
+      "An animal screams loudly."
+    ],
+    [
+      6.5,
+      8.9,
+      "An animal screams loudly."
+    ],
+    [
+      10.0,
+      10.78,
+      "An animal screams loudly."
+    ]
+  ],
+  "duration": 19.175625,
+  "inference_seconds": 154.71533679962158
+}

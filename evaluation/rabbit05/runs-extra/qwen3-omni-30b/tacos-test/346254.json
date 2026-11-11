@@ -1,0 +1,527 @@
+{
+  "clip_id": "346254",
+  "labels": [
+    "A big dog barks loudly outside.",
+    "A big dog barks loudly and repeatedly outside.",
+    "A big dog barks and growls deeply, loudly, and repeatedly outside.",
+    "Birds are quietly singing with background noise."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/346254.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 10.260985136032104,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          10.0,
+          "A big dog barks loudly outside."
+        ],
+        [
+          0.0,
+          10.0,
+          "A big dog barks loudly and repeatedly outside."
+        ],
+        [
+          0.0,
+          10.0,
+          "A big dog barks and growls deeply, loudly, and repeatedly outside."
+        ],
+        [
+          0.0,
+          10.0,
+          "Birds are quietly singing with background noise."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-ad8a171d35b54d2c",
+            "object": "chat.completion",
+            "created": 1792807277,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 326,
+              "total_tokens": 480,
+              "completion_tokens": 154,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 23.70642113685608,
+      "status": "complete",
+      "events": [
+        [
+          0.748,
+          1.958,
+          "A big dog barks loudly outside."
+        ],
+        [
+          0.748,
+          1.958,
+          "A big dog barks loudly and repeatedly outside."
+        ],
+        [
+          0.748,
+          1.958,
+          "A big dog barks and growls deeply, loudly, and repeatedly outside."
+        ],
+        [
+          4.168,
+          5.378,
+          "A big dog barks loudly outside."
+        ],
+        [
+          4.168,
+          5.378,
+          "A big dog barks loudly and repeatedly outside."
+        ],
+        [
+          4.168,
+          5.378,
+          "A big dog barks and growls deeply, loudly, and repeatedly outside."
+        ],
+        [
+          7.178,
+          8.388,
+          "A big dog barks loudly outside."
+        ],
+        [
+          7.178,
+          8.388,
+          "A big dog barks loudly and repeatedly outside."
+        ],
+        [
+          7.178,
+          8.388,
+          "A big dog barks and growls deeply, loudly, and repeatedly outside."
+        ],
+        [
+          0.0,
+          10.0,
+          "Birds are quietly singing with background noise."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-89e37c68fd9afa35",
+            "object": "chat.completion",
+            "created": 1792807287,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.748,\n      \"end\": 1.958\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.748,\n      \"end\": 1.958\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.748,\n      \"end\": 1.958\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 4.168,\n      \"end\": 5.378\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 4.168,\n      \"end\": 5.378\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 4.168,\n      \"end\": 5.378\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 7.178,\n      \"end\": 8.388\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 7.178,\n      \"end\": 8.388\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 7.178,\n      \"end\": 8.388\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 326,
+              "total_tokens": 681,
+              "completion_tokens": 355,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 10.0,
+      "seconds": 9.999212980270386,
+      "status": "complete",
+      "events": [
+        [
+          2.458,
+          3.678,
+          "A big dog barks loudly outside."
+        ],
+        [
+          2.458,
+          3.678,
+          "A big dog barks loudly and repeatedly outside."
+        ],
+        [
+          2.458,
+          3.678,
+          "A big dog barks and growls deeply, loudly, and repeatedly outside."
+        ],
+        [
+          0.0,
+          10.0,
+          "Birds are quietly singing with background noise."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-ab7faf602bf09045",
+            "object": "chat.completion",
+            "created": 1792807311,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 2.458,\n      \"end\": 3.678\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 2.458,\n      \"end\": 3.678\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 2.458,\n      \"end\": 3.678\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 326,
+              "total_tokens": 477,
+              "completion_tokens": 151,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 240000,
+      "start": 15.0,
+      "duration": 10.0,
+      "seconds": 12.290690422058105,
+      "status": "complete",
+      "events": [
+        [
+          1.748,
+          2.258,
+          "A big dog barks loudly outside."
+        ],
+        [
+          3.698,
+          4.698,
+          "A big dog barks loudly and repeatedly outside."
+        ],
+        [
+          6.198,
+          6.698,
+          "A big dog barks and growls deeply, loudly, and repeatedly outside."
+        ],
+        [
+          8.198,
+          8.698,
+          "A big dog barks and growls deeply, loudly, and repeatedly outside."
+        ],
+        [
+          0.0,
+          10.0,
+          "Birds are quietly singing with background noise."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a85fb9ada51630e7",
+            "object": "chat.completion",
+            "created": 1792807321,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 1.748,\n      \"end\": 2.258\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 3.698,\n      \"end\": 4.698\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 6.198,\n      \"end\": 6.698\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 8.198,\n      \"end\": 8.698\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 326,
+              "total_tokens": 511,
+              "completion_tokens": 185,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 320000,
+      "start": 20.0,
+      "duration": 5.7449375,
+      "seconds": 23.189839839935303,
+      "status": "complete",
+      "events": [
+        [
+          1.289,
+          1.679,
+          "A big dog barks loudly outside."
+        ],
+        [
+          1.289,
+          1.679,
+          "A big dog barks loudly and repeatedly outside."
+        ],
+        [
+          1.289,
+          1.679,
+          "A big dog barks and growls deeply, loudly, and repeatedly outside."
+        ],
+        [
+          3.579,
+          3.969,
+          "A big dog barks loudly outside."
+        ],
+        [
+          3.579,
+          3.969,
+          "A big dog barks loudly and repeatedly outside."
+        ],
+        [
+          3.579,
+          3.969,
+          "A big dog barks and growls deeply, loudly, and repeatedly outside."
+        ],
+        [
+          5.019,
+          5.409,
+          "A big dog barks loudly outside."
+        ],
+        [
+          5.019,
+          5.409,
+          "A big dog barks loudly and repeatedly outside."
+        ],
+        [
+          5.019,
+          5.409,
+          "A big dog barks and growls deeply, loudly, and repeatedly outside."
+        ],
+        [
+          0.0,
+          5.7449375,
+          "Birds are quietly singing with background noise."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8c437ae90d0ab517",
+            "object": "chat.completion",
+            "created": 1792807333,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 1.289,\n      \"end\": 1.679\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 1.289,\n      \"end\": 1.679\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 1.289,\n      \"end\": 1.679\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 3.579,\n      \"end\": 3.969\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 3.579,\n      \"end\": 3.969\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 3.579,\n      \"end\": 3.969\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 5.019,\n      \"end\": 5.409\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 5.019,\n      \"end\": 5.409\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 5.019,\n      \"end\": 5.409\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.0,\n      \"end\": 5.745\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 269,
+              "total_tokens": 621,
+              "completion_tokens": 352,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      10.378,
+      "A big dog barks and growls deeply, loudly, and repeatedly outside."
+    ],
+    [
+      12.178,
+      13.678,
+      "A big dog barks and growls deeply, loudly, and repeatedly outside."
+    ],
+    [
+      21.198,
+      21.698,
+      "A big dog barks and growls deeply, loudly, and repeatedly outside."
+    ],
+    [
+      23.198,
+      23.969,
+      "A big dog barks and growls deeply, loudly, and repeatedly outside."
+    ],
+    [
+      25.019,
+      25.409,
+      "A big dog barks and growls deeply, loudly, and repeatedly outside."
+    ],
+    [
+      0.0,
+      10.378,
+      "A big dog barks loudly and repeatedly outside."
+    ],
+    [
+      12.178,
+      13.678,
+      "A big dog barks loudly and repeatedly outside."
+    ],
+    [
+      18.698,
+      19.698,
+      "A big dog barks loudly and repeatedly outside."
+    ],
+    [
+      21.289,
+      21.679,
+      "A big dog barks loudly and repeatedly outside."
+    ],
+    [
+      23.579,
+      23.969,
+      "A big dog barks loudly and repeatedly outside."
+    ],
+    [
+      25.019,
+      25.409,
+      "A big dog barks loudly and repeatedly outside."
+    ],
+    [
+      0.0,
+      10.378,
+      "A big dog barks loudly outside."
+    ],
+    [
+      12.178,
+      13.678,
+      "A big dog barks loudly outside."
+    ],
+    [
+      16.748,
+      17.258,
+      "A big dog barks loudly outside."
+    ],
+    [
+      21.289,
+      21.679,
+      "A big dog barks loudly outside."
+    ],
+    [
+      23.579,
+      23.969,
+      "A big dog barks loudly outside."
+    ],
+    [
+      25.019,
+      25.409,
+      "A big dog barks loudly outside."
+    ],
+    [
+      0.0,
+      25.7449375,
+      "Birds are quietly singing with background noise."
+    ]
+  ],
+  "duration": 25.7449375,
+  "inference_seconds": 79.44714951515198
+}

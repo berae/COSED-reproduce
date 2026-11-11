@@ -1,0 +1,76 @@
+2026-10-19 | 用户授权清理重复文件。
+查询：检查本机/服务器 analysis 文件清单及 Markdown、HTML、脚本引用。
+删除：results.html（旧总览）、classwise/index.html（重复全量网页）、render_classwise.py（对应生成器）、desed/analysis.ipynb（计分脚本副本）、desed/research_analysis.py（本机旧诊断脚本副本，服务器无此文件）。
+修改：classwise/README.md 仅保留查询明细和来源；更新 class_results.md、comparison.html、experiment_summary.md、desed/README.md 的链接；AGENTS.md 记录文件复用与日志约定。
+保留：comparison.html、class_results.md 为主要入口；实验说明、专项诊断、音频和图像、统计 JSON、复算脚本均保留；原始数据和模型预测未动。
+新增：本维护日志，后续增删改查持续追加，不按次建立新文件。
+验证：主要文档的相对链接检查通过；本机 5 个重复文件、服务器 4 个重复文件已删除。
+
+2026-10-19 | 修复 class_results.md 总体表预览：表头/数据为 9 列，分隔行误写 10 列；改为 9 列。逐一验证全部 7 张表的表头、分隔行、数据列数一致，数值未改。
+
+2026-10-19 | DESED Public Test 科研诊断。
+修改：复用 desed/research/analysis.py，增加 public/validation 数据集选择；README.md 增补 public 的 Speech、Dishes 全量诊断及具体案例，保留并区分 validation；class_results.md 增加分析入口。
+新增：research/public/ 下统计 JSON、类别图与 6 个案例的音频、响应图、索引和单一浏览页，用于隔离两个 split。
+验证：服务器脚本完成（692 条 public 音频）；人工查看 Speech、Dishes 差异案例响应图；未完成听音确认。主评分、原始预测和权重未变。运行日志：log/20261019/desed_public_analysis.log。
+
+2026-10-19 | 独立审查后二次核实与协议修正。
+核实：服务器 FineLAP HEAD ad82bc1e242de4f56b80cf36f6d9f3009bb96c7b 的 evaluate.py，TAG PSDS 使用原始帧分数，三帧滤波在 th-AUC 分支；483 个预测逐一验证 scores == median_filter(raw,(3,1))。独立重算 TAG raw=0.647915642383797，legacy=0.6601616054768732。
+核实：692 条 DASM Dishes 最大分数 0.3923189640045166；MGA-CLAP Speech_high 最小分数 0.015351551584899426、最大 0.0980769470334053，阈值 0 覆盖整段，片内 AUC=1。任意阈值不能支撑跨模型事件边界/误报/漏报比较。
+修改：移除 analysis.py 及 Public/Validation cases.html 中任意阈值表和相关判断，清除 index.json 展示区间；保留音频、图、连续分数及 AUC。正式操作点仍待验证集选择，本次不另选阈值。
+修改：统一 score_benchmarks.py 接入 TACOS exact/semantic/both、TAG legacy/official/both；分别原子保存 metrics.<policy>.json，不覆盖历史 metrics.json。run_benchmark.py 自动接入相同参数，保留冻结 runner 字节与原始 NPZ；保护其历史 metrics.json 不被内置旧计分覆盖。
+修改：tacos_audit.py 普通核查保留 semantic，语义计分全部成功后才原子替换 audit.json，复用统一 scorer；save_json 使用唯一临时文件原子替换。
+修改：class_results.md、comparison.html、experiment_summary.md 同步 FineLAP TAG 及 TACOS 当前协议与排名；查询明细显式标记 legacy/exact。scripts/README.md 修正启动路径并补充复算说明；runners/README.md 标注旧计分入口限制。
+结果：统一入口五模型 TACOS exact/semantic、TAG legacy/official 全部完成。TACOS semantic 最高 MGA-CLAP=0.13257236846295004，FineLAP=0.12387846718627696。日志 log/20261019/protocol_correction.log。
+限制：TAG official 仅表示 FineLAP 未滤波分支，不宣称完整官方等价；没有重新验证全部前向、没有完成人工听辨，COSED 精确清单、编码器等仍未确认。
+验证完成：五模型 TACOS 新入口 exact/semantic 与既有独立审计分数逐项一致（误差 <1e-12）；10 组历史 metrics.json 数值保留；普通审计保留 semantic，模拟语义计分失败后 audit.json 字节不变；统一队列 dry-run 正确转发两种配置；脚本语法及 Markdown 列数通过。查询 statistics.json 与生成器增加 legacy/exact 元数据。详见 log/20261019/protocol_regression.log。
+
+2026-10-19 | 独立参与模型瓶颈与科研设计审阅。
+新增：analysis/desed/research/bottlenecks.py、bottlenecks.json、bottlenecks.png/pdf；在现有 README.md 文首整合结果，不覆盖原有分析。
+范围：Public 692 条、Validation 1068 条，五模型，共 8800 个保存预测；Speech、Dishes、Dog、Vacuum_cleaner 四类。没有训练、重新推理或改写原始预测、主指标、权重。
+方法：固定 raw 输出对照当前中值平滑；全数据标准逐类 PSD；仅剔除完全阴性音频响应的 GT oracle；逐事件全部阈值组件诊断（不是召回率或 PSDS 上界）；按源录音分组配对 bootstrap、孤立短事件复核；跨数据集标注时长概况。
+结果：MGA-CLAP 0.25-0.5 秒 Dishes 事件的单事件可达比例 Public 38.2%->4.9%、Validation 41.3%->5.6%；对应完整 Dishes PSD 0.1555->0.0974、0.1789->0.1294。FineLAP 平滑反而改善完整 Dishes PSD。FineLAP Speech 排除阴性音频响应明显改善，Dishes 的 DASM/FineLAP/MGA 改善很小。详见 README，不作单一架构因果或新颖性宣称。
+验证：当前平滑 PSD 与既有标准文件 40 项误差 <1e-10；8800 个文件核对 raw->median->scores；组件枚举、AUC、1320 个网格案例与独立暴力实现/库对照通过；检查所有事件分数可达蕴含网格可达；PNG 人工检查无裁切；完整计算与补充统计日志保存在 log/20261019/。
+限制：允许逐事件选择阈值的诊断不能当部署召回；GT gate 不可部署，不可做加性误差分解；跨数据集语义/声学/训练来源混杂；人工盲听、训练源重叠审计仍未完成，Public 已用于探索。
+
+2026-10-22 | 六套 benchmark 全量失败候选整理（待人工听辨）。
+修改：复用 scripts/negative_review.py，由三划分每类 top-5 背景筛查扩展为五模型 × 六套主评测清单，新增 --render-only；本机维护同脚本镜像 negative-review/negative_review.py。DESED Public，MAESTRO Development；FineLAP TAG raw，TACOS 当前 semantic 真值。
+方法：不设模型手写阈值；事件/背景加权 AUC、背景峰值、跨阈值单连续区间最佳 IoU 与可行性、固定类别跨录音排序候选；MAESTRO 使用一秒加权分数与软真值。GT 辅助区间仅作诊断，不是正式 FP/FN、统一部署点或错误率。
+结果：扫描 31,155 份模型预测（6,231 条音频 × 5），生成 92,954 条模型/查询/区间候选。DESED 8,366；RealDESED 15,331；UrbanSED 20,653；TAG 3,345；TACOS 34,830；MAESTRO 10,429。类型可重叠。
+文件：更新 negative-review/candidates.json、candidates.csv、summary.json、review.html、README.md；新增六份按数据集分开的 CSV 和 60 条代表试听 WAV（listen/）。页面支持筛选、分页、稳定案例 ID、局部响应曲线和人工笔记导出。旧 notebook 标记为历史入口，避免误用新 schema。
+验证：120 组随机含并列分数的连通区间枚举与暴力遍历全阈值一致；AUC 正序/倒序/并列检查通过；92,954 ID 唯一、30 项覆盖齐全、六 CSV 行数一致、时间及指标边界正确、TAG 分数字段正确。
+保留：原音频、全部 NPZ、模型权重、主结果与旧协议成绩均未改。未听辨，不推断失败原因；全量列出符合筛选规则的候选，不声称穷尽唯一正式失败集合。
+日志：log/20261022/failure_candidates.log。
+页面验证：嵌入 JavaScript 实际执行通过，六数据集筛选数量与 CSV 一致，60 条代表样本过滤、详情音频/SVG 生成、分页通过；scripts/README.md 同步六套候选范围。
+
+2026-10-22 | 按用户澄清将复核单位改为“一条音频一道题”。
+修改：review.html 主列表按 dataset + audio_id 唯一聚合，所有查询、事件与五模型细项收进同一题。按音频保存人工笔记；代表片段增加五模型同查询响应对照；未触发规则标为待复核，不等于答对。
+修改：六份 benchmark CSV 改为逐音频清单，包含全部 6,231 条音频与五模型现象汇总。candidates.json / candidates.csv 保留 92,954 条诊断细项，不作为题目数。summary.json 增加 audio_total/audio_flagged/audio_by_dataset 与 count_unit，README 类型数量按音频去重。
+数量：DESED 636/692；RealDESED 997/1007；UrbanSED 1998/2000；TAG 366/483；TACOS 1821/2000；MAESTRO Development 49/49；合计 5,867/6,231 条有候选标记。该比例不当作错误率。
+验证：六 CSV 音频 ID 无重复，行数与各数据集 manifest 一致，候选音频数与 summary 一致。复用既有诊断，没有重新推理。
+2026-10-22 | 用户截图触发筛查定义复核：DESED -0H7vrzA80U_4_14，Cat 五段 GT。
+发现：旧背景峰值把只要含少量背景的跨 GT 边界帧也作为背景。FineLAP 8.4375–8.59375 与 8.519 起猫叫重叠，MGA-CLAP 同类问题；不能据此称为背景误报。
+修正：背景峰值仅使用与全部同类 GT 零重叠的完整帧；复用已有候选、已有预测重算这一标记，撤销 11,112 个边界混合帧造成的标记，保留 85,141 条仍触发其他/新规则的诊断细项。脚本 --refresh-background 可复算；不改变官方评分。
+界面：五模型详情逐一列出全部 GT，包括未触发规则的事件，注明既不能视为漏检也不能视为答对。补充 GT 辅助区间性质。FineLAP/MGA-CLAP 此例旧背景峰值标记撤回；FlexSED 6.760–6.800 高峰距下一 GT 6.804 仅 4 ms，作为边界附近响应复核线索，不认定背景误报。
+文档：README 修正背景定义；音频候选数量按新结果自动更新；原音频、模型权重、NPZ、主评测分数未改。
+
+2026-10-22 | 修正复核页面方向：实际模型分数优先。
+主视图改为一条音频的完整音频、全部 GT、五模型完整时间轴分数与逐 GT 均值/峰值；撤下“未触发规则”和 GT 辅助最佳区间等主视图筛查状态。筛查细项保留为历史辅助资料。
+复用 negative_review.py，新增 --render-output-view 和 --serve；服务器只监听本地 18765，通过本机 SSH 转发按需读取已有预测/完整音频。无 GPU、无重新推理。启动服务日志 log/20261022/output_review_service.log；本机转发进程 PID 22284。
+页面猫叫五段 GT 与五模型完整原始数值嵌入，其他题目按需读取。已验证本机 API 的五段 GT、五模型完整时间戳与分数、完整 WAV；浏览器实际显示已核实。
+2026-10-23 | 恢复逐音频查看页：rabbit05 服务 PID 129772 正常，本机 18765 无监听，SSH 转发已退出。重建隐藏 SSH 通道 PID 17424，加入保活设置。验证网页 HTTP 200、Cat 五模型完整分数 API 正常。VPN/电脑休眠后通道仍可能需要重连。
+2026-10-23 | 用户授权本地 Omni 跑六套 benchmark。恢复 Qwen3-Omni-30B-A3B，GPU 3、4，8901；新 scripts/run_omni_benchmark.py 复用现有 manifests 和保存工具，10s/5s 滑窗，原查询/类别提示，不含 GT。窗口级原始回复与 JSON 语法修复记录、事件区间、运行配置与状态保存在 runs-extra/qwen3-omni-30b。单实例串行、原子保存、断点续跑。原始服务不变，SED 预测不改。先六套小批量，再全量；区间 intersection F1 / MAESTRO segment F1 单列，不伪造帧分数 PSDS。已验证括号语法修复与无效时间拒绝、完美样例官方 F1=1。日志 log/20261023/omni_benchmark.log。
+2026-10-23 | 初始小批量已完成六套验证并短暂进入 DESED；观察到跨音频重复时间示例0.2–1.3，消除具体时间锚点后重启正式队列（PID1572912）。初批配置与输出完整移入 runs-extra/qwen3-omni-30b/archive-initial-smoke，不和正式结果混算。正式提示词仅字段类型，无具体事件时间示例。选择依据是格式/输入一致性，不按测试集性能择优。
+
+2026-10-23 | 计算 OVSED 漏检与误报的阈值关系。
+新增 analysis/error_rates.py，复用五模型现有预测和官方 sed_scores_eval 匹配统计。事件任务 FN/GT；FP/真实连续预测区间总数；另列 FP/小时。多对多匹配下不以官方 TP+FP 代替预测总数。MAESTRO 使用十一类×一秒段，分别计算 FN/阳性、FP/阴性、FP/预测阳性。
+所有原生匹配变化点与预测数重建信息存 analysis/error_rates/*.npz；分数分位阈值201点加两端展示到各 benchmark CSV 与 review.html，未用 GT 选择操作点。无任意手写模型阈值。
+验证：构造已知真值，官方匹配正确；阈值等号及无预测分母正确；预测区间计数与直接二值化计数一致。主 PSDS/mpAUC、原始 NPZ 和模型未变。日志 log/20261023/error_rates.log。
+2026-10-23 | 漏检/误报计算完成：六数据集×五模型，共6090展示操作点。六CSV与交互查看页已同步本机，全部原生统计NPZ保存在服务器。验证30组齐全、FN/FP范围、零预测分母、CSV行数、曲线点击和模型阈值表正常。
+2026-10-23 | error_rates 页面兼容事件级/Clip级切换。保留6090条原事件/秒段操作点和原NPZ，新增6090条Clip操作点；--clip-only只读取现有预测补算，不重跑模型。Clip按每条音频每类最大分数判断出现，重复GT同类只计一次、忽略时间；另列按音频去重的至少漏一类/多报一类数量及分母。TAG/TACOS无阴性查询时误报不可测，MAESTRO沿用十一类与软GT>0.5。六CSV通过mode区分，README与服务器同步。验证合成样例、音频去重、阴性分母、零预测、正查询限制；12种数据集/模式组合及曲线点击逻辑均通过。浏览器file协议访问被工具策略阻止，未做浏览器目视验证。日志 log/20261023/error_rates_clip.log。
+
+2026-10-26 | 核查Omni队列：5839成功、392未完成，旧全量计分遇未完成音频断言失败。维护原runner增加--score-complete-only，新增完整成功子集的区间/秒段F1与Clip presence计数，coverage保留排除ID；不改原推理、原metrics.json或回复。analysis/omni_results.md汇总；TAG/TACOS无阴性查询FPR不可测。抽查裸数组被严格解析器拒绝，未将其作为模型漏检。
+
+2026-10-26 | Omni成功子集补算Clip Precision、音频–类别准确率、整音频exact match与二值mAP。原runner维护，无新计分入口；binary AP使用sklearn并列处理，逐类宏平均，不伪造模型置信度；TAG/TACOS阳性查询AP退化不报告。原区间/秒段F1不变。验证已知二值AP与accuracy计数恒等式。同步omni_results.md。
+
+2026-10-26 | 维护原Omni runner新增--compare-clip，复用五个OVSED预测，在Omni相同成功子集上计算四套固定类别benchmark的Clip mAP。OVSED用帧最大分数(MAESTRO一秒加权后最大)，Omni二值生成presence；同GT/类/AP实现。保存clip-comparison.json逐类AP与ID，更新原omni_results.md，不改主表/原预测。TAG/TACOS仅阳性查询不作Clip mAP；不按测试GT挑选固定阈值。验证覆盖数、唯一ID、六模型类别一致、Omni AP与原结果一致。日志log/20261023/omni_clip_comparison.log。
+2026-10-26 | 应用户要求将逐音频五模型分数图纵轴固定为0–1，添加0/0.25/0.5/0.75/1刻度与参考线。只改render_outputs模板和生成页面，不归一化、不修改预测与计分；超范围分数注明原始范围，坐标框裁切防止曲线越界。服务器和本机review.html同步；浏览器刷新确认五模型均显示相同刻度，HTTP200。

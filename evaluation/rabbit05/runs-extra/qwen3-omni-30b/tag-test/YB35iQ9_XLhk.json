@@ -1,0 +1,97 @@
+{
+  "clip_id": "YB35iQ9_XLhk",
+  "labels": [
+    "an engine running",
+    "tapping",
+    "a loud horn"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/YB35iQ9_XLhk.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 7.663103818893433,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          9.837,
+          "an engine running"
+        ],
+        [
+          0.0,
+          4.56,
+          "tapping"
+        ],
+        [
+          7.0,
+          9.837,
+          "a loud horn"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-aa8137ab7bf35900",
+            "object": "chat.completion",
+            "created": 1792781896,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 9.837\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 4.560\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 7.000,\n      \"end\": 9.837\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 291,
+              "total_tokens": 407,
+              "completion_tokens": 116,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      7.0,
+      9.837,
+      "a loud horn"
+    ],
+    [
+      0.0,
+      9.837,
+      "an engine running"
+    ],
+    [
+      0.0,
+      4.56,
+      "tapping"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 7.663103818893433
+}

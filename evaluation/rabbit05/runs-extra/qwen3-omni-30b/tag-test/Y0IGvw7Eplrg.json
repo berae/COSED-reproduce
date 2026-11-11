@@ -1,0 +1,75 @@
+{
+  "clip_id": "Y0IGvw7Eplrg",
+  "labels": [
+    "the idling of an engine"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y0IGvw7Eplrg.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 9.5735,
+      "seconds": 3.121061086654663,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          8.42,
+          "the idling of an engine"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8fd2e5bd1dc8d76a",
+            "object": "chat.completion",
+            "created": 1792780141,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 8.42\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 277,
+              "total_tokens": 322,
+              "completion_tokens": 45,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      8.42,
+      "the idling of an engine"
+    ]
+  ],
+  "duration": 9.5735,
+  "inference_seconds": 3.121061086654663
+}

@@ -1,0 +1,208 @@
+{
+  "clip_id": "503551",
+  "labels": [
+    "A car approaches from a distance and then drives away.",
+    "A bird sings in the distance."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/503551.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 5.5302817821502686,
+      "status": "complete",
+      "events": [
+        [
+          4.238,
+          9.578,
+          "A car approaches from a distance and then drives away."
+        ],
+        [
+          0.0,
+          10.0,
+          "A bird sings in the distance."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b7630f5b9f091982",
+            "object": "chat.completion",
+            "created": 1792833435,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 4.238,\n      \"end\": 9.578\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 298,
+              "total_tokens": 381,
+              "completion_tokens": 83,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 5.465493202209473,
+      "status": "complete",
+      "events": [
+        [
+          2.389,
+          7.459,
+          "A car approaches from a distance and then drives away."
+        ],
+        [
+          6.489,
+          9.489,
+          "A bird sings in the distance."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b53bb9bd11c6777c",
+            "object": "chat.completion",
+            "created": 1792833441,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 2.389,\n      \"end\": 7.459\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 6.489,\n      \"end\": 9.489\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 298,
+              "total_tokens": 380,
+              "completion_tokens": 82,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 7.6901875,
+      "seconds": 5.174720287322998,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          2.538,
+          "A car approaches from a distance and then drives away."
+        ],
+        [
+          0.0,
+          7.69,
+          "A bird sings in the distance."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-95353f298c215104",
+            "object": "chat.completion",
+            "created": 1792833446,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 2.538\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.0,\n      \"end\": 7.69\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 266,
+              "total_tokens": 343,
+              "completion_tokens": 77,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      17.69,
+      "A bird sings in the distance."
+    ],
+    [
+      4.238,
+      12.538,
+      "A car approaches from a distance and then drives away."
+    ]
+  ],
+  "duration": 17.6901875,
+  "inference_seconds": 16.17049527168274
+}

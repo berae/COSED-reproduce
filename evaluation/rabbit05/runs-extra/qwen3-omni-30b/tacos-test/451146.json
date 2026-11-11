@@ -1,0 +1,352 @@
+{
+  "clip_id": "451146",
+  "labels": [
+    "A train is honking.",
+    "A train horn sounds and gradually fades away.",
+    "A train horn honks and gets increasingly louder.",
+    "Noise inside a train."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/451146.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 3.243973731994629,
+      "status": "complete",
+      "events": [
+        [
+          7.458,
+          9.688,
+          "A train horn sounds and gradually fades away."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-87b8e97e907a028d",
+            "object": "chat.completion",
+            "created": 1792806599,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 1,\n      \"start\": 7.458,\n      \"end\": 9.688\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 314,
+              "total_tokens": 362,
+              "completion_tokens": 48,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 9.950499773025513,
+      "status": "complete",
+      "events": [
+        [
+          2.758,
+          5.498,
+          "A train is honking."
+        ],
+        [
+          2.758,
+          5.498,
+          "A train horn sounds and gradually fades away."
+        ],
+        [
+          8.168,
+          9.818,
+          "A train is honking."
+        ],
+        [
+          8.168,
+          9.818,
+          "A train horn sounds and gradually fades away."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-aed4852afeaf1254",
+            "object": "chat.completion",
+            "created": 1792806602,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 2.758,\n      \"end\": 5.498\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 2.758,\n      \"end\": 5.498\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 8.168,\n      \"end\": 9.818\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 8.168,\n      \"end\": 9.818\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 314,
+              "total_tokens": 464,
+              "completion_tokens": 150,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 10.0,
+      "seconds": 9.950125932693481,
+      "status": "complete",
+      "events": [
+        [
+          3.478,
+          6.598,
+          "A train is honking."
+        ],
+        [
+          3.478,
+          6.598,
+          "A train horn sounds and gradually fades away."
+        ],
+        [
+          8.178,
+          9.598,
+          "A train is honking."
+        ],
+        [
+          8.178,
+          9.598,
+          "A train horn sounds and gradually fades away."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-be74ef68efa07f89",
+            "object": "chat.completion",
+            "created": 1792806612,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 3.478,\n      \"end\": 6.598\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 3.478,\n      \"end\": 6.598\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 8.178,\n      \"end\": 9.598\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 8.178,\n      \"end\": 9.598\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 314,
+              "total_tokens": 464,
+              "completion_tokens": 150,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 240000,
+      "start": 15.0,
+      "duration": 10.0,
+      "seconds": 5.473508358001709,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          9.578,
+          "A train is honking."
+        ],
+        [
+          0.0,
+          9.578,
+          "A train horn sounds and gradually fades away."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-9297f4294ce8d809",
+            "object": "chat.completion",
+            "created": 1792806622,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 9.578\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 9.578\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 314,
+              "total_tokens": 396,
+              "completion_tokens": 82,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 320000,
+      "start": 20.0,
+      "duration": 8.5029375,
+      "seconds": 3.245793342590332,
+      "status": "complete",
+      "events": [
+        [
+          1.649,
+          3.729,
+          "A train horn sounds and gradually fades away."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b6932b2a9aedee06",
+            "object": "chat.completion",
+            "created": 1792806628,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 1,\n      \"start\": 1.649,\n      \"end\": 3.729\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 293,
+              "total_tokens": 341,
+              "completion_tokens": 48,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      7.458,
+      10.498000000000001,
+      "A train horn sounds and gradually fades away."
+    ],
+    [
+      13.168,
+      24.578,
+      "A train horn sounds and gradually fades away."
+    ],
+    [
+      7.758,
+      10.498000000000001,
+      "A train is honking."
+    ],
+    [
+      13.168,
+      24.578,
+      "A train is honking."
+    ]
+  ],
+  "duration": 28.5029375,
+  "inference_seconds": 31.863901138305664
+}

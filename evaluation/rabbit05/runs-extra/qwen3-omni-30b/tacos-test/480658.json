@@ -1,0 +1,224 @@
+{
+  "clip_id": "480658",
+  "labels": [
+    "A man is yelling.",
+    "Men are talking.",
+    "A metal cart squeaks continuously."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/480658.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 7.91095495223999,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          0.43,
+          "A man is yelling."
+        ],
+        [
+          2.58,
+          3.67,
+          "Men are talking."
+        ],
+        [
+          3.67,
+          9.5,
+          "A metal cart squeaks continuously."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-af0d84e4e643d706",
+            "object": "chat.completion",
+            "created": 1792832559,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 0.430\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 2.580,\n      \"end\": 3.670\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 3.670,\n      \"end\": 9.500\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 298,
+              "total_tokens": 414,
+              "completion_tokens": 116,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 3.3332483768463135,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          8.359,
+          "A metal cart squeaks continuously."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-9f07dee6979ee8bb",
+            "object": "chat.completion",
+            "created": 1792832567,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 8.359\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 298,
+              "total_tokens": 346,
+              "completion_tokens": 48,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 5.2768125,
+      "seconds": 5.536293268203735,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          2.438,
+          "A man is yelling."
+        ],
+        [
+          3.698,
+          5.2768125,
+          "Men are talking."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a0b942588d838d78",
+            "object": "chat.completion",
+            "created": 1792832570,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 2.438\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 3.698,\n      \"end\": 5.277\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 235,
+              "total_tokens": 315,
+              "completion_tokens": 80,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      0.43,
+      "A man is yelling."
+    ],
+    [
+      10.0,
+      12.438,
+      "A man is yelling."
+    ],
+    [
+      3.67,
+      13.359,
+      "A metal cart squeaks continuously."
+    ],
+    [
+      2.58,
+      3.67,
+      "Men are talking."
+    ],
+    [
+      13.698,
+      15.2768125,
+      "Men are talking."
+    ]
+  ],
+  "duration": 15.2768125,
+  "inference_seconds": 16.78049659729004
+}

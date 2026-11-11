@@ -1,0 +1,87 @@
+{
+  "clip_id": "Y62nf3wIQrS8",
+  "labels": [
+    "idling engine sound",
+    "make skid sounds",
+    "intense revving of the engine"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y62nf3wIQrS8.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 5.446006774902344,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          6.857,
+          "idling engine sound"
+        ],
+        [
+          6.857,
+          9.437,
+          "intense revving of the engine"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-ac815a6e03d5fe56",
+            "object": "chat.completion",
+            "created": 1792781340,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 6.857\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 6.857,\n      \"end\": 9.437\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 298,
+              "total_tokens": 380,
+              "completion_tokens": 82,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      6.857,
+      "idling engine sound"
+    ],
+    [
+      6.857,
+      9.437,
+      "intense revving of the engine"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 5.446006774902344
+}

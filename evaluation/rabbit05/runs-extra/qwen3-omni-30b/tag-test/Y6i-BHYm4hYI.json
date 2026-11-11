@@ -1,0 +1,136 @@
+{
+  "clip_id": "Y6i-BHYm4hYI",
+  "labels": [
+    "a dog barking",
+    "a woman speaking"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y6i-BHYm4hYI.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 9.2540625,
+      "seconds": 15.703710794448853,
+      "status": "complete",
+      "events": [
+        [
+          1.17,
+          1.63,
+          "a dog barking"
+        ],
+        [
+          1.81,
+          2.57,
+          "a woman speaking"
+        ],
+        [
+          2.98,
+          3.52,
+          "a woman speaking"
+        ],
+        [
+          3.81,
+          4.52,
+          "a woman speaking"
+        ],
+        [
+          5.02,
+          5.52,
+          "a woman speaking"
+        ],
+        [
+          6.42,
+          7.02,
+          "a woman speaking"
+        ],
+        [
+          7.72,
+          9.254,
+          "a woman speaking"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a53e62d509183b5f",
+            "object": "chat.completion",
+            "created": 1792781417,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 1.17,\n      \"end\": 1.63\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 1.81,\n      \"end\": 2.57\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 2.98,\n      \"end\": 3.52\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 3.81,\n      \"end\": 4.52\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 5.02,\n      \"end\": 5.52\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 6.42,\n      \"end\": 7.02\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 7.72,\n      \"end\": 9.254\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 277,
+              "total_tokens": 516,
+              "completion_tokens": 239,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      1.17,
+      1.63,
+      "a dog barking"
+    ],
+    [
+      1.81,
+      2.57,
+      "a woman speaking"
+    ],
+    [
+      2.98,
+      3.52,
+      "a woman speaking"
+    ],
+    [
+      3.81,
+      4.52,
+      "a woman speaking"
+    ],
+    [
+      5.02,
+      5.52,
+      "a woman speaking"
+    ],
+    [
+      6.42,
+      7.02,
+      "a woman speaking"
+    ],
+    [
+      7.72,
+      9.254,
+      "a woman speaking"
+    ]
+  ],
+  "duration": 9.2540625,
+  "inference_seconds": 15.703710794448853
+}

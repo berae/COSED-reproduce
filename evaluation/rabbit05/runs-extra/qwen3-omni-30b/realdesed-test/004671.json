@@ -1,0 +1,246 @@
+{
+  "clip_id": "004671",
+  "labels": [
+    "bell_ringing",
+    "coffee_machine",
+    "cutlery_dishes",
+    "door_open_close",
+    "footsteps",
+    "keyboard_typing",
+    "keychain",
+    "light_switch",
+    "microwave",
+    "phone_ringing",
+    "running_water",
+    "toilet_flushing",
+    "vacuum_cleaner",
+    "wardrobe_drawer_open_close",
+    "window_open_close"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/realdesed/data/20056072/test/audio/004671.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 7.344017744064331,
+      "status": "complete",
+      "events": [
+        [
+          0.87,
+          1.92,
+          "door_open_close"
+        ],
+        [
+          3.19,
+          4.12,
+          "door_open_close"
+        ],
+        [
+          5.89,
+          7.12,
+          "door_open_close"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8ceb889bcdcb6350",
+            "object": "chat.completion",
+            "created": 1792762540,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 3,\n      \"start\": 0.87,\n      \"end\": 1.92\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 3.19,\n      \"end\": 4.12\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 5.89,\n      \"end\": 7.12\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 365,
+              "total_tokens": 475,
+              "completion_tokens": 110,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 7.297059774398804,
+      "status": "complete",
+      "events": [
+        [
+          1.58,
+          2.58,
+          "door_open_close"
+        ],
+        [
+          4.18,
+          6.18,
+          "keychain"
+        ],
+        [
+          6.58,
+          9.58,
+          "footsteps"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8f1e7d2fdfe7f7f5",
+            "object": "chat.completion",
+            "created": 1792762547,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 3,\n      \"start\": 1.58,\n      \"end\": 2.58\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 4.18,\n      \"end\": 6.18\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 6.58,\n      \"end\": 9.58\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 365,
+              "total_tokens": 475,
+              "completion_tokens": 110,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 6.597375,
+      "seconds": 5.198247671127319,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          1.42,
+          "keychain"
+        ],
+        [
+          1.42,
+          6.597,
+          "footsteps"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b55ed69821dedce0",
+            "object": "chat.completion",
+            "created": 1792762555,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 6,\n      \"start\": 0.0,\n      \"end\": 1.42\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 1.42,\n      \"end\": 6.597\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 319,
+              "total_tokens": 397,
+              "completion_tokens": 78,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.87,
+      1.92,
+      "door_open_close"
+    ],
+    [
+      3.19,
+      4.12,
+      "door_open_close"
+    ],
+    [
+      5.89,
+      7.58,
+      "door_open_close"
+    ],
+    [
+      11.42,
+      16.597,
+      "footsteps"
+    ],
+    [
+      9.18,
+      11.42,
+      "keychain"
+    ]
+  ],
+  "duration": 16.597375,
+  "inference_seconds": 19.839325189590454
+}

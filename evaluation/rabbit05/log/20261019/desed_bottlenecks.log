@@ -1,0 +1,60 @@
+desed-public dasm raw {'Speech': 0.5899686373011462, 'Dishes': 0.29576315942239145, 'Dog': 0.5742510052867494, 'Vacuum_cleaner': 0.7616287745701374}
+desed-public dasm scores {'Speech': 0.6596889345067359, 'Dishes': 0.32908627997407336, 'Dog': 0.5864051490396986, 'Vacuum_cleaner': 0.8037927825710124}
+desed-public dasm oracle_negative_clip_gate {'Speech': 0.6755845913691061, 'Dishes': 0.33073248084374995, 'Dog': 0.5866551789259116, 'Vacuum_cleaner': 0.9632805962390918}
+desed-public finelap raw {'Speech': 0.25801624991678884, 'Dishes': 0.06535129936744366, 'Dog': 0.06718904771603909, 'Vacuum_cleaner': 0.7962698057555211}
+desed-public finelap scores {'Speech': 0.38166706717257076, 'Dishes': 0.19282384307987724, 'Dog': 0.12064086997062351, 'Vacuum_cleaner': 0.8515902770896672}
+desed-public finelap oracle_negative_clip_gate {'Speech': 0.5845759857393713, 'Dishes': 0.19780247677156407, 'Dog': 0.17141919914544407, 'Vacuum_cleaner': 0.9880519002874266}
+desed-public flexsed raw {'Speech': 0.0018622399970941248, 'Dishes': 0.016155598955445046, 'Dog': 0.05423733662074458, 'Vacuum_cleaner': 0.2813471735090649}
+desed-public flexsed scores {'Speech': 0.006276299618952584, 'Dishes': 0.10532351454555677, 'Dog': 0.10135617754770798, 'Vacuum_cleaner': 0.6694496178274388}
+desed-public flexsed oracle_negative_clip_gate {'Speech': 0.03447551522647118, 'Dishes': 0.1638225567580557, 'Dog': 0.2187334161725961, 'Vacuum_cleaner': 0.9227078103450285}
+desed-public mga-clap raw {'Speech': 0.2896684681680574, 'Dishes': 0.15547807640562283, 'Dog': 0.21023388282962827, 'Vacuum_cleaner': 0.5798016694943025}
+desed-public mga-clap scores {'Speech': 0.39676183545726545, 'Dishes': 0.09735100318835753, 'Dog': 0.18798720964548316, 'Vacuum_cleaner': 0.7433711560001574}
+desed-public mga-clap oracle_negative_clip_gate {'Speech': 0.45837667229776363, 'Dishes': 0.0995713329469186, 'Dog': 0.19578576085831537, 'Vacuum_cleaner': 0.9982497907965093}
+desed-public openflam raw {'Speech': 0.0037323032415237712, 'Dishes': 0.032823910654327035, 'Dog': 0.022405075598371963, 'Vacuum_cleaner': 0.7209319977939812}
+desed-public openflam scores {'Speech': 0.014124684463690014, 'Dishes': 0.040776170134049855, 'Dog': 0.041049868903160515, 'Vacuum_cleaner': 0.814269245562129}
+desed-public openflam oracle_negative_clip_gate {'Speech': 0.029764014124580355, 'Dishes': 0.05002431444706316, 'Dog': 0.112942154194909, 'Vacuum_cleaner': 0.951770049152413}
+desed-validation dasm raw {'Speech': 0.4364036081240499, 'Dishes': 0.23656405324651228, 'Dog': 0.3731189792618931, 'Vacuum_cleaner': 0.8551635891466722}
+desed-validation dasm scores {'Speech': 0.5392111170010871, 'Dishes': 0.2830629129503067, 'Dog': 0.42026336703814543, 'Vacuum_cleaner': 0.8755687320748798}
+desed-validation dasm oracle_negative_clip_gate {'Speech': 0.5657459507303711, 'Dishes': 0.3113852561090375, 'Dog': 0.44481264665950776, 'Vacuum_cleaner': 0.9471821838842216}
+desed-validation finelap raw {'Speech': 0.20407867353869907, 'Dishes': 0.09413125548157357, 'Dog': 0.13013671508450161, 'Vacuum_cleaner': 0.8612243070492199}
+desed-validation finelap scores {'Speech': 0.30224338862943195, 'Dishes': 0.1850121495021052, 'Dog': 0.22100905901124118, 'Vacuum_cleaner': 0.8937083506880151}
+desed-validation finelap oracle_negative_clip_gate {'Speech': 0.46320754210147974, 'Dishes': 0.21060919908046383, 'Dog': 0.31848691650223915, 'Vacuum_cleaner': 0.9653217898532046}
+Traceback (most recent call last):
+  File "/home/zhanghc/projects/ov-sed/benchmark/analysis/desed/research/bottlenecks.py", line 279, in <module>
+    main()
+  File "/home/zhanghc/projects/ov-sed/benchmark/analysis/desed/research/bottlenecks.py", line 270, in main
+    result['datasets'][dataset]['models'][model]=analyze(dataset,model,manifest,official[dataset]['models'])
+  File "/home/zhanghc/projects/ov-sed/benchmark/analysis/desed/research/bottlenecks.py", line 203, in analyze
+    assert abs(metrics['scores'][c]-official[model]['psds1_per_class'][c]) < 1e-10
+AssertionError
+desed-public dasm raw {'Speech': 0.5899686372935838, 'Dishes': 0.2957631594189045, 'Dog': 0.5742510052842893, 'Vacuum_cleaner': 0.7616287745633449}
+desed-public dasm scores {'Speech': 0.6596889345006375, 'Dishes': 0.3290862799719509, 'Dog': 0.5864051490382604, 'Vacuum_cleaner': 0.8037927825649974}
+desed-public dasm oracle_negative_clip_gate {'Speech': 0.6755845913635872, 'Dishes': 0.33073248084168755, 'Dog': 0.5866551789244824, 'Vacuum_cleaner': 0.9632805962388925}
+desed-public finelap raw {'Speech': 0.25801624988716654, 'Dishes': 0.06535129935665174, 'Dog': 0.067189047705995, 'Vacuum_cleaner': 0.7962698057288455}
+desed-public finelap scores {'Speech': 0.3816670671331864, 'Dishes': 0.1928238430649628, 'Dog': 0.12064086995713065, 'Vacuum_cleaner': 0.8515902770695408}
+desed-public finelap oracle_negative_clip_gate {'Speech': 0.5845759857128079, 'Dishes': 0.19780247675558257, 'Dog': 0.17141919912778186, 'Vacuum_cleaner': 0.9880519002872031}
+desed-public flexsed raw {'Speech': 0.0018622399967267382, 'Dishes': 0.016155598951524984, 'Dog': 0.05423733661013439, 'Vacuum_cleaner': 0.28134717345286575}
+desed-public flexsed scores {'Speech': 0.0062762996176315, 'Dishes': 0.10532351453461736, 'Dog': 0.10135617753338687, 'Vacuum_cleaner': 0.6694496177913821}
+desed-public flexsed oracle_negative_clip_gate {'Speech': 0.034475515220317034, 'Dishes': 0.16382255674907317, 'Dog': 0.21873341616481123, 'Vacuum_cleaner': 0.9227078103443901}
+desed-public mga-clap raw {'Speech': 0.2896684681616462, 'Dishes': 0.15547807640299824, 'Dog': 0.21023388282315547, 'Vacuum_cleaner': 0.5798016694854379}
+desed-public mga-clap scores {'Speech': 0.3967618354516042, 'Dishes': 0.09735100318697576, 'Dog': 0.18798720964175442, 'Vacuum_cleaner': 0.7433711559942183}
+desed-public mga-clap oracle_negative_clip_gate {'Speech': 0.45837667229163315, 'Dishes': 0.09957133294539364, 'Dog': 0.195785760854871, 'Vacuum_cleaner': 0.9982497907964455}
+desed-public openflam raw {'Speech': 0.0037323032372786943, 'Dishes': 0.03282391064179321, 'Dog': 0.022405075592446068, 'Vacuum_cleaner': 0.7209319977259679}
+desed-public openflam scores {'Speech': 0.014124684453567586, 'Dishes': 0.0407761701276676, 'Dog': 0.04104986888128636, 'Vacuum_cleaner': 0.8142692454885876}
+desed-public openflam oracle_negative_clip_gate {'Speech': 0.02976401410958166, 'Dishes': 0.050024314434941264, 'Dog': 0.11294215416574752, 'Vacuum_cleaner': 0.9517700491490626}
+desed-validation dasm raw {'Speech': 0.4364036080769106, 'Dishes': 0.2365640532310722, 'Dog': 0.3731189792439935, 'Vacuum_cleaner': 0.855163589127994}
+desed-validation dasm scores {'Speech': 0.539211116960363, 'Dishes': 0.2830629129338426, 'Dog': 0.42026336702139333, 'Vacuum_cleaner': 0.8755687320600569}
+desed-validation dasm oracle_negative_clip_gate {'Speech': 0.5657459506899527, 'Dishes': 0.31138525609493917, 'Dog': 0.4448126466443575, 'Vacuum_cleaner': 0.9471821838829291}
+desed-validation finelap raw {'Speech': 0.2040786736221483, 'Dishes': 0.09413125551765479, 'Dog': 0.13013671514194067, 'Vacuum_cleaner': 0.8612243070886296}
+desed-validation finelap scores {'Speech': 0.3022433887307958, 'Dishes': 0.18501214952858158, 'Dog': 0.22100905907212923, 'Vacuum_cleaner': 0.8937083507151498}
+desed-validation finelap oracle_negative_clip_gate {'Speech': 0.4632075421873641, 'Dishes': 0.21060919910323872, 'Dog': 0.31848691654383715, 'Vacuum_cleaner': 0.9653217898532784}
+desed-validation flexsed raw {'Speech': 0.0011068919591553069, 'Dishes': 0.009683552311861356, 'Dog': 0.03571087144661688, 'Vacuum_cleaner': 0.41044163803886813}
+desed-validation flexsed scores {'Speech': 0.009674149616302889, 'Dishes': 0.058782549068976904, 'Dog': 0.12755122255091245, 'Vacuum_cleaner': 0.7731147591533992}
+desed-validation flexsed oracle_negative_clip_gate {'Speech': 0.04865182937118741, 'Dishes': 0.17754221363815767, 'Dog': 0.35580843213569485, 'Vacuum_cleaner': 0.9632890939825455}
+desed-validation mga-clap raw {'Speech': 0.22697689493674372, 'Dishes': 0.17891836601236683, 'Dog': 0.2855973411216494, 'Vacuum_cleaner': 0.5975329155802982}
+desed-validation mga-clap scores {'Speech': 0.33680486913805113, 'Dishes': 0.12935742713486703, 'Dog': 0.31903056176402705, 'Vacuum_cleaner': 0.7261893394447811}
+desed-validation mga-clap oracle_negative_clip_gate {'Speech': 0.41095568396566434, 'Dishes': 0.13493851777128904, 'Dog': 0.3624540700408319, 'Vacuum_cleaner': 0.893346318543239}
+desed-validation openflam raw {'Speech': 0.0055903032948385325, 'Dishes': 0.029189171183740408, 'Dog': 0.09954084247519729, 'Vacuum_cleaner': 0.7544533425761937}
+desed-validation openflam scores {'Speech': 0.01799454168576002, 'Dishes': 0.04136703916896221, 'Dog': 0.12800216463364306, 'Vacuum_cleaner': 0.8117223482517789}
+desed-validation openflam oracle_negative_clip_gate {'Speech': 0.034340573218985024, 'Dishes': 0.07224812144045763, 'Dog': 0.1696684787875411, 'Vacuum_cleaner': 0.869028742451407}
+SAVED /home/zhanghc/projects/ov-sed/benchmark/analysis/desed/research/bottlenecks.json

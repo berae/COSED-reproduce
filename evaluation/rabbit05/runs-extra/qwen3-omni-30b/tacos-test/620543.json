@@ -1,0 +1,337 @@
+{
+  "clip_id": "620543",
+  "labels": [
+    "A dog barks loudly.",
+    "A dog barks quietly in the background.",
+    "Overlapping barks of dogs.",
+    "A dog barks loudly in the background.",
+    "A dog barks very loudly.",
+    "Multiple dogs are barking and occasionally squealing, creating an echoing atmosphere."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/620543.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 14.632456541061401,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          0.789,
+          "A dog barks loudly."
+        ],
+        [
+          2.069,
+          3.159,
+          "A dog barks quietly in the background."
+        ],
+        [
+          4.119,
+          5.859,
+          "Overlapping barks of dogs."
+        ],
+        [
+          6.189,
+          6.879,
+          "A dog barks loudly in the background."
+        ],
+        [
+          8.109,
+          9.519,
+          "A dog barks very loudly."
+        ],
+        [
+          0.0,
+          10.0,
+          "Multiple dogs are barking and occasionally squealing, creating an echoing atmosphere."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-bb3542a2e01cb67c",
+            "object": "chat.completion",
+            "created": 1792803102,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 0.789\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 2.069,\n      \"end\": 3.159\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 4.119,\n      \"end\": 5.859\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 6.189,\n      \"end\": 6.879\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 8.109,\n      \"end\": 9.519\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 341,
+              "total_tokens": 560,
+              "completion_tokens": 219,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 14.545105218887329,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          1.879,
+          "A dog barks loudly."
+        ],
+        [
+          2.6,
+          3.1,
+          "A dog barks quietly in the background."
+        ],
+        [
+          3.4,
+          5.8,
+          "Overlapping barks of dogs."
+        ],
+        [
+          6.0,
+          9.0,
+          "A dog barks loudly in the background."
+        ],
+        [
+          0.0,
+          1.879,
+          "A dog barks very loudly."
+        ],
+        [
+          0.0,
+          9.0,
+          "Multiple dogs are barking and occasionally squealing, creating an echoing atmosphere."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8d6e562e594d65f8",
+            "object": "chat.completion",
+            "created": 1792803117,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 1.879\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 2.600,\n      \"end\": 3.100\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 3.400,\n      \"end\": 5.800\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 6.000,\n      \"end\": 9.000\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 0.000,\n      \"end\": 1.879\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 0.000,\n      \"end\": 9.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 341,
+              "total_tokens": 559,
+              "completion_tokens": 218,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 5.694,
+      "seconds": 13.709681987762451,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          0.87,
+          "A dog barks loudly."
+        ],
+        [
+          1.82,
+          2.18,
+          "A dog barks quietly in the background."
+        ],
+        [
+          2.32,
+          2.68,
+          "Overlapping barks of dogs."
+        ],
+        [
+          3.02,
+          3.38,
+          "A dog barks loudly in the background."
+        ],
+        [
+          4.52,
+          4.88,
+          "A dog barks very loudly."
+        ],
+        [
+          0.0,
+          5.694,
+          "Multiple dogs are barking and occasionally squealing, creating an echoing atmosphere."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a6660bed576d13cf",
+            "object": "chat.completion",
+            "created": 1792803131,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 0.87\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 1.82,\n      \"end\": 2.18\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 2.32,\n      \"end\": 2.68\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 3.02,\n      \"end\": 3.38\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 4.52,\n      \"end\": 4.88\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 0.0,\n      \"end\": 5.694\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 283,
+              "total_tokens": 488,
+              "completion_tokens": 205,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      6.189,
+      6.879,
+      "A dog barks loudly in the background."
+    ],
+    [
+      11.0,
+      14.0,
+      "A dog barks loudly in the background."
+    ],
+    [
+      0.0,
+      0.789,
+      "A dog barks loudly."
+    ],
+    [
+      5.0,
+      6.879,
+      "A dog barks loudly."
+    ],
+    [
+      10.0,
+      10.87,
+      "A dog barks loudly."
+    ],
+    [
+      2.069,
+      3.159,
+      "A dog barks quietly in the background."
+    ],
+    [
+      7.6,
+      8.1,
+      "A dog barks quietly in the background."
+    ],
+    [
+      11.82,
+      12.18,
+      "A dog barks quietly in the background."
+    ],
+    [
+      5.0,
+      6.879,
+      "A dog barks very loudly."
+    ],
+    [
+      8.109,
+      9.519,
+      "A dog barks very loudly."
+    ],
+    [
+      14.52,
+      14.879999999999999,
+      "A dog barks very loudly."
+    ],
+    [
+      0.0,
+      15.693999999999999,
+      "Multiple dogs are barking and occasionally squealing, creating an echoing atmosphere."
+    ],
+    [
+      4.119,
+      5.859,
+      "Overlapping barks of dogs."
+    ],
+    [
+      8.4,
+      10.8,
+      "Overlapping barks of dogs."
+    ],
+    [
+      12.32,
+      12.68,
+      "Overlapping barks of dogs."
+    ]
+  ],
+  "duration": 15.694,
+  "inference_seconds": 42.88724374771118
+}

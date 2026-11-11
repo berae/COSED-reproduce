@@ -1,0 +1,137 @@
+{
+  "clip_id": "Y3OFi-JWcGK8",
+  "labels": [
+    "dog barking",
+    "growling",
+    "person laughing in background"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y3OFi-JWcGK8.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 16.534964084625244,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          0.34,
+          "dog barking"
+        ],
+        [
+          0.58,
+          1.0,
+          "growling"
+        ],
+        [
+          1.76,
+          2.4,
+          "growling"
+        ],
+        [
+          3.72,
+          4.92,
+          "growling"
+        ],
+        [
+          5.64,
+          6.0,
+          "dog barking"
+        ],
+        [
+          6.8,
+          7.8,
+          "growling"
+        ],
+        [
+          7.8,
+          9.8,
+          "person laughing in background"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b6748720234a2dcb",
+            "object": "chat.completion",
+            "created": 1792780861,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 0.340\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.580,\n      \"end\": 1.000\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 1.760,\n      \"end\": 2.400\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 3.720,\n      \"end\": 4.920\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 5.640,\n      \"end\": 6.000\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 6.800,\n      \"end\": 7.800\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 7.800,\n      \"end\": 9.800\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 293,
+              "total_tokens": 545,
+              "completion_tokens": 252,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      0.34,
+      "dog barking"
+    ],
+    [
+      5.64,
+      6.0,
+      "dog barking"
+    ],
+    [
+      0.58,
+      1.0,
+      "growling"
+    ],
+    [
+      1.76,
+      2.4,
+      "growling"
+    ],
+    [
+      3.72,
+      4.92,
+      "growling"
+    ],
+    [
+      6.8,
+      7.8,
+      "growling"
+    ],
+    [
+      7.8,
+      9.8,
+      "person laughing in background"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 16.534964084625244
+}

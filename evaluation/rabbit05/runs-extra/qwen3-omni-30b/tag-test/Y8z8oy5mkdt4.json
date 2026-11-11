@@ -1,0 +1,86 @@
+{
+  "clip_id": "Y8z8oy5mkdt4",
+  "labels": [
+    "cat meows",
+    "a woman speaking"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y8z8oy5mkdt4.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 5.4468536376953125,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          2.538,
+          "cat meows"
+        ],
+        [
+          4.679,
+          5.559,
+          "a woman speaking"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-9a7a0797a1fa678b",
+            "object": "chat.completion",
+            "created": 1792779149,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 2.538\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 4.679,\n      \"end\": 5.559\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 287,
+              "total_tokens": 369,
+              "completion_tokens": 82,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      4.679,
+      5.559,
+      "a woman speaking"
+    ],
+    [
+      0.0,
+      2.538,
+      "cat meows"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 5.4468536376953125
+}

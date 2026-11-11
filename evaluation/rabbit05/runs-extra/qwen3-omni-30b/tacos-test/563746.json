@@ -1,0 +1,402 @@
+{
+  "clip_id": "563746",
+  "labels": [
+    "A cat meowing indoors.",
+    "A cat is purring with a brief pause.",
+    "Brief scratching noise.",
+    "A cat is purring indoors."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/563746.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 12.066538095474243,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          0.578,
+          "A cat meowing indoors."
+        ],
+        [
+          4.096,
+          4.876,
+          "A cat meowing indoors."
+        ],
+        [
+          6.528,
+          9.008,
+          "A cat is purring with a brief pause."
+        ],
+        [
+          6.528,
+          7.008,
+          "Brief scratching noise."
+        ],
+        [
+          6.528,
+          9.008,
+          "A cat is purring indoors."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-83f109b0d1640ebd",
+            "object": "chat.completion",
+            "created": 1792794093,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 0.578\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 4.096,\n      \"end\": 4.876\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 6.528,\n      \"end\": 9.008\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 6.528,\n      \"end\": 7.008\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 6.528,\n      \"end\": 9.008\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 311,
+              "total_tokens": 495,
+              "completion_tokens": 184,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 9.926524877548218,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          0.45,
+          "A cat meowing indoors."
+        ],
+        [
+          1.87,
+          2.96,
+          "A cat is purring with a brief pause."
+        ],
+        [
+          2.96,
+          3.2,
+          "Brief scratching noise."
+        ],
+        [
+          4.1,
+          10.0,
+          "A cat is purring indoors."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-887af34ba35d56c0",
+            "object": "chat.completion",
+            "created": 1792794105,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 0.450\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 1.870,\n      \"end\": 2.960\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 2.960,\n      \"end\": 3.200\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 4.100,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 311,
+              "total_tokens": 462,
+              "completion_tokens": 151,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 10.0,
+      "seconds": 5.552869558334351,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          10.0,
+          "A cat is purring with a brief pause."
+        ],
+        [
+          0.0,
+          10.0,
+          "A cat is purring indoors."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8a5b2e55574b4c30",
+            "object": "chat.completion",
+            "created": 1792794115,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 311,
+              "total_tokens": 395,
+              "completion_tokens": 84,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 240000,
+      "start": 15.0,
+      "duration": 10.0,
+      "seconds": 5.514427185058594,
+      "status": "complete",
+      "events": [
+        [
+          7.859,
+          9.469,
+          "A cat is purring with a brief pause."
+        ],
+        [
+          0.0,
+          10.0,
+          "A cat is purring indoors."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-93a8e7833c8d2615",
+            "object": "chat.completion",
+            "created": 1792794120,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 1,\n      \"start\": 7.859,\n      \"end\": 9.469\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 311,
+              "total_tokens": 394,
+              "completion_tokens": 83,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 320000,
+      "start": 20.0,
+      "duration": 9.5629375,
+      "seconds": 5.154953241348267,
+      "status": "complete",
+      "events": [
+        [
+          4.78,
+          6.12,
+          "A cat is purring with a brief pause."
+        ],
+        [
+          4.78,
+          6.12,
+          "A cat is purring indoors."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-af496cb082794897",
+            "object": "chat.completion",
+            "created": 1792794126,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 1,\n      \"start\": 4.78,\n      \"end\": 6.12\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 4.78,\n      \"end\": 6.12\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 304,
+              "total_tokens": 382,
+              "completion_tokens": 78,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      6.528,
+      9.008,
+      "A cat is purring indoors."
+    ],
+    [
+      9.1,
+      26.12,
+      "A cat is purring indoors."
+    ],
+    [
+      6.528,
+      9.008,
+      "A cat is purring with a brief pause."
+    ],
+    [
+      10.0,
+      20.0,
+      "A cat is purring with a brief pause."
+    ],
+    [
+      22.859,
+      24.469,
+      "A cat is purring with a brief pause."
+    ],
+    [
+      24.78,
+      26.12,
+      "A cat is purring with a brief pause."
+    ],
+    [
+      0.0,
+      0.578,
+      "A cat meowing indoors."
+    ],
+    [
+      4.096,
+      4.876,
+      "A cat meowing indoors."
+    ],
+    [
+      5.0,
+      5.45,
+      "A cat meowing indoors."
+    ],
+    [
+      6.528,
+      7.008,
+      "Brief scratching noise."
+    ],
+    [
+      7.96,
+      8.2,
+      "Brief scratching noise."
+    ]
+  ],
+  "duration": 29.5629375,
+  "inference_seconds": 38.21531295776367
+}

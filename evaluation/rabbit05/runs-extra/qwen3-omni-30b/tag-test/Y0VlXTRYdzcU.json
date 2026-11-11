@@ -1,0 +1,116 @@
+{
+  "clip_id": "Y0VlXTRYdzcU",
+  "labels": [
+    "a emergency vehicle siren sounds",
+    "a distorted voice through a speaker"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y0VlXTRYdzcU.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 9.2865625,
+      "seconds": 11.960599422454834,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          9.2865625,
+          "a emergency vehicle siren sounds"
+        ],
+        [
+          1.345,
+          2.265,
+          "a distorted voice through a speaker"
+        ],
+        [
+          2.775,
+          3.755,
+          "a distorted voice through a speaker"
+        ],
+        [
+          5.675,
+          6.595,
+          "a distorted voice through a speaker"
+        ],
+        [
+          7.275,
+          8.195,
+          "a distorted voice through a speaker"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-bd72d18829e6223b",
+            "object": "chat.completion",
+            "created": 1792780186,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 9.287\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 1.345,\n      \"end\": 2.265\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 2.775,\n      \"end\": 3.755\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 5.675,\n      \"end\": 6.595\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 7.275,\n      \"end\": 8.195\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 282,
+              "total_tokens": 464,
+              "completion_tokens": 182,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      1.345,
+      2.265,
+      "a distorted voice through a speaker"
+    ],
+    [
+      2.775,
+      3.755,
+      "a distorted voice through a speaker"
+    ],
+    [
+      5.675,
+      6.595,
+      "a distorted voice through a speaker"
+    ],
+    [
+      7.275,
+      8.195,
+      "a distorted voice through a speaker"
+    ],
+    [
+      0.0,
+      9.2865625,
+      "a emergency vehicle siren sounds"
+    ]
+  ],
+  "duration": 9.2865625,
+  "inference_seconds": 11.960599422454834
+}

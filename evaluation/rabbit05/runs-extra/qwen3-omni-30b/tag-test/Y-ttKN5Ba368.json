@@ -1,0 +1,97 @@
+{
+  "clip_id": "Y-ttKN5Ba368",
+  "labels": [
+    "men speak",
+    "a loud crack",
+    "a sharp meow of a cat"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y-ttKN5Ba368.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 7.7663915157318115,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          10.0,
+          "men speak"
+        ],
+        [
+          4.578,
+          5.368,
+          "a loud crack"
+        ],
+        [
+          5.918,
+          6.708,
+          "a sharp meow of a cat"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-aa175a07bc500ba2",
+            "object": "chat.completion",
+            "created": 1792780082,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 4.578,\n      \"end\": 5.368\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 5.918,\n      \"end\": 6.708\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 296,
+              "total_tokens": 413,
+              "completion_tokens": 117,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      4.578,
+      5.368,
+      "a loud crack"
+    ],
+    [
+      5.918,
+      6.708,
+      "a sharp meow of a cat"
+    ],
+    [
+      0.0,
+      10.0,
+      "men speak"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 7.7663915157318115
+}

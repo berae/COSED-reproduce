@@ -1,0 +1,86 @@
+{
+  "clip_id": "Y2zGT7SeSHXo",
+  "labels": [
+    "a horse neighs loudly",
+    "a man 's muffled talking"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y2zGT7SeSHXo.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 9.2335,
+      "seconds": 5.0993874073028564,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          1.48,
+          "a horse neighs loudly"
+        ],
+        [
+          1.56,
+          5.07,
+          "a man 's muffled talking"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-841b7b51974e77eb",
+            "object": "chat.completion",
+            "created": 1792780773,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 1.48\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 1.56,\n      \"end\": 5.07\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 281,
+              "total_tokens": 358,
+              "completion_tokens": 77,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      1.48,
+      "a horse neighs loudly"
+    ],
+    [
+      1.56,
+      5.07,
+      "a man 's muffled talking"
+    ]
+  ],
+  "duration": 9.2335,
+  "inference_seconds": 5.0993874073028564
+}

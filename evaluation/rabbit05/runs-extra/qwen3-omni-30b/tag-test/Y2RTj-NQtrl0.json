@@ -1,0 +1,189 @@
+{
+  "clip_id": "Y2RTj-NQtrl0",
+  "labels": [
+    "a crash",
+    "a bell toll",
+    "screaming",
+    "a dog barking"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y2RTj-NQtrl0.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 12.1385018825531,
+      "status": "complete",
+      "events": [
+        [
+          0.978,
+          1.458,
+          "a crash"
+        ],
+        [
+          8.618,
+          9.118,
+          "a bell toll"
+        ],
+        [
+          1.218,
+          2.918,
+          "screaming"
+        ],
+        [
+          4.818,
+          5.218,
+          "a dog barking"
+        ],
+        [
+          7.118,
+          7.518,
+          "a dog barking"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a65e545dbe36accb",
+            "object": "chat.completion",
+            "created": 1792780649,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.978,\n      \"end\": 1.458\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 8.618,\n      \"end\": 9.118\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 1.218,\n      \"end\": 2.918\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 4.818,\n      \"end\": 5.218\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 7.118,\n      \"end\": 7.518\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 297,
+              "total_tokens": 481,
+              "completion_tokens": 184,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 5.0006875,
+      "seconds": 7.180378198623657,
+      "status": "complete",
+      "events": [
+        [
+          2.48,
+          2.79,
+          "a crash"
+        ],
+        [
+          3.62,
+          4.62,
+          "a bell toll"
+        ],
+        [
+          0.0,
+          1.12,
+          "a dog barking"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-bf331164859558f9",
+            "object": "chat.completion",
+            "created": 1792780661,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 2.48,\n      \"end\": 2.79\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 3.62,\n      \"end\": 4.62\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.0,\n      \"end\": 1.12\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 231,
+              "total_tokens": 340,
+              "completion_tokens": 109,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      8.618,
+      9.620000000000001,
+      "a bell toll"
+    ],
+    [
+      0.978,
+      1.458,
+      "a crash"
+    ],
+    [
+      7.48,
+      7.79,
+      "a crash"
+    ],
+    [
+      4.818,
+      6.12,
+      "a dog barking"
+    ],
+    [
+      7.118,
+      7.518,
+      "a dog barking"
+    ],
+    [
+      1.218,
+      2.918,
+      "screaming"
+    ]
+  ],
+  "duration": 10.0006875,
+  "inference_seconds": 19.318880081176758
+}

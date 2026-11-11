@@ -1,0 +1,86 @@
+{
+  "clip_id": "Y32ptEe--IM0",
+  "labels": [
+    "multiple dogs bark",
+    "traffic in the distance"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y32ptEe--IM0.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 5.67393946647644,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          2.345,
+          "multiple dogs bark"
+        ],
+        [
+          2.687,
+          7.907,
+          "multiple dogs bark"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8e91ab07eff8c0dc",
+            "object": "chat.completion",
+            "created": 1792779546,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 2.345\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 2.687,\n      \"end\": 7.907\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 288,
+              "total_tokens": 370,
+              "completion_tokens": 82,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      2.345,
+      "multiple dogs bark"
+    ],
+    [
+      2.687,
+      7.907,
+      "multiple dogs bark"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 5.67393946647644
+}

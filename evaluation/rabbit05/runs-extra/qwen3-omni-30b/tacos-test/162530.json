@@ -1,0 +1,248 @@
+{
+  "clip_id": "162530",
+  "labels": [
+    "A trunk closes loudly.",
+    "A trunk opens quietly."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/162530.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 12.411235809326172,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          0.589,
+          "A trunk closes loudly."
+        ],
+        [
+          1.472,
+          2.362,
+          "A trunk opens quietly."
+        ],
+        [
+          4.672,
+          5.262,
+          "A trunk closes loudly."
+        ],
+        [
+          6.242,
+          7.132,
+          "A trunk opens quietly."
+        ],
+        [
+          9.112,
+          9.702,
+          "A trunk closes loudly."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b8ba4d8ddf2d9168",
+            "object": "chat.completion",
+            "created": 1792818872,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 0.589\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 1.472,\n      \"end\": 2.362\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 4.672,\n      \"end\": 5.262\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 6.242,\n      \"end\": 7.132\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 9.112,\n      \"end\": 9.702\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 290,
+              "total_tokens": 474,
+              "completion_tokens": 184,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 5.703102350234985,
+      "status": "complete",
+      "events": [
+        [
+          4.572,
+          5.382,
+          "A trunk closes loudly."
+        ],
+        [
+          6.092,
+          7.012,
+          "A trunk opens quietly."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b0d9d2cb31b55c75",
+            "object": "chat.completion",
+            "created": 1792818885,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 4.572,\n      \"end\": 5.382\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 6.092,\n      \"end\": 7.012\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 290,
+              "total_tokens": 372,
+              "completion_tokens": 82,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 7.24625,
+      "seconds": 5.576036691665649,
+      "status": "complete",
+      "events": [
+        [
+          4.358,
+          5.098,
+          "A trunk closes loudly."
+        ],
+        [
+          0.978,
+          1.578,
+          "A trunk opens quietly."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-ac57735c4ee240fe",
+            "object": "chat.completion",
+            "created": 1792818891,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 4.358,\n      \"end\": 5.098\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.978,\n      \"end\": 1.578\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 253,
+              "total_tokens": 335,
+              "completion_tokens": 82,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      0.589,
+      "A trunk closes loudly."
+    ],
+    [
+      4.672,
+      5.262,
+      "A trunk closes loudly."
+    ],
+    [
+      9.112,
+      10.382,
+      "A trunk closes loudly."
+    ],
+    [
+      14.358,
+      15.097999999999999,
+      "A trunk closes loudly."
+    ],
+    [
+      1.472,
+      2.362,
+      "A trunk opens quietly."
+    ],
+    [
+      6.242,
+      7.132,
+      "A trunk opens quietly."
+    ],
+    [
+      10.978,
+      12.012,
+      "A trunk opens quietly."
+    ]
+  ],
+  "duration": 17.24625,
+  "inference_seconds": 23.690374851226807
+}

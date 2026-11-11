@@ -1,0 +1,116 @@
+{
+  "clip_id": "Y6WteI_2ipko",
+  "labels": [
+    "a cat is meowing",
+    "a young female laughs"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y6WteI_2ipko.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 12.04934287071228,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          0.72,
+          "a cat is meowing"
+        ],
+        [
+          1.54,
+          3.08,
+          "a cat is meowing"
+        ],
+        [
+          4.96,
+          6.1,
+          "a cat is meowing"
+        ],
+        [
+          6.94,
+          9.38,
+          "a cat is meowing"
+        ],
+        [
+          6.94,
+          7.82,
+          "a young female laughs"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a3d9913fbb00c23f",
+            "object": "chat.completion",
+            "created": 1792781385,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 0.720\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 1.540,\n      \"end\": 3.080\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 4.960,\n      \"end\": 6.100\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 6.940,\n      \"end\": 9.380\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 6.940,\n      \"end\": 7.820\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 290,
+              "total_tokens": 474,
+              "completion_tokens": 184,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      0.72,
+      "a cat is meowing"
+    ],
+    [
+      1.54,
+      3.08,
+      "a cat is meowing"
+    ],
+    [
+      4.96,
+      6.1,
+      "a cat is meowing"
+    ],
+    [
+      6.94,
+      9.38,
+      "a cat is meowing"
+    ],
+    [
+      6.94,
+      7.82,
+      "a young female laughs"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 12.04934287071228
+}

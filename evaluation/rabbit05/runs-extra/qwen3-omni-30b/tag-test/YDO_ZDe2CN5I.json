@@ -1,0 +1,86 @@
+{
+  "clip_id": "YDO_ZDe2CN5I",
+  "labels": [
+    "a man speaks",
+    "a cat meows"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/YDO_ZDe2CN5I.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 9.4135,
+      "seconds": 5.425159931182861,
+      "status": "complete",
+      "events": [
+        [
+          2.875,
+          4.635,
+          "a man speaks"
+        ],
+        [
+          6.015,
+          6.855,
+          "a cat meows"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a1fb39e484fe971d",
+            "object": "chat.completion",
+            "created": 1792782006,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 2.875,\n      \"end\": 4.635\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 6.015,\n      \"end\": 6.855\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 279,
+              "total_tokens": 361,
+              "completion_tokens": 82,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      6.015,
+      6.855,
+      "a cat meows"
+    ],
+    [
+      2.875,
+      4.635,
+      "a man speaks"
+    ]
+  ],
+  "duration": 9.4135,
+  "inference_seconds": 5.425159931182861
+}

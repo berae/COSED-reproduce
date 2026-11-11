@@ -1,0 +1,86 @@
+{
+  "clip_id": "YVb9krAYFfWE",
+  "labels": [
+    "a very close train engine",
+    "blowing the steam whistle"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/YVb9krAYFfWE.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 5.449517011642456,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          6.528,
+          "a very close train engine"
+        ],
+        [
+          0.0,
+          1.439,
+          "blowing the steam whistle"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8c367ee86a8ebcb7",
+            "object": "chat.completion",
+            "created": 1792782427,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 6.528\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 1.439\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 290,
+              "total_tokens": 372,
+              "completion_tokens": 82,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      6.528,
+      "a very close train engine"
+    ],
+    [
+      0.0,
+      1.439,
+      "blowing the steam whistle"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 5.449517011642456
+}

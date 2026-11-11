@@ -1,0 +1,86 @@
+{
+  "clip_id": "Y1Nl3caLibno",
+  "labels": [
+    "engine running",
+    "revving"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y1Nl3caLibno.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 9.055875,
+      "seconds": 5.132932662963867,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          9.055875,
+          "engine running"
+        ],
+        [
+          0.0,
+          5.78,
+          "revving"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-ba1db8c3e371894c",
+            "object": "chat.completion",
+            "created": 1792780382,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 9.056\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.0,\n      \"end\": 5.78\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 271,
+              "total_tokens": 348,
+              "completion_tokens": 77,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      9.055875,
+      "engine running"
+    ],
+    [
+      0.0,
+      5.78,
+      "revving"
+    ]
+  ],
+  "duration": 9.055875,
+  "inference_seconds": 5.132932662963867
+}

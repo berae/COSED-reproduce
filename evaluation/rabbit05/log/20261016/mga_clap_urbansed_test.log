@@ -1,0 +1,138 @@
+Traceback (most recent call last):
+  File "/home/zhanghc/projects/ov-sed/benchmark/runner-v1.py", line 237, in <module>
+    elif args.action=='run':run(args)
+  File "/home/zhanghc/projects/ov-sed/benchmark/runner-v1.py", line 159, in run
+    import numpy as np, librosa, torch
+  File "/home/zhanghc/venvs/mga-clap/lib/python3.10/site-packages/librosa/__init__.py", line 208, in <module>
+    from ._cache import cache
+  File "/home/zhanghc/venvs/mga-clap/lib/python3.10/site-packages/librosa/_cache.py", line 6, in <module>
+    from joblib import Memory
+  File "/home/zhanghc/venvs/mga-clap/lib/python3.10/site-packages/joblib/__init__.py", line 114, in <module>
+    from ._cloudpickle_wrapper import wrap_non_picklable_objects
+  File "/home/zhanghc/venvs/mga-clap/lib/python3.10/site-packages/joblib/_cloudpickle_wrapper.py", line 14, in <module>
+    from .externals.loky import wrap_non_picklable_objects
+  File "/home/zhanghc/venvs/mga-clap/lib/python3.10/site-packages/joblib/externals/loky/__init__.py", line 19, in <module>
+    from .backend.context import cpu_count
+  File "/home/zhanghc/venvs/mga-clap/lib/python3.10/site-packages/joblib/externals/loky/backend/__init__.py", line 4, in <module>
+    from .context import get_context
+  File "/home/zhanghc/venvs/mga-clap/lib/python3.10/site-packages/joblib/externals/loky/backend/context.py", line 24, in <module>
+    from concurrent.futures.process import _MAX_WINDOWS_WORKERS
+  File "/home/zhanghc/miniconda3/envs/nape/lib/python3.10/concurrent/futures/process.py", line 50, in <module>
+    import queue
+  File "/home/zhanghc/projects/ov-sed/benchmark/queue.py", line 13, in <module>
+    p=subprocess.run(cmd,stdout=f,stderr=subprocess.STDOUT,env=env)
+  File "/home/zhanghc/miniconda3/envs/nape/lib/python3.10/subprocess.py", line 503, in run
+    with Popen(*popenargs, **kwargs) as process:
+  File "/home/zhanghc/miniconda3/envs/nape/lib/python3.10/subprocess.py", line 971, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/zhanghc/miniconda3/envs/nape/lib/python3.10/subprocess.py", line 1863, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/zhanghc/venvs/--model/bin/python'
+/home/zhanghc/venvs/mga-clap/lib/python3.10/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+/home/zhanghc/venvs/mga-clap/lib/python3.10/site-packages/huggingface_hub/file_download.py:1142: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertModel: ['cls.predictions.transform.LayerNorm.bias', 'cls.seq_relationship.bias', 'cls.seq_relationship.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.decoder.weight', 'cls.predictions.bias', 'bert.pooler.dense.weight', 'cls.predictions.transform.LayerNorm.weight', 'bert.pooler.dense.bias']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 1, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115656.4685912, "elapsed_seconds": 7.350281000137329}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 25, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115661.5582132, "elapsed_seconds": 12.439903020858765}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 50, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115666.83981, "elapsed_seconds": 17.72149968147278}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 75, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115672.122838, "elapsed_seconds": 23.004527807235718}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 100, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115677.4095798, "elapsed_seconds": 28.291269302368164}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 125, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115682.7207081, "elapsed_seconds": 33.60239791870117}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 150, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115688.0230944, "elapsed_seconds": 38.904783964157104}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 175, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115693.2761858, "elapsed_seconds": 44.157875299453735}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 200, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115698.5497832, "elapsed_seconds": 49.43147277832031}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 225, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115703.8594441, "elapsed_seconds": 54.74113392829895}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 250, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115709.1245956, "elapsed_seconds": 60.006285190582275}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 275, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115714.3784454, "elapsed_seconds": 65.26013493537903}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 300, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115719.666703, "elapsed_seconds": 70.54839301109314}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 325, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115725.2404356, "elapsed_seconds": 76.12212562561035}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 350, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115730.478272, "elapsed_seconds": 81.35996150970459}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 375, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115735.6687434, "elapsed_seconds": 86.55043315887451}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 400, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115740.86842, "elapsed_seconds": 91.75010967254639}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 425, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115746.119308, "elapsed_seconds": 97.00099778175354}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 450, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115751.3415549, "elapsed_seconds": 102.22324514389038}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 475, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115756.5505242, "elapsed_seconds": 107.43221402168274}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 500, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115761.784953, "elapsed_seconds": 112.66664290428162}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 525, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115767.0112789, "elapsed_seconds": 117.89296865463257}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 550, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115772.2224104, "elapsed_seconds": 123.10410022735596}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 575, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115777.445578, "elapsed_seconds": 128.32726788520813}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 600, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115782.6503472, "elapsed_seconds": 133.53203678131104}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 625, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115787.8496997, "elapsed_seconds": 138.73138976097107}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 650, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115793.0710273, "elapsed_seconds": 143.95271706581116}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 675, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115798.2809365, "elapsed_seconds": 149.1626260280609}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 700, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115803.5356772, "elapsed_seconds": 154.41736698150635}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 725, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115808.7678168, "elapsed_seconds": 159.6495065689087}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 750, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115814.0134552, "elapsed_seconds": 164.89514470100403}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 775, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115819.217464, "elapsed_seconds": 170.09915375709534}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 800, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115824.4039783, "elapsed_seconds": 175.28566813468933}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 825, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115829.6239388, "elapsed_seconds": 180.50562858581543}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 850, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115834.836325, "elapsed_seconds": 185.71801471710205}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 875, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115840.0231376, "elapsed_seconds": 190.90482711791992}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 900, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115845.251104, "elapsed_seconds": 196.13279366493225}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 925, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115850.4775872, "elapsed_seconds": 201.359277009964}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 950, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115855.6834571, "elapsed_seconds": 206.5651466846466}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 975, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115860.9322815, "elapsed_seconds": 211.81397104263306}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 1000, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115866.1739993, "elapsed_seconds": 217.0556890964508}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 1025, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115871.4104576, "elapsed_seconds": 222.29214715957642}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 1050, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115876.5870597, "elapsed_seconds": 227.46874928474426}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 1075, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115881.7878382, "elapsed_seconds": 232.66952776908875}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 1100, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115887.0342774, "elapsed_seconds": 237.91596722602844}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 1125, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115892.2921543, "elapsed_seconds": 243.1738440990448}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 1150, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115897.497986, "elapsed_seconds": 248.37967586517334}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 1175, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115902.7258768, "elapsed_seconds": 253.60756635665894}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 1200, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115907.9581847, "elapsed_seconds": 258.83987498283386}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 1225, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115913.193058, "elapsed_seconds": 264.074747800827}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 1250, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115918.4045749, "elapsed_seconds": 269.2862648963928}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 1275, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115923.633712, "elapsed_seconds": 274.51540184020996}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 1300, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115928.842499, "elapsed_seconds": 279.72418880462646}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 1325, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115934.0789685, "elapsed_seconds": 284.9606583118439}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 1350, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115939.2954867, "elapsed_seconds": 290.1771764755249}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 1375, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115944.4994094, "elapsed_seconds": 295.3810992240906}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 1400, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115949.708828, "elapsed_seconds": 300.5905177593231}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 1425, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115954.91277, "elapsed_seconds": 305.7944598197937}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 1450, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115960.1381814, "elapsed_seconds": 311.0198712348938}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 1475, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115965.349917, "elapsed_seconds": 316.23160672187805}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 1500, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115970.544596, "elapsed_seconds": 321.4262857437134}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 1525, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115975.7789936, "elapsed_seconds": 326.6606831550598}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 1550, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115980.9939644, "elapsed_seconds": 331.8756539821625}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 1575, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115986.1862352, "elapsed_seconds": 337.0679247379303}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 1600, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115991.3882933, "elapsed_seconds": 342.2699828147888}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 1625, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792115996.6177378, "elapsed_seconds": 347.499427318573}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 1650, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792116001.8232198, "elapsed_seconds": 352.7049095630646}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 1675, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792116007.0324664, "elapsed_seconds": 357.914155960083}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 1700, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792116012.2223332, "elapsed_seconds": 363.1040229797363}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 1725, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792116017.4403868, "elapsed_seconds": 368.3220765590668}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 1750, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792116022.650332, "elapsed_seconds": 373.53202176094055}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 1775, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792116027.922542, "elapsed_seconds": 378.80423188209534}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 1800, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792116033.3407419, "elapsed_seconds": 384.2224314212799}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 1825, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792116038.5388913, "elapsed_seconds": 389.4205811023712}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 1850, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792116043.7561574, "elapsed_seconds": 394.6378471851349}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 1875, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792116048.9633462, "elapsed_seconds": 399.8450360298157}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 1900, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792116054.174956, "elapsed_seconds": 405.05664587020874}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 1925, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792116059.4091816, "elapsed_seconds": 410.29087138175964}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 1950, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792116064.6589391, "elapsed_seconds": 415.5406289100647}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 1975, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792116069.8705213, "elapsed_seconds": 420.752210855484}
+{"model": "mga-clap", "dataset": "urbansed-test", "total": 2000, "completed": 2000, "status": "running", "pid": 3886613, "started": 1792115649.1183105, "load_seconds": 5.495667934417725, "updated": 1792116075.0901957, "elapsed_seconds": 425.9718852043152}
+Traceback (most recent call last):
+  File "/home/zhanghc/projects/ov-sed/benchmark/runner-v1.py", line 237, in <module>
+    elif args.action=='run':run(args)
+  File "/home/zhanghc/projects/ov-sed/benchmark/runner-v1.py", line 211, in run
+    if not args.limit: score(args,out,manifest,items)
+  File "/home/zhanghc/projects/ov-sed/benchmark/runner-v1.py", line 227, in score
+    result=sed_scores_eval.intersection_based.psds(scores,gt,durations,dtc_threshold=.7,gtc_threshold=.7,cttc_threshold=None,alpha_ct=0,alpha_st=1,max_efpr=100,num_jobs=4)
+  File "/home/zhanghc/venvs/mga-clap/lib/python3.10/site-packages/sed_scores_eval/intersection_based/psds.py", line 98, in psds
+    (effective_tp_rate, effective_fp_rate), single_class_psd_rocs = psd_roc(
+  File "/home/zhanghc/venvs/mga-clap/lib/python3.10/site-packages/sed_scores_eval/intersection_based/psds.py", line 195, in psd_roc
+    intermediate_statistics, audio_ids = accumulated_intermediate_statistics(
+  File "/home/zhanghc/venvs/mga-clap/lib/python3.10/site-packages/sed_scores_eval/intersection_based/intermediate_statistics.py", line 168, in accumulated_intermediate_statistics
+    scores, ground_truth, audio_ids = parse_inputs(scores, ground_truth)
+  File "/home/zhanghc/venvs/mga-clap/lib/python3.10/site-packages/sed_scores_eval/base_modules/io.py", line 35, in parse_inputs
+    ground_truth = parse_ground_truth(ground_truth, tagging=tagging, audio_ids=audio_ids)
+  File "/home/zhanghc/venvs/mga-clap/lib/python3.10/site-packages/sed_scores_eval/base_modules/io.py", line 68, in parse_ground_truth
+    assert_non_connected_events(ground_truth)
+  File "/home/zhanghc/venvs/mga-clap/lib/python3.10/site-packages/sed_scores_eval/base_modules/io.py", line 90, in assert_non_connected_events
+    assert event[0] > current_offset, f'Connected/overlapping {event[2]} events found for clip {clip_id}: {class_events}'
+AssertionError: Connected/overlapping gun_shot events found for clip soundscape_test_bimodal101: [(7.665626, 9.041054, 'gun_shot'), (7.908620000000001, 8.913138, 'gun_shot')]

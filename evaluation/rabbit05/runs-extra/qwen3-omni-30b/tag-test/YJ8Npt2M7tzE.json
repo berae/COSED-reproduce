@@ -1,0 +1,97 @@
+{
+  "clip_id": "YJ8Npt2M7tzE",
+  "labels": [
+    "a vehicle horns",
+    "a lady screams",
+    "a person laughs"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/YJ8Npt2M7tzE.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 5.7135,
+      "seconds": 7.243553161621094,
+      "status": "complete",
+      "events": [
+        [
+          0.46,
+          1.18,
+          "a vehicle horns"
+        ],
+        [
+          1.49,
+          3.57,
+          "a lady screams"
+        ],
+        [
+          3.57,
+          4.02,
+          "a person laughs"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b6cb000ec94c9efc",
+            "object": "chat.completion",
+            "created": 1792782169,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.46,\n      \"end\": 1.18\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 1.49,\n      \"end\": 3.57\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 3.57,\n      \"end\": 4.02\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 235,
+              "total_tokens": 345,
+              "completion_tokens": 110,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      1.49,
+      3.57,
+      "a lady screams"
+    ],
+    [
+      3.57,
+      4.02,
+      "a person laughs"
+    ],
+    [
+      0.46,
+      1.18,
+      "a vehicle horns"
+    ]
+  ],
+  "duration": 5.7135,
+  "inference_seconds": 7.243553161621094
+}

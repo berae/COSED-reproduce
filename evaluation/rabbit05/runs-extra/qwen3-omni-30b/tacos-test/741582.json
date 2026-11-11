@@ -1,0 +1,301 @@
+{
+  "clip_id": "741582",
+  "labels": [
+    "Car engine is cranking but does not start on the first attempt.",
+    "Car engine starts with a strong ignition.",
+    "An engine idles smoothly after starting.",
+    "A car engine fails to start once, then starts successfully and idles."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/741582.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 10.054589748382568,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          1.589,
+          "Car engine is cranking but does not start on the first attempt."
+        ],
+        [
+          1.589,
+          2.749,
+          "Car engine starts with a strong ignition."
+        ],
+        [
+          2.749,
+          9.659,
+          "An engine idles smoothly after starting."
+        ],
+        [
+          0.0,
+          9.659,
+          "A car engine fails to start once, then starts successfully and idles."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8f9bcb15394fb928",
+            "object": "chat.completion",
+            "created": 1792831834,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 1.589\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 1.589,\n      \"end\": 2.749\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 2.749,\n      \"end\": 9.659\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.000,\n      \"end\": 9.659\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 329,
+              "total_tokens": 479,
+              "completion_tokens": 150,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 10.33181118965149,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          10.0,
+          "Car engine is cranking but does not start on the first attempt."
+        ],
+        [
+          0.0,
+          10.0,
+          "Car engine starts with a strong ignition."
+        ],
+        [
+          0.0,
+          10.0,
+          "An engine idles smoothly after starting."
+        ],
+        [
+          0.0,
+          10.0,
+          "A car engine fails to start once, then starts successfully and idles."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-bcc293d46dbf5718",
+            "object": "chat.completion",
+            "created": 1792831844,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 329,
+              "total_tokens": 483,
+              "completion_tokens": 154,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 10.0,
+      "seconds": 3.345917224884033,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          10.0,
+          "A car engine fails to start once, then starts successfully and idles."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-ad9caf906cd26ca7",
+            "object": "chat.completion",
+            "created": 1792831854,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 3,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 329,
+              "total_tokens": 378,
+              "completion_tokens": 49,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 240000,
+      "start": 15.0,
+      "duration": 8.748375,
+      "seconds": 3.144695997238159,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          8.748,
+          "A car engine fails to start once, then starts successfully and idles."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-9ebd972ba414d979",
+            "object": "chat.completion",
+            "created": 1792831858,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 3,\n      \"start\": 0.0,\n      \"end\": 8.748\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 311,
+              "total_tokens": 357,
+              "completion_tokens": 46,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      23.747999999999998,
+      "A car engine fails to start once, then starts successfully and idles."
+    ],
+    [
+      2.749,
+      15.0,
+      "An engine idles smoothly after starting."
+    ],
+    [
+      0.0,
+      1.589,
+      "Car engine is cranking but does not start on the first attempt."
+    ],
+    [
+      5.0,
+      15.0,
+      "Car engine is cranking but does not start on the first attempt."
+    ],
+    [
+      1.589,
+      2.749,
+      "Car engine starts with a strong ignition."
+    ],
+    [
+      5.0,
+      15.0,
+      "Car engine starts with a strong ignition."
+    ]
+  ],
+  "duration": 23.748375,
+  "inference_seconds": 26.87701416015625
+}

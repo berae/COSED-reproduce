@@ -1,0 +1,134 @@
+{
+  "clip_id": "9FuBQiBH2mg_0_10",
+  "labels": [
+    "Alarm_bell_ringing",
+    "Blender",
+    "Cat",
+    "Dishes",
+    "Dog",
+    "Electric_shaver_toothbrush",
+    "Frying",
+    "Running_water",
+    "Speech",
+    "Vacuum_cleaner"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/desed/data/4560759/audio/eval/public/9FuBQiBH2mg_0_10.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 14.645769119262695,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          0.7,
+          "Cat"
+        ],
+        [
+          0.8,
+          2.0,
+          "Speech"
+        ],
+        [
+          2.1,
+          2.8,
+          "Cat"
+        ],
+        [
+          3.0,
+          3.6,
+          "Dog"
+        ],
+        [
+          6.1,
+          8.2,
+          "Cat"
+        ],
+        [
+          9.1,
+          9.5,
+          "Speech"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-85ce1366fa3bc451",
+            "object": "chat.completion",
+            "created": 1792738141,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 0.700\n    },\n    {\n      \"query_id\": 8,\n      \"start\": 0.800,\n      \"end\": 2.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 2.100,\n      \"end\": 2.800\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 3.000,\n      \"end\": 3.600\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 6.100,\n      \"end\": 8.200\n    },\n    {\n      \"query_id\": 8,\n      \"start\": 9.100,\n      \"end\": 9.500\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 329,
+              "total_tokens": 547,
+              "completion_tokens": 218,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      0.7,
+      "Cat"
+    ],
+    [
+      2.1,
+      2.8,
+      "Cat"
+    ],
+    [
+      6.1,
+      8.2,
+      "Cat"
+    ],
+    [
+      3.0,
+      3.6,
+      "Dog"
+    ],
+    [
+      0.8,
+      2.0,
+      "Speech"
+    ],
+    [
+      9.1,
+      9.5,
+      "Speech"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 14.645769119262695
+}

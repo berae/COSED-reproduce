@@ -1,0 +1,157 @@
+{
+  "clip_id": "Y6NpPjovJ9j8",
+  "labels": [
+    "growling",
+    "dogs barking",
+    "male speech"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y6NpPjovJ9j8.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 9.5135,
+      "seconds": 21.135805368423462,
+      "status": "complete",
+      "events": [
+        [
+          1.378,
+          1.968,
+          "growling"
+        ],
+        [
+          3.418,
+          4.128,
+          "growling"
+        ],
+        [
+          0.0,
+          0.98,
+          "dogs barking"
+        ],
+        [
+          2.428,
+          2.988,
+          "dogs barking"
+        ],
+        [
+          4.278,
+          4.528,
+          "dogs barking"
+        ],
+        [
+          5.428,
+          5.728,
+          "dogs barking"
+        ],
+        [
+          7.028,
+          8.128,
+          "dogs barking"
+        ],
+        [
+          4.528,
+          5.628,
+          "male speech"
+        ],
+        [
+          6.228,
+          6.728,
+          "male speech"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-837cee7b78b184b9",
+            "object": "chat.completion",
+            "created": 1792779202,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 1.378,\n      \"end\": 1.968\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 3.418,\n      \"end\": 4.128\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.0,\n      \"end\": 0.98\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 2.428,\n      \"end\": 2.988\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 4.278,\n      \"end\": 4.528\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 5.428,\n      \"end\": 5.728\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 7.028,\n      \"end\": 8.128\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 4.528,\n      \"end\": 5.628\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 6.228,\n      \"end\": 6.728\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 283,
+              "total_tokens": 600,
+              "completion_tokens": 317,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      0.98,
+      "dogs barking"
+    ],
+    [
+      2.428,
+      2.988,
+      "dogs barking"
+    ],
+    [
+      4.278,
+      4.528,
+      "dogs barking"
+    ],
+    [
+      5.428,
+      5.728,
+      "dogs barking"
+    ],
+    [
+      7.028,
+      8.128,
+      "dogs barking"
+    ],
+    [
+      1.378,
+      1.968,
+      "growling"
+    ],
+    [
+      3.418,
+      4.128,
+      "growling"
+    ],
+    [
+      4.528,
+      5.628,
+      "male speech"
+    ],
+    [
+      6.228,
+      6.728,
+      "male speech"
+    ]
+  ],
+  "duration": 9.5135,
+  "inference_seconds": 21.135805368423462
+}

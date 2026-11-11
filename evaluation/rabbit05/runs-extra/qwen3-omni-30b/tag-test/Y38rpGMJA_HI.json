@@ -1,0 +1,97 @@
+{
+  "clip_id": "Y38rpGMJA_HI",
+  "labels": [
+    "heavy breathing",
+    "a fart",
+    "speech"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y38rpGMJA_HI.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 6.5135,
+      "seconds": 7.252892017364502,
+      "status": "complete",
+      "events": [
+        [
+          0.98,
+          2.74,
+          "heavy breathing"
+        ],
+        [
+          2.97,
+          3.22,
+          "a fart"
+        ],
+        [
+          3.78,
+          4.58,
+          "speech"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b5009abf6fe38e5d",
+            "object": "chat.completion",
+            "created": 1792780784,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.98,\n      \"end\": 2.74\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 2.97,\n      \"end\": 3.22\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 3.78,\n      \"end\": 4.58\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 242,
+              "total_tokens": 352,
+              "completion_tokens": 110,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      2.97,
+      3.22,
+      "a fart"
+    ],
+    [
+      0.98,
+      2.74,
+      "heavy breathing"
+    ],
+    [
+      3.78,
+      4.58,
+      "speech"
+    ]
+  ],
+  "duration": 6.5135,
+  "inference_seconds": 7.252892017364502
+}

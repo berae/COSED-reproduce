@@ -1,0 +1,361 @@
+{
+  "clip_id": "454874",
+  "labels": [
+    "Turn signal clicks repeatedly.",
+    "A car approaches and then gradually fades away.",
+    "Street noises."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/454874.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 7.904077768325806,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          10.0,
+          "Turn signal clicks repeatedly."
+        ],
+        [
+          0.0,
+          10.0,
+          "A car approaches and then gradually fades away."
+        ],
+        [
+          0.0,
+          10.0,
+          "Street noises."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-94887ba5da87b9ce",
+            "object": "chat.completion",
+            "created": 1792787747,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 299,
+              "total_tokens": 418,
+              "completion_tokens": 119,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 5.552443504333496,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          9.583,
+          "A car approaches and then gradually fades away."
+        ],
+        [
+          0.0,
+          10.0,
+          "Street noises."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8b66734fbf5a8fe9",
+            "object": "chat.completion",
+            "created": 1792787755,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 9.583\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 299,
+              "total_tokens": 382,
+              "completion_tokens": 83,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 10.0,
+      "seconds": 7.4891510009765625,
+      "status": "complete",
+      "events": [
+        [
+          4.538,
+          9.678,
+          "Turn signal clicks repeatedly."
+        ],
+        [
+          0.0,
+          10.0,
+          "A car approaches and then gradually fades away."
+        ],
+        [
+          0.0,
+          10.0,
+          "Street noises."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a4c642ba30811bf0",
+            "object": "chat.completion",
+            "created": 1792787761,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 4.538,\n      \"end\": 9.678\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.0,\n      \"end\": 10.0\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.0,\n      \"end\": 10.0\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 299,
+              "total_tokens": 409,
+              "completion_tokens": 110,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 240000,
+      "start": 15.0,
+      "duration": 10.0,
+      "seconds": 7.764429807662964,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          9.583,
+          "Turn signal clicks repeatedly."
+        ],
+        [
+          6.475,
+          9.583,
+          "A car approaches and then gradually fades away."
+        ],
+        [
+          0.0,
+          10.0,
+          "Street noises."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-9d562ef92abacc29",
+            "object": "chat.completion",
+            "created": 1792787768,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 9.583\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 6.475,\n      \"end\": 9.583\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 299,
+              "total_tokens": 416,
+              "completion_tokens": 117,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 320000,
+      "start": 20.0,
+      "duration": 7.23675,
+      "seconds": 7.1820032596588135,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          6.98,
+          "Turn signal clicks repeatedly."
+        ],
+        [
+          0.0,
+          7.23675,
+          "A car approaches and then gradually fades away."
+        ],
+        [
+          0.0,
+          7.23675,
+          "Street noises."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-ae908acf4fff2526",
+            "object": "chat.completion",
+            "created": 1792787776,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 6.98\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.0,\n      \"end\": 7.237\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.0,\n      \"end\": 7.237\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 261,
+              "total_tokens": 370,
+              "completion_tokens": 109,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      27.23675,
+      "A car approaches and then gradually fades away."
+    ],
+    [
+      0.0,
+      27.23675,
+      "Street noises."
+    ],
+    [
+      0.0,
+      10.0,
+      "Turn signal clicks repeatedly."
+    ],
+    [
+      14.538,
+      26.98,
+      "Turn signal clicks repeatedly."
+    ]
+  ],
+  "duration": 27.23675,
+  "inference_seconds": 35.89210534095764
+}

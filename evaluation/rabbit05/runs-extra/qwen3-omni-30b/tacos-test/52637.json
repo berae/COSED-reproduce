@@ -1,0 +1,385 @@
+{
+  "clip_id": "52637",
+  "labels": [
+    "A door squeaks open and someone enters.",
+    "A loud doorbell rings once.",
+    "A doorbell rings loudly multiple times, starting slow and then getting faster.",
+    "A door opens.",
+    "A door closes.",
+    "A doorbell is ringing.",
+    "A doorbell rings repeatedly."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/52637.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 10.088732719421387,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          1.879,
+          "A door squeaks open and someone enters."
+        ],
+        [
+          0.0,
+          1.879,
+          "A door opens."
+        ],
+        [
+          2.719,
+          3.159,
+          "A door closes."
+        ],
+        [
+          7.519,
+          9.519,
+          "A doorbell is ringing."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8ea626cf08b32931",
+            "object": "chat.completion",
+            "created": 1792797282,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 1.879\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.000,\n      \"end\": 1.879\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 2.719,\n      \"end\": 3.159\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 7.519,\n      \"end\": 9.519\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 341,
+              "total_tokens": 491,
+              "completion_tokens": 150,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 7.810415267944336,
+      "status": "complete",
+      "events": [
+        [
+          2.987,
+          5.117,
+          "A loud doorbell rings once."
+        ],
+        [
+          2.987,
+          5.117,
+          "A doorbell is ringing."
+        ],
+        [
+          8.117,
+          9.517,
+          "A doorbell rings repeatedly."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-841b90ada612c4a6",
+            "object": "chat.completion",
+            "created": 1792797292,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 1,\n      \"start\": 2.987,\n      \"end\": 5.117\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 2.987,\n      \"end\": 5.117\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 8.117,\n      \"end\": 9.517\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 341,
+              "total_tokens": 457,
+              "completion_tokens": 116,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 10.0,
+      "seconds": 5.60011625289917,
+      "status": "complete",
+      "events": [
+        [
+          3.789,
+          5.119,
+          "A loud doorbell rings once."
+        ],
+        [
+          6.719,
+          9.519,
+          "A doorbell rings loudly multiple times, starting slow and then getting faster."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-ad76d2eee1a4e967",
+            "object": "chat.completion",
+            "created": 1792797299,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 1,\n      \"start\": 3.789,\n      \"end\": 5.119\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 6.719,\n      \"end\": 9.519\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 341,
+              "total_tokens": 423,
+              "completion_tokens": 82,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 240000,
+      "start": 15.0,
+      "duration": 10.0,
+      "seconds": 3.281494379043579,
+      "status": "complete",
+      "events": [
+        [
+          7.289,
+          9.789,
+          "A doorbell rings loudly multiple times, starting slow and then getting faster."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-bee1ad1eb0d25172",
+            "object": "chat.completion",
+            "created": 1792797305,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 2,\n      \"start\": 7.289,\n      \"end\": 9.789\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 341,
+              "total_tokens": 389,
+              "completion_tokens": 48,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 320000,
+      "start": 20.0,
+      "duration": 8.9794375,
+      "seconds": 5.28595232963562,
+      "status": "complete",
+      "events": [
+        [
+          2.95,
+          5.21,
+          "A doorbell rings loudly multiple times, starting slow and then getting faster."
+        ],
+        [
+          0.0,
+          8.979,
+          "A doorbell is ringing."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-97cf2da3d570bbe3",
+            "object": "chat.completion",
+            "created": 1792797308,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 2,\n      \"start\": 2.95,\n      \"end\": 5.21\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 0.0,\n      \"end\": 8.979\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 326,
+              "total_tokens": 404,
+              "completion_tokens": 78,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      2.719,
+      3.159,
+      "A door closes."
+    ],
+    [
+      0.0,
+      1.879,
+      "A door opens."
+    ],
+    [
+      0.0,
+      1.879,
+      "A door squeaks open and someone enters."
+    ],
+    [
+      7.519,
+      10.117,
+      "A doorbell is ringing."
+    ],
+    [
+      20.0,
+      28.979,
+      "A doorbell is ringing."
+    ],
+    [
+      16.719,
+      19.519,
+      "A doorbell rings loudly multiple times, starting slow and then getting faster."
+    ],
+    [
+      22.289,
+      25.21,
+      "A doorbell rings loudly multiple times, starting slow and then getting faster."
+    ],
+    [
+      13.117,
+      14.517,
+      "A doorbell rings repeatedly."
+    ],
+    [
+      7.987,
+      10.117,
+      "A loud doorbell rings once."
+    ],
+    [
+      13.789,
+      15.119,
+      "A loud doorbell rings once."
+    ]
+  ],
+  "duration": 28.9794375,
+  "inference_seconds": 32.06671094894409
+}

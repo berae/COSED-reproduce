@@ -1,0 +1,86 @@
+{
+  "clip_id": "YbygBWUkpaC8",
+  "labels": [
+    "a male speech",
+    "birds chirping"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/YbygBWUkpaC8.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 5.443403244018555,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          3.25,
+          "a male speech"
+        ],
+        [
+          7.84,
+          9.6,
+          "birds chirping"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-93e9998128f5313f",
+            "object": "chat.completion",
+            "created": 1792782535,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 3.250\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 7.840,\n      \"end\": 9.600\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 287,
+              "total_tokens": 369,
+              "completion_tokens": 82,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      3.25,
+      "a male speech"
+    ],
+    [
+      7.84,
+      9.6,
+      "birds chirping"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 5.443403244018555
+}

@@ -1,0 +1,269 @@
+{
+  "clip_id": "406140",
+  "labels": [
+    "A door slams.",
+    "A person coughing.",
+    "People are mumbling in the background."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/406140.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 12.149787902832031,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          0.579,
+          "A door slams."
+        ],
+        [
+          1.148,
+          1.638,
+          "A person coughing."
+        ],
+        [
+          4.558,
+          5.048,
+          "A person coughing."
+        ],
+        [
+          7.858,
+          8.348,
+          "A person coughing."
+        ],
+        [
+          0.0,
+          10.0,
+          "People are mumbling in the background."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-9456223c089de714",
+            "object": "chat.completion",
+            "created": 1792822609,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 0.579\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 1.148,\n      \"end\": 1.638\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 4.558,\n      \"end\": 5.048\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 7.858,\n      \"end\": 8.348\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 300,
+              "total_tokens": 485,
+              "completion_tokens": 185,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 9.656818151473999,
+      "status": "complete",
+      "events": [
+        [
+          9.348,
+          9.758,
+          "A door slams."
+        ],
+        [
+          3.618,
+          4.218,
+          "A person coughing."
+        ],
+        [
+          5.518,
+          6.118,
+          "A person coughing."
+        ],
+        [
+          0.0,
+          10.0,
+          "People are mumbling in the background."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-946bee1c5fd3d832",
+            "object": "chat.completion",
+            "created": 1792822621,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 9.348,\n      \"end\": 9.758\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 3.618,\n      \"end\": 4.218\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 5.518,\n      \"end\": 6.118\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.0,\n      \"end\": 10.0\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 300,
+              "total_tokens": 447,
+              "completion_tokens": 147,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 6.5541875,
+      "seconds": 7.3652026653289795,
+      "status": "complete",
+      "events": [
+        [
+          4.378,
+          5.298,
+          "A door slams."
+        ],
+        [
+          0.0,
+          1.128,
+          "A person coughing."
+        ],
+        [
+          0.0,
+          6.554,
+          "People are mumbling in the background."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a8c01a968c5465b2",
+            "object": "chat.completion",
+            "created": 1792822631,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 4.378,\n      \"end\": 5.298\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.0,\n      \"end\": 1.128\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.0,\n      \"end\": 6.554\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 253,
+              "total_tokens": 365,
+              "completion_tokens": 112,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      0.579,
+      "A door slams."
+    ],
+    [
+      14.348,
+      15.298,
+      "A door slams."
+    ],
+    [
+      1.148,
+      1.638,
+      "A person coughing."
+    ],
+    [
+      4.558,
+      5.048,
+      "A person coughing."
+    ],
+    [
+      7.858,
+      8.348,
+      "A person coughing."
+    ],
+    [
+      8.618,
+      9.218,
+      "A person coughing."
+    ],
+    [
+      10.0,
+      11.128,
+      "A person coughing."
+    ],
+    [
+      0.0,
+      16.554000000000002,
+      "People are mumbling in the background."
+    ]
+  ],
+  "duration": 16.5541875,
+  "inference_seconds": 29.17180871963501
+}

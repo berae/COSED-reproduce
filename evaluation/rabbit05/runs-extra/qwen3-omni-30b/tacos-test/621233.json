@@ -1,0 +1,371 @@
+{
+  "clip_id": "621233",
+  "labels": [
+    "Someone is snorting softly.",
+    "Someone breathes out loudly.",
+    "Someone snorts softly.",
+    "A person whines briefly in a high pitch."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/621233.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 7.7222840785980225,
+      "status": "complete",
+      "events": [
+        [
+          1.859,
+          2.479,
+          "Someone is snorting softly."
+        ],
+        [
+          4.269,
+          4.889,
+          "Someone snorts softly."
+        ],
+        [
+          8.959,
+          9.579,
+          "Someone breathes out loudly."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-ad9263f2e4e28319",
+            "object": "chat.completion",
+            "created": 1792825519,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 1.859,\n      \"end\": 2.479\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 4.269,\n      \"end\": 4.889\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 8.959,\n      \"end\": 9.579\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 311,
+              "total_tokens": 427,
+              "completion_tokens": 116,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 12.178462982177734,
+      "status": "complete",
+      "events": [
+        [
+          0.248,
+          0.798,
+          "Someone is snorting softly."
+        ],
+        [
+          1.956,
+          3.456,
+          "Someone breathes out loudly."
+        ],
+        [
+          3.956,
+          4.506,
+          "Someone snorts softly."
+        ],
+        [
+          5.956,
+          7.456,
+          "Someone breathes out loudly."
+        ],
+        [
+          7.748,
+          8.748,
+          "A person whines briefly in a high pitch."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-978ef582e4a2ade4",
+            "object": "chat.completion",
+            "created": 1792825527,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.248,\n      \"end\": 0.798\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 1.956,\n      \"end\": 3.456\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 3.956,\n      \"end\": 4.506\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 5.956,\n      \"end\": 7.456\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 7.748,\n      \"end\": 8.748\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 311,
+              "total_tokens": 495,
+              "completion_tokens": 184,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 10.0,
+      "seconds": 9.940005779266357,
+      "status": "complete",
+      "events": [
+        [
+          0.987,
+          2.547,
+          "Someone is snorting softly."
+        ],
+        [
+          4.677,
+          7.117,
+          "Someone breathes out loudly."
+        ],
+        [
+          8.987,
+          9.787,
+          "Someone snorts softly."
+        ],
+        [
+          2.787,
+          3.787,
+          "A person whines briefly in a high pitch."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b6cbb6fea26a6d67",
+            "object": "chat.completion",
+            "created": 1792825539,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.987,\n      \"end\": 2.547\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 4.677,\n      \"end\": 7.117\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 8.987,\n      \"end\": 9.787\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 2.787,\n      \"end\": 3.787\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 311,
+              "total_tokens": 461,
+              "completion_tokens": 150,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 240000,
+      "start": 15.0,
+      "duration": 9.2759375,
+      "seconds": 9.425598859786987,
+      "status": "complete",
+      "events": [
+        [
+          0.85,
+          2.42,
+          "Someone is snorting softly."
+        ],
+        [
+          5.99,
+          7.56,
+          "Someone breathes out loudly."
+        ],
+        [
+          3.27,
+          4.84,
+          "Someone snorts softly."
+        ],
+        [
+          2.87,
+          4.01,
+          "A person whines briefly in a high pitch."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8cc81cc32dff5012",
+            "object": "chat.completion",
+            "created": 1792825549,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.85,\n      \"end\": 2.42\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 5.99,\n      \"end\": 7.56\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 3.27,\n      \"end\": 4.84\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 2.87,\n      \"end\": 4.01\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 300,
+              "total_tokens": 442,
+              "completion_tokens": 142,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      12.748000000000001,
+      13.786999999999999,
+      "A person whines briefly in a high pitch."
+    ],
+    [
+      17.87,
+      19.009999999999998,
+      "A person whines briefly in a high pitch."
+    ],
+    [
+      6.9559999999999995,
+      8.456,
+      "Someone breathes out loudly."
+    ],
+    [
+      8.959,
+      9.579,
+      "Someone breathes out loudly."
+    ],
+    [
+      10.956,
+      12.456,
+      "Someone breathes out loudly."
+    ],
+    [
+      14.677,
+      17.117,
+      "Someone breathes out loudly."
+    ],
+    [
+      20.990000000000002,
+      22.56,
+      "Someone breathes out loudly."
+    ],
+    [
+      1.859,
+      2.479,
+      "Someone is snorting softly."
+    ],
+    [
+      5.248,
+      5.798,
+      "Someone is snorting softly."
+    ],
+    [
+      10.987,
+      12.547,
+      "Someone is snorting softly."
+    ],
+    [
+      15.85,
+      17.42,
+      "Someone is snorting softly."
+    ],
+    [
+      4.269,
+      4.889,
+      "Someone snorts softly."
+    ],
+    [
+      8.956,
+      9.506,
+      "Someone snorts softly."
+    ],
+    [
+      18.27,
+      19.84,
+      "Someone snorts softly."
+    ]
+  ],
+  "duration": 24.2759375,
+  "inference_seconds": 39.2663516998291
+}

@@ -1,0 +1,143 @@
+EXTRACTED train-00000-of-00029.parquet 3449
+EXTRACTED train-00001-of-00029.parquet 6898
+EXTRACTED train-00002-of-00029.parquet 10347
+EXTRACTED train-00003-of-00029.parquet 13796
+EXTRACTED train-00004-of-00029.parquet 17245
+EXTRACTED train-00005-of-00029.parquet 20694
+EXTRACTED train-00006-of-00029.parquet 24143
+EXTRACTED train-00007-of-00029.parquet 27592
+EXTRACTED train-00008-of-00029.parquet 31040
+EXTRACTED train-00009-of-00029.parquet 34488
+EXTRACTED train-00010-of-00029.parquet 37936
+EXTRACTED train-00011-of-00029.parquet 41384
+EXTRACTED train-00012-of-00029.parquet 44832
+EXTRACTED train-00013-of-00029.parquet 48280
+EXTRACTED train-00014-of-00029.parquet 51728
+EXTRACTED train-00015-of-00029.parquet 55176
+EXTRACTED train-00016-of-00029.parquet 58624
+EXTRACTED train-00017-of-00029.parquet 62072
+EXTRACTED train-00018-of-00029.parquet 65520
+EXTRACTED train-00019-of-00029.parquet 68968
+EXTRACTED train-00020-of-00029.parquet 72416
+EXTRACTED train-00021-of-00029.parquet 75864
+EXTRACTED train-00022-of-00029.parquet 79312
+EXTRACTED train-00023-of-00029.parquet 82760
+EXTRACTED train-00024-of-00029.parquet 86208
+EXTRACTED train-00025-of-00029.parquet 89656
+EXTRACTED train-00026-of-00029.parquet 93104
+EXTRACTED train-00027-of-00029.parquet 96552
+EXTRACTED train-00028-of-00029.parquet 100000
+{
+  "counts": {
+    "audioset_strong": 102830,
+    "audiocaps": 49063,
+    "clotho": 3839,
+    "tacos": 10358,
+    "finelap100k": 100000
+  },
+  "repeat_factors": {
+    "audioset_strong": 1,
+    "finelap100k": 1,
+    "audiocaps": 2,
+    "tacos": 5,
+    "clotho": 4
+  },
+  "weighted_counts": {
+    "audioset_strong": 102830,
+    "audiocaps": 98126,
+    "clotho": 15356,
+    "tacos": 51790,
+    "finelap100k": 100000
+  },
+  "smoke_only": false,
+  "differences": [
+    "Full public TACOS development split; COSED speech exclusion IDs unavailable",
+    "FineLAP architecture, objectives, phrase bank and 10-epoch optimizer recipe retained",
+    "AS captions use WavCaps when available, otherwise deterministic label template",
+    "Free-text TACOS queries retained literally; unknown phrases use original FineLAP fallback",
+    "TAG test and AudioCaps val/test IDs excluded from both AS and AudioCaps"
+  ]
+}
+DECODE_CHECK 5000 257177 bad 0
+DECODE_CHECK 10000 257177 bad 0
+DECODE_CHECK 15000 257177 bad 0
+DECODE_CHECK 20000 257177 bad 0
+DECODE_CHECK 25000 257177 bad 0
+DECODE_CHECK 30000 257177 bad 0
+DECODE_CHECK 35000 257177 bad 0
+DECODE_CHECK 40000 257177 bad 0
+DECODE_CHECK 45000 257177 bad 0
+DECODE_CHECK 50000 257177 bad 0
+DECODE_CHECK 55000 257177 bad 0
+DECODE_CHECK 60000 257177 bad 0
+DECODE_CHECK 65000 257177 bad 0
+DECODE_CHECK 70000 257177 bad 0
+DECODE_CHECK 75000 257177 bad 0
+DECODE_CHECK 80000 257177 bad 0
+DECODE_CHECK 85000 257177 bad 0
+DECODE_CHECK 90000 257177 bad 0
+DECODE_CHECK 95000 257177 bad 0
+DECODE_CHECK 100000 257177 bad 0
+DECODE_CHECK 105000 257177 bad 0
+DECODE_CHECK 110000 257177 bad 0
+DECODE_CHECK 115000 257177 bad 0
+DECODE_CHECK 120000 257177 bad 1
+DECODE_CHECK 125000 257177 bad 2
+DECODE_CHECK 130000 257177 bad 2
+DECODE_CHECK 135000 257177 bad 2
+DECODE_CHECK 140000 257177 bad 2
+DECODE_CHECK 145000 257177 bad 3
+DECODE_CHECK 150000 257177 bad 3
+DECODE_CHECK 155000 257177 bad 3
+DECODE_CHECK 160000 257177 bad 3
+DECODE_CHECK 165000 257177 bad 3
+DECODE_CHECK 170000 257177 bad 5
+DECODE_CHECK 175000 257177 bad 5
+DECODE_CHECK 180000 257177 bad 5
+DECODE_CHECK 185000 257177 bad 5
+DECODE_CHECK 190000 257177 bad 5
+DECODE_CHECK 195000 257177 bad 5
+DECODE_CHECK 200000 257177 bad 5
+DECODE_CHECK 205000 257177 bad 5
+DECODE_CHECK 210000 257177 bad 5
+DECODE_CHECK 215000 257177 bad 5
+DECODE_CHECK 220000 257177 bad 5
+DECODE_CHECK 225000 257177 bad 5
+DECODE_CHECK 230000 257177 bad 5
+DECODE_CHECK 235000 257177 bad 5
+DECODE_CHECK 240000 257177 bad 5
+DECODE_CHECK 245000 257177 bad 5
+DECODE_CHECK 250000 257177 bad 5
+DECODE_CHECK 255000 257177 bad 5
+{
+  "counts": {
+    "audioset_strong": 102825,
+    "finelap100k": 100000,
+    "audiocaps": 49062,
+    "tacos": 10358,
+    "clotho": 3839
+  },
+  "repeat_factors": {
+    "audioset_strong": 1,
+    "finelap100k": 1,
+    "audiocaps": 2,
+    "tacos": 5,
+    "clotho": 4
+  },
+  "weighted_counts": {
+    "audioset_strong": 102825,
+    "finelap100k": 100000,
+    "audiocaps": 98124,
+    "tacos": 51790,
+    "clotho": 15356
+  },
+  "smoke_only": false,
+  "differences": [
+    "Full public TACOS development split; COSED speech exclusion IDs unavailable",
+    "FineLAP architecture, objectives, phrase bank and 10-epoch optimizer recipe retained",
+    "AS captions use WavCaps when available, otherwise deterministic label template",
+    "Free-text TACOS queries retained literally; unknown phrases use original FineLAP fallback",
+    "TAG test and AudioCaps val/test IDs excluded from both AS and AudioCaps"
+  ]
+}
+AUDIO_VALIDATION_COMPLETE {"counts": {"audioset_strong": 102825, "finelap100k": 100000, "audiocaps": 49062, "tacos": 10358, "clotho": 3839}, "bad": 5}

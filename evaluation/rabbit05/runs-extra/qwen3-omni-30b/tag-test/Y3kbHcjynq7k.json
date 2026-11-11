@@ -1,0 +1,96 @@
+{
+  "clip_id": "Y3kbHcjynq7k",
+  "labels": [
+    "a man speaks",
+    "several dogs bark"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y3kbHcjynq7k.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 7.684062480926514,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          4.25,
+          "a man speaks"
+        ],
+        [
+          0.0,
+          1.37,
+          "several dogs bark"
+        ],
+        [
+          4.68,
+          9.75,
+          "a man speaks"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-97583059881cc41b",
+            "object": "chat.completion",
+            "created": 1792779110,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 4.250\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 1.370\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 4.680,\n      \"end\": 9.750\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 287,
+              "total_tokens": 403,
+              "completion_tokens": 116,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      4.25,
+      "a man speaks"
+    ],
+    [
+      4.68,
+      9.75,
+      "a man speaks"
+    ],
+    [
+      0.0,
+      1.37,
+      "several dogs bark"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 7.684062480926514
+}

@@ -1,0 +1,85 @@
+{
+  "clip_id": "Y0Tl8X8KCeqY",
+  "labels": [
+    "train horn"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y0Tl8X8KCeqY.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 5.4352943897247314,
+      "status": "complete",
+      "events": [
+        [
+          5.728,
+          6.948,
+          "train horn"
+        ],
+        [
+          8.328,
+          9.548,
+          "train horn"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b54c3321c5450f31",
+            "object": "chat.completion",
+            "created": 1792780176,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 5.728,\n      \"end\": 6.948\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 8.328,\n      \"end\": 9.548\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 280,
+              "total_tokens": 362,
+              "completion_tokens": 82,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      5.728,
+      6.948,
+      "train horn"
+    ],
+    [
+      8.328,
+      9.548,
+      "train horn"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 5.4352943897247314
+}

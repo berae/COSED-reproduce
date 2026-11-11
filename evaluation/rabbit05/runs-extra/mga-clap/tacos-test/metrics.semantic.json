@@ -1,0 +1,24 @@
+{
+  "status": "complete",
+  "psds1": 0.13257236846295004,
+  "files": 2000,
+  "pairs": 5151,
+  "protocol": {
+    "dtc_threshold": 0.7,
+    "gtc_threshold": 0.7,
+    "cttc_threshold": null,
+    "alpha_ct": 0,
+    "alpha_st": 1,
+    "max_efpr": 100,
+    "unit_of_time": "hour"
+  },
+  "annotation_policy": "semantic",
+  "score_field": "scores",
+  "encoder": "sentence-transformers/all-MiniLM-L6-v2",
+  "cosine_threshold": 0.8,
+  "merge_method": "direct neighbors, not transitive; retain original queries",
+  "manifest_sha256": "e70d6ac06d6b7b2512c419df5ae177eab6f63326d4094435aa3f1b6a8481b200",
+  "pooling": "all file-caption pairs pooled as one event class",
+  "comparability": "Local protocol; COSED exact encoder/query/split equivalence unconfirmed.",
+  "library_version": "0.0.4"
+}

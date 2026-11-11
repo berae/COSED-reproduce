@@ -1,0 +1,108 @@
+{
+  "clip_id": "YgIdmmdHdAJ8",
+  "labels": [
+    "a man speaks",
+    "wind blowing",
+    "humming of traffic",
+    "revs of an engine"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/YgIdmmdHdAJ8.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 10.120237112045288,
+      "status": "complete",
+      "events": [
+        [
+          0.879,
+          4.569,
+          "a man speaks"
+        ],
+        [
+          0.0,
+          10.0,
+          "wind blowing"
+        ],
+        [
+          0.0,
+          10.0,
+          "humming of traffic"
+        ],
+        [
+          4.569,
+          7.109,
+          "revs of an engine"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-9b9fda37b85255b2",
+            "object": "chat.completion",
+            "created": 1792779832,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.879,\n      \"end\": 4.569\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 4.569,\n      \"end\": 7.109\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 300,
+              "total_tokens": 452,
+              "completion_tokens": 152,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.879,
+      4.569,
+      "a man speaks"
+    ],
+    [
+      0.0,
+      10.0,
+      "humming of traffic"
+    ],
+    [
+      4.569,
+      7.109,
+      "revs of an engine"
+    ],
+    [
+      0.0,
+      10.0,
+      "wind blowing"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 10.120237112045288
+}

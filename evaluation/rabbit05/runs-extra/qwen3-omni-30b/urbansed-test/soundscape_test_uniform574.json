@@ -1,0 +1,114 @@
+{
+  "clip_id": "soundscape_test_uniform574",
+  "labels": [
+    "air_conditioner",
+    "car_horn",
+    "children_playing",
+    "dog_bark",
+    "drilling",
+    "engine_idling",
+    "gun_shot",
+    "jackhammer",
+    "siren",
+    "street_music"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/urbansed/data/1324404/URBAN-SED_v2.0.0/audio/test/soundscape_test_uniform574.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 9.799211978912354,
+      "status": "complete",
+      "events": [
+        [
+          2.17,
+          2.98,
+          "car_horn"
+        ],
+        [
+          4.17,
+          4.71,
+          "children_playing"
+        ],
+        [
+          5.01,
+          5.55,
+          "children_playing"
+        ],
+        [
+          5.85,
+          6.41,
+          "children_playing"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-84dc64f184df19bc",
+            "object": "chat.completion",
+            "created": 1792774125,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 1,\n      \"start\": 2.17,\n      \"end\": 2.98\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 4.17,\n      \"end\": 4.71\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 5.01,\n      \"end\": 5.55\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 5.85,\n      \"end\": 6.41\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 328,
+              "total_tokens": 470,
+              "completion_tokens": 142,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      2.17,
+      2.98,
+      "car_horn"
+    ],
+    [
+      4.17,
+      4.71,
+      "children_playing"
+    ],
+    [
+      5.01,
+      5.55,
+      "children_playing"
+    ],
+    [
+      5.85,
+      6.41,
+      "children_playing"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 9.799211978912354
+}

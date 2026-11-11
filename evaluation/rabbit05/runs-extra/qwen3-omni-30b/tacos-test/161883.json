@@ -1,0 +1,280 @@
+{
+  "clip_id": "161883",
+  "labels": [
+    "Engines revving.",
+    "The engine of a ship is running constantly.",
+    "An engine makes a bump while running smoothly."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/161883.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 7.761693716049194,
+      "status": "complete",
+      "events": [
+        [
+          7.358,
+          9.468,
+          "Engines revving."
+        ],
+        [
+          0.0,
+          10.0,
+          "The engine of a ship is running constantly."
+        ],
+        [
+          7.358,
+          9.468,
+          "An engine makes a bump while running smoothly."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-ace068f36d8171ab",
+            "object": "chat.completion",
+            "created": 1792789217,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 7.358,\n      \"end\": 9.468\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.0,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 7.358,\n      \"end\": 9.468\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 304,
+              "total_tokens": 419,
+              "completion_tokens": 115,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 7.880178928375244,
+      "status": "complete",
+      "events": [
+        [
+          2.438,
+          3.578,
+          "Engines revving."
+        ],
+        [
+          0.0,
+          10.0,
+          "The engine of a ship is running constantly."
+        ],
+        [
+          6.918,
+          7.158,
+          "An engine makes a bump while running smoothly."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-bdc616e14042c347",
+            "object": "chat.completion",
+            "created": 1792789225,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 2.438,\n      \"end\": 3.578\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 6.918,\n      \"end\": 7.158\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 304,
+              "total_tokens": 421,
+              "completion_tokens": 117,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 10.0,
+      "seconds": 3.413287878036499,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          10.0,
+          "The engine of a ship is running constantly."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8bf3b23741fe6e8d",
+            "object": "chat.completion",
+            "created": 1792789233,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 304,
+              "total_tokens": 353,
+              "completion_tokens": 49,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 240000,
+      "start": 15.0,
+      "duration": 7.805,
+      "seconds": 3.289144992828369,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          7.805,
+          "The engine of a ship is running constantly."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-9cd80d9621331410",
+            "object": "chat.completion",
+            "created": 1792789236,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 1,\n      \"start\": 0.0,\n      \"end\": 7.805\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 274,
+              "total_tokens": 320,
+              "completion_tokens": 46,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      7.358,
+      9.468,
+      "An engine makes a bump while running smoothly."
+    ],
+    [
+      11.918,
+      12.158000000000001,
+      "An engine makes a bump while running smoothly."
+    ],
+    [
+      7.358,
+      9.468,
+      "Engines revving."
+    ],
+    [
+      0.0,
+      22.805,
+      "The engine of a ship is running constantly."
+    ]
+  ],
+  "duration": 22.805,
+  "inference_seconds": 22.344305515289307
+}

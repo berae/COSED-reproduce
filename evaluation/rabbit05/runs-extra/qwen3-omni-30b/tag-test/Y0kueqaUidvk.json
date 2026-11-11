@@ -1,0 +1,108 @@
+{
+  "clip_id": "Y0kueqaUidvk",
+  "labels": [
+    "water is running",
+    "talking",
+    "gurgling",
+    "children are laughing"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y0kueqaUidvk.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 9.92483901977539,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          9.875,
+          "water is running"
+        ],
+        [
+          0.644,
+          1.554,
+          "talking"
+        ],
+        [
+          2.0,
+          3.0,
+          "gurgling"
+        ],
+        [
+          6.5,
+          7.5,
+          "children are laughing"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8f030a8d51ac6b12",
+            "object": "chat.completion",
+            "created": 1792780211,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 9.875\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.644,\n      \"end\": 1.554\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 2.000,\n      \"end\": 3.000\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 6.500,\n      \"end\": 7.500\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 297,
+              "total_tokens": 447,
+              "completion_tokens": 150,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      6.5,
+      7.5,
+      "children are laughing"
+    ],
+    [
+      2.0,
+      3.0,
+      "gurgling"
+    ],
+    [
+      0.644,
+      1.554,
+      "talking"
+    ],
+    [
+      0.0,
+      9.875,
+      "water is running"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 9.92483901977539
+}

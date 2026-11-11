@@ -1,0 +1,86 @@
+{
+  "clip_id": "Y3OeT2w-6B94",
+  "labels": [
+    "loud roar of vehicles passing by",
+    "a man starts a speech"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y3OeT2w-6B94.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 9.8735,
+      "seconds": 5.1070849895477295,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          2.54,
+          "loud roar of vehicles passing by"
+        ],
+        [
+          7.67,
+          9.02,
+          "a man starts a speech"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b400aab58cfd3664",
+            "object": "chat.completion",
+            "created": 1792780877,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 2.54\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 7.67,\n      \"end\": 9.02\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 288,
+              "total_tokens": 365,
+              "completion_tokens": 77,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      7.67,
+      9.02,
+      "a man starts a speech"
+    ],
+    [
+      0.0,
+      2.54,
+      "loud roar of vehicles passing by"
+    ]
+  ],
+  "duration": 9.8735,
+  "inference_seconds": 5.1070849895477295
+}

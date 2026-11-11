@@ -1,0 +1,113 @@
+[2026-10-29 16:27:03] INFO     | train.py:292 | Config: {'training': {'epochs': 1, 'clip_grad': 2, 'dropout': 0.2, 'seed': 31415926, 'device': 'cuda', 'alpha': 1, 'beta': 5, 'gamma': 1, 'freeze_audio_encoder': False, 'freeze_text_encoder': False, 'freeze_text_proj': False, 'freeze_audio_proj': False, 'freeze_audio_adapter': False, 'loss_type': ['sigmoid', 'grounding'], 'dist_impl': 'gather', 'precision': 'bf16', 'max_steps': 3}, 'model_args': {'ckpt_path': '', 'audio_encoder_args': {'type': 'eat', 'audio_encoder_ckpt': './weights/EAT-base_epoch30_ft.pt'}, 'text_encoder_args': {'type': 'roberta-base', 'text_encoder_ckpt': './weights/roberta-base'}, 'embed_size': 1024, 'temp_global': 0.1, 'b_global': -10, 'temp_local': 0.1, 'b_local': -10, 'local_audio_proj_type': 'transformer', 'normalize_dense_audio_embeds': True, 'unify_audio_proj': False}, 'optim_args': {'lr': 5e-05, 'warmup_steps': 1000, 'optimizer_name': 'adam', 'betas': [0.9, 0.999], 'eps': 1e-08, 'momentum': 0.9, 'warmup_epochs': 2}, 'dist_args': {'world_size': 3, 'dist_url': 'env://', 'rank': 0, 'gpu': 0, 'distributed': True, 'dist_backend': 'nccl'}, 'data_args': {'basic_data_args': {'sample_rate': 16000, 'max_length': 10, 'time_resolution': 0.15625, 'return_type': 'mel'}, 'train_data_args': {'batch_size': 8, 'num_workers': 4, 'metadata_files': ['/work/zhanghc/Myllm/FineLAP/data/cosed/audioset_strong_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/finelap100k_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/audiocaps_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/audiocaps_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/tacos_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/tacos_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/tacos_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/tacos_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/tacos_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/clotho_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/clotho_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/clotho_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/clotho_smoke_input.jsonl'], 'spec_aug': True, 'max_split_segments': 1, 'max_chosen_segments': 1, 'max_phrases': 20, 'random_crop': True, 'strict_audio': True, 'warn_unknown_phrases': False}}}
+[2026-10-29 16:27:03] INFO     | train.py:296 | Config saved to: /work/zhanghc/Myllm/FineLAP/exps/finelap_cosed_mix_20261029_smoke/config.yaml
+[2026-10-29 16:27:04] INFO     | audio_encoder.py:47 | Initializing EAT ... 
+[2026-10-29 16:27:04] INFO     | audio_encoder.py:47 | Initializing EAT ... 
+[2026-10-29 16:27:04] INFO     | audio_encoder.py:47 | Initializing EAT ... 
+[2026-10-29 16:35:22] INFO     | train.py:292 | Config: {'training': {'epochs': 1, 'clip_grad': 2, 'dropout': 0.2, 'seed': 31415926, 'device': 'cuda', 'alpha': 1, 'beta': 5, 'gamma': 1, 'freeze_audio_encoder': False, 'freeze_text_encoder': False, 'freeze_text_proj': False, 'freeze_audio_proj': False, 'freeze_audio_adapter': False, 'loss_type': ['sigmoid', 'grounding'], 'dist_impl': 'gather', 'precision': 'bf16', 'max_steps': 3}, 'model_args': {'ckpt_path': '', 'audio_encoder_args': {'type': 'eat', 'audio_encoder_ckpt': './weights/EAT-base_epoch30_ft.pt'}, 'text_encoder_args': {'type': 'roberta-base', 'text_encoder_ckpt': './weights/roberta-base'}, 'embed_size': 1024, 'temp_global': 0.1, 'b_global': -10, 'temp_local': 0.1, 'b_local': -10, 'local_audio_proj_type': 'transformer', 'normalize_dense_audio_embeds': True, 'unify_audio_proj': False}, 'optim_args': {'lr': 5e-05, 'warmup_steps': 1000, 'optimizer_name': 'adam', 'betas': [0.9, 0.999], 'eps': 1e-08, 'momentum': 0.9, 'warmup_epochs': 2}, 'dist_args': {'world_size': 3, 'dist_url': 'env://', 'rank': 0, 'gpu': 0, 'distributed': True, 'dist_backend': 'nccl'}, 'data_args': {'basic_data_args': {'sample_rate': 16000, 'max_length': 10, 'time_resolution': 0.15625, 'return_type': 'mel'}, 'train_data_args': {'batch_size': 8, 'num_workers': 4, 'metadata_files': ['/work/zhanghc/Myllm/FineLAP/data/cosed/audioset_strong_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/finelap100k_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/audiocaps_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/audiocaps_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/tacos_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/tacos_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/tacos_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/tacos_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/tacos_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/clotho_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/clotho_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/clotho_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/clotho_smoke_input.jsonl'], 'spec_aug': True, 'max_split_segments': 1, 'max_chosen_segments': 1, 'max_phrases': 20, 'random_crop': True, 'strict_audio': True, 'warn_unknown_phrases': False}}}
+[2026-10-29 16:35:22] INFO     | train.py:296 | Config saved to: /work/zhanghc/Myllm/FineLAP/exps/finelap_cosed_mix_20261029_smoke/config.yaml
+[2026-10-29 16:35:22] INFO     | audio_encoder.py:47 | Initializing EAT ... 
+[2026-10-29 16:35:22] INFO     | audio_encoder.py:47 | Initializing EAT ... 
+[2026-10-29 16:35:22] INFO     | audio_encoder.py:47 | Initializing EAT ... 
+[2026-10-29 16:35:32] INFO     | finelap.py:109 | Normalize dense audio embeds: True
+[2026-10-29 16:35:32] INFO     | finelap.py:110 | Unify audio proj: False
+[2026-10-29 16:35:34] INFO     | mix_dataset.py:72 | Max phrases for sample: 20
+[2026-10-29 16:35:34] INFO     | mix_dataset.py:102 | Number of clusters: 491, number of all phrases: 673
+[2026-10-29 16:35:34] INFO     | mix_dataset.py:103 | Number of data with grounding: 56, number of data without grounding: 48, total number of data: 104
+[2026-10-29 16:35:34] INFO     | train.py:335 | Total numer of parameters: 244.09M
+[2026-10-29 16:35:34] INFO     | train.py:336 | Total numer of learnable parameters: 239.37M
+[2026-10-29 16:35:34] INFO     | train.py:337 | Total number of non-trainable parameters: 4.72M
+[2026-10-29 16:35:34] INFO     | train.py:338 | Non-trainable parameter names:
+[2026-10-29 16:35:34] INFO     | train.py:341 |   audio_encoder.audio_enc.model.modality_encoders.IMAGE.fixed_positional_encoder.positions: torch.Size([1, 6144, 768]) (4.72M parameters)
+[2026-10-29 16:35:34] INFO     | train.py:342 | Model Parameter breakdown: 
+[2026-10-29 16:35:34] INFO     | train.py:345 | - Audio Encoder: 90.38M total, 85.66M trainable
+[2026-10-29 16:35:34] INFO     | train.py:349 | - Audio Global Projector: 1.84M total, 1.84M trainable
+[2026-10-29 16:35:34] INFO     | train.py:353 | - Audio Local Projector: 25.98M total, 25.98M trainable
+[2026-10-29 16:35:34] INFO     | train.py:357 | - Text Encoder: 124.06M total, 124.06M trainable
+[2026-10-29 16:35:34] INFO     | mix_dataset.py:72 | Max phrases for sample: 20
+[2026-10-29 16:35:34] INFO     | train.py:361 | - Text Projector: 1.84M total, 1.84M trainable
+[2026-10-29 16:35:34] INFO     | mix_dataset.py:72 | Max phrases for sample: 20
+[2026-10-29 16:35:34] INFO     | mix_dataset.py:102 | Number of clusters: 491, number of all phrases: 673
+[2026-10-29 16:35:34] INFO     | mix_dataset.py:103 | Number of data with grounding: 56, number of data without grounding: 48, total number of data: 104
+[2026-10-29 16:35:34] INFO     | mix_dataset.py:102 | Number of clusters: 491, number of all phrases: 673
+[2026-10-29 16:35:34] INFO     | mix_dataset.py:103 | Number of data with grounding: 56, number of data without grounding: 48, total number of data: 104
+[2026-10-29 16:35:34] INFO     | train.py:436 | Size of training set: 104, number of batches: 5
+[2026-10-29 16:35:34] INFO     | train.py:617 | Training for epoch [1]
+[2026-10-29 16:35:34] INFO     | finelap.py:122 | Updating loss functions: rank=2, world_size=3, dist_impl=gather
+[2026-10-29 16:35:34] INFO     | finelap.py:122 | Updating loss functions: rank=1, world_size=3, dist_impl=gather
+[2026-10-29 16:35:34] INFO     | finelap.py:122 | Updating loss functions: rank=0, world_size=3, dist_impl=gather
+[2026-10-29 16:36:38] INFO     | train.py:292 | Config: {'training': {'epochs': 1, 'clip_grad': 2, 'dropout': 0.2, 'seed': 31415926, 'device': 'cuda', 'alpha': 1, 'beta': 5, 'gamma': 1, 'freeze_audio_encoder': False, 'freeze_text_encoder': False, 'freeze_text_proj': False, 'freeze_audio_proj': False, 'freeze_audio_adapter': False, 'loss_type': ['sigmoid', 'grounding'], 'dist_impl': 'gather', 'precision': 'bf16', 'max_steps': 3}, 'model_args': {'ckpt_path': '', 'audio_encoder_args': {'type': 'eat', 'audio_encoder_ckpt': './weights/EAT-base_epoch30_ft.pt'}, 'text_encoder_args': {'type': 'roberta-base', 'text_encoder_ckpt': './weights/roberta-base'}, 'embed_size': 1024, 'temp_global': 0.1, 'b_global': -10, 'temp_local': 0.1, 'b_local': -10, 'local_audio_proj_type': 'transformer', 'normalize_dense_audio_embeds': True, 'unify_audio_proj': False}, 'optim_args': {'lr': 5e-05, 'warmup_steps': 1000, 'optimizer_name': 'adam', 'betas': [0.9, 0.999], 'eps': 1e-08, 'momentum': 0.9, 'warmup_epochs': 2}, 'dist_args': {'world_size': 3, 'dist_url': 'env://', 'rank': 0, 'gpu': 0, 'distributed': True, 'dist_backend': 'nccl'}, 'data_args': {'basic_data_args': {'sample_rate': 16000, 'max_length': 10, 'time_resolution': 0.15625, 'return_type': 'mel'}, 'train_data_args': {'batch_size': 8, 'num_workers': 4, 'metadata_files': ['/work/zhanghc/Myllm/FineLAP/data/cosed/audioset_strong_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/finelap100k_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/audiocaps_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/audiocaps_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/tacos_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/tacos_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/tacos_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/tacos_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/tacos_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/clotho_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/clotho_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/clotho_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/clotho_smoke_input.jsonl'], 'spec_aug': True, 'max_split_segments': 1, 'max_chosen_segments': 1, 'max_phrases': 20, 'random_crop': True, 'strict_audio': True, 'warn_unknown_phrases': False, 'audio_backend': 'soundfile'}}}
+[2026-10-29 16:36:38] INFO     | train.py:296 | Config saved to: /work/zhanghc/Myllm/FineLAP/exps/finelap_cosed_mix_20261029_smoke/config.yaml
+[2026-10-29 16:36:38] INFO     | audio_encoder.py:47 | Initializing EAT ... 
+[2026-10-29 16:36:38] INFO     | audio_encoder.py:47 | Initializing EAT ... 
+[2026-10-29 16:36:38] INFO     | audio_encoder.py:47 | Initializing EAT ... 
+[2026-10-29 16:36:46] INFO     | finelap.py:109 | Normalize dense audio embeds: True
+[2026-10-29 16:36:46] INFO     | finelap.py:110 | Unify audio proj: False
+[2026-10-29 16:36:46] INFO     | mix_dataset.py:73 | Max phrases for sample: 20
+[2026-10-29 16:36:46] INFO     | mix_dataset.py:103 | Number of clusters: 491, number of all phrases: 673
+[2026-10-29 16:36:46] INFO     | mix_dataset.py:104 | Number of data with grounding: 56, number of data without grounding: 48, total number of data: 104
+[2026-10-29 16:36:46] INFO     | mix_dataset.py:73 | Max phrases for sample: 20
+[2026-10-29 16:36:46] INFO     | mix_dataset.py:103 | Number of clusters: 491, number of all phrases: 673
+[2026-10-29 16:36:46] INFO     | mix_dataset.py:104 | Number of data with grounding: 56, number of data without grounding: 48, total number of data: 104
+[2026-10-29 16:36:46] INFO     | train.py:335 | Total numer of parameters: 244.09M
+[2026-10-29 16:36:46] INFO     | train.py:336 | Total numer of learnable parameters: 239.37M
+[2026-10-29 16:36:46] INFO     | train.py:337 | Total number of non-trainable parameters: 4.72M
+[2026-10-29 16:36:46] INFO     | train.py:338 | Non-trainable parameter names:
+[2026-10-29 16:36:46] INFO     | train.py:341 |   audio_encoder.audio_enc.model.modality_encoders.IMAGE.fixed_positional_encoder.positions: torch.Size([1, 6144, 768]) (4.72M parameters)
+[2026-10-29 16:36:46] INFO     | train.py:342 | Model Parameter breakdown: 
+[2026-10-29 16:36:46] INFO     | train.py:345 | - Audio Encoder: 90.38M total, 85.66M trainable
+[2026-10-29 16:36:46] INFO     | train.py:349 | - Audio Global Projector: 1.84M total, 1.84M trainable
+[2026-10-29 16:36:46] INFO     | train.py:353 | - Audio Local Projector: 25.98M total, 25.98M trainable
+[2026-10-29 16:36:46] INFO     | train.py:357 | - Text Encoder: 124.06M total, 124.06M trainable
+[2026-10-29 16:36:46] INFO     | train.py:361 | - Text Projector: 1.84M total, 1.84M trainable
+[2026-10-29 16:36:47] INFO     | mix_dataset.py:73 | Max phrases for sample: 20
+[2026-10-29 16:36:47] INFO     | mix_dataset.py:103 | Number of clusters: 491, number of all phrases: 673
+[2026-10-29 16:36:47] INFO     | mix_dataset.py:104 | Number of data with grounding: 56, number of data without grounding: 48, total number of data: 104
+[2026-10-29 16:36:47] INFO     | train.py:436 | Size of training set: 104, number of batches: 5
+[2026-10-29 16:36:47] INFO     | train.py:617 | Training for epoch [1]
+[2026-10-29 16:36:47] INFO     | finelap.py:122 | Updating loss functions: rank=0, world_size=3, dist_impl=gather
+[2026-10-29 16:36:47] INFO     | finelap.py:122 | Updating loss functions: rank=1, world_size=3, dist_impl=gather
+[2026-10-29 16:36:47] INFO     | finelap.py:122 | Updating loss functions: rank=2, world_size=3, dist_impl=gather
+[2026-10-29 16:36:56] INFO     | train.py:632 | Training statistics:	loss for epoch [1]: 12.824 (clip: 9.801, grounding: 0.605, distillation: 0.000), time: 9.8, lr: 0.000000.
+[2026-10-29 16:36:57] INFO     | train.py:89 | Train loss history saved to /work/zhanghc/Myllm/FineLAP/exps/finelap_cosed_mix_20261029_smoke/metrics/train_loss.csv, /work/zhanghc/Myllm/FineLAP/exps/finelap_cosed_mix_20261029_smoke/metrics/train_loss.json; curve saved to /work/zhanghc/Myllm/FineLAP/exps/finelap_cosed_mix_20261029_smoke/plots/train_loss_curve.png
+[2026-10-29 16:36:57] INFO     | train.py:748 | Saving model ckpt for epoch 1: /work/zhanghc/Myllm/FineLAP/exps/finelap_cosed_mix_20261029_smoke/models/epoch_001.pt
+[2026-10-29 16:37:01] INFO     | train.py:752 | Saving model ckpt for last epoch 1...
+[2026-10-29 16:37:04] INFO     | train.py:763 | ========================================== Evaluation start ==========================================
+[2026-10-29 16:37:04] INFO     | train.py:836 | Done.
+[2026-10-29 16:37:44] INFO     | train.py:292 | Config: {'training': {'epochs': 1, 'clip_grad': 2, 'dropout': 0.2, 'seed': 31415926, 'device': 'cuda', 'alpha': 1, 'beta': 5, 'gamma': 1, 'freeze_audio_encoder': False, 'freeze_text_encoder': False, 'freeze_text_proj': False, 'freeze_audio_proj': False, 'freeze_audio_adapter': False, 'loss_type': ['sigmoid', 'grounding'], 'dist_impl': 'gather', 'precision': 'bf16', 'max_steps': 3}, 'model_args': {'ckpt_path': '', 'audio_encoder_args': {'type': 'eat', 'audio_encoder_ckpt': './weights/EAT-base_epoch30_ft.pt'}, 'text_encoder_args': {'type': 'roberta-base', 'text_encoder_ckpt': './weights/roberta-base'}, 'embed_size': 1024, 'temp_global': 0.1, 'b_global': -10, 'temp_local': 0.1, 'b_local': -10, 'local_audio_proj_type': 'transformer', 'normalize_dense_audio_embeds': True, 'unify_audio_proj': False}, 'optim_args': {'lr': 5e-05, 'warmup_steps': 1000, 'optimizer_name': 'adam', 'betas': [0.9, 0.999], 'eps': 1e-08, 'momentum': 0.9, 'warmup_epochs': 2}, 'dist_args': {'world_size': 3, 'dist_url': 'env://', 'rank': 0, 'gpu': 0, 'distributed': True, 'dist_backend': 'nccl'}, 'data_args': {'basic_data_args': {'sample_rate': 16000, 'max_length': 10, 'time_resolution': 0.15625, 'return_type': 'mel'}, 'train_data_args': {'batch_size': 32, 'num_workers': 4, 'metadata_files': ['/work/zhanghc/Myllm/FineLAP/data/cosed/audioset_strong_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/finelap100k_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/audiocaps_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/audiocaps_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/tacos_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/tacos_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/tacos_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/tacos_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/tacos_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/clotho_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/clotho_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/clotho_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/clotho_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/audioset_strong_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/finelap100k_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/audiocaps_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/audiocaps_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/tacos_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/tacos_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/tacos_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/tacos_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/tacos_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/clotho_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/clotho_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/clotho_smoke_input.jsonl', '/work/zhanghc/Myllm/FineLAP/data/cosed/clotho_smoke_input.jsonl'], 'spec_aug': True, 'max_split_segments': 1, 'max_chosen_segments': 1, 'max_phrases': 20, 'random_crop': True, 'strict_audio': True, 'warn_unknown_phrases': False, 'audio_backend': 'soundfile'}}}
+[2026-10-29 16:37:44] INFO     | train.py:296 | Config saved to: /work/zhanghc/Myllm/FineLAP/exps/finelap_cosed_mix_20261029_smoke/config.yaml
+[2026-10-29 16:37:44] INFO     | audio_encoder.py:47 | Initializing EAT ... 
+[2026-10-29 16:37:44] INFO     | audio_encoder.py:47 | Initializing EAT ... 
+[2026-10-29 16:37:44] INFO     | audio_encoder.py:47 | Initializing EAT ... 
+[2026-10-29 16:37:51] INFO     | mix_dataset.py:73 | Max phrases for sample: 20
+[2026-10-29 16:37:51] INFO     | mix_dataset.py:103 | Number of clusters: 491, number of all phrases: 673
+[2026-10-29 16:37:51] INFO     | mix_dataset.py:104 | Number of data with grounding: 112, number of data without grounding: 96, total number of data: 208
+[2026-10-29 16:37:52] INFO     | mix_dataset.py:73 | Max phrases for sample: 20
+[2026-10-29 16:37:52] INFO     | mix_dataset.py:103 | Number of clusters: 491, number of all phrases: 673
+[2026-10-29 16:37:52] INFO     | mix_dataset.py:104 | Number of data with grounding: 112, number of data without grounding: 96, total number of data: 208
+[2026-10-29 16:37:52] INFO     | finelap.py:109 | Normalize dense audio embeds: True
+[2026-10-29 16:37:52] INFO     | finelap.py:110 | Unify audio proj: False
+[2026-10-29 16:37:52] INFO     | train.py:335 | Total numer of parameters: 244.09M
+[2026-10-29 16:37:52] INFO     | train.py:336 | Total numer of learnable parameters: 239.37M
+[2026-10-29 16:37:52] INFO     | train.py:337 | Total number of non-trainable parameters: 4.72M
+[2026-10-29 16:37:52] INFO     | train.py:338 | Non-trainable parameter names:
+[2026-10-29 16:37:52] INFO     | train.py:341 |   audio_encoder.audio_enc.model.modality_encoders.IMAGE.fixed_positional_encoder.positions: torch.Size([1, 6144, 768]) (4.72M parameters)
+[2026-10-29 16:37:52] INFO     | train.py:342 | Model Parameter breakdown: 
+[2026-10-29 16:37:52] INFO     | train.py:345 | - Audio Encoder: 90.38M total, 85.66M trainable
+[2026-10-29 16:37:52] INFO     | train.py:349 | - Audio Global Projector: 1.84M total, 1.84M trainable
+[2026-10-29 16:37:52] INFO     | train.py:353 | - Audio Local Projector: 25.98M total, 25.98M trainable
+[2026-10-29 16:37:52] INFO     | train.py:357 | - Text Encoder: 124.06M total, 124.06M trainable
+[2026-10-29 16:37:52] INFO     | train.py:361 | - Text Projector: 1.84M total, 1.84M trainable
+[2026-10-29 16:37:52] INFO     | mix_dataset.py:73 | Max phrases for sample: 20
+[2026-10-29 16:37:52] INFO     | mix_dataset.py:103 | Number of clusters: 491, number of all phrases: 673
+[2026-10-29 16:37:52] INFO     | mix_dataset.py:104 | Number of data with grounding: 112, number of data without grounding: 96, total number of data: 208
+[2026-10-29 16:37:52] INFO     | train.py:436 | Size of training set: 208, number of batches: 3
+[2026-10-29 16:37:52] INFO     | finelap.py:122 | Updating loss functions: rank=2, world_size=3, dist_impl=gather
+[2026-10-29 16:37:52] INFO     | finelap.py:122 | Updating loss functions: rank=1, world_size=3, dist_impl=gather
+[2026-10-29 16:37:52] INFO     | train.py:617 | Training for epoch [1]
+[2026-10-29 16:37:52] INFO     | finelap.py:122 | Updating loss functions: rank=0, world_size=3, dist_impl=gather
+[2026-10-29 16:37:59] INFO     | train.py:632 | Training statistics:	loss for epoch [1]: 12.824 (clip: 9.780, grounding: 0.609, distillation: 0.000), time: 6.1, lr: 0.000000.
+[2026-10-29 16:37:59] INFO     | train.py:89 | Train loss history saved to /work/zhanghc/Myllm/FineLAP/exps/finelap_cosed_mix_20261029_smoke/metrics/train_loss.csv, /work/zhanghc/Myllm/FineLAP/exps/finelap_cosed_mix_20261029_smoke/metrics/train_loss.json; curve saved to /work/zhanghc/Myllm/FineLAP/exps/finelap_cosed_mix_20261029_smoke/plots/train_loss_curve.png
+[2026-10-29 16:37:59] INFO     | train.py:748 | Saving model ckpt for epoch 1: /work/zhanghc/Myllm/FineLAP/exps/finelap_cosed_mix_20261029_smoke/models/epoch_001.pt
+[2026-10-29 16:38:06] INFO     | train.py:752 | Saving model ckpt for last epoch 1...
+[2026-10-29 16:38:13] INFO     | train.py:763 | ========================================== Evaluation start ==========================================
+[2026-10-29 16:38:13] INFO     | train.py:836 | Done.

@@ -1,0 +1,85 @@
+{
+  "clip_id": "Y2n38yofjDos",
+  "labels": [
+    "a dog is whimpering softly"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y2n38yofjDos.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 5.419605493545532,
+      "status": "complete",
+      "events": [
+        [
+          2.038,
+          4.578,
+          "a dog is whimpering softly"
+        ],
+        [
+          6.988,
+          9.788,
+          "a dog is whimpering softly"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-bdd455740c2fda2c",
+            "object": "chat.completion",
+            "created": 1792780736,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 2.038,\n      \"end\": 4.578\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 6.988,\n      \"end\": 9.788\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 284,
+              "total_tokens": 366,
+              "completion_tokens": 82,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      2.038,
+      4.578,
+      "a dog is whimpering softly"
+    ],
+    [
+      6.988,
+      9.788,
+      "a dog is whimpering softly"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 5.419605493545532
+}

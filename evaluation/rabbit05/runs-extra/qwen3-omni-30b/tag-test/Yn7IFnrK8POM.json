@@ -1,0 +1,147 @@
+{
+  "clip_id": "Yn7IFnrK8POM",
+  "labels": [
+    "a steady heavy rain is falling",
+    "a few people are shouting way off in the distance"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Yn7IFnrK8POM.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 5.523075580596924,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          10.0,
+          "a steady heavy rain is falling"
+        ],
+        [
+          4.859,
+          6.239,
+          "a few people are shouting way off in the distance"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b29efb7f46b86498",
+            "object": "chat.completion",
+            "created": 1792782734,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 4.859,\n      \"end\": 6.239\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 297,
+              "total_tokens": 380,
+              "completion_tokens": 83,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 5.0008125,
+      "seconds": 5.311788558959961,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          5.0008125,
+          "a steady heavy rain is falling"
+        ],
+        [
+          0.289,
+          1.079,
+          "a few people are shouting way off in the distance"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-9ee3fd242834a839",
+            "object": "chat.completion",
+            "created": 1792782739,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 5.001\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.289,\n      \"end\": 1.079\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 231,
+              "total_tokens": 311,
+              "completion_tokens": 80,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      4.859,
+      6.239,
+      "a few people are shouting way off in the distance"
+    ],
+    [
+      0.0,
+      10.0008125,
+      "a steady heavy rain is falling"
+    ]
+  ],
+  "duration": 10.0008125,
+  "inference_seconds": 10.834864139556885
+}

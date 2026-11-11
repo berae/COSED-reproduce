@@ -1,0 +1,352 @@
+{
+  "clip_id": "785763",
+  "labels": [
+    "A dance teacher is instructing from a distance, occasionally clapping.",
+    "A dance teacher is instructing from a distance while occasionally snapping fingers.",
+    "A dance teacher is instructing at a distance while occasionally snapping fingers.",
+    "A short clap and a loud sound made by a dance teacher.",
+    "A person plays the piano continuously in a melodic pattern."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/785763.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 12.073131799697876,
+      "status": "complete",
+      "events": [
+        [
+          1.578,
+          3.968,
+          "A dance teacher is instructing from a distance, occasionally clapping."
+        ],
+        [
+          4.178,
+          5.978,
+          "A dance teacher is instructing from a distance while occasionally snapping fingers."
+        ],
+        [
+          8.178,
+          9.578,
+          "A dance teacher is instructing at a distance while occasionally snapping fingers."
+        ],
+        [
+          4.178,
+          5.978,
+          "A short clap and a loud sound made by a dance teacher."
+        ],
+        [
+          0.0,
+          10.0,
+          "A person plays the piano continuously in a melodic pattern."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-85ea0f66882fb22e",
+            "object": "chat.completion",
+            "created": 1792799538,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 1.578,\n      \"end\": 3.968\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 4.178,\n      \"end\": 5.978\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 8.178,\n      \"end\": 9.578\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 4.178,\n      \"end\": 5.978\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 0.0,\n      \"end\": 10.0\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 353,
+              "total_tokens": 534,
+              "completion_tokens": 181,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 12.516357183456421,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          10.0,
+          "A dance teacher is instructing from a distance, occasionally clapping."
+        ],
+        [
+          0.0,
+          10.0,
+          "A dance teacher is instructing from a distance while occasionally snapping fingers."
+        ],
+        [
+          0.0,
+          10.0,
+          "A dance teacher is instructing at a distance while occasionally snapping fingers."
+        ],
+        [
+          0.0,
+          10.0,
+          "A short clap and a loud sound made by a dance teacher."
+        ],
+        [
+          0.0,
+          10.0,
+          "A person plays the piano continuously in a melodic pattern."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-947769eed37dbe28",
+            "object": "chat.completion",
+            "created": 1792799550,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 353,
+              "total_tokens": 542,
+              "completion_tokens": 189,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 10.0,
+      "seconds": 12.474555492401123,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          10.0,
+          "A dance teacher is instructing from a distance, occasionally clapping."
+        ],
+        [
+          0.0,
+          10.0,
+          "A dance teacher is instructing from a distance while occasionally snapping fingers."
+        ],
+        [
+          0.0,
+          10.0,
+          "A dance teacher is instructing at a distance while occasionally snapping fingers."
+        ],
+        [
+          0.0,
+          10.0,
+          "A short clap and a loud sound made by a dance teacher."
+        ],
+        [
+          0.0,
+          10.0,
+          "A person plays the piano continuously in a melodic pattern."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-ad1cb8417a6cbde4",
+            "object": "chat.completion",
+            "created": 1792799563,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 353,
+              "total_tokens": 542,
+              "completion_tokens": 189,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 240000,
+      "start": 15.0,
+      "duration": 6.7129375,
+      "seconds": 11.496835947036743,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          6.7129375,
+          "A dance teacher is instructing from a distance, occasionally clapping."
+        ],
+        [
+          0.0,
+          6.7129375,
+          "A dance teacher is instructing from a distance while occasionally snapping fingers."
+        ],
+        [
+          0.0,
+          6.7129375,
+          "A dance teacher is instructing at a distance while occasionally snapping fingers."
+        ],
+        [
+          0.0,
+          6.7129375,
+          "A short clap and a loud sound made by a dance teacher."
+        ],
+        [
+          0.0,
+          6.7129375,
+          "A person plays the piano continuously in a melodic pattern."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b559fbd1705b8692",
+            "object": "chat.completion",
+            "created": 1792799575,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 6.713\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.0,\n      \"end\": 6.713\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.0,\n      \"end\": 6.713\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.0,\n      \"end\": 6.713\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 0.0,\n      \"end\": 6.713\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 308,
+              "total_tokens": 482,
+              "completion_tokens": 174,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      5.0,
+      21.7129375,
+      "A dance teacher is instructing at a distance while occasionally snapping fingers."
+    ],
+    [
+      4.178,
+      21.7129375,
+      "A dance teacher is instructing from a distance while occasionally snapping fingers."
+    ],
+    [
+      1.578,
+      3.968,
+      "A dance teacher is instructing from a distance, occasionally clapping."
+    ],
+    [
+      5.0,
+      21.7129375,
+      "A dance teacher is instructing from a distance, occasionally clapping."
+    ],
+    [
+      0.0,
+      21.7129375,
+      "A person plays the piano continuously in a melodic pattern."
+    ],
+    [
+      4.178,
+      21.7129375,
+      "A short clap and a loud sound made by a dance teacher."
+    ]
+  ],
+  "duration": 21.7129375,
+  "inference_seconds": 48.56088042259216
+}

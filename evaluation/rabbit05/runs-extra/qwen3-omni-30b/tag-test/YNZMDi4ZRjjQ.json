@@ -1,0 +1,158 @@
+{
+  "clip_id": "YNZMDi4ZRjjQ",
+  "labels": [
+    "talk",
+    "barks",
+    "a small dog growls",
+    "human voices laugh"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/YNZMDi4ZRjjQ.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 21.00346803665161,
+      "status": "complete",
+      "events": [
+        [
+          4.578,
+          6.098,
+          "talk"
+        ],
+        [
+          0.0,
+          1.0,
+          "barks"
+        ],
+        [
+          2.0,
+          2.5,
+          "barks"
+        ],
+        [
+          3.0,
+          3.5,
+          "barks"
+        ],
+        [
+          5.5,
+          6.0,
+          "barks"
+        ],
+        [
+          7.0,
+          7.5,
+          "barks"
+        ],
+        [
+          8.5,
+          9.0,
+          "barks"
+        ],
+        [
+          0.0,
+          1.0,
+          "a small dog growls"
+        ],
+        [
+          2.0,
+          3.5,
+          "human voices laugh"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8507547e9df669f9",
+            "object": "chat.completion",
+            "created": 1792779603,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 4.578,\n      \"end\": 6.098\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 1.000\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 2.000,\n      \"end\": 2.500\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 3.000,\n      \"end\": 3.500\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 5.500,\n      \"end\": 6.000\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 7.000,\n      \"end\": 7.500\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 8.500,\n      \"end\": 9.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 1.000\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 2.000,\n      \"end\": 3.500\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 298,
+              "total_tokens": 618,
+              "completion_tokens": 320,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      1.0,
+      "a small dog growls"
+    ],
+    [
+      0.0,
+      1.0,
+      "barks"
+    ],
+    [
+      2.0,
+      2.5,
+      "barks"
+    ],
+    [
+      3.0,
+      3.5,
+      "barks"
+    ],
+    [
+      5.5,
+      6.0,
+      "barks"
+    ],
+    [
+      7.0,
+      7.5,
+      "barks"
+    ],
+    [
+      8.5,
+      9.0,
+      "barks"
+    ],
+    [
+      2.0,
+      3.5,
+      "human voices laugh"
+    ],
+    [
+      4.578,
+      6.098,
+      "talk"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 21.00346803665161
+}

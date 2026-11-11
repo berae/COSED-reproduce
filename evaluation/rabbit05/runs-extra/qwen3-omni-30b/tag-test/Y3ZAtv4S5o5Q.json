@@ -1,0 +1,177 @@
+{
+  "clip_id": "Y3ZAtv4S5o5Q",
+  "labels": [
+    "a dog is panting",
+    "barking",
+    "a person speaks"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y3ZAtv4S5o5Q.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 9.0135,
+      "seconds": 25.1565203666687,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          9.0135,
+          "a dog is panting"
+        ],
+        [
+          5.378,
+          6.028,
+          "barking"
+        ],
+        [
+          7.028,
+          7.678,
+          "barking"
+        ],
+        [
+          8.478,
+          9.0135,
+          "barking"
+        ],
+        [
+          0.0,
+          0.478,
+          "a person speaks"
+        ],
+        [
+          1.178,
+          1.678,
+          "a person speaks"
+        ],
+        [
+          2.278,
+          3.078,
+          "a person speaks"
+        ],
+        [
+          4.178,
+          4.778,
+          "a person speaks"
+        ],
+        [
+          5.578,
+          6.078,
+          "a person speaks"
+        ],
+        [
+          6.578,
+          7.078,
+          "a person speaks"
+        ],
+        [
+          7.578,
+          8.078,
+          "a person speaks"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8e7098c5b034dea7",
+            "object": "chat.completion",
+            "created": 1792780922,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 9.014\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 5.378,\n      \"end\": 6.028\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 7.028,\n      \"end\": 7.678\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 8.478,\n      \"end\": 9.014\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.0,\n      \"end\": 0.478\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 1.178,\n      \"end\": 1.678\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 2.278,\n      \"end\": 3.078\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 4.178,\n      \"end\": 4.778\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 5.578,\n      \"end\": 6.078\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 6.578,\n      \"end\": 7.078\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 7.578,\n      \"end\": 8.078\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 280,
+              "total_tokens": 664,
+              "completion_tokens": 384,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      9.0135,
+      "a dog is panting"
+    ],
+    [
+      0.0,
+      0.478,
+      "a person speaks"
+    ],
+    [
+      1.178,
+      1.678,
+      "a person speaks"
+    ],
+    [
+      2.278,
+      3.078,
+      "a person speaks"
+    ],
+    [
+      4.178,
+      4.778,
+      "a person speaks"
+    ],
+    [
+      5.578,
+      6.078,
+      "a person speaks"
+    ],
+    [
+      6.578,
+      7.078,
+      "a person speaks"
+    ],
+    [
+      7.578,
+      8.078,
+      "a person speaks"
+    ],
+    [
+      5.378,
+      6.028,
+      "barking"
+    ],
+    [
+      7.028,
+      7.678,
+      "barking"
+    ],
+    [
+      8.478,
+      9.0135,
+      "barking"
+    ]
+  ],
+  "duration": 9.0135,
+  "inference_seconds": 25.1565203666687
+}

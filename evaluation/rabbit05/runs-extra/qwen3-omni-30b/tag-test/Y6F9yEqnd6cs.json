@@ -1,0 +1,152 @@
+{
+  "clip_id": "Y6F9yEqnd6cs",
+  "labels": [
+    "an animal is squeaking in response",
+    "person repeats a word over and over"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y6F9yEqnd6cs.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 5.449964284896851,
+      "status": "complete",
+      "events": [
+        [
+          0.872,
+          1.342,
+          "an animal is squeaking in response"
+        ],
+        [
+          1.952,
+          9.062,
+          "person repeats a word over and over"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b6ef706a991730d3",
+            "object": "chat.completion",
+            "created": 1792779530,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.872,\n      \"end\": 1.342\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 1.952,\n      \"end\": 9.062\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 295,
+              "total_tokens": 377,
+              "completion_tokens": 82,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 5.0006875,
+      "seconds": 5.296630382537842,
+      "status": "complete",
+      "events": [
+        [
+          2.378,
+          2.648,
+          "an animal is squeaking in response"
+        ],
+        [
+          0.0,
+          4.999,
+          "person repeats a word over and over"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b5e4f0d0c8766f2f",
+            "object": "chat.completion",
+            "created": 1792779535,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 2.378,\n      \"end\": 2.648\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.0,\n      \"end\": 4.999\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 229,
+              "total_tokens": 309,
+              "completion_tokens": 80,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.872,
+      1.342,
+      "an animal is squeaking in response"
+    ],
+    [
+      7.378,
+      7.648,
+      "an animal is squeaking in response"
+    ],
+    [
+      1.952,
+      9.998999999999999,
+      "person repeats a word over and over"
+    ]
+  ],
+  "duration": 10.0006875,
+  "inference_seconds": 10.746594667434692
+}

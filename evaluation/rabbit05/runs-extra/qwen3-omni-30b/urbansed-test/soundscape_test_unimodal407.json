@@ -1,0 +1,270 @@
+{
+  "clip_id": "soundscape_test_unimodal407",
+  "labels": [
+    "air_conditioner",
+    "car_horn",
+    "children_playing",
+    "dog_bark",
+    "drilling",
+    "engine_idling",
+    "gun_shot",
+    "jackhammer",
+    "siren",
+    "street_music"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/urbansed/data/1324404/URBAN-SED_v2.0.0/audio/test/soundscape_test_unimodal407.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 20.148468017578125,
+      "status": "complete",
+      "events": [
+        [
+          0.25,
+          0.55,
+          "car_horn"
+        ],
+        [
+          1.95,
+          2.25,
+          "gun_shot"
+        ],
+        [
+          4.55,
+          5.25,
+          "siren"
+        ],
+        [
+          5.85,
+          6.15,
+          "dog_bark"
+        ],
+        [
+          6.25,
+          6.55,
+          "car_horn"
+        ],
+        [
+          6.75,
+          7.05,
+          "car_horn"
+        ],
+        [
+          7.25,
+          7.55,
+          "car_horn"
+        ],
+        [
+          7.75,
+          8.05,
+          "car_horn"
+        ],
+        [
+          8.15,
+          9.15,
+          "jackhammer"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-969538534b39b3c7",
+            "object": "chat.completion",
+            "created": 1792777252,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 1,\n      \"start\": 0.25,\n      \"end\": 0.55\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 1.95,\n      \"end\": 2.25\n    },\n    {\n      \"query_id\": 8,\n      \"start\": 4.55,\n      \"end\": 5.25\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 5.85,\n      \"end\": 6.15\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 6.25,\n      \"end\": 6.55\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 6.75,\n      \"end\": 7.05\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 7.25,\n      \"end\": 7.55\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 7.75,\n      \"end\": 8.05\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 8.15,\n      \"end\": 9.15\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 328,
+              "total_tokens": 630,
+              "completion_tokens": 302,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 5.0000625,
+      "seconds": 15.876665353775024,
+      "status": "complete",
+      "events": [
+        [
+          1.77,
+          4.02,
+          "car_horn"
+        ],
+        [
+          1.81,
+          2.02,
+          "dog_bark"
+        ],
+        [
+          2.21,
+          2.42,
+          "dog_bark"
+        ],
+        [
+          2.81,
+          3.02,
+          "dog_bark"
+        ],
+        [
+          3.41,
+          3.62,
+          "dog_bark"
+        ],
+        [
+          3.81,
+          4.02,
+          "dog_bark"
+        ],
+        [
+          4.21,
+          4.42,
+          "dog_bark"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-af171284b24416a4",
+            "object": "chat.completion",
+            "created": 1792777272,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 1,\n      \"start\": 1.77,\n      \"end\": 4.02\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 1.81,\n      \"end\": 2.02\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 2.21,\n      \"end\": 2.42\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 2.81,\n      \"end\": 3.02\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 3.41,\n      \"end\": 3.62\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 3.81,\n      \"end\": 4.02\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 4.21,\n      \"end\": 4.42\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 262,
+              "total_tokens": 500,
+              "completion_tokens": 238,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.25,
+      0.55,
+      "car_horn"
+    ],
+    [
+      6.25,
+      6.55,
+      "car_horn"
+    ],
+    [
+      6.75,
+      9.02,
+      "car_horn"
+    ],
+    [
+      5.85,
+      6.15,
+      "dog_bark"
+    ],
+    [
+      6.8100000000000005,
+      7.02,
+      "dog_bark"
+    ],
+    [
+      7.21,
+      7.42,
+      "dog_bark"
+    ],
+    [
+      7.8100000000000005,
+      8.02,
+      "dog_bark"
+    ],
+    [
+      8.41,
+      8.620000000000001,
+      "dog_bark"
+    ],
+    [
+      8.81,
+      9.02,
+      "dog_bark"
+    ],
+    [
+      9.21,
+      9.42,
+      "dog_bark"
+    ],
+    [
+      1.95,
+      2.25,
+      "gun_shot"
+    ],
+    [
+      8.15,
+      9.15,
+      "jackhammer"
+    ],
+    [
+      4.55,
+      5.25,
+      "siren"
+    ]
+  ],
+  "duration": 10.0000625,
+  "inference_seconds": 36.02513337135315
+}

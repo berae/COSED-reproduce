@@ -1,0 +1,61 @@
+{
+  "gpus": [
+    "0",
+    "1",
+    "2",
+    "3"
+  ],
+  "batch_per_gpu": 128,
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 10.567522684733072,
+      "clip_loss": 9.909076690673828,
+      "grounding_loss": 0.6584460536638895,
+      "distillation_loss": 0.0,
+      "time": 27.56449007987976,
+      "lr": 1.5000000000000002e-07,
+      "alpha": 1.0,
+      "beta": 1.0,
+      "gamma": 1.0,
+      "loss_note": "FineLAP: weighted clip-level + frame-level + optional distillation losses; see the saved configuration for data, loss weights, and precision."
+    }
+  ],
+  "memory_probe": {
+    "wrapped_blocks": 26,
+    "reference_losses": [
+      9.830085754394531,
+      1.073959231376648,
+      0.0
+    ],
+    "checkpointed_losses": [
+      9.830085754394531,
+      1.073959231376648,
+      0.0
+    ],
+    "gradient_max_error": 0.0,
+    "gradient_equivalence_passed": true,
+    "batch_per_gpu": 128,
+    "precision": "fp32",
+    "strong_samples": 16,
+    "success": true,
+    "seconds": 8.660752773284912,
+    "peak_gib": 12.742109775543213,
+    "initializer_sha256": {
+      "weights/EAT-base_epoch30_ft.pt": "0dbef5f1214ed92c7ae670501c183b0c109f6c1ce7dcadc16da2044478da4b11",
+      "weights/roberta-base/model.safetensors": "5bde1d28afb363d0103324efeb5afc8b2b397fe5e04beabb9b1ef355255ade81",
+      "weights/roberta-base/merges.txt": "1ce1664773c50f3e0cc8842619a93edc4624525b728b188a9e0be33b7726adc5",
+      "weights/roberta-base/tokenizer.json": "847bbeab6174d66a88898f729d52fa8d355fafe1bea101cf960dd404581df70e",
+      "weights/roberta-base/pytorch_model.bin": "278b7a95739c4392fae9b818bb5343dde20be1b89318f37a6d939e1e1b9e461b",
+      "weights/roberta-base/config.json": "ef0185e2aae6e06c5f105a285006952c340e20c7dbf43c86ec82601b13fc45e9",
+      "weights/roberta-base/vocab.json": "9e7f63c2d15d666b52e21d250d2e513b87c9b713cfa6987a82ed89e5e6e50655",
+      "weights/roberta-base/tokenizer_config.json": "994f46754c5bf4014f1aa92d34b1374319c3a6b3f702105cd5b742beaecd18ce"
+    },
+    "packages": {
+      "torch": "2.4.1+cu121",
+      "torchaudio": "2.4.1+cu121",
+      "transformers": "4.57.6",
+      "soundfile": "0.13.1"
+    }
+  }
+}

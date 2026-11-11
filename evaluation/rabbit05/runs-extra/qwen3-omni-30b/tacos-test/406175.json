@@ -1,0 +1,499 @@
+{
+  "clip_id": "406175",
+  "labels": [
+    "A car honks in the distance.",
+    "Cars honking.",
+    "A car horn sounds, getting closer and louder.",
+    "A car drives by.",
+    "A car engine hums steadily, producing a deep rhythmic mechanical sound.",
+    "Traffic on a busy street."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/406175.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 13.996947765350342,
+      "status": "complete",
+      "events": [
+        [
+          1.278,
+          1.698,
+          "A car honks in the distance."
+        ],
+        [
+          2.418,
+          5.018,
+          "Cars honking."
+        ],
+        [
+          2.418,
+          5.018,
+          "A car horn sounds, getting closer and louder."
+        ],
+        [
+          8.178,
+          9.178,
+          "A car drives by."
+        ],
+        [
+          0.0,
+          10.0,
+          "A car engine hums steadily, producing a deep rhythmic mechanical sound."
+        ],
+        [
+          0.0,
+          10.0,
+          "Traffic on a busy street."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-819623f124a3aafc",
+            "object": "chat.completion",
+            "created": 1792802484,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 1.278,\n      \"end\": 1.698\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 2.418,\n      \"end\": 5.018\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 2.418,\n      \"end\": 5.018\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 8.178,\n      \"end\": 9.178\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 0.0,\n      \"end\": 10.0\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 0.0,\n      \"end\": 10.0\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 336,
+              "total_tokens": 548,
+              "completion_tokens": 212,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 14.528806924819946,
+      "status": "complete",
+      "events": [
+        [
+          4.678,
+          5.198,
+          "A car honks in the distance."
+        ],
+        [
+          4.678,
+          5.198,
+          "Cars honking."
+        ],
+        [
+          8.758,
+          9.278,
+          "A car horn sounds, getting closer and louder."
+        ],
+        [
+          5.798,
+          9.278,
+          "A car drives by."
+        ],
+        [
+          0.0,
+          10.0,
+          "A car engine hums steadily, producing a deep rhythmic mechanical sound."
+        ],
+        [
+          0.0,
+          10.0,
+          "Traffic on a busy street."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a20ba0699f4fcaec",
+            "object": "chat.completion",
+            "created": 1792802498,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 4.678,\n      \"end\": 5.198\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 4.678,\n      \"end\": 5.198\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 8.758,\n      \"end\": 9.278\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 5.798,\n      \"end\": 9.278\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 336,
+              "total_tokens": 556,
+              "completion_tokens": 220,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 10.0,
+      "seconds": 14.520487308502197,
+      "status": "complete",
+      "events": [
+        [
+          4.689,
+          5.179,
+          "A car honks in the distance."
+        ],
+        [
+          4.689,
+          5.179,
+          "Cars honking."
+        ],
+        [
+          4.689,
+          5.179,
+          "A car horn sounds, getting closer and louder."
+        ],
+        [
+          7.119,
+          8.419,
+          "A car drives by."
+        ],
+        [
+          0.0,
+          10.0,
+          "A car engine hums steadily, producing a deep rhythmic mechanical sound."
+        ],
+        [
+          0.0,
+          10.0,
+          "Traffic on a busy street."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-96731341e30bce2c",
+            "object": "chat.completion",
+            "created": 1792802512,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 4.689,\n      \"end\": 5.179\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 4.689,\n      \"end\": 5.179\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 4.689,\n      \"end\": 5.179\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 7.119,\n      \"end\": 8.419\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 336,
+              "total_tokens": 556,
+              "completion_tokens": 220,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 240000,
+      "start": 15.0,
+      "duration": 10.0,
+      "seconds": 14.726040363311768,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          10.0,
+          "A car honks in the distance."
+        ],
+        [
+          0.0,
+          10.0,
+          "Cars honking."
+        ],
+        [
+          6.789,
+          9.789,
+          "A car horn sounds, getting closer and louder."
+        ],
+        [
+          0.0,
+          10.0,
+          "A car drives by."
+        ],
+        [
+          0.0,
+          10.0,
+          "A car engine hums steadily, producing a deep rhythmic mechanical sound."
+        ],
+        [
+          0.0,
+          10.0,
+          "Traffic on a busy street."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-998b9e0a5b9165cd",
+            "object": "chat.completion",
+            "created": 1792802527,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 6.789,\n      \"end\": 9.789\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 336,
+              "total_tokens": 559,
+              "completion_tokens": 223,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 320000,
+      "start": 20.0,
+      "duration": 9.674875,
+      "seconds": 14.072903394699097,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          9.674875,
+          "A car honks in the distance."
+        ],
+        [
+          0.0,
+          9.674875,
+          "Cars honking."
+        ],
+        [
+          0.0,
+          9.674875,
+          "A car horn sounds, getting closer and louder."
+        ],
+        [
+          0.0,
+          9.674875,
+          "A car drives by."
+        ],
+        [
+          0.0,
+          9.674875,
+          "A car engine hums steadily, producing a deep rhythmic mechanical sound."
+        ],
+        [
+          0.0,
+          9.674875,
+          "Traffic on a busy street."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-9c4f9f8462355a11",
+            "object": "chat.completion",
+            "created": 1792802541,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 9.675\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.0,\n      \"end\": 9.675\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.0,\n      \"end\": 9.675\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.0,\n      \"end\": 9.675\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 0.0,\n      \"end\": 9.675\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 0.0,\n      \"end\": 9.675\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 330,
+              "total_tokens": 536,
+              "completion_tokens": 206,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      8.178,
+      9.178,
+      "A car drives by."
+    ],
+    [
+      10.798,
+      14.278,
+      "A car drives by."
+    ],
+    [
+      15.0,
+      29.674875,
+      "A car drives by."
+    ],
+    [
+      0.0,
+      29.674875,
+      "A car engine hums steadily, producing a deep rhythmic mechanical sound."
+    ],
+    [
+      1.278,
+      1.698,
+      "A car honks in the distance."
+    ],
+    [
+      9.678,
+      10.198,
+      "A car honks in the distance."
+    ],
+    [
+      14.689,
+      29.674875,
+      "A car honks in the distance."
+    ],
+    [
+      2.418,
+      5.018,
+      "A car horn sounds, getting closer and louder."
+    ],
+    [
+      13.758,
+      14.278,
+      "A car horn sounds, getting closer and louder."
+    ],
+    [
+      14.689,
+      15.179,
+      "A car horn sounds, getting closer and louder."
+    ],
+    [
+      20.0,
+      29.674875,
+      "A car horn sounds, getting closer and louder."
+    ],
+    [
+      2.418,
+      5.018,
+      "Cars honking."
+    ],
+    [
+      9.678,
+      10.198,
+      "Cars honking."
+    ],
+    [
+      14.689,
+      29.674875,
+      "Cars honking."
+    ],
+    [
+      0.0,
+      29.674875,
+      "Traffic on a busy street."
+    ]
+  ],
+  "duration": 29.674875,
+  "inference_seconds": 71.84518575668335
+}

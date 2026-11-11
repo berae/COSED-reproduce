@@ -1,0 +1,224 @@
+{
+  "clip_id": "249304",
+  "labels": [
+    "An alarm beeps repeatedly.",
+    "A person is speaking muffledly.",
+    "An alarm beeps repeatedly while people speak in the background."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/249304.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 7.6316797733306885,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          5.978,
+          "An alarm beeps repeatedly."
+        ],
+        [
+          6.438,
+          9.508,
+          "A person is speaking muffledly."
+        ],
+        [
+          0.0,
+          5.978,
+          "An alarm beeps repeatedly while people speak in the background."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-ba4a99780496b601",
+            "object": "chat.completion",
+            "created": 1792822989,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 5.978\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 6.438,\n      \"end\": 9.508\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 5.978\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 308,
+              "total_tokens": 424,
+              "completion_tokens": 116,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 7.872746706008911,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          10.0,
+          "An alarm beeps repeatedly."
+        ],
+        [
+          0.0,
+          10.0,
+          "A person is speaking muffledly."
+        ],
+        [
+          0.0,
+          10.0,
+          "An alarm beeps repeatedly while people speak in the background."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8bd1c158be6bdbf2",
+            "object": "chat.completion",
+            "created": 1792822996,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 308,
+              "total_tokens": 427,
+              "completion_tokens": 119,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 5.1246875,
+      "seconds": 5.291734218597412,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          5.1246875,
+          "An alarm beeps repeatedly."
+        ],
+        [
+          0.875,
+          3.465,
+          "A person is speaking muffledly."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-9400a3fe6dfa613f",
+            "object": "chat.completion",
+            "created": 1792823004,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 5.125\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.875,\n      \"end\": 3.465\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 243,
+              "total_tokens": 323,
+              "completion_tokens": 80,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      5.0,
+      15.0,
+      "A person is speaking muffledly."
+    ],
+    [
+      0.0,
+      15.0,
+      "An alarm beeps repeatedly while people speak in the background."
+    ],
+    [
+      0.0,
+      15.1246875,
+      "An alarm beeps repeatedly."
+    ]
+  ],
+  "duration": 15.1246875,
+  "inference_seconds": 20.79616069793701
+}

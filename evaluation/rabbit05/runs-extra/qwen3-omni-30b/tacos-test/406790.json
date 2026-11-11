@@ -1,0 +1,298 @@
+{
+  "clip_id": "406790",
+  "labels": [
+    "A car horn honks repeatedly.",
+    "A car horn honks repeatedly on the street.",
+    "A car horn honks repeatedly at varying distances and volumes.",
+    "A car horn honks repeatedly, varying in distance and volume.",
+    "A hissing sound, like malfunctioning brakes.",
+    "A car horn honks on the street.",
+    "Quiet, muffled street noise with cars passing by."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/406790.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 12.404722690582275,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          10.0,
+          "A car horn honks repeatedly."
+        ],
+        [
+          0.0,
+          10.0,
+          "A car horn honks repeatedly on the street."
+        ],
+        [
+          0.0,
+          10.0,
+          "A car horn honks repeatedly at varying distances and volumes."
+        ],
+        [
+          0.0,
+          10.0,
+          "A car horn honks repeatedly, varying in distance and volume."
+        ],
+        [
+          0.0,
+          10.0,
+          "A car horn honks on the street."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a5b52fb2ba59543f",
+            "object": "chat.completion",
+            "created": 1792824483,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 362,
+              "total_tokens": 551,
+              "completion_tokens": 189,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 23.13519287109375,
+      "status": "complete",
+      "events": [
+        [
+          1.789,
+          3.279,
+          "A car horn honks repeatedly."
+        ],
+        [
+          1.789,
+          3.279,
+          "A car horn honks repeatedly on the street."
+        ],
+        [
+          1.789,
+          3.279,
+          "A car horn honks repeatedly at varying distances and volumes."
+        ],
+        [
+          1.789,
+          3.279,
+          "A car horn honks repeatedly, varying in distance and volume."
+        ],
+        [
+          1.789,
+          3.279,
+          "A car horn honks on the street."
+        ],
+        [
+          4.379,
+          5.869,
+          "A car horn honks repeatedly."
+        ],
+        [
+          4.379,
+          5.869,
+          "A car horn honks repeatedly on the street."
+        ],
+        [
+          4.379,
+          5.869,
+          "A car horn honks repeatedly at varying distances and volumes."
+        ],
+        [
+          4.379,
+          5.869,
+          "A car horn honks repeatedly, varying in distance and volume."
+        ],
+        [
+          4.379,
+          5.869,
+          "A car horn honks on the street."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-9ce75839b7b67390",
+            "object": "chat.completion",
+            "created": 1792824496,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 1.789,\n      \"end\": 3.279\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 1.789,\n      \"end\": 3.279\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 1.789,\n      \"end\": 3.279\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 1.789,\n      \"end\": 3.279\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 1.789,\n      \"end\": 3.279\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 4.379,\n      \"end\": 5.869\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 4.379,\n      \"end\": 5.869\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 4.379,\n      \"end\": 5.869\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 4.379,\n      \"end\": 5.869\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 4.379,\n      \"end\": 5.869\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 362,
+              "total_tokens": 716,
+              "completion_tokens": 354,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 6.5394375,
+      "seconds": 10.824580907821655,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          1.0,
+          "A car horn honks repeatedly."
+        ],
+        [
+          0.0,
+          1.0,
+          "A car horn honks repeatedly on the street."
+        ],
+        [
+          0.0,
+          1.0,
+          "A car horn honks repeatedly at varying distances and volumes."
+        ],
+        [
+          0.0,
+          1.0,
+          "A car horn honks repeatedly, varying in distance and volume."
+        ],
+        [
+          0.0,
+          1.0,
+          "A car horn honks on the street."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-9dcbb3da967e220e",
+            "object": "chat.completion",
+            "created": 1792824519,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 1.0\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.0,\n      \"end\": 1.0\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.0,\n      \"end\": 1.0\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.0,\n      \"end\": 1.0\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 0.0,\n      \"end\": 1.0\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 315,
+              "total_tokens": 479,
+              "completion_tokens": 164,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      11.0,
+      "A car horn honks on the street."
+    ],
+    [
+      0.0,
+      11.0,
+      "A car horn honks repeatedly at varying distances and volumes."
+    ],
+    [
+      0.0,
+      11.0,
+      "A car horn honks repeatedly on the street."
+    ],
+    [
+      0.0,
+      11.0,
+      "A car horn honks repeatedly, varying in distance and volume."
+    ],
+    [
+      0.0,
+      11.0,
+      "A car horn honks repeatedly."
+    ]
+  ],
+  "duration": 16.5394375,
+  "inference_seconds": 46.36449646949768
+}

@@ -1,0 +1,383 @@
+{
+  "clip_id": "538438",
+  "labels": [
+    "A horse neighs roughly and steadily on a consistent pitch from the right side.",
+    "A horse makes a vibrant purring sound that diminishes on the right side.",
+    "A horse neighs vibrantly, fading to the right.",
+    "A horse makes a low-pitched vibrating sound on the right side.",
+    "A carriage sounds steadily squeaky with a few loud irregular staccatos.",
+    "The horse makes hollow, rhythmic hoofbeats."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/538438.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 14.732040405273438,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          1.0,
+          "A horse neighs roughly and steadily on a consistent pitch from the right side."
+        ],
+        [
+          1.0,
+          2.0,
+          "A horse makes a vibrant purring sound that diminishes on the right side."
+        ],
+        [
+          2.0,
+          3.0,
+          "A horse neighs vibrantly, fading to the right."
+        ],
+        [
+          3.0,
+          4.0,
+          "A horse makes a low-pitched vibrating sound on the right side."
+        ],
+        [
+          4.0,
+          5.0,
+          "A carriage sounds steadily squeaky with a few loud irregular staccatos."
+        ],
+        [
+          5.0,
+          6.0,
+          "The horse makes hollow, rhythmic hoofbeats."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b76f277ff78adaf5",
+            "object": "chat.completion",
+            "created": 1792818592,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 1.000\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 1.000,\n      \"end\": 2.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 2.000,\n      \"end\": 3.000\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 3.000,\n      \"end\": 4.000\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 4.000,\n      \"end\": 5.000\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 5.000,\n      \"end\": 6.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 372,
+              "total_tokens": 590,
+              "completion_tokens": 218,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 14.250907897949219,
+      "status": "complete",
+      "events": [
+        [
+          6.078,
+          6.988,
+          "A horse neighs roughly and steadily on a consistent pitch from the right side."
+        ],
+        [
+          3.228,
+          4.228,
+          "A horse makes a vibrant purring sound that diminishes on the right side."
+        ],
+        [
+          7.078,
+          8.078,
+          "A horse neighs vibrantly, fading to the right."
+        ],
+        [
+          8.078,
+          9.078,
+          "A horse makes a low-pitched vibrating sound on the right side."
+        ],
+        [
+          0.0,
+          10.0,
+          "A carriage sounds steadily squeaky with a few loud irregular staccatos."
+        ],
+        [
+          0.0,
+          10.0,
+          "The horse makes hollow, rhythmic hoofbeats."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8f93f43b64efa20e",
+            "object": "chat.completion",
+            "created": 1792818607,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 6.078,\n      \"end\": 6.988\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 3.228,\n      \"end\": 4.228\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 7.078,\n      \"end\": 8.078\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 8.078,\n      \"end\": 9.078\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 0.0,\n      \"end\": 10.0\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 0.0,\n      \"end\": 10.0\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 372,
+              "total_tokens": 584,
+              "completion_tokens": 212,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 10.0,
+      "seconds": 13.850029468536377,
+      "status": "complete",
+      "events": [
+        [
+          1.178,
+          2.098,
+          "A horse neighs roughly and steadily on a consistent pitch from the right side."
+        ],
+        [
+          6.878,
+          7.578,
+          "A horse makes a vibrant purring sound that diminishes on the right side."
+        ],
+        [
+          8.178,
+          9.078,
+          "A horse neighs vibrantly, fading to the right."
+        ],
+        [
+          4.078,
+          5.078,
+          "A horse makes a low-pitched vibrating sound on the right side."
+        ],
+        [
+          0.0,
+          10.0,
+          "A carriage sounds steadily squeaky with a few loud irregular staccatos."
+        ],
+        [
+          0.0,
+          10.0,
+          "The horse makes hollow, rhythmic hoofbeats."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b24ccf67f03c4098",
+            "object": "chat.completion",
+            "created": 1792818621,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 1.178,\n      \"end\": 2.098\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 6.878,\n      \"end\": 7.578\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 8.178,\n      \"end\": 9.078\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 4.078,\n      \"end\": 5.078\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 0.0,\n      \"end\": 10.0\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 0.0,\n      \"end\": 10.0\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 372,
+              "total_tokens": 584,
+              "completion_tokens": 212,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 240000,
+      "start": 15.0,
+      "duration": 8.9775,
+      "seconds": 5.171187162399292,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          8.977,
+          "A carriage sounds steadily squeaky with a few loud irregular staccatos."
+        ],
+        [
+          0.0,
+          8.977,
+          "The horse makes hollow, rhythmic hoofbeats."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-86e677d78d950d0c",
+            "object": "chat.completion",
+            "created": 1792818635,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 4,\n      \"start\": 0.0,\n      \"end\": 8.977\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 0.0,\n      \"end\": 8.977\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 357,
+              "total_tokens": 435,
+              "completion_tokens": 78,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      4.0,
+      23.977,
+      "A carriage sounds steadily squeaky with a few loud irregular staccatos."
+    ],
+    [
+      3.0,
+      4.0,
+      "A horse makes a low-pitched vibrating sound on the right side."
+    ],
+    [
+      13.078,
+      15.078,
+      "A horse makes a low-pitched vibrating sound on the right side."
+    ],
+    [
+      1.0,
+      2.0,
+      "A horse makes a vibrant purring sound that diminishes on the right side."
+    ],
+    [
+      8.228,
+      9.228,
+      "A horse makes a vibrant purring sound that diminishes on the right side."
+    ],
+    [
+      16.878,
+      17.578,
+      "A horse makes a vibrant purring sound that diminishes on the right side."
+    ],
+    [
+      0.0,
+      1.0,
+      "A horse neighs roughly and steadily on a consistent pitch from the right side."
+    ],
+    [
+      11.078,
+      12.097999999999999,
+      "A horse neighs roughly and steadily on a consistent pitch from the right side."
+    ],
+    [
+      2.0,
+      3.0,
+      "A horse neighs vibrantly, fading to the right."
+    ],
+    [
+      12.078,
+      13.078,
+      "A horse neighs vibrantly, fading to the right."
+    ],
+    [
+      18.178,
+      19.078,
+      "A horse neighs vibrantly, fading to the right."
+    ],
+    [
+      5.0,
+      23.977,
+      "The horse makes hollow, rhythmic hoofbeats."
+    ]
+  ],
+  "duration": 23.9775,
+  "inference_seconds": 48.004164934158325
+}

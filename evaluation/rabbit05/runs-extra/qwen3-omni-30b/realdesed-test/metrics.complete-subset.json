@@ -1,0 +1,84 @@
+{
+  "metric": "generated-span pooled intersection F1, NOT PSDS",
+  "dtc": 0.7,
+  "gtc": 0.7,
+  "result": [
+    {
+      "event": 0.23998343513821307,
+      "macro_average": 0.23998343513821307,
+      "micro_average": 0.23998343513821307
+    },
+    {
+      "event": 0.24812673945621921,
+      "macro_average": 0.24812673945621921,
+      "micro_average": 0.24812673945621921
+    },
+    {
+      "event": 0.23235765838011227,
+      "macro_average": 0.23235765838011227,
+      "micro_average": 0.23235765838011227
+    },
+    {
+      "event": {
+        "fps": 3512.0,
+        "tps": 1159.0,
+        "cts": 0.0,
+        "n_ref": 4988,
+        "t_ref": 21255.276130562877,
+        "n_ref_other": {},
+        "t_ref_other": {}
+      }
+    }
+  ],
+  "clip": {
+    "tp": 1898,
+    "fp": 1422,
+    "fn": 1036,
+    "tn": 10644,
+    "recall": 0.6468984321745058,
+    "precision": 0.5716867469879519,
+    "f1": 0.6069715382155421,
+    "fpr": 0.11785181501740427,
+    "note": "Audio-class/query presence; repeated events collapsed; only supplied queries evaluated.",
+    "accuracy": 0.8361333333333333,
+    "exact_audio_accuracy": 0.106,
+    "exact_audio_correct": 106,
+    "audio_count": 1000,
+    "binary_map": 0.42017390757980816,
+    "binary_ap_by_class": {
+      "bell_ringing": 0.1749272789057854,
+      "coffee_machine": 0.09225691347011597,
+      "cutlery_dishes": 0.5400262228171425,
+      "door_open_close": 0.5432603213455643,
+      "footsteps": 0.7577947019867549,
+      "keyboard_typing": 0.7876677636991937,
+      "keychain": 0.426645390070922,
+      "light_switch": 0.35307692307692307,
+      "microwave": 0.3972566371681416,
+      "phone_ringing": 0.38460067600193143,
+      "running_water": 0.7481514916698954,
+      "toilet_flushing": 0.29299865651589785,
+      "vacuum_cleaner": 0.4053038892551088,
+      "wardrobe_drawer_open_close": 0.26964174771374655,
+      "window_open_close": 0.129
+    },
+    "ap_classes_without_positive": [],
+    "map_note": "Macro average of sklearn non-interpolated AP per class with positive GT; scores are binary 0/1 generated presence, not native confidence. No evaluable mAP for positive-only grounding queries. All equal-score predictions are tied, no arbitrary tie ordering."
+  },
+  "note": "Binary masks encode text-generated intervals; no model frame probabilities or confidence sweep.",
+  "coverage": {
+    "total": 1007,
+    "scored": 1000,
+    "excluded": 7,
+    "excluded_ids": [
+      "000030",
+      "000848",
+      "001962",
+      "002364",
+      "003403",
+      "004675",
+      "005477"
+    ],
+    "policy": "Exclude incomplete audio entirely, including its successful windows; not a full-test-set score."
+  }
+}

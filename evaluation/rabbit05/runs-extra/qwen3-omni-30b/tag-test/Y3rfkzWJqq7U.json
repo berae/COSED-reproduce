@@ -1,0 +1,96 @@
+{
+  "clip_id": "Y3rfkzWJqq7U",
+  "labels": [
+    "an engine is started up",
+    "men are talking"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y3rfkzWJqq7U.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 9.6735,
+      "seconds": 7.2468101978302,
+      "status": "complete",
+      "events": [
+        [
+          2.35,
+          5.82,
+          "an engine is started up"
+        ],
+        [
+          0.0,
+          2.35,
+          "men are talking"
+        ],
+        [
+          6.72,
+          8.42,
+          "men are talking"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a1d6a60756215fc3",
+            "object": "chat.completion",
+            "created": 1792780989,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 2.35,\n      \"end\": 5.82\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.0,\n      \"end\": 2.35\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 6.72,\n      \"end\": 8.42\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 283,
+              "total_tokens": 392,
+              "completion_tokens": 109,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      2.35,
+      5.82,
+      "an engine is started up"
+    ],
+    [
+      0.0,
+      2.35,
+      "men are talking"
+    ],
+    [
+      6.72,
+      8.42,
+      "men are talking"
+    ]
+  ],
+  "duration": 9.6735,
+  "inference_seconds": 7.2468101978302
+}

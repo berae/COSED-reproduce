@@ -1,0 +1,515 @@
+{
+  "clip_id": "369799",
+  "labels": [
+    "A soft, high-pitched sound of a six-month-old baby with hiccups attempting to speak.",
+    "A baby laughs softly with a gentle, high-pitched sound.",
+    "A soft, high-pitched sound of a baby attempting to speak.",
+    "A baby gently nibbles, making a soft, muffled sound.",
+    "A baby hiccups, followed by a soft, high-pitched sound.",
+    "Hollow sound.",
+    "A baby makes a short, hollow sound."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/369799.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 16.545019149780273,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          0.987,
+          "A soft, high-pitched sound of a six-month-old baby with hiccups attempting to speak."
+        ],
+        [
+          2.517,
+          3.147,
+          "A baby laughs softly with a gentle, high-pitched sound."
+        ],
+        [
+          4.987,
+          5.387,
+          "A soft, high-pitched sound of a baby attempting to speak."
+        ],
+        [
+          6.987,
+          7.587,
+          "A baby gently nibbles, making a soft, muffled sound."
+        ],
+        [
+          8.087,
+          8.587,
+          "A baby hiccups, followed by a soft, high-pitched sound."
+        ],
+        [
+          9.087,
+          9.587,
+          "Hollow sound."
+        ],
+        [
+          9.087,
+          9.587,
+          "A baby makes a short, hollow sound."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-9b51af79141dad5c",
+            "object": "chat.completion",
+            "created": 1792784413,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 0.987\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 2.517,\n      \"end\": 3.147\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 4.987,\n      \"end\": 5.387\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 6.987,\n      \"end\": 7.587\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 8.087,\n      \"end\": 8.587\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 9.087,\n      \"end\": 9.587\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 9.087,\n      \"end\": 9.587\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 380,
+              "total_tokens": 632,
+              "completion_tokens": 252,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 9.873426675796509,
+      "status": "complete",
+      "events": [
+        [
+          7.089,
+          8.029,
+          "A soft, high-pitched sound of a six-month-old baby with hiccups attempting to speak."
+        ],
+        [
+          8.719,
+          9.179,
+          "A soft, high-pitched sound of a baby attempting to speak."
+        ],
+        [
+          6.319,
+          7.089,
+          "A baby hiccups, followed by a soft, high-pitched sound."
+        ],
+        [
+          9.179,
+          9.529,
+          "A baby makes a short, hollow sound."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-bbfd0d5fcbf600b1",
+            "object": "chat.completion",
+            "created": 1792784429,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 7.089,\n      \"end\": 8.029\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 8.719,\n      \"end\": 9.179\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 6.319,\n      \"end\": 7.089\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 9.179,\n      \"end\": 9.529\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 380,
+              "total_tokens": 530,
+              "completion_tokens": 150,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 10.0,
+      "seconds": 16.566153049468994,
+      "status": "complete",
+      "events": [
+        [
+          1.078,
+          9.008,
+          "A soft, high-pitched sound of a six-month-old baby with hiccups attempting to speak."
+        ],
+        [
+          1.078,
+          9.008,
+          "A baby laughs softly with a gentle, high-pitched sound."
+        ],
+        [
+          1.078,
+          9.008,
+          "A soft, high-pitched sound of a baby attempting to speak."
+        ],
+        [
+          1.078,
+          9.008,
+          "A baby gently nibbles, making a soft, muffled sound."
+        ],
+        [
+          1.078,
+          9.008,
+          "A baby hiccups, followed by a soft, high-pitched sound."
+        ],
+        [
+          1.078,
+          9.008,
+          "Hollow sound."
+        ],
+        [
+          1.078,
+          9.008,
+          "A baby makes a short, hollow sound."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b0d2f19024e8a37e",
+            "object": "chat.completion",
+            "created": 1792784439,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 1.078,\n      \"end\": 9.008\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 1.078,\n      \"end\": 9.008\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 1.078,\n      \"end\": 9.008\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 1.078,\n      \"end\": 9.008\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 1.078,\n      \"end\": 9.008\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 1.078,\n      \"end\": 9.008\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 1.078,\n      \"end\": 9.008\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 380,
+              "total_tokens": 632,
+              "completion_tokens": 252,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 240000,
+      "start": 15.0,
+      "duration": 10.0,
+      "seconds": 16.985633373260498,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          10.0,
+          "A soft, high-pitched sound of a six-month-old baby with hiccups attempting to speak."
+        ],
+        [
+          0.0,
+          10.0,
+          "A baby laughs softly with a gentle, high-pitched sound."
+        ],
+        [
+          0.0,
+          10.0,
+          "A soft, high-pitched sound of a baby attempting to speak."
+        ],
+        [
+          0.0,
+          10.0,
+          "A baby gently nibbles, making a soft, muffled sound."
+        ],
+        [
+          0.0,
+          10.0,
+          "A baby hiccups, followed by a soft, high-pitched sound."
+        ],
+        [
+          0.0,
+          10.0,
+          "Hollow sound."
+        ],
+        [
+          0.0,
+          10.0,
+          "A baby makes a short, hollow sound."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-96a0183fc202617e",
+            "object": "chat.completion",
+            "created": 1792784456,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 380,
+              "total_tokens": 639,
+              "completion_tokens": 259,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 320000,
+      "start": 20.0,
+      "duration": 8.2275625,
+      "seconds": 13.405068397521973,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          2.97,
+          "A soft, high-pitched sound of a six-month-old baby with hiccups attempting to speak."
+        ],
+        [
+          0.0,
+          2.97,
+          "A soft, high-pitched sound of a baby attempting to speak."
+        ],
+        [
+          3.18,
+          4.52,
+          "A baby gently nibbles, making a soft, muffled sound."
+        ],
+        [
+          5.12,
+          6.12,
+          "A baby hiccups, followed by a soft, high-pitched sound."
+        ],
+        [
+          6.12,
+          6.32,
+          "Hollow sound."
+        ],
+        [
+          6.12,
+          6.32,
+          "A baby makes a short, hollow sound."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8719baba3be70c90",
+            "object": "chat.completion",
+            "created": 1792784473,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 2.97\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.0,\n      \"end\": 2.97\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 3.18,\n      \"end\": 4.52\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 5.12,\n      \"end\": 6.12\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 6.12,\n      \"end\": 6.32\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 6.12,\n      \"end\": 6.32\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 355,
+              "total_tokens": 559,
+              "completion_tokens": 204,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      6.987,
+      7.587,
+      "A baby gently nibbles, making a soft, muffled sound."
+    ],
+    [
+      11.078,
+      25.0,
+      "A baby gently nibbles, making a soft, muffled sound."
+    ],
+    [
+      8.087,
+      8.587,
+      "A baby hiccups, followed by a soft, high-pitched sound."
+    ],
+    [
+      11.078,
+      25.0,
+      "A baby hiccups, followed by a soft, high-pitched sound."
+    ],
+    [
+      25.12,
+      26.12,
+      "A baby hiccups, followed by a soft, high-pitched sound."
+    ],
+    [
+      2.517,
+      3.147,
+      "A baby laughs softly with a gentle, high-pitched sound."
+    ],
+    [
+      11.078,
+      25.0,
+      "A baby laughs softly with a gentle, high-pitched sound."
+    ],
+    [
+      9.087,
+      9.587,
+      "A baby makes a short, hollow sound."
+    ],
+    [
+      11.078,
+      25.0,
+      "A baby makes a short, hollow sound."
+    ],
+    [
+      26.12,
+      26.32,
+      "A baby makes a short, hollow sound."
+    ],
+    [
+      4.987,
+      5.387,
+      "A soft, high-pitched sound of a baby attempting to speak."
+    ],
+    [
+      11.078,
+      25.0,
+      "A soft, high-pitched sound of a baby attempting to speak."
+    ],
+    [
+      0.0,
+      0.987,
+      "A soft, high-pitched sound of a six-month-old baby with hiccups attempting to speak."
+    ],
+    [
+      11.078,
+      25.0,
+      "A soft, high-pitched sound of a six-month-old baby with hiccups attempting to speak."
+    ],
+    [
+      9.087,
+      9.587,
+      "Hollow sound."
+    ],
+    [
+      11.078,
+      25.0,
+      "Hollow sound."
+    ],
+    [
+      26.12,
+      26.32,
+      "Hollow sound."
+    ]
+  ],
+  "duration": 28.2275625,
+  "inference_seconds": 73.37530064582825
+}

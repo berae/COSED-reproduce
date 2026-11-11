@@ -1,0 +1,87 @@
+{
+  "clip_id": "Y4xgFvYLnovM",
+  "labels": [
+    "women are talking",
+    "laughing",
+    "dogs are barking"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y4xgFvYLnovM.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 5.44788670539856,
+      "status": "complete",
+      "events": [
+        [
+          3.875,
+          6.495,
+          "women are talking"
+        ],
+        [
+          3.875,
+          9.715,
+          "dogs are barking"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8d38d03c4f94a72f",
+            "object": "chat.completion",
+            "created": 1792781176,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 3.875,\n      \"end\": 6.495\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 3.875,\n      \"end\": 9.715\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 292,
+              "total_tokens": 374,
+              "completion_tokens": 82,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      3.875,
+      9.715,
+      "dogs are barking"
+    ],
+    [
+      3.875,
+      6.495,
+      "women are talking"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 5.44788670539856
+}

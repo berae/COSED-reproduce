@@ -1,0 +1,347 @@
+{
+  "clip_id": "54898",
+  "labels": [
+    "A siren gradually increases in volume.",
+    "A siren gradually decreases in volume.",
+    "A door closes loudly once.",
+    "Cars driving past multiple times in a city."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/54898.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 5.262621641159058,
+      "status": "complete",
+      "events": [
+        [
+          7.589,
+          9.649,
+          "A siren gradually increases in volume."
+        ],
+        [
+          0.0,
+          10.0,
+          "Cars driving past multiple times in a city."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-92e4e4fd76dc18f4",
+            "object": "chat.completion",
+            "created": 1792820913,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 7.589,\n      \"end\": 9.649\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.0,\n      \"end\": 10.0\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 315,
+              "total_tokens": 394,
+              "completion_tokens": 79,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 5.598727703094482,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          10.0,
+          "A siren gradually increases in volume."
+        ],
+        [
+          0.0,
+          10.0,
+          "Cars driving past multiple times in a city."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-89c9058cb2951e6c",
+            "object": "chat.completion",
+            "created": 1792820919,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 315,
+              "total_tokens": 399,
+              "completion_tokens": 84,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 10.0,
+      "seconds": 5.485838174819946,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          5.874,
+          "A siren gradually increases in volume."
+        ],
+        [
+          5.874,
+          9.654,
+          "A siren gradually decreases in volume."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-baf2854c95100fd1",
+            "object": "chat.completion",
+            "created": 1792820924,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 5.874\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 5.874,\n      \"end\": 9.654\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 315,
+              "total_tokens": 397,
+              "completion_tokens": 82,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 240000,
+      "start": 15.0,
+      "duration": 10.0,
+      "seconds": 5.526249647140503,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          4.589,
+          "A siren gradually increases in volume."
+        ],
+        [
+          4.589,
+          10.0,
+          "A siren gradually decreases in volume."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b874b9d508dd82ff",
+            "object": "chat.completion",
+            "created": 1792820930,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 4.589\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 4.589,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 315,
+              "total_tokens": 398,
+              "completion_tokens": 83,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 320000,
+      "start": 20.0,
+      "duration": 6.87925,
+      "seconds": 5.324853420257568,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          6.879,
+          "A siren gradually increases in volume."
+        ],
+        [
+          5.479,
+          6.179,
+          "A door closes loudly once."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a63fde48fc117ca6",
+            "object": "chat.completion",
+            "created": 1792820935,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 6.879\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 5.479,\n      \"end\": 6.179\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 272,
+              "total_tokens": 352,
+              "completion_tokens": 80,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      25.479,
+      26.179000000000002,
+      "A door closes loudly once."
+    ],
+    [
+      15.873999999999999,
+      25.0,
+      "A siren gradually decreases in volume."
+    ],
+    [
+      5.0,
+      19.589,
+      "A siren gradually increases in volume."
+    ],
+    [
+      20.0,
+      26.878999999999998,
+      "A siren gradually increases in volume."
+    ],
+    [
+      0.0,
+      15.0,
+      "Cars driving past multiple times in a city."
+    ]
+  ],
+  "duration": 26.87925,
+  "inference_seconds": 27.198290586471558
+}

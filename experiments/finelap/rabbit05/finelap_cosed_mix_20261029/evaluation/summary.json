@@ -1,0 +1,194 @@
+{
+  "tacos-test": {
+    "exact": {
+      "status": "complete",
+      "psds1": 0.2143399379924205,
+      "files": 2000,
+      "pairs": 5151,
+      "protocol": {
+        "dtc_threshold": 0.7,
+        "gtc_threshold": 0.7,
+        "cttc_threshold": null,
+        "alpha_ct": 0,
+        "alpha_st": 1,
+        "max_efpr": 100,
+        "unit_of_time": "hour"
+      },
+      "annotation_policy": "exact",
+      "score_field": "scores",
+      "encoder": null,
+      "cosine_threshold": null,
+      "merge_method": "exact caption union",
+      "manifest_sha256": "e70d6ac06d6b7b2512c419df5ae177eab6f63326d4094435aa3f1b6a8481b200",
+      "pooling": "all file-caption pairs pooled as one event class",
+      "comparability": "Local protocol; COSED exact encoder/query/split equivalence unconfirmed."
+    },
+    "semantic": {
+      "status": "complete",
+      "psds1": 0.24441382961386332,
+      "files": 2000,
+      "pairs": 5151,
+      "protocol": {
+        "dtc_threshold": 0.7,
+        "gtc_threshold": 0.7,
+        "cttc_threshold": null,
+        "alpha_ct": 0,
+        "alpha_st": 1,
+        "max_efpr": 100,
+        "unit_of_time": "hour"
+      },
+      "annotation_policy": "semantic",
+      "score_field": "scores",
+      "encoder": "sentence-transformers/all-MiniLM-L6-v2",
+      "cosine_threshold": 0.8,
+      "merge_method": "direct neighbors, not transitive; retain original queries",
+      "manifest_sha256": "e70d6ac06d6b7b2512c419df5ae177eab6f63326d4094435aa3f1b6a8481b200",
+      "pooling": "all file-caption pairs pooled as one event class",
+      "comparability": "Local protocol; COSED exact encoder/query/split equivalence unconfirmed."
+    }
+  },
+  "desed-public": {
+    "psds1": 0.23239452270538244,
+    "files": 692,
+    "expected": 692,
+    "missing": 0,
+    "metric_seconds": 0.9794244766235352,
+    "protocol": {
+      "dtc": 0.7,
+      "gtc": 0.7,
+      "alpha_st": 1,
+      "max_efpr": 100
+    },
+    "comparability": "candidate reproduction; exact COSED split/checkpoint equivalence not yet verified"
+  },
+  "desed-validation": {
+    "psds1": 0.2234121206968338,
+    "files": 1068,
+    "expected": 1168,
+    "missing": 100,
+    "metric_seconds": 1.0622637271881104,
+    "protocol": {
+      "dtc": 0.7,
+      "gtc": 0.7,
+      "alpha_st": 1,
+      "max_efpr": 100
+    },
+    "comparability": "candidate reproduction; exact COSED split/checkpoint equivalence not yet verified"
+  },
+  "realdesed-test": {
+    "psds1": 0.08117181396833917,
+    "files": 1007,
+    "expected": 1007,
+    "missing": 0,
+    "metric_seconds": 2.4257729053497314,
+    "protocol": {
+      "dtc": 0.7,
+      "gtc": 0.7,
+      "alpha_st": 1,
+      "max_efpr": 100
+    },
+    "comparability": "candidate reproduction; exact COSED split/checkpoint equivalence not yet verified"
+  },
+  "urbansed-test": {
+    "psds1": 0.225373892168805,
+    "files": 2000,
+    "expected": 2000,
+    "missing": 0,
+    "metric_seconds": 2.9723598957061768,
+    "protocol": {
+      "dtc": 0.7,
+      "gtc": 0.7,
+      "alpha_st": 1,
+      "max_efpr": 100
+    },
+    "comparability": "candidate reproduction; exact COSED split/checkpoint equivalence not yet verified"
+  },
+  "tag-test": {
+    "official": {
+      "status": "complete",
+      "grounding_psds": 0.6268471959203757,
+      "files": 483,
+      "pairs": 995,
+      "protocol": {
+        "dtc_threshold": 0.5,
+        "gtc_threshold": 0.5,
+        "alpha_st": 0,
+        "max_efpr": 800
+      },
+      "score_field": "raw",
+      "postprocessing_policy": "official",
+      "note": "official means FineLAP unfiltered TAG PSDS branch only; other models retain saved scores; not full official replication",
+      "manifest_sha256": "cc7d2ef72f65e4f68433da76a6a5afdc9bd40270985c36b2166d0fbe02c1509d"
+    },
+    "legacy": {
+      "status": "complete",
+      "grounding_psds": 0.6394451244061689,
+      "files": 483,
+      "pairs": 995,
+      "protocol": {
+        "dtc_threshold": 0.5,
+        "gtc_threshold": 0.5,
+        "alpha_st": 0,
+        "max_efpr": 800
+      },
+      "score_field": "scores",
+      "postprocessing_policy": "legacy",
+      "note": "official means FineLAP unfiltered TAG PSDS branch only; other models retain saved scores; not full official replication",
+      "manifest_sha256": "cc7d2ef72f65e4f68433da76a6a5afdc9bd40270985c36b2166d0fbe02c1509d"
+    }
+  },
+  "maestro-development": {
+    "status": "complete",
+    "mpauc": 0.4188379803804851,
+    "per_class": {
+      "birds_singing": 0.8846921473784495,
+      "car": 0.7160280969591033,
+      "people talking": 0.3727485142736962,
+      "footsteps": 0.4725080222428728,
+      "children voices": 0.5221825822408014,
+      "wind_blowing": 0.6037047728477607,
+      "brakes_squeaking": 0.21177123195163436,
+      "large_vehicle": 0.22381319108405134,
+      "cutlery and dishes": 0.4859635176972647,
+      "metro approaching": 0.07711567047947075,
+      "metro leaving": 0.03669003703023021
+    },
+    "files": 49,
+    "segments": 11418,
+    "classes": [
+      "birds_singing",
+      "car",
+      "people talking",
+      "footsteps",
+      "children voices",
+      "wind_blowing",
+      "brakes_squeaking",
+      "large_vehicle",
+      "cutlery and dishes",
+      "metro approaching",
+      "metro leaving"
+    ],
+    "positive_segments": {
+      "birds_singing": 1472,
+      "car": 3513,
+      "people talking": 5703,
+      "footsteps": 1444,
+      "children voices": 183,
+      "wind_blowing": 141,
+      "brakes_squeaking": 110,
+      "large_vehicle": 689,
+      "cutlery and dishes": 170,
+      "metro approaching": 452,
+      "metro leaving": 299
+    },
+    "protocol": {
+      "segment_length": 1.0,
+      "max_fpr": 0.1,
+      "soft_label_threshold": ">0.5",
+      "aggregation": "duration-weighted mean per 1s segment; staircase pAUC divided by max_fpr; macro average"
+    },
+    "source": "https://github.com/DCASE-REPO/DESED_task/blob/master/recipes/dcase2024_task4_baseline/local/sed_trainer_pretrained.py",
+    "independent_sklearn_check": "passed",
+    "comparability": "All 49 development recordings; not official validation split or private evaluation; not confirmed COSED split."
+  }
+}

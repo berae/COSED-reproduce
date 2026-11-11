@@ -1,0 +1,306 @@
+{
+  "clip_id": "160571",
+  "labels": [
+    "A door closes.",
+    "A child is speaking.",
+    "People talking indistinctly.",
+    "A person is knocking."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/160571.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 10.32053256034851,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          0.45,
+          "A door closes."
+        ],
+        [
+          2.67,
+          3.08,
+          "A child is speaking."
+        ],
+        [
+          5.9,
+          6.4,
+          "People talking indistinctly."
+        ],
+        [
+          4.0,
+          4.2,
+          "A person is knocking."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-91f47a672bba7a80",
+            "object": "chat.completion",
+            "created": 1792809848,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 0.450\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 2.670,\n      \"end\": 3.080\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 5.900,\n      \"end\": 6.400\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 4.000,\n      \"end\": 4.200\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 305,
+              "total_tokens": 455,
+              "completion_tokens": 150,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 5.749300956726074,
+      "status": "complete",
+      "events": [
+        [
+          8.574,
+          9.614,
+          "A door closes."
+        ],
+        [
+          0.0,
+          10.0,
+          "People talking indistinctly."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-ab4dba10d6584042",
+            "object": "chat.completion",
+            "created": 1792809858,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 8.574,\n      \"end\": 9.614\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 305,
+              "total_tokens": 388,
+              "completion_tokens": 83,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 10.0,
+      "seconds": 3.3707005977630615,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          10.0,
+          "People talking indistinctly."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-abc1a5458d6037f1",
+            "object": "chat.completion",
+            "created": 1792809864,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 305,
+              "total_tokens": 354,
+              "completion_tokens": 49,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 240000,
+      "start": 15.0,
+      "duration": 6.06625,
+      "seconds": 7.281602621078491,
+      "status": "complete",
+      "events": [
+        [
+          5.47,
+          5.89,
+          "A door closes."
+        ],
+        [
+          4.52,
+          5.02,
+          "A child is speaking."
+        ],
+        [
+          0.0,
+          6.066,
+          "People talking indistinctly."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-bb374a529672daf3",
+            "object": "chat.completion",
+            "created": 1792809867,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 5.47,\n      \"end\": 5.89\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 4.52,\n      \"end\": 5.02\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.0,\n      \"end\": 6.066\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 252,
+              "total_tokens": 362,
+              "completion_tokens": 110,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      2.67,
+      3.08,
+      "A child is speaking."
+    ],
+    [
+      19.52,
+      20.02,
+      "A child is speaking."
+    ],
+    [
+      0.0,
+      0.45,
+      "A door closes."
+    ],
+    [
+      13.574,
+      14.614,
+      "A door closes."
+    ],
+    [
+      20.47,
+      20.89,
+      "A door closes."
+    ],
+    [
+      4.0,
+      4.2,
+      "A person is knocking."
+    ],
+    [
+      5.0,
+      21.066,
+      "People talking indistinctly."
+    ]
+  ],
+  "duration": 21.06625,
+  "inference_seconds": 26.722136735916138
+}

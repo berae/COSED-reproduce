@@ -1,0 +1,144 @@
+{
+  "clip_id": "vtfwmLelXDM_26_36",
+  "labels": [
+    "Alarm_bell_ringing",
+    "Blender",
+    "Cat",
+    "Dishes",
+    "Dog",
+    "Electric_shaver_toothbrush",
+    "Frying",
+    "Running_water",
+    "Speech",
+    "Vacuum_cleaner"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/desed/data/4560759/audio/eval/public/vtfwmLelXDM_26_36.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 16.86255979537964,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          1.5,
+          "Cat"
+        ],
+        [
+          1.5,
+          2.2,
+          "Speech"
+        ],
+        [
+          3.0,
+          4.0,
+          "Cat"
+        ],
+        [
+          4.5,
+          5.2,
+          "Speech"
+        ],
+        [
+          5.7,
+          6.5,
+          "Cat"
+        ],
+        [
+          7.0,
+          7.7,
+          "Speech"
+        ],
+        [
+          8.0,
+          9.0,
+          "Cat"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a7595e2dd2b011e6",
+            "object": "chat.completion",
+            "created": 1792741313,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 1.500\n    },\n    {\n      \"query_id\": 8,\n      \"start\": 1.500,\n      \"end\": 2.200\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 3.000,\n      \"end\": 4.000\n    },\n    {\n      \"query_id\": 8,\n      \"start\": 4.500,\n      \"end\": 5.200\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 5.700,\n      \"end\": 6.500\n    },\n    {\n      \"query_id\": 8,\n      \"start\": 7.000,\n      \"end\": 7.700\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 8.000,\n      \"end\": 9.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 329,
+              "total_tokens": 581,
+              "completion_tokens": 252,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      1.5,
+      "Cat"
+    ],
+    [
+      3.0,
+      4.0,
+      "Cat"
+    ],
+    [
+      5.7,
+      6.5,
+      "Cat"
+    ],
+    [
+      8.0,
+      9.0,
+      "Cat"
+    ],
+    [
+      1.5,
+      2.2,
+      "Speech"
+    ],
+    [
+      4.5,
+      5.2,
+      "Speech"
+    ],
+    [
+      7.0,
+      7.7,
+      "Speech"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 16.86255979537964
+}

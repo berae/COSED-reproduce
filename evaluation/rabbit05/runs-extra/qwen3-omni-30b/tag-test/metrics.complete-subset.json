@@ -1,0 +1,103 @@
+{
+  "metric": "generated-span pooled intersection F1, NOT PSDS",
+  "dtc": 0.5,
+  "gtc": 0.5,
+  "result": [
+    {
+      "event": 0.6666666666666666,
+      "macro_average": 0.6666666666666666,
+      "micro_average": 0.6666666666666666
+    },
+    {
+      "event": 0.8107202680067002,
+      "macro_average": 0.8107202680067002,
+      "micro_average": 0.8107202680067002
+    },
+    {
+      "event": 0.5660818713450292,
+      "macro_average": 0.5660818713450292,
+      "micro_average": 0.5660818713450292
+    },
+    {
+      "event": {
+        "tps": 968.0,
+        "fps": 226.0,
+        "cts": 0.0,
+        "n_ref": 1710,
+        "t_ref": 4402.440688400011,
+        "n_ref_other": {},
+        "t_ref_other": {}
+      }
+    }
+  ],
+  "clip": {
+    "tp": 896,
+    "fp": 0,
+    "fn": 44,
+    "tn": 0,
+    "recall": 0.9531914893617022,
+    "precision": 1.0,
+    "f1": 0.9760348583877996,
+    "fpr": null,
+    "note": "Audio-class/query presence; repeated events collapsed; only supplied queries evaluated.",
+    "accuracy": 0.9531914893617022,
+    "exact_audio_accuracy": 0.9229024943310657,
+    "exact_audio_correct": 407,
+    "audio_count": 441,
+    "binary_map": null,
+    "binary_ap_by_class": {},
+    "ap_classes_without_positive": [],
+    "map_note": "Macro average of sklearn non-interpolated AP per class with positive GT; scores are binary 0/1 generated presence, not native confidence. No evaluable mAP for positive-only grounding queries. All equal-score predictions are tied, no arbitrary tie ordering."
+  },
+  "note": "Binary masks encode text-generated intervals; no model frame probabilities or confidence sweep.",
+  "coverage": {
+    "total": 483,
+    "scored": 441,
+    "excluded": 42,
+    "excluded_ids": [
+      "Yy3alb754Sis",
+      "Y28dSHMdwY_I",
+      "YeVlijsJw9kk",
+      "Y83u2vOHb52Y",
+      "Y4Ka46DJjDZk",
+      "Y-5IoPSM59xM",
+      "Y-AlpLvWoLKs",
+      "Y-pmqKob1EHs",
+      "Y-r7foRuzOuc",
+      "Y-zXeN78-kV4",
+      "Y0ojTL4MmXjQ",
+      "Y15AAiWCqBjQ",
+      "Y1Mc63idyMZA",
+      "Y1PMqP8xaMbk",
+      "Y1TIx22Pnt1Q",
+      "Y1UtX_r3nZp0",
+      "Y1pkbLB7AXWM",
+      "Y23mRMsHfek0",
+      "Y3CuX9yeuFus",
+      "Y5JImG_0y9WU",
+      "Y6ipK0W9CbK0",
+      "Y6ztIp4-w2NM",
+      "Y7Ay-gVQ4oSc",
+      "Y7h-wCrAdSNY",
+      "Y8SYX5jXLm3A",
+      "Y8VoiWkzvNQ4",
+      "Y8aDTJApiNrk",
+      "Y9wGJydlJvrk",
+      "YAgG_nhUurY4",
+      "YAlPTUAK6ero",
+      "YGFQnh84kNwU",
+      "YI_vN_BFUr0Y",
+      "YNDaVSIJaXVs",
+      "YRmXHbnsKe0g",
+      "YUW8czMvlmK4",
+      "YcnBAAZDhuVA",
+      "YlemaMeWsO1s",
+      "YpbiQmndSpoI",
+      "YqHDCNzaO208",
+      "YtIY7qOV3rEM",
+      "Yxx3yKzrSOBI",
+      "YyKTc37LvDKM"
+    ],
+    "policy": "Exclude incomplete audio entirely, including its successful windows; not a full-test-set score."
+  }
+}

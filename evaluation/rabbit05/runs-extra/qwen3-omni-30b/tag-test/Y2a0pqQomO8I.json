@@ -1,0 +1,86 @@
+{
+  "clip_id": "Y2a0pqQomO8I",
+  "labels": [
+    "more honking",
+    "train horn honking"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y2a0pqQomO8I.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 5.353262662887573,
+      "status": "complete",
+      "events": [
+        [
+          7.289,
+          9.539,
+          "more honking"
+        ],
+        [
+          0.0,
+          1.469,
+          "train horn honking"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8d2620d85fdce583",
+            "object": "chat.completion",
+            "created": 1792779710,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 7.289,\n      \"end\": 9.539\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.0,\n      \"end\": 1.469\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 288,
+              "total_tokens": 368,
+              "completion_tokens": 80,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      7.289,
+      9.539,
+      "more honking"
+    ],
+    [
+      0.0,
+      1.469,
+      "train horn honking"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 5.353262662887573
+}

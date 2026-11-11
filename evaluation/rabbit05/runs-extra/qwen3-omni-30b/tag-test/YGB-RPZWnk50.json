@@ -1,0 +1,108 @@
+{
+  "clip_id": "YGB-RPZWnk50",
+  "labels": [
+    "the dog 's nails scratch a hard surface",
+    "a smaller dog woofs",
+    "he continues to bark softly",
+    "a buzz"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/YGB-RPZWnk50.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 9.695125,
+      "seconds": 9.402052402496338,
+      "status": "complete",
+      "events": [
+        [
+          4.87,
+          5.22,
+          "the dog 's nails scratch a hard surface"
+        ],
+        [
+          1.02,
+          1.42,
+          "a smaller dog woofs"
+        ],
+        [
+          5.82,
+          7.72,
+          "he continues to bark softly"
+        ],
+        [
+          3.72,
+          4.12,
+          "a buzz"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8c5dbcb38337e675",
+            "object": "chat.completion",
+            "created": 1792779817,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 4.87,\n      \"end\": 5.22\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 1.02,\n      \"end\": 1.42\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 5.82,\n      \"end\": 7.72\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 3.72,\n      \"end\": 4.12\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 302,
+              "total_tokens": 444,
+              "completion_tokens": 142,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      3.72,
+      4.12,
+      "a buzz"
+    ],
+    [
+      1.02,
+      1.42,
+      "a smaller dog woofs"
+    ],
+    [
+      5.82,
+      7.72,
+      "he continues to bark softly"
+    ],
+    [
+      4.87,
+      5.22,
+      "the dog 's nails scratch a hard surface"
+    ]
+  ],
+  "duration": 9.695125,
+  "inference_seconds": 9.402052402496338
+}

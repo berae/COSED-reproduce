@@ -1,0 +1,240 @@
+{
+  "clip_id": "soundscape_test_uniform471",
+  "labels": [
+    "air_conditioner",
+    "car_horn",
+    "children_playing",
+    "dog_bark",
+    "drilling",
+    "engine_idling",
+    "gun_shot",
+    "jackhammer",
+    "siren",
+    "street_music"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/urbansed/data/1324404/URBAN-SED_v2.0.0/audio/test/soundscape_test_uniform471.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 29.764176845550537,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          0.4,
+          "gun_shot"
+        ],
+        [
+          0.6,
+          1.0,
+          "gun_shot"
+        ],
+        [
+          4.0,
+          6.0,
+          "jackhammer"
+        ],
+        [
+          5.0,
+          5.4,
+          "car_horn"
+        ],
+        [
+          5.0,
+          5.4,
+          "children_playing"
+        ],
+        [
+          5.6,
+          6.0,
+          "children_playing"
+        ],
+        [
+          6.2,
+          6.6,
+          "children_playing"
+        ],
+        [
+          6.8,
+          7.2,
+          "children_playing"
+        ],
+        [
+          7.4,
+          7.8,
+          "children_playing"
+        ],
+        [
+          8.0,
+          8.4,
+          "children_playing"
+        ],
+        [
+          8.6,
+          9.0,
+          "children_playing"
+        ],
+        [
+          9.2,
+          9.6,
+          "children_playing"
+        ],
+        [
+          9.8,
+          10.0,
+          "children_playing"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b18bf3cb82e16f1d",
+            "object": "chat.completion",
+            "created": 1792773358,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 6,\n      \"start\": 0.000,\n      \"end\": 0.400\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 0.600,\n      \"end\": 1.000\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 4.000,\n      \"end\": 6.000\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 5.000,\n      \"end\": 5.400\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 5.000,\n      \"end\": 5.400\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 5.600,\n      \"end\": 6.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 6.200,\n      \"end\": 6.600\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 6.800,\n      \"end\": 7.200\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 7.400,\n      \"end\": 7.800\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 8.000,\n      \"end\": 8.400\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 8.600,\n      \"end\": 9.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 9.200,\n      \"end\": 9.600\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 9.800,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 328,
+              "total_tokens": 785,
+              "completion_tokens": 457,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 5.0000625,
+      "seconds": 5.391966342926025,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          2.88,
+          "jackhammer"
+        ],
+        [
+          1.88,
+          5.0,
+          "children_playing"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b6b1ef6c67aaf442",
+            "object": "chat.completion",
+            "created": 1792773388,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 7,\n      \"start\": 0.000,\n      \"end\": 2.880\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 1.880,\n      \"end\": 5.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 262,
+              "total_tokens": 344,
+              "completion_tokens": 82,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      5.0,
+      5.4,
+      "car_horn"
+    ],
+    [
+      5.0,
+      5.4,
+      "children_playing"
+    ],
+    [
+      5.6,
+      6.0,
+      "children_playing"
+    ],
+    [
+      6.2,
+      6.6,
+      "children_playing"
+    ],
+    [
+      6.8,
+      10.0,
+      "children_playing"
+    ],
+    [
+      0.0,
+      0.4,
+      "gun_shot"
+    ],
+    [
+      0.6,
+      1.0,
+      "gun_shot"
+    ],
+    [
+      4.0,
+      7.88,
+      "jackhammer"
+    ]
+  ],
+  "duration": 10.0000625,
+  "inference_seconds": 35.15614318847656
+}

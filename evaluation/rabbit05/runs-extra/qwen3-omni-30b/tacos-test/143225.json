@@ -1,0 +1,234 @@
+{
+  "clip_id": "143225",
+  "labels": [
+    "A baby is trying to talk.",
+    "A person coughing indoors.",
+    "Someone clearing their throat indoors."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/143225.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 5.468545198440552,
+      "status": "complete",
+      "events": [
+        [
+          0.348,
+          1.578,
+          "A baby is trying to talk."
+        ],
+        [
+          8.968,
+          9.718,
+          "A person coughing indoors."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8fdeeb44d7ea487d",
+            "object": "chat.completion",
+            "created": 1792787886,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.348,\n      \"end\": 1.578\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 8.968,\n      \"end\": 9.718\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 301,
+              "total_tokens": 383,
+              "completion_tokens": 82,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 5.19044041633606,
+      "status": "complete",
+      "events": [
+        [
+          3.87,
+          4.69,
+          "A person coughing indoors."
+        ],
+        [
+          7.51,
+          8.01,
+          "Someone clearing their throat indoors."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b940b4c07c3b5cb2",
+            "object": "chat.completion",
+            "created": 1792787892,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 1,\n      \"start\": 3.87,\n      \"end\": 4.69\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 7.51,\n      \"end\": 8.01\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 301,
+              "total_tokens": 379,
+              "completion_tokens": 78,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 7.2165,
+      "seconds": 7.653079986572266,
+      "status": "complete",
+      "events": [
+        [
+          5.483,
+          6.913,
+          "A baby is trying to talk."
+        ],
+        [
+          2.573,
+          3.123,
+          "A person coughing indoors."
+        ],
+        [
+          5.483,
+          6.913,
+          "Someone clearing their throat indoors."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a4b3973dbb88aed3",
+            "object": "chat.completion",
+            "created": 1792787897,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 5.483,\n      \"end\": 6.913\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 2.573,\n      \"end\": 3.123\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 5.483,\n      \"end\": 6.913\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 263,
+              "total_tokens": 379,
+              "completion_tokens": 116,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.348,
+      1.578,
+      "A baby is trying to talk."
+    ],
+    [
+      15.483,
+      16.913,
+      "A baby is trying to talk."
+    ],
+    [
+      8.870000000000001,
+      9.718,
+      "A person coughing indoors."
+    ],
+    [
+      12.573,
+      13.123000000000001,
+      "A person coughing indoors."
+    ],
+    [
+      12.51,
+      13.01,
+      "Someone clearing their throat indoors."
+    ],
+    [
+      15.483,
+      16.913,
+      "Someone clearing their throat indoors."
+    ]
+  ],
+  "duration": 17.2165,
+  "inference_seconds": 18.312065601348877
+}

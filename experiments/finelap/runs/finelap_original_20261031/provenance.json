@@ -1,0 +1,169 @@
+{
+  "mixture": {
+    "sources": {
+      "audiocaps": {
+        "input": 49062,
+        "kept": 49062
+      },
+      "clotho": {
+        "input": 3839,
+        "kept": 3839
+      },
+      "finelap100k": {
+        "input": 100000,
+        "kept": 100000
+      },
+      "audioset_strong": {
+        "input": 91974,
+        "kept": 91974
+      },
+      "desed_strong": {
+        "input": 3398,
+        "kept": 3398
+      },
+      "urbansed": {
+        "input": 8000,
+        "kept": 8000
+      },
+      "wavcaps_freesound": {
+        "input": 258310,
+        "kept": 257866,
+        "invalid_audio": 444
+      },
+      "wavcaps_bbc_sound_effects": {
+        "input": 31201,
+        "kept": 31200,
+        "invalid_audio": 1
+      },
+      "wavcaps_soundbible": {
+        "input": 1232,
+        "kept": 1232
+      },
+      "audiosetcaps_weak": {
+        "input": 1776405,
+        "kept": 1776405
+      }
+    },
+    "source_order": [
+      "audioset_strong",
+      "desed_strong",
+      "audiocaps",
+      "clotho",
+      "wavcaps_freesound",
+      "wavcaps_bbc_sound_effects",
+      "wavcaps_soundbible",
+      "finelap100k",
+      "audiosetcaps_weak",
+      "urbansed"
+    ],
+    "total": 2322976,
+    "repeat_factors": {
+      "audioset_strong": 1,
+      "desed_strong": 1,
+      "audiocaps": 1,
+      "clotho": 1,
+      "wavcaps_freesound": 1,
+      "wavcaps_bbc_sound_effects": 1,
+      "wavcaps_soundbible": 1,
+      "finelap100k": 1,
+      "audiosetcaps_weak": 1,
+      "urbansed": 1
+    },
+    "metadata_sha256": {
+      "audioset_strong": "0932375b8b1687f6a3a351bb6492ed1f95b3de5e9e17d0777105af83e4b39a77",
+      "desed_strong": "74b8b605a564409c0f9fa3110d68af33b067d4f14bba770e49bda5db0d97f250",
+      "audiocaps": "8d3641caf9df6d2a8f5927ee7779d8f5f67726fc1bd15b5882e97262c595400b",
+      "clotho": "5958c076bb3265575fa834e051a89b484dfe62b8c6e2eb7f0625ea97471f0fa6",
+      "wavcaps_freesound": "79316c49778c12d82f306670fe7821e4976044f7343e2eb7e38e54443425d6c0",
+      "wavcaps_bbc_sound_effects": "2a630dd3176d5e4c7f1ff000dc632dcf08a50118d18a1106d77e039a3c0e2bd3",
+      "wavcaps_soundbible": "e4190f6ad6295de5e8acadb17cd4421c5066a9cae46ebdac29bd6fa47fbb2169",
+      "finelap100k": "d5b29b1cf17f792b4a73ea6bfa12e0665f984720bbad8622ec3a59b3bc55d54d",
+      "audiosetcaps_weak": "e34fd8ea1095173ca5bf479a762a10e19996a211ed243c615197e5ad8f3e130a",
+      "urbansed": "54f717f1f8018d20e668abc13d4c4a80ec8153cd27455609816427185886ed1e"
+    },
+    "rejection_counts": {
+      "audioset_strong:no_WavCaps_caption": 10746,
+      "desed_strong:heldout_video": 65,
+      "desed_strong:missing_audio": 7,
+      "FreeSound:official_eval_blacklist": 3990,
+      "wavcaps_freesound:invalid audio header/duration": 444,
+      "wavcaps_bbc_sound_effects:invalid audio header/duration": 1,
+      "audiosetcaps_weak:strong_human_overlap_or_official_eval_blacklist": 132325
+    },
+    "unknown_phrases": {},
+    "differences": [
+      "Exact author *_em_filtered JSONLs are unpublished; reconstructed public sources",
+      "UrbanSED train+validate=8000 inferred from paper count; deterministic event-list captions reconstructed",
+      "DESED captions use WavCaps then AudioSetCaps, original author caption source unavailable",
+      "AudioSet weak rows exclude duplicated strong/human AudioCaps clips and official WavCaps eval blacklists; exact author filtering unknown",
+      "Original first10s/16kHz/phrase-bank/SpecAugment retained; soundfile backend and fail-fast I/O",
+      "New audio checked by headers, not exhaustive full decoding; previous decoded sources reused",
+      "Activation recomputation for memory; actual global batch512, FP32, no gradient accumulation"
+    ],
+    "completed": true
+  },
+  "memory_probe": {
+    "wrapped_blocks": 26,
+    "reference_losses": [
+      9.830085754394531,
+      1.073959231376648,
+      0.0
+    ],
+    "checkpointed_losses": [
+      9.830085754394531,
+      1.073959231376648,
+      0.0
+    ],
+    "gradient_max_error": 0.0,
+    "gradient_equivalence_passed": true,
+    "batch_per_gpu": 128,
+    "precision": "fp32",
+    "strong_samples": 16,
+    "success": true,
+    "seconds": 8.660752773284912,
+    "peak_gib": 12.742109775543213,
+    "initializer_sha256": {
+      "weights/EAT-base_epoch30_ft.pt": "0dbef5f1214ed92c7ae670501c183b0c109f6c1ce7dcadc16da2044478da4b11",
+      "weights/roberta-base/model.safetensors": "5bde1d28afb363d0103324efeb5afc8b2b397fe5e04beabb9b1ef355255ade81",
+      "weights/roberta-base/merges.txt": "1ce1664773c50f3e0cc8842619a93edc4624525b728b188a9e0be33b7726adc5",
+      "weights/roberta-base/tokenizer.json": "847bbeab6174d66a88898f729d52fa8d355fafe1bea101cf960dd404581df70e",
+      "weights/roberta-base/pytorch_model.bin": "278b7a95739c4392fae9b818bb5343dde20be1b89318f37a6d939e1e1b9e461b",
+      "weights/roberta-base/config.json": "ef0185e2aae6e06c5f105a285006952c340e20c7dbf43c86ec82601b13fc45e9",
+      "weights/roberta-base/vocab.json": "9e7f63c2d15d666b52e21d250d2e513b87c9b713cfa6987a82ed89e5e6e50655",
+      "weights/roberta-base/tokenizer_config.json": "994f46754c5bf4014f1aa92d34b1374319c3a6b3f702105cd5b742beaecd18ce"
+    },
+    "packages": {
+      "torch": "2.4.1+cu121",
+      "torchaudio": "2.4.1+cu121",
+      "transformers": "4.57.6",
+      "soundfile": "0.13.1"
+    }
+  },
+  "git_commit": "ad82bc1e242de4f56b80cf36f6d9f3009bb96c7b",
+  "source_sha256": {
+    "train.py": "b5bd60b9cd951c98a8045b540dee4c85210843e62ae58b3cf9279b5d3bd0556e",
+    "scripts/train_cosed.py": "ea9d8fb45bab482e5b00de149cd4439745ca2cccdb4aaf383d8636b21cdacf25",
+    "utils/prepare_cosed_data.py": "ce1cca274ddf5acb5b66da72add7acb4b766ae82a214918a8582122b40765aa4",
+    "models/finelap.py": "2e9f8600356badc2775d27f24255149f825ca5e1c2de43e3dd9ef2621aefa32e",
+    "models/losses.py": "b05861f84aa88b62fc129a626804df2f9428f12e5e2841293cd6062552287224",
+    "models/audio_encoder.py": "f5c66384dbba0f8c8b4727a77fb3a6c961f131176a893e7cc7dd554f608cf6b8",
+    "models/text_encoder.py": "eedd12cefb0271023258162f76716cc721a7926f74883094affc7007232e3168",
+    "data_handling/mix_dataset.py": "41875f65403c0f14819bd9b8b691e3d63e063d9e226134627b7c5122a144647a",
+    "models/feature_extractor.py": "ce22c3505a455ce9aae4764c94d9eff602468f9cb0dec366b7f2a86ffaf45a2c",
+    "config/finelap_original.yaml": "970525f4637e2c5e7bdaaf929121ee3b3bde4a2c04a78ad69d63dd582d57880d",
+    "config/data_config/data_original.yaml": "9cf5c94e446d5fbe21108923e773f0e16e652c7c9750e3225f79327df004c8b5",
+    "data/phrase_bank_new_with_FSDLabel_UrbanSED.jsonl": "1e9558adfabbd1fc7edb41419360d6bb08db537b5ad4b2b0382bdae82237111c"
+  },
+  "actual_global_batch": 512,
+  "gradient_accumulation": false,
+  "precision": "fp32",
+  "gpus": [
+    "0",
+    "1",
+    "2",
+    "3"
+  ],
+  "recipe": "public scripts/train.sh; paper batch1024 is intentionally not used per user decision",
+  "initial_weights": "EAT + RoBERTa; no FineLAP checkpoint",
+  "epochs": 10
+}

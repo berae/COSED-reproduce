@@ -1,0 +1,73 @@
+data_args:
+  basic_data_args:
+    max_length: 10
+    return_type: mel
+    sample_rate: 16000
+    time_resolution: 0.15625
+  train_data_args:
+    audio_backend: soundfile
+    batch_size: 128
+    max_chosen_segments: 1
+    max_phrases: 20
+    max_split_segments: 1
+    metadata_files:
+    - /work/zhanghc/Myllm/FineLAP/exps/finelap_original_20261031/preflight/metadata.jsonl
+    num_workers: 4
+    random_crop: false
+    spec_aug: true
+    strict_audio: true
+    warn_unknown_phrases: false
+dist_args:
+  dist_backend: nccl
+  dist_url: env://
+  distributed: true
+  gpu: 0
+  rank: 0
+  world_size: 4
+model_args:
+  audio_encoder_args:
+    audio_encoder_ckpt: ./weights/EAT-base_epoch30_ft.pt
+    type: eat
+  b_global: -10
+  b_local: -10
+  ckpt_path: ''
+  embed_size: 1024
+  local_audio_proj_type: transformer
+  normalize_dense_audio_embeds: true
+  temp_global: 0.1
+  temp_local: 0.1
+  text_encoder_args:
+    text_encoder_ckpt: ./weights/roberta-base
+    type: roberta-base
+  unify_audio_proj: false
+optim_args:
+  betas:
+  - 0.9
+  - 0.999
+  eps: 1e-08
+  lr: 5e-05
+  momentum: 0.9
+  optimizer_name: adam
+  warmup_epochs: 2
+  warmup_steps: 1000
+training:
+  activation_checkpointing: true
+  alpha: 1.0
+  beta: 1.0
+  clip_grad: 2
+  device: cuda
+  dist_impl: gather
+  dropout: 0.2
+  epochs: 1
+  freeze_audio_adapter: false
+  freeze_audio_encoder: false
+  freeze_audio_proj: false
+  freeze_text_encoder: false
+  freeze_text_proj: false
+  gamma: 1
+  loss_type:
+  - sigmoid
+  - grounding
+  max_steps: 3
+  precision: fp32
+  seed: 31415926

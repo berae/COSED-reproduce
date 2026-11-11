@@ -1,0 +1,194 @@
+/work/zhanghc/miniconda3/envs/finelapt/lib/python3.9/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/work/zhanghc/miniconda3/envs/finelapt/lib/python3.9/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/work/zhanghc/miniconda3/envs/finelapt/lib/python3.9/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/work/zhanghc/miniconda3/envs/finelapt/lib/python3.9/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+READY {'sources': [102825, 100000, 49062, 9905, 3839], 'val_files': 16904, 'params': 210845956, 'batch': 1024, 'micro': 8, 'world': 4}
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/work/zhanghc/Myllm/COSED/train.py", line 190, in <module>
+[rank0]:     if __name__=='__main__':main()
+[rank0]:   File "/work/zhanghc/Myllm/COSED/train.py", line 168, in main
+[rank0]:     loss,gn=update(m,opt,rows,ds,rank,world,step,a.micro,a.seed)
+[rank0]:   File "/work/zhanghc/Myllm/COSED/train.py", line 79, in update
+[rank0]:     spec=augment(spec,rng)
+[rank0]:   File "/work/zhanghc/Myllm/COSED/train.py", line 38, in augment
+[rank0]:     spec=(spec-mean)/std*(std*w+std.roll(1,0)*(1-w))+mean*w+mean.roll(1,0)*(1-w)
+[rank0]: RuntimeError: The size of tensor a (1001) must match the size of tensor b (64) at non-singleton dimension 3
+[rank2]: Traceback (most recent call last):
+[rank2]:   File "/work/zhanghc/Myllm/COSED/train.py", line 190, in <module>
+[rank2]:     if __name__=='__main__':main()
+[rank2]:   File "/work/zhanghc/Myllm/COSED/train.py", line 168, in main
+[rank2]:     loss,gn=update(m,opt,rows,ds,rank,world,step,a.micro,a.seed)
+[rank2]:   File "/work/zhanghc/Myllm/COSED/train.py", line 79, in update
+[rank2]:     spec=augment(spec,rng)
+[rank2]:   File "/work/zhanghc/Myllm/COSED/train.py", line 38, in augment
+[rank2]:     spec=(spec-mean)/std*(std*w+std.roll(1,0)*(1-w))+mean*w+mean.roll(1,0)*(1-w)
+[rank2]: RuntimeError: The size of tensor a (1001) must match the size of tensor b (64) at non-singleton dimension 3
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/work/zhanghc/Myllm/COSED/train.py", line 190, in <module>
+[rank1]:     if __name__=='__main__':main()
+[rank1]:   File "/work/zhanghc/Myllm/COSED/train.py", line 168, in main
+[rank1]:     loss,gn=update(m,opt,rows,ds,rank,world,step,a.micro,a.seed)
+[rank1]:   File "/work/zhanghc/Myllm/COSED/train.py", line 79, in update
+[rank1]:     spec=augment(spec,rng)
+[rank1]:   File "/work/zhanghc/Myllm/COSED/train.py", line 38, in augment
+[rank1]:     spec=(spec-mean)/std*(std*w+std.roll(1,0)*(1-w))+mean*w+mean.roll(1,0)*(1-w)
+[rank1]: RuntimeError: The size of tensor a (1001) must match the size of tensor b (64) at non-singleton dimension 3
+[rank3]: Traceback (most recent call last):
+[rank3]:   File "/work/zhanghc/Myllm/COSED/train.py", line 190, in <module>
+[rank3]:     if __name__=='__main__':main()
+[rank3]:   File "/work/zhanghc/Myllm/COSED/train.py", line 168, in main
+[rank3]:     loss,gn=update(m,opt,rows,ds,rank,world,step,a.micro,a.seed)
+[rank3]:   File "/work/zhanghc/Myllm/COSED/train.py", line 79, in update
+[rank3]:     spec=augment(spec,rng)
+[rank3]:   File "/work/zhanghc/Myllm/COSED/train.py", line 38, in augment
+[rank3]:     spec=(spec-mean)/std*(std*w+std.roll(1,0)*(1-w))+mean*w+mean.roll(1,0)*(1-w)
+[rank3]: RuntimeError: The size of tensor a (1001) must match the size of tensor b (64) at non-singleton dimension 3
+[rank0]:[W1104 10:44:22.680679242 ProcessGroupNCCL.cpp:1168] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+W1104 10:44:22.564703 140257321824896 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 2127424 closing signal SIGTERM
+W1104 10:44:22.565575 140257321824896 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 2127425 closing signal SIGTERM
+W1104 10:44:22.565869 140257321824896 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 2127426 closing signal SIGTERM
+E1104 10:44:22.743387 140257321824896 torch/distributed/elastic/multiprocessing/api.py:833] failed (exitcode: 1) local_rank: 0 (pid: 2127423) of binary: /work/zhanghc/miniconda3/envs/finelapt/bin/python
+Traceback (most recent call last):
+  File "/work/zhanghc/miniconda3/envs/finelapt/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/work/zhanghc/miniconda3/envs/finelapt/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/work/zhanghc/miniconda3/envs/finelapt/lib/python3.9/site-packages/torch/distributed/run.py", line 905, in <module>
+    main()
+  File "/work/zhanghc/miniconda3/envs/finelapt/lib/python3.9/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 348, in wrapper
+    return f(*args, **kwargs)
+  File "/work/zhanghc/miniconda3/envs/finelapt/lib/python3.9/site-packages/torch/distributed/run.py", line 901, in main
+    run(args)
+  File "/work/zhanghc/miniconda3/envs/finelapt/lib/python3.9/site-packages/torch/distributed/run.py", line 892, in run
+    elastic_launch(
+  File "/work/zhanghc/miniconda3/envs/finelapt/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 133, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/work/zhanghc/miniconda3/envs/finelapt/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 264, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+train.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-11-04_10:44:22
+  host      : rabbit02
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 2127423)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+/work/zhanghc/miniconda3/envs/finelapt/lib/python3.9/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/work/zhanghc/miniconda3/envs/finelapt/lib/python3.9/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/work/zhanghc/miniconda3/envs/finelapt/lib/python3.9/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/work/zhanghc/miniconda3/envs/finelapt/lib/python3.9/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+READY {'sources': [102825, 100000, 49062, 9905, 3839], 'val_files': 16904, 'params': 210845956, 'batch': 1024, 'micro': 8, 'world': 4}
+/work/zhanghc/miniconda3/envs/finelapt/lib/python3.9/site-packages/torch/utils/checkpoint.py:1399: FutureWarning: `torch.cpu.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cpu', args...)` instead.
+  with device_autocast_ctx, torch.cpu.amp.autocast(**cpu_autocast_kwargs), recompute_context:  # type: ignore[attr-defined]
+/work/zhanghc/miniconda3/envs/finelapt/lib/python3.9/site-packages/torch/utils/checkpoint.py:1399: FutureWarning: `torch.cpu.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cpu', args...)` instead.
+  with device_autocast_ctx, torch.cpu.amp.autocast(**cpu_autocast_kwargs), recompute_context:  # type: ignore[attr-defined]
+/work/zhanghc/miniconda3/envs/finelapt/lib/python3.9/site-packages/torch/utils/checkpoint.py:1399: FutureWarning: `torch.cpu.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cpu', args...)` instead.
+  with device_autocast_ctx, torch.cpu.amp.autocast(**cpu_autocast_kwargs), recompute_context:  # type: ignore[attr-defined]
+/work/zhanghc/miniconda3/envs/finelapt/lib/python3.9/site-packages/torch/utils/checkpoint.py:1399: FutureWarning: `torch.cpu.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cpu', args...)` instead.
+  with device_autocast_ctx, torch.cpu.amp.autocast(**cpu_autocast_kwargs), recompute_context:  # type: ignore[attr-defined]
+{'stage': 'training', 'epoch': 1, 'step': 1, 'loss': 0.18530304729938507, 'grad_norm': 0.014446490444242954, 'updated': 1793760356.6768165}
+{'stage': 'training', 'epoch': 1, 'step': 2, 'loss': 0.19062314927577972, 'grad_norm': 0.014947298914194107, 'updated': 1793760388.5751288}
+/work/zhanghc/miniconda3/envs/finelapt/lib/python3.9/site-packages/dcase_util/utils/utils.py:12: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/work/zhanghc/miniconda3/envs/finelapt/lib/python3.9/site-packages/torch/nn/modules/rnn.py:1139: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greatly increasing memory usage. To compact weights again call flatten_parameters(). (Triggered internally at ../aten/src/ATen/native/cudnn/RNN.cpp:1424.)
+  result = _VF.gru(input, hx, self._flat_weights, self.bias, self.num_layers,
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/work/zhanghc/Myllm/COSED/train.py", line 192, in <module>
+[rank0]:     if __name__=='__main__':main()
+[rank0]:   File "/work/zhanghc/Myllm/COSED/train.py", line 179, in main
+[rank0]:     metrics=validate(ema,val,a.val_limit)
+[rank0]:   File "/work/zhanghc/miniconda3/envs/finelapt/lib/python3.9/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+[rank0]:     return func(*args, **kwargs)
+[rank0]:   File "/work/zhanghc/Myllm/COSED/train.py", line 134, in validate
+[rank0]:     value=psds(scores,gts,dur,dtc_threshold=.7,gtc_threshold=.7,cttc_threshold=None,alpha_ct=0,alpha_st=1,max_efpr=100,num_jobs=1)[0]
+[rank0]:   File "/work/zhanghc/Myllm/FineLAP/dependencies/scoring/sed_scores_eval/intersection_based/psds.py", line 98, in psds
+[rank0]:     (effective_tp_rate, effective_fp_rate), single_class_psd_rocs = psd_roc(
+[rank0]:   File "/work/zhanghc/Myllm/FineLAP/dependencies/scoring/sed_scores_eval/intersection_based/psds.py", line 195, in psd_roc
+[rank0]:     intermediate_statistics, audio_ids = accumulated_intermediate_statistics(
+[rank0]:   File "/work/zhanghc/Myllm/FineLAP/dependencies/scoring/sed_scores_eval/intersection_based/intermediate_statistics.py", line 168, in accumulated_intermediate_statistics
+[rank0]:     scores, ground_truth, audio_ids = parse_inputs(scores, ground_truth)
+[rank0]:   File "/work/zhanghc/Myllm/FineLAP/dependencies/scoring/sed_scores_eval/base_modules/io.py", line 35, in parse_inputs
+[rank0]:     ground_truth = parse_ground_truth(ground_truth, tagging=tagging, audio_ids=audio_ids)
+[rank0]:   File "/work/zhanghc/Myllm/FineLAP/dependencies/scoring/sed_scores_eval/base_modules/io.py", line 68, in parse_ground_truth
+[rank0]:     assert_non_connected_events(ground_truth)
+[rank0]:   File "/work/zhanghc/Myllm/FineLAP/dependencies/scoring/sed_scores_eval/base_modules/io.py", line 90, in assert_non_connected_events
+[rank0]:     assert event[0] > current_offset, f'Connected/overlapping {event[2]} events found for clip {clip_id}: {class_events}'
+[rank0]: AssertionError: Connected/overlapping Traffic noise, roadway noise events found for clip NDovY5OEt2o_30000: [(0, 10.0, 'Traffic noise, roadway noise'), (0, 10.0, 'Traffic noise, roadway noise')]
+[rank0]:[W1104 10:46:37.727083504 ProcessGroupNCCL.cpp:1168] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+W1104 10:46:38.032150 140087210787456 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 2131370 closing signal SIGTERM
+W1104 10:46:38.033080 140087210787456 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 2131371 closing signal SIGTERM
+W1104 10:46:38.033433 140087210787456 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 2131372 closing signal SIGTERM
+E1104 10:46:38.361365 140087210787456 torch/distributed/elastic/multiprocessing/api.py:833] failed (exitcode: 1) local_rank: 0 (pid: 2131369) of binary: /work/zhanghc/miniconda3/envs/finelapt/bin/python
+Traceback (most recent call last):
+  File "/work/zhanghc/miniconda3/envs/finelapt/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/work/zhanghc/miniconda3/envs/finelapt/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/work/zhanghc/miniconda3/envs/finelapt/lib/python3.9/site-packages/torch/distributed/run.py", line 905, in <module>
+    main()
+  File "/work/zhanghc/miniconda3/envs/finelapt/lib/python3.9/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 348, in wrapper
+    return f(*args, **kwargs)
+  File "/work/zhanghc/miniconda3/envs/finelapt/lib/python3.9/site-packages/torch/distributed/run.py", line 901, in main
+    run(args)
+  File "/work/zhanghc/miniconda3/envs/finelapt/lib/python3.9/site-packages/torch/distributed/run.py", line 892, in run
+    elastic_launch(
+  File "/work/zhanghc/miniconda3/envs/finelapt/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 133, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/work/zhanghc/miniconda3/envs/finelapt/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 264, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+train.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-11-04_10:46:38
+  host      : rabbit02
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 2131369)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+/work/zhanghc/miniconda3/envs/finelapt/lib/python3.9/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/work/zhanghc/miniconda3/envs/finelapt/lib/python3.9/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/work/zhanghc/miniconda3/envs/finelapt/lib/python3.9/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/work/zhanghc/miniconda3/envs/finelapt/lib/python3.9/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+READY {'sources': [102825, 100000, 49062, 9905, 3839], 'val_files': 16904, 'params': 210845956, 'batch': 1024, 'micro': 8, 'world': 4}
+/work/zhanghc/miniconda3/envs/finelapt/lib/python3.9/site-packages/torch/utils/checkpoint.py:1399: FutureWarning: `torch.cpu.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cpu', args...)` instead.
+  with device_autocast_ctx, torch.cpu.amp.autocast(**cpu_autocast_kwargs), recompute_context:  # type: ignore[attr-defined]
+/work/zhanghc/miniconda3/envs/finelapt/lib/python3.9/site-packages/torch/utils/checkpoint.py:1399: FutureWarning: `torch.cpu.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cpu', args...)` instead.
+  with device_autocast_ctx, torch.cpu.amp.autocast(**cpu_autocast_kwargs), recompute_context:  # type: ignore[attr-defined]
+/work/zhanghc/miniconda3/envs/finelapt/lib/python3.9/site-packages/torch/utils/checkpoint.py:1399: FutureWarning: `torch.cpu.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cpu', args...)` instead.
+  with device_autocast_ctx, torch.cpu.amp.autocast(**cpu_autocast_kwargs), recompute_context:  # type: ignore[attr-defined]
+/work/zhanghc/miniconda3/envs/finelapt/lib/python3.9/site-packages/torch/utils/checkpoint.py:1399: FutureWarning: `torch.cpu.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cpu', args...)` instead.
+  with device_autocast_ctx, torch.cpu.amp.autocast(**cpu_autocast_kwargs), recompute_context:  # type: ignore[attr-defined]
+{'stage': 'training', 'epoch': 1, 'step': 1, 'loss': 0.18530304729938507, 'grad_norm': 0.014446490444242954, 'updated': 1793760474.6871178}
+{'stage': 'training', 'epoch': 1, 'step': 2, 'loss': 0.19062314927577972, 'grad_norm': 0.014947298914194107, 'updated': 1793760481.9508328}
+/work/zhanghc/miniconda3/envs/finelapt/lib/python3.9/site-packages/dcase_util/utils/utils.py:12: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/work/zhanghc/miniconda3/envs/finelapt/lib/python3.9/site-packages/torch/nn/modules/rnn.py:1139: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greatly increasing memory usage. To compact weights again call flatten_parameters(). (Triggered internally at ../aten/src/ATen/native/cudnn/RNN.cpp:1424.)
+  result = _VF.gru(input, hx, self._flat_weights, self.bias, self.num_layers,
+VALIDATED {'psds1': 0.0, 'files': 64, 'classes': 114, 'subset': True}

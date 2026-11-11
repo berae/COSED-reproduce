@@ -1,0 +1,220 @@
+{
+  "clip_id": "YC0AY0FEhOxU",
+  "labels": [
+    "a cat screaming",
+    "plastic clacking",
+    "thumping several times",
+    "hissing",
+    "a woman briefly talks"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/YC0AY0FEhOxU.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 12.302860260009766,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          0.65,
+          "a cat screaming"
+        ],
+        [
+          2.47,
+          3.18,
+          "hissing"
+        ],
+        [
+          0.65,
+          1.9,
+          "a woman briefly talks"
+        ],
+        [
+          3.57,
+          4.0,
+          "plastic clacking"
+        ],
+        [
+          5.4,
+          5.7,
+          "thumping several times"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-990ccea50e9224d0",
+            "object": "chat.completion",
+            "created": 1792781963,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 0.650\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 2.470,\n      \"end\": 3.180\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 0.650,\n      \"end\": 1.900\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 3.570,\n      \"end\": 4.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 5.400,\n      \"end\": 5.700\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 306,
+              "total_tokens": 490,
+              "completion_tokens": 184,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 5.0006875,
+      "seconds": 11.319037437438965,
+      "status": "complete",
+      "events": [
+        [
+          2.67,
+          3.28,
+          "a cat screaming"
+        ],
+        [
+          0.0,
+          0.9,
+          "plastic clacking"
+        ],
+        [
+          1.22,
+          1.98,
+          "thumping several times"
+        ],
+        [
+          3.82,
+          4.22,
+          "hissing"
+        ],
+        [
+          4.22,
+          5.0006875,
+          "a woman briefly talks"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b42707164ea0e1d6",
+            "object": "chat.completion",
+            "created": 1792781976,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 2.67,\n      \"end\": 3.28\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.0,\n      \"end\": 0.9\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 1.22,\n      \"end\": 1.98\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 3.82,\n      \"end\": 4.22\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 4.22,\n      \"end\": 5.001\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 240,
+              "total_tokens": 413,
+              "completion_tokens": 173,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      0.65,
+      "a cat screaming"
+    ],
+    [
+      7.67,
+      8.28,
+      "a cat screaming"
+    ],
+    [
+      0.65,
+      1.9,
+      "a woman briefly talks"
+    ],
+    [
+      9.219999999999999,
+      10.0006875,
+      "a woman briefly talks"
+    ],
+    [
+      2.47,
+      3.18,
+      "hissing"
+    ],
+    [
+      8.82,
+      9.219999999999999,
+      "hissing"
+    ],
+    [
+      3.57,
+      4.0,
+      "plastic clacking"
+    ],
+    [
+      5.0,
+      5.9,
+      "plastic clacking"
+    ],
+    [
+      5.4,
+      5.7,
+      "thumping several times"
+    ],
+    [
+      6.22,
+      6.98,
+      "thumping several times"
+    ]
+  ],
+  "duration": 10.0006875,
+  "inference_seconds": 23.62189769744873
+}

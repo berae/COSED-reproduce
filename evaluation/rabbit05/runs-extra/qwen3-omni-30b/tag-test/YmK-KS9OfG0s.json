@@ -1,0 +1,97 @@
+{
+  "clip_id": "YmK-KS9OfG0s",
+  "labels": [
+    "humming",
+    "a cat meowing",
+    "a woman speaking"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/YmK-KS9OfG0s.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 7.975224494934082,
+      "status": "complete",
+      "events": [
+        [
+          0.978,
+          2.038,
+          "a cat meowing"
+        ],
+        [
+          2.548,
+          3.168,
+          "a woman speaking"
+        ],
+        [
+          8.198,
+          8.958,
+          "a woman speaking"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-90c7893baf99aa0e",
+            "object": "chat.completion",
+            "created": 1792779472,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 1,\n      \"start\": 0.978,\n      \"end\": 2.038\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 2.548,\n      \"end\": 3.168\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 8.198,\n      \"end\": 8.958\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 292,
+              "total_tokens": 408,
+              "completion_tokens": 116,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.978,
+      2.038,
+      "a cat meowing"
+    ],
+    [
+      2.548,
+      3.168,
+      "a woman speaking"
+    ],
+    [
+      8.198,
+      8.958,
+      "a woman speaking"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 7.975224494934082
+}

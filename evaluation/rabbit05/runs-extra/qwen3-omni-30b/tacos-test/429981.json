@@ -1,0 +1,343 @@
+{
+  "clip_id": "429981",
+  "labels": [
+    "A siren is heard approaching from a distance.",
+    "A child is crying.",
+    "People are talking.",
+    "People are talking in the distance.",
+    "A dog barks.",
+    "A whooshing sound."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/429981.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 10.005525827407837,
+      "status": "complete",
+      "events": [
+        [
+          1.678,
+          3.918,
+          "A siren is heard approaching from a distance."
+        ],
+        [
+          1.678,
+          3.918,
+          "A child is crying."
+        ],
+        [
+          0.0,
+          0.478,
+          "A dog barks."
+        ],
+        [
+          0.0,
+          10.0,
+          "A whooshing sound."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b10ea1dab17cb9c3",
+            "object": "chat.completion",
+            "created": 1792799140,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 1.678,\n      \"end\": 3.918\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 1.678,\n      \"end\": 3.918\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 0.000,\n      \"end\": 0.478\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 325,
+              "total_tokens": 476,
+              "completion_tokens": 151,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 7.700645685195923,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          9.786,
+          "A siren is heard approaching from a distance."
+        ],
+        [
+          0.0,
+          9.786,
+          "A child is crying."
+        ],
+        [
+          7.186,
+          9.786,
+          "People are talking."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a1a91a8ff07b87f9",
+            "object": "chat.completion",
+            "created": 1792799150,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 9.786\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 9.786\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 7.186,\n      \"end\": 9.786\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 325,
+              "total_tokens": 441,
+              "completion_tokens": 116,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 10.0,
+      "seconds": 14.553513288497925,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          10.0,
+          "A siren is heard approaching from a distance."
+        ],
+        [
+          2.687,
+          3.957,
+          "A child is crying."
+        ],
+        [
+          4.417,
+          5.127,
+          "People are talking."
+        ],
+        [
+          0.0,
+          10.0,
+          "People are talking in the distance."
+        ],
+        [
+          2.687,
+          3.957,
+          "A dog barks."
+        ],
+        [
+          0.0,
+          10.0,
+          "A whooshing sound."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-849fca0bd5c490ad",
+            "object": "chat.completion",
+            "created": 1792799158,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 2.687,\n      \"end\": 3.957\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 4.417,\n      \"end\": 5.127\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 2.687,\n      \"end\": 3.957\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 325,
+              "total_tokens": 546,
+              "completion_tokens": 221,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 240000,
+      "start": 15.0,
+      "duration": 6.710625,
+      "seconds": 5.185322046279907,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          6.710625,
+          "A siren is heard approaching from a distance."
+        ],
+        [
+          0.0,
+          6.710625,
+          "A whooshing sound."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b7c64cce47ab3556",
+            "object": "chat.completion",
+            "created": 1792799172,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 6.711\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 0.0,\n      \"end\": 6.711\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 280,
+              "total_tokens": 358,
+              "completion_tokens": 78,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      1.678,
+      3.918,
+      "A child is crying."
+    ],
+    [
+      5.0,
+      14.786,
+      "A child is crying."
+    ],
+    [
+      0.0,
+      0.478,
+      "A dog barks."
+    ],
+    [
+      12.687,
+      13.957,
+      "A dog barks."
+    ],
+    [
+      1.678,
+      3.918,
+      "A siren is heard approaching from a distance."
+    ],
+    [
+      5.0,
+      21.710625,
+      "A siren is heard approaching from a distance."
+    ],
+    [
+      0.0,
+      21.710625,
+      "A whooshing sound."
+    ],
+    [
+      10.0,
+      20.0,
+      "People are talking in the distance."
+    ],
+    [
+      12.186,
+      15.126999999999999,
+      "People are talking."
+    ]
+  ],
+  "duration": 21.710625,
+  "inference_seconds": 37.44500684738159
+}

@@ -1,0 +1,346 @@
+{
+  "clip_id": "572413",
+  "labels": [
+    "A chainsaw starts and its loudness gradually increases.",
+    "A chainsaw slowing down.",
+    "A chainsaw starts loudly again.",
+    "A chainsaw starts and then gradually slows down."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/572413.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 10.067127227783203,
+      "status": "complete",
+      "events": [
+        [
+          0.987,
+          4.567,
+          "A chainsaw starts and its loudness gradually increases."
+        ],
+        [
+          4.567,
+          5.567,
+          "A chainsaw slowing down."
+        ],
+        [
+          5.567,
+          9.567,
+          "A chainsaw starts loudly again."
+        ],
+        [
+          9.567,
+          10.0,
+          "A chainsaw starts and then gradually slows down."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-81122f506021dc28",
+            "object": "chat.completion",
+            "created": 1792819170,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.987,\n      \"end\": 4.567\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 4.567,\n      \"end\": 5.567\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 5.567,\n      \"end\": 9.567\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 9.567,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 318,
+              "total_tokens": 469,
+              "completion_tokens": 151,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 10.07251763343811,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          2.857,
+          "A chainsaw starts and its loudness gradually increases."
+        ],
+        [
+          4.691,
+          5.751,
+          "A chainsaw slowing down."
+        ],
+        [
+          6.501,
+          9.501,
+          "A chainsaw starts loudly again."
+        ],
+        [
+          9.501,
+          10.0,
+          "A chainsaw starts and then gradually slows down."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8bae5258f6367b5f",
+            "object": "chat.completion",
+            "created": 1792819180,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 2.857\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 4.691,\n      \"end\": 5.751\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 6.501,\n      \"end\": 9.501\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 9.501,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 318,
+              "total_tokens": 469,
+              "completion_tokens": 151,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 10.0,
+      "seconds": 10.232056617736816,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          10.0,
+          "A chainsaw starts and its loudness gradually increases."
+        ],
+        [
+          6.875,
+          9.455,
+          "A chainsaw slowing down."
+        ],
+        [
+          0.0,
+          10.0,
+          "A chainsaw starts loudly again."
+        ],
+        [
+          0.0,
+          10.0,
+          "A chainsaw starts and then gradually slows down."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-994908ce4431701a",
+            "object": "chat.completion",
+            "created": 1792819190,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 6.875,\n      \"end\": 9.455\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 318,
+              "total_tokens": 471,
+              "completion_tokens": 153,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 240000,
+      "start": 15.0,
+      "duration": 8.776625,
+      "seconds": 9.597114562988281,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          1.45,
+          "A chainsaw starts and its loudness gradually increases."
+        ],
+        [
+          1.69,
+          3.42,
+          "A chainsaw slowing down."
+        ],
+        [
+          3.42,
+          4.12,
+          "A chainsaw starts loudly again."
+        ],
+        [
+          0.0,
+          4.12,
+          "A chainsaw starts and then gradually slows down."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-bf55cc9a0bae5498",
+            "object": "chat.completion",
+            "created": 1792819201,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 1.45\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 1.69,\n      \"end\": 3.42\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 3.42,\n      \"end\": 4.12\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.0,\n      \"end\": 4.12\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 300,
+              "total_tokens": 440,
+              "completion_tokens": 140,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      4.567,
+      5.567,
+      "A chainsaw slowing down."
+    ],
+    [
+      9.690999999999999,
+      10.751000000000001,
+      "A chainsaw slowing down."
+    ],
+    [
+      16.69,
+      19.455,
+      "A chainsaw slowing down."
+    ],
+    [
+      0.987,
+      4.567,
+      "A chainsaw starts and its loudness gradually increases."
+    ],
+    [
+      5.0,
+      7.857,
+      "A chainsaw starts and its loudness gradually increases."
+    ],
+    [
+      10.0,
+      20.0,
+      "A chainsaw starts and its loudness gradually increases."
+    ],
+    [
+      9.567,
+      20.0,
+      "A chainsaw starts and then gradually slows down."
+    ],
+    [
+      5.567,
+      9.567,
+      "A chainsaw starts loudly again."
+    ],
+    [
+      10.0,
+      20.0,
+      "A chainsaw starts loudly again."
+    ]
+  ],
+  "duration": 23.776625,
+  "inference_seconds": 39.96881604194641
+}

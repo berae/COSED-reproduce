@@ -1,0 +1,229 @@
+{
+  "clip_id": "30174",
+  "labels": [
+    "A chord is played on the guitar.",
+    "Someone is playing an acoustic guitar.",
+    "Guitar strings produce resonant, wavering acoustic sounds with multiple reverberations interfering."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/30174.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 7.870069742202759,
+      "status": "complete",
+      "events": [
+        [
+          1.578,
+          9.638,
+          "A chord is played on the guitar."
+        ],
+        [
+          1.578,
+          9.638,
+          "Someone is playing an acoustic guitar."
+        ],
+        [
+          1.578,
+          9.638,
+          "Guitar strings produce resonant, wavering acoustic sounds with multiple reverberations interfering."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8f816271bcd7fe2d",
+            "object": "chat.completion",
+            "created": 1792828669,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 1.578,\n      \"end\": 9.638\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 1.578,\n      \"end\": 9.638\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 1.578,\n      \"end\": 9.638\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 314,
+              "total_tokens": 430,
+              "completion_tokens": 116,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 3.21977162361145,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          9.999,
+          "Guitar strings produce resonant, wavering acoustic sounds with multiple reverberations interfering."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a579d6ae42c7ed2d",
+            "object": "chat.completion",
+            "created": 1792828676,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 9.999\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 314,
+              "total_tokens": 362,
+              "completion_tokens": 48,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 6.24925,
+      "seconds": 7.054905891418457,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          5.87,
+          "A chord is played on the guitar."
+        ],
+        [
+          0.0,
+          5.87,
+          "Someone is playing an acoustic guitar."
+        ],
+        [
+          0.0,
+          5.87,
+          "Guitar strings produce resonant, wavering acoustic sounds with multiple reverberations interfering."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-801fb5b71ccdac42",
+            "object": "chat.completion",
+            "created": 1792828680,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 5.87\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.0,\n      \"end\": 5.87\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.0,\n      \"end\": 5.87\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 264,
+              "total_tokens": 371,
+              "completion_tokens": 107,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      1.578,
+      9.638,
+      "A chord is played on the guitar."
+    ],
+    [
+      10.0,
+      15.870000000000001,
+      "A chord is played on the guitar."
+    ],
+    [
+      1.578,
+      15.870000000000001,
+      "Guitar strings produce resonant, wavering acoustic sounds with multiple reverberations interfering."
+    ],
+    [
+      1.578,
+      9.638,
+      "Someone is playing an acoustic guitar."
+    ],
+    [
+      10.0,
+      15.870000000000001,
+      "Someone is playing an acoustic guitar."
+    ]
+  ],
+  "duration": 16.24925,
+  "inference_seconds": 18.144747257232666
+}

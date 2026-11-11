@@ -1,0 +1,84 @@
+{
+  "clip_id": "-6Vtt4ubkC8_78_88",
+  "labels": [
+    "Alarm_bell_ringing",
+    "Blender",
+    "Cat",
+    "Dishes",
+    "Dog",
+    "Electric_shaver_toothbrush",
+    "Frying",
+    "Running_water",
+    "Speech",
+    "Vacuum_cleaner"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/desed/data/4560759/audio/eval/public/-6Vtt4ubkC8_78_88.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 2.0770809650421143,
+      "status": "complete",
+      "events": [
+        [
+          1.698,
+          9.998,
+          "Electric_shaver_toothbrush"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8a63ee0fad0a98e4",
+            "object": "chat.completion",
+            "created": 1792737285,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\"events\":[{\"query_id\":5,\"start\":1.698,\"end\":9.998}]\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 310,
+              "total_tokens": 339,
+              "completion_tokens": 29,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": "appended missing final outer brace only"
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      1.698,
+      9.998,
+      "Electric_shaver_toothbrush"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 2.0770809650421143
+}

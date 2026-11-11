@@ -1,0 +1,178 @@
+{
+  "clip_id": "Y3wabvpoDwKU",
+  "labels": [
+    "dog barking",
+    "a woman giggling",
+    "talking"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y3wabvpoDwKU.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 10.087467908859253,
+      "status": "complete",
+      "events": [
+        [
+          0.678,
+          1.598,
+          "dog barking"
+        ],
+        [
+          3.478,
+          4.178,
+          "dog barking"
+        ],
+        [
+          5.878,
+          6.778,
+          "a woman giggling"
+        ],
+        [
+          6.778,
+          8.078,
+          "talking"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a4ae7ea36fb50a8b",
+            "object": "chat.completion",
+            "created": 1792781004,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.678,\n      \"end\": 1.598\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 3.478,\n      \"end\": 4.178\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 5.878,\n      \"end\": 6.778\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 6.778,\n      \"end\": 8.078\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 292,
+              "total_tokens": 442,
+              "completion_tokens": 150,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 5.000625,
+      "seconds": 7.301797389984131,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          0.34,
+          "dog barking"
+        ],
+        [
+          0.78,
+          1.69,
+          "a woman giggling"
+        ],
+        [
+          1.87,
+          3.02,
+          "talking"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a56f39ffca8e122b",
+            "object": "chat.completion",
+            "created": 1792781014,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 0.34\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.78,\n      \"end\": 1.69\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 1.87,\n      \"end\": 3.02\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 226,
+              "total_tokens": 335,
+              "completion_tokens": 109,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      5.78,
+      6.778,
+      "a woman giggling"
+    ],
+    [
+      0.678,
+      1.598,
+      "dog barking"
+    ],
+    [
+      3.478,
+      4.178,
+      "dog barking"
+    ],
+    [
+      5.0,
+      5.34,
+      "dog barking"
+    ],
+    [
+      6.778,
+      8.078,
+      "talking"
+    ]
+  ],
+  "duration": 10.000625,
+  "inference_seconds": 17.389265298843384
+}

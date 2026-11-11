@@ -1,0 +1,12 @@
+{
+  "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+  "prompt": "Listen to this {duration:.3f}-second audio. Detect every audible occurrence matching the queries below. Give separate start/end times for separate occurrences, relative to this window. Events may overlap. Do not infer sounds from the scene. Use only listed query_id integers. Return ONLY a valid JSON object with an events array. Each event object must have query_id (integer), start (number of seconds), and end (number of seconds). If none are audible, return an empty events array. Times must satisfy 0 <= start < end <= {duration:.3f}. Determine all event times from the audio. Do not provide confidence scores or explanations. Queries:\n{queries}",
+  "window_seconds": 10,
+  "hop_seconds": 5,
+  "temperature": 0,
+  "seed": 42,
+  "max_tokens": 1536,
+  "merge": "union overlapping same-query intervals",
+  "note": "Generated event spans; no native frame scores, PSDS or mpAUC. No GT included in prompts.",
+  "identity": "e103d78663298e660efe490e96b7f2fcc7caaa73cd73f4191b0f67dc9bd47836"
+}

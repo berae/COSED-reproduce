@@ -1,0 +1,86 @@
+{
+  "clip_id": "Y7ynQ9wd6neQ",
+  "labels": [
+    "a car engine is idling deeply",
+    "the car accelerates"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y7ynQ9wd6neQ.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 9.9994375,
+      "seconds": 5.316070079803467,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          9.999,
+          "a car engine is idling deeply"
+        ],
+        [
+          1.528,
+          3.478,
+          "the car accelerates"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a8856adcd1e53b1c",
+            "object": "chat.completion",
+            "created": 1792781708,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 9.999\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 1.528,\n      \"end\": 3.478\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 290,
+              "total_tokens": 370,
+              "completion_tokens": 80,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      9.999,
+      "a car engine is idling deeply"
+    ],
+    [
+      1.528,
+      3.478,
+      "the car accelerates"
+    ]
+  ],
+  "duration": 9.9994375,
+  "inference_seconds": 5.316070079803467
+}

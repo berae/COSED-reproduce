@@ -1,0 +1,102 @@
+Traceback (most recent call last):
+  File "/home/zhanghc/projects/ov-sed/benchmark/runner-v1.py", line 237, in <module>
+    elif args.action=='run':run(args)
+  File "/home/zhanghc/projects/ov-sed/benchmark/runner-v1.py", line 159, in run
+    import numpy as np, librosa, torch
+  File "/home/zhanghc/venvs/dasm/lib/python3.10/site-packages/librosa/__init__.py", line 208, in <module>
+    from ._cache import cache
+  File "/home/zhanghc/venvs/dasm/lib/python3.10/site-packages/librosa/_cache.py", line 6, in <module>
+    from joblib import Memory
+  File "/home/zhanghc/venvs/dasm/lib/python3.10/site-packages/joblib/__init__.py", line 114, in <module>
+    from ._cloudpickle_wrapper import wrap_non_picklable_objects
+  File "/home/zhanghc/venvs/dasm/lib/python3.10/site-packages/joblib/_cloudpickle_wrapper.py", line 14, in <module>
+    from .externals.loky import wrap_non_picklable_objects
+  File "/home/zhanghc/venvs/dasm/lib/python3.10/site-packages/joblib/externals/loky/__init__.py", line 19, in <module>
+    from .backend.context import cpu_count
+  File "/home/zhanghc/venvs/dasm/lib/python3.10/site-packages/joblib/externals/loky/backend/__init__.py", line 4, in <module>
+    from .context import get_context
+  File "/home/zhanghc/venvs/dasm/lib/python3.10/site-packages/joblib/externals/loky/backend/context.py", line 24, in <module>
+    from concurrent.futures.process import _MAX_WINDOWS_WORKERS
+  File "/home/zhanghc/miniconda3/envs/nape/lib/python3.10/concurrent/futures/process.py", line 50, in <module>
+    import queue
+  File "/home/zhanghc/projects/ov-sed/benchmark/queue.py", line 13, in <module>
+    p=subprocess.run(cmd,stdout=f,stderr=subprocess.STDOUT,env=env)
+  File "/home/zhanghc/miniconda3/envs/nape/lib/python3.10/subprocess.py", line 503, in run
+    with Popen(*popenargs, **kwargs) as process:
+  File "/home/zhanghc/miniconda3/envs/nape/lib/python3.10/subprocess.py", line 971, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/zhanghc/miniconda3/envs/nape/lib/python3.10/subprocess.py", line 1863, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/zhanghc/venvs/--model/bin/python'
+/home/zhanghc/venvs/dasm/lib/python3.10/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+/home/zhanghc/venvs/dasm/lib/python3.10/site-packages/huggingface_hub/file_download.py:1142: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertModel: ['cls.predictions.transform.dense.bias', 'cls.predictions.bias', 'cls.predictions.transform.LayerNorm.weight', 'bert.pooler.dense.weight', 'cls.predictions.decoder.weight', 'bert.pooler.dense.bias', 'cls.predictions.transform.dense.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.bias', 'cls.seq_relationship.weight']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+/home/zhanghc/venvs/dasm/lib/python3.10/site-packages/torch/nn/modules/activation.py:1144: UserWarning: Converting mask without torch.bool dtype to bool; this will negatively affect performance. Prefer to use a boolean mask directly. (Triggered internally at ../aten/src/ATen/native/transformers/attention.cpp:150.)
+  return torch._native_multi_head_attention(
+{"model": "dasm", "dataset": "realdesed-test", "total": 1007, "completed": 1, "status": "running", "pid": 3883589, "started": 1792114776.5582778, "load_seconds": 6.519527196884155, "updated": 1792114785.410654, "elapsed_seconds": 8.852376461029053}
+{"model": "dasm", "dataset": "realdesed-test", "total": 1007, "completed": 25, "status": "running", "pid": 3883589, "started": 1792114776.5582778, "load_seconds": 6.519527196884155, "updated": 1792114798.0564988, "elapsed_seconds": 21.498220920562744}
+{"model": "dasm", "dataset": "realdesed-test", "total": 1007, "completed": 50, "status": "running", "pid": 3883589, "started": 1792114776.5582778, "load_seconds": 6.519527196884155, "updated": 1792114811.8740935, "elapsed_seconds": 35.315815925598145}
+{"model": "dasm", "dataset": "realdesed-test", "total": 1007, "completed": 75, "status": "running", "pid": 3883589, "started": 1792114776.5582778, "load_seconds": 6.519527196884155, "updated": 1792114827.0599444, "elapsed_seconds": 50.5016667842865}
+{"model": "dasm", "dataset": "realdesed-test", "total": 1007, "completed": 100, "status": "running", "pid": 3883589, "started": 1792114776.5582778, "load_seconds": 6.519527196884155, "updated": 1792114838.6929152, "elapsed_seconds": 62.13463759422302}
+{"model": "dasm", "dataset": "realdesed-test", "total": 1007, "completed": 125, "status": "running", "pid": 3883589, "started": 1792114776.5582778, "load_seconds": 6.519527196884155, "updated": 1792114850.6589675, "elapsed_seconds": 74.10068988800049}
+{"model": "dasm", "dataset": "realdesed-test", "total": 1007, "completed": 150, "status": "running", "pid": 3883589, "started": 1792114776.5582778, "load_seconds": 6.519527196884155, "updated": 1792114863.4237263, "elapsed_seconds": 86.86544871330261}
+{"model": "dasm", "dataset": "realdesed-test", "total": 1007, "completed": 175, "status": "running", "pid": 3883589, "started": 1792114776.5582778, "load_seconds": 6.519527196884155, "updated": 1792114875.7489927, "elapsed_seconds": 99.1907148361206}
+{"model": "dasm", "dataset": "realdesed-test", "total": 1007, "completed": 200, "status": "running", "pid": 3883589, "started": 1792114776.5582778, "load_seconds": 6.519527196884155, "updated": 1792114889.2558415, "elapsed_seconds": 112.69756388664246}
+{"model": "dasm", "dataset": "realdesed-test", "total": 1007, "completed": 225, "status": "running", "pid": 3883589, "started": 1792114776.5582778, "load_seconds": 6.519527196884155, "updated": 1792114903.8122005, "elapsed_seconds": 127.25392293930054}
+{"model": "dasm", "dataset": "realdesed-test", "total": 1007, "completed": 250, "status": "running", "pid": 3883589, "started": 1792114776.5582778, "load_seconds": 6.519527196884155, "updated": 1792114917.7142272, "elapsed_seconds": 141.15594959259033}
+{"model": "dasm", "dataset": "realdesed-test", "total": 1007, "completed": 275, "status": "running", "pid": 3883589, "started": 1792114776.5582778, "load_seconds": 6.519527196884155, "updated": 1792114933.8954275, "elapsed_seconds": 157.3371500968933}
+{"model": "dasm", "dataset": "realdesed-test", "total": 1007, "completed": 300, "status": "running", "pid": 3883589, "started": 1792114776.5582778, "load_seconds": 6.519527196884155, "updated": 1792114948.6283684, "elapsed_seconds": 172.07009077072144}
+{"model": "dasm", "dataset": "realdesed-test", "total": 1007, "completed": 325, "status": "running", "pid": 3883589, "started": 1792114776.5582778, "load_seconds": 6.519527196884155, "updated": 1792114963.89025, "elapsed_seconds": 187.33197236061096}
+{"model": "dasm", "dataset": "realdesed-test", "total": 1007, "completed": 350, "status": "running", "pid": 3883589, "started": 1792114776.5582778, "load_seconds": 6.519527196884155, "updated": 1792114978.470357, "elapsed_seconds": 201.91207909584045}
+{"model": "dasm", "dataset": "realdesed-test", "total": 1007, "completed": 375, "status": "running", "pid": 3883589, "started": 1792114776.5582778, "load_seconds": 6.519527196884155, "updated": 1792114994.1913078, "elapsed_seconds": 217.63303017616272}
+{"model": "dasm", "dataset": "realdesed-test", "total": 1007, "completed": 400, "status": "running", "pid": 3883589, "started": 1792114776.5582778, "load_seconds": 6.519527196884155, "updated": 1792115007.9796498, "elapsed_seconds": 231.42137217521667}
+{"model": "dasm", "dataset": "realdesed-test", "total": 1007, "completed": 425, "status": "running", "pid": 3883589, "started": 1792114776.5582778, "load_seconds": 6.519527196884155, "updated": 1792115022.9050143, "elapsed_seconds": 246.3467366695404}
+{"model": "dasm", "dataset": "realdesed-test", "total": 1007, "completed": 450, "status": "running", "pid": 3883589, "started": 1792114776.5582778, "load_seconds": 6.519527196884155, "updated": 1792115034.3310382, "elapsed_seconds": 257.77276062965393}
+{"model": "dasm", "dataset": "realdesed-test", "total": 1007, "completed": 475, "status": "running", "pid": 3883589, "started": 1792114776.5582778, "load_seconds": 6.519527196884155, "updated": 1792115047.2490666, "elapsed_seconds": 270.6907889842987}
+{"model": "dasm", "dataset": "realdesed-test", "total": 1007, "completed": 500, "status": "running", "pid": 3883589, "started": 1792114776.5582778, "load_seconds": 6.519527196884155, "updated": 1792115060.4438417, "elapsed_seconds": 283.8855640888214}
+{"model": "dasm", "dataset": "realdesed-test", "total": 1007, "completed": 525, "status": "running", "pid": 3883589, "started": 1792114776.5582778, "load_seconds": 6.519527196884155, "updated": 1792115074.1377714, "elapsed_seconds": 297.5794937610626}
+{"model": "dasm", "dataset": "realdesed-test", "total": 1007, "completed": 550, "status": "running", "pid": 3883589, "started": 1792114776.5582778, "load_seconds": 6.519527196884155, "updated": 1792115087.2979429, "elapsed_seconds": 310.7396652698517}
+{"model": "dasm", "dataset": "realdesed-test", "total": 1007, "completed": 575, "status": "running", "pid": 3883589, "started": 1792114776.5582778, "load_seconds": 6.519527196884155, "updated": 1792115099.5501537, "elapsed_seconds": 322.9918761253357}
+{"model": "dasm", "dataset": "realdesed-test", "total": 1007, "completed": 600, "status": "running", "pid": 3883589, "started": 1792114776.5582778, "load_seconds": 6.519527196884155, "updated": 1792115115.2922618, "elapsed_seconds": 338.73398423194885}
+{"model": "dasm", "dataset": "realdesed-test", "total": 1007, "completed": 625, "status": "running", "pid": 3883589, "started": 1792114776.5582778, "load_seconds": 6.519527196884155, "updated": 1792115128.423152, "elapsed_seconds": 351.86487436294556}
+{"model": "dasm", "dataset": "realdesed-test", "total": 1007, "completed": 650, "status": "running", "pid": 3883589, "started": 1792114776.5582778, "load_seconds": 6.519527196884155, "updated": 1792115143.4800792, "elapsed_seconds": 366.92180156707764}
+{"model": "dasm", "dataset": "realdesed-test", "total": 1007, "completed": 675, "status": "running", "pid": 3883589, "started": 1792114776.5582778, "load_seconds": 6.519527196884155, "updated": 1792115156.6355326, "elapsed_seconds": 380.07725501060486}
+{"model": "dasm", "dataset": "realdesed-test", "total": 1007, "completed": 700, "status": "running", "pid": 3883589, "started": 1792114776.5582778, "load_seconds": 6.519527196884155, "updated": 1792115169.195806, "elapsed_seconds": 392.63752841949463}
+{"model": "dasm", "dataset": "realdesed-test", "total": 1007, "completed": 725, "status": "running", "pid": 3883589, "started": 1792114776.5582778, "load_seconds": 6.519527196884155, "updated": 1792115181.7573287, "elapsed_seconds": 405.1990511417389}
+{"model": "dasm", "dataset": "realdesed-test", "total": 1007, "completed": 750, "status": "running", "pid": 3883589, "started": 1792114776.5582778, "load_seconds": 6.519527196884155, "updated": 1792115194.5827184, "elapsed_seconds": 418.02444076538086}
+{"model": "dasm", "dataset": "realdesed-test", "total": 1007, "completed": 775, "status": "running", "pid": 3883589, "started": 1792114776.5582778, "load_seconds": 6.519527196884155, "updated": 1792115207.1458304, "elapsed_seconds": 430.5875527858734}
+{"model": "dasm", "dataset": "realdesed-test", "total": 1007, "completed": 800, "status": "running", "pid": 3883589, "started": 1792114776.5582778, "load_seconds": 6.519527196884155, "updated": 1792115219.714075, "elapsed_seconds": 443.15579748153687}
+{"model": "dasm", "dataset": "realdesed-test", "total": 1007, "completed": 825, "status": "running", "pid": 3883589, "started": 1792114776.5582778, "load_seconds": 6.519527196884155, "updated": 1792115233.5910075, "elapsed_seconds": 457.0327298641205}
+{"model": "dasm", "dataset": "realdesed-test", "total": 1007, "completed": 850, "status": "running", "pid": 3883589, "started": 1792114776.5582778, "load_seconds": 6.519527196884155, "updated": 1792115245.6238747, "elapsed_seconds": 469.06559705734253}
+{"model": "dasm", "dataset": "realdesed-test", "total": 1007, "completed": 875, "status": "running", "pid": 3883589, "started": 1792114776.5582778, "load_seconds": 6.519527196884155, "updated": 1792115258.8589442, "elapsed_seconds": 482.30066657066345}
+{"model": "dasm", "dataset": "realdesed-test", "total": 1007, "completed": 900, "status": "running", "pid": 3883589, "started": 1792114776.5582778, "load_seconds": 6.519527196884155, "updated": 1792115271.210906, "elapsed_seconds": 494.65262842178345}
+{"model": "dasm", "dataset": "realdesed-test", "total": 1007, "completed": 925, "status": "running", "pid": 3883589, "started": 1792114776.5582778, "load_seconds": 6.519527196884155, "updated": 1792115284.47216, "elapsed_seconds": 507.9138824939728}
+{"model": "dasm", "dataset": "realdesed-test", "total": 1007, "completed": 950, "status": "running", "pid": 3883589, "started": 1792114776.5582778, "load_seconds": 6.519527196884155, "updated": 1792115298.678389, "elapsed_seconds": 522.1201114654541}
+{"model": "dasm", "dataset": "realdesed-test", "total": 1007, "completed": 975, "status": "running", "pid": 3883589, "started": 1792114776.5582778, "load_seconds": 6.519527196884155, "updated": 1792115311.8153234, "elapsed_seconds": 535.2570457458496}
+{"model": "dasm", "dataset": "realdesed-test", "total": 1007, "completed": 1000, "status": "running", "pid": 3883589, "started": 1792114776.5582778, "load_seconds": 6.519527196884155, "updated": 1792115325.6707087, "elapsed_seconds": 549.1124310493469}
+Process Process-4:
+Traceback (most recent call last):
+  File "/home/zhanghc/miniconda3/envs/nape/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/home/zhanghc/miniconda3/envs/nape/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/zhanghc/venvs/dasm/lib/python3.10/site-packages/sed_scores_eval/base_modules/statistics.py", line 216, in _worker
+    timestamps, _ = validate_score_dataframe(
+  File "/home/zhanghc/venvs/dasm/lib/python3.10/site-packages/sed_scores_eval/base_modules/scores.py", line 106, in validate_score_dataframe
+    raise ValueError('Some frames have zero length.')
+ValueError: Some frames have zero length.
+Process Process-2:
+Traceback (most recent call last):
+  File "/home/zhanghc/miniconda3/envs/nape/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/home/zhanghc/miniconda3/envs/nape/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/zhanghc/venvs/dasm/lib/python3.10/site-packages/sed_scores_eval/base_modules/statistics.py", line 216, in _worker
+    timestamps, _ = validate_score_dataframe(
+  File "/home/zhanghc/venvs/dasm/lib/python3.10/site-packages/sed_scores_eval/base_modules/scores.py", line 106, in validate_score_dataframe
+    raise ValueError('Some frames have zero length.')
+ValueError: Some frames have zero length.

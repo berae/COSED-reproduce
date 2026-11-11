@@ -1,0 +1,138 @@
+{
+  "clip_id": "YbS4flke6PUg",
+  "labels": [
+    "woman talking",
+    "a man talking",
+    "bell ringing",
+    "horn honking"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/YbS4flke6PUg.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 16.536226511001587,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          1.48,
+          "a man talking"
+        ],
+        [
+          5.06,
+          5.79,
+          "a man talking"
+        ],
+        [
+          6.18,
+          6.68,
+          "a man talking"
+        ],
+        [
+          7.28,
+          7.88,
+          "a man talking"
+        ],
+        [
+          8.18,
+          9.88,
+          "a man talking"
+        ],
+        [
+          3.18,
+          3.88,
+          "bell ringing"
+        ],
+        [
+          8.18,
+          9.88,
+          "horn honking"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8585d83c69c5dc85",
+            "object": "chat.completion",
+            "created": 1792782518,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 1.480\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 5.060,\n      \"end\": 5.790\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 6.180,\n      \"end\": 6.680\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 7.280,\n      \"end\": 7.880\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 8.180,\n      \"end\": 9.880\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 3.180,\n      \"end\": 3.880\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 8.180,\n      \"end\": 9.880\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 297,
+              "total_tokens": 549,
+              "completion_tokens": 252,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      1.48,
+      "a man talking"
+    ],
+    [
+      5.06,
+      5.79,
+      "a man talking"
+    ],
+    [
+      6.18,
+      6.68,
+      "a man talking"
+    ],
+    [
+      7.28,
+      7.88,
+      "a man talking"
+    ],
+    [
+      8.18,
+      9.88,
+      "a man talking"
+    ],
+    [
+      3.18,
+      3.88,
+      "bell ringing"
+    ],
+    [
+      8.18,
+      9.88,
+      "horn honking"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 16.536226511001587
+}

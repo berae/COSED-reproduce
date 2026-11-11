@@ -1,0 +1,419 @@
+{
+  "clip_id": "725217",
+  "labels": [
+    "A blackcap bird is singing loudly nearby, giving a variety of chink-chook calls.",
+    "An owl hoots softly in the distance.",
+    "A bird sings softly in the distance with chink-chink calls.",
+    "A blackcap bird sings nearby in the field, producing a fluting warble that starts softly and scratchy, transitions into a loud bubbling fluting sequence, and ends with a single chook.",
+    "A blackcap bird sings nearby, starting with a soft, scratchy warble that transitions into a loud, bubbling flute-like sequence.",
+    "Birds sing softly in the distance with a gentle wind in the background."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/725217.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 12.311966180801392,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          2.678,
+          "A blackcap bird is singing loudly nearby, giving a variety of chink-chook calls."
+        ],
+        [
+          5.098,
+          9.508,
+          "A bird sings softly in the distance with chink-chink calls."
+        ],
+        [
+          5.098,
+          9.508,
+          "A blackcap bird sings nearby in the field, producing a fluting warble that starts softly and scratchy, transitions into a loud bubbling fluting sequence, and ends with a single chook."
+        ],
+        [
+          5.098,
+          9.508,
+          "A blackcap bird sings nearby, starting with a soft, scratchy warble that transitions into a loud, bubbling flute-like sequence."
+        ],
+        [
+          0.0,
+          10.0,
+          "Birds sing softly in the distance with a gentle wind in the background."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b7ff6c4464344bda",
+            "object": "chat.completion",
+            "created": 1792808639,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 2.678\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 5.098,\n      \"end\": 9.508\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 5.098,\n      \"end\": 9.508\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 5.098,\n      \"end\": 9.508\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 415,
+              "total_tokens": 600,
+              "completion_tokens": 185,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 7.754169940948486,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          9.876,
+          "A blackcap bird is singing loudly nearby, giving a variety of chink-chook calls."
+        ],
+        [
+          0.0,
+          9.876,
+          "A blackcap bird sings nearby in the field, producing a fluting warble that starts softly and scratchy, transitions into a loud bubbling fluting sequence, and ends with a single chook."
+        ],
+        [
+          0.0,
+          9.876,
+          "A blackcap bird sings nearby, starting with a soft, scratchy warble that transitions into a loud, bubbling flute-like sequence."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-816578f848a5be6c",
+            "object": "chat.completion",
+            "created": 1792808652,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 9.876\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.000,\n      \"end\": 9.876\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 0.000,\n      \"end\": 9.876\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 415,
+              "total_tokens": 531,
+              "completion_tokens": 116,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 10.0,
+      "seconds": 12.306790113449097,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          3.678,
+          "A blackcap bird is singing loudly nearby, giving a variety of chink-chook calls."
+        ],
+        [
+          5.918,
+          9.718,
+          "A bird sings softly in the distance with chink-chink calls."
+        ],
+        [
+          0.0,
+          3.678,
+          "A blackcap bird sings nearby in the field, producing a fluting warble that starts softly and scratchy, transitions into a loud bubbling fluting sequence, and ends with a single chook."
+        ],
+        [
+          0.0,
+          3.678,
+          "A blackcap bird sings nearby, starting with a soft, scratchy warble that transitions into a loud, bubbling flute-like sequence."
+        ],
+        [
+          0.0,
+          10.0,
+          "Birds sing softly in the distance with a gentle wind in the background."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-bdedce5a346f117b",
+            "object": "chat.completion",
+            "created": 1792808659,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 3.678\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 5.918,\n      \"end\": 9.718\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.000,\n      \"end\": 3.678\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 0.000,\n      \"end\": 3.678\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 415,
+              "total_tokens": 600,
+              "completion_tokens": 185,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 240000,
+      "start": 15.0,
+      "duration": 10.0,
+      "seconds": 7.948553800582886,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          10.0,
+          "A blackcap bird is singing loudly nearby, giving a variety of chink-chook calls."
+        ],
+        [
+          0.0,
+          10.0,
+          "A blackcap bird sings nearby in the field, producing a fluting warble that starts softly and scratchy, transitions into a loud bubbling fluting sequence, and ends with a single chook."
+        ],
+        [
+          0.0,
+          10.0,
+          "A blackcap bird sings nearby, starting with a soft, scratchy warble that transitions into a loud, bubbling flute-like sequence."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-96756d207e9e01df",
+            "object": "chat.completion",
+            "created": 1792808672,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 415,
+              "total_tokens": 534,
+              "completion_tokens": 119,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 320000,
+      "start": 20.0,
+      "duration": 5.98025,
+      "seconds": 7.145017385482788,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          5.98,
+          "A blackcap bird is singing loudly nearby, giving a variety of chink-chook calls."
+        ],
+        [
+          0.0,
+          5.98,
+          "A blackcap bird sings nearby in the field, producing a fluting warble that starts softly and scratchy, transitions into a loud bubbling fluting sequence, and ends with a single chook."
+        ],
+        [
+          0.0,
+          5.98,
+          "A blackcap bird sings nearby, starting with a soft, scratchy warble that transitions into a loud, bubbling flute-like sequence."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-863aed37fc296bdd",
+            "object": "chat.completion",
+            "created": 1792808680,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 5.98\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.0,\n      \"end\": 5.98\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 0.0,\n      \"end\": 5.98\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 361,
+              "total_tokens": 468,
+              "completion_tokens": 107,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      5.098,
+      9.508,
+      "A bird sings softly in the distance with chink-chink calls."
+    ],
+    [
+      15.918,
+      19.718,
+      "A bird sings softly in the distance with chink-chink calls."
+    ],
+    [
+      0.0,
+      2.678,
+      "A blackcap bird is singing loudly nearby, giving a variety of chink-chook calls."
+    ],
+    [
+      5.0,
+      14.876,
+      "A blackcap bird is singing loudly nearby, giving a variety of chink-chook calls."
+    ],
+    [
+      15.0,
+      25.98,
+      "A blackcap bird is singing loudly nearby, giving a variety of chink-chook calls."
+    ],
+    [
+      5.0,
+      14.876,
+      "A blackcap bird sings nearby in the field, producing a fluting warble that starts softly and scratchy, transitions into a loud bubbling fluting sequence, and ends with a single chook."
+    ],
+    [
+      15.0,
+      25.98,
+      "A blackcap bird sings nearby in the field, producing a fluting warble that starts softly and scratchy, transitions into a loud bubbling fluting sequence, and ends with a single chook."
+    ],
+    [
+      5.0,
+      14.876,
+      "A blackcap bird sings nearby, starting with a soft, scratchy warble that transitions into a loud, bubbling flute-like sequence."
+    ],
+    [
+      15.0,
+      25.98,
+      "A blackcap bird sings nearby, starting with a soft, scratchy warble that transitions into a loud, bubbling flute-like sequence."
+    ],
+    [
+      0.0,
+      20.0,
+      "Birds sing softly in the distance with a gentle wind in the background."
+    ]
+  ],
+  "duration": 25.98025,
+  "inference_seconds": 47.46649742126465
+}

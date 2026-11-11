@@ -1,0 +1,317 @@
+{
+  "clip_id": "268525",
+  "labels": [
+    "Microwave oven operating.",
+    "An electrical device beeps briefly.",
+    "An electrical device emits a steady, deep noise.",
+    "A deep noise fades away.",
+    "A constant quiet noise is audible."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/268525.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 7.756299257278442,
+      "status": "complete",
+      "events": [
+        [
+          1.758,
+          2.068,
+          "An electrical device beeps briefly."
+        ],
+        [
+          2.068,
+          9.528,
+          "An electrical device emits a steady, deep noise."
+        ],
+        [
+          0.0,
+          10.0,
+          "A constant quiet noise is audible."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-809ae199e361e352",
+            "object": "chat.completion",
+            "created": 1792811574,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 1,\n      \"start\": 1.758,\n      \"end\": 2.068\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 2.068,\n      \"end\": 9.528\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 0.0,\n      \"end\": 10.0\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 320,
+              "total_tokens": 433,
+              "completion_tokens": 113,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 5.6167237758636475,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          10.0,
+          "An electrical device emits a steady, deep noise."
+        ],
+        [
+          0.0,
+          10.0,
+          "A constant quiet noise is audible."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a6935d1f8978db25",
+            "object": "chat.completion",
+            "created": 1792811582,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 320,
+              "total_tokens": 404,
+              "completion_tokens": 84,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 10.0,
+      "seconds": 12.238380432128906,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          8.75,
+          "Microwave oven operating."
+        ],
+        [
+          8.75,
+          9.0,
+          "An electrical device beeps briefly."
+        ],
+        [
+          0.0,
+          8.75,
+          "An electrical device emits a steady, deep noise."
+        ],
+        [
+          8.75,
+          10.0,
+          "A deep noise fades away."
+        ],
+        [
+          0.0,
+          8.75,
+          "A constant quiet noise is audible."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8a238e345c96c232",
+            "object": "chat.completion",
+            "created": 1792811588,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 8.750\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 8.750,\n      \"end\": 9.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 8.750\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 8.750,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 0.000,\n      \"end\": 8.750\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 320,
+              "total_tokens": 505,
+              "completion_tokens": 185,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 240000,
+      "start": 15.0,
+      "duration": 7.0,
+      "seconds": 7.7057294845581055,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          3.589,
+          "An electrical device emits a steady, deep noise."
+        ],
+        [
+          3.589,
+          3.869,
+          "An electrical device beeps briefly."
+        ],
+        [
+          3.869,
+          7.0,
+          "A deep noise fades away."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a2d318c4d94cdc0b",
+            "object": "chat.completion",
+            "created": 1792811600,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 3.589\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 3.589,\n      \"end\": 3.869\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 3.869,\n      \"end\": 7.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 279,
+              "total_tokens": 395,
+              "completion_tokens": 116,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      18.75,
+      "A constant quiet noise is audible."
+    ],
+    [
+      18.75,
+      22.0,
+      "A deep noise fades away."
+    ],
+    [
+      1.758,
+      2.068,
+      "An electrical device beeps briefly."
+    ],
+    [
+      18.589,
+      19.0,
+      "An electrical device beeps briefly."
+    ],
+    [
+      2.068,
+      18.75,
+      "An electrical device emits a steady, deep noise."
+    ],
+    [
+      10.0,
+      18.75,
+      "Microwave oven operating."
+    ]
+  ],
+  "duration": 22.0,
+  "inference_seconds": 33.3171329498291
+}

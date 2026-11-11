@@ -1,0 +1,441 @@
+{
+  "clip_id": "255546",
+  "labels": [
+    "A man is speaking.",
+    "A woman is speaking.",
+    "A child making silly sounds.",
+    "A baby making noises.",
+    "A child makes silly noises while playing.",
+    "Baby noises.",
+    "A child screams playfully.",
+    "A baby laughing.",
+    "A baby makes soft and playful noises.",
+    "A child makes a silly sound.",
+    "A baby makes a noise.",
+    "A child making playful noises.",
+    "A baby giggles.",
+    "Clanging dishes."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/255546.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 23.862133979797363,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          0.58,
+          "A woman is speaking."
+        ],
+        [
+          0.0,
+          1.0,
+          "A child making silly sounds."
+        ],
+        [
+          0.0,
+          10.0,
+          "A baby making noises."
+        ],
+        [
+          0.0,
+          10.0,
+          "A child makes silly noises while playing."
+        ],
+        [
+          0.0,
+          10.0,
+          "Baby noises."
+        ],
+        [
+          1.0,
+          1.5,
+          "A child screams playfully."
+        ],
+        [
+          0.0,
+          10.0,
+          "A baby makes soft and playful noises."
+        ],
+        [
+          0.0,
+          10.0,
+          "A child makes a silly sound."
+        ],
+        [
+          0.0,
+          10.0,
+          "A baby makes a noise."
+        ],
+        [
+          0.0,
+          10.0,
+          "A child making playful noises."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-907fd16cd6b87047",
+            "object": "chat.completion",
+            "created": 1792816222,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 0.580\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 1.000\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 1.000,\n      \"end\": 1.500\n    },\n    {\n      \"query_id\": 8,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 9,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 10,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 11,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 386,
+              "total_tokens": 749,
+              "completion_tokens": 363,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 7.970962047576904,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          10.0,
+          "A baby making noises."
+        ],
+        [
+          0.0,
+          10.0,
+          "Baby noises."
+        ],
+        [
+          0.0,
+          10.0,
+          "A baby makes a noise."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-9e4342215b18a35b",
+            "object": "chat.completion",
+            "created": 1792816246,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 3,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 10,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 386,
+              "total_tokens": 506,
+              "completion_tokens": 120,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 10.0,
+      "seconds": 12.512705087661743,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          10.0,
+          "A child making silly sounds."
+        ],
+        [
+          0.0,
+          10.0,
+          "A baby making noises."
+        ],
+        [
+          0.0,
+          10.0,
+          "A child makes silly noises while playing."
+        ],
+        [
+          2.28,
+          2.98,
+          "A child screams playfully."
+        ],
+        [
+          7.28,
+          7.98,
+          "A child makes a silly sound."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-bd6a9d37f22070f6",
+            "object": "chat.completion",
+            "created": 1792816254,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 2.280,\n      \"end\": 2.980\n    },\n    {\n      \"query_id\": 9,\n      \"start\": 7.280,\n      \"end\": 7.980\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 386,
+              "total_tokens": 573,
+              "completion_tokens": 187,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 240000,
+      "start": 15.0,
+      "duration": 7.4465625,
+      "seconds": 15.138532876968384,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          1.1,
+          "A child making silly sounds."
+        ],
+        [
+          1.8,
+          2.4,
+          "A child screams playfully."
+        ],
+        [
+          2.4,
+          3.4,
+          "A baby making noises."
+        ],
+        [
+          4.0,
+          5.1,
+          "A child makes silly noises while playing."
+        ],
+        [
+          5.1,
+          5.7,
+          "A child makes a silly sound."
+        ],
+        [
+          6.0,
+          6.4,
+          "A child making playful noises."
+        ],
+        [
+          2.1,
+          2.5,
+          "Clanging dishes."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-931773d258b8e971",
+            "object": "chat.completion",
+            "created": 1792816266,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 2,\n      \"start\": 0.0,\n      \"end\": 1.1\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 1.8,\n      \"end\": 2.4\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 2.4,\n      \"end\": 3.4\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 4.0,\n      \"end\": 5.1\n    },\n    {\n      \"query_id\": 9,\n      \"start\": 5.1,\n      \"end\": 5.7\n    },\n    {\n      \"query_id\": 11,\n      \"start\": 6.0,\n      \"end\": 6.4\n    },\n    {\n      \"query_id\": 13,\n      \"start\": 2.1,\n      \"end\": 2.5\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 351,
+              "total_tokens": 577,
+              "completion_tokens": 226,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      15.0,
+      "A baby makes a noise."
+    ],
+    [
+      0.0,
+      10.0,
+      "A baby makes soft and playful noises."
+    ],
+    [
+      0.0,
+      20.0,
+      "A baby making noises."
+    ],
+    [
+      0.0,
+      10.0,
+      "A child makes a silly sound."
+    ],
+    [
+      17.28,
+      17.98,
+      "A child makes a silly sound."
+    ],
+    [
+      20.1,
+      20.7,
+      "A child makes a silly sound."
+    ],
+    [
+      0.0,
+      20.1,
+      "A child makes silly noises while playing."
+    ],
+    [
+      0.0,
+      10.0,
+      "A child making playful noises."
+    ],
+    [
+      21.0,
+      21.4,
+      "A child making playful noises."
+    ],
+    [
+      0.0,
+      1.0,
+      "A child making silly sounds."
+    ],
+    [
+      10.0,
+      20.0,
+      "A child making silly sounds."
+    ],
+    [
+      1.0,
+      1.5,
+      "A child screams playfully."
+    ],
+    [
+      12.28,
+      12.98,
+      "A child screams playfully."
+    ],
+    [
+      16.8,
+      17.4,
+      "A child screams playfully."
+    ],
+    [
+      0.0,
+      0.58,
+      "A woman is speaking."
+    ],
+    [
+      0.0,
+      15.0,
+      "Baby noises."
+    ],
+    [
+      17.1,
+      17.5,
+      "Clanging dishes."
+    ]
+  ],
+  "duration": 22.4465625,
+  "inference_seconds": 59.484333992004395
+}

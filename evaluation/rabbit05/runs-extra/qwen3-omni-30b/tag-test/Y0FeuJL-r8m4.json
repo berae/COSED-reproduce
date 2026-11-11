@@ -1,0 +1,86 @@
+{
+  "clip_id": "Y0FeuJL-r8m4",
+  "labels": [
+    "man saying yep",
+    "emergency vehicle or truck"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y0FeuJL-r8m4.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 9.2135,
+      "seconds": 5.326354026794434,
+      "status": "complete",
+      "events": [
+        [
+          5.648,
+          5.978,
+          "man saying yep"
+        ],
+        [
+          0.0,
+          9.213,
+          "emergency vehicle or truck"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-888ac824a62d7465",
+            "object": "chat.completion",
+            "created": 1792779317,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 5.648,\n      \"end\": 5.978\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.0,\n      \"end\": 9.213\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 277,
+              "total_tokens": 357,
+              "completion_tokens": 80,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      9.213,
+      "emergency vehicle or truck"
+    ],
+    [
+      5.648,
+      5.978,
+      "man saying yep"
+    ]
+  ],
+  "duration": 9.2135,
+  "inference_seconds": 5.326354026794434
+}

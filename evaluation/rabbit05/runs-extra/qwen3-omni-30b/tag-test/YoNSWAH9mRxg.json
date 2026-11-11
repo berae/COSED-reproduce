@@ -1,0 +1,116 @@
+{
+  "clip_id": "YoNSWAH9mRxg",
+  "labels": [
+    "a dog is whimpering",
+    "a bark"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/YoNSWAH9mRxg.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 12.132056713104248,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          2.45,
+          "a dog is whimpering"
+        ],
+        [
+          3.17,
+          3.68,
+          "a bark"
+        ],
+        [
+          4.59,
+          7.75,
+          "a dog is whimpering"
+        ],
+        [
+          8.27,
+          8.78,
+          "a bark"
+        ],
+        [
+          8.81,
+          9.99,
+          "a dog is whimpering"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a3d5a6b6c40e81d7",
+            "object": "chat.completion",
+            "created": 1792782750,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 2.450\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 3.170,\n      \"end\": 3.680\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 4.590,\n      \"end\": 7.750\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 8.270,\n      \"end\": 8.780\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 8.810,\n      \"end\": 9.990\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 288,
+              "total_tokens": 472,
+              "completion_tokens": 184,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      3.17,
+      3.68,
+      "a bark"
+    ],
+    [
+      8.27,
+      8.78,
+      "a bark"
+    ],
+    [
+      0.0,
+      2.45,
+      "a dog is whimpering"
+    ],
+    [
+      4.59,
+      7.75,
+      "a dog is whimpering"
+    ],
+    [
+      8.81,
+      9.99,
+      "a dog is whimpering"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 12.132056713104248
+}

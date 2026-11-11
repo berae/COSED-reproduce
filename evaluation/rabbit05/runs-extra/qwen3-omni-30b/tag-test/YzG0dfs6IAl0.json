@@ -1,0 +1,168 @@
+{
+  "clip_id": "YzG0dfs6IAl0",
+  "labels": [
+    "some clicks",
+    "humming of an oncoming train",
+    "a blowing horn"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/YzG0dfs6IAl0.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 7.348713397979736,
+      "status": "complete",
+      "events": [
+        [
+          3.87,
+          4.15,
+          "some clicks"
+        ],
+        [
+          0.0,
+          9.61,
+          "humming of an oncoming train"
+        ],
+        [
+          7.17,
+          9.17,
+          "a blowing horn"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-aaf79d2a1103a57a",
+            "object": "chat.completion",
+            "created": 1792783022,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 3.87,\n      \"end\": 4.15\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.00,\n      \"end\": 9.61\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 7.17,\n      \"end\": 9.17\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 295,
+              "total_tokens": 405,
+              "completion_tokens": 110,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 5.0000625,
+      "seconds": 7.6276960372924805,
+      "status": "complete",
+      "events": [
+        [
+          3.879,
+          4.069,
+          "some clicks"
+        ],
+        [
+          0.0,
+          5.0,
+          "humming of an oncoming train"
+        ],
+        [
+          2.219,
+          4.179,
+          "a blowing horn"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-80bcba4c182b6f81",
+            "object": "chat.completion",
+            "created": 1792783030,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 3.879,\n      \"end\": 4.069\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 5.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 2.219,\n      \"end\": 4.179\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 229,
+              "total_tokens": 345,
+              "completion_tokens": 116,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      7.17,
+      9.179,
+      "a blowing horn"
+    ],
+    [
+      0.0,
+      10.0,
+      "humming of an oncoming train"
+    ],
+    [
+      3.87,
+      4.15,
+      "some clicks"
+    ],
+    [
+      8.879,
+      9.068999999999999,
+      "some clicks"
+    ]
+  ],
+  "duration": 10.0000625,
+  "inference_seconds": 14.976409435272217
+}

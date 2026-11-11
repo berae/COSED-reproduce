@@ -1,0 +1,218 @@
+{
+  "clip_id": "538212",
+  "labels": [
+    "Vehicle engine accelerating while idling.",
+    "A vehicle engine is idling."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/538212.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 5.543123245239258,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          5.489,
+          "Vehicle engine accelerating while idling."
+        ],
+        [
+          6.273,
+          9.503,
+          "A vehicle engine is idling."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-83ae1d7fcf79cac2",
+            "object": "chat.completion",
+            "created": 1792796093,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 5.489\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 6.273,\n      \"end\": 9.503\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 294,
+              "total_tokens": 376,
+              "completion_tokens": 82,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 5.421095132827759,
+      "status": "complete",
+      "events": [
+        [
+          4.872,
+          9.352,
+          "Vehicle engine accelerating while idling."
+        ],
+        [
+          0.0,
+          4.872,
+          "A vehicle engine is idling."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-9c4e429fa2a46844",
+            "object": "chat.completion",
+            "created": 1792796098,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 4.872,\n      \"end\": 9.352\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.0,\n      \"end\": 4.872\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 294,
+              "total_tokens": 374,
+              "completion_tokens": 80,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 7.9464375,
+      "seconds": 5.404017448425293,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          3.285,
+          "Vehicle engine accelerating while idling."
+        ],
+        [
+          4.525,
+          7.946,
+          "A vehicle engine is idling."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-9301d54ef59f516d",
+            "object": "chat.completion",
+            "created": 1792796104,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 3.285\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 4.525,\n      \"end\": 7.946\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 265,
+              "total_tokens": 345,
+              "completion_tokens": 80,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      5.0,
+      9.872,
+      "A vehicle engine is idling."
+    ],
+    [
+      14.525,
+      17.945999999999998,
+      "A vehicle engine is idling."
+    ],
+    [
+      0.0,
+      5.489,
+      "Vehicle engine accelerating while idling."
+    ],
+    [
+      9.872,
+      14.352,
+      "Vehicle engine accelerating while idling."
+    ]
+  ],
+  "duration": 17.9464375,
+  "inference_seconds": 16.36823582649231
+}

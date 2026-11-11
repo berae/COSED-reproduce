@@ -1,0 +1,408 @@
+{
+  "clip_id": "253992",
+  "labels": [
+    "An elevator makes a loud announcement indoors.",
+    "Footsteps of a person walking.",
+    "An elevator is beeping loudly.",
+    "An elevator is making announcements while the doors open.",
+    "An elevator is moving.",
+    "An elevator announces the second floor loudly indoors.",
+    "Elevator doors are moving quickly indoors.",
+    "An elevator makes a loud announcement indoors as the doors open quickly.",
+    "An elevator is running loudly indoors.",
+    "An elevator announcement is made loudly indoors."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/253992.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 16.63953185081482,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          1.5,
+          "An elevator makes a loud announcement indoors."
+        ],
+        [
+          2.0,
+          3.0,
+          "An elevator is beeping loudly."
+        ],
+        [
+          4.0,
+          6.0,
+          "An elevator is making announcements while the doors open."
+        ],
+        [
+          4.0,
+          5.0,
+          "An elevator announces the second floor loudly indoors."
+        ],
+        [
+          7.0,
+          8.0,
+          "Elevator doors are moving quickly indoors."
+        ],
+        [
+          7.0,
+          8.0,
+          "An elevator makes a loud announcement indoors as the doors open quickly."
+        ],
+        [
+          0.0,
+          1.5,
+          "An elevator announcement is made loudly indoors."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8680f3c92c54b17a",
+            "object": "chat.completion",
+            "created": 1792813522,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 1.500\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 2.000,\n      \"end\": 3.000\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 4.000,\n      \"end\": 6.000\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 4.000,\n      \"end\": 5.000\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 7.000,\n      \"end\": 8.000\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 7.000,\n      \"end\": 8.000\n    },\n    {\n      \"query_id\": 9,\n      \"start\": 0.000,\n      \"end\": 1.500\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 378,
+              "total_tokens": 630,
+              "completion_tokens": 252,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 23.776625633239746,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          1.0,
+          "An elevator makes a loud announcement indoors."
+        ],
+        [
+          2.0,
+          2.5,
+          "Footsteps of a person walking."
+        ],
+        [
+          3.0,
+          3.5,
+          "An elevator is beeping loudly."
+        ],
+        [
+          0.0,
+          10.0,
+          "An elevator is making announcements while the doors open."
+        ],
+        [
+          0.0,
+          10.0,
+          "An elevator is moving."
+        ],
+        [
+          0.0,
+          10.0,
+          "An elevator announces the second floor loudly indoors."
+        ],
+        [
+          0.0,
+          10.0,
+          "Elevator doors are moving quickly indoors."
+        ],
+        [
+          0.0,
+          10.0,
+          "An elevator makes a loud announcement indoors as the doors open quickly."
+        ],
+        [
+          0.0,
+          10.0,
+          "An elevator is running loudly indoors."
+        ],
+        [
+          0.0,
+          10.0,
+          "An elevator announcement is made loudly indoors."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-afa3cd6d8ab7464f",
+            "object": "chat.completion",
+            "created": 1792813538,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 1.000\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 2.000,\n      \"end\": 2.500\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 3.000,\n      \"end\": 3.500\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 8,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 9,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 378,
+              "total_tokens": 739,
+              "completion_tokens": 361,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 10.0,
+      "seconds": 7.68595027923584,
+      "status": "complete",
+      "events": [
+        [
+          1.512,
+          3.112,
+          "An elevator makes a loud announcement indoors."
+        ],
+        [
+          5.982,
+          6.382,
+          "An elevator is beeping loudly."
+        ],
+        [
+          7.882,
+          8.882,
+          "An elevator announces the second floor loudly indoors."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-80790cb23ce408c5",
+            "object": "chat.completion",
+            "created": 1792813562,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 1.512,\n      \"end\": 3.112\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 5.982,\n      \"end\": 6.382\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 7.882,\n      \"end\": 8.882\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 378,
+              "total_tokens": 494,
+              "completion_tokens": 116,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 240000,
+      "start": 15.0,
+      "duration": 10.0,
+      "seconds": 34.35146450996399,
+      "status": "failed",
+      "events": null,
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a468aa8b1ed6cb89",
+            "object": "chat.completion",
+            "created": 1792813570,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n[\n  {\n    \"query_id\": 0,\n    \"start\": 2.872,\n    \"end\": 4.122\n  },\n  {\n    \"query_id\": 2,\n    \"start\": 5.122,\n    \"end\": 6.122\n  },\n  {\n    \"query_id\": 5,\n    \"start\": 2.872,\n    \"end\": 4.122\n  },\n  {\n    \"query_id\": 7,\n    \"start\": 2.872,\n    \"end\": 4.122\n  }\n]\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 378,
+              "total_tokens": 521,
+              "completion_tokens": 143,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          }
+        },
+        {
+          "error": "ValueError('Missing events list')"
+        },
+        {
+          "reply": {
+            "id": "chatcmpl-a41776e00406cdba",
+            "object": "chat.completion",
+            "created": 1792813581,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n[\n  {\n    \"query_id\": 0,\n    \"start\": 2.872,\n    \"end\": 4.122\n  },\n  {\n    \"query_id\": 2,\n    \"start\": 5.122,\n    \"end\": 6.122\n  },\n  {\n    \"query_id\": 5,\n    \"start\": 2.872,\n    \"end\": 4.122\n  },\n  {\n    \"query_id\": 7,\n    \"start\": 2.872,\n    \"end\": 4.122\n  }\n]\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 378,
+              "total_tokens": 521,
+              "completion_tokens": 143,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          }
+        },
+        {
+          "error": "ValueError('Missing events list')"
+        },
+        {
+          "reply": {
+            "id": "chatcmpl-9998f80345bd957d",
+            "object": "chat.completion",
+            "created": 1792813593,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n[\n  {\n    \"query_id\": 0,\n    \"start\": 2.872,\n    \"end\": 4.122\n  },\n  {\n    \"query_id\": 2,\n    \"start\": 5.122,\n    \"end\": 6.122\n  },\n  {\n    \"query_id\": 5,\n    \"start\": 2.872,\n    \"end\": 4.122\n  },\n  {\n    \"query_id\": 7,\n    \"start\": 2.872,\n    \"end\": 4.122\n  }\n]\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 378,
+              "total_tokens": 521,
+              "completion_tokens": 143,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          }
+        },
+        {
+          "error": "ValueError('Missing events list')"
+        }
+      ]
+    }
+  ],
+  "status": "running"
+}

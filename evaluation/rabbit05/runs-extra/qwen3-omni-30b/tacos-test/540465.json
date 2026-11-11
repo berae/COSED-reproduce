@@ -1,0 +1,300 @@
+{
+  "clip_id": "540465",
+  "labels": [
+    "Children talking.",
+    "Children playing with marbles on the ground.",
+    "A woman is talking."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/540465.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 7.831163644790649,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          1.0,
+          "Children talking."
+        ],
+        [
+          0.0,
+          9.5,
+          "Children playing with marbles on the ground."
+        ],
+        [
+          3.4,
+          5.0,
+          "A woman is talking."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-ac20dd4879f3d26d",
+            "object": "chat.completion",
+            "created": 1792819002,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 1.000\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 9.500\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 3.400,\n      \"end\": 5.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 299,
+              "total_tokens": 415,
+              "completion_tokens": 116,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 5.698567628860474,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          10.0,
+          "Children talking."
+        ],
+        [
+          0.0,
+          10.0,
+          "Children playing with marbles on the ground."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-bbe67d4fea635449",
+            "object": "chat.completion",
+            "created": 1792819010,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 299,
+              "total_tokens": 383,
+              "completion_tokens": 84,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 10.0,
+      "seconds": 7.649291038513184,
+      "status": "complete",
+      "events": [
+        [
+          3.548,
+          5.798,
+          "Children talking."
+        ],
+        [
+          0.0,
+          10.0,
+          "Children playing with marbles on the ground."
+        ],
+        [
+          5.798,
+          6.448,
+          "A woman is talking."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a7e625a29b5b6a72",
+            "object": "chat.completion",
+            "created": 1792819016,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 3.548,\n      \"end\": 5.798\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.0,\n      \"end\": 10.0\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 5.798,\n      \"end\": 6.448\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 299,
+              "total_tokens": 412,
+              "completion_tokens": 113,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 240000,
+      "start": 15.0,
+      "duration": 8.5038125,
+      "seconds": 7.449682712554932,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          0.63,
+          "Children talking."
+        ],
+        [
+          2.79,
+          8.5038125,
+          "Children playing with marbles on the ground."
+        ],
+        [
+          0.72,
+          1.32,
+          "A woman is talking."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-abd3794a68f1d884",
+            "object": "chat.completion",
+            "created": 1792819024,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 0.63\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 2.79,\n      \"end\": 8.504\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.72,\n      \"end\": 1.32\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 278,
+              "total_tokens": 388,
+              "completion_tokens": 110,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      3.4,
+      5.0,
+      "A woman is talking."
+    ],
+    [
+      15.72,
+      16.448,
+      "A woman is talking."
+    ],
+    [
+      0.0,
+      23.5038125,
+      "Children playing with marbles on the ground."
+    ],
+    [
+      0.0,
+      1.0,
+      "Children talking."
+    ],
+    [
+      5.0,
+      15.798,
+      "Children talking."
+    ]
+  ],
+  "duration": 23.5038125,
+  "inference_seconds": 28.62870502471924
+}

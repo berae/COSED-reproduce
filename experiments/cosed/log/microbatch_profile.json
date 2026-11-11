@@ -1,0 +1,42 @@
+{
+  "checkpoint_step": 7250,
+  "protocol": "GPU4 single rank proxy; full 1024 query pool, rank0 owns 256 audio; no communication, lr0, resident EMA+Adam; first micro8 is warmup; no persisted model changes",
+  "results": [
+    {
+      "micro": 8,
+      "seconds": 13.93801898881793,
+      "peak_allocated_gib": 5.060229301452637,
+      "peak_reserved_gib": 5.59375
+    },
+    {
+      "micro": 8,
+      "seconds": 6.38261129707098,
+      "peak_allocated_gib": 5.057850360870361,
+      "peak_reserved_gib": 5.595703125
+    },
+    {
+      "micro": 16,
+      "seconds": 5.0887038223445415,
+      "peak_allocated_gib": 6.314123153686523,
+      "peak_reserved_gib": 6.9296875
+    },
+    {
+      "micro": 16,
+      "seconds": 5.280355513095856,
+      "peak_allocated_gib": 6.312687397003174,
+      "peak_reserved_gib": 6.9296875
+    },
+    {
+      "micro": 32,
+      "seconds": 4.7242309376597404,
+      "peak_allocated_gib": 8.807929992675781,
+      "peak_reserved_gib": 9.708984375
+    },
+    {
+      "micro": 32,
+      "seconds": 4.6423117481172085,
+      "peak_allocated_gib": 8.808848857879639,
+      "peak_reserved_gib": 9.708984375
+    }
+  ]
+}

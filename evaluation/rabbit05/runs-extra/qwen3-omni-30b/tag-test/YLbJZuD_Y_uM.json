@@ -1,0 +1,108 @@
+{
+  "clip_id": "YLbJZuD_Y_uM",
+  "labels": [
+    "a steady wind blows",
+    "the hum of the engine is continuous",
+    "a little girl speak",
+    "adult voices talking"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/YLbJZuD_Y_uM.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 9.996235132217407,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          10.0,
+          "a steady wind blows"
+        ],
+        [
+          0.0,
+          10.0,
+          "the hum of the engine is continuous"
+        ],
+        [
+          0.0,
+          0.578,
+          "a little girl speak"
+        ],
+        [
+          4.698,
+          5.258,
+          "adult voices talking"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b59e5b96862b8396",
+            "object": "chat.completion",
+            "created": 1792782208,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 0.578\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 4.698,\n      \"end\": 5.258\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 305,
+              "total_tokens": 457,
+              "completion_tokens": 152,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      0.578,
+      "a little girl speak"
+    ],
+    [
+      0.0,
+      10.0,
+      "a steady wind blows"
+    ],
+    [
+      4.698,
+      5.258,
+      "adult voices talking"
+    ],
+    [
+      0.0,
+      10.0,
+      "the hum of the engine is continuous"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 9.996235132217407
+}

@@ -1,0 +1,239 @@
+{
+  "clip_id": "510225",
+  "labels": [
+    "Quiet clanking sounds in the distance.",
+    "People whistle loudly at random intervals.",
+    "People screaming loudly at random intervals."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/510225.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 7.817902326583862,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          10.0,
+          "Quiet clanking sounds in the distance."
+        ],
+        [
+          4.538,
+          5.678,
+          "People whistle loudly at random intervals."
+        ],
+        [
+          3.798,
+          5.298,
+          "People screaming loudly at random intervals."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8329bbb49de1c20c",
+            "object": "chat.completion",
+            "created": 1792814695,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 4.538,\n      \"end\": 5.678\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 3.798,\n      \"end\": 5.298\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 304,
+              "total_tokens": 421,
+              "completion_tokens": 117,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 9.97420597076416,
+      "status": "complete",
+      "events": [
+        [
+          3.847,
+          5.697,
+          "Quiet clanking sounds in the distance."
+        ],
+        [
+          1.847,
+          3.847,
+          "People whistle loudly at random intervals."
+        ],
+        [
+          0.0,
+          1.847,
+          "People screaming loudly at random intervals."
+        ],
+        [
+          5.697,
+          9.0,
+          "People screaming loudly at random intervals."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a859840efa6ff475",
+            "object": "chat.completion",
+            "created": 1792814703,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 3.847,\n      \"end\": 5.697\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 1.847,\n      \"end\": 3.847\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 1.847\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 5.697,\n      \"end\": 9.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 304,
+              "total_tokens": 454,
+              "completion_tokens": 150,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 5.9135,
+      "seconds": 5.226017713546753,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          5.913,
+          "Quiet clanking sounds in the distance."
+        ],
+        [
+          0.0,
+          5.913,
+          "People screaming loudly at random intervals."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8dac05b82ce8bb96",
+            "object": "chat.completion",
+            "created": 1792814713,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 5.913\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.0,\n      \"end\": 5.913\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 249,
+              "total_tokens": 327,
+              "completion_tokens": 78,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      3.798,
+      6.8469999999999995,
+      "People screaming loudly at random intervals."
+    ],
+    [
+      10.0,
+      15.913,
+      "People screaming loudly at random intervals."
+    ],
+    [
+      4.538,
+      5.678,
+      "People whistle loudly at random intervals."
+    ],
+    [
+      6.8469999999999995,
+      8.847,
+      "People whistle loudly at random intervals."
+    ],
+    [
+      0.0,
+      15.913,
+      "Quiet clanking sounds in the distance."
+    ]
+  ],
+  "duration": 15.9135,
+  "inference_seconds": 23.018126010894775
+}

@@ -1,0 +1,86 @@
+{
+  "clip_id": "Y1p1ekNTgCQ0",
+  "labels": [
+    "dogs bark",
+    "train passes"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y1p1ekNTgCQ0.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 5.26978063583374,
+      "status": "complete",
+      "events": [
+        [
+          6.428,
+          9.358,
+          "dogs bark"
+        ],
+        [
+          0.0,
+          10.0,
+          "train passes"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b24e3d8487c79e65",
+            "object": "chat.completion",
+            "created": 1792779848,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 6.428,\n      \"end\": 9.358\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.0,\n      \"end\": 10.0\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 285,
+              "total_tokens": 364,
+              "completion_tokens": 79,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      6.428,
+      9.358,
+      "dogs bark"
+    ],
+    [
+      0.0,
+      10.0,
+      "train passes"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 5.26978063583374
+}

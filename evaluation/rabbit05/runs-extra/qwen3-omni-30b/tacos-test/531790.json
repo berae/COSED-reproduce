@@ -1,0 +1,397 @@
+{
+  "clip_id": "531790",
+  "labels": [
+    "An elevator rattles loudly once.",
+    "An elevator rattles loudly and continuously.",
+    "An elevator rattles loudly twice.",
+    "A single metallic click.",
+    "An elevator rattles continuously.",
+    "An elevator door opens with rattling noises.",
+    "An elevator is moving.",
+    "An elevator door creaks open.",
+    "An elevator stops.",
+    "An elevator rattles repeatedly during a ride."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/531790.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 14.40680480003357,
+      "status": "complete",
+      "events": [
+        [
+          2.522,
+          4.122,
+          "An elevator rattles loudly once."
+        ],
+        [
+          2.522,
+          4.122,
+          "An elevator rattles loudly twice."
+        ],
+        [
+          2.522,
+          4.122,
+          "An elevator rattles repeatedly during a ride."
+        ],
+        [
+          7.422,
+          9.422,
+          "An elevator rattles loudly and continuously."
+        ],
+        [
+          7.422,
+          9.422,
+          "An elevator rattles continuously."
+        ],
+        [
+          7.422,
+          9.422,
+          "An elevator rattles repeatedly during a ride."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-97a4aa3285e9bb7b",
+            "object": "chat.completion",
+            "created": 1792834685,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 2.522,\n      \"end\": 4.122\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 2.522,\n      \"end\": 4.122\n    },\n    {\n      \"query_id\": 9,\n      \"start\": 2.522,\n      \"end\": 4.122\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 7.422,\n      \"end\": 9.422\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 7.422,\n      \"end\": 9.422\n    },\n    {\n      \"query_id\": 9,\n      \"start\": 7.422,\n      \"end\": 9.422\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 364,
+              "total_tokens": 582,
+              "completion_tokens": 218,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 5.486408948898315,
+      "status": "complete",
+      "events": [
+        [
+          2.872,
+          6.122,
+          "An elevator rattles loudly and continuously."
+        ],
+        [
+          2.872,
+          6.122,
+          "An elevator door opens with rattling noises."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b4a5543b9c843a5f",
+            "object": "chat.completion",
+            "created": 1792834700,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 1,\n      \"start\": 2.872,\n      \"end\": 6.122\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 2.872,\n      \"end\": 6.122\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 364,
+              "total_tokens": 446,
+              "completion_tokens": 82,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 10.0,
+      "seconds": 18.873371839523315,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          1.1,
+          "An elevator rattles loudly once."
+        ],
+        [
+          0.0,
+          1.1,
+          "An elevator door opens with rattling noises."
+        ],
+        [
+          1.1,
+          1.2,
+          "An elevator stops."
+        ],
+        [
+          1.2,
+          5.0,
+          "An elevator is moving."
+        ],
+        [
+          5.0,
+          5.1,
+          "A single metallic click."
+        ],
+        [
+          5.1,
+          5.2,
+          "An elevator door creaks open."
+        ],
+        [
+          6.0,
+          9.0,
+          "An elevator rattles continuously."
+        ],
+        [
+          6.0,
+          9.0,
+          "An elevator rattles repeatedly during a ride."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-9656ad3cdfc97977",
+            "object": "chat.completion",
+            "created": 1792834705,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 1.100\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 0.000,\n      \"end\": 1.100\n    },\n    {\n      \"query_id\": 8,\n      \"start\": 1.100,\n      \"end\": 1.200\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 1.200,\n      \"end\": 5.000\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 5.000,\n      \"end\": 5.100\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 5.100,\n      \"end\": 5.200\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 6.000,\n      \"end\": 9.000\n    },\n    {\n      \"query_id\": 9,\n      \"start\": 6.000,\n      \"end\": 9.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 364,
+              "total_tokens": 650,
+              "completion_tokens": 286,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 240000,
+      "start": 15.0,
+      "duration": 5.81925,
+      "seconds": 5.492006778717041,
+      "status": "complete",
+      "events": [
+        [
+          2.419,
+          5.819,
+          "An elevator rattles loudly and continuously."
+        ],
+        [
+          2.419,
+          5.819,
+          "An elevator door opens with rattling noises."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-9e90fae0a4a6252c",
+            "object": "chat.completion",
+            "created": 1792834724,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 1,\n      \"start\": 2.419,\n      \"end\": 5.819\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 2.419,\n      \"end\": 5.819\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 308,
+              "total_tokens": 390,
+              "completion_tokens": 82,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      15.0,
+      15.1,
+      "A single metallic click."
+    ],
+    [
+      15.1,
+      15.2,
+      "An elevator door creaks open."
+    ],
+    [
+      7.872,
+      11.122,
+      "An elevator door opens with rattling noises."
+    ],
+    [
+      17.419,
+      20.819,
+      "An elevator door opens with rattling noises."
+    ],
+    [
+      11.2,
+      15.0,
+      "An elevator is moving."
+    ],
+    [
+      7.422,
+      9.422,
+      "An elevator rattles continuously."
+    ],
+    [
+      16.0,
+      19.0,
+      "An elevator rattles continuously."
+    ],
+    [
+      7.422,
+      11.122,
+      "An elevator rattles loudly and continuously."
+    ],
+    [
+      17.419,
+      20.819,
+      "An elevator rattles loudly and continuously."
+    ],
+    [
+      2.522,
+      4.122,
+      "An elevator rattles loudly once."
+    ],
+    [
+      10.0,
+      11.1,
+      "An elevator rattles loudly once."
+    ],
+    [
+      2.522,
+      4.122,
+      "An elevator rattles loudly twice."
+    ],
+    [
+      2.522,
+      4.122,
+      "An elevator rattles repeatedly during a ride."
+    ],
+    [
+      7.422,
+      9.422,
+      "An elevator rattles repeatedly during a ride."
+    ],
+    [
+      16.0,
+      19.0,
+      "An elevator rattles repeatedly during a ride."
+    ],
+    [
+      11.1,
+      11.2,
+      "An elevator stops."
+    ]
+  ],
+  "duration": 20.81925,
+  "inference_seconds": 44.25859236717224
+}

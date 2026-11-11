@@ -1,0 +1,224 @@
+{
+  "clip_id": "327147",
+  "labels": [
+    "A bird is making sounds with periodic pauses at a medium distance.",
+    "A bird sings loudly for a short period and then fades away.",
+    "Metal wire fence crackling as it contacts an object."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/327147.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 7.843225955963135,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          10.0,
+          "A bird is making sounds with periodic pauses at a medium distance."
+        ],
+        [
+          4.578,
+          6.398,
+          "A bird sings loudly for a short period and then fades away."
+        ],
+        [
+          1.528,
+          3.528,
+          "Metal wire fence crackling as it contacts an object."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-bd60c49f66e3b636",
+            "object": "chat.completion",
+            "created": 1792814653,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 4.578,\n      \"end\": 6.398\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 1.528,\n      \"end\": 3.528\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 319,
+              "total_tokens": 436,
+              "completion_tokens": 117,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 5.561174392700195,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          10.0,
+          "A bird is making sounds with periodic pauses at a medium distance."
+        ],
+        [
+          0.0,
+          0.589,
+          "A bird sings loudly for a short period and then fades away."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8a88148731403aff",
+            "object": "chat.completion",
+            "created": 1792814661,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 0.589\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 319,
+              "total_tokens": 402,
+              "completion_tokens": 83,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 9.044,
+      "seconds": 5.3690900802612305,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          9.044,
+          "A bird is making sounds with periodic pauses at a medium distance."
+        ],
+        [
+          7.358,
+          8.628,
+          "A bird sings loudly for a short period and then fades away."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-961f7e5ec1960af6",
+            "object": "chat.completion",
+            "created": 1792814667,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 9.044\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 7.358,\n      \"end\": 8.628\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 305,
+              "total_tokens": 385,
+              "completion_tokens": 80,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      19.044,
+      "A bird is making sounds with periodic pauses at a medium distance."
+    ],
+    [
+      4.578,
+      6.398,
+      "A bird sings loudly for a short period and then fades away."
+    ],
+    [
+      17.358,
+      18.628,
+      "A bird sings loudly for a short period and then fades away."
+    ],
+    [
+      1.528,
+      3.528,
+      "Metal wire fence crackling as it contacts an object."
+    ]
+  ],
+  "duration": 19.044,
+  "inference_seconds": 18.77349042892456
+}

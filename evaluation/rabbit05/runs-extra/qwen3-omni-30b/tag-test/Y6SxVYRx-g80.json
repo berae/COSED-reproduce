@@ -1,0 +1,86 @@
+{
+  "clip_id": "Y6SxVYRx-g80",
+  "labels": [
+    "several dogs bark and whimper",
+    "a woman begins talking"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y6SxVYRx-g80.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 9.7935,
+      "seconds": 5.322407245635986,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          9.793,
+          "several dogs bark and whimper"
+        ],
+        [
+          7.428,
+          9.793,
+          "a woman begins talking"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-bff07939ad64325e",
+            "object": "chat.completion",
+            "created": 1792781362,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 9.793\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 7.428,\n      \"end\": 9.793\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 286,
+              "total_tokens": 366,
+              "completion_tokens": 80,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      7.428,
+      9.793,
+      "a woman begins talking"
+    ],
+    [
+      0.0,
+      9.793,
+      "several dogs bark and whimper"
+    ]
+  ],
+  "duration": 9.7935,
+  "inference_seconds": 5.322407245635986
+}

@@ -1,0 +1,165 @@
+{
+  "clip_id": "soundscape_test_bimodal298",
+  "labels": [
+    "air_conditioner",
+    "car_horn",
+    "children_playing",
+    "dog_bark",
+    "drilling",
+    "engine_idling",
+    "gun_shot",
+    "jackhammer",
+    "siren",
+    "street_music"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/urbansed/data/1324404/URBAN-SED_v2.0.0/audio/test/soundscape_test_bimodal298.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 7.385624408721924,
+      "status": "complete",
+      "events": [
+        [
+          0.41,
+          2.71,
+          "car_horn"
+        ],
+        [
+          3.58,
+          6.92,
+          "drilling"
+        ],
+        [
+          7.12,
+          8.01,
+          "gun_shot"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-bfd0381669b59cd2",
+            "object": "chat.completion",
+            "created": 1792767650,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 1,\n      \"start\": 0.41,\n      \"end\": 2.71\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 3.58,\n      \"end\": 6.92\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 7.12,\n      \"end\": 8.01\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 328,
+              "total_tokens": 438,
+              "completion_tokens": 110,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 5.0000625,
+      "seconds": 5.5816686153411865,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          1.95,
+          "drilling"
+        ],
+        [
+          2.15,
+          3.15,
+          "gun_shot"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-81a09daf6eebc121",
+            "object": "chat.completion",
+            "created": 1792767657,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 4,\n      \"start\": 0.000,\n      \"end\": 1.950\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 2.150,\n      \"end\": 3.150\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 262,
+              "total_tokens": 344,
+              "completion_tokens": 82,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.41,
+      2.71,
+      "car_horn"
+    ],
+    [
+      3.58,
+      6.95,
+      "drilling"
+    ],
+    [
+      7.12,
+      8.15,
+      "gun_shot"
+    ]
+  ],
+  "duration": 10.0000625,
+  "inference_seconds": 12.96729302406311
+}

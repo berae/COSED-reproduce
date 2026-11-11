@@ -1,0 +1,220 @@
+{
+  "clip_id": "442562",
+  "labels": [
+    "A door opens.",
+    "An alarm rings loudly in a steady pattern.",
+    "A door is moving.",
+    "A door unlocks."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/442562.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 9.995107650756836,
+      "status": "complete",
+      "events": [
+        [
+          1.178,
+          1.648,
+          "A door opens."
+        ],
+        [
+          1.758,
+          9.718,
+          "An alarm rings loudly in a steady pattern."
+        ],
+        [
+          1.178,
+          1.648,
+          "A door is moving."
+        ],
+        [
+          1.178,
+          1.648,
+          "A door unlocks."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b44c7c5567accd57",
+            "object": "chat.completion",
+            "created": 1792812411,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 1.178,\n      \"end\": 1.648\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 1.758,\n      \"end\": 9.718\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 1.178,\n      \"end\": 1.648\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 1.178,\n      \"end\": 1.648\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 306,
+              "total_tokens": 456,
+              "completion_tokens": 150,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 3.2551982402801514,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          9.457,
+          "An alarm rings loudly in a steady pattern."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-925b756549aa3d35",
+            "object": "chat.completion",
+            "created": 1792812421,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 9.457\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 306,
+              "total_tokens": 354,
+              "completion_tokens": 48,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 6.7345625,
+      "seconds": 3.1192212104797363,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          4.089,
+          "An alarm rings loudly in a steady pattern."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-9e65106341be1d4f",
+            "object": "chat.completion",
+            "created": 1792812424,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 1,\n      \"start\": 0.0,\n      \"end\": 4.089\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 262,
+              "total_tokens": 308,
+              "completion_tokens": 46,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      1.178,
+      1.648,
+      "A door is moving."
+    ],
+    [
+      1.178,
+      1.648,
+      "A door opens."
+    ],
+    [
+      1.178,
+      1.648,
+      "A door unlocks."
+    ],
+    [
+      1.758,
+      14.457,
+      "An alarm rings loudly in a steady pattern."
+    ]
+  ],
+  "duration": 16.7345625,
+  "inference_seconds": 16.369527101516724
+}

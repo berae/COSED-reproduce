@@ -1,0 +1,186 @@
+{
+  "source": "https://dcase.community/challenge2023/task-sound-event-detection-with-weak-labels-and-synthetic-soundscapes",
+  "protocols": {
+    "psds1": {
+      "dtc_threshold": 0.7,
+      "gtc_threshold": 0.7,
+      "cttc_threshold": null,
+      "alpha_ct": 0,
+      "alpha_st": 1,
+      "max_efpr": 100,
+      "unit_of_time": "hour"
+    }
+  },
+  "library_version": "0.0.4",
+  "caveats": [
+    "Official metric parameters on local subsets, not an official submission.",
+    "Validation missing 100/1168 files; splits evaluated separately.",
+    "Model-specific postprocessing retained; training exposure not controlled."
+  ],
+  "datasets": {
+    "desed-public": {
+      "files": 692,
+      "expected": 692,
+      "missing": 0,
+      "models": {
+        "dasm": {
+          "psds1": 0.4686271264478197,
+          "psds1_per_class": {
+            "Alarm_bell_ringing": 0.3496802344995924,
+            "Blender": 0.7685922894047802,
+            "Cat": 0.8782020136061174,
+            "Dishes": 0.3290862799719509,
+            "Dog": 0.5864051490382604,
+            "Electric_shaver_toothbrush": 0.8792095924612531,
+            "Frying": 0.8470005486171535,
+            "Running_water": 0.6347565929356126,
+            "Speech": 0.6596889345006375,
+            "Vacuum_cleaner": 0.8037927825649974
+          }
+        },
+        "finelap": {
+          "psds1": 0.3238286091798965,
+          "psds1_per_class": {
+            "Alarm_bell_ringing": 0.5515608468297003,
+            "Blender": 0.8487719073776168,
+            "Cat": 0.745186654736317,
+            "Dishes": 0.1928238430649628,
+            "Dog": 0.12064086995713065,
+            "Electric_shaver_toothbrush": 0.8733269450157508,
+            "Frying": 0.8721024643605852,
+            "Running_water": 0.6369281765699029,
+            "Speech": 0.3816670671331864,
+            "Vacuum_cleaner": 0.8515902770695408
+          }
+        },
+        "flexsed": {
+          "psds1": 0.16053987751098525,
+          "psds1_per_class": {
+            "Alarm_bell_ringing": 0.353315710711098,
+            "Blender": 0.5816382661453285,
+            "Cat": 0.596225092441735,
+            "Dishes": 0.10532351453461736,
+            "Dog": 0.10135617753338687,
+            "Electric_shaver_toothbrush": 0.8112346778385005,
+            "Frying": 0.560947876756605,
+            "Running_water": 0.5847596914118524,
+            "Speech": 0.0062762996176315,
+            "Vacuum_cleaner": 0.6694496177913821
+          }
+        },
+        "mga-clap": {
+          "psds1": 0.2637321793807124,
+          "psds1_per_class": {
+            "Alarm_bell_ringing": 0.4776212727879872,
+            "Blender": 0.5979985257799487,
+            "Cat": 0.4899917399317229,
+            "Dishes": 0.09735100318697576,
+            "Dog": 0.18798720964175442,
+            "Electric_shaver_toothbrush": 0.6027308849288444,
+            "Frying": 0.6271586891546247,
+            "Running_water": 0.4068780356200445,
+            "Speech": 0.3967618354516042,
+            "Vacuum_cleaner": 0.7433711559942183
+          }
+        },
+        "openflam": {
+          "psds1": 0.02407507896827956,
+          "psds1_per_class": {
+            "Alarm_bell_ringing": 0.16140656297309794,
+            "Blender": 0.3881675519436638,
+            "Cat": 0.11202630704226627,
+            "Dishes": 0.0407761701276676,
+            "Dog": 0.04104986888128636,
+            "Electric_shaver_toothbrush": 0.5466094469929383,
+            "Frying": 0.15555484119068896,
+            "Running_water": 0.28048329187668075,
+            "Speech": 0.014124684453567586,
+            "Vacuum_cleaner": 0.8142692454885876
+          }
+        }
+      }
+    },
+    "desed-validation": {
+      "files": 1068,
+      "expected": 1168,
+      "missing": 100,
+      "models": {
+        "dasm": {
+          "psds1": 0.41943604684791397,
+          "psds1_per_class": {
+            "Alarm_bell_ringing": 0.4957505426438989,
+            "Blender": 0.7821759044108905,
+            "Cat": 0.6705577651475597,
+            "Dishes": 0.2830629129338426,
+            "Dog": 0.42026336702139333,
+            "Electric_shaver_toothbrush": 0.9562300186950372,
+            "Frying": 0.8453400130326639,
+            "Running_water": 0.5007780938529013,
+            "Speech": 0.539211116960363,
+            "Vacuum_cleaner": 0.8755687320600569
+          }
+        },
+        "finelap": {
+          "psds1": 0.32438831847089344,
+          "psds1_per_class": {
+            "Alarm_bell_ringing": 0.5635652870586667,
+            "Blender": 0.8513349031120373,
+            "Cat": 0.5489253775151167,
+            "Dishes": 0.18501214952858158,
+            "Dog": 0.22100905907212923,
+            "Electric_shaver_toothbrush": 0.9904106995555968,
+            "Frying": 0.8873298183949823,
+            "Running_water": 0.6764312000246429,
+            "Speech": 0.3022433887307958,
+            "Vacuum_cleaner": 0.8937083507151498
+          }
+        },
+        "flexsed": {
+          "psds1": 0.14528371500941584,
+          "psds1_per_class": {
+            "Alarm_bell_ringing": 0.2711099891633742,
+            "Blender": 0.6525622066390566,
+            "Cat": 0.479746053360078,
+            "Dishes": 0.058782549068976904,
+            "Dog": 0.12755122255091245,
+            "Electric_shaver_toothbrush": 0.8783981530771947,
+            "Frying": 0.721850337598996,
+            "Running_water": 0.5010580499932158,
+            "Speech": 0.009674149616302889,
+            "Vacuum_cleaner": 0.7731147591533992
+          }
+        },
+        "mga-clap": {
+          "psds1": 0.28066961679974306,
+          "psds1_per_class": {
+            "Alarm_bell_ringing": 0.39119194160332343,
+            "Blender": 0.6303021611593073,
+            "Cat": 0.45783356818455667,
+            "Dishes": 0.12935742713486703,
+            "Dog": 0.31903056176402705,
+            "Electric_shaver_toothbrush": 0.7120688146534018,
+            "Frying": 0.5201612801236564,
+            "Running_water": 0.43018051535507307,
+            "Speech": 0.33680486913805113,
+            "Vacuum_cleaner": 0.7261893394447811
+          }
+        },
+        "openflam": {
+          "psds1": 0.05378342346475368,
+          "psds1_per_class": {
+            "Alarm_bell_ringing": 0.17716367009244183,
+            "Blender": 0.44114219292310486,
+            "Cat": 0.17627522899585532,
+            "Dishes": 0.04136703916896221,
+            "Dog": 0.12800216463364306,
+            "Electric_shaver_toothbrush": 0.7087770394537375,
+            "Frying": 0.23237497556255035,
+            "Running_water": 0.29759732801529504,
+            "Speech": 0.01799454168576002,
+            "Vacuum_cleaner": 0.8117223482517789
+          }
+        }
+      }
+    }
+  }
+}

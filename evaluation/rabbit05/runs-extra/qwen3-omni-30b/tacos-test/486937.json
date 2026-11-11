@@ -1,0 +1,418 @@
+{
+  "clip_id": "486937",
+  "labels": [
+    "A dog barks twice in the distance.",
+    "A dog barks once.",
+    "Dogs rumble in a low pitch.",
+    "A dog barks.",
+    "A dog barks with a pause.",
+    "A dog is barking."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/486937.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 14.894795179367065,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          1.0,
+          "A dog barks twice in the distance."
+        ],
+        [
+          1.6,
+          2.0,
+          "A dog barks once."
+        ],
+        [
+          2.8,
+          3.7,
+          "Dogs rumble in a low pitch."
+        ],
+        [
+          4.2,
+          5.0,
+          "A dog barks."
+        ],
+        [
+          5.2,
+          6.0,
+          "A dog barks with a pause."
+        ],
+        [
+          6.2,
+          9.0,
+          "A dog is barking."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-9bc488e913559804",
+            "object": "chat.completion",
+            "created": 1792801801,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 1.000\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 1.600,\n      \"end\": 2.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 2.800,\n      \"end\": 3.700\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 4.200,\n      \"end\": 5.000\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 5.200,\n      \"end\": 6.000\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 6.200,\n      \"end\": 9.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 330,
+              "total_tokens": 548,
+              "completion_tokens": 218,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 12.425841808319092,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          1.0,
+          "A dog barks twice in the distance."
+        ],
+        [
+          2.0,
+          2.5,
+          "A dog barks once."
+        ],
+        [
+          3.0,
+          3.5,
+          "A dog barks."
+        ],
+        [
+          4.0,
+          6.0,
+          "A dog barks with a pause."
+        ],
+        [
+          8.0,
+          9.0,
+          "A dog is barking."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-ab0b7b33879833f7",
+            "object": "chat.completion",
+            "created": 1792801816,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 1.000\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 2.000,\n      \"end\": 2.500\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 3.000,\n      \"end\": 3.500\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 4.000,\n      \"end\": 6.000\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 8.000,\n      \"end\": 9.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 330,
+              "total_tokens": 514,
+              "completion_tokens": 184,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 10.0,
+      "seconds": 12.479466199874878,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          1.0,
+          "A dog barks twice in the distance."
+        ],
+        [
+          3.0,
+          4.0,
+          "A dog barks once."
+        ],
+        [
+          6.0,
+          7.0,
+          "A dog barks."
+        ],
+        [
+          8.0,
+          9.0,
+          "A dog barks with a pause."
+        ],
+        [
+          0.0,
+          10.0,
+          "A dog is barking."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-bbdcfd7f0a3af10a",
+            "object": "chat.completion",
+            "created": 1792801829,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 1.000\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 3.000,\n      \"end\": 4.000\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 6.000,\n      \"end\": 7.000\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 8.000,\n      \"end\": 9.000\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 330,
+              "total_tokens": 515,
+              "completion_tokens": 185,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 240000,
+      "start": 15.0,
+      "duration": 7.9240625,
+      "seconds": 11.67660403251648,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          0.68,
+          "A dog barks twice in the distance."
+        ],
+        [
+          1.28,
+          1.58,
+          "A dog barks once."
+        ],
+        [
+          1.28,
+          2.88,
+          "A dog barks."
+        ],
+        [
+          4.88,
+          6.08,
+          "A dog barks with a pause."
+        ],
+        [
+          4.88,
+          6.08,
+          "A dog is barking."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-90cfdbd7f123677a",
+            "object": "chat.completion",
+            "created": 1792801841,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 0.68\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 1.28,\n      \"end\": 1.58\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 1.28,\n      \"end\": 2.88\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 4.88,\n      \"end\": 6.08\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 4.88,\n      \"end\": 6.08\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 301,
+              "total_tokens": 474,
+              "completion_tokens": 173,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      1.6,
+      2.0,
+      "A dog barks once."
+    ],
+    [
+      7.0,
+      7.5,
+      "A dog barks once."
+    ],
+    [
+      13.0,
+      14.0,
+      "A dog barks once."
+    ],
+    [
+      16.28,
+      16.58,
+      "A dog barks once."
+    ],
+    [
+      0.0,
+      1.0,
+      "A dog barks twice in the distance."
+    ],
+    [
+      5.0,
+      6.0,
+      "A dog barks twice in the distance."
+    ],
+    [
+      10.0,
+      11.0,
+      "A dog barks twice in the distance."
+    ],
+    [
+      15.0,
+      15.68,
+      "A dog barks twice in the distance."
+    ],
+    [
+      5.2,
+      6.0,
+      "A dog barks with a pause."
+    ],
+    [
+      9.0,
+      11.0,
+      "A dog barks with a pause."
+    ],
+    [
+      18.0,
+      19.0,
+      "A dog barks with a pause."
+    ],
+    [
+      19.88,
+      21.08,
+      "A dog barks with a pause."
+    ],
+    [
+      4.2,
+      5.0,
+      "A dog barks."
+    ],
+    [
+      8.0,
+      8.5,
+      "A dog barks."
+    ],
+    [
+      16.0,
+      17.88,
+      "A dog barks."
+    ],
+    [
+      6.2,
+      9.0,
+      "A dog is barking."
+    ],
+    [
+      10.0,
+      21.08,
+      "A dog is barking."
+    ],
+    [
+      2.8,
+      3.7,
+      "Dogs rumble in a low pitch."
+    ]
+  ],
+  "duration": 22.9240625,
+  "inference_seconds": 51.476707220077515
+}

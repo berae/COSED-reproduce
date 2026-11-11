@@ -1,0 +1,97 @@
+{
+  "clip_id": "Y21WMz5hG0Zs",
+  "labels": [
+    "a man speaks",
+    "waves crash",
+    "wind blows"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y21WMz5hG0Zs.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 7.596376180648804,
+      "status": "complete",
+      "events": [
+        [
+          0.758,
+          2.438,
+          "a man speaks"
+        ],
+        [
+          0.0,
+          9.6,
+          "waves crash"
+        ],
+        [
+          0.0,
+          9.6,
+          "wind blows"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-aee5252f20d8af47",
+            "object": "chat.completion",
+            "created": 1792780573,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.758,\n      \"end\": 2.438\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 9.600\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 9.600\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 291,
+              "total_tokens": 407,
+              "completion_tokens": 116,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.758,
+      2.438,
+      "a man speaks"
+    ],
+    [
+      0.0,
+      9.6,
+      "waves crash"
+    ],
+    [
+      0.0,
+      9.6,
+      "wind blows"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 7.596376180648804
+}

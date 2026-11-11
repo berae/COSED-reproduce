@@ -1,0 +1,334 @@
+{
+  "clip_id": "417514",
+  "labels": [
+    "A dog barks loudly.",
+    "A dog growls softly and continuously.",
+    "A dog barks quietly once."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/417514.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 19.27374577522278,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          0.345,
+          "A dog barks loudly."
+        ],
+        [
+          1.378,
+          1.698,
+          "A dog barks loudly."
+        ],
+        [
+          2.978,
+          3.298,
+          "A dog barks loudly."
+        ],
+        [
+          3.928,
+          4.248,
+          "A dog barks loudly."
+        ],
+        [
+          4.378,
+          4.698,
+          "A dog barks loudly."
+        ],
+        [
+          5.528,
+          6.528,
+          "A dog growls softly and continuously."
+        ],
+        [
+          7.378,
+          7.698,
+          "A dog barks loudly."
+        ],
+        [
+          8.128,
+          9.128,
+          "A dog growls softly and continuously."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-88ce85fae18857b0",
+            "object": "chat.completion",
+            "created": 1792830882,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 0.345\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 1.378,\n      \"end\": 1.698\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 2.978,\n      \"end\": 3.298\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 3.928,\n      \"end\": 4.248\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 4.378,\n      \"end\": 4.698\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 5.528,\n      \"end\": 6.528\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 7.378,\n      \"end\": 7.698\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 8.128,\n      \"end\": 9.128\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 303,
+              "total_tokens": 589,
+              "completion_tokens": 286,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 10.070662021636963,
+      "status": "complete",
+      "events": [
+        [
+          1.489,
+          1.759,
+          "A dog barks loudly."
+        ],
+        [
+          0.0,
+          1.639,
+          "A dog growls softly and continuously."
+        ],
+        [
+          2.759,
+          5.159,
+          "A dog growls softly and continuously."
+        ],
+        [
+          6.509,
+          6.779,
+          "A dog barks quietly once."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b1ebb99371df01c3",
+            "object": "chat.completion",
+            "created": 1792830901,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 1.489,\n      \"end\": 1.759\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 1.639\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 2.759,\n      \"end\": 5.159\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 6.509,\n      \"end\": 6.779\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 303,
+              "total_tokens": 453,
+              "completion_tokens": 150,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 6.917125,
+      "seconds": 14.4690842628479,
+      "status": "complete",
+      "events": [
+        [
+          0.458,
+          0.738,
+          "A dog barks loudly."
+        ],
+        [
+          1.488,
+          1.768,
+          "A dog barks loudly."
+        ],
+        [
+          3.588,
+          3.868,
+          "A dog barks loudly."
+        ],
+        [
+          4.618,
+          4.898,
+          "A dog barks loudly."
+        ],
+        [
+          5.148,
+          5.428,
+          "A dog barks loudly."
+        ],
+        [
+          0.0,
+          6.917,
+          "A dog growls softly and continuously."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-bd334349adc41c49",
+            "object": "chat.completion",
+            "created": 1792830911,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.458,\n      \"end\": 0.738\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 1.488,\n      \"end\": 1.768\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 3.588,\n      \"end\": 3.868\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 4.618,\n      \"end\": 4.898\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 5.148,\n      \"end\": 5.428\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.0,\n      \"end\": 6.917\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 261,
+              "total_tokens": 477,
+              "completion_tokens": 216,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      0.345,
+      "A dog barks loudly."
+    ],
+    [
+      1.378,
+      1.698,
+      "A dog barks loudly."
+    ],
+    [
+      2.978,
+      3.298,
+      "A dog barks loudly."
+    ],
+    [
+      3.928,
+      4.248,
+      "A dog barks loudly."
+    ],
+    [
+      4.378,
+      4.698,
+      "A dog barks loudly."
+    ],
+    [
+      6.489,
+      6.759,
+      "A dog barks loudly."
+    ],
+    [
+      7.378,
+      7.698,
+      "A dog barks loudly."
+    ],
+    [
+      10.458,
+      10.738,
+      "A dog barks loudly."
+    ],
+    [
+      11.488,
+      11.768,
+      "A dog barks loudly."
+    ],
+    [
+      13.588000000000001,
+      13.868,
+      "A dog barks loudly."
+    ],
+    [
+      14.618,
+      14.898,
+      "A dog barks loudly."
+    ],
+    [
+      15.148,
+      15.428,
+      "A dog barks loudly."
+    ],
+    [
+      11.509,
+      11.779,
+      "A dog barks quietly once."
+    ],
+    [
+      5.0,
+      6.639,
+      "A dog growls softly and continuously."
+    ],
+    [
+      7.759,
+      16.917,
+      "A dog growls softly and continuously."
+    ]
+  ],
+  "duration": 16.917125,
+  "inference_seconds": 43.81349205970764
+}

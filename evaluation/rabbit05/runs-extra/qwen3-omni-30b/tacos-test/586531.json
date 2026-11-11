@@ -1,0 +1,473 @@
+{
+  "clip_id": "586531",
+  "labels": [
+    "Person breathing quietly up close.",
+    "A person clicks their lips quietly.",
+    "A sharp, dull knocking sound occurs once.",
+    "Someone takes a quiet, close breath.",
+    "A toy siren sounds loudly and gradually fades away.",
+    "Person breathing quietly and closely.",
+    "A sharp, dull knocking sound that occurs twice.",
+    "Someone takes a deep, quiet breath.",
+    "A toy siren sounds loudly and then gradually fades away.",
+    "A toy siren starts and gradually fades away.",
+    "Someone places a toy on a surface."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/586531.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 12.217732191085815,
+      "status": "complete",
+      "events": [
+        [
+          2.512,
+          3.122,
+          "Person breathing quietly up close."
+        ],
+        [
+          5.412,
+          5.612,
+          "A person clicks their lips quietly."
+        ],
+        [
+          6.512,
+          6.712,
+          "A sharp, dull knocking sound occurs once."
+        ],
+        [
+          7.012,
+          7.212,
+          "Someone takes a quiet, close breath."
+        ],
+        [
+          7.912,
+          10.0,
+          "A toy siren sounds loudly and gradually fades away."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-854e17576e9629d3",
+            "object": "chat.completion",
+            "created": 1792835332,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 2.512,\n      \"end\": 3.122\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 5.412,\n      \"end\": 5.612\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 6.512,\n      \"end\": 6.712\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 7.012,\n      \"end\": 7.212\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 7.912,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 394,
+              "total_tokens": 579,
+              "completion_tokens": 185,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 21.08190608024597,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          1.0,
+          "Person breathing quietly up close."
+        ],
+        [
+          1.0,
+          1.5,
+          "A person clicks their lips quietly."
+        ],
+        [
+          2.0,
+          2.5,
+          "A sharp, dull knocking sound occurs once."
+        ],
+        [
+          6.0,
+          7.0,
+          "Someone takes a quiet, close breath."
+        ],
+        [
+          3.0,
+          6.0,
+          "A toy siren sounds loudly and gradually fades away."
+        ],
+        [
+          7.0,
+          8.0,
+          "Person breathing quietly and closely."
+        ],
+        [
+          8.0,
+          8.5,
+          "A sharp, dull knocking sound that occurs twice."
+        ],
+        [
+          8.5,
+          9.0,
+          "Someone takes a deep, quiet breath."
+        ],
+        [
+          8.5,
+          10.0,
+          "A toy siren sounds loudly and then gradually fades away."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-870d8f95102fdcb9",
+            "object": "chat.completion",
+            "created": 1792835344,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 1.000\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 1.000,\n      \"end\": 1.500\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 2.000,\n      \"end\": 2.500\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 6.000,\n      \"end\": 7.000\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 3.000,\n      \"end\": 6.000\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 7.000,\n      \"end\": 8.000\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 8.000,\n      \"end\": 8.500\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 8.500,\n      \"end\": 9.000\n    },\n    {\n      \"query_id\": 8,\n      \"start\": 8.500,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 394,
+              "total_tokens": 715,
+              "completion_tokens": 321,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 10.0,
+      "seconds": 15.759109020233154,
+      "status": "complete",
+      "events": [
+        [
+          1.81,
+          2.38,
+          "Person breathing quietly up close."
+        ],
+        [
+          2.41,
+          2.68,
+          "A person clicks their lips quietly."
+        ],
+        [
+          2.71,
+          3.18,
+          "Someone takes a quiet, close breath."
+        ],
+        [
+          3.21,
+          7.52,
+          "A toy siren sounds loudly and gradually fades away."
+        ],
+        [
+          8.01,
+          8.42,
+          "Person breathing quietly and closely."
+        ],
+        [
+          8.42,
+          8.82,
+          "Someone takes a deep, quiet breath."
+        ],
+        [
+          8.82,
+          10.0,
+          "A toy siren sounds loudly and then gradually fades away."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-89998743bd45ce56",
+            "object": "chat.completion",
+            "created": 1792835365,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 1.81,\n      \"end\": 2.38\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 2.41,\n      \"end\": 2.68\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 2.71,\n      \"end\": 3.18\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 3.21,\n      \"end\": 7.52\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 8.01,\n      \"end\": 8.42\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 8.42,\n      \"end\": 8.82\n    },\n    {\n      \"query_id\": 8,\n      \"start\": 8.82,\n      \"end\": 10.0\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 394,
+              "total_tokens": 632,
+              "completion_tokens": 238,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 240000,
+      "start": 15.0,
+      "duration": 9.0260625,
+      "seconds": 11.659386396408081,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          2.72,
+          "A toy siren sounds loudly and gradually fades away."
+        ],
+        [
+          3.82,
+          6.02,
+          "A toy siren sounds loudly and then gradually fades away."
+        ],
+        [
+          6.88,
+          7.12,
+          "A sharp, dull knocking sound occurs once."
+        ],
+        [
+          7.32,
+          7.52,
+          "A person clicks their lips quietly."
+        ],
+        [
+          0.0,
+          2.72,
+          "A toy siren starts and gradually fades away."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-9ad12bd5b7c57e37",
+            "object": "chat.completion",
+            "created": 1792835381,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 4,\n      \"start\": 0.0,\n      \"end\": 2.72\n    },\n    {\n      \"query_id\": 8,\n      \"start\": 3.82,\n      \"end\": 6.02\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 6.88,\n      \"end\": 7.12\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 7.32,\n      \"end\": 7.52\n    },\n    {\n      \"query_id\": 9,\n      \"start\": 0.0,\n      \"end\": 2.72\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 380,
+              "total_tokens": 552,
+              "completion_tokens": 172,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      5.412,
+      5.612,
+      "A person clicks their lips quietly."
+    ],
+    [
+      6.0,
+      6.5,
+      "A person clicks their lips quietly."
+    ],
+    [
+      12.41,
+      12.68,
+      "A person clicks their lips quietly."
+    ],
+    [
+      22.32,
+      22.52,
+      "A person clicks their lips quietly."
+    ],
+    [
+      6.512,
+      6.712,
+      "A sharp, dull knocking sound occurs once."
+    ],
+    [
+      7.0,
+      7.5,
+      "A sharp, dull knocking sound occurs once."
+    ],
+    [
+      21.88,
+      22.12,
+      "A sharp, dull knocking sound occurs once."
+    ],
+    [
+      13.0,
+      13.5,
+      "A sharp, dull knocking sound that occurs twice."
+    ],
+    [
+      7.912,
+      11.0,
+      "A toy siren sounds loudly and gradually fades away."
+    ],
+    [
+      13.21,
+      17.72,
+      "A toy siren sounds loudly and gradually fades away."
+    ],
+    [
+      13.5,
+      15.0,
+      "A toy siren sounds loudly and then gradually fades away."
+    ],
+    [
+      18.82,
+      21.02,
+      "A toy siren sounds loudly and then gradually fades away."
+    ],
+    [
+      15.0,
+      17.72,
+      "A toy siren starts and gradually fades away."
+    ],
+    [
+      12.0,
+      13.0,
+      "Person breathing quietly and closely."
+    ],
+    [
+      18.009999999999998,
+      18.42,
+      "Person breathing quietly and closely."
+    ],
+    [
+      2.512,
+      3.122,
+      "Person breathing quietly up close."
+    ],
+    [
+      5.0,
+      6.0,
+      "Person breathing quietly up close."
+    ],
+    [
+      11.81,
+      12.379999999999999,
+      "Person breathing quietly up close."
+    ],
+    [
+      13.5,
+      14.0,
+      "Someone takes a deep, quiet breath."
+    ],
+    [
+      18.42,
+      18.82,
+      "Someone takes a deep, quiet breath."
+    ],
+    [
+      7.012,
+      7.212,
+      "Someone takes a quiet, close breath."
+    ],
+    [
+      11.0,
+      12.0,
+      "Someone takes a quiet, close breath."
+    ],
+    [
+      12.71,
+      13.18,
+      "Someone takes a quiet, close breath."
+    ]
+  ],
+  "duration": 24.0260625,
+  "inference_seconds": 60.71813368797302
+}

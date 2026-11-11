@@ -1,0 +1,733 @@
+{
+  "clip_id": "180043",
+  "labels": [
+    "A man sniffles, indicating a blocked or runny nose.",
+    "A man is constantly sniffing due to a runny nose.",
+    "A man breathes out through his mouth.",
+    "A man sniffs due to a runny nose.",
+    "A man clears his throat.",
+    "A sick man coughing.",
+    "A man is sniffing with a runny nose.",
+    "A man clearing his throat forcefully.",
+    "A man is breathing heavily through his mouth while having a cold.",
+    "A man sniffs his nose while having a cold."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/180043.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 21.939940929412842,
+      "status": "complete",
+      "events": [
+        [
+          0.97,
+          1.42,
+          "A man sniffles, indicating a blocked or runny nose."
+        ],
+        [
+          0.97,
+          1.42,
+          "A man is constantly sniffing due to a runny nose."
+        ],
+        [
+          1.97,
+          2.27,
+          "A man breathes out through his mouth."
+        ],
+        [
+          3.17,
+          3.52,
+          "A man sniffs due to a runny nose."
+        ],
+        [
+          4.02,
+          4.32,
+          "A man clears his throat."
+        ],
+        [
+          5.27,
+          5.62,
+          "A sick man coughing."
+        ],
+        [
+          5.27,
+          5.62,
+          "A man is sniffing with a runny nose."
+        ],
+        [
+          5.27,
+          5.62,
+          "A man clearing his throat forcefully."
+        ],
+        [
+          5.27,
+          5.62,
+          "A man is breathing heavily through his mouth while having a cold."
+        ],
+        [
+          5.27,
+          5.62,
+          "A man sniffs his nose while having a cold."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-bab99bb9d729f550",
+            "object": "chat.completion",
+            "created": 1792795119,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.97,\n      \"end\": 1.42\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.97,\n      \"end\": 1.42\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 1.97,\n      \"end\": 2.27\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 3.17,\n      \"end\": 3.52\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 4.02,\n      \"end\": 4.32\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 5.27,\n      \"end\": 5.62\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 5.27,\n      \"end\": 5.62\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 5.27,\n      \"end\": 5.62\n    },\n    {\n      \"query_id\": 8,\n      \"start\": 5.27,\n      \"end\": 5.62\n    },\n    {\n      \"query_id\": 9,\n      \"start\": 5.27,\n      \"end\": 5.62\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 396,
+              "total_tokens": 730,
+              "completion_tokens": 334,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 23.2590069770813,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          0.2,
+          "A man sniffles, indicating a blocked or runny nose."
+        ],
+        [
+          0.0,
+          0.2,
+          "A man is constantly sniffing due to a runny nose."
+        ],
+        [
+          0.0,
+          0.2,
+          "A man breathes out through his mouth."
+        ],
+        [
+          0.0,
+          0.2,
+          "A man sniffs due to a runny nose."
+        ],
+        [
+          0.0,
+          0.2,
+          "A man clears his throat."
+        ],
+        [
+          0.0,
+          0.2,
+          "A sick man coughing."
+        ],
+        [
+          0.0,
+          0.2,
+          "A man is sniffing with a runny nose."
+        ],
+        [
+          0.0,
+          0.2,
+          "A man clearing his throat forcefully."
+        ],
+        [
+          0.0,
+          0.2,
+          "A man is breathing heavily through his mouth while having a cold."
+        ],
+        [
+          0.0,
+          0.2,
+          "A man sniffs his nose while having a cold."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-ab92493831fb3c12",
+            "object": "chat.completion",
+            "created": 1792795141,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 0.200\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 0.200\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 0.200\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.000,\n      \"end\": 0.200\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 0.000,\n      \"end\": 0.200\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 0.000,\n      \"end\": 0.200\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 0.000,\n      \"end\": 0.200\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 0.000,\n      \"end\": 0.200\n    },\n    {\n      \"query_id\": 8,\n      \"start\": 0.000,\n      \"end\": 0.200\n    },\n    {\n      \"query_id\": 9,\n      \"start\": 0.000,\n      \"end\": 0.200\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 396,
+              "total_tokens": 750,
+              "completion_tokens": 354,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 10.0,
+      "seconds": 26.150710582733154,
+      "status": "complete",
+      "events": [
+        [
+          1.11,
+          1.52,
+          "A man sniffles, indicating a blocked or runny nose."
+        ],
+        [
+          1.11,
+          1.52,
+          "A man is constantly sniffing due to a runny nose."
+        ],
+        [
+          1.11,
+          1.52,
+          "A man sniffs due to a runny nose."
+        ],
+        [
+          1.11,
+          1.52,
+          "A man is sniffing with a runny nose."
+        ],
+        [
+          1.11,
+          1.52,
+          "A man sniffs his nose while having a cold."
+        ],
+        [
+          2.22,
+          2.52,
+          "A man clears his throat."
+        ],
+        [
+          3.11,
+          4.02,
+          "A sick man coughing."
+        ],
+        [
+          4.61,
+          5.82,
+          "A sick man coughing."
+        ],
+        [
+          6.21,
+          6.72,
+          "A man breathes out through his mouth."
+        ],
+        [
+          6.21,
+          6.72,
+          "A man is breathing heavily through his mouth while having a cold."
+        ],
+        [
+          8.11,
+          8.42,
+          "A man clearing his throat forcefully."
+        ],
+        [
+          8.91,
+          9.22,
+          "A man clearing his throat forcefully."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-be29d5af777c64af",
+            "object": "chat.completion",
+            "created": 1792795165,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 1.11,\n      \"end\": 1.52\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 1.11,\n      \"end\": 1.52\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 1.11,\n      \"end\": 1.52\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 1.11,\n      \"end\": 1.52\n    },\n    {\n      \"query_id\": 9,\n      \"start\": 1.11,\n      \"end\": 1.52\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 2.22,\n      \"end\": 2.52\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 3.11,\n      \"end\": 4.02\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 4.61,\n      \"end\": 5.82\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 6.21,\n      \"end\": 6.72\n    },\n    {\n      \"query_id\": 8,\n      \"start\": 6.21,\n      \"end\": 6.72\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 8.11,\n      \"end\": 8.42\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 8.91,\n      \"end\": 9.22\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 396,
+              "total_tokens": 794,
+              "completion_tokens": 398,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 240000,
+      "start": 15.0,
+      "duration": 10.0,
+      "seconds": 23.505829572677612,
+      "status": "complete",
+      "events": [
+        [
+          2.512,
+          3.012,
+          "A man sniffles, indicating a blocked or runny nose."
+        ],
+        [
+          2.512,
+          3.012,
+          "A man is constantly sniffing due to a runny nose."
+        ],
+        [
+          6.212,
+          6.712,
+          "A man breathes out through his mouth."
+        ],
+        [
+          2.512,
+          3.012,
+          "A man sniffs due to a runny nose."
+        ],
+        [
+          3.512,
+          3.812,
+          "A man clears his throat."
+        ],
+        [
+          0.0,
+          1.0,
+          "A sick man coughing."
+        ],
+        [
+          2.512,
+          3.012,
+          "A man is sniffing with a runny nose."
+        ],
+        [
+          3.512,
+          3.812,
+          "A man clearing his throat forcefully."
+        ],
+        [
+          6.212,
+          9.012,
+          "A man is breathing heavily through his mouth while having a cold."
+        ],
+        [
+          2.512,
+          3.012,
+          "A man sniffs his nose while having a cold."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8abc674e4e2164d6",
+            "object": "chat.completion",
+            "created": 1792795191,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 2.512,\n      \"end\": 3.012\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 2.512,\n      \"end\": 3.012\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 6.212,\n      \"end\": 6.712\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 2.512,\n      \"end\": 3.012\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 3.512,\n      \"end\": 3.812\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 0.000,\n      \"end\": 1.000\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 2.512,\n      \"end\": 3.012\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 3.512,\n      \"end\": 3.812\n    },\n    {\n      \"query_id\": 8,\n      \"start\": 6.212,\n      \"end\": 9.012\n    },\n    {\n      \"query_id\": 9,\n      \"start\": 2.512,\n      \"end\": 3.012\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 396,
+              "total_tokens": 750,
+              "completion_tokens": 354,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 320000,
+      "start": 20.0,
+      "duration": 8.55,
+      "seconds": 11.871925115585327,
+      "status": "complete",
+      "events": [
+        [
+          5.11,
+          5.52,
+          "A man sniffles, indicating a blocked or runny nose."
+        ],
+        [
+          1.02,
+          1.42,
+          "A man breathes out through his mouth."
+        ],
+        [
+          2.52,
+          2.92,
+          "A man breathes out through his mouth."
+        ],
+        [
+          3.92,
+          4.32,
+          "A man breathes out through his mouth."
+        ],
+        [
+          0.0,
+          8.55,
+          "A man is breathing heavily through his mouth while having a cold."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-aa647aa3b2298d9d",
+            "object": "chat.completion",
+            "created": 1792795214,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 5.11,\n      \"end\": 5.52\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 1.02,\n      \"end\": 1.42\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 2.52,\n      \"end\": 2.92\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 3.92,\n      \"end\": 4.32\n    },\n    {\n      \"query_id\": 8,\n      \"start\": 0.0,\n      \"end\": 8.55\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 375,
+              "total_tokens": 548,
+              "completion_tokens": 173,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      1.97,
+      2.27,
+      "A man breathes out through his mouth."
+    ],
+    [
+      5.0,
+      5.2,
+      "A man breathes out through his mouth."
+    ],
+    [
+      16.21,
+      16.72,
+      "A man breathes out through his mouth."
+    ],
+    [
+      21.02,
+      21.712,
+      "A man breathes out through his mouth."
+    ],
+    [
+      22.52,
+      22.92,
+      "A man breathes out through his mouth."
+    ],
+    [
+      23.92,
+      24.32,
+      "A man breathes out through his mouth."
+    ],
+    [
+      5.0,
+      5.2,
+      "A man clearing his throat forcefully."
+    ],
+    [
+      5.27,
+      5.62,
+      "A man clearing his throat forcefully."
+    ],
+    [
+      18.11,
+      18.42,
+      "A man clearing his throat forcefully."
+    ],
+    [
+      18.512,
+      18.812,
+      "A man clearing his throat forcefully."
+    ],
+    [
+      18.91,
+      19.22,
+      "A man clearing his throat forcefully."
+    ],
+    [
+      4.02,
+      4.32,
+      "A man clears his throat."
+    ],
+    [
+      5.0,
+      5.2,
+      "A man clears his throat."
+    ],
+    [
+      12.22,
+      12.52,
+      "A man clears his throat."
+    ],
+    [
+      18.512,
+      18.812,
+      "A man clears his throat."
+    ],
+    [
+      5.0,
+      5.2,
+      "A man is breathing heavily through his mouth while having a cold."
+    ],
+    [
+      5.27,
+      5.62,
+      "A man is breathing heavily through his mouth while having a cold."
+    ],
+    [
+      16.21,
+      16.72,
+      "A man is breathing heavily through his mouth while having a cold."
+    ],
+    [
+      20.0,
+      28.55,
+      "A man is breathing heavily through his mouth while having a cold."
+    ],
+    [
+      0.97,
+      1.42,
+      "A man is constantly sniffing due to a runny nose."
+    ],
+    [
+      5.0,
+      5.2,
+      "A man is constantly sniffing due to a runny nose."
+    ],
+    [
+      11.11,
+      11.52,
+      "A man is constantly sniffing due to a runny nose."
+    ],
+    [
+      17.512,
+      18.012,
+      "A man is constantly sniffing due to a runny nose."
+    ],
+    [
+      5.0,
+      5.2,
+      "A man is sniffing with a runny nose."
+    ],
+    [
+      5.27,
+      5.62,
+      "A man is sniffing with a runny nose."
+    ],
+    [
+      11.11,
+      11.52,
+      "A man is sniffing with a runny nose."
+    ],
+    [
+      17.512,
+      18.012,
+      "A man is sniffing with a runny nose."
+    ],
+    [
+      0.97,
+      1.42,
+      "A man sniffles, indicating a blocked or runny nose."
+    ],
+    [
+      5.0,
+      5.2,
+      "A man sniffles, indicating a blocked or runny nose."
+    ],
+    [
+      11.11,
+      11.52,
+      "A man sniffles, indicating a blocked or runny nose."
+    ],
+    [
+      17.512,
+      18.012,
+      "A man sniffles, indicating a blocked or runny nose."
+    ],
+    [
+      25.11,
+      25.52,
+      "A man sniffles, indicating a blocked or runny nose."
+    ],
+    [
+      3.17,
+      3.52,
+      "A man sniffs due to a runny nose."
+    ],
+    [
+      5.0,
+      5.2,
+      "A man sniffs due to a runny nose."
+    ],
+    [
+      11.11,
+      11.52,
+      "A man sniffs due to a runny nose."
+    ],
+    [
+      17.512,
+      18.012,
+      "A man sniffs due to a runny nose."
+    ],
+    [
+      5.0,
+      5.2,
+      "A man sniffs his nose while having a cold."
+    ],
+    [
+      5.27,
+      5.62,
+      "A man sniffs his nose while having a cold."
+    ],
+    [
+      11.11,
+      11.52,
+      "A man sniffs his nose while having a cold."
+    ],
+    [
+      17.512,
+      18.012,
+      "A man sniffs his nose while having a cold."
+    ],
+    [
+      5.0,
+      5.2,
+      "A sick man coughing."
+    ],
+    [
+      5.27,
+      5.62,
+      "A sick man coughing."
+    ],
+    [
+      13.11,
+      14.02,
+      "A sick man coughing."
+    ],
+    [
+      14.61,
+      16.0,
+      "A sick man coughing."
+    ]
+  ],
+  "duration": 28.55,
+  "inference_seconds": 106.72741317749023
+}

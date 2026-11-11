@@ -1,0 +1,244 @@
+{
+  "clip_id": "538910",
+  "labels": [
+    "A sewing machine operates loudly and close by.",
+    "Regular tapping of feet on a sewing machine.",
+    "Machine turning off.",
+    "A loud, unpleasant beep.",
+    "A loud washing machine or appliance is running nearby.",
+    "A short warning beep sounds.",
+    "Shuffling sounds as someone unloads a washing machine.",
+    "A very sharp and long beep is heard."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/538910.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 5.416289567947388,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          9.999,
+          "A sewing machine operates loudly and close by."
+        ],
+        [
+          0.0,
+          9.999,
+          "A loud washing machine or appliance is running nearby."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a89d5f2cd9b4fd3a",
+            "object": "chat.completion",
+            "created": 1792823429,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 9.999\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 0.000,\n      \"end\": 9.999\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 356,
+              "total_tokens": 438,
+              "completion_tokens": 82,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 5.48592209815979,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          9.8,
+          "A sewing machine operates loudly and close by."
+        ],
+        [
+          9.8,
+          10.0,
+          "A loud, unpleasant beep."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-ae651eb35f40a9ed",
+            "object": "chat.completion",
+            "created": 1792823435,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 9.800\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 9.800,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 356,
+              "total_tokens": 439,
+              "completion_tokens": 83,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 9.0799375,
+      "seconds": 9.242135047912598,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          4.72,
+          "A sewing machine operates loudly and close by."
+        ],
+        [
+          4.72,
+          8.52,
+          "Regular tapping of feet on a sewing machine."
+        ],
+        [
+          4.72,
+          8.52,
+          "Machine turning off."
+        ],
+        [
+          8.52,
+          9.0799375,
+          "A loud, unpleasant beep."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a756665ad44d14bf",
+            "object": "chat.completion",
+            "created": 1792823440,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 4.72\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 4.72,\n      \"end\": 8.52\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 4.72,\n      \"end\": 8.52\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 8.52,\n      \"end\": 9.08\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 342,
+              "total_tokens": 483,
+              "completion_tokens": 141,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      9.999,
+      "A loud washing machine or appliance is running nearby."
+    ],
+    [
+      14.8,
+      15.0,
+      "A loud, unpleasant beep."
+    ],
+    [
+      18.52,
+      19.0799375,
+      "A loud, unpleasant beep."
+    ],
+    [
+      0.0,
+      14.8,
+      "A sewing machine operates loudly and close by."
+    ],
+    [
+      14.719999999999999,
+      18.52,
+      "Machine turning off."
+    ],
+    [
+      14.719999999999999,
+      18.52,
+      "Regular tapping of feet on a sewing machine."
+    ]
+  ],
+  "duration": 19.0799375,
+  "inference_seconds": 20.144346714019775
+}

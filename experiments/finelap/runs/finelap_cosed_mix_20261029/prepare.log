@@ -1,0 +1,13 @@
+INDEX /work/zhanghc/datasets/WavCaps/audio/AudioSet_SL 92450
+INDEX /work/zhangyu/AED/audioset_tagging_cnn/datasets/audios/balanced_train_segments 99730
+INDEX /work/zhangyu/AED/audioset_tagging_cnn/datasets/audios/unbalanced_train_segments 143686
+Traceback (most recent call last):
+  File "/work/zhanghc/Myllm/FineLAP/utils/prepare_cosed_data.py", line 228, in <module>
+    counts['tacos']=prepare_tacos()
+  File "/work/zhanghc/Myllm/FineLAP/utils/prepare_cosed_data.py", line 172, in prepare_tacos
+    with zipfile.ZipFile(src/'audio.zip') as archive:
+  File "/work/zhanghc/miniconda3/envs/finelapt/lib/python3.9/zipfile.py", line 1284, in __init__
+    self._RealGetContents()
+  File "/work/zhanghc/miniconda3/envs/finelapt/lib/python3.9/zipfile.py", line 1351, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file

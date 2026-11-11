@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "updated": "2026-10-29T16:38:44.465950",
+  "batch_per_gpu": 32,
+  "global_batch": 96,
+  "gpus": [
+    "2",
+    "3",
+    "4"
+  ],
+  "steps": 3,
+  "precision": "bf16",
+  "metrics": {
+    "epoch": 1,
+    "loss": 12.82394536336263,
+    "clip_loss": 9.779693285624186,
+    "grounding_loss": 0.6088503996531168,
+    "distillation_loss": 0.0,
+    "time": 6.068226099014282,
+    "lr": 1.5000000000000002e-07,
+    "alpha": 1.0,
+    "beta": 5.0,
+    "gamma": 1.0,
+    "loss_note": "FineLAP: weighted clip-level + frame-level + optional distillation losses; see the saved configuration for data, loss weights, and precision."
+  },
+  "checkpoint": "/work/zhanghc/Myllm/FineLAP/exps/finelap_cosed_mix_20261029_smoke/models/last_epoch.pt",
+  "fairseq_commit": "3d262bb25690e4eb2e7d3c1309b1e9c406ca4b99",
+  "source_hashes": {
+    "train.py": "8eb2e53a747c3528d2f5784da5c31d5a4d7e791f0baa35e28b750e8836de0a0c",
+    "models/losses.py": "b05861f84aa88b62fc129a626804df2f9428f12e5e2841293cd6062552287224",
+    "data_handling/mix_dataset.py": "41875f65403c0f14819bd9b8b691e3d63e063d9e226134627b7c5122a144647a"
+  }
+}

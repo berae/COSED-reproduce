@@ -1,0 +1,97 @@
+{
+  "clip_id": "Y-B2i3dzzdso",
+  "labels": [
+    "people talking",
+    "kid screaming",
+    "a car squealing its tires"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y-B2i3dzzdso.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 7.581649303436279,
+      "status": "complete",
+      "events": [
+        [
+          3.589,
+          4.679,
+          "people talking"
+        ],
+        [
+          0.0,
+          1.529,
+          "kid screaming"
+        ],
+        [
+          2.229,
+          3.589,
+          "a car squealing its tires"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b8d16fa1f18f8993",
+            "object": "chat.completion",
+            "created": 1792779911,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 3.589,\n      \"end\": 4.679\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.0,\n      \"end\": 1.529\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 2.229,\n      \"end\": 3.589\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 294,
+              "total_tokens": 408,
+              "completion_tokens": 114,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      2.229,
+      3.589,
+      "a car squealing its tires"
+    ],
+    [
+      0.0,
+      1.529,
+      "kid screaming"
+    ],
+    [
+      3.589,
+      4.679,
+      "people talking"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 7.581649303436279
+}

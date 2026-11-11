@@ -1,0 +1,153 @@
+Traceback (most recent call last):
+  File "/home/zhanghc/projects/ov-sed/benchmark/runner-v1.py", line 237, in <module>
+    elif args.action=='run':run(args)
+  File "/home/zhanghc/projects/ov-sed/benchmark/runner-v1.py", line 159, in run
+    import numpy as np, librosa, torch
+  File "/home/zhanghc/venvs/flexsed/lib/python3.10/site-packages/torch/__init__.py", line 2126, in <module>
+    from torch import _VF as _VF, functional as functional  # usort: skip
+  File "/home/zhanghc/venvs/flexsed/lib/python3.10/site-packages/torch/functional.py", line 8, in <module>
+    import torch.nn.functional as F
+  File "/home/zhanghc/venvs/flexsed/lib/python3.10/site-packages/torch/nn/__init__.py", line 8, in <module>
+    from torch.nn.modules import *  # usort: skip # noqa: F403
+  File "/home/zhanghc/venvs/flexsed/lib/python3.10/site-packages/torch/nn/modules/__init__.py", line 1, in <module>
+    from .module import Module  # usort: skip
+  File "/home/zhanghc/venvs/flexsed/lib/python3.10/site-packages/torch/nn/modules/module.py", line 17, in <module>
+    from torch.utils._python_dispatch import is_traceable_wrapper_subclass
+  File "/home/zhanghc/venvs/flexsed/lib/python3.10/site-packages/torch/utils/__init__.py", line 8, in <module>
+    from torch.utils import (
+  File "/home/zhanghc/venvs/flexsed/lib/python3.10/site-packages/torch/utils/data/__init__.py", line 1, in <module>
+    from torch.utils.data.dataloader import (
+  File "/home/zhanghc/venvs/flexsed/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 14, in <module>
+    import queue
+  File "/home/zhanghc/projects/ov-sed/benchmark/queue.py", line 13, in <module>
+    p=subprocess.run(cmd,stdout=f,stderr=subprocess.STDOUT,env=env)
+  File "/home/zhanghc/miniconda3/envs/nape/lib/python3.10/subprocess.py", line 503, in run
+    with Popen(*popenargs, **kwargs) as process:
+  File "/home/zhanghc/miniconda3/envs/nape/lib/python3.10/subprocess.py", line 971, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/zhanghc/miniconda3/envs/nape/lib/python3.10/subprocess.py", line 1863, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/zhanghc/venvs/--model/bin/python'
+/home/zhanghc/venvs/flexsed/lib/python3.10/site-packages/transformers/utils/hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/home/zhanghc/projects/ov-sed/FlexSED/src/models/dasheng.py:44: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+/home/zhanghc/projects/ov-sed/FlexSED/src/models/transformer.py:200: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=False):
+/home/zhanghc/projects/ov-sed/FlexSED/src/models/transformer.py:209: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=False):
+attention mode is flash
+Loading Dasheng weights for decoders...
+Block 6:
+✅ Expected missing keys: ['adaln.weight', 'adaln.bias']
+Block 7:
+✅ Expected missing keys: ['adaln.weight', 'adaln.bias']
+Block 8:
+✅ Expected missing keys: ['adaln.weight', 'adaln.bias']
+Block 9:
+✅ Expected missing keys: ['adaln.weight', 'adaln.bias']
+Block 10:
+✅ Expected missing keys: ['adaln.weight', 'adaln.bias']
+Block 11:
+✅ Expected missing keys: ['adaln.weight', 'adaln.bias']
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 1, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114870.4863286, "elapsed_seconds": 6.768049240112305}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 25, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114871.1169736, "elapsed_seconds": 7.398694276809692}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 50, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114871.7873821, "elapsed_seconds": 8.069102764129639}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 75, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114872.4347794, "elapsed_seconds": 8.716500043869019}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 100, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114873.16808, "elapsed_seconds": 9.449800729751587}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 125, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114873.9151437, "elapsed_seconds": 10.196864366531372}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 150, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114874.6229951, "elapsed_seconds": 10.904715538024902}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 175, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114875.2533114, "elapsed_seconds": 11.535032033920288}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 200, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114875.9215748, "elapsed_seconds": 12.203295469284058}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 225, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114876.6685767, "elapsed_seconds": 12.950297355651855}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 250, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114877.2985132, "elapsed_seconds": 13.580233812332153}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 275, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114877.9104795, "elapsed_seconds": 14.192199945449829}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 300, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114878.6354291, "elapsed_seconds": 14.917149782180786}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 325, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114879.3041801, "elapsed_seconds": 15.585900783538818}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 350, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114879.9348383, "elapsed_seconds": 16.216558933258057}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 375, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114880.5850914, "elapsed_seconds": 16.866811752319336}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 400, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114881.235002, "elapsed_seconds": 17.516722679138184}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 425, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114882.022321, "elapsed_seconds": 18.304041624069214}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 450, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114882.7506738, "elapsed_seconds": 19.032394409179688}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 475, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114883.4926574, "elapsed_seconds": 19.774378061294556}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 500, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114884.1814551, "elapsed_seconds": 20.463175773620605}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 525, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114884.8909428, "elapsed_seconds": 21.17266321182251}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 550, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114885.6047363, "elapsed_seconds": 21.886456727981567}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 575, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114886.3135047, "elapsed_seconds": 22.5952250957489}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 600, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114886.9454844, "elapsed_seconds": 23.22720503807068}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 625, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114887.6350467, "elapsed_seconds": 23.916767358779907}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 650, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114888.3965876, "elapsed_seconds": 24.678308248519897}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 675, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114889.072025, "elapsed_seconds": 25.353745698928833}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 700, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114889.8702357, "elapsed_seconds": 26.15195608139038}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 725, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114890.6254668, "elapsed_seconds": 26.90718722343445}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 750, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114891.3387103, "elapsed_seconds": 27.620430946350098}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 775, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114892.038879, "elapsed_seconds": 28.32059955596924}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 800, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114892.6748793, "elapsed_seconds": 28.956599712371826}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 825, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114893.3897219, "elapsed_seconds": 29.67144250869751}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 850, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114894.1332529, "elapsed_seconds": 30.414973497390747}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 875, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114894.7887137, "elapsed_seconds": 31.07043433189392}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 900, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114895.5222971, "elapsed_seconds": 31.804017782211304}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 925, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114896.2358592, "elapsed_seconds": 32.517579555511475}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 950, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114896.9318464, "elapsed_seconds": 33.21356701850891}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 975, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114897.686869, "elapsed_seconds": 33.968589544296265}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 1000, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114898.423111, "elapsed_seconds": 34.70483160018921}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 1025, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114899.1820962, "elapsed_seconds": 35.46381664276123}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 1050, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114899.8003712, "elapsed_seconds": 36.08209180831909}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 1075, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114900.4561393, "elapsed_seconds": 36.73785972595215}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 1100, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114901.210557, "elapsed_seconds": 37.4922776222229}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 1125, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114902.0283654, "elapsed_seconds": 38.3100860118866}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 1150, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114902.6869283, "elapsed_seconds": 38.96864867210388}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 1175, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114903.4248464, "elapsed_seconds": 39.70656704902649}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 1200, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114904.1225445, "elapsed_seconds": 40.40426540374756}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 1225, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114904.8785884, "elapsed_seconds": 41.160309076309204}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 1250, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114905.5957427, "elapsed_seconds": 41.8774631023407}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 1275, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114906.3497114, "elapsed_seconds": 42.631432056427}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 1300, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114907.0474634, "elapsed_seconds": 43.32918381690979}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 1325, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114907.7635968, "elapsed_seconds": 44.04531741142273}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 1350, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114908.440496, "elapsed_seconds": 44.72221660614014}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 1375, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114909.079667, "elapsed_seconds": 45.361387968063354}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 1400, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114909.7981782, "elapsed_seconds": 46.079899072647095}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 1425, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114910.4554327, "elapsed_seconds": 46.73715329170227}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 1450, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114911.172841, "elapsed_seconds": 47.454561710357666}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 1475, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114911.8711398, "elapsed_seconds": 48.15286040306091}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 1500, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114912.527484, "elapsed_seconds": 48.80920457839966}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 1525, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114913.2446415, "elapsed_seconds": 49.52636194229126}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 1550, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114913.9593632, "elapsed_seconds": 50.24108409881592}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 1575, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114914.5970976, "elapsed_seconds": 50.87881827354431}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 1600, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114915.291519, "elapsed_seconds": 51.57323956489563}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 1625, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114916.0068188, "elapsed_seconds": 52.28853940963745}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 1650, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114916.6661534, "elapsed_seconds": 52.94787406921387}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 1675, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114917.303877, "elapsed_seconds": 53.58559775352478}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 1700, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114917.9628592, "elapsed_seconds": 54.244580030441284}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 1725, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114918.69621, "elapsed_seconds": 54.977930545806885}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 1750, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114919.4652636, "elapsed_seconds": 55.746984243392944}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 1775, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114920.1049964, "elapsed_seconds": 56.386717081069946}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 1800, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114920.784892, "elapsed_seconds": 57.06661248207092}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 1825, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114921.459745, "elapsed_seconds": 57.74146556854248}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 1850, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114922.1757421, "elapsed_seconds": 58.457462787628174}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 1875, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114922.8778715, "elapsed_seconds": 59.159592390060425}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 1900, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114923.599074, "elapsed_seconds": 59.880794286727905}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 1925, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114924.359656, "elapsed_seconds": 60.64137673377991}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 1950, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114925.0971656, "elapsed_seconds": 61.378886222839355}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 1975, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114925.8141139, "elapsed_seconds": 62.095834493637085}
+{"model": "flexsed", "dataset": "urbansed-test", "total": 2000, "completed": 2000, "status": "running", "pid": 3884247, "started": 1792114863.7182796, "load_seconds": 5.543085813522339, "updated": 1792114926.5529618, "elapsed_seconds": 62.83468246459961}
+Traceback (most recent call last):
+  File "/home/zhanghc/projects/ov-sed/benchmark/runner-v1.py", line 237, in <module>
+    elif args.action=='run':run(args)
+  File "/home/zhanghc/projects/ov-sed/benchmark/runner-v1.py", line 211, in run
+    if not args.limit: score(args,out,manifest,items)
+  File "/home/zhanghc/projects/ov-sed/benchmark/runner-v1.py", line 227, in score
+    result=sed_scores_eval.intersection_based.psds(scores,gt,durations,dtc_threshold=.7,gtc_threshold=.7,cttc_threshold=None,alpha_ct=0,alpha_st=1,max_efpr=100,num_jobs=4)
+  File "/home/zhanghc/venvs/flexsed/lib/python3.10/site-packages/sed_scores_eval/intersection_based/psds.py", line 98, in psds
+    (effective_tp_rate, effective_fp_rate), single_class_psd_rocs = psd_roc(
+  File "/home/zhanghc/venvs/flexsed/lib/python3.10/site-packages/sed_scores_eval/intersection_based/psds.py", line 195, in psd_roc
+    intermediate_statistics, audio_ids = accumulated_intermediate_statistics(
+  File "/home/zhanghc/venvs/flexsed/lib/python3.10/site-packages/sed_scores_eval/intersection_based/intermediate_statistics.py", line 168, in accumulated_intermediate_statistics
+    scores, ground_truth, audio_ids = parse_inputs(scores, ground_truth)
+  File "/home/zhanghc/venvs/flexsed/lib/python3.10/site-packages/sed_scores_eval/base_modules/io.py", line 35, in parse_inputs
+    ground_truth = parse_ground_truth(ground_truth, tagging=tagging, audio_ids=audio_ids)
+  File "/home/zhanghc/venvs/flexsed/lib/python3.10/site-packages/sed_scores_eval/base_modules/io.py", line 68, in parse_ground_truth
+    assert_non_connected_events(ground_truth)
+  File "/home/zhanghc/venvs/flexsed/lib/python3.10/site-packages/sed_scores_eval/base_modules/io.py", line 90, in assert_non_connected_events
+    assert event[0] > current_offset, f'Connected/overlapping {event[2]} events found for clip {clip_id}: {class_events}'
+AssertionError: Connected/overlapping gun_shot events found for clip soundscape_test_bimodal101: [(7.665626, 9.041054, 'gun_shot'), (7.908620000000001, 8.913138, 'gun_shot')]

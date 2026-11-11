@@ -1,0 +1,107 @@
+{
+  "clip_id": "Y0qzvvMd5dvo",
+  "labels": [
+    "someone speaking",
+    "laughing",
+    "a cat meows"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y0qzvvMd5dvo.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 9.559358835220337,
+      "status": "complete",
+      "events": [
+        [
+          5.378,
+          6.498,
+          "someone speaking"
+        ],
+        [
+          7.018,
+          10.0,
+          "someone speaking"
+        ],
+        [
+          0.0,
+          1.0,
+          "laughing"
+        ],
+        [
+          6.498,
+          6.818,
+          "a cat meows"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8763d36cec7d058e",
+            "object": "chat.completion",
+            "created": 1792780238,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 5.378,\n      \"end\": 6.498\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 7.018,\n      \"end\": 10.0\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.0,\n      \"end\": 1.0\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 6.498,\n      \"end\": 6.818\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 291,
+              "total_tokens": 436,
+              "completion_tokens": 145,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      6.498,
+      6.818,
+      "a cat meows"
+    ],
+    [
+      0.0,
+      1.0,
+      "laughing"
+    ],
+    [
+      5.378,
+      6.498,
+      "someone speaking"
+    ],
+    [
+      7.018,
+      10.0,
+      "someone speaking"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 9.559358835220337
+}

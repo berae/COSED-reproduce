@@ -1,0 +1,86 @@
+{
+  "clip_id": "Y0TumqT-_n9k",
+  "labels": [
+    "loud wind",
+    "the sound of an engine"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y0TumqT-_n9k.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 9.2535,
+      "seconds": 5.172844409942627,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          9.2535,
+          "loud wind"
+        ],
+        [
+          0.0,
+          9.2535,
+          "the sound of an engine"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a3ff554a177e40f0",
+            "object": "chat.completion",
+            "created": 1792780181,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 9.254\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.0,\n      \"end\": 9.254\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 277,
+              "total_tokens": 355,
+              "completion_tokens": 78,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      9.2535,
+      "loud wind"
+    ],
+    [
+      0.0,
+      9.2535,
+      "the sound of an engine"
+    ]
+  ],
+  "duration": 9.2535,
+  "inference_seconds": 5.172844409942627
+}

@@ -1,0 +1,146 @@
+{
+  "clip_id": "YyRUZQSU4EzQ",
+  "labels": [
+    "a dog barks",
+    "growls aggressively"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/YyRUZQSU4EzQ.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 18.731614112854004,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          0.25,
+          "a dog barks"
+        ],
+        [
+          0.37,
+          0.62,
+          "a dog barks"
+        ],
+        [
+          1.25,
+          2.87,
+          "growls aggressively"
+        ],
+        [
+          3.9,
+          5.4,
+          "growls aggressively"
+        ],
+        [
+          5.5,
+          6.0,
+          "a dog barks"
+        ],
+        [
+          7.2,
+          8.2,
+          "growls aggressively"
+        ],
+        [
+          8.3,
+          8.6,
+          "a dog barks"
+        ],
+        [
+          9.2,
+          9.5,
+          "a dog barks"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-9fadb188709c232d",
+            "object": "chat.completion",
+            "created": 1792782985,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 0.250\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 0.370,\n      \"end\": 0.620\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 1.250,\n      \"end\": 2.870\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 3.900,\n      \"end\": 5.400\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 5.500,\n      \"end\": 6.000\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 7.200,\n      \"end\": 8.200\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 8.300,\n      \"end\": 8.600\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 9.200,\n      \"end\": 9.500\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 288,
+              "total_tokens": 574,
+              "completion_tokens": 286,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      0.25,
+      "a dog barks"
+    ],
+    [
+      0.37,
+      0.62,
+      "a dog barks"
+    ],
+    [
+      5.5,
+      6.0,
+      "a dog barks"
+    ],
+    [
+      8.3,
+      8.6,
+      "a dog barks"
+    ],
+    [
+      9.2,
+      9.5,
+      "a dog barks"
+    ],
+    [
+      1.25,
+      2.87,
+      "growls aggressively"
+    ],
+    [
+      3.9,
+      5.4,
+      "growls aggressively"
+    ],
+    [
+      7.2,
+      8.2,
+      "growls aggressively"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 18.731614112854004
+}

@@ -1,0 +1,523 @@
+{
+  "clip_id": "234854",
+  "labels": [
+    "A clock alarm beeps softly.",
+    "A clock alarm beeps.",
+    "A clock alarm beeps loudly.",
+    "A clock alarm beeps repeatedly.",
+    "An alarm beeps loudly."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/234854.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 20.96870994567871,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          0.578,
+          "A clock alarm beeps softly."
+        ],
+        [
+          0.0,
+          0.578,
+          "A clock alarm beeps."
+        ],
+        [
+          0.0,
+          0.578,
+          "A clock alarm beeps repeatedly."
+        ],
+        [
+          3.096,
+          3.674,
+          "A clock alarm beeps softly."
+        ],
+        [
+          3.096,
+          3.674,
+          "A clock alarm beeps."
+        ],
+        [
+          3.096,
+          3.674,
+          "A clock alarm beeps repeatedly."
+        ],
+        [
+          6.588,
+          7.166,
+          "A clock alarm beeps softly."
+        ],
+        [
+          6.588,
+          7.166,
+          "A clock alarm beeps."
+        ],
+        [
+          6.588,
+          7.166,
+          "A clock alarm beeps repeatedly."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-855f4e26fcde6981",
+            "object": "chat.completion",
+            "created": 1792832093,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 0.578\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 0.578\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.000,\n      \"end\": 0.578\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 3.096,\n      \"end\": 3.674\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 3.096,\n      \"end\": 3.674\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 3.096,\n      \"end\": 3.674\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 6.588,\n      \"end\": 7.166\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 6.588,\n      \"end\": 7.166\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 6.588,\n      \"end\": 7.166\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 319,
+              "total_tokens": 639,
+              "completion_tokens": 320,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 9.982137203216553,
+      "status": "complete",
+      "events": [
+        [
+          2.378,
+          2.658,
+          "A clock alarm beeps softly."
+        ],
+        [
+          5.298,
+          5.578,
+          "A clock alarm beeps."
+        ],
+        [
+          7.878,
+          8.478,
+          "A clock alarm beeps loudly."
+        ],
+        [
+          8.998,
+          9.598,
+          "A clock alarm beeps repeatedly."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-9b934c75c972f76e",
+            "object": "chat.completion",
+            "created": 1792832114,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 2.378,\n      \"end\": 2.658\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 5.298,\n      \"end\": 5.578\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 7.878,\n      \"end\": 8.478\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 8.998,\n      \"end\": 9.598\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 319,
+              "total_tokens": 469,
+              "completion_tokens": 150,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 10.0,
+      "seconds": 12.30802607536316,
+      "status": "complete",
+      "events": [
+        [
+          0.278,
+          0.568,
+          "A clock alarm beeps softly."
+        ],
+        [
+          2.898,
+          3.518,
+          "A clock alarm beeps."
+        ],
+        [
+          4.058,
+          4.678,
+          "A clock alarm beeps."
+        ],
+        [
+          7.998,
+          8.618,
+          "A clock alarm beeps repeatedly."
+        ],
+        [
+          9.158,
+          9.778,
+          "A clock alarm beeps repeatedly."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-824501e798dd02dd",
+            "object": "chat.completion",
+            "created": 1792832124,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.278,\n      \"end\": 0.568\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 2.898,\n      \"end\": 3.518\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 4.058,\n      \"end\": 4.678\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 7.998,\n      \"end\": 8.618\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 9.158,\n      \"end\": 9.778\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 319,
+              "total_tokens": 503,
+              "completion_tokens": 184,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 240000,
+      "start": 15.0,
+      "duration": 10.0,
+      "seconds": 12.087766408920288,
+      "status": "complete",
+      "events": [
+        [
+          2.985,
+          3.675,
+          "A clock alarm beeps softly."
+        ],
+        [
+          3.995,
+          4.685,
+          "A clock alarm beeps."
+        ],
+        [
+          6.995,
+          7.685,
+          "A clock alarm beeps loudly."
+        ],
+        [
+          6.995,
+          7.685,
+          "A clock alarm beeps repeatedly."
+        ],
+        [
+          6.995,
+          7.685,
+          "An alarm beeps loudly."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-afb1aa3bac84c524",
+            "object": "chat.completion",
+            "created": 1792832137,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 2.985,\n      \"end\": 3.675\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 3.995,\n      \"end\": 4.685\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 6.995,\n      \"end\": 7.685\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 6.995,\n      \"end\": 7.685\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 6.995,\n      \"end\": 7.685\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 319,
+              "total_tokens": 503,
+              "completion_tokens": 184,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 320000,
+      "start": 20.0,
+      "duration": 6.3049375,
+      "seconds": 5.407279014587402,
+      "status": "complete",
+      "events": [
+        [
+          2.278,
+          3.398,
+          "A clock alarm beeps."
+        ],
+        [
+          4.878,
+          5.998,
+          "A clock alarm beeps."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-81314a0adb9b9a91",
+            "object": "chat.completion",
+            "created": 1792832149,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 1,\n      \"start\": 2.278,\n      \"end\": 3.398\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 4.878,\n      \"end\": 5.998\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 269,
+              "total_tokens": 351,
+              "completion_tokens": 82,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      12.878,
+      13.478,
+      "A clock alarm beeps loudly."
+    ],
+    [
+      21.995,
+      22.685,
+      "A clock alarm beeps loudly."
+    ],
+    [
+      0.0,
+      0.578,
+      "A clock alarm beeps repeatedly."
+    ],
+    [
+      3.096,
+      3.674,
+      "A clock alarm beeps repeatedly."
+    ],
+    [
+      6.588,
+      7.166,
+      "A clock alarm beeps repeatedly."
+    ],
+    [
+      13.998,
+      14.598,
+      "A clock alarm beeps repeatedly."
+    ],
+    [
+      17.998,
+      18.618000000000002,
+      "A clock alarm beeps repeatedly."
+    ],
+    [
+      19.158,
+      19.778,
+      "A clock alarm beeps repeatedly."
+    ],
+    [
+      21.995,
+      22.685,
+      "A clock alarm beeps repeatedly."
+    ],
+    [
+      0.0,
+      0.578,
+      "A clock alarm beeps softly."
+    ],
+    [
+      3.096,
+      3.674,
+      "A clock alarm beeps softly."
+    ],
+    [
+      6.588,
+      7.166,
+      "A clock alarm beeps softly."
+    ],
+    [
+      7.378,
+      7.6579999999999995,
+      "A clock alarm beeps softly."
+    ],
+    [
+      10.278,
+      10.568,
+      "A clock alarm beeps softly."
+    ],
+    [
+      17.985,
+      18.675,
+      "A clock alarm beeps softly."
+    ],
+    [
+      0.0,
+      0.578,
+      "A clock alarm beeps."
+    ],
+    [
+      3.096,
+      3.674,
+      "A clock alarm beeps."
+    ],
+    [
+      6.588,
+      7.166,
+      "A clock alarm beeps."
+    ],
+    [
+      10.298,
+      10.578,
+      "A clock alarm beeps."
+    ],
+    [
+      12.898,
+      13.518,
+      "A clock alarm beeps."
+    ],
+    [
+      14.058,
+      14.678,
+      "A clock alarm beeps."
+    ],
+    [
+      18.995,
+      19.685,
+      "A clock alarm beeps."
+    ],
+    [
+      22.278,
+      23.398,
+      "A clock alarm beeps."
+    ],
+    [
+      24.878,
+      25.998,
+      "A clock alarm beeps."
+    ],
+    [
+      21.995,
+      22.685,
+      "An alarm beeps loudly."
+    ]
+  ],
+  "duration": 26.3049375,
+  "inference_seconds": 60.75391864776611
+}

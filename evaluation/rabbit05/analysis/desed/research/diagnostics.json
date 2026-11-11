@@ -1,0 +1,477 @@
+{
+  "dataset": "desed-validation",
+  "files": 1068,
+  "date": "2026-10-19",
+  "manifest_sha256": "9e65861b3e876218e566dbf6a8b46e7738d1038dcad7ce9ab16cf7de29dd7b33",
+  "profile": {
+    "Alarm_bell_ringing": {
+      "positive_clips": 174,
+      "events": 393,
+      "median_duration": 0.9859999999999999,
+      "duration_q25": 0.5170000000000003,
+      "duration_q75": 2.3169999999999997,
+      "fraction_under_1s": 0.5063613231552163,
+      "annotated_overlap_fraction": 0.11700358588910965,
+      "positive_duration_seconds": 770.6857812499999
+    },
+    "Blender": {
+      "positive_clips": 76,
+      "events": 90,
+      "median_duration": 4.6985,
+      "duration_q25": 2.4185,
+      "duration_q75": 8.348859375000002,
+      "fraction_under_1s": 0.05555555555555555,
+      "annotated_overlap_fraction": 0.11283743431094866,
+      "positive_duration_seconds": 472.44959374999996
+    },
+    "Cat": {
+      "positive_clips": 118,
+      "events": 335,
+      "median_duration": 0.8539999999999996,
+      "duration_q25": 0.5615000000000001,
+      "duration_q75": 1.336,
+      "fraction_under_1s": 0.5940298507462687,
+      "annotated_overlap_fraction": 0.05230131591245305,
+      "positive_duration_seconds": 465.41849999999954
+    },
+    "Dishes": {
+      "positive_clips": 132,
+      "events": 443,
+      "median_duration": 0.3820000000000001,
+      "duration_q25": 0.25,
+      "duration_q75": 0.6614999999999998,
+      "fraction_under_1s": 0.8848758465011287,
+      "annotated_overlap_fraction": 0.5100252961583225,
+      "positive_duration_seconds": 270.3473749999997
+    },
+    "Dog": {
+      "positive_clips": 154,
+      "events": 560,
+      "median_duration": 0.7745000000000002,
+      "duration_q25": 0.4027499999999997,
+      "duration_q75": 1.4694999999999998,
+      "fraction_under_1s": 0.6,
+      "annotated_overlap_fraction": 0.12090954666065558,
+      "positive_duration_seconds": 769.7076250000008
+    },
+    "Electric_shaver_toothbrush": {
+      "positive_clips": 60,
+      "events": 61,
+      "median_duration": 9.948,
+      "duration_q25": 5.159,
+      "duration_q75": 10.0,
+      "fraction_under_1s": 0.0,
+      "annotated_overlap_fraction": 0.21426878786652298,
+      "positive_duration_seconds": 484.10690625
+    },
+    "Frying": {
+      "positive_clips": 82,
+      "events": 87,
+      "median_duration": 10.0,
+      "duration_q25": 6.5885,
+      "duration_q75": 10.0,
+      "fraction_under_1s": 0.0,
+      "annotated_overlap_fraction": 0.3990134724680127,
+      "positive_duration_seconds": 715.6794687499998
+    },
+    "Running_water": {
+      "positive_clips": 172,
+      "events": 206,
+      "median_duration": 4.987,
+      "duration_q25": 2.5515,
+      "duration_q75": 8.08775,
+      "fraction_under_1s": 0.10194174757281553,
+      "annotated_overlap_fraction": 0.16550033924036822,
+      "positive_duration_seconds": 1099.10084375
+    },
+    "Speech": {
+      "positive_clips": 555,
+      "events": 1525,
+      "median_duration": 1.1219999999999999,
+      "duration_q25": 0.6819999999999999,
+      "duration_q75": 1.8539999999999992,
+      "fraction_under_1s": 0.43475409836065576,
+      "annotated_overlap_fraction": 0.3380164129564728,
+      "positive_duration_seconds": 2248.1667187500025
+    },
+    "Vacuum_cleaner": {
+      "positive_clips": 86,
+      "events": 87,
+      "median_duration": 9.99959375,
+      "duration_q25": 7.319,
+      "duration_q75": 10.0,
+      "fraction_under_1s": 0.011494252873563218,
+      "annotated_overlap_fraction": 0.07182152830608299,
+      "positive_duration_seconds": 734.7509687499999
+    }
+  },
+  "diagnostics": {
+    "dasm": {
+      "Alarm_bell_ringing": {
+        "single_class_psds": 0.4957505426438989,
+        "clip_ap": 0.8706272951639911,
+        "positive_clip_prevalence": 0.16292134831460675,
+        "within_clip_auc_median": 0.991869918699187,
+        "within_clip_auc_eligible": 153
+      },
+      "Blender": {
+        "single_class_psds": 0.7821759044108905,
+        "clip_ap": 0.7353069222683731,
+        "positive_clip_prevalence": 0.07116104868913857,
+        "within_clip_auc_median": 1.0,
+        "within_clip_auc_eligible": 53
+      },
+      "Cat": {
+        "single_class_psds": 0.6705577651475597,
+        "clip_ap": 0.9827265169484323,
+        "positive_clip_prevalence": 0.1104868913857678,
+        "within_clip_auc_median": 0.9848155152895559,
+        "within_clip_auc_eligible": 109
+      },
+      "Dishes": {
+        "single_class_psds": 0.2830629129338426,
+        "clip_ap": 0.8613342324730451,
+        "positive_clip_prevalence": 0.12359550561797752,
+        "within_clip_auc_median": 0.9416445623342176,
+        "within_clip_auc_eligible": 113
+      },
+      "Dog": {
+        "single_class_psds": 0.42026336702139333,
+        "clip_ap": 0.9475444024549717,
+        "positive_clip_prevalence": 0.1441947565543071,
+        "within_clip_auc_median": 0.9251404151404152,
+        "within_clip_auc_eligible": 138
+      },
+      "Electric_shaver_toothbrush": {
+        "single_class_psds": 0.9562300186950372,
+        "clip_ap": 0.9440574555879189,
+        "positive_clip_prevalence": 0.056179775280898875,
+        "within_clip_auc_median": 1.0,
+        "within_clip_auc_eligible": 27
+      },
+      "Frying": {
+        "single_class_psds": 0.8453400130326639,
+        "clip_ap": 0.9246402328851221,
+        "positive_clip_prevalence": 0.07677902621722846,
+        "within_clip_auc_median": 1.0,
+        "within_clip_auc_eligible": 27
+      },
+      "Running_water": {
+        "single_class_psds": 0.5007780938529013,
+        "clip_ap": 0.7963662423094242,
+        "positive_clip_prevalence": 0.16104868913857678,
+        "within_clip_auc_median": 0.9952651515151515,
+        "within_clip_auc_eligible": 131
+      },
+      "Speech": {
+        "single_class_psds": 0.539211116960363,
+        "clip_ap": 0.9898427065322515,
+        "positive_clip_prevalence": 0.5196629213483146,
+        "within_clip_auc_median": 0.9918827050676365,
+        "within_clip_auc_eligible": 542
+      },
+      "Vacuum_cleaner": {
+        "single_class_psds": 0.8755687320600569,
+        "clip_ap": 0.7829590723599547,
+        "positive_clip_prevalence": 0.08052434456928839,
+        "within_clip_auc_median": 1.0,
+        "within_clip_auc_eligible": 29
+      }
+    },
+    "finelap": {
+      "Alarm_bell_ringing": {
+        "single_class_psds": 0.5635652870586667,
+        "clip_ap": 0.9388886746860802,
+        "positive_clip_prevalence": 0.16292134831460675,
+        "within_clip_auc_median": 0.991498083622092,
+        "within_clip_auc_eligible": 153
+      },
+      "Blender": {
+        "single_class_psds": 0.8513349031120373,
+        "clip_ap": 0.8817029251243538,
+        "positive_clip_prevalence": 0.07116104868913857,
+        "within_clip_auc_median": 0.9995999999999999,
+        "within_clip_auc_eligible": 53
+      },
+      "Cat": {
+        "single_class_psds": 0.5489253775151167,
+        "clip_ap": 0.9757940628766156,
+        "positive_clip_prevalence": 0.1104868913857678,
+        "within_clip_auc_median": 0.9737484737484738,
+        "within_clip_auc_eligible": 109
+      },
+      "Dishes": {
+        "single_class_psds": 0.18501214952858158,
+        "clip_ap": 0.812363989607904,
+        "positive_clip_prevalence": 0.12359550561797752,
+        "within_clip_auc_median": 0.9192,
+        "within_clip_auc_eligible": 113
+      },
+      "Dog": {
+        "single_class_psds": 0.22100905907212923,
+        "clip_ap": 0.8350537429942414,
+        "positive_clip_prevalence": 0.1441947565543071,
+        "within_clip_auc_median": 0.8933536667346635,
+        "within_clip_auc_eligible": 138
+      },
+      "Electric_shaver_toothbrush": {
+        "single_class_psds": 0.9904106995555968,
+        "clip_ap": 0.9716057795911651,
+        "positive_clip_prevalence": 0.056179775280898875,
+        "within_clip_auc_median": 0.9999999999999999,
+        "within_clip_auc_eligible": 27
+      },
+      "Frying": {
+        "single_class_psds": 0.8873298183949823,
+        "clip_ap": 0.9483911616102749,
+        "positive_clip_prevalence": 0.07677902621722846,
+        "within_clip_auc_median": 1.0,
+        "within_clip_auc_eligible": 27
+      },
+      "Running_water": {
+        "single_class_psds": 0.6764312000246429,
+        "clip_ap": 0.825807031459868,
+        "positive_clip_prevalence": 0.16104868913857678,
+        "within_clip_auc_median": 0.9959239130434783,
+        "within_clip_auc_eligible": 131
+      },
+      "Speech": {
+        "single_class_psds": 0.3022433887307958,
+        "clip_ap": 0.9040095814440641,
+        "positive_clip_prevalence": 0.5196629213483146,
+        "within_clip_auc_median": 0.9821240718074256,
+        "within_clip_auc_eligible": 542
+      },
+      "Vacuum_cleaner": {
+        "single_class_psds": 0.8937083507151498,
+        "clip_ap": 0.8705038084235194,
+        "positive_clip_prevalence": 0.08052434456928839,
+        "within_clip_auc_median": 1.0,
+        "within_clip_auc_eligible": 29
+      }
+    },
+    "flexsed": {
+      "Alarm_bell_ringing": {
+        "single_class_psds": 0.2711099891633742,
+        "clip_ap": 0.7894847431954317,
+        "positive_clip_prevalence": 0.16292134831460675,
+        "within_clip_auc_median": 0.9943899018232819,
+        "within_clip_auc_eligible": 153
+      },
+      "Blender": {
+        "single_class_psds": 0.6525622066390566,
+        "clip_ap": 0.5272263866969885,
+        "positive_clip_prevalence": 0.07116104868913857,
+        "within_clip_auc_median": 1.0,
+        "within_clip_auc_eligible": 53
+      },
+      "Cat": {
+        "single_class_psds": 0.479746053360078,
+        "clip_ap": 0.8738506460716664,
+        "positive_clip_prevalence": 0.1104868913857678,
+        "within_clip_auc_median": 0.984577922077922,
+        "within_clip_auc_eligible": 109
+      },
+      "Dishes": {
+        "single_class_psds": 0.058782549068976904,
+        "clip_ap": 0.3853104337758372,
+        "positive_clip_prevalence": 0.12359550561797752,
+        "within_clip_auc_median": 0.8936631944444445,
+        "within_clip_auc_eligible": 113
+      },
+      "Dog": {
+        "single_class_psds": 0.12755122255091245,
+        "clip_ap": 0.5913387586640199,
+        "positive_clip_prevalence": 0.1441947565543071,
+        "within_clip_auc_median": 0.9234490866743663,
+        "within_clip_auc_eligible": 138
+      },
+      "Electric_shaver_toothbrush": {
+        "single_class_psds": 0.8783981530771947,
+        "clip_ap": 0.8040232730262035,
+        "positive_clip_prevalence": 0.056179775280898875,
+        "within_clip_auc_median": 1.0,
+        "within_clip_auc_eligible": 27
+      },
+      "Frying": {
+        "single_class_psds": 0.721850337598996,
+        "clip_ap": 0.7521180571213049,
+        "positive_clip_prevalence": 0.07677902621722846,
+        "within_clip_auc_median": 1.0,
+        "within_clip_auc_eligible": 27
+      },
+      "Running_water": {
+        "single_class_psds": 0.5010580499932158,
+        "clip_ap": 0.7236175796619456,
+        "positive_clip_prevalence": 0.16104868913857678,
+        "within_clip_auc_median": 0.9981617647058824,
+        "within_clip_auc_eligible": 131
+      },
+      "Speech": {
+        "single_class_psds": 0.009674149616302889,
+        "clip_ap": 0.6301830561447168,
+        "positive_clip_prevalence": 0.5196629213483146,
+        "within_clip_auc_median": 0.9182114526823388,
+        "within_clip_auc_eligible": 542
+      },
+      "Vacuum_cleaner": {
+        "single_class_psds": 0.7731147591533992,
+        "clip_ap": 0.6516276189079679,
+        "positive_clip_prevalence": 0.08052434456928839,
+        "within_clip_auc_median": 1.0,
+        "within_clip_auc_eligible": 29
+      }
+    },
+    "mga-clap": {
+      "Alarm_bell_ringing": {
+        "single_class_psds": 0.39119194160332343,
+        "clip_ap": 0.9188033210083778,
+        "positive_clip_prevalence": 0.16292134831460675,
+        "within_clip_auc_median": 0.9624870434729589,
+        "within_clip_auc_eligible": 153
+      },
+      "Blender": {
+        "single_class_psds": 0.6303021611593073,
+        "clip_ap": 0.8233973754814063,
+        "positive_clip_prevalence": 0.07116104868913857,
+        "within_clip_auc_median": 0.9961799660441426,
+        "within_clip_auc_eligible": 53
+      },
+      "Cat": {
+        "single_class_psds": 0.45783356818455667,
+        "clip_ap": 0.9690390870742792,
+        "positive_clip_prevalence": 0.1104868913857678,
+        "within_clip_auc_median": 0.9597069597069597,
+        "within_clip_auc_eligible": 109
+      },
+      "Dishes": {
+        "single_class_psds": 0.12935742713486703,
+        "clip_ap": 0.8665224765257655,
+        "positive_clip_prevalence": 0.12359550561797752,
+        "within_clip_auc_median": 0.8411999999999998,
+        "within_clip_auc_eligible": 113
+      },
+      "Dog": {
+        "single_class_psds": 0.31903056176402705,
+        "clip_ap": 0.9259550813800108,
+        "positive_clip_prevalence": 0.1441947565543071,
+        "within_clip_auc_median": 0.881377310939632,
+        "within_clip_auc_eligible": 138
+      },
+      "Electric_shaver_toothbrush": {
+        "single_class_psds": 0.7120688146534018,
+        "clip_ap": 0.9563348626970918,
+        "positive_clip_prevalence": 0.056179775280898875,
+        "within_clip_auc_median": 0.993431855500821,
+        "within_clip_auc_eligible": 27
+      },
+      "Frying": {
+        "single_class_psds": 0.5201612801236564,
+        "clip_ap": 0.9301377394569293,
+        "positive_clip_prevalence": 0.07677902621722846,
+        "within_clip_auc_median": 0.9294734522153033,
+        "within_clip_auc_eligible": 27
+      },
+      "Running_water": {
+        "single_class_psds": 0.43018051535507307,
+        "clip_ap": 0.8532518279708866,
+        "positive_clip_prevalence": 0.16104868913857678,
+        "within_clip_auc_median": 0.9820460704607047,
+        "within_clip_auc_eligible": 131
+      },
+      "Speech": {
+        "single_class_psds": 0.33680486913805113,
+        "clip_ap": 0.9500637730103729,
+        "positive_clip_prevalence": 0.5196629213483146,
+        "within_clip_auc_median": 0.953641147958463,
+        "within_clip_auc_eligible": 542
+      },
+      "Vacuum_cleaner": {
+        "single_class_psds": 0.7261893394447811,
+        "clip_ap": 0.8938815342174569,
+        "positive_clip_prevalence": 0.08052434456928839,
+        "within_clip_auc_median": 0.9997979797979798,
+        "within_clip_auc_eligible": 29
+      }
+    },
+    "openflam": {
+      "Alarm_bell_ringing": {
+        "single_class_psds": 0.17716367009244183,
+        "clip_ap": 0.743548744897511,
+        "positive_clip_prevalence": 0.16292134831460675,
+        "within_clip_auc_median": 0.8770375620127568,
+        "within_clip_auc_eligible": 153
+      },
+      "Blender": {
+        "single_class_psds": 0.44114219292310486,
+        "clip_ap": 0.6423114907177863,
+        "positive_clip_prevalence": 0.07116104868913857,
+        "within_clip_auc_median": 0.971032231742146,
+        "within_clip_auc_eligible": 53
+      },
+      "Cat": {
+        "single_class_psds": 0.17627522899585532,
+        "clip_ap": 0.8774699223455247,
+        "positive_clip_prevalence": 0.1104868913857678,
+        "within_clip_auc_median": 0.8337673611111113,
+        "within_clip_auc_eligible": 109
+      },
+      "Dishes": {
+        "single_class_psds": 0.04136703916896221,
+        "clip_ap": 0.5087241341577297,
+        "positive_clip_prevalence": 0.12359550561797752,
+        "within_clip_auc_median": 0.8028600612870277,
+        "within_clip_auc_eligible": 113
+      },
+      "Dog": {
+        "single_class_psds": 0.12800216463364306,
+        "clip_ap": 0.8603764240839981,
+        "positive_clip_prevalence": 0.1441947565543071,
+        "within_clip_auc_median": 0.6596899131274132,
+        "within_clip_auc_eligible": 138
+      },
+      "Electric_shaver_toothbrush": {
+        "single_class_psds": 0.7087770394537375,
+        "clip_ap": 0.8092957480755048,
+        "positive_clip_prevalence": 0.056179775280898875,
+        "within_clip_auc_median": 0.9861944777911165,
+        "within_clip_auc_eligible": 27
+      },
+      "Frying": {
+        "single_class_psds": 0.23237497556255035,
+        "clip_ap": 0.4795190137968351,
+        "positive_clip_prevalence": 0.07677902621722846,
+        "within_clip_auc_median": 0.9159375000000001,
+        "within_clip_auc_eligible": 27
+      },
+      "Running_water": {
+        "single_class_psds": 0.29759732801529504,
+        "clip_ap": 0.7717053415169838,
+        "positive_clip_prevalence": 0.16104868913857678,
+        "within_clip_auc_median": 0.9073997519636213,
+        "within_clip_auc_eligible": 131
+      },
+      "Speech": {
+        "single_class_psds": 0.01799454168576002,
+        "clip_ap": 0.6552366362956369,
+        "positive_clip_prevalence": 0.5196629213483146,
+        "within_clip_auc_median": 0.7399215367965367,
+        "within_clip_auc_eligible": 542
+      },
+      "Vacuum_cleaner": {
+        "single_class_psds": 0.8117223482517789,
+        "clip_ap": 0.8775756244321383,
+        "positive_clip_prevalence": 0.08052434456928839,
+        "within_clip_auc_median": 0.9947474747474747,
+        "within_clip_auc_eligible": 29
+      }
+    }
+  },
+  "caveats": [
+    "Exploratory validation diagnostics only; standard PSDS1 unchanged.",
+    "Clip AP uses maximum saved frame score; no event boundary evaluation.",
+    "Within-clip AUC uses a 100 ms grid with GT coverage >= 50%, excludes clips with <0.5 s positive or negative time.",
+    "Within-clip AUC is not PSDS or an event success rate. Cannot subtract AP/AUC from PSDS to attribute errors.",
+    "Annotation overlap is not acoustic SNR. Training data exposure and label quality remain uncontrolled."
+  ]
+}

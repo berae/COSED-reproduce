@@ -1,0 +1,565 @@
+{
+  "clip_id": "406868",
+  "labels": [
+    "A car honks once nearby.",
+    "Steady traffic noise.",
+    "A car honks once in the distance.",
+    "A vehicle drives by closely.",
+    "A car horn honks in the distance.",
+    "A car horn honks.",
+    "A car horn sounds twice in the distance."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/406868.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 17.0610454082489,
+      "status": "complete",
+      "events": [
+        [
+          1.278,
+          1.698,
+          "A car honks once nearby."
+        ],
+        [
+          0.0,
+          10.0,
+          "Steady traffic noise."
+        ],
+        [
+          6.818,
+          7.238,
+          "A car honks once in the distance."
+        ],
+        [
+          8.158,
+          9.158,
+          "A vehicle drives by closely."
+        ],
+        [
+          6.818,
+          7.238,
+          "A car horn honks in the distance."
+        ],
+        [
+          1.278,
+          1.698,
+          "A car horn honks."
+        ],
+        [
+          8.158,
+          9.158,
+          "A car horn sounds twice in the distance."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-84a17a66a9fcd3e9",
+            "object": "chat.completion",
+            "created": 1792800505,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 1.278,\n      \"end\": 1.698\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 6.818,\n      \"end\": 7.238\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 8.158,\n      \"end\": 9.158\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 6.818,\n      \"end\": 7.238\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 1.278,\n      \"end\": 1.698\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 8.158,\n      \"end\": 9.158\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 341,
+              "total_tokens": 594,
+              "completion_tokens": 253,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 16.870195627212524,
+      "status": "complete",
+      "events": [
+        [
+          8.792,
+          9.182,
+          "A car honks once nearby."
+        ],
+        [
+          0.0,
+          10.0,
+          "Steady traffic noise."
+        ],
+        [
+          1.812,
+          2.202,
+          "A car honks once in the distance."
+        ],
+        [
+          2.592,
+          4.082,
+          "A vehicle drives by closely."
+        ],
+        [
+          4.572,
+          5.012,
+          "A car horn honks in the distance."
+        ],
+        [
+          6.002,
+          6.412,
+          "A car horn honks."
+        ],
+        [
+          8.792,
+          9.182,
+          "A car horn sounds twice in the distance."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b54d8ca4fd44e4c4",
+            "object": "chat.completion",
+            "created": 1792800522,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 8.792,\n      \"end\": 9.182\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 1.812,\n      \"end\": 2.202\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 2.592,\n      \"end\": 4.082\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 4.572,\n      \"end\": 5.012\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 6.002,\n      \"end\": 6.412\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 8.792,\n      \"end\": 9.182\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 341,
+              "total_tokens": 594,
+              "completion_tokens": 253,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 10.0,
+      "seconds": 16.43745446205139,
+      "status": "complete",
+      "events": [
+        [
+          8.079,
+          8.429,
+          "A car honks once nearby."
+        ],
+        [
+          0.0,
+          10.0,
+          "Steady traffic noise."
+        ],
+        [
+          4.429,
+          4.829,
+          "A car honks once in the distance."
+        ],
+        [
+          0.0,
+          10.0,
+          "A vehicle drives by closely."
+        ],
+        [
+          5.779,
+          6.179,
+          "A car horn honks in the distance."
+        ],
+        [
+          6.779,
+          7.179,
+          "A car horn honks."
+        ],
+        [
+          4.429,
+          4.829,
+          "A car horn sounds twice in the distance."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-95da38ff3aececc2",
+            "object": "chat.completion",
+            "created": 1792800539,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 8.079,\n      \"end\": 8.429\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.0,\n      \"end\": 10.0\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 4.429,\n      \"end\": 4.829\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.0,\n      \"end\": 10.0\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 5.779,\n      \"end\": 6.179\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 6.779,\n      \"end\": 7.179\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 4.429,\n      \"end\": 4.829\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 341,
+              "total_tokens": 587,
+              "completion_tokens": 246,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 240000,
+      "start": 15.0,
+      "duration": 10.0,
+      "seconds": 16.801695108413696,
+      "status": "complete",
+      "events": [
+        [
+          2.978,
+          3.478,
+          "A car honks once nearby."
+        ],
+        [
+          0.0,
+          10.0,
+          "Steady traffic noise."
+        ],
+        [
+          5.578,
+          6.078,
+          "A car honks once in the distance."
+        ],
+        [
+          2.978,
+          4.478,
+          "A vehicle drives by closely."
+        ],
+        [
+          5.578,
+          6.078,
+          "A car horn honks in the distance."
+        ],
+        [
+          0.0,
+          10.0,
+          "A car horn honks."
+        ],
+        [
+          0.0,
+          10.0,
+          "A car horn sounds twice in the distance."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-807a0f08c1cd21ca",
+            "object": "chat.completion",
+            "created": 1792800556,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 2.978,\n      \"end\": 3.478\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 5.578,\n      \"end\": 6.078\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 2.978,\n      \"end\": 4.478\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 5.578,\n      \"end\": 6.078\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 341,
+              "total_tokens": 596,
+              "completion_tokens": 255,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 320000,
+      "start": 20.0,
+      "duration": 6.182875,
+      "seconds": 15.696091651916504,
+      "status": "complete",
+      "events": [
+        [
+          0.97,
+          1.47,
+          "A car honks once nearby."
+        ],
+        [
+          0.0,
+          6.182875,
+          "Steady traffic noise."
+        ],
+        [
+          3.17,
+          3.57,
+          "A car honks once in the distance."
+        ],
+        [
+          0.0,
+          6.182875,
+          "A vehicle drives by closely."
+        ],
+        [
+          4.17,
+          4.57,
+          "A car horn honks in the distance."
+        ],
+        [
+          5.0,
+          5.2,
+          "A car horn honks."
+        ],
+        [
+          5.0,
+          5.2,
+          "A car horn sounds twice in the distance."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8ff7710256811f0d",
+            "object": "chat.completion",
+            "created": 1792800573,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.97,\n      \"end\": 1.47\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.0,\n      \"end\": 6.183\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 3.17,\n      \"end\": 3.57\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.0,\n      \"end\": 6.183\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 4.17,\n      \"end\": 4.57\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 5.0,\n      \"end\": 5.2\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 5.0,\n      \"end\": 5.2\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 290,
+              "total_tokens": 524,
+              "completion_tokens": 234,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      6.812,
+      7.238,
+      "A car honks once in the distance."
+    ],
+    [
+      14.429,
+      14.829,
+      "A car honks once in the distance."
+    ],
+    [
+      20.578,
+      21.078,
+      "A car honks once in the distance."
+    ],
+    [
+      23.17,
+      23.57,
+      "A car honks once in the distance."
+    ],
+    [
+      1.278,
+      1.698,
+      "A car honks once nearby."
+    ],
+    [
+      13.792,
+      14.182,
+      "A car honks once nearby."
+    ],
+    [
+      17.978,
+      18.478,
+      "A car honks once nearby."
+    ],
+    [
+      20.97,
+      21.47,
+      "A car honks once nearby."
+    ],
+    [
+      6.818,
+      7.238,
+      "A car horn honks in the distance."
+    ],
+    [
+      9.572,
+      10.012,
+      "A car horn honks in the distance."
+    ],
+    [
+      15.779,
+      16.179000000000002,
+      "A car horn honks in the distance."
+    ],
+    [
+      20.578,
+      21.078,
+      "A car horn honks in the distance."
+    ],
+    [
+      24.17,
+      24.57,
+      "A car horn honks in the distance."
+    ],
+    [
+      1.278,
+      1.698,
+      "A car horn honks."
+    ],
+    [
+      11.001999999999999,
+      11.411999999999999,
+      "A car horn honks."
+    ],
+    [
+      15.0,
+      25.2,
+      "A car horn honks."
+    ],
+    [
+      8.158,
+      9.158,
+      "A car horn sounds twice in the distance."
+    ],
+    [
+      13.792,
+      14.182,
+      "A car horn sounds twice in the distance."
+    ],
+    [
+      14.429,
+      14.829,
+      "A car horn sounds twice in the distance."
+    ],
+    [
+      15.0,
+      25.2,
+      "A car horn sounds twice in the distance."
+    ],
+    [
+      7.5920000000000005,
+      9.158,
+      "A vehicle drives by closely."
+    ],
+    [
+      10.0,
+      26.182875,
+      "A vehicle drives by closely."
+    ],
+    [
+      0.0,
+      26.182875,
+      "Steady traffic noise."
+    ]
+  ],
+  "duration": 26.182875,
+  "inference_seconds": 82.86648225784302
+}

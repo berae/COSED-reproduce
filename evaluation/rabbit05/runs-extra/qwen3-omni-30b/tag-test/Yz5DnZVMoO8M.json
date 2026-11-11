@@ -1,0 +1,95 @@
+{
+  "clip_id": "Yz5DnZVMoO8M",
+  "labels": [
+    "small dogs barking"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Yz5DnZVMoO8M.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 7.709408521652222,
+      "status": "complete",
+      "events": [
+        [
+          5.978,
+          6.238,
+          "small dogs barking"
+        ],
+        [
+          7.948,
+          8.178,
+          "small dogs barking"
+        ],
+        [
+          8.418,
+          8.648,
+          "small dogs barking"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-9c68bb1409872254",
+            "object": "chat.completion",
+            "created": 1792779236,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 5.978,\n      \"end\": 6.238\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 7.948,\n      \"end\": 8.178\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 8.418,\n      \"end\": 8.648\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 282,
+              "total_tokens": 398,
+              "completion_tokens": 116,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      5.978,
+      6.238,
+      "small dogs barking"
+    ],
+    [
+      7.948,
+      8.178,
+      "small dogs barking"
+    ],
+    [
+      8.418,
+      8.648,
+      "small dogs barking"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 7.709408521652222
+}

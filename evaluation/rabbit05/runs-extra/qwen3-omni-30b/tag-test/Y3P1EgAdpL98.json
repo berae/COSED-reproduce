@@ -1,0 +1,126 @@
+{
+  "clip_id": "Y3P1EgAdpL98",
+  "labels": [
+    "a dog barking",
+    "women speaking"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y3P1EgAdpL98.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 14.302237033843994,
+      "status": "complete",
+      "events": [
+        [
+          0.238,
+          0.658,
+          "a dog barking"
+        ],
+        [
+          1.748,
+          3.918,
+          "a dog barking"
+        ],
+        [
+          6.418,
+          7.918,
+          "a dog barking"
+        ],
+        [
+          1.138,
+          1.738,
+          "women speaking"
+        ],
+        [
+          3.138,
+          5.138,
+          "women speaking"
+        ],
+        [
+          5.538,
+          6.418,
+          "women speaking"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-955003c52489f00e",
+            "object": "chat.completion",
+            "created": 1792780883,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.238,\n      \"end\": 0.658\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 1.748,\n      \"end\": 3.918\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 6.418,\n      \"end\": 7.918\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 1.138,\n      \"end\": 1.738\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 3.138,\n      \"end\": 5.138\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 5.538,\n      \"end\": 6.418\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 287,
+              "total_tokens": 505,
+              "completion_tokens": 218,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.238,
+      0.658,
+      "a dog barking"
+    ],
+    [
+      1.748,
+      3.918,
+      "a dog barking"
+    ],
+    [
+      6.418,
+      7.918,
+      "a dog barking"
+    ],
+    [
+      1.138,
+      1.738,
+      "women speaking"
+    ],
+    [
+      3.138,
+      5.138,
+      "women speaking"
+    ],
+    [
+      5.538,
+      6.418,
+      "women speaking"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 14.302237033843994
+}

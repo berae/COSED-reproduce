@@ -1,0 +1,108 @@
+{
+  "clip_id": "Y47tADKZxUnM",
+  "labels": [
+    "an adult male is speaking",
+    "the wind is blowing",
+    "clopping occurs",
+    "people speak in the background"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y47tADKZxUnM.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 9.9993125,
+      "seconds": 9.534226179122925,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          9.999,
+          "an adult male is speaking"
+        ],
+        [
+          0.0,
+          9.999,
+          "the wind is blowing"
+        ],
+        [
+          8.456,
+          9.999,
+          "clopping occurs"
+        ],
+        [
+          0.0,
+          9.999,
+          "people speak in the background"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8c3126881dd8b4f3",
+            "object": "chat.completion",
+            "created": 1792781035,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 9.999\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.0,\n      \"end\": 9.999\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 8.456,\n      \"end\": 9.999\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.0,\n      \"end\": 9.999\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 302,
+              "total_tokens": 446,
+              "completion_tokens": 144,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      9.999,
+      "an adult male is speaking"
+    ],
+    [
+      8.456,
+      9.999,
+      "clopping occurs"
+    ],
+    [
+      0.0,
+      9.999,
+      "people speak in the background"
+    ],
+    [
+      0.0,
+      9.999,
+      "the wind is blowing"
+    ]
+  ],
+  "duration": 9.9993125,
+  "inference_seconds": 9.534226179122925
+}

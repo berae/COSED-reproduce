@@ -1,0 +1,245 @@
+{
+  "clip_id": "100489",
+  "labels": [
+    "A bell rings repeatedly in the background.",
+    "Low-pitched engine running.",
+    "A scratching noise.",
+    "A whistling sound is heard in the background."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/100489.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 10.12505316734314,
+      "status": "complete",
+      "events": [
+        [
+          0.985,
+          9.745,
+          "A bell rings repeatedly in the background."
+        ],
+        [
+          0.0,
+          10.0,
+          "Low-pitched engine running."
+        ],
+        [
+          0.465,
+          0.985,
+          "A scratching noise."
+        ],
+        [
+          0.0,
+          10.0,
+          "A whistling sound is heard in the background."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-83605e4f04f319d4",
+            "object": "chat.completion",
+            "created": 1792826352,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.985,\n      \"end\": 9.745\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.465,\n      \"end\": 0.985\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 313,
+              "total_tokens": 465,
+              "completion_tokens": 152,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 10.231767892837524,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          10.0,
+          "A bell rings repeatedly in the background."
+        ],
+        [
+          0.0,
+          10.0,
+          "Low-pitched engine running."
+        ],
+        [
+          7.845,
+          9.655,
+          "A scratching noise."
+        ],
+        [
+          0.0,
+          10.0,
+          "A whistling sound is heard in the background."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b116ceea8fcd8d80",
+            "object": "chat.completion",
+            "created": 1792826362,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 7.845,\n      \"end\": 9.655\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 313,
+              "total_tokens": 466,
+              "completion_tokens": 153,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 5.72475,
+      "seconds": 5.407909631729126,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          5.72475,
+          "Low-pitched engine running."
+        ],
+        [
+          4.089,
+          5.72475,
+          "A whistling sound is heard in the background."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-beb8921d7ad25d22",
+            "object": "chat.completion",
+            "created": 1792826372,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 1,\n      \"start\": 0.0,\n      \"end\": 5.725\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 4.089,\n      \"end\": 5.725\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 256,
+              "total_tokens": 336,
+              "completion_tokens": 80,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.985,
+      15.0,
+      "A bell rings repeatedly in the background."
+    ],
+    [
+      0.465,
+      0.985,
+      "A scratching noise."
+    ],
+    [
+      12.844999999999999,
+      14.655,
+      "A scratching noise."
+    ],
+    [
+      0.0,
+      15.72475,
+      "A whistling sound is heard in the background."
+    ],
+    [
+      0.0,
+      15.72475,
+      "Low-pitched engine running."
+    ]
+  ],
+  "duration": 15.72475,
+  "inference_seconds": 25.76473069190979
+}

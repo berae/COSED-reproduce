@@ -1,0 +1,117 @@
+{
+  "clip_id": "Y0yxEvdnimGg",
+  "labels": [
+    "birds chirp",
+    "a few dogs bark",
+    "several people talk"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y0yxEvdnimGg.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 12.592647552490234,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          10.0,
+          "birds chirp"
+        ],
+        [
+          1.345,
+          1.785,
+          "a few dogs bark"
+        ],
+        [
+          3.695,
+          4.135,
+          "a few dogs bark"
+        ],
+        [
+          8.415,
+          8.855,
+          "a few dogs bark"
+        ],
+        [
+          1.845,
+          4.135,
+          "several people talk"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a8bcbc83a4bf18f0",
+            "object": "chat.completion",
+            "created": 1792779223,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 1.345,\n      \"end\": 1.785\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 3.695,\n      \"end\": 4.135\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 8.415,\n      \"end\": 8.855\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 1.845,\n      \"end\": 4.135\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 294,
+              "total_tokens": 479,
+              "completion_tokens": 185,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      1.345,
+      1.785,
+      "a few dogs bark"
+    ],
+    [
+      3.695,
+      4.135,
+      "a few dogs bark"
+    ],
+    [
+      8.415,
+      8.855,
+      "a few dogs bark"
+    ],
+    [
+      0.0,
+      10.0,
+      "birds chirp"
+    ],
+    [
+      1.845,
+      4.135,
+      "several people talk"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 12.592647552490234
+}

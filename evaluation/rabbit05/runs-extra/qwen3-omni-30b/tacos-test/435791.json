@@ -1,0 +1,218 @@
+{
+  "clip_id": "435791",
+  "labels": [
+    "Heavy rain is falling.",
+    "Thunder rumbles."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/435791.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 7.753043174743652,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          10.0,
+          "Heavy rain is falling."
+        ],
+        [
+          0.475,
+          2.835,
+          "Thunder rumbles."
+        ],
+        [
+          3.695,
+          5.755,
+          "Thunder rumbles."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-ae738233a9c72d8a",
+            "object": "chat.completion",
+            "created": 1792792192,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.475,\n      \"end\": 2.835\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 3.695,\n      \"end\": 5.755\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 289,
+              "total_tokens": 406,
+              "completion_tokens": 117,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 5.592017412185669,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          10.0,
+          "Heavy rain is falling."
+        ],
+        [
+          0.0,
+          10.0,
+          "Thunder rumbles."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a52b225270d6e7a2",
+            "object": "chat.completion",
+            "created": 1792792200,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 289,
+              "total_tokens": 373,
+              "completion_tokens": 84,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 5.3138125,
+      "seconds": 5.188039541244507,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          5.3138125,
+          "Heavy rain is falling."
+        ],
+        [
+          0.0,
+          2.786,
+          "Thunder rumbles."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-aac96b17a87fff37",
+            "object": "chat.completion",
+            "created": 1792792206,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 5.314\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.0,\n      \"end\": 2.786\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 226,
+              "total_tokens": 304,
+              "completion_tokens": 78,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      15.3138125,
+      "Heavy rain is falling."
+    ],
+    [
+      0.475,
+      2.835,
+      "Thunder rumbles."
+    ],
+    [
+      3.695,
+      15.0,
+      "Thunder rumbles."
+    ]
+  ],
+  "duration": 15.3138125,
+  "inference_seconds": 18.533100128173828
+}

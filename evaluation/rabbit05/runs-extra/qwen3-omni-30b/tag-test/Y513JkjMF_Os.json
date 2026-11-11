@@ -1,0 +1,86 @@
+{
+  "clip_id": "Y513JkjMF_Os",
+  "labels": [
+    "a small horse noise",
+    "people laugh"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y513JkjMF_Os.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 9.2835,
+      "seconds": 5.189439296722412,
+      "status": "complete",
+      "events": [
+        [
+          1.37,
+          2.56,
+          "a small horse noise"
+        ],
+        [
+          0.0,
+          9.2835,
+          "people laugh"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-ba1e352bbc9042bd",
+            "object": "chat.completion",
+            "created": 1792781194,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 1.37,\n      \"end\": 2.56\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.0,\n      \"end\": 9.284\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 276,
+              "total_tokens": 354,
+              "completion_tokens": 78,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      1.37,
+      2.56,
+      "a small horse noise"
+    ],
+    [
+      0.0,
+      9.2835,
+      "people laugh"
+    ]
+  ],
+  "duration": 9.2835,
+  "inference_seconds": 5.189439296722412
+}

@@ -1,0 +1,411 @@
+{
+  "clip_id": "650417",
+  "labels": [
+    "A cat meows.",
+    "A floorboard creaks.",
+    "A click.",
+    "A tapping sound repeats."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/650417.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 25.59797430038452,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          0.54,
+          "A cat meows."
+        ],
+        [
+          1.86,
+          2.7,
+          "A cat meows."
+        ],
+        [
+          4.5,
+          5.2,
+          "A cat meows."
+        ],
+        [
+          6.3,
+          7.1,
+          "A cat meows."
+        ],
+        [
+          8.1,
+          9.0,
+          "A cat meows."
+        ],
+        [
+          0.9,
+          1.4,
+          "A floorboard creaks."
+        ],
+        [
+          3.1,
+          3.6,
+          "A floorboard creaks."
+        ],
+        [
+          5.8,
+          6.3,
+          "A floorboard creaks."
+        ],
+        [
+          7.5,
+          8.0,
+          "A floorboard creaks."
+        ],
+        [
+          8.9,
+          9.1,
+          "A click."
+        ],
+        [
+          0.0,
+          10.0,
+          "A tapping sound repeats."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-88ed7a2e53345270",
+            "object": "chat.completion",
+            "created": 1792807467,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 0.540\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 1.860,\n      \"end\": 2.700\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 4.500,\n      \"end\": 5.200\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 6.300,\n      \"end\": 7.100\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 8.100,\n      \"end\": 9.000\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.900,\n      \"end\": 1.400\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 3.100,\n      \"end\": 3.600\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 5.800,\n      \"end\": 6.300\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 7.500,\n      \"end\": 8.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 8.900,\n      \"end\": 9.100\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 304,
+              "total_tokens": 693,
+              "completion_tokens": 389,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 12.138491868972778,
+      "status": "complete",
+      "events": [
+        [
+          1.457,
+          2.167,
+          "A cat meows."
+        ],
+        [
+          3.587,
+          4.297,
+          "A cat meows."
+        ],
+        [
+          5.227,
+          5.937,
+          "A floorboard creaks."
+        ],
+        [
+          3.877,
+          4.117,
+          "A click."
+        ],
+        [
+          5.227,
+          5.937,
+          "A tapping sound repeats."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8aaea8a8c68837b3",
+            "object": "chat.completion",
+            "created": 1792807492,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 1.457,\n      \"end\": 2.167\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 3.587,\n      \"end\": 4.297\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 5.227,\n      \"end\": 5.937\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 3.877,\n      \"end\": 4.117\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 5.227,\n      \"end\": 5.937\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 304,
+              "total_tokens": 488,
+              "completion_tokens": 184,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 10.0,
+      "seconds": 9.773776054382324,
+      "status": "complete",
+      "events": [
+        [
+          8.459,
+          9.079,
+          "A cat meows."
+        ],
+        [
+          6.779,
+          7.179,
+          "A floorboard creaks."
+        ],
+        [
+          4.179,
+          4.459,
+          "A click."
+        ],
+        [
+          0.0,
+          10.0,
+          "A tapping sound repeats."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-870bdce47b60f004",
+            "object": "chat.completion",
+            "created": 1792807504,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 8.459,\n      \"end\": 9.079\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 6.779,\n      \"end\": 7.179\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 4.179,\n      \"end\": 4.459\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.0,\n      \"end\": 10.0\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 304,
+              "total_tokens": 451,
+              "completion_tokens": 147,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 240000,
+      "start": 15.0,
+      "duration": 5.9895,
+      "seconds": 5.4557342529296875,
+      "status": "complete",
+      "events": [
+        [
+          3.647,
+          4.227,
+          "A cat meows."
+        ],
+        [
+          4.757,
+          5.337,
+          "A cat meows."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-9dd85416268e64bc",
+            "object": "chat.completion",
+            "created": 1792807514,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 3.647,\n      \"end\": 4.227\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 4.757,\n      \"end\": 5.337\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 250,
+              "total_tokens": 332,
+              "completion_tokens": 82,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      0.54,
+      "A cat meows."
+    ],
+    [
+      1.86,
+      2.7,
+      "A cat meows."
+    ],
+    [
+      4.5,
+      5.2,
+      "A cat meows."
+    ],
+    [
+      6.3,
+      7.167,
+      "A cat meows."
+    ],
+    [
+      8.1,
+      9.297,
+      "A cat meows."
+    ],
+    [
+      18.459,
+      19.227,
+      "A cat meows."
+    ],
+    [
+      19.756999999999998,
+      20.337,
+      "A cat meows."
+    ],
+    [
+      8.876999999999999,
+      9.117,
+      "A click."
+    ],
+    [
+      14.179,
+      14.459,
+      "A click."
+    ],
+    [
+      0.9,
+      1.4,
+      "A floorboard creaks."
+    ],
+    [
+      3.1,
+      3.6,
+      "A floorboard creaks."
+    ],
+    [
+      5.8,
+      6.3,
+      "A floorboard creaks."
+    ],
+    [
+      7.5,
+      8.0,
+      "A floorboard creaks."
+    ],
+    [
+      10.227,
+      10.937000000000001,
+      "A floorboard creaks."
+    ],
+    [
+      16.779,
+      17.179000000000002,
+      "A floorboard creaks."
+    ],
+    [
+      0.0,
+      20.0,
+      "A tapping sound repeats."
+    ]
+  ],
+  "duration": 20.9895,
+  "inference_seconds": 52.96597647666931
+}

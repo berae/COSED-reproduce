@@ -1,0 +1,188 @@
+{
+  "clip_id": "Y3pLkwWZxvYo",
+  "labels": [
+    "young children are speaking",
+    "laughing",
+    "a man yells out"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y3pLkwWZxvYo.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 12.633893251419067,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          3.45,
+          "young children are speaking"
+        ],
+        [
+          0.0,
+          3.45,
+          "laughing"
+        ],
+        [
+          3.78,
+          6.9,
+          "young children are speaking"
+        ],
+        [
+          3.78,
+          6.9,
+          "laughing"
+        ],
+        [
+          7.5,
+          9.8,
+          "a man yells out"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8acb8ea5c48da229",
+            "object": "chat.completion",
+            "created": 1792780969,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 3.450\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 3.450\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 3.780,\n      \"end\": 6.900\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 3.780,\n      \"end\": 6.900\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 7.500,\n      \"end\": 9.800\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 294,
+              "total_tokens": 478,
+              "completion_tokens": 184,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 5.0009375,
+      "seconds": 7.402673721313477,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          2.34,
+          "young children are speaking"
+        ],
+        [
+          2.78,
+          3.69,
+          "laughing"
+        ],
+        [
+          3.71,
+          5.0009375,
+          "a man yells out"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8443f0f1ac225dd1",
+            "object": "chat.completion",
+            "created": 1792780982,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 2.34\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 2.78,\n      \"end\": 3.69\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 3.71,\n      \"end\": 5.001\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 228,
+              "total_tokens": 338,
+              "completion_tokens": 110,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      7.5,
+      10.0009375,
+      "a man yells out"
+    ],
+    [
+      0.0,
+      3.45,
+      "laughing"
+    ],
+    [
+      3.78,
+      6.9,
+      "laughing"
+    ],
+    [
+      7.779999999999999,
+      8.69,
+      "laughing"
+    ],
+    [
+      0.0,
+      3.45,
+      "young children are speaking"
+    ],
+    [
+      3.78,
+      7.34,
+      "young children are speaking"
+    ]
+  ],
+  "duration": 10.0009375,
+  "inference_seconds": 20.036566972732544
+}

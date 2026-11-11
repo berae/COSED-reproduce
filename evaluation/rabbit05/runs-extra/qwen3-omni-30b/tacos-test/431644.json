@@ -1,0 +1,337 @@
+{
+  "clip_id": "431644",
+  "labels": [
+    "A newborn child coughs briefly.",
+    "A newborn child cries sharply.",
+    "A newborn baby crying loudly and aggressively.",
+    "A newborn child crying loudly.",
+    "Soft rhythmic fussing sounds from a newborn before crying.",
+    "A newborn child is softly wailing."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/431644.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 14.563510656356812,
+      "status": "complete",
+      "events": [
+        [
+          1.987,
+          2.267,
+          "A newborn child coughs briefly."
+        ],
+        [
+          0.0,
+          1.15,
+          "A newborn child cries sharply."
+        ],
+        [
+          2.987,
+          5.257,
+          "A newborn baby crying loudly and aggressively."
+        ],
+        [
+          6.487,
+          9.757,
+          "A newborn child crying loudly."
+        ],
+        [
+          5.587,
+          6.487,
+          "Soft rhythmic fussing sounds from a newborn before crying."
+        ],
+        [
+          6.487,
+          9.757,
+          "A newborn child is softly wailing."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-bd89808fdcd3f0da",
+            "object": "chat.completion",
+            "created": 1792787252,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 1.987,\n      \"end\": 2.267\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 1.150\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 2.987,\n      \"end\": 5.257\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 6.487,\n      \"end\": 9.757\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 5.587,\n      \"end\": 6.487\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 6.487,\n      \"end\": 9.757\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 335,
+              "total_tokens": 553,
+              "completion_tokens": 218,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 14.15496015548706,
+      "status": "complete",
+      "events": [
+        [
+          0.879,
+          1.169,
+          "A newborn child coughs briefly."
+        ],
+        [
+          1.879,
+          4.529,
+          "A newborn child cries sharply."
+        ],
+        [
+          7.579,
+          9.229,
+          "A newborn baby crying loudly and aggressively."
+        ],
+        [
+          0.0,
+          10.0,
+          "A newborn child crying loudly."
+        ],
+        [
+          5.279,
+          7.579,
+          "Soft rhythmic fussing sounds from a newborn before crying."
+        ],
+        [
+          0.0,
+          10.0,
+          "A newborn child is softly wailing."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-9b032e9411e9b69e",
+            "object": "chat.completion",
+            "created": 1792787266,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.879,\n      \"end\": 1.169\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 1.879,\n      \"end\": 4.529\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 7.579,\n      \"end\": 9.229\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.0,\n      \"end\": 10.0\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 5.279,\n      \"end\": 7.579\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 0.0,\n      \"end\": 10.0\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 335,
+              "total_tokens": 547,
+              "completion_tokens": 212,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 7.3195,
+      "seconds": 13.754331111907959,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          0.68,
+          "A newborn child coughs briefly."
+        ],
+        [
+          0.68,
+          1.28,
+          "A newborn child cries sharply."
+        ],
+        [
+          1.28,
+          2.18,
+          "A newborn baby crying loudly and aggressively."
+        ],
+        [
+          2.18,
+          4.48,
+          "A newborn child crying loudly."
+        ],
+        [
+          4.48,
+          5.58,
+          "Soft rhythmic fussing sounds from a newborn before crying."
+        ],
+        [
+          5.58,
+          7.319,
+          "A newborn child is softly wailing."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-9385a08abc90c580",
+            "object": "chat.completion",
+            "created": 1792787280,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 0.68\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.68,\n      \"end\": 1.28\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 1.28,\n      \"end\": 2.18\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 2.18,\n      \"end\": 4.48\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 4.48,\n      \"end\": 5.58\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 5.58,\n      \"end\": 7.319\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 298,
+              "total_tokens": 504,
+              "completion_tokens": 206,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      2.987,
+      5.257,
+      "A newborn baby crying loudly and aggressively."
+    ],
+    [
+      11.28,
+      12.18,
+      "A newborn baby crying loudly and aggressively."
+    ],
+    [
+      12.579,
+      14.229,
+      "A newborn baby crying loudly and aggressively."
+    ],
+    [
+      1.987,
+      2.267,
+      "A newborn child coughs briefly."
+    ],
+    [
+      5.879,
+      6.1690000000000005,
+      "A newborn child coughs briefly."
+    ],
+    [
+      10.0,
+      10.68,
+      "A newborn child coughs briefly."
+    ],
+    [
+      0.0,
+      1.15,
+      "A newborn child cries sharply."
+    ],
+    [
+      6.879,
+      9.529,
+      "A newborn child cries sharply."
+    ],
+    [
+      10.68,
+      11.28,
+      "A newborn child cries sharply."
+    ],
+    [
+      5.0,
+      15.0,
+      "A newborn child crying loudly."
+    ],
+    [
+      5.0,
+      15.0,
+      "A newborn child is softly wailing."
+    ],
+    [
+      15.58,
+      17.319,
+      "A newborn child is softly wailing."
+    ],
+    [
+      5.587,
+      6.487,
+      "Soft rhythmic fussing sounds from a newborn before crying."
+    ],
+    [
+      10.279,
+      12.579,
+      "Soft rhythmic fussing sounds from a newborn before crying."
+    ],
+    [
+      14.48,
+      15.58,
+      "Soft rhythmic fussing sounds from a newborn before crying."
+    ]
+  ],
+  "duration": 17.3195,
+  "inference_seconds": 42.47280192375183
+}

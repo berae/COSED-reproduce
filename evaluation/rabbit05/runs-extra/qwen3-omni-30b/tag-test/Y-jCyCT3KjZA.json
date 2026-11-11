@@ -1,0 +1,97 @@
+{
+  "clip_id": "Y-jCyCT3KjZA",
+  "labels": [
+    "tunnel sounding noise",
+    "squealing",
+    "screeching"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y-jCyCT3KjZA.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 9.1595625,
+      "seconds": 7.2441370487213135,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          9.1595625,
+          "tunnel sounding noise"
+        ],
+        [
+          4.87,
+          7.53,
+          "squealing"
+        ],
+        [
+          4.87,
+          7.53,
+          "screeching"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a892418ba4377260",
+            "object": "chat.completion",
+            "created": 1792780029,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 9.16\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 4.87,\n      \"end\": 7.53\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 4.87,\n      \"end\": 7.53\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 279,
+              "total_tokens": 388,
+              "completion_tokens": 109,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      4.87,
+      7.53,
+      "screeching"
+    ],
+    [
+      4.87,
+      7.53,
+      "squealing"
+    ],
+    [
+      0.0,
+      9.1595625,
+      "tunnel sounding noise"
+    ]
+  ],
+  "duration": 9.1595625,
+  "inference_seconds": 7.2441370487213135
+}

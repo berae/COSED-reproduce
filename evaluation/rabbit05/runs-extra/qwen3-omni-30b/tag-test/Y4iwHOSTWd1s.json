@@ -1,0 +1,97 @@
+{
+  "clip_id": "Y4iwHOSTWd1s",
+  "labels": [
+    "a crowd of people are talking",
+    "an adult female speaks in the foreground for a moment",
+    "laughing"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y4iwHOSTWd1s.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 7.736752033233643,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          10.0,
+          "a crowd of people are talking"
+        ],
+        [
+          0.875,
+          3.945,
+          "an adult female speaks in the foreground for a moment"
+        ],
+        [
+          4.625,
+          9.75,
+          "laughing"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-9c62bd5b86bc5ba1",
+            "object": "chat.completion",
+            "created": 1792781155,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.875,\n      \"end\": 3.945\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 4.625,\n      \"end\": 9.750\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 301,
+              "total_tokens": 418,
+              "completion_tokens": 117,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      10.0,
+      "a crowd of people are talking"
+    ],
+    [
+      0.875,
+      3.945,
+      "an adult female speaks in the foreground for a moment"
+    ],
+    [
+      4.625,
+      9.75,
+      "laughing"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 7.736752033233643
+}

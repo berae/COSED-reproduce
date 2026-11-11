@@ -1,0 +1,116 @@
+{
+  "clip_id": "Y-iYTyeANFVM",
+  "labels": [
+    "a dog yelping",
+    "growling"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y-iYTyeANFVM.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 12.19293999671936,
+      "status": "complete",
+      "events": [
+        [
+          8.279,
+          8.539,
+          "a dog yelping"
+        ],
+        [
+          0.649,
+          2.879,
+          "growling"
+        ],
+        [
+          3.479,
+          4.379,
+          "growling"
+        ],
+        [
+          4.679,
+          5.479,
+          "growling"
+        ],
+        [
+          5.779,
+          6.979,
+          "growling"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-83f8eb27e1399116",
+            "object": "chat.completion",
+            "created": 1792780011,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 8.279,\n      \"end\": 8.539\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.649,\n      \"end\": 2.879\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 3.479,\n      \"end\": 4.379\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 4.679,\n      \"end\": 5.479\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 5.779,\n      \"end\": 6.979\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 288,
+              "total_tokens": 472,
+              "completion_tokens": 184,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      8.279,
+      8.539,
+      "a dog yelping"
+    ],
+    [
+      0.649,
+      2.879,
+      "growling"
+    ],
+    [
+      3.479,
+      4.379,
+      "growling"
+    ],
+    [
+      4.679,
+      5.479,
+      "growling"
+    ],
+    [
+      5.779,
+      6.979,
+      "growling"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 12.19293999671936
+}

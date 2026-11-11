@@ -1,0 +1,54 @@
+{
+  "status": "complete",
+  "mpauc": 0.4672522341258738,
+  "per_class": {
+    "birds_singing": 0.8507986605932943,
+    "car": 0.7254757921827548,
+    "people talking": 0.3986302737933668,
+    "footsteps": 0.4502483465320085,
+    "children voices": 0.5157575005897371,
+    "wind_blowing": 0.5419522696356192,
+    "brakes_squeaking": 0.2513859857864083,
+    "large_vehicle": 0.3616328978836174,
+    "cutlery and dishes": 0.48412998912225114,
+    "metro approaching": 0.42771704657517434,
+    "metro leaving": 0.13204581269038076
+  },
+  "files": 49,
+  "segments": 11418,
+  "classes": [
+    "birds_singing",
+    "car",
+    "people talking",
+    "footsteps",
+    "children voices",
+    "wind_blowing",
+    "brakes_squeaking",
+    "large_vehicle",
+    "cutlery and dishes",
+    "metro approaching",
+    "metro leaving"
+  ],
+  "positive_segments": {
+    "birds_singing": 1472,
+    "car": 3513,
+    "people talking": 5703,
+    "footsteps": 1444,
+    "children voices": 183,
+    "wind_blowing": 141,
+    "brakes_squeaking": 110,
+    "large_vehicle": 689,
+    "cutlery and dishes": 170,
+    "metro approaching": 452,
+    "metro leaving": 299
+  },
+  "protocol": {
+    "segment_length": 1.0,
+    "max_fpr": 0.1,
+    "soft_label_threshold": ">0.5",
+    "aggregation": "duration-weighted mean per 1s segment; staircase pAUC divided by max_fpr; macro average"
+  },
+  "source": "https://github.com/DCASE-REPO/DESED_task/blob/master/recipes/dcase2024_task4_baseline/local/sed_trainer_pretrained.py",
+  "independent_sklearn_check": "passed",
+  "comparability": "All 49 development recordings; not official validation split or private evaluation; not confirmed COSED split."
+}

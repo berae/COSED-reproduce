@@ -1,0 +1,81 @@
+Traceback (most recent call last):
+  File "/home/zhanghc/projects/ov-sed/benchmark/runner-v1.py", line 237, in <module>
+    elif args.action=='run':run(args)
+  File "/home/zhanghc/projects/ov-sed/benchmark/runner-v1.py", line 159, in run
+    import numpy as np, librosa, torch
+  File "/home/zhanghc/venvs/mga-clap/lib/python3.10/site-packages/librosa/__init__.py", line 208, in <module>
+    from ._cache import cache
+  File "/home/zhanghc/venvs/mga-clap/lib/python3.10/site-packages/librosa/_cache.py", line 6, in <module>
+    from joblib import Memory
+  File "/home/zhanghc/venvs/mga-clap/lib/python3.10/site-packages/joblib/__init__.py", line 114, in <module>
+    from ._cloudpickle_wrapper import wrap_non_picklable_objects
+  File "/home/zhanghc/venvs/mga-clap/lib/python3.10/site-packages/joblib/_cloudpickle_wrapper.py", line 14, in <module>
+    from .externals.loky import wrap_non_picklable_objects
+  File "/home/zhanghc/venvs/mga-clap/lib/python3.10/site-packages/joblib/externals/loky/__init__.py", line 19, in <module>
+    from .backend.context import cpu_count
+  File "/home/zhanghc/venvs/mga-clap/lib/python3.10/site-packages/joblib/externals/loky/backend/__init__.py", line 4, in <module>
+    from .context import get_context
+  File "/home/zhanghc/venvs/mga-clap/lib/python3.10/site-packages/joblib/externals/loky/backend/context.py", line 24, in <module>
+    from concurrent.futures.process import _MAX_WINDOWS_WORKERS
+  File "/home/zhanghc/miniconda3/envs/nape/lib/python3.10/concurrent/futures/process.py", line 50, in <module>
+    import queue
+  File "/home/zhanghc/projects/ov-sed/benchmark/queue.py", line 13, in <module>
+    p=subprocess.run(cmd,stdout=f,stderr=subprocess.STDOUT,env=env)
+  File "/home/zhanghc/miniconda3/envs/nape/lib/python3.10/subprocess.py", line 503, in run
+    with Popen(*popenargs, **kwargs) as process:
+  File "/home/zhanghc/miniconda3/envs/nape/lib/python3.10/subprocess.py", line 971, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/zhanghc/miniconda3/envs/nape/lib/python3.10/subprocess.py", line 1863, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/zhanghc/venvs/--model/bin/python'
+/home/zhanghc/venvs/mga-clap/lib/python3.10/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+/home/zhanghc/venvs/mga-clap/lib/python3.10/site-packages/huggingface_hub/file_download.py:1142: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertModel: ['cls.predictions.transform.dense.bias', 'bert.pooler.dense.weight', 'cls.predictions.decoder.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.seq_relationship.weight', 'bert.pooler.dense.bias', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.bias']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+{"model": "mga-clap", "dataset": "desed-validation", "total": 1068, "completed": 1, "status": "running", "pid": 3884545, "started": 1792115091.4494467, "load_seconds": 5.535289525985718, "updated": 1792115097.9806986, "elapsed_seconds": 6.531252145767212}
+{"model": "mga-clap", "dataset": "desed-validation", "total": 1068, "completed": 25, "status": "running", "pid": 3884545, "started": 1792115091.4494467, "load_seconds": 5.535289525985718, "updated": 1792115098.2677054, "elapsed_seconds": 6.818259000778198}
+{"model": "mga-clap", "dataset": "desed-validation", "total": 1068, "completed": 50, "status": "running", "pid": 3884545, "started": 1792115091.4494467, "load_seconds": 5.535289525985718, "updated": 1792115098.599147, "elapsed_seconds": 7.149700403213501}
+{"model": "mga-clap", "dataset": "desed-validation", "total": 1068, "completed": 75, "status": "running", "pid": 3884545, "started": 1792115091.4494467, "load_seconds": 5.535289525985718, "updated": 1792115098.8811922, "elapsed_seconds": 7.431745767593384}
+{"model": "mga-clap", "dataset": "desed-validation", "total": 1068, "completed": 100, "status": "running", "pid": 3884545, "started": 1792115091.4494467, "load_seconds": 5.535289525985718, "updated": 1792115099.177504, "elapsed_seconds": 7.728057622909546}
+{"model": "mga-clap", "dataset": "desed-validation", "total": 1068, "completed": 125, "status": "running", "pid": 3884545, "started": 1792115091.4494467, "load_seconds": 5.535289525985718, "updated": 1792115099.513315, "elapsed_seconds": 8.063868761062622}
+{"model": "mga-clap", "dataset": "desed-validation", "total": 1068, "completed": 150, "status": "running", "pid": 3884545, "started": 1792115091.4494467, "load_seconds": 5.535289525985718, "updated": 1792115099.8451042, "elapsed_seconds": 8.395657777786255}
+{"model": "mga-clap", "dataset": "desed-validation", "total": 1068, "completed": 175, "status": "running", "pid": 3884545, "started": 1792115091.4494467, "load_seconds": 5.535289525985718, "updated": 1792115100.13673, "elapsed_seconds": 8.687283515930176}
+{"model": "mga-clap", "dataset": "desed-validation", "total": 1068, "completed": 200, "status": "running", "pid": 3884545, "started": 1792115091.4494467, "load_seconds": 5.535289525985718, "updated": 1792115100.436551, "elapsed_seconds": 8.987104654312134}
+{"model": "mga-clap", "dataset": "desed-validation", "total": 1068, "completed": 225, "status": "running", "pid": 3884545, "started": 1792115091.4494467, "load_seconds": 5.535289525985718, "updated": 1792115100.7169669, "elapsed_seconds": 9.267520427703857}
+{"model": "mga-clap", "dataset": "desed-validation", "total": 1068, "completed": 250, "status": "running", "pid": 3884545, "started": 1792115091.4494467, "load_seconds": 5.535289525985718, "updated": 1792115101.0042644, "elapsed_seconds": 9.554817914962769}
+{"model": "mga-clap", "dataset": "desed-validation", "total": 1068, "completed": 275, "status": "running", "pid": 3884545, "started": 1792115091.4494467, "load_seconds": 5.535289525985718, "updated": 1792115101.3194258, "elapsed_seconds": 9.86997938156128}
+{"model": "mga-clap", "dataset": "desed-validation", "total": 1068, "completed": 300, "status": "running", "pid": 3884545, "started": 1792115091.4494467, "load_seconds": 5.535289525985718, "updated": 1792115101.597064, "elapsed_seconds": 10.14761757850647}
+{"model": "mga-clap", "dataset": "desed-validation", "total": 1068, "completed": 325, "status": "running", "pid": 3884545, "started": 1792115091.4494467, "load_seconds": 5.535289525985718, "updated": 1792115101.9271655, "elapsed_seconds": 10.477719068527222}
+{"model": "mga-clap", "dataset": "desed-validation", "total": 1068, "completed": 350, "status": "running", "pid": 3884545, "started": 1792115091.4494467, "load_seconds": 5.535289525985718, "updated": 1792115102.2257066, "elapsed_seconds": 10.776260137557983}
+{"model": "mga-clap", "dataset": "desed-validation", "total": 1068, "completed": 375, "status": "running", "pid": 3884545, "started": 1792115091.4494467, "load_seconds": 5.535289525985718, "updated": 1792115102.5206823, "elapsed_seconds": 11.07123589515686}
+{"model": "mga-clap", "dataset": "desed-validation", "total": 1068, "completed": 400, "status": "running", "pid": 3884545, "started": 1792115091.4494467, "load_seconds": 5.535289525985718, "updated": 1792115102.8264108, "elapsed_seconds": 11.376964330673218}
+{"model": "mga-clap", "dataset": "desed-validation", "total": 1068, "completed": 425, "status": "running", "pid": 3884545, "started": 1792115091.4494467, "load_seconds": 5.535289525985718, "updated": 1792115103.113636, "elapsed_seconds": 11.664189577102661}
+{"model": "mga-clap", "dataset": "desed-validation", "total": 1068, "completed": 450, "status": "running", "pid": 3884545, "started": 1792115091.4494467, "load_seconds": 5.535289525985718, "updated": 1792115103.410267, "elapsed_seconds": 11.96082067489624}
+{"model": "mga-clap", "dataset": "desed-validation", "total": 1068, "completed": 475, "status": "running", "pid": 3884545, "started": 1792115091.4494467, "load_seconds": 5.535289525985718, "updated": 1792115103.7235816, "elapsed_seconds": 12.274135112762451}
+{"model": "mga-clap", "dataset": "desed-validation", "total": 1068, "completed": 500, "status": "running", "pid": 3884545, "started": 1792115091.4494467, "load_seconds": 5.535289525985718, "updated": 1792115104.0191905, "elapsed_seconds": 12.569744110107422}
+{"model": "mga-clap", "dataset": "desed-validation", "total": 1068, "completed": 525, "status": "running", "pid": 3884545, "started": 1792115091.4494467, "load_seconds": 5.535289525985718, "updated": 1792115104.3356729, "elapsed_seconds": 12.886226415634155}
+{"model": "mga-clap", "dataset": "desed-validation", "total": 1068, "completed": 550, "status": "running", "pid": 3884545, "started": 1792115091.4494467, "load_seconds": 5.535289525985718, "updated": 1792115104.6354866, "elapsed_seconds": 13.18604040145874}
+{"model": "mga-clap", "dataset": "desed-validation", "total": 1068, "completed": 575, "status": "running", "pid": 3884545, "started": 1792115091.4494467, "load_seconds": 5.535289525985718, "updated": 1792115104.9448683, "elapsed_seconds": 13.495421648025513}
+{"model": "mga-clap", "dataset": "desed-validation", "total": 1068, "completed": 600, "status": "running", "pid": 3884545, "started": 1792115091.4494467, "load_seconds": 5.535289525985718, "updated": 1792115105.2222557, "elapsed_seconds": 13.772809267044067}
+{"model": "mga-clap", "dataset": "desed-validation", "total": 1068, "completed": 625, "status": "running", "pid": 3884545, "started": 1792115091.4494467, "load_seconds": 5.535289525985718, "updated": 1792115105.5090494, "elapsed_seconds": 14.059602975845337}
+{"model": "mga-clap", "dataset": "desed-validation", "total": 1068, "completed": 650, "status": "running", "pid": 3884545, "started": 1792115091.4494467, "load_seconds": 5.535289525985718, "updated": 1792115105.7973928, "elapsed_seconds": 14.347946405410767}
+{"model": "mga-clap", "dataset": "desed-validation", "total": 1068, "completed": 675, "status": "running", "pid": 3884545, "started": 1792115091.4494467, "load_seconds": 5.535289525985718, "updated": 1792115106.1102347, "elapsed_seconds": 14.660788297653198}
+{"model": "mga-clap", "dataset": "desed-validation", "total": 1068, "completed": 700, "status": "running", "pid": 3884545, "started": 1792115091.4494467, "load_seconds": 5.535289525985718, "updated": 1792115106.3883548, "elapsed_seconds": 14.938908338546753}
+{"model": "mga-clap", "dataset": "desed-validation", "total": 1068, "completed": 725, "status": "running", "pid": 3884545, "started": 1792115091.4494467, "load_seconds": 5.535289525985718, "updated": 1792115106.6805673, "elapsed_seconds": 15.231120586395264}
+{"model": "mga-clap", "dataset": "desed-validation", "total": 1068, "completed": 750, "status": "running", "pid": 3884545, "started": 1792115091.4494467, "load_seconds": 5.535289525985718, "updated": 1792115106.995026, "elapsed_seconds": 15.545579671859741}
+{"model": "mga-clap", "dataset": "desed-validation", "total": 1068, "completed": 775, "status": "running", "pid": 3884545, "started": 1792115091.4494467, "load_seconds": 5.535289525985718, "updated": 1792115107.2818098, "elapsed_seconds": 15.832363605499268}
+{"model": "mga-clap", "dataset": "desed-validation", "total": 1068, "completed": 800, "status": "running", "pid": 3884545, "started": 1792115091.4494467, "load_seconds": 5.535289525985718, "updated": 1792115107.5713496, "elapsed_seconds": 16.12190318107605}
+{"model": "mga-clap", "dataset": "desed-validation", "total": 1068, "completed": 825, "status": "running", "pid": 3884545, "started": 1792115091.4494467, "load_seconds": 5.535289525985718, "updated": 1792115107.9356205, "elapsed_seconds": 16.48617386817932}
+{"model": "mga-clap", "dataset": "desed-validation", "total": 1068, "completed": 850, "status": "running", "pid": 3884545, "started": 1792115091.4494467, "load_seconds": 5.535289525985718, "updated": 1792115108.2266238, "elapsed_seconds": 16.777177333831787}
+{"model": "mga-clap", "dataset": "desed-validation", "total": 1068, "completed": 875, "status": "running", "pid": 3884545, "started": 1792115091.4494467, "load_seconds": 5.535289525985718, "updated": 1792115108.5086672, "elapsed_seconds": 17.059220790863037}
+{"model": "mga-clap", "dataset": "desed-validation", "total": 1068, "completed": 900, "status": "running", "pid": 3884545, "started": 1792115091.4494467, "load_seconds": 5.535289525985718, "updated": 1792115108.8088515, "elapsed_seconds": 17.359405040740967}
+{"model": "mga-clap", "dataset": "desed-validation", "total": 1068, "completed": 925, "status": "running", "pid": 3884545, "started": 1792115091.4494467, "load_seconds": 5.535289525985718, "updated": 1792115109.1006846, "elapsed_seconds": 17.651238203048706}
+{"model": "mga-clap", "dataset": "desed-validation", "total": 1068, "completed": 950, "status": "running", "pid": 3884545, "started": 1792115091.4494467, "load_seconds": 5.535289525985718, "updated": 1792115109.4070287, "elapsed_seconds": 17.957582235336304}
+{"model": "mga-clap", "dataset": "desed-validation", "total": 1068, "completed": 975, "status": "running", "pid": 3884545, "started": 1792115091.4494467, "load_seconds": 5.535289525985718, "updated": 1792115109.7124739, "elapsed_seconds": 18.26302719116211}
+{"model": "mga-clap", "dataset": "desed-validation", "total": 1068, "completed": 1000, "status": "running", "pid": 3884545, "started": 1792115091.4494467, "load_seconds": 5.535289525985718, "updated": 1792115110.0229957, "elapsed_seconds": 18.573549270629883}
+{"model": "mga-clap", "dataset": "desed-validation", "total": 1068, "completed": 1025, "status": "running", "pid": 3884545, "started": 1792115091.4494467, "load_seconds": 5.535289525985718, "updated": 1792115110.3326163, "elapsed_seconds": 18.883170127868652}
+{"model": "mga-clap", "dataset": "desed-validation", "total": 1068, "completed": 1050, "status": "running", "pid": 3884545, "started": 1792115091.4494467, "load_seconds": 5.535289525985718, "updated": 1792115110.6283622, "elapsed_seconds": 19.17891550064087}
+PSDS1 0.27630446976965595

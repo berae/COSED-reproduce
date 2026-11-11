@@ -1,0 +1,355 @@
+{
+  "clip_id": "246037",
+  "labels": [
+    "A cat meows.",
+    "A cat meows loudly in displeasure.",
+    "A short, squeaky meow."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/246037.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 12.412662029266357,
+      "status": "complete",
+      "events": [
+        [
+          1.458,
+          2.178,
+          "A cat meows."
+        ],
+        [
+          3.468,
+          4.188,
+          "A cat meows."
+        ],
+        [
+          5.398,
+          6.118,
+          "A cat meows."
+        ],
+        [
+          6.978,
+          7.558,
+          "A cat meows loudly in displeasure."
+        ],
+        [
+          8.178,
+          8.378,
+          "A short, squeaky meow."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-92366d479e954e4b",
+            "object": "chat.completion",
+            "created": 1792810901,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 1.458,\n      \"end\": 2.178\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 3.468,\n      \"end\": 4.188\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 5.398,\n      \"end\": 6.118\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 6.978,\n      \"end\": 7.558\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 8.178,\n      \"end\": 8.378\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 304,
+              "total_tokens": 488,
+              "completion_tokens": 184,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 10.004915952682495,
+      "status": "complete",
+      "events": [
+        [
+          0.348,
+          1.058,
+          "A cat meows."
+        ],
+        [
+          2.078,
+          2.698,
+          "A cat meows loudly in displeasure."
+        ],
+        [
+          6.948,
+          7.658,
+          "A short, squeaky meow."
+        ],
+        [
+          8.718,
+          9.428,
+          "A short, squeaky meow."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-988df431a5594c94",
+            "object": "chat.completion",
+            "created": 1792810914,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.348,\n      \"end\": 1.058\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 2.078,\n      \"end\": 2.698\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 6.948,\n      \"end\": 7.658\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 8.718,\n      \"end\": 9.428\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 304,
+              "total_tokens": 454,
+              "completion_tokens": 150,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 10.0,
+      "seconds": 7.833194971084595,
+      "status": "complete",
+      "events": [
+        [
+          1.879,
+          2.649,
+          "A cat meows."
+        ],
+        [
+          3.599,
+          4.429,
+          "A cat meows loudly in displeasure."
+        ],
+        [
+          8.719,
+          9.429,
+          "A short, squeaky meow."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a8aa114a9c967082",
+            "object": "chat.completion",
+            "created": 1792810924,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 1.879,\n      \"end\": 2.649\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 3.599,\n      \"end\": 4.429\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 8.719,\n      \"end\": 9.429\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 304,
+              "total_tokens": 420,
+              "completion_tokens": 116,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 240000,
+      "start": 15.0,
+      "duration": 8.1943125,
+      "seconds": 7.779645919799805,
+      "status": "complete",
+      "events": [
+        [
+          3.576,
+          4.276,
+          "A cat meows."
+        ],
+        [
+          3.576,
+          4.276,
+          "A cat meows loudly in displeasure."
+        ],
+        [
+          3.576,
+          4.276,
+          "A short, squeaky meow."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b541c2980d184fcc",
+            "object": "chat.completion",
+            "created": 1792810932,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 3.576,\n      \"end\": 4.276\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 3.576,\n      \"end\": 4.276\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 3.576,\n      \"end\": 4.276\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 279,
+              "total_tokens": 395,
+              "completion_tokens": 116,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      6.978,
+      7.698,
+      "A cat meows loudly in displeasure."
+    ],
+    [
+      13.599,
+      14.429,
+      "A cat meows loudly in displeasure."
+    ],
+    [
+      18.576,
+      19.276,
+      "A cat meows loudly in displeasure."
+    ],
+    [
+      1.458,
+      2.178,
+      "A cat meows."
+    ],
+    [
+      3.468,
+      4.188,
+      "A cat meows."
+    ],
+    [
+      5.348,
+      6.118,
+      "A cat meows."
+    ],
+    [
+      11.879,
+      12.649000000000001,
+      "A cat meows."
+    ],
+    [
+      18.576,
+      19.276,
+      "A cat meows."
+    ],
+    [
+      8.178,
+      8.378,
+      "A short, squeaky meow."
+    ],
+    [
+      11.948,
+      12.658000000000001,
+      "A short, squeaky meow."
+    ],
+    [
+      13.718,
+      14.428,
+      "A short, squeaky meow."
+    ],
+    [
+      18.576,
+      19.429000000000002,
+      "A short, squeaky meow."
+    ]
+  ],
+  "duration": 23.1943125,
+  "inference_seconds": 38.03041887283325
+}

@@ -1,0 +1,79 @@
+Traceback (most recent call last):
+  File "/home/zhanghc/projects/ov-sed/benchmark/runner-v1.py", line 237, in <module>
+    elif args.action=='run':run(args)
+  File "/home/zhanghc/projects/ov-sed/benchmark/runner-v1.py", line 159, in run
+    import numpy as np, librosa, torch
+  File "/home/zhanghc/venvs/mga-clap/lib/python3.10/site-packages/librosa/__init__.py", line 208, in <module>
+    from ._cache import cache
+  File "/home/zhanghc/venvs/mga-clap/lib/python3.10/site-packages/librosa/_cache.py", line 6, in <module>
+    from joblib import Memory
+  File "/home/zhanghc/venvs/mga-clap/lib/python3.10/site-packages/joblib/__init__.py", line 114, in <module>
+    from ._cloudpickle_wrapper import wrap_non_picklable_objects
+  File "/home/zhanghc/venvs/mga-clap/lib/python3.10/site-packages/joblib/_cloudpickle_wrapper.py", line 14, in <module>
+    from .externals.loky import wrap_non_picklable_objects
+  File "/home/zhanghc/venvs/mga-clap/lib/python3.10/site-packages/joblib/externals/loky/__init__.py", line 19, in <module>
+    from .backend.context import cpu_count
+  File "/home/zhanghc/venvs/mga-clap/lib/python3.10/site-packages/joblib/externals/loky/backend/__init__.py", line 4, in <module>
+    from .context import get_context
+  File "/home/zhanghc/venvs/mga-clap/lib/python3.10/site-packages/joblib/externals/loky/backend/context.py", line 24, in <module>
+    from concurrent.futures.process import _MAX_WINDOWS_WORKERS
+  File "/home/zhanghc/miniconda3/envs/nape/lib/python3.10/concurrent/futures/process.py", line 50, in <module>
+    import queue
+  File "/home/zhanghc/projects/ov-sed/benchmark/queue.py", line 13, in <module>
+    p=subprocess.run(cmd,stdout=f,stderr=subprocess.STDOUT,env=env)
+  File "/home/zhanghc/miniconda3/envs/nape/lib/python3.10/subprocess.py", line 503, in run
+    with Popen(*popenargs, **kwargs) as process:
+  File "/home/zhanghc/miniconda3/envs/nape/lib/python3.10/subprocess.py", line 971, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/zhanghc/miniconda3/envs/nape/lib/python3.10/subprocess.py", line 1863, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/zhanghc/venvs/--model/bin/python'
+/home/zhanghc/venvs/mga-clap/lib/python3.10/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+/home/zhanghc/venvs/mga-clap/lib/python3.10/site-packages/huggingface_hub/file_download.py:1142: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertModel: ['bert.pooler.dense.weight', 'cls.seq_relationship.weight', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.decoder.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.dense.bias', 'cls.predictions.bias', 'cls.predictions.transform.LayerNorm.bias', 'bert.pooler.dense.bias']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+{"model": "mga-clap", "dataset": "realdesed-test", "total": 1007, "completed": 1, "status": "running", "pid": 3885103, "started": 1792115116.0715084, "load_seconds": 5.519694089889526, "updated": 1792115123.8791463, "elapsed_seconds": 7.807638168334961}
+{"model": "mga-clap", "dataset": "realdesed-test", "total": 1007, "completed": 25, "status": "running", "pid": 3885103, "started": 1792115116.0715084, "load_seconds": 5.519694089889526, "updated": 1792115136.5072415, "elapsed_seconds": 20.435733318328857}
+{"model": "mga-clap", "dataset": "realdesed-test", "total": 1007, "completed": 50, "status": "running", "pid": 3885103, "started": 1792115116.0715084, "load_seconds": 5.519694089889526, "updated": 1792115150.1958973, "elapsed_seconds": 34.12438917160034}
+{"model": "mga-clap", "dataset": "realdesed-test", "total": 1007, "completed": 75, "status": "running", "pid": 3885103, "started": 1792115116.0715084, "load_seconds": 5.519694089889526, "updated": 1792115164.7666612, "elapsed_seconds": 48.69515299797058}
+{"model": "mga-clap", "dataset": "realdesed-test", "total": 1007, "completed": 100, "status": "running", "pid": 3885103, "started": 1792115116.0715084, "load_seconds": 5.519694089889526, "updated": 1792115175.9578652, "elapsed_seconds": 59.8863570690155}
+{"model": "mga-clap", "dataset": "realdesed-test", "total": 1007, "completed": 125, "status": "running", "pid": 3885103, "started": 1792115116.0715084, "load_seconds": 5.519694089889526, "updated": 1792115187.2816384, "elapsed_seconds": 71.21013021469116}
+{"model": "mga-clap", "dataset": "realdesed-test", "total": 1007, "completed": 150, "status": "running", "pid": 3885103, "started": 1792115116.0715084, "load_seconds": 5.519694089889526, "updated": 1792115199.3591108, "elapsed_seconds": 83.28760266304016}
+{"model": "mga-clap", "dataset": "realdesed-test", "total": 1007, "completed": 175, "status": "running", "pid": 3885103, "started": 1792115116.0715084, "load_seconds": 5.519694089889526, "updated": 1792115211.0958328, "elapsed_seconds": 95.02432489395142}
+{"model": "mga-clap", "dataset": "realdesed-test", "total": 1007, "completed": 200, "status": "running", "pid": 3885103, "started": 1792115116.0715084, "load_seconds": 5.519694089889526, "updated": 1792115223.9383824, "elapsed_seconds": 107.86687421798706}
+{"model": "mga-clap", "dataset": "realdesed-test", "total": 1007, "completed": 225, "status": "running", "pid": 3885103, "started": 1792115116.0715084, "load_seconds": 5.519694089889526, "updated": 1792115237.7235966, "elapsed_seconds": 121.65208840370178}
+{"model": "mga-clap", "dataset": "realdesed-test", "total": 1007, "completed": 250, "status": "running", "pid": 3885103, "started": 1792115116.0715084, "load_seconds": 5.519694089889526, "updated": 1792115250.839456, "elapsed_seconds": 134.7679479122162}
+{"model": "mga-clap", "dataset": "realdesed-test", "total": 1007, "completed": 275, "status": "running", "pid": 3885103, "started": 1792115116.0715084, "load_seconds": 5.519694089889526, "updated": 1792115266.2370343, "elapsed_seconds": 150.1655261516571}
+{"model": "mga-clap", "dataset": "realdesed-test", "total": 1007, "completed": 300, "status": "running", "pid": 3885103, "started": 1792115116.0715084, "load_seconds": 5.519694089889526, "updated": 1792115280.275092, "elapsed_seconds": 164.2035837173462}
+{"model": "mga-clap", "dataset": "realdesed-test", "total": 1007, "completed": 325, "status": "running", "pid": 3885103, "started": 1792115116.0715084, "load_seconds": 5.519694089889526, "updated": 1792115294.8066685, "elapsed_seconds": 178.73516035079956}
+{"model": "mga-clap", "dataset": "realdesed-test", "total": 1007, "completed": 350, "status": "running", "pid": 3885103, "started": 1792115116.0715084, "load_seconds": 5.519694089889526, "updated": 1792115308.6889486, "elapsed_seconds": 192.617440700531}
+{"model": "mga-clap", "dataset": "realdesed-test", "total": 1007, "completed": 375, "status": "running", "pid": 3885103, "started": 1792115116.0715084, "load_seconds": 5.519694089889526, "updated": 1792115323.6484733, "elapsed_seconds": 207.57696509361267}
+{"model": "mga-clap", "dataset": "realdesed-test", "total": 1007, "completed": 400, "status": "running", "pid": 3885103, "started": 1792115116.0715084, "load_seconds": 5.519694089889526, "updated": 1792115336.865451, "elapsed_seconds": 220.7939429283142}
+{"model": "mga-clap", "dataset": "realdesed-test", "total": 1007, "completed": 425, "status": "running", "pid": 3885103, "started": 1792115116.0715084, "load_seconds": 5.519694089889526, "updated": 1792115351.1620286, "elapsed_seconds": 235.0905203819275}
+{"model": "mga-clap", "dataset": "realdesed-test", "total": 1007, "completed": 450, "status": "running", "pid": 3885103, "started": 1792115116.0715084, "load_seconds": 5.519694089889526, "updated": 1792115362.1111848, "elapsed_seconds": 246.03967666625977}
+{"model": "mga-clap", "dataset": "realdesed-test", "total": 1007, "completed": 475, "status": "running", "pid": 3885103, "started": 1792115116.0715084, "load_seconds": 5.519694089889526, "updated": 1792115374.4145553, "elapsed_seconds": 258.3430471420288}
+{"model": "mga-clap", "dataset": "realdesed-test", "total": 1007, "completed": 500, "status": "running", "pid": 3885103, "started": 1792115116.0715084, "load_seconds": 5.519694089889526, "updated": 1792115386.9823377, "elapsed_seconds": 270.9108293056488}
+{"model": "mga-clap", "dataset": "realdesed-test", "total": 1007, "completed": 525, "status": "running", "pid": 3885103, "started": 1792115116.0715084, "load_seconds": 5.519694089889526, "updated": 1792115399.9596543, "elapsed_seconds": 283.8881459236145}
+{"model": "mga-clap", "dataset": "realdesed-test", "total": 1007, "completed": 550, "status": "running", "pid": 3885103, "started": 1792115116.0715084, "load_seconds": 5.519694089889526, "updated": 1792115412.4422355, "elapsed_seconds": 296.3707273006439}
+{"model": "mga-clap", "dataset": "realdesed-test", "total": 1007, "completed": 575, "status": "running", "pid": 3885103, "started": 1792115116.0715084, "load_seconds": 5.519694089889526, "updated": 1792115424.1758654, "elapsed_seconds": 308.10435724258423}
+{"model": "mga-clap", "dataset": "realdesed-test", "total": 1007, "completed": 600, "status": "running", "pid": 3885103, "started": 1792115116.0715084, "load_seconds": 5.519694089889526, "updated": 1792115439.02565, "elapsed_seconds": 322.95414185523987}
+{"model": "mga-clap", "dataset": "realdesed-test", "total": 1007, "completed": 625, "status": "running", "pid": 3885103, "started": 1792115116.0715084, "load_seconds": 5.519694089889526, "updated": 1792115451.5448143, "elapsed_seconds": 335.47330617904663}
+{"model": "mga-clap", "dataset": "realdesed-test", "total": 1007, "completed": 650, "status": "running", "pid": 3885103, "started": 1792115116.0715084, "load_seconds": 5.519694089889526, "updated": 1792115465.8662922, "elapsed_seconds": 349.7947840690613}
+{"model": "mga-clap", "dataset": "realdesed-test", "total": 1007, "completed": 675, "status": "running", "pid": 3885103, "started": 1792115116.0715084, "load_seconds": 5.519694089889526, "updated": 1792115478.4020875, "elapsed_seconds": 362.33057928085327}
+{"model": "mga-clap", "dataset": "realdesed-test", "total": 1007, "completed": 700, "status": "running", "pid": 3885103, "started": 1792115116.0715084, "load_seconds": 5.519694089889526, "updated": 1792115490.3780735, "elapsed_seconds": 374.306565284729}
+{"model": "mga-clap", "dataset": "realdesed-test", "total": 1007, "completed": 725, "status": "running", "pid": 3885103, "started": 1792115116.0715084, "load_seconds": 5.519694089889526, "updated": 1792115502.3680637, "elapsed_seconds": 386.296555519104}
+{"model": "mga-clap", "dataset": "realdesed-test", "total": 1007, "completed": 750, "status": "running", "pid": 3885103, "started": 1792115116.0715084, "load_seconds": 5.519694089889526, "updated": 1792115514.6105523, "elapsed_seconds": 398.5390441417694}
+{"model": "mga-clap", "dataset": "realdesed-test", "total": 1007, "completed": 775, "status": "running", "pid": 3885103, "started": 1792115116.0715084, "load_seconds": 5.519694089889526, "updated": 1792115526.587081, "elapsed_seconds": 410.5155735015869}
+{"model": "mga-clap", "dataset": "realdesed-test", "total": 1007, "completed": 800, "status": "running", "pid": 3885103, "started": 1792115116.0715084, "load_seconds": 5.519694089889526, "updated": 1792115538.506777, "elapsed_seconds": 422.43526887893677}
+{"model": "mga-clap", "dataset": "realdesed-test", "total": 1007, "completed": 825, "status": "running", "pid": 3885103, "started": 1792115116.0715084, "load_seconds": 5.519694089889526, "updated": 1792115551.7252064, "elapsed_seconds": 435.6536982059479}
+{"model": "mga-clap", "dataset": "realdesed-test", "total": 1007, "completed": 850, "status": "running", "pid": 3885103, "started": 1792115116.0715084, "load_seconds": 5.519694089889526, "updated": 1792115563.3033776, "elapsed_seconds": 447.2318699359894}
+{"model": "mga-clap", "dataset": "realdesed-test", "total": 1007, "completed": 875, "status": "running", "pid": 3885103, "started": 1792115116.0715084, "load_seconds": 5.519694089889526, "updated": 1792115575.9400356, "elapsed_seconds": 459.86852741241455}
+{"model": "mga-clap", "dataset": "realdesed-test", "total": 1007, "completed": 900, "status": "running", "pid": 3885103, "started": 1792115116.0715084, "load_seconds": 5.519694089889526, "updated": 1792115587.7293618, "elapsed_seconds": 471.65785360336304}
+{"model": "mga-clap", "dataset": "realdesed-test", "total": 1007, "completed": 925, "status": "running", "pid": 3885103, "started": 1792115116.0715084, "load_seconds": 5.519694089889526, "updated": 1792115600.396628, "elapsed_seconds": 484.3251197338104}
+{"model": "mga-clap", "dataset": "realdesed-test", "total": 1007, "completed": 950, "status": "running", "pid": 3885103, "started": 1792115116.0715084, "load_seconds": 5.519694089889526, "updated": 1792115613.9697769, "elapsed_seconds": 497.898268699646}
+{"model": "mga-clap", "dataset": "realdesed-test", "total": 1007, "completed": 975, "status": "running", "pid": 3885103, "started": 1792115116.0715084, "load_seconds": 5.519694089889526, "updated": 1792115626.4976475, "elapsed_seconds": 510.4261393547058}
+{"model": "mga-clap", "dataset": "realdesed-test", "total": 1007, "completed": 1000, "status": "running", "pid": 3885103, "started": 1792115116.0715084, "load_seconds": 5.519694089889526, "updated": 1792115639.709524, "elapsed_seconds": 523.6380157470703}
+PSDS1 0.18286579363886687

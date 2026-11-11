@@ -1,0 +1,324 @@
+{
+  "clip_id": "627110",
+  "labels": [
+    "Two hammer blows.",
+    "A small object falls.",
+    "A loud bang on iron.",
+    "An iron ladder is shaking.",
+    "Three clear hammer blows.",
+    "Two clear hammer blows.",
+    "A remote drilling sound."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/627110.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 9.797946453094482,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          0.78,
+          "Two hammer blows."
+        ],
+        [
+          6.49,
+          6.85,
+          "A loud bang on iron."
+        ],
+        [
+          7.2,
+          8.0,
+          "Three clear hammer blows."
+        ],
+        [
+          7.2,
+          8.0,
+          "Two clear hammer blows."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-98cae4c8def76004",
+            "object": "chat.completion",
+            "created": 1792821684,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 0.780\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 6.490,\n      \"end\": 6.850\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 7.200,\n      \"end\": 8.000\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 7.200,\n      \"end\": 8.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 326,
+              "total_tokens": 476,
+              "completion_tokens": 150,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 5.160295009613037,
+      "status": "complete",
+      "events": [
+        [
+          7.89,
+          9.41,
+          "Three clear hammer blows."
+        ],
+        [
+          7.89,
+          9.41,
+          "Two clear hammer blows."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a29e3e3622023376",
+            "object": "chat.completion",
+            "created": 1792821694,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 4,\n      \"start\": 7.89,\n      \"end\": 9.41\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 7.89,\n      \"end\": 9.41\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 326,
+              "total_tokens": 404,
+              "completion_tokens": 78,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 10.0,
+      "seconds": 7.680450677871704,
+      "status": "complete",
+      "events": [
+        [
+          3.789,
+          4.979,
+          "Three clear hammer blows."
+        ],
+        [
+          3.789,
+          4.979,
+          "Two clear hammer blows."
+        ],
+        [
+          3.789,
+          4.979,
+          "A loud bang on iron."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-9ed4cbc7560778b3",
+            "object": "chat.completion",
+            "created": 1792821699,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 4,\n      \"start\": 3.789,\n      \"end\": 4.979\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 3.789,\n      \"end\": 4.979\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 3.789,\n      \"end\": 4.979\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 326,
+              "total_tokens": 442,
+              "completion_tokens": 116,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 240000,
+      "start": 15.0,
+      "duration": 5.4929375,
+      "seconds": 5.437700271606445,
+      "status": "complete",
+      "events": [
+        [
+          4.078,
+          4.518,
+          "Two clear hammer blows."
+        ],
+        [
+          4.078,
+          4.518,
+          "A loud bang on iron."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b7567273dc3ced73",
+            "object": "chat.completion",
+            "created": 1792821706,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 5,\n      \"start\": 4.078,\n      \"end\": 4.518\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 4.078,\n      \"end\": 4.518\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 266,
+              "total_tokens": 348,
+              "completion_tokens": 82,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      6.49,
+      6.85,
+      "A loud bang on iron."
+    ],
+    [
+      13.789,
+      14.979,
+      "A loud bang on iron."
+    ],
+    [
+      19.078,
+      19.518,
+      "A loud bang on iron."
+    ],
+    [
+      7.2,
+      8.0,
+      "Three clear hammer blows."
+    ],
+    [
+      12.89,
+      14.979,
+      "Three clear hammer blows."
+    ],
+    [
+      7.2,
+      8.0,
+      "Two clear hammer blows."
+    ],
+    [
+      12.89,
+      14.979,
+      "Two clear hammer blows."
+    ],
+    [
+      19.078,
+      19.518,
+      "Two clear hammer blows."
+    ],
+    [
+      0.0,
+      0.78,
+      "Two hammer blows."
+    ]
+  ],
+  "duration": 20.4929375,
+  "inference_seconds": 28.07639241218567
+}

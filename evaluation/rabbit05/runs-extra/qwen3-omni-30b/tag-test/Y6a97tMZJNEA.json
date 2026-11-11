@@ -1,0 +1,96 @@
+{
+  "clip_id": "Y6a97tMZJNEA",
+  "labels": [
+    "a child is speaking",
+    "a dog is growling softly"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y6a97tMZJNEA.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 7.798353910446167,
+      "status": "complete",
+      "events": [
+        [
+          0.258,
+          1.348,
+          "a child is speaking"
+        ],
+        [
+          2.078,
+          2.968,
+          "a dog is growling softly"
+        ],
+        [
+          4.578,
+          7.478,
+          "a dog is growling softly"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b28fd0defda2dcc0",
+            "object": "chat.completion",
+            "created": 1792779322,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.258,\n      \"end\": 1.348\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 2.078,\n      \"end\": 2.968\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 4.578,\n      \"end\": 7.478\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 291,
+              "total_tokens": 407,
+              "completion_tokens": 116,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.258,
+      1.348,
+      "a child is speaking"
+    ],
+    [
+      2.078,
+      2.968,
+      "a dog is growling softly"
+    ],
+    [
+      4.578,
+      7.478,
+      "a dog is growling softly"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 7.798353910446167
+}

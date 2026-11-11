@@ -1,0 +1,47 @@
+{
+  "metric": "generated-span micro 1s segment F1, NOT mpAUC",
+  "f1": 0.6209176788124157,
+  "tp": 9202,
+  "fp": 6454,
+  "fn": 4782,
+  "clip": {
+    "tp": 154,
+    "fp": 110,
+    "fn": 18,
+    "tn": 246,
+    "recall": 0.8953488372093024,
+    "precision": 0.5833333333333334,
+    "f1": 0.7064220183486238,
+    "fpr": 0.3089887640449438,
+    "note": "Audio-class/query presence; repeated events collapsed; only supplied queries evaluated.",
+    "accuracy": 0.7575757575757576,
+    "exact_audio_accuracy": 0.041666666666666664,
+    "exact_audio_correct": 2,
+    "audio_count": 48,
+    "binary_map": 0.5109467174003247,
+    "binary_ap_by_class": {
+      "birds_singing": 0.3333333333333333,
+      "car": 0.7534340659340659,
+      "people talking": 0.9702087442472058,
+      "footsteps": 0.827118511569731,
+      "children voices": 0.37962962962962965,
+      "wind_blowing": 0.18981481481481483,
+      "brakes_squeaking": 0.25,
+      "large_vehicle": 0.35714285714285715,
+      "cutlery and dishes": 0.4583333333333333,
+      "metro approaching": 0.4090909090909091,
+      "metro leaving": 0.6923076923076923
+    },
+    "ap_classes_without_positive": [],
+    "map_note": "Macro average of sklearn non-interpolated AP per class with positive GT; scores are binary 0/1 generated presence, not native confidence. No evaluable mAP for positive-only grounding queries. All equal-score predictions are tied, no arbitrary tie ordering."
+  },
+  "coverage": {
+    "total": 49,
+    "scored": 48,
+    "excluded": 1,
+    "excluded_ids": [
+      "cafe_restaurant_04"
+    ],
+    "policy": "Exclude incomplete audio entirely, including its successful windows; not a full-test-set score."
+  }
+}

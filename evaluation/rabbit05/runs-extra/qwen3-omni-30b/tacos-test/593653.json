@@ -1,0 +1,536 @@
+{
+  "clip_id": "593653",
+  "labels": [
+    "A dog barks loudly indoors.",
+    "A dog barks repeatedly indoors.",
+    "A dog growls quietly indoors.",
+    "Muffled stomping of a dog indoors.",
+    "A dog barks muffled.",
+    "A dog barks loudly indoors in a repeated manner.",
+    "A dog growls muffled indoors.",
+    "A dog barks loudly and repeatedly indoors."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/593653.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 18.851733207702637,
+      "status": "complete",
+      "events": [
+        [
+          8.198,
+          8.698,
+          "A dog barks loudly indoors."
+        ],
+        [
+          8.198,
+          8.698,
+          "A dog barks repeatedly indoors."
+        ],
+        [
+          1.898,
+          2.898,
+          "A dog growls quietly indoors."
+        ],
+        [
+          4.098,
+          4.898,
+          "Muffled stomping of a dog indoors."
+        ],
+        [
+          6.198,
+          6.698,
+          "A dog barks muffled."
+        ],
+        [
+          6.198,
+          6.698,
+          "A dog barks loudly indoors in a repeated manner."
+        ],
+        [
+          0.098,
+          0.898,
+          "A dog growls muffled indoors."
+        ],
+        [
+          6.198,
+          6.698,
+          "A dog barks loudly and repeatedly indoors."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-830546206f0bc00b",
+            "object": "chat.completion",
+            "created": 1792792104,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 8.198,\n      \"end\": 8.698\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 8.198,\n      \"end\": 8.698\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 1.898,\n      \"end\": 2.898\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 4.098,\n      \"end\": 4.898\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 6.198,\n      \"end\": 6.698\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 6.198,\n      \"end\": 6.698\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 0.098,\n      \"end\": 0.898\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 6.198,\n      \"end\": 6.698\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 357,
+              "total_tokens": 643,
+              "completion_tokens": 286,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 17.790698528289795,
+      "status": "complete",
+      "events": [
+        [
+          2.982,
+          3.482,
+          "A dog barks loudly indoors."
+        ],
+        [
+          4.582,
+          5.182,
+          "A dog barks repeatedly indoors."
+        ],
+        [
+          0.0,
+          1.0,
+          "A dog growls quietly indoors."
+        ],
+        [
+          0.0,
+          1.0,
+          "Muffled stomping of a dog indoors."
+        ],
+        [
+          0.0,
+          1.0,
+          "A dog barks muffled."
+        ],
+        [
+          4.582,
+          5.182,
+          "A dog barks loudly indoors in a repeated manner."
+        ],
+        [
+          0.0,
+          1.0,
+          "A dog growls muffled indoors."
+        ],
+        [
+          4.582,
+          5.182,
+          "A dog barks loudly and repeatedly indoors."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-80aa2ae92626edb4",
+            "object": "chat.completion",
+            "created": 1792792123,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 2.982,\n      \"end\": 3.482\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 4.582,\n      \"end\": 5.182\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.0,\n      \"end\": 1.0\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.0,\n      \"end\": 1.0\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 0.0,\n      \"end\": 1.0\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 4.582,\n      \"end\": 5.182\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 0.0,\n      \"end\": 1.0\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 4.582,\n      \"end\": 5.182\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 357,
+              "total_tokens": 627,
+              "completion_tokens": 270,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 10.0,
+      "seconds": 14.387223958969116,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          0.289,
+          "A dog barks loudly indoors."
+        ],
+        [
+          0.0,
+          9.289,
+          "A dog barks repeatedly indoors."
+        ],
+        [
+          3.489,
+          4.089,
+          "A dog growls quietly indoors."
+        ],
+        [
+          0.0,
+          9.289,
+          "A dog barks muffled."
+        ],
+        [
+          0.0,
+          9.289,
+          "A dog barks loudly indoors in a repeated manner."
+        ],
+        [
+          0.0,
+          9.289,
+          "A dog barks loudly and repeatedly indoors."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-ba4cb83242749eba",
+            "object": "chat.completion",
+            "created": 1792792140,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 0.289\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 9.289\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 3.489,\n      \"end\": 4.089\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 0.000,\n      \"end\": 9.289\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 0.000,\n      \"end\": 9.289\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 0.000,\n      \"end\": 9.289\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 357,
+              "total_tokens": 575,
+              "completion_tokens": 218,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 240000,
+      "start": 15.0,
+      "duration": 10.0,
+      "seconds": 9.951844692230225,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          0.289,
+          "A dog barks loudly indoors."
+        ],
+        [
+          0.0,
+          9.0,
+          "A dog barks repeatedly indoors."
+        ],
+        [
+          0.0,
+          9.0,
+          "A dog barks loudly indoors in a repeated manner."
+        ],
+        [
+          0.0,
+          9.0,
+          "A dog barks loudly and repeatedly indoors."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8bf22f0690a54f05",
+            "object": "chat.completion",
+            "created": 1792792155,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 0.289\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 9.000\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 0.000,\n      \"end\": 9.000\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 0.000,\n      \"end\": 9.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 357,
+              "total_tokens": 507,
+              "completion_tokens": 150,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 320000,
+      "start": 20.0,
+      "duration": 6.3519375,
+      "seconds": 11.16844391822815,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          0.48,
+          "A dog barks loudly indoors."
+        ],
+        [
+          0.0,
+          5.19,
+          "A dog barks repeatedly indoors."
+        ],
+        [
+          0.0,
+          5.19,
+          "A dog barks muffled."
+        ],
+        [
+          0.0,
+          5.19,
+          "A dog barks loudly indoors in a repeated manner."
+        ],
+        [
+          0.0,
+          5.19,
+          "A dog barks loudly and repeatedly indoors."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-939c869fa4896d71",
+            "object": "chat.completion",
+            "created": 1792792165,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 0.48\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.0,\n      \"end\": 5.19\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 0.0,\n      \"end\": 5.19\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 0.0,\n      \"end\": 5.19\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 0.0,\n      \"end\": 5.19\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 308,
+              "total_tokens": 477,
+              "completion_tokens": 169,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      6.198,
+      6.698,
+      "A dog barks loudly and repeatedly indoors."
+    ],
+    [
+      9.582,
+      25.19,
+      "A dog barks loudly and repeatedly indoors."
+    ],
+    [
+      6.198,
+      6.698,
+      "A dog barks loudly indoors in a repeated manner."
+    ],
+    [
+      9.582,
+      25.19,
+      "A dog barks loudly indoors in a repeated manner."
+    ],
+    [
+      7.982,
+      8.698,
+      "A dog barks loudly indoors."
+    ],
+    [
+      10.0,
+      10.289,
+      "A dog barks loudly indoors."
+    ],
+    [
+      15.0,
+      15.289,
+      "A dog barks loudly indoors."
+    ],
+    [
+      20.0,
+      20.48,
+      "A dog barks loudly indoors."
+    ],
+    [
+      5.0,
+      6.0,
+      "A dog barks muffled."
+    ],
+    [
+      6.198,
+      6.698,
+      "A dog barks muffled."
+    ],
+    [
+      10.0,
+      19.289,
+      "A dog barks muffled."
+    ],
+    [
+      20.0,
+      25.19,
+      "A dog barks muffled."
+    ],
+    [
+      8.198,
+      8.698,
+      "A dog barks repeatedly indoors."
+    ],
+    [
+      9.582,
+      25.19,
+      "A dog barks repeatedly indoors."
+    ],
+    [
+      0.098,
+      0.898,
+      "A dog growls muffled indoors."
+    ],
+    [
+      5.0,
+      6.0,
+      "A dog growls muffled indoors."
+    ],
+    [
+      1.898,
+      2.898,
+      "A dog growls quietly indoors."
+    ],
+    [
+      5.0,
+      6.0,
+      "A dog growls quietly indoors."
+    ],
+    [
+      13.489,
+      14.089,
+      "A dog growls quietly indoors."
+    ],
+    [
+      4.098,
+      4.898,
+      "Muffled stomping of a dog indoors."
+    ],
+    [
+      5.0,
+      6.0,
+      "Muffled stomping of a dog indoors."
+    ]
+  ],
+  "duration": 26.3519375,
+  "inference_seconds": 72.14994430541992
+}

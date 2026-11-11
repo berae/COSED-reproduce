@@ -1,0 +1,147 @@
+{
+  "clip_id": "Y4QEON5KWC1o",
+  "labels": [
+    "cracking of leaves",
+    "a dog barks",
+    "a woman speaks"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y4QEON5KWC1o.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 18.86365818977356,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          10.0,
+          "cracking of leaves"
+        ],
+        [
+          8.574,
+          9.034,
+          "a dog barks"
+        ],
+        [
+          1.264,
+          2.004,
+          "a woman speaks"
+        ],
+        [
+          2.714,
+          3.954,
+          "a woman speaks"
+        ],
+        [
+          4.214,
+          5.154,
+          "a woman speaks"
+        ],
+        [
+          5.714,
+          6.554,
+          "a woman speaks"
+        ],
+        [
+          7.454,
+          8.454,
+          "a woman speaks"
+        ],
+        [
+          9.214,
+          9.814,
+          "a woman speaks"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8f248830f050a54c",
+            "object": "chat.completion",
+            "created": 1792781091,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 8.574,\n      \"end\": 9.034\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 1.264,\n      \"end\": 2.004\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 2.714,\n      \"end\": 3.954\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 4.214,\n      \"end\": 5.154\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 5.714,\n      \"end\": 6.554\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 7.454,\n      \"end\": 8.454\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 9.214,\n      \"end\": 9.814\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 294,
+              "total_tokens": 581,
+              "completion_tokens": 287,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      8.574,
+      9.034,
+      "a dog barks"
+    ],
+    [
+      1.264,
+      2.004,
+      "a woman speaks"
+    ],
+    [
+      2.714,
+      3.954,
+      "a woman speaks"
+    ],
+    [
+      4.214,
+      5.154,
+      "a woman speaks"
+    ],
+    [
+      5.714,
+      6.554,
+      "a woman speaks"
+    ],
+    [
+      7.454,
+      8.454,
+      "a woman speaks"
+    ],
+    [
+      9.214,
+      9.814,
+      "a woman speaks"
+    ],
+    [
+      0.0,
+      10.0,
+      "cracking of leaves"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 18.86365818977356
+}

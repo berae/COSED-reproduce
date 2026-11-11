@@ -1,0 +1,308 @@
+{
+  "clip_id": "479839",
+  "labels": [
+    "A baby is sobbing sadly.",
+    "A baby is crying and screaming loudly.",
+    "A baby is sobbing loudly.",
+    "A baby screams and cries very loudly.",
+    "A baby sobs and gradually calms down.",
+    "A washing machine is running.",
+    "A washing machine operates in a steady pattern in the background."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/479839.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 16.794671535491943,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          1.0,
+          "A baby is sobbing sadly."
+        ],
+        [
+          1.0,
+          2.0,
+          "A baby is crying and screaming loudly."
+        ],
+        [
+          2.0,
+          3.0,
+          "A baby is sobbing loudly."
+        ],
+        [
+          3.0,
+          6.0,
+          "A baby screams and cries very loudly."
+        ],
+        [
+          6.0,
+          7.0,
+          "A baby sobs and gradually calms down."
+        ],
+        [
+          7.0,
+          9.0,
+          "A washing machine is running."
+        ],
+        [
+          7.0,
+          9.0,
+          "A washing machine operates in a steady pattern in the background."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-84e535358edf3b7a",
+            "object": "chat.completion",
+            "created": 1792784647,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 1.000\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 1.000,\n      \"end\": 2.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 2.000,\n      \"end\": 3.000\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 3.000,\n      \"end\": 6.000\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 6.000,\n      \"end\": 7.000\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 7.000,\n      \"end\": 9.000\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 7.000,\n      \"end\": 9.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 348,
+              "total_tokens": 600,
+              "completion_tokens": 252,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 10.011770725250244,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          1.789,
+          "A baby is crying and screaming loudly."
+        ],
+        [
+          2.0,
+          7.8,
+          "A baby is sobbing loudly."
+        ],
+        [
+          2.0,
+          7.8,
+          "A baby screams and cries very loudly."
+        ],
+        [
+          7.8,
+          9.8,
+          "A baby sobs and gradually calms down."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-be97c71bab6d34d1",
+            "object": "chat.completion",
+            "created": 1792784664,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 1.789\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 2.000,\n      \"end\": 7.800\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 2.000,\n      \"end\": 7.800\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 7.800,\n      \"end\": 9.800\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 348,
+              "total_tokens": 498,
+              "completion_tokens": 150,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 5.603875,
+      "seconds": 9.289120435714722,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          2.87,
+          "A baby is crying and screaming loudly."
+        ],
+        [
+          0.0,
+          2.87,
+          "A baby is sobbing loudly."
+        ],
+        [
+          0.0,
+          2.87,
+          "A baby screams and cries very loudly."
+        ],
+        [
+          0.0,
+          5.603875,
+          "A baby sobs and gradually calms down."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a1f3c413902f9791",
+            "object": "chat.completion",
+            "created": 1792784674,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 1,\n      \"start\": 0.0,\n      \"end\": 2.87\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.0,\n      \"end\": 2.87\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.0,\n      \"end\": 2.87\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 0.0,\n      \"end\": 5.604\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 289,
+              "total_tokens": 428,
+              "completion_tokens": 139,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      1.0,
+      2.0,
+      "A baby is crying and screaming loudly."
+    ],
+    [
+      5.0,
+      6.789,
+      "A baby is crying and screaming loudly."
+    ],
+    [
+      10.0,
+      12.870000000000001,
+      "A baby is crying and screaming loudly."
+    ],
+    [
+      2.0,
+      3.0,
+      "A baby is sobbing loudly."
+    ],
+    [
+      7.0,
+      12.870000000000001,
+      "A baby is sobbing loudly."
+    ],
+    [
+      0.0,
+      1.0,
+      "A baby is sobbing sadly."
+    ],
+    [
+      3.0,
+      6.0,
+      "A baby screams and cries very loudly."
+    ],
+    [
+      7.0,
+      12.870000000000001,
+      "A baby screams and cries very loudly."
+    ],
+    [
+      6.0,
+      7.0,
+      "A baby sobs and gradually calms down."
+    ],
+    [
+      10.0,
+      15.603875,
+      "A baby sobs and gradually calms down."
+    ],
+    [
+      7.0,
+      9.0,
+      "A washing machine is running."
+    ],
+    [
+      7.0,
+      9.0,
+      "A washing machine operates in a steady pattern in the background."
+    ]
+  ],
+  "duration": 15.603875,
+  "inference_seconds": 36.09556269645691
+}

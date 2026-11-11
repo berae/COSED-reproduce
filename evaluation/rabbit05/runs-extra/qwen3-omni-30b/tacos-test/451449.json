@@ -1,0 +1,483 @@
+{
+  "clip_id": "451449",
+  "labels": [
+    "A vehicle honks loudly once in traffic.",
+    "A vehicle honks briefly in traffic.",
+    "A vehicle honks its horn several times in traffic.",
+    "A person shouts in the distance.",
+    "Faint music playing outdoors.",
+    "A faint bird-like sound is heard outdoors.",
+    "Bird-like chirping sounds occur at irregular intervals outdoors.",
+    "Vehicles honk briefly in traffic.",
+    "Someone is speaking loudly outdoors.",
+    "Voices of a crowd at a market overlapping."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/451449.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 9.418573379516602,
+      "status": "complete",
+      "events": [
+        [
+          3.11,
+          3.58,
+          "A vehicle honks loudly once in traffic."
+        ],
+        [
+          5.41,
+          5.88,
+          "A vehicle honks briefly in traffic."
+        ],
+        [
+          7.02,
+          7.82,
+          "A vehicle honks its horn several times in traffic."
+        ],
+        [
+          0.0,
+          10.0,
+          "Voices of a crowd at a market overlapping."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-ba37c13a9150f000",
+            "object": "chat.completion",
+            "created": 1792832043,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 3.11,\n      \"end\": 3.58\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 5.41,\n      \"end\": 5.88\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 7.02,\n      \"end\": 7.82\n    },\n    {\n      \"query_id\": 9,\n      \"start\": 0.00,\n      \"end\": 10.00\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 379,
+              "total_tokens": 522,
+              "completion_tokens": 143,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 5.187826633453369,
+      "status": "complete",
+      "events": [
+        [
+          1.11,
+          1.65,
+          "A vehicle honks briefly in traffic."
+        ],
+        [
+          8.11,
+          8.51,
+          "Vehicles honk briefly in traffic."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-be6281b869f6dc5b",
+            "object": "chat.completion",
+            "created": 1792832052,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 1,\n      \"start\": 1.11,\n      \"end\": 1.65\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 8.11,\n      \"end\": 8.51\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 379,
+              "total_tokens": 457,
+              "completion_tokens": 78,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 10.0,
+      "seconds": 23.221784591674805,
+      "status": "complete",
+      "events": [
+        [
+          2.022,
+          2.422,
+          "A vehicle honks briefly in traffic."
+        ],
+        [
+          3.022,
+          3.422,
+          "A vehicle honks its horn several times in traffic."
+        ],
+        [
+          4.022,
+          4.422,
+          "Vehicles honk briefly in traffic."
+        ],
+        [
+          5.022,
+          5.422,
+          "Vehicles honk briefly in traffic."
+        ],
+        [
+          5.622,
+          6.022,
+          "Vehicles honk briefly in traffic."
+        ],
+        [
+          6.222,
+          6.622,
+          "Vehicles honk briefly in traffic."
+        ],
+        [
+          6.822,
+          7.222,
+          "Vehicles honk briefly in traffic."
+        ],
+        [
+          7.422,
+          7.822,
+          "Vehicles honk briefly in traffic."
+        ],
+        [
+          8.022,
+          8.422,
+          "Vehicles honk briefly in traffic."
+        ],
+        [
+          8.622,
+          9.022,
+          "Vehicles honk briefly in traffic."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a0eba94ff90e2f9f",
+            "object": "chat.completion",
+            "created": 1792832057,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 1,\n      \"start\": 2.022,\n      \"end\": 2.422\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 3.022,\n      \"end\": 3.422\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 4.022,\n      \"end\": 4.422\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 5.022,\n      \"end\": 5.422\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 5.622,\n      \"end\": 6.022\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 6.222,\n      \"end\": 6.622\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 6.822,\n      \"end\": 7.222\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 7.422,\n      \"end\": 7.822\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 8.022,\n      \"end\": 8.422\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 8.622,\n      \"end\": 9.022\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 379,
+              "total_tokens": 733,
+              "completion_tokens": 354,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 240000,
+      "start": 15.0,
+      "duration": 10.0,
+      "seconds": 5.200131416320801,
+      "status": "complete",
+      "events": [
+        [
+          6.98,
+          7.22,
+          "A vehicle honks briefly in traffic."
+        ],
+        [
+          8.11,
+          8.35,
+          "Vehicles honk briefly in traffic."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a5be673d9c6ba2dd",
+            "object": "chat.completion",
+            "created": 1792832081,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 1,\n      \"start\": 6.98,\n      \"end\": 7.22\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 8.11,\n      \"end\": 8.35\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 379,
+              "total_tokens": 457,
+              "completion_tokens": 78,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 320000,
+      "start": 20.0,
+      "duration": 9.5353125,
+      "seconds": 7.270566940307617,
+      "status": "complete",
+      "events": [
+        [
+          1.97,
+          2.22,
+          "A vehicle honks briefly in traffic."
+        ],
+        [
+          7.97,
+          8.22,
+          "Vehicles honk briefly in traffic."
+        ],
+        [
+          0.0,
+          9.535,
+          "Voices of a crowd at a market overlapping."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8fc7de0b0f287c2c",
+            "object": "chat.completion",
+            "created": 1792832086,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 1,\n      \"start\": 1.97,\n      \"end\": 2.22\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 7.97,\n      \"end\": 8.22\n    },\n    {\n      \"query_id\": 9,\n      \"start\": 0.0,\n      \"end\": 9.535\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 371,
+              "total_tokens": 481,
+              "completion_tokens": 110,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      5.41,
+      5.88,
+      "A vehicle honks briefly in traffic."
+    ],
+    [
+      6.11,
+      6.65,
+      "A vehicle honks briefly in traffic."
+    ],
+    [
+      12.022,
+      12.422,
+      "A vehicle honks briefly in traffic."
+    ],
+    [
+      21.97,
+      22.22,
+      "A vehicle honks briefly in traffic."
+    ],
+    [
+      7.02,
+      7.82,
+      "A vehicle honks its horn several times in traffic."
+    ],
+    [
+      13.022,
+      13.422,
+      "A vehicle honks its horn several times in traffic."
+    ],
+    [
+      3.11,
+      3.58,
+      "A vehicle honks loudly once in traffic."
+    ],
+    [
+      13.11,
+      13.51,
+      "Vehicles honk briefly in traffic."
+    ],
+    [
+      14.022,
+      14.422,
+      "Vehicles honk briefly in traffic."
+    ],
+    [
+      15.022,
+      15.422,
+      "Vehicles honk briefly in traffic."
+    ],
+    [
+      15.622,
+      16.022,
+      "Vehicles honk briefly in traffic."
+    ],
+    [
+      16.222,
+      16.622,
+      "Vehicles honk briefly in traffic."
+    ],
+    [
+      16.822,
+      17.222,
+      "Vehicles honk briefly in traffic."
+    ],
+    [
+      17.422,
+      17.822,
+      "Vehicles honk briefly in traffic."
+    ],
+    [
+      18.022,
+      18.422,
+      "Vehicles honk briefly in traffic."
+    ],
+    [
+      18.622,
+      19.022,
+      "Vehicles honk briefly in traffic."
+    ],
+    [
+      23.11,
+      23.35,
+      "Vehicles honk briefly in traffic."
+    ],
+    [
+      27.97,
+      28.22,
+      "Vehicles honk briefly in traffic."
+    ],
+    [
+      0.0,
+      10.0,
+      "Voices of a crowd at a market overlapping."
+    ],
+    [
+      20.0,
+      29.535,
+      "Voices of a crowd at a market overlapping."
+    ]
+  ],
+  "duration": 29.5353125,
+  "inference_seconds": 50.29888296127319
+}

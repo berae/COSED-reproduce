@@ -1,0 +1,116 @@
+[2026-10-31 04:02:20] INFO     | train.py:312 | Config: {'training': {'epochs': 10, 'clip_grad': 2, 'dropout': 0.2, 'seed': 31415926, 'device': 'cuda', 'alpha': 1.0, 'beta': 1.0, 'gamma': 1, 'freeze_audio_encoder': False, 'freeze_text_encoder': False, 'freeze_text_proj': False, 'freeze_audio_proj': False, 'freeze_audio_adapter': False, 'loss_type': ['sigmoid', 'grounding'], 'dist_impl': 'gather', 'precision': 'fp32', 'activation_checkpointing': True}, 'model_args': {'ckpt_path': '', 'audio_encoder_args': {'type': 'eat', 'audio_encoder_ckpt': './weights/EAT-base_epoch30_ft.pt'}, 'text_encoder_args': {'type': 'roberta-base', 'text_encoder_ckpt': './weights/roberta-base'}, 'embed_size': 1024, 'temp_global': 0.1, 'b_global': -10, 'temp_local': 0.1, 'b_local': -10, 'local_audio_proj_type': 'transformer', 'normalize_dense_audio_embeds': True, 'unify_audio_proj': False}, 'optim_args': {'lr': 5e-05, 'warmup_steps': 1000, 'optimizer_name': 'adam', 'betas': [0.9, 0.999], 'eps': 1e-08, 'momentum': 0.9, 'warmup_epochs': 2}, 'dist_args': {'world_size': 4, 'dist_url': 'env://', 'rank': 0, 'gpu': 0, 'distributed': True, 'dist_backend': 'nccl'}, 'data_args': {'basic_data_args': {'sample_rate': 16000, 'max_length': 10, 'time_resolution': 0.15625, 'return_type': 'mel'}, 'train_data_args': {'batch_size': 128, 'num_workers': 4, 'metadata_files': ['/work/zhanghc/Myllm/FineLAP/data/finelap_original/audioset_strong.jsonl', '/work/zhanghc/Myllm/FineLAP/data/finelap_original/desed_strong.jsonl', '/work/zhanghc/Myllm/FineLAP/data/finelap_original/audiocaps.jsonl', '/work/zhanghc/Myllm/FineLAP/data/finelap_original/clotho.jsonl', '/work/zhanghc/Myllm/FineLAP/data/finelap_original/wavcaps_freesound.jsonl', '/work/zhanghc/Myllm/FineLAP/data/finelap_original/wavcaps_bbc_sound_effects.jsonl', '/work/zhanghc/Myllm/FineLAP/data/finelap_original/wavcaps_soundbible.jsonl', '/work/zhanghc/Myllm/FineLAP/data/finelap_original/finelap100k.jsonl', '/work/zhanghc/Myllm/FineLAP/data/finelap_original/audiosetcaps_weak.jsonl', '/work/zhanghc/Myllm/FineLAP/data/finelap_original/urbansed.jsonl'], 'spec_aug': True, 'max_split_segments': 1, 'max_chosen_segments': 1, 'max_phrases': 20, 'random_crop': False, 'strict_audio': True, 'audio_backend': 'soundfile', 'warn_unknown_phrases': False}}}
+[2026-10-31 04:02:20] INFO     | train.py:316 | Config saved to: /work/zhanghc/Myllm/FineLAP/exps/finelap_original_20261031/config.yaml
+[2026-10-31 04:02:20] INFO     | audio_encoder.py:47 | Initializing EAT ... 
+[2026-10-31 04:02:20] INFO     | audio_encoder.py:47 | Initializing EAT ... 
+[2026-10-31 04:02:20] INFO     | audio_encoder.py:47 | Initializing EAT ... 
+[2026-10-31 04:02:20] INFO     | audio_encoder.py:47 | Initializing EAT ... 
+[2026-10-31 04:02:24] INFO     | finelap.py:109 | Normalize dense audio embeds: True
+[2026-10-31 04:02:24] INFO     | finelap.py:110 | Unify audio proj: False
+[2026-10-31 04:02:25] INFO     | mix_dataset.py:73 | Max phrases for sample: 20
+[2026-10-31 04:02:25] INFO     | train.py:336 | Activation recomputation enabled for 26 transformer blocks
+[2026-10-31 04:02:25] INFO     | train.py:359 | Total numer of parameters: 244.09M
+[2026-10-31 04:02:25] INFO     | train.py:360 | Total numer of learnable parameters: 239.37M
+[2026-10-31 04:02:25] INFO     | train.py:361 | Total number of non-trainable parameters: 4.72M
+[2026-10-31 04:02:25] INFO     | train.py:362 | Non-trainable parameter names:
+[2026-10-31 04:02:25] INFO     | train.py:365 |   audio_encoder.audio_enc.model.modality_encoders.IMAGE.fixed_positional_encoder.positions: torch.Size([1, 6144, 768]) (4.72M parameters)
+[2026-10-31 04:02:25] INFO     | train.py:366 | Model Parameter breakdown: 
+[2026-10-31 04:02:25] INFO     | train.py:369 | - Audio Encoder: 90.38M total, 85.66M trainable
+[2026-10-31 04:02:25] INFO     | train.py:373 | - Audio Global Projector: 1.84M total, 1.84M trainable
+[2026-10-31 04:02:25] INFO     | train.py:377 | - Audio Local Projector: 25.98M total, 25.98M trainable
+[2026-10-31 04:02:25] INFO     | train.py:381 | - Text Encoder: 124.06M total, 124.06M trainable
+[2026-10-31 04:02:25] INFO     | train.py:385 | - Text Projector: 1.84M total, 1.84M trainable
+[2026-10-31 04:02:25] INFO     | mix_dataset.py:73 | Max phrases for sample: 20
+[2026-10-31 04:02:25] INFO     | mix_dataset.py:73 | Max phrases for sample: 20
+[2026-10-31 04:02:25] INFO     | mix_dataset.py:73 | Max phrases for sample: 20
+[2026-10-31 04:02:35] INFO     | mix_dataset.py:103 | Number of clusters: 491, number of all phrases: 673
+[2026-10-31 04:02:35] INFO     | mix_dataset.py:104 | Number of data with grounding: 203372, number of data without grounding: 2119604, total number of data: 2322976
+[2026-10-31 04:02:35] INFO     | mix_dataset.py:103 | Number of clusters: 491, number of all phrases: 673
+[2026-10-31 04:02:35] INFO     | mix_dataset.py:104 | Number of data with grounding: 203372, number of data without grounding: 2119604, total number of data: 2322976
+[2026-10-31 04:02:35] INFO     | train.py:460 | Size of training set: 2322976, number of batches: 4538
+[2026-10-31 04:02:35] INFO     | mix_dataset.py:103 | Number of clusters: 491, number of all phrases: 673
+[2026-10-31 04:02:35] INFO     | mix_dataset.py:104 | Number of data with grounding: 203372, number of data without grounding: 2119604, total number of data: 2322976
+[2026-10-31 04:02:36] INFO     | mix_dataset.py:103 | Number of clusters: 491, number of all phrases: 673
+[2026-10-31 04:02:36] INFO     | mix_dataset.py:104 | Number of data with grounding: 203372, number of data without grounding: 2119604, total number of data: 2322976
+[2026-10-31 04:02:36] INFO     | train.py:641 | Training for epoch [1]
+[2026-10-31 04:02:36] INFO     | finelap.py:122 | Updating loss functions: rank=0, world_size=4, dist_impl=gather
+[2026-10-31 04:02:36] INFO     | finelap.py:122 | Updating loss functions: rank=2, world_size=4, dist_impl=gather
+[2026-10-31 04:02:36] INFO     | finelap.py:122 | Updating loss functions: rank=3, world_size=4, dist_impl=gather
+[2026-10-31 04:02:36] INFO     | finelap.py:122 | Updating loss functions: rank=1, world_size=4, dist_impl=gather
+[2026-10-31 10:12:26] INFO     | train.py:656 | Training statistics:	loss for epoch [1]: 3.766 (clip: 3.638, grounding: 0.127, distillation: 0.000), time: 22189.9, lr: 0.000049.
+[2026-10-31 10:12:28] INFO     | train.py:89 | Train loss history saved to /work/zhanghc/Myllm/FineLAP/exps/finelap_original_20261031/metrics/train_loss.csv, /work/zhanghc/Myllm/FineLAP/exps/finelap_original_20261031/metrics/train_loss.json; curve saved to /work/zhanghc/Myllm/FineLAP/exps/finelap_original_20261031/plots/train_loss_curve.png
+[2026-10-31 10:12:28] INFO     | finelap.py:122 | Updating loss functions: rank=3, world_size=4, dist_impl=gather
+[2026-10-31 10:12:28] INFO     | finelap.py:122 | Updating loss functions: rank=1, world_size=4, dist_impl=gather
+[2026-10-31 10:12:28] INFO     | train.py:772 | Saving model ckpt for epoch 1: /work/zhanghc/Myllm/FineLAP/exps/finelap_original_20261031/models/epoch_001.pt
+[2026-10-31 10:12:28] INFO     | finelap.py:122 | Updating loss functions: rank=2, world_size=4, dist_impl=gather
+[2026-10-31 10:12:31] INFO     | train.py:641 | Training for epoch [2]
+[2026-10-31 10:12:31] INFO     | finelap.py:122 | Updating loss functions: rank=0, world_size=4, dist_impl=gather
+[2026-10-31 16:26:35] INFO     | train.py:656 | Training statistics:	loss for epoch [2]: 2.998 (clip: 2.915, grounding: 0.083, distillation: 0.000), time: 22443.1, lr: 0.000046.
+[2026-10-31 16:26:35] INFO     | train.py:89 | Train loss history saved to /work/zhanghc/Myllm/FineLAP/exps/finelap_original_20261031/metrics/train_loss.csv, /work/zhanghc/Myllm/FineLAP/exps/finelap_original_20261031/metrics/train_loss.json; curve saved to /work/zhanghc/Myllm/FineLAP/exps/finelap_original_20261031/plots/train_loss_curve.png
+[2026-10-31 16:26:35] INFO     | finelap.py:122 | Updating loss functions: rank=1, world_size=4, dist_impl=gather
+[2026-10-31 16:26:35] INFO     | train.py:772 | Saving model ckpt for epoch 2: /work/zhanghc/Myllm/FineLAP/exps/finelap_original_20261031/models/epoch_002.pt
+[2026-10-31 16:26:35] INFO     | finelap.py:122 | Updating loss functions: rank=3, world_size=4, dist_impl=gather
+[2026-10-31 16:26:35] INFO     | finelap.py:122 | Updating loss functions: rank=2, world_size=4, dist_impl=gather
+[2026-10-31 16:26:39] INFO     | train.py:641 | Training for epoch [3]
+[2026-10-31 16:26:39] INFO     | finelap.py:122 | Updating loss functions: rank=0, world_size=4, dist_impl=gather
+[2026-10-31 22:34:28] INFO     | train.py:656 | Training statistics:	loss for epoch [3]: 2.816 (clip: 2.741, grounding: 0.075, distillation: 0.000), time: 22068.9, lr: 0.000041.
+[2026-10-31 22:34:28] INFO     | train.py:89 | Train loss history saved to /work/zhanghc/Myllm/FineLAP/exps/finelap_original_20261031/metrics/train_loss.csv, /work/zhanghc/Myllm/FineLAP/exps/finelap_original_20261031/metrics/train_loss.json; curve saved to /work/zhanghc/Myllm/FineLAP/exps/finelap_original_20261031/plots/train_loss_curve.png
+[2026-10-31 22:34:29] INFO     | finelap.py:122 | Updating loss functions: rank=3, world_size=4, dist_impl=gather
+[2026-10-31 22:34:29] INFO     | finelap.py:122 | Updating loss functions: rank=2, world_size=4, dist_impl=gather
+[2026-10-31 22:34:29] INFO     | finelap.py:122 | Updating loss functions: rank=1, world_size=4, dist_impl=gather
+[2026-10-31 22:34:29] INFO     | train.py:772 | Saving model ckpt for epoch 3: /work/zhanghc/Myllm/FineLAP/exps/finelap_original_20261031/models/epoch_003.pt
+[2026-10-31 22:34:32] INFO     | train.py:641 | Training for epoch [4]
+[2026-10-31 22:34:32] INFO     | finelap.py:122 | Updating loss functions: rank=0, world_size=4, dist_impl=gather
+[2026-11-01 04:44:04] INFO     | train.py:656 | Training statistics:	loss for epoch [4]: 2.681 (clip: 2.612, grounding: 0.069, distillation: 0.000), time: 22171.7, lr: 0.000034.
+[2026-11-01 04:44:05] INFO     | train.py:89 | Train loss history saved to /work/zhanghc/Myllm/FineLAP/exps/finelap_original_20261031/metrics/train_loss.csv, /work/zhanghc/Myllm/FineLAP/exps/finelap_original_20261031/metrics/train_loss.json; curve saved to /work/zhanghc/Myllm/FineLAP/exps/finelap_original_20261031/plots/train_loss_curve.png
+[2026-11-01 04:44:05] INFO     | finelap.py:122 | Updating loss functions: rank=3, world_size=4, dist_impl=gather
+[2026-11-01 04:44:05] INFO     | train.py:772 | Saving model ckpt for epoch 4: /work/zhanghc/Myllm/FineLAP/exps/finelap_original_20261031/models/epoch_004.pt
+[2026-11-01 04:44:05] INFO     | finelap.py:122 | Updating loss functions: rank=2, world_size=4, dist_impl=gather
+[2026-11-01 04:44:05] INFO     | finelap.py:122 | Updating loss functions: rank=1, world_size=4, dist_impl=gather
+[2026-11-01 04:44:08] INFO     | train.py:641 | Training for epoch [5]
+[2026-11-01 04:44:08] INFO     | finelap.py:122 | Updating loss functions: rank=0, world_size=4, dist_impl=gather
+[2026-11-01 11:00:30] INFO     | train.py:656 | Training statistics:	loss for epoch [5]: 2.562 (clip: 2.497, grounding: 0.065, distillation: 0.000), time: 22582.2, lr: 0.000026.
+[2026-11-01 11:00:31] INFO     | train.py:89 | Train loss history saved to /work/zhanghc/Myllm/FineLAP/exps/finelap_original_20261031/metrics/train_loss.csv, /work/zhanghc/Myllm/FineLAP/exps/finelap_original_20261031/metrics/train_loss.json; curve saved to /work/zhanghc/Myllm/FineLAP/exps/finelap_original_20261031/plots/train_loss_curve.png
+[2026-11-01 11:00:31] INFO     | train.py:772 | Saving model ckpt for epoch 5: /work/zhanghc/Myllm/FineLAP/exps/finelap_original_20261031/models/epoch_005.pt
+[2026-11-01 11:00:31] INFO     | finelap.py:122 | Updating loss functions: rank=3, world_size=4, dist_impl=gather
+[2026-11-01 11:00:31] INFO     | finelap.py:122 | Updating loss functions: rank=1, world_size=4, dist_impl=gather
+[2026-11-01 11:00:31] INFO     | finelap.py:122 | Updating loss functions: rank=2, world_size=4, dist_impl=gather
+[2026-11-01 11:00:35] INFO     | train.py:641 | Training for epoch [6]
+[2026-11-01 11:00:35] INFO     | finelap.py:122 | Updating loss functions: rank=0, world_size=4, dist_impl=gather
+[2026-11-01 17:08:02] INFO     | train.py:656 | Training statistics:	loss for epoch [6]: 2.453 (clip: 2.393, grounding: 0.060, distillation: 0.000), time: 22047.1, lr: 0.000018.
+[2026-11-01 17:08:03] INFO     | train.py:89 | Train loss history saved to /work/zhanghc/Myllm/FineLAP/exps/finelap_original_20261031/metrics/train_loss.csv, /work/zhanghc/Myllm/FineLAP/exps/finelap_original_20261031/metrics/train_loss.json; curve saved to /work/zhanghc/Myllm/FineLAP/exps/finelap_original_20261031/plots/train_loss_curve.png
+[2026-11-01 17:08:03] INFO     | finelap.py:122 | Updating loss functions: rank=3, world_size=4, dist_impl=gather
+[2026-11-01 17:08:03] INFO     | finelap.py:122 | Updating loss functions: rank=2, world_size=4, dist_impl=gather
+[2026-11-01 17:08:03] INFO     | finelap.py:122 | Updating loss functions: rank=1, world_size=4, dist_impl=gather
+[2026-11-01 17:08:03] INFO     | train.py:772 | Saving model ckpt for epoch 6: /work/zhanghc/Myllm/FineLAP/exps/finelap_original_20261031/models/epoch_006.pt
+[2026-11-01 17:08:06] INFO     | train.py:641 | Training for epoch [7]
+[2026-11-01 17:08:06] INFO     | finelap.py:122 | Updating loss functions: rank=0, world_size=4, dist_impl=gather
+[2026-11-01 23:16:14] INFO     | train.py:656 | Training statistics:	loss for epoch [7]: 2.356 (clip: 2.298, grounding: 0.058, distillation: 0.000), time: 22088.1, lr: 0.000011.
+[2026-11-01 23:16:15] INFO     | train.py:89 | Train loss history saved to /work/zhanghc/Myllm/FineLAP/exps/finelap_original_20261031/metrics/train_loss.csv, /work/zhanghc/Myllm/FineLAP/exps/finelap_original_20261031/metrics/train_loss.json; curve saved to /work/zhanghc/Myllm/FineLAP/exps/finelap_original_20261031/plots/train_loss_curve.png
+[2026-11-01 23:16:15] INFO     | finelap.py:122 | Updating loss functions: rank=1, world_size=4, dist_impl=gather
+[2026-11-01 23:16:15] INFO     | finelap.py:122 | Updating loss functions: rank=2, world_size=4, dist_impl=gather
+[2026-11-01 23:16:15] INFO     | finelap.py:122 | Updating loss functions: rank=3, world_size=4, dist_impl=gather
+[2026-11-01 23:16:15] INFO     | train.py:772 | Saving model ckpt for epoch 7: /work/zhanghc/Myllm/FineLAP/exps/finelap_original_20261031/models/epoch_007.pt
+[2026-11-01 23:16:18] INFO     | train.py:641 | Training for epoch [8]
+[2026-11-01 23:16:18] INFO     | finelap.py:122 | Updating loss functions: rank=0, world_size=4, dist_impl=gather
+[2026-11-02 05:30:12] INFO     | train.py:656 | Training statistics:	loss for epoch [8]: 2.278 (clip: 2.223, grounding: 0.055, distillation: 0.000), time: 22433.7, lr: 0.000005.
+[2026-11-02 05:30:13] INFO     | train.py:89 | Train loss history saved to /work/zhanghc/Myllm/FineLAP/exps/finelap_original_20261031/metrics/train_loss.csv, /work/zhanghc/Myllm/FineLAP/exps/finelap_original_20261031/metrics/train_loss.json; curve saved to /work/zhanghc/Myllm/FineLAP/exps/finelap_original_20261031/plots/train_loss_curve.png
+[2026-11-02 05:30:13] INFO     | finelap.py:122 | Updating loss functions: rank=3, world_size=4, dist_impl=gather
+[2026-11-02 05:30:13] INFO     | train.py:772 | Saving model ckpt for epoch 8: /work/zhanghc/Myllm/FineLAP/exps/finelap_original_20261031/models/epoch_008.pt
+[2026-11-02 05:30:13] INFO     | finelap.py:122 | Updating loss functions: rank=1, world_size=4, dist_impl=gather
+[2026-11-02 05:30:13] INFO     | finelap.py:122 | Updating loss functions: rank=2, world_size=4, dist_impl=gather
+[2026-11-02 05:30:17] INFO     | train.py:641 | Training for epoch [9]
+[2026-11-02 05:30:17] INFO     | finelap.py:122 | Updating loss functions: rank=0, world_size=4, dist_impl=gather
+[2026-11-02 11:48:37] INFO     | train.py:656 | Training statistics:	loss for epoch [9]: 2.222 (clip: 2.169, grounding: 0.053, distillation: 0.000), time: 22700.1, lr: 0.000001.
+[2026-11-02 11:48:38] INFO     | train.py:89 | Train loss history saved to /work/zhanghc/Myllm/FineLAP/exps/finelap_original_20261031/metrics/train_loss.csv, /work/zhanghc/Myllm/FineLAP/exps/finelap_original_20261031/metrics/train_loss.json; curve saved to /work/zhanghc/Myllm/FineLAP/exps/finelap_original_20261031/plots/train_loss_curve.png
+[2026-11-02 11:48:38] INFO     | train.py:772 | Saving model ckpt for epoch 9: /work/zhanghc/Myllm/FineLAP/exps/finelap_original_20261031/models/epoch_009.pt
+[2026-11-02 11:48:38] INFO     | finelap.py:122 | Updating loss functions: rank=3, world_size=4, dist_impl=gather
+[2026-11-02 11:48:38] INFO     | finelap.py:122 | Updating loss functions: rank=2, world_size=4, dist_impl=gather
+[2026-11-02 11:48:38] INFO     | finelap.py:122 | Updating loss functions: rank=1, world_size=4, dist_impl=gather
+[2026-11-02 11:48:41] INFO     | train.py:641 | Training for epoch [10]
+[2026-11-02 11:48:41] INFO     | finelap.py:122 | Updating loss functions: rank=0, world_size=4, dist_impl=gather
+[2026-11-02 18:00:52] INFO     | train.py:656 | Training statistics:	loss for epoch [10]: 2.196 (clip: 2.143, grounding: 0.053, distillation: 0.000), time: 22330.4, lr: 0.000000.
+[2026-11-02 18:00:52] INFO     | train.py:89 | Train loss history saved to /work/zhanghc/Myllm/FineLAP/exps/finelap_original_20261031/metrics/train_loss.csv, /work/zhanghc/Myllm/FineLAP/exps/finelap_original_20261031/metrics/train_loss.json; curve saved to /work/zhanghc/Myllm/FineLAP/exps/finelap_original_20261031/plots/train_loss_curve.png
+[2026-11-02 18:00:53] INFO     | train.py:772 | Saving model ckpt for epoch 10: /work/zhanghc/Myllm/FineLAP/exps/finelap_original_20261031/models/epoch_010.pt
+[2026-11-02 18:00:56] INFO     | train.py:776 | Saving model ckpt for last epoch 10...
+[2026-11-02 18:00:58] INFO     | train.py:787 | ========================================== Evaluation start ==========================================
+[2026-11-02 18:00:58] INFO     | train.py:860 | Done.

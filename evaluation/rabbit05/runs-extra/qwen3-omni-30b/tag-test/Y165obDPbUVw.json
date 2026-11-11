@@ -1,0 +1,86 @@
+{
+  "clip_id": "Y165obDPbUVw",
+  "labels": [
+    "dog barking",
+    "whimpering animal"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y165obDPbUVw.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 8.9535,
+      "seconds": 5.1416709423065186,
+      "status": "complete",
+      "events": [
+        [
+          7.23,
+          8.16,
+          "dog barking"
+        ],
+        [
+          0.0,
+          4.51,
+          "whimpering animal"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a10c59432c94d39c",
+            "object": "chat.completion",
+            "created": 1792779812,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 7.23,\n      \"end\": 8.16\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.0,\n      \"end\": 4.51\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 271,
+              "total_tokens": 348,
+              "completion_tokens": 77,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      7.23,
+      8.16,
+      "dog barking"
+    ],
+    [
+      0.0,
+      4.51,
+      "whimpering animal"
+    ]
+  ],
+  "duration": 8.9535,
+  "inference_seconds": 5.1416709423065186
+}

@@ -1,0 +1,66 @@
+Traceback (most recent call last):
+  File "/home/zhanghc/projects/ov-sed/benchmark/runner-v1.py", line 237, in <module>
+    elif args.action=='run':run(args)
+  File "/home/zhanghc/projects/ov-sed/benchmark/runner-v1.py", line 159, in run
+    import numpy as np, librosa, torch
+  File "/home/zhanghc/venvs/mga-clap/lib/python3.10/site-packages/librosa/__init__.py", line 208, in <module>
+    from ._cache import cache
+  File "/home/zhanghc/venvs/mga-clap/lib/python3.10/site-packages/librosa/_cache.py", line 6, in <module>
+    from joblib import Memory
+  File "/home/zhanghc/venvs/mga-clap/lib/python3.10/site-packages/joblib/__init__.py", line 114, in <module>
+    from ._cloudpickle_wrapper import wrap_non_picklable_objects
+  File "/home/zhanghc/venvs/mga-clap/lib/python3.10/site-packages/joblib/_cloudpickle_wrapper.py", line 14, in <module>
+    from .externals.loky import wrap_non_picklable_objects
+  File "/home/zhanghc/venvs/mga-clap/lib/python3.10/site-packages/joblib/externals/loky/__init__.py", line 19, in <module>
+    from .backend.context import cpu_count
+  File "/home/zhanghc/venvs/mga-clap/lib/python3.10/site-packages/joblib/externals/loky/backend/__init__.py", line 4, in <module>
+    from .context import get_context
+  File "/home/zhanghc/venvs/mga-clap/lib/python3.10/site-packages/joblib/externals/loky/backend/context.py", line 24, in <module>
+    from concurrent.futures.process import _MAX_WINDOWS_WORKERS
+  File "/home/zhanghc/miniconda3/envs/nape/lib/python3.10/concurrent/futures/process.py", line 50, in <module>
+    import queue
+  File "/home/zhanghc/projects/ov-sed/benchmark/queue.py", line 13, in <module>
+    p=subprocess.run(cmd,stdout=f,stderr=subprocess.STDOUT,env=env)
+  File "/home/zhanghc/miniconda3/envs/nape/lib/python3.10/subprocess.py", line 503, in run
+    with Popen(*popenargs, **kwargs) as process:
+  File "/home/zhanghc/miniconda3/envs/nape/lib/python3.10/subprocess.py", line 971, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/zhanghc/miniconda3/envs/nape/lib/python3.10/subprocess.py", line 1863, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/zhanghc/venvs/--model/bin/python'
+/home/zhanghc/venvs/mga-clap/lib/python3.10/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+/home/zhanghc/venvs/mga-clap/lib/python3.10/site-packages/huggingface_hub/file_download.py:1142: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertModel: ['cls.seq_relationship.weight', 'cls.predictions.bias', 'cls.predictions.decoder.weight', 'cls.predictions.transform.dense.weight', 'bert.pooler.dense.weight', 'cls.predictions.transform.dense.bias', 'bert.pooler.dense.bias', 'cls.predictions.transform.LayerNorm.bias', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.weight']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+{"model": "mga-clap", "dataset": "desed-public", "total": 692, "completed": 1, "status": "running", "pid": 3884426, "started": 1792114931.7037685, "load_seconds": 6.6261327266693115, "updated": 1792114940.1677496, "elapsed_seconds": 8.46398138999939}
+{"model": "mga-clap", "dataset": "desed-public", "total": 692, "completed": 25, "status": "running", "pid": 3884426, "started": 1792114931.7037685, "load_seconds": 6.6261327266693115, "updated": 1792114945.3309283, "elapsed_seconds": 13.627159833908081}
+{"model": "mga-clap", "dataset": "desed-public", "total": 692, "completed": 50, "status": "running", "pid": 3884426, "started": 1792114931.7037685, "load_seconds": 6.6261327266693115, "updated": 1792114950.6356726, "elapsed_seconds": 18.931904315948486}
+{"model": "mga-clap", "dataset": "desed-public", "total": 692, "completed": 75, "status": "running", "pid": 3884426, "started": 1792114931.7037685, "load_seconds": 6.6261327266693115, "updated": 1792114955.9757686, "elapsed_seconds": 24.272000312805176}
+{"model": "mga-clap", "dataset": "desed-public", "total": 692, "completed": 100, "status": "running", "pid": 3884426, "started": 1792114931.7037685, "load_seconds": 6.6261327266693115, "updated": 1792114961.3172193, "elapsed_seconds": 29.61345100402832}
+{"model": "mga-clap", "dataset": "desed-public", "total": 692, "completed": 125, "status": "running", "pid": 3884426, "started": 1792114931.7037685, "load_seconds": 6.6261327266693115, "updated": 1792114966.686007, "elapsed_seconds": 34.98223853111267}
+{"model": "mga-clap", "dataset": "desed-public", "total": 692, "completed": 150, "status": "running", "pid": 3884426, "started": 1792114931.7037685, "load_seconds": 6.6261327266693115, "updated": 1792114972.0335019, "elapsed_seconds": 40.3297336101532}
+{"model": "mga-clap", "dataset": "desed-public", "total": 692, "completed": 175, "status": "running", "pid": 3884426, "started": 1792114931.7037685, "load_seconds": 6.6261327266693115, "updated": 1792114977.1064494, "elapsed_seconds": 45.40268111228943}
+{"model": "mga-clap", "dataset": "desed-public", "total": 692, "completed": 200, "status": "running", "pid": 3884426, "started": 1792114931.7037685, "load_seconds": 6.6261327266693115, "updated": 1792114982.4753942, "elapsed_seconds": 50.771625995635986}
+{"model": "mga-clap", "dataset": "desed-public", "total": 692, "completed": 225, "status": "running", "pid": 3884426, "started": 1792114931.7037685, "load_seconds": 6.6261327266693115, "updated": 1792114987.718917, "elapsed_seconds": 56.015148639678955}
+{"model": "mga-clap", "dataset": "desed-public", "total": 692, "completed": 250, "status": "running", "pid": 3884426, "started": 1792114931.7037685, "load_seconds": 6.6261327266693115, "updated": 1792114993.0558658, "elapsed_seconds": 61.352097511291504}
+{"model": "mga-clap", "dataset": "desed-public", "total": 692, "completed": 275, "status": "running", "pid": 3884426, "started": 1792114931.7037685, "load_seconds": 6.6261327266693115, "updated": 1792114998.4250946, "elapsed_seconds": 66.72132635116577}
+{"model": "mga-clap", "dataset": "desed-public", "total": 692, "completed": 300, "status": "running", "pid": 3884426, "started": 1792114931.7037685, "load_seconds": 6.6261327266693115, "updated": 1792115003.733951, "elapsed_seconds": 72.03018283843994}
+{"model": "mga-clap", "dataset": "desed-public", "total": 692, "completed": 325, "status": "running", "pid": 3884426, "started": 1792114931.7037685, "load_seconds": 6.6261327266693115, "updated": 1792115009.0657206, "elapsed_seconds": 77.36195230484009}
+{"model": "mga-clap", "dataset": "desed-public", "total": 692, "completed": 350, "status": "running", "pid": 3884426, "started": 1792114931.7037685, "load_seconds": 6.6261327266693115, "updated": 1792115014.3763187, "elapsed_seconds": 82.6725504398346}
+{"model": "mga-clap", "dataset": "desed-public", "total": 692, "completed": 375, "status": "running", "pid": 3884426, "started": 1792114931.7037685, "load_seconds": 6.6261327266693115, "updated": 1792115019.681318, "elapsed_seconds": 87.97754979133606}
+{"model": "mga-clap", "dataset": "desed-public", "total": 692, "completed": 400, "status": "running", "pid": 3884426, "started": 1792114931.7037685, "load_seconds": 6.6261327266693115, "updated": 1792115024.9530754, "elapsed_seconds": 93.24930739402771}
+{"model": "mga-clap", "dataset": "desed-public", "total": 692, "completed": 425, "status": "running", "pid": 3884426, "started": 1792114931.7037685, "load_seconds": 6.6261327266693115, "updated": 1792115030.3051877, "elapsed_seconds": 98.60141944885254}
+{"model": "mga-clap", "dataset": "desed-public", "total": 692, "completed": 450, "status": "running", "pid": 3884426, "started": 1792114931.7037685, "load_seconds": 6.6261327266693115, "updated": 1792115035.6905107, "elapsed_seconds": 103.98674249649048}
+{"model": "mga-clap", "dataset": "desed-public", "total": 692, "completed": 475, "status": "running", "pid": 3884426, "started": 1792114931.7037685, "load_seconds": 6.6261327266693115, "updated": 1792115041.061516, "elapsed_seconds": 109.35774779319763}
+{"model": "mga-clap", "dataset": "desed-public", "total": 692, "completed": 500, "status": "running", "pid": 3884426, "started": 1792114931.7037685, "load_seconds": 6.6261327266693115, "updated": 1792115046.2102602, "elapsed_seconds": 114.50649189949036}
+{"model": "mga-clap", "dataset": "desed-public", "total": 692, "completed": 525, "status": "running", "pid": 3884426, "started": 1792114931.7037685, "load_seconds": 6.6261327266693115, "updated": 1792115051.5807407, "elapsed_seconds": 119.87697243690491}
+{"model": "mga-clap", "dataset": "desed-public", "total": 692, "completed": 550, "status": "running", "pid": 3884426, "started": 1792114931.7037685, "load_seconds": 6.6261327266693115, "updated": 1792115056.898992, "elapsed_seconds": 125.19522380828857}
+{"model": "mga-clap", "dataset": "desed-public", "total": 692, "completed": 575, "status": "running", "pid": 3884426, "started": 1792114931.7037685, "load_seconds": 6.6261327266693115, "updated": 1792115062.207231, "elapsed_seconds": 130.50346279144287}
+{"model": "mga-clap", "dataset": "desed-public", "total": 692, "completed": 600, "status": "running", "pid": 3884426, "started": 1792114931.7037685, "load_seconds": 6.6261327266693115, "updated": 1792115067.5252964, "elapsed_seconds": 135.82152819633484}
+{"model": "mga-clap", "dataset": "desed-public", "total": 692, "completed": 625, "status": "running", "pid": 3884426, "started": 1792114931.7037685, "load_seconds": 6.6261327266693115, "updated": 1792115072.9238024, "elapsed_seconds": 141.22003412246704}
+{"model": "mga-clap", "dataset": "desed-public", "total": 692, "completed": 650, "status": "running", "pid": 3884426, "started": 1792114931.7037685, "load_seconds": 6.6261327266693115, "updated": 1792115078.2987812, "elapsed_seconds": 146.5950129032135}
+{"model": "mga-clap", "dataset": "desed-public", "total": 692, "completed": 675, "status": "running", "pid": 3884426, "started": 1792114931.7037685, "load_seconds": 6.6261327266693115, "updated": 1792115083.5140924, "elapsed_seconds": 151.81032419204712}
+PSDS1 0.2634620163720925

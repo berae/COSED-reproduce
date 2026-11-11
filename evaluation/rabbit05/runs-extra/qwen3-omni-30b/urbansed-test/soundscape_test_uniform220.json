@@ -1,0 +1,104 @@
+{
+  "clip_id": "soundscape_test_uniform220",
+  "labels": [
+    "air_conditioner",
+    "car_horn",
+    "children_playing",
+    "dog_bark",
+    "drilling",
+    "engine_idling",
+    "gun_shot",
+    "jackhammer",
+    "siren",
+    "street_music"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/urbansed/data/1324404/URBAN-SED_v2.0.0/audio/test/soundscape_test_uniform220.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 7.401840448379517,
+      "status": "complete",
+      "events": [
+        [
+          2.41,
+          2.98,
+          "dog_bark"
+        ],
+        [
+          5.47,
+          7.29,
+          "siren"
+        ],
+        [
+          7.31,
+          9.12,
+          "jackhammer"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-83e5da032ae433e6",
+            "object": "chat.completion",
+            "created": 1792771531,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 3,\n      \"start\": 2.41,\n      \"end\": 2.98\n    },\n    {\n      \"query_id\": 8,\n      \"start\": 5.47,\n      \"end\": 7.29\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 7.31,\n      \"end\": 9.12\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 328,
+              "total_tokens": 438,
+              "completion_tokens": 110,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      2.41,
+      2.98,
+      "dog_bark"
+    ],
+    [
+      7.31,
+      9.12,
+      "jackhammer"
+    ],
+    [
+      5.47,
+      7.29,
+      "siren"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 7.401840448379517
+}

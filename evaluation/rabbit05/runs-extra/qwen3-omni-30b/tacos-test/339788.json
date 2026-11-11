@@ -1,0 +1,469 @@
+{
+  "clip_id": "339788",
+  "labels": [
+    "A toy is squeaking rapidly and loudly.",
+    "A toy squeaks suddenly and loudly once nearby.",
+    "A toy squeaks once deeply nearby.",
+    "A toy squeaks rapidly and repeatedly nearby.",
+    "A toy squeaks repeatedly and slowly nearby.",
+    "A toy squeaks twice rapidly nearby.",
+    "A toy squeaks slowly and repeatedly nearby."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/339788.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 14.535650730133057,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          1.789,
+          "A toy is squeaking rapidly and loudly."
+        ],
+        [
+          2.789,
+          3.189,
+          "A toy squeaks suddenly and loudly once nearby."
+        ],
+        [
+          3.889,
+          4.289,
+          "A toy squeaks once deeply nearby."
+        ],
+        [
+          5.189,
+          5.589,
+          "A toy squeaks rapidly and repeatedly nearby."
+        ],
+        [
+          6.589,
+          7.089,
+          "A toy squeaks repeatedly and slowly nearby."
+        ],
+        [
+          7.789,
+          9.089,
+          "A toy squeaks twice rapidly nearby."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-80ff237b9ba901fc",
+            "object": "chat.completion",
+            "created": 1792795971,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 1.789\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 2.789,\n      \"end\": 3.189\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 3.889,\n      \"end\": 4.289\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 5.189,\n      \"end\": 5.589\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 6.589,\n      \"end\": 7.089\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 7.789,\n      \"end\": 9.089\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 352,
+              "total_tokens": 570,
+              "completion_tokens": 218,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 16.8023681640625,
+      "status": "complete",
+      "events": [
+        [
+          2.978,
+          5.718,
+          "A toy is squeaking rapidly and loudly."
+        ],
+        [
+          0.0,
+          0.35,
+          "A toy squeaks suddenly and loudly once nearby."
+        ],
+        [
+          0.85,
+          1.15,
+          "A toy squeaks once deeply nearby."
+        ],
+        [
+          1.95,
+          2.25,
+          "A toy squeaks rapidly and repeatedly nearby."
+        ],
+        [
+          6.15,
+          6.45,
+          "A toy squeaks repeatedly and slowly nearby."
+        ],
+        [
+          7.25,
+          7.55,
+          "A toy squeaks twice rapidly nearby."
+        ],
+        [
+          8.15,
+          8.45,
+          "A toy squeaks slowly and repeatedly nearby."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8b792fd23597a300",
+            "object": "chat.completion",
+            "created": 1792795985,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 2.978,\n      \"end\": 5.718\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 0.350\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.850,\n      \"end\": 1.150\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 1.950,\n      \"end\": 2.250\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 6.150,\n      \"end\": 6.450\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 7.250,\n      \"end\": 7.550\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 8.150,\n      \"end\": 8.450\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 352,
+              "total_tokens": 604,
+              "completion_tokens": 252,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 10.0,
+      "seconds": 17.06165337562561,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          1.278,
+          "A toy is squeaking rapidly and loudly."
+        ],
+        [
+          2.298,
+          2.618,
+          "A toy squeaks suddenly and loudly once nearby."
+        ],
+        [
+          3.518,
+          3.778,
+          "A toy squeaks once deeply nearby."
+        ],
+        [
+          4.618,
+          6.778,
+          "A toy squeaks rapidly and repeatedly nearby."
+        ],
+        [
+          7.298,
+          8.278,
+          "A toy squeaks repeatedly and slowly nearby."
+        ],
+        [
+          8.318,
+          8.878,
+          "A toy squeaks twice rapidly nearby."
+        ],
+        [
+          9.818,
+          10.0,
+          "A toy squeaks slowly and repeatedly nearby."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-ab6c948b66cb683c",
+            "object": "chat.completion",
+            "created": 1792796002,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 1.278\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 2.298,\n      \"end\": 2.618\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 3.518,\n      \"end\": 3.778\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 4.618,\n      \"end\": 6.778\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 7.298,\n      \"end\": 8.278\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 8.318,\n      \"end\": 8.878\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 9.818,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 352,
+              "total_tokens": 605,
+              "completion_tokens": 253,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 240000,
+      "start": 15.0,
+      "duration": 7.56475,
+      "seconds": 11.66035008430481,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          1.89,
+          "A toy is squeaking rapidly and loudly."
+        ],
+        [
+          2.27,
+          3.12,
+          "A toy squeaks suddenly and loudly once nearby."
+        ],
+        [
+          4.01,
+          5.01,
+          "A toy squeaks rapidly and repeatedly nearby."
+        ],
+        [
+          5.12,
+          6.12,
+          "A toy squeaks twice rapidly nearby."
+        ],
+        [
+          6.27,
+          7.56475,
+          "A toy squeaks slowly and repeatedly nearby."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-bae219840e57c224",
+            "object": "chat.completion",
+            "created": 1792796019,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 1.89\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 2.27,\n      \"end\": 3.12\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 4.01,\n      \"end\": 5.01\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 5.12,\n      \"end\": 6.12\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 6.27,\n      \"end\": 7.565\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 319,
+              "total_tokens": 493,
+              "completion_tokens": 174,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      1.789,
+      "A toy is squeaking rapidly and loudly."
+    ],
+    [
+      7.978,
+      11.278,
+      "A toy is squeaking rapidly and loudly."
+    ],
+    [
+      15.0,
+      16.89,
+      "A toy is squeaking rapidly and loudly."
+    ],
+    [
+      3.889,
+      4.289,
+      "A toy squeaks once deeply nearby."
+    ],
+    [
+      5.85,
+      6.15,
+      "A toy squeaks once deeply nearby."
+    ],
+    [
+      13.518,
+      13.778,
+      "A toy squeaks once deeply nearby."
+    ],
+    [
+      5.189,
+      5.589,
+      "A toy squeaks rapidly and repeatedly nearby."
+    ],
+    [
+      6.95,
+      7.25,
+      "A toy squeaks rapidly and repeatedly nearby."
+    ],
+    [
+      14.618,
+      16.778,
+      "A toy squeaks rapidly and repeatedly nearby."
+    ],
+    [
+      19.009999999999998,
+      20.009999999999998,
+      "A toy squeaks rapidly and repeatedly nearby."
+    ],
+    [
+      6.589,
+      7.089,
+      "A toy squeaks repeatedly and slowly nearby."
+    ],
+    [
+      11.15,
+      11.45,
+      "A toy squeaks repeatedly and slowly nearby."
+    ],
+    [
+      17.298000000000002,
+      18.278,
+      "A toy squeaks repeatedly and slowly nearby."
+    ],
+    [
+      13.15,
+      13.45,
+      "A toy squeaks slowly and repeatedly nearby."
+    ],
+    [
+      19.817999999999998,
+      20.0,
+      "A toy squeaks slowly and repeatedly nearby."
+    ],
+    [
+      21.27,
+      22.56475,
+      "A toy squeaks slowly and repeatedly nearby."
+    ],
+    [
+      2.789,
+      3.189,
+      "A toy squeaks suddenly and loudly once nearby."
+    ],
+    [
+      5.0,
+      5.35,
+      "A toy squeaks suddenly and loudly once nearby."
+    ],
+    [
+      12.298,
+      12.618,
+      "A toy squeaks suddenly and loudly once nearby."
+    ],
+    [
+      17.27,
+      18.12,
+      "A toy squeaks suddenly and loudly once nearby."
+    ],
+    [
+      7.789,
+      9.089,
+      "A toy squeaks twice rapidly nearby."
+    ],
+    [
+      12.25,
+      12.55,
+      "A toy squeaks twice rapidly nearby."
+    ],
+    [
+      18.317999999999998,
+      18.878,
+      "A toy squeaks twice rapidly nearby."
+    ],
+    [
+      20.12,
+      21.12,
+      "A toy squeaks twice rapidly nearby."
+    ]
+  ],
+  "duration": 22.56475,
+  "inference_seconds": 60.06002235412598
+}

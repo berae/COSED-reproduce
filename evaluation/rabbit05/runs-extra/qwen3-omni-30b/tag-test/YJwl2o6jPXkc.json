@@ -1,0 +1,152 @@
+{
+  "clip_id": "YJwl2o6jPXkc",
+  "labels": [
+    "a train horn blows",
+    "warning bells"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/YJwl2o6jPXkc.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 5.43810248374939,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          3.75,
+          "a train horn blows"
+        ],
+        [
+          8.92,
+          9.64,
+          "a train horn blows"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b3f874294863e307",
+            "object": "chat.completion",
+            "created": 1792779592,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 3.750\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 8.920,\n      \"end\": 9.640\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 287,
+              "total_tokens": 369,
+              "completion_tokens": 82,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 5.0003125,
+      "seconds": 5.432020664215088,
+      "status": "complete",
+      "events": [
+        [
+          4.238,
+          5.0,
+          "a train horn blows"
+        ],
+        [
+          0.0,
+          5.0,
+          "warning bells"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-9230f0b7b34bca37",
+            "object": "chat.completion",
+            "created": 1792779598,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 4.238,\n      \"end\": 5.000\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 5.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 221,
+              "total_tokens": 303,
+              "completion_tokens": 82,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      3.75,
+      "a train horn blows"
+    ],
+    [
+      8.92,
+      10.0,
+      "a train horn blows"
+    ],
+    [
+      5.0,
+      10.0,
+      "warning bells"
+    ]
+  ],
+  "duration": 10.0003125,
+  "inference_seconds": 10.870123147964478
+}

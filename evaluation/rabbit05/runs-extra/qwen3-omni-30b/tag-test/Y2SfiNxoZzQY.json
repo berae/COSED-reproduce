@@ -1,0 +1,136 @@
+{
+  "clip_id": "Y2SfiNxoZzQY",
+  "labels": [
+    "a dog is growling",
+    "a man speaks"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y2SfiNxoZzQY.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 9.1135,
+      "seconds": 15.574581146240234,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          1.23,
+          "a dog is growling"
+        ],
+        [
+          1.57,
+          2.16,
+          "a dog is growling"
+        ],
+        [
+          2.82,
+          3.35,
+          "a dog is growling"
+        ],
+        [
+          4.07,
+          4.72,
+          "a dog is growling"
+        ],
+        [
+          5.11,
+          5.55,
+          "a dog is growling"
+        ],
+        [
+          6.27,
+          7.12,
+          "a dog is growling"
+        ],
+        [
+          7.52,
+          9.1135,
+          "a man speaks"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-afa978fd7424b577",
+            "object": "chat.completion",
+            "created": 1792780669,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 1.23\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 1.57,\n      \"end\": 2.16\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 2.82,\n      \"end\": 3.35\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 4.07,\n      \"end\": 4.72\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 5.11,\n      \"end\": 5.55\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 6.27,\n      \"end\": 7.12\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 7.52,\n      \"end\": 9.114\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 276,
+              "total_tokens": 514,
+              "completion_tokens": 238,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      1.23,
+      "a dog is growling"
+    ],
+    [
+      1.57,
+      2.16,
+      "a dog is growling"
+    ],
+    [
+      2.82,
+      3.35,
+      "a dog is growling"
+    ],
+    [
+      4.07,
+      4.72,
+      "a dog is growling"
+    ],
+    [
+      5.11,
+      5.55,
+      "a dog is growling"
+    ],
+    [
+      6.27,
+      7.12,
+      "a dog is growling"
+    ],
+    [
+      7.52,
+      9.1135,
+      "a man speaks"
+    ]
+  ],
+  "duration": 9.1135,
+  "inference_seconds": 15.574581146240234
+}

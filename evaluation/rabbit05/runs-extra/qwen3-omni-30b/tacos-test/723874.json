@@ -1,0 +1,265 @@
+{
+  "clip_id": "723874",
+  "labels": [
+    "A dog is snoring.",
+    "A woman is talking indistinctly.",
+    "Periodic jiggling sound.",
+    "A loud roar."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/723874.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 14.584026575088501,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          4.578,
+          "A dog is snoring."
+        ],
+        [
+          2.96,
+          3.75,
+          "A woman is talking indistinctly."
+        ],
+        [
+          4.0,
+          5.0,
+          "Periodic jiggling sound."
+        ],
+        [
+          5.4,
+          6.2,
+          "A woman is talking indistinctly."
+        ],
+        [
+          6.0,
+          7.5,
+          "A dog is snoring."
+        ],
+        [
+          8.5,
+          9.5,
+          "Periodic jiggling sound."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-988680689ee12076",
+            "object": "chat.completion",
+            "created": 1792796221,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 4.578\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 2.960,\n      \"end\": 3.750\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 4.000,\n      \"end\": 5.000\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 5.400,\n      \"end\": 6.200\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 6.000,\n      \"end\": 7.500\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 8.500,\n      \"end\": 9.500\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 310,
+              "total_tokens": 528,
+              "completion_tokens": 218,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 7.936046600341797,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          10.0,
+          "A dog is snoring."
+        ],
+        [
+          0.748,
+          1.568,
+          "A woman is talking indistinctly."
+        ],
+        [
+          0.0,
+          10.0,
+          "Periodic jiggling sound."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a85db36d32aea9dc",
+            "object": "chat.completion",
+            "created": 1792796236,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.748,\n      \"end\": 1.568\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 310,
+              "total_tokens": 428,
+              "completion_tokens": 118,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 6.1349375,
+      "seconds": 7.314763784408569,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          1.74,
+          "A woman is talking indistinctly."
+        ],
+        [
+          0.0,
+          1.74,
+          "Periodic jiggling sound."
+        ],
+        [
+          4.89,
+          6.1349375,
+          "A loud roar."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a7cb0461814e0818",
+            "object": "chat.completion",
+            "created": 1792796244,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 1,\n      \"start\": 0.0,\n      \"end\": 1.74\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.0,\n      \"end\": 1.74\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 4.89,\n      \"end\": 6.135\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 258,
+              "total_tokens": 367,
+              "completion_tokens": 109,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      4.578,
+      "A dog is snoring."
+    ],
+    [
+      5.0,
+      15.0,
+      "A dog is snoring."
+    ],
+    [
+      14.89,
+      16.1349375,
+      "A loud roar."
+    ],
+    [
+      2.96,
+      3.75,
+      "A woman is talking indistinctly."
+    ],
+    [
+      5.4,
+      6.568,
+      "A woman is talking indistinctly."
+    ],
+    [
+      10.0,
+      11.74,
+      "A woman is talking indistinctly."
+    ],
+    [
+      4.0,
+      15.0,
+      "Periodic jiggling sound."
+    ]
+  ],
+  "duration": 16.1349375,
+  "inference_seconds": 29.834836959838867
+}

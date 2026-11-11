@@ -1,0 +1,184 @@
+{
+  "clip_id": "soundscape_test_bimodal102",
+  "labels": [
+    "air_conditioner",
+    "car_horn",
+    "children_playing",
+    "dog_bark",
+    "drilling",
+    "engine_idling",
+    "gun_shot",
+    "jackhammer",
+    "siren",
+    "street_music"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/urbansed/data/1324404/URBAN-SED_v2.0.0/audio/test/soundscape_test_bimodal102.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 24.256452322006226,
+      "status": "complete",
+      "events": [
+        [
+          4.87,
+          7.88,
+          "siren"
+        ],
+        [
+          5.87,
+          6.12,
+          "dog_bark"
+        ],
+        [
+          6.29,
+          6.52,
+          "dog_bark"
+        ],
+        [
+          6.71,
+          6.94,
+          "dog_bark"
+        ],
+        [
+          7.12,
+          7.35,
+          "dog_bark"
+        ],
+        [
+          7.52,
+          7.75,
+          "dog_bark"
+        ],
+        [
+          7.92,
+          8.15,
+          "dog_bark"
+        ],
+        [
+          8.32,
+          8.55,
+          "dog_bark"
+        ],
+        [
+          8.72,
+          8.95,
+          "dog_bark"
+        ],
+        [
+          9.12,
+          9.35,
+          "dog_bark"
+        ],
+        [
+          9.52,
+          9.75,
+          "dog_bark"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8385c61a8386dd73",
+            "object": "chat.completion",
+            "created": 1792766307,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 8,\n      \"start\": 4.87,\n      \"end\": 7.88\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 5.87,\n      \"end\": 6.12\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 6.29,\n      \"end\": 6.52\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 6.71,\n      \"end\": 6.94\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 7.12,\n      \"end\": 7.35\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 7.52,\n      \"end\": 7.75\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 7.92,\n      \"end\": 8.15\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 8.32,\n      \"end\": 8.55\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 8.72,\n      \"end\": 8.95\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 9.12,\n      \"end\": 9.35\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 9.52,\n      \"end\": 9.75\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 328,
+              "total_tokens": 694,
+              "completion_tokens": 366,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      5.87,
+      6.12,
+      "dog_bark"
+    ],
+    [
+      6.29,
+      6.52,
+      "dog_bark"
+    ],
+    [
+      6.71,
+      6.94,
+      "dog_bark"
+    ],
+    [
+      7.12,
+      7.35,
+      "dog_bark"
+    ],
+    [
+      7.52,
+      7.75,
+      "dog_bark"
+    ],
+    [
+      7.92,
+      8.15,
+      "dog_bark"
+    ],
+    [
+      8.32,
+      8.55,
+      "dog_bark"
+    ],
+    [
+      8.72,
+      8.95,
+      "dog_bark"
+    ],
+    [
+      9.12,
+      9.35,
+      "dog_bark"
+    ],
+    [
+      9.52,
+      9.75,
+      "dog_bark"
+    ],
+    [
+      4.87,
+      7.88,
+      "siren"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 24.256452322006226
+}

@@ -1,0 +1,86 @@
+{
+  "clip_id": "Y5xOlEfsD0_8",
+  "labels": [
+    "a car engine starts",
+    "is left idling"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y5xOlEfsD0_8.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 9.0735,
+      "seconds": 5.5864951610565186,
+      "status": "complete",
+      "events": [
+        [
+          1.248,
+          1.658,
+          "a car engine starts"
+        ],
+        [
+          1.658,
+          9.073,
+          "is left idling"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-ad6a9c3f176a3302",
+            "object": "chat.completion",
+            "created": 1792781317,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 1.248,\n      \"end\": 1.658\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 1.658,\n      \"end\": 9.073\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 275,
+              "total_tokens": 357,
+              "completion_tokens": 82,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      1.248,
+      1.658,
+      "a car engine starts"
+    ],
+    [
+      1.658,
+      9.073,
+      "is left idling"
+    ]
+  ],
+  "duration": 9.0735,
+  "inference_seconds": 5.5864951610565186
+}

@@ -1,0 +1,397 @@
+{
+  "clip_id": "331520",
+  "labels": [
+    "A car is crossing road lines.",
+    "A high-pitched squeaking sound of a vehicle braking.",
+    "Multiple vehicles pass by steadily with varying speeds and engine sounds.",
+    "A vehicle engine loudens as it accelerates."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/331520.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 11.539021968841553,
+      "status": "complete",
+      "events": [
+        [
+          1.589,
+          4.769,
+          "A car is crossing road lines."
+        ],
+        [
+          8.719,
+          9.119,
+          "A high-pitched squeaking sound of a vehicle braking."
+        ],
+        [
+          0.0,
+          10.0,
+          "Multiple vehicles pass by steadily with varying speeds and engine sounds."
+        ],
+        [
+          1.589,
+          4.769,
+          "A vehicle engine loudens as it accelerates."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-aa575e0979d284a7",
+            "object": "chat.completion",
+            "created": 1792811153,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 1.589,\n      \"end\": 4.769\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 8.719,\n      \"end\": 9.119\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 1.589,\n      \"end\": 4.769\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 325,
+              "total_tokens": 476,
+              "completion_tokens": 151,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 5.61372709274292,
+      "status": "complete",
+      "events": [
+        [
+          6.879,
+          9.549,
+          "A high-pitched squeaking sound of a vehicle braking."
+        ],
+        [
+          0.0,
+          10.0,
+          "Multiple vehicles pass by steadily with varying speeds and engine sounds."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-ad9d41c16db4d753",
+            "object": "chat.completion",
+            "created": 1792811165,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 1,\n      \"start\": 6.879,\n      \"end\": 9.549\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 325,
+              "total_tokens": 408,
+              "completion_tokens": 83,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 10.0,
+      "seconds": 5.638337135314941,
+      "status": "complete",
+      "events": [
+        [
+          7.894,
+          8.564,
+          "A high-pitched squeaking sound of a vehicle braking."
+        ],
+        [
+          0.0,
+          10.0,
+          "Multiple vehicles pass by steadily with varying speeds and engine sounds."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a10355af23c47d2e",
+            "object": "chat.completion",
+            "created": 1792811170,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 1,\n      \"start\": 7.894,\n      \"end\": 8.564\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 325,
+              "total_tokens": 408,
+              "completion_tokens": 83,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 240000,
+      "start": 15.0,
+      "duration": 10.0,
+      "seconds": 9.763119220733643,
+      "status": "complete",
+      "events": [
+        [
+          4.578,
+          9.068,
+          "A car is crossing road lines."
+        ],
+        [
+          3.428,
+          4.128,
+          "A high-pitched squeaking sound of a vehicle braking."
+        ],
+        [
+          0.0,
+          10.0,
+          "Multiple vehicles pass by steadily with varying speeds and engine sounds."
+        ],
+        [
+          4.578,
+          9.068,
+          "A vehicle engine loudens as it accelerates."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b604b31982cec84a",
+            "object": "chat.completion",
+            "created": 1792811176,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 4.578,\n      \"end\": 9.068\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 3.428,\n      \"end\": 4.128\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.0,\n      \"end\": 10.0\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 4.578,\n      \"end\": 9.068\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 325,
+              "total_tokens": 472,
+              "completion_tokens": 147,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 320000,
+      "start": 20.0,
+      "duration": 8.8843125,
+      "seconds": 9.40305471420288,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          8.884,
+          "A car is crossing road lines."
+        ],
+        [
+          0.0,
+          8.884,
+          "A high-pitched squeaking sound of a vehicle braking."
+        ],
+        [
+          0.0,
+          8.884,
+          "Multiple vehicles pass by steadily with varying speeds and engine sounds."
+        ],
+        [
+          0.0,
+          8.884,
+          "A vehicle engine loudens as it accelerates."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-91b44c46441c7a7c",
+            "object": "chat.completion",
+            "created": 1792811186,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 8.884\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.0,\n      \"end\": 8.884\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.0,\n      \"end\": 8.884\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.0,\n      \"end\": 8.884\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 309,
+              "total_tokens": 451,
+              "completion_tokens": 142,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      1.589,
+      4.769,
+      "A car is crossing road lines."
+    ],
+    [
+      19.578,
+      28.884,
+      "A car is crossing road lines."
+    ],
+    [
+      8.719,
+      9.119,
+      "A high-pitched squeaking sound of a vehicle braking."
+    ],
+    [
+      11.879,
+      14.549,
+      "A high-pitched squeaking sound of a vehicle braking."
+    ],
+    [
+      17.894,
+      19.128,
+      "A high-pitched squeaking sound of a vehicle braking."
+    ],
+    [
+      20.0,
+      28.884,
+      "A high-pitched squeaking sound of a vehicle braking."
+    ],
+    [
+      1.589,
+      4.769,
+      "A vehicle engine loudens as it accelerates."
+    ],
+    [
+      19.578,
+      28.884,
+      "A vehicle engine loudens as it accelerates."
+    ],
+    [
+      0.0,
+      28.884,
+      "Multiple vehicles pass by steadily with varying speeds and engine sounds."
+    ]
+  ],
+  "duration": 28.8843125,
+  "inference_seconds": 41.95726013183594
+}

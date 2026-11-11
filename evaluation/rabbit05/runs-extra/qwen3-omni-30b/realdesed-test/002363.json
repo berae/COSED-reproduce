@@ -1,0 +1,497 @@
+{
+  "clip_id": "002363",
+  "labels": [
+    "bell_ringing",
+    "coffee_machine",
+    "cutlery_dishes",
+    "door_open_close",
+    "footsteps",
+    "keyboard_typing",
+    "keychain",
+    "light_switch",
+    "microwave",
+    "phone_ringing",
+    "running_water",
+    "toilet_flushing",
+    "vacuum_cleaner",
+    "wardrobe_drawer_open_close",
+    "window_open_close"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/realdesed/data/20056072/test/audio/002363.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 16.556679487228394,
+      "status": "complete",
+      "events": [
+        [
+          0.999,
+          1.229,
+          "light_switch"
+        ],
+        [
+          2.429,
+          2.659,
+          "light_switch"
+        ],
+        [
+          3.929,
+          4.159,
+          "light_switch"
+        ],
+        [
+          5.129,
+          5.359,
+          "light_switch"
+        ],
+        [
+          6.629,
+          6.859,
+          "light_switch"
+        ],
+        [
+          7.729,
+          7.959,
+          "light_switch"
+        ],
+        [
+          8.829,
+          9.059,
+          "light_switch"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-ae686ddeb1d72991",
+            "object": "chat.completion",
+            "created": 1792753019,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 7,\n      \"start\": 0.999,\n      \"end\": 1.229\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 2.429,\n      \"end\": 2.659\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 3.929,\n      \"end\": 4.159\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 5.129,\n      \"end\": 5.359\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 6.629,\n      \"end\": 6.859\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 7.729,\n      \"end\": 7.959\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 8.829,\n      \"end\": 9.059\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 365,
+              "total_tokens": 617,
+              "completion_tokens": 252,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 17.739291667938232,
+      "status": "complete",
+      "events": [
+        [
+          0.21,
+          0.34,
+          "light_switch"
+        ],
+        [
+          1.81,
+          1.94,
+          "light_switch"
+        ],
+        [
+          2.91,
+          3.04,
+          "light_switch"
+        ],
+        [
+          4.61,
+          4.74,
+          "light_switch"
+        ],
+        [
+          6.21,
+          6.34,
+          "light_switch"
+        ],
+        [
+          7.71,
+          7.84,
+          "light_switch"
+        ],
+        [
+          8.71,
+          8.84,
+          "light_switch"
+        ],
+        [
+          9.61,
+          9.74,
+          "light_switch"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8dd5a9b673ab037d",
+            "object": "chat.completion",
+            "created": 1792753035,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 7,\n      \"start\": 0.21,\n      \"end\": 0.34\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 1.81,\n      \"end\": 1.94\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 2.91,\n      \"end\": 3.04\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 4.61,\n      \"end\": 4.74\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 6.21,\n      \"end\": 6.34\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 7.71,\n      \"end\": 7.84\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 8.71,\n      \"end\": 8.84\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 9.61,\n      \"end\": 9.74\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 365,
+              "total_tokens": 635,
+              "completion_tokens": 270,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 10.0,
+      "seconds": 23.212125301361084,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          0.18,
+          "light_switch"
+        ],
+        [
+          2.0,
+          2.18,
+          "light_switch"
+        ],
+        [
+          3.0,
+          3.18,
+          "light_switch"
+        ],
+        [
+          3.8,
+          3.98,
+          "light_switch"
+        ],
+        [
+          4.0,
+          4.18,
+          "light_switch"
+        ],
+        [
+          5.0,
+          5.18,
+          "light_switch"
+        ],
+        [
+          6.0,
+          6.18,
+          "light_switch"
+        ],
+        [
+          6.8,
+          6.98,
+          "light_switch"
+        ],
+        [
+          7.8,
+          7.98,
+          "light_switch"
+        ],
+        [
+          8.0,
+          8.18,
+          "light_switch"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-bbb11ebaf41f0bee",
+            "object": "chat.completion",
+            "created": 1792753053,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 7,\n      \"start\": 0.000,\n      \"end\": 0.180\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 2.000,\n      \"end\": 2.180\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 3.000,\n      \"end\": 3.180\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 3.800,\n      \"end\": 3.980\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 4.000,\n      \"end\": 4.180\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 5.000,\n      \"end\": 5.180\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 6.000,\n      \"end\": 6.180\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 6.800,\n      \"end\": 6.980\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 7.800,\n      \"end\": 7.980\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 8.000,\n      \"end\": 8.180\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 365,
+              "total_tokens": 719,
+              "completion_tokens": 354,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 240000,
+      "start": 15.0,
+      "duration": 6.524,
+      "seconds": 11.369269847869873,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          0.18,
+          "light_switch"
+        ],
+        [
+          1.08,
+          1.26,
+          "light_switch"
+        ],
+        [
+          2.64,
+          2.82,
+          "light_switch"
+        ],
+        [
+          3.84,
+          4.02,
+          "light_switch"
+        ],
+        [
+          5.04,
+          5.22,
+          "light_switch"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-af84ae183ccfd88e",
+            "object": "chat.completion",
+            "created": 1792753076,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 7,\n      \"start\": 0.0,\n      \"end\": 0.18\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 1.08,\n      \"end\": 1.26\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 2.64,\n      \"end\": 2.82\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 3.84,\n      \"end\": 4.02\n    },\n    {\n      \"query_id\": 7,\n      \"start\": 5.04,\n      \"end\": 5.22\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 318,
+              "total_tokens": 491,
+              "completion_tokens": 173,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.999,
+      1.229,
+      "light_switch"
+    ],
+    [
+      2.429,
+      2.659,
+      "light_switch"
+    ],
+    [
+      3.929,
+      4.159,
+      "light_switch"
+    ],
+    [
+      5.129,
+      5.359,
+      "light_switch"
+    ],
+    [
+      6.629,
+      6.9399999999999995,
+      "light_switch"
+    ],
+    [
+      7.729,
+      8.04,
+      "light_switch"
+    ],
+    [
+      8.829,
+      9.059,
+      "light_switch"
+    ],
+    [
+      9.61,
+      9.74,
+      "light_switch"
+    ],
+    [
+      10.0,
+      10.18,
+      "light_switch"
+    ],
+    [
+      11.21,
+      11.34,
+      "light_switch"
+    ],
+    [
+      12.0,
+      12.18,
+      "light_switch"
+    ],
+    [
+      12.71,
+      12.84,
+      "light_switch"
+    ],
+    [
+      13.0,
+      13.18,
+      "light_switch"
+    ],
+    [
+      13.71,
+      13.98,
+      "light_switch"
+    ],
+    [
+      14.0,
+      14.18,
+      "light_switch"
+    ],
+    [
+      14.61,
+      14.74,
+      "light_switch"
+    ],
+    [
+      15.0,
+      15.18,
+      "light_switch"
+    ],
+    [
+      16.0,
+      16.26,
+      "light_switch"
+    ],
+    [
+      16.8,
+      16.98,
+      "light_switch"
+    ],
+    [
+      17.64,
+      17.98,
+      "light_switch"
+    ],
+    [
+      18.0,
+      18.18,
+      "light_switch"
+    ],
+    [
+      18.84,
+      19.02,
+      "light_switch"
+    ],
+    [
+      20.04,
+      20.22,
+      "light_switch"
+    ]
+  ],
+  "duration": 21.524,
+  "inference_seconds": 68.87736630439758
+}

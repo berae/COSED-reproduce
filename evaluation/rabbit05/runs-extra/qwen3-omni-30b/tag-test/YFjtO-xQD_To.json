@@ -1,0 +1,117 @@
+{
+  "clip_id": "YFjtO-xQD_To",
+  "labels": [
+    "meow",
+    "speech",
+    "kisses"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/YFjtO-xQD_To.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 12.081427812576294,
+      "status": "complete",
+      "events": [
+        [
+          0.089,
+          0.759,
+          "meow"
+        ],
+        [
+          1.639,
+          2.459,
+          "meow"
+        ],
+        [
+          2.859,
+          3.759,
+          "speech"
+        ],
+        [
+          4.159,
+          7.559,
+          "speech"
+        ],
+        [
+          8.059,
+          8.559,
+          "kisses"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8e4df4be27524e5f",
+            "object": "chat.completion",
+            "created": 1792782071,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.089,\n      \"end\": 0.759\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 1.639,\n      \"end\": 2.459\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 2.859,\n      \"end\": 3.759\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 4.159,\n      \"end\": 7.559\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 8.059,\n      \"end\": 8.559\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 288,
+              "total_tokens": 472,
+              "completion_tokens": 184,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      8.059,
+      8.559,
+      "kisses"
+    ],
+    [
+      0.089,
+      0.759,
+      "meow"
+    ],
+    [
+      1.639,
+      2.459,
+      "meow"
+    ],
+    [
+      2.859,
+      3.759,
+      "speech"
+    ],
+    [
+      4.159,
+      7.559,
+      "speech"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 12.081427812576294
+}

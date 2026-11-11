@@ -1,0 +1,117 @@
+{
+  "clip_id": "Y-HfyfiDVqAo",
+  "labels": [
+    "goat making noise",
+    "a man speaking",
+    "starting a car"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y-HfyfiDVqAo.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 12.170360326766968,
+      "status": "complete",
+      "events": [
+        [
+          1.348,
+          2.578,
+          "goat making noise"
+        ],
+        [
+          1.698,
+          2.578,
+          "a man speaking"
+        ],
+        [
+          3.278,
+          4.158,
+          "goat making noise"
+        ],
+        [
+          6.198,
+          7.348,
+          "goat making noise"
+        ],
+        [
+          7.348,
+          8.028,
+          "a man speaking"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-93d3b8691fc7bced",
+            "object": "chat.completion",
+            "created": 1792779931,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 1.348,\n      \"end\": 2.578\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 1.698,\n      \"end\": 2.578\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 3.278,\n      \"end\": 4.158\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 6.198,\n      \"end\": 7.348\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 7.348,\n      \"end\": 8.028\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 293,
+              "total_tokens": 477,
+              "completion_tokens": 184,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      1.698,
+      2.578,
+      "a man speaking"
+    ],
+    [
+      7.348,
+      8.028,
+      "a man speaking"
+    ],
+    [
+      1.348,
+      2.578,
+      "goat making noise"
+    ],
+    [
+      3.278,
+      4.158,
+      "goat making noise"
+    ],
+    [
+      6.198,
+      7.348,
+      "goat making noise"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 12.170360326766968
+}

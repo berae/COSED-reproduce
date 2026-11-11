@@ -1,0 +1,154 @@
+{
+  "clip_id": "lcGGi9YQzEQ_45_55",
+  "labels": [
+    "Alarm_bell_ringing",
+    "Blender",
+    "Cat",
+    "Dishes",
+    "Dog",
+    "Electric_shaver_toothbrush",
+    "Frying",
+    "Running_water",
+    "Speech",
+    "Vacuum_cleaner"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/desed/data/4560759/audio/eval/public/lcGGi9YQzEQ_45_55.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 17.70823311805725,
+      "status": "complete",
+      "events": [
+        [
+          0.99,
+          1.25,
+          "Dog"
+        ],
+        [
+          3.42,
+          3.67,
+          "Dog"
+        ],
+        [
+          4.11,
+          4.37,
+          "Dog"
+        ],
+        [
+          5.15,
+          5.41,
+          "Dog"
+        ],
+        [
+          6.57,
+          6.83,
+          "Dog"
+        ],
+        [
+          7.99,
+          8.25,
+          "Dog"
+        ],
+        [
+          8.32,
+          8.58,
+          "Dog"
+        ],
+        [
+          8.65,
+          8.91,
+          "Dog"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8664dba3c7621ae5",
+            "object": "chat.completion",
+            "created": 1792740626,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 4,\n      \"start\": 0.99,\n      \"end\": 1.25\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 3.42,\n      \"end\": 3.67\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 4.11,\n      \"end\": 4.37\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 5.15,\n      \"end\": 5.41\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 6.57,\n      \"end\": 6.83\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 7.99,\n      \"end\": 8.25\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 8.32,\n      \"end\": 8.58\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 8.65,\n      \"end\": 8.91\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 329,
+              "total_tokens": 599,
+              "completion_tokens": 270,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.99,
+      1.25,
+      "Dog"
+    ],
+    [
+      3.42,
+      3.67,
+      "Dog"
+    ],
+    [
+      4.11,
+      4.37,
+      "Dog"
+    ],
+    [
+      5.15,
+      5.41,
+      "Dog"
+    ],
+    [
+      6.57,
+      6.83,
+      "Dog"
+    ],
+    [
+      7.99,
+      8.25,
+      "Dog"
+    ],
+    [
+      8.32,
+      8.58,
+      "Dog"
+    ],
+    [
+      8.65,
+      8.91,
+      "Dog"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 17.70823311805725
+}

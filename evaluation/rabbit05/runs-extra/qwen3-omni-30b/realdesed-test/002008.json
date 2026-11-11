@@ -1,0 +1,376 @@
+{
+  "clip_id": "002008",
+  "labels": [
+    "bell_ringing",
+    "coffee_machine",
+    "cutlery_dishes",
+    "door_open_close",
+    "footsteps",
+    "keyboard_typing",
+    "keychain",
+    "light_switch",
+    "microwave",
+    "phone_ringing",
+    "running_water",
+    "toilet_flushing",
+    "vacuum_cleaner",
+    "wardrobe_drawer_open_close",
+    "window_open_close"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/realdesed/data/20056072/test/audio/002008.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 21.9918270111084,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          1.0,
+          "keychain"
+        ],
+        [
+          1.0,
+          2.0,
+          "footsteps"
+        ],
+        [
+          2.0,
+          3.0,
+          "keychain"
+        ],
+        [
+          3.0,
+          4.0,
+          "footsteps"
+        ],
+        [
+          4.0,
+          5.0,
+          "footsteps"
+        ],
+        [
+          5.0,
+          6.0,
+          "door_open_close"
+        ],
+        [
+          6.0,
+          7.0,
+          "door_open_close"
+        ],
+        [
+          7.0,
+          8.0,
+          "door_open_close"
+        ],
+        [
+          8.0,
+          9.0,
+          "door_open_close"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b0519100498f132a",
+            "object": "chat.completion",
+            "created": 1792751366,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 6,\n      \"start\": 0.000,\n      \"end\": 1.000\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 1.000,\n      \"end\": 2.000\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 2.000,\n      \"end\": 3.000\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 3.000,\n      \"end\": 4.000\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 4.000,\n      \"end\": 5.000\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 5.000,\n      \"end\": 6.000\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 6.000,\n      \"end\": 7.000\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 7.000,\n      \"end\": 8.000\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 8.000,\n      \"end\": 9.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 365,
+              "total_tokens": 685,
+              "completion_tokens": 320,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 19.103214502334595,
+      "status": "complete",
+      "events": [
+        [
+          1.022,
+          2.122,
+          "door_open_close"
+        ],
+        [
+          2.812,
+          3.712,
+          "door_open_close"
+        ],
+        [
+          4.212,
+          5.012,
+          "door_open_close"
+        ],
+        [
+          6.012,
+          6.412,
+          "footsteps"
+        ],
+        [
+          6.812,
+          7.112,
+          "footsteps"
+        ],
+        [
+          7.512,
+          7.812,
+          "footsteps"
+        ],
+        [
+          8.112,
+          8.412,
+          "footsteps"
+        ],
+        [
+          8.712,
+          9.012,
+          "footsteps"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-857635afa6e304b6",
+            "object": "chat.completion",
+            "created": 1792751388,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 3,\n      \"start\": 1.022,\n      \"end\": 2.122\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 2.812,\n      \"end\": 3.712\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 4.212,\n      \"end\": 5.012\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 6.012,\n      \"end\": 6.412\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 6.812,\n      \"end\": 7.112\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 7.512,\n      \"end\": 7.812\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 8.112,\n      \"end\": 8.412\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 8.712,\n      \"end\": 9.012\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 365,
+              "total_tokens": 651,
+              "completion_tokens": 286,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 6.3186875,
+      "seconds": 17.91777014732361,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          0.52,
+          "door_open_close"
+        ],
+        [
+          0.82,
+          1.22,
+          "footsteps"
+        ],
+        [
+          1.82,
+          2.12,
+          "footsteps"
+        ],
+        [
+          2.62,
+          2.92,
+          "footsteps"
+        ],
+        [
+          3.42,
+          3.72,
+          "footsteps"
+        ],
+        [
+          4.22,
+          4.52,
+          "footsteps"
+        ],
+        [
+          4.92,
+          5.22,
+          "footsteps"
+        ],
+        [
+          5.62,
+          5.92,
+          "footsteps"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a0deefa7efdb5785",
+            "object": "chat.completion",
+            "created": 1792751407,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 3,\n      \"start\": 0.0,\n      \"end\": 0.52\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 0.82,\n      \"end\": 1.22\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 1.82,\n      \"end\": 2.12\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 2.62,\n      \"end\": 2.92\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 3.42,\n      \"end\": 3.72\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 4.22,\n      \"end\": 4.52\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 4.92,\n      \"end\": 5.22\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 5.62,\n      \"end\": 5.92\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 315,
+              "total_tokens": 584,
+              "completion_tokens": 269,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      5.0,
+      9.0,
+      "door_open_close"
+    ],
+    [
+      9.212,
+      10.52,
+      "door_open_close"
+    ],
+    [
+      1.0,
+      2.0,
+      "footsteps"
+    ],
+    [
+      3.0,
+      5.0,
+      "footsteps"
+    ],
+    [
+      10.82,
+      11.411999999999999,
+      "footsteps"
+    ],
+    [
+      11.812000000000001,
+      12.120000000000001,
+      "footsteps"
+    ],
+    [
+      12.512,
+      12.92,
+      "footsteps"
+    ],
+    [
+      13.112,
+      13.412,
+      "footsteps"
+    ],
+    [
+      13.42,
+      14.012,
+      "footsteps"
+    ],
+    [
+      14.219999999999999,
+      14.52,
+      "footsteps"
+    ],
+    [
+      14.92,
+      15.219999999999999,
+      "footsteps"
+    ],
+    [
+      15.620000000000001,
+      15.92,
+      "footsteps"
+    ],
+    [
+      0.0,
+      1.0,
+      "keychain"
+    ],
+    [
+      2.0,
+      3.0,
+      "keychain"
+    ]
+  ],
+  "duration": 16.3186875,
+  "inference_seconds": 59.0128116607666
+}

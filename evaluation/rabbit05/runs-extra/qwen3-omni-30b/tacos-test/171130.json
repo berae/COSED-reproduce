@@ -1,0 +1,307 @@
+{
+  "clip_id": "171130",
+  "labels": [
+    "Musical instruments play rhythmically and melodically with a soft echo indoors.",
+    "People clap rhythmically and loudly, with the sound echoing briefly indoors before gradually fading.",
+    "A man is speaking into a microphone indoors.",
+    "A man whistles loudly and cheerfully for a short time.",
+    "A person is clapping indoors."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/171130.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 5.615833282470703,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          9.0,
+          "Musical instruments play rhythmically and melodically with a soft echo indoors."
+        ],
+        [
+          7.5,
+          10.0,
+          "People clap rhythmically and loudly, with the sound echoing briefly indoors before gradually fading."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-9132329806f058a4",
+            "object": "chat.completion",
+            "created": 1792811506,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 9.000\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 7.500,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 346,
+              "total_tokens": 429,
+              "completion_tokens": 83,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 7.820948839187622,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          3.578,
+          "Musical instruments play rhythmically and melodically with a soft echo indoors."
+        ],
+        [
+          3.578,
+          9.618,
+          "People clap rhythmically and loudly, with the sound echoing briefly indoors before gradually fading."
+        ],
+        [
+          6.478,
+          7.178,
+          "A man whistles loudly and cheerfully for a short time."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a73f298ba9dfc8b5",
+            "object": "chat.completion",
+            "created": 1792811512,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 3.578\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 3.578,\n      \"end\": 9.618\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 6.478,\n      \"end\": 7.178\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 346,
+              "total_tokens": 462,
+              "completion_tokens": 116,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 10.0,
+      "seconds": 10.040643692016602,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          9.578,
+          "People clap rhythmically and loudly, with the sound echoing briefly indoors before gradually fading."
+        ],
+        [
+          0.0,
+          1.6,
+          "A man is speaking into a microphone indoors."
+        ],
+        [
+          1.6,
+          2.5,
+          "A man whistles loudly and cheerfully for a short time."
+        ],
+        [
+          0.0,
+          9.578,
+          "A person is clapping indoors."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-80058e3eeb0e42a8",
+            "object": "chat.completion",
+            "created": 1792811520,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 9.578\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 1.600\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 1.600,\n      \"end\": 2.500\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 0.000,\n      \"end\": 9.578\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 346,
+              "total_tokens": 496,
+              "completion_tokens": 150,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 240000,
+      "start": 15.0,
+      "duration": 6.8875,
+      "seconds": 5.412036895751953,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          4.579,
+          "People clap rhythmically and loudly, with the sound echoing briefly indoors before gradually fading."
+        ],
+        [
+          5.279,
+          6.8875,
+          "A person is clapping indoors."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a79844fc63133bf3",
+            "object": "chat.completion",
+            "created": 1792811530,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 1,\n      \"start\": 0.0,\n      \"end\": 4.579\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 5.279,\n      \"end\": 6.888\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 304,
+              "total_tokens": 384,
+              "completion_tokens": 80,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      10.0,
+      11.6,
+      "A man is speaking into a microphone indoors."
+    ],
+    [
+      11.478,
+      12.5,
+      "A man whistles loudly and cheerfully for a short time."
+    ],
+    [
+      10.0,
+      19.578,
+      "A person is clapping indoors."
+    ],
+    [
+      20.279,
+      21.8875,
+      "A person is clapping indoors."
+    ],
+    [
+      0.0,
+      9.0,
+      "Musical instruments play rhythmically and melodically with a soft echo indoors."
+    ],
+    [
+      7.5,
+      19.579,
+      "People clap rhythmically and loudly, with the sound echoing briefly indoors before gradually fading."
+    ]
+  ],
+  "duration": 21.8875,
+  "inference_seconds": 28.88946270942688
+}

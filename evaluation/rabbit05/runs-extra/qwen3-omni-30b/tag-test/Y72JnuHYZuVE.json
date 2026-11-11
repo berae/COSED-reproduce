@@ -1,0 +1,87 @@
+{
+  "clip_id": "Y72JnuHYZuVE",
+  "labels": [
+    "something is being snapped",
+    "two dogs are growling",
+    "barking"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y72JnuHYZuVE.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 9.4535,
+      "seconds": 5.307871580123901,
+      "status": "complete",
+      "events": [
+        [
+          7.38,
+          7.68,
+          "something is being snapped"
+        ],
+        [
+          0.0,
+          9.4535,
+          "barking"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b5c9ef36f4633dd2",
+            "object": "chat.completion",
+            "created": 1792781529,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 7.38,\n      \"end\": 7.68\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.0,\n      \"end\": 9.454\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 286,
+              "total_tokens": 364,
+              "completion_tokens": 78,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      9.4535,
+      "barking"
+    ],
+    [
+      7.38,
+      7.68,
+      "something is being snapped"
+    ]
+  ],
+  "duration": 9.4535,
+  "inference_seconds": 5.307871580123901
+}

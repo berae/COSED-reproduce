@@ -1,0 +1,85 @@
+{
+  "clip_id": "Y0yETgW44MZU",
+  "labels": [
+    "a honking horn from an oncoming train"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y0yETgW44MZU.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 5.444769620895386,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          6.25,
+          "a honking horn from an oncoming train"
+        ],
+        [
+          7.38,
+          9.48,
+          "a honking horn from an oncoming train"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b10fd16c599e0b11",
+            "object": "chat.completion",
+            "created": 1792780275,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 6.250\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 7.380,\n      \"end\": 9.480\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 287,
+              "total_tokens": 369,
+              "completion_tokens": 82,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      6.25,
+      "a honking horn from an oncoming train"
+    ],
+    [
+      7.38,
+      9.48,
+      "a honking horn from an oncoming train"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 5.444769620895386
+}

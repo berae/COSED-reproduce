@@ -1,0 +1,97 @@
+{
+  "clip_id": "Y4w16MdaZQpU",
+  "labels": [
+    "high pitched electrical vibrations",
+    "a cat meows",
+    "a man speaks"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y4w16MdaZQpU.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 9.1425625,
+      "seconds": 7.14696192741394,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          2.57,
+          "high pitched electrical vibrations"
+        ],
+        [
+          6.87,
+          7.17,
+          "a cat meows"
+        ],
+        [
+          0.0,
+          2.57,
+          "a man speaks"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-9f882dc815723ce6",
+            "object": "chat.completion",
+            "created": 1792781168,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 2.57\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 6.87,\n      \"end\": 7.17\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.0,\n      \"end\": 2.57\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 282,
+              "total_tokens": 390,
+              "completion_tokens": 108,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      6.87,
+      7.17,
+      "a cat meows"
+    ],
+    [
+      0.0,
+      2.57,
+      "a man speaks"
+    ],
+    [
+      0.0,
+      2.57,
+      "high pitched electrical vibrations"
+    ]
+  ],
+  "duration": 9.1425625,
+  "inference_seconds": 7.14696192741394
+}

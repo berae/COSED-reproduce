@@ -1,0 +1,127 @@
+{
+  "clip_id": "Y2lP3y7kW9L0",
+  "labels": [
+    "man speaking",
+    "dogs bark",
+    "yip"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y2lP3y7kW9L0.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 14.293644428253174,
+      "status": "complete",
+      "events": [
+        [
+          5.978,
+          6.438,
+          "man speaking"
+        ],
+        [
+          6.748,
+          7.178,
+          "man speaking"
+        ],
+        [
+          8.078,
+          8.518,
+          "man speaking"
+        ],
+        [
+          8.778,
+          9.198,
+          "man speaking"
+        ],
+        [
+          0.0,
+          2.92,
+          "dogs bark"
+        ],
+        [
+          0.0,
+          2.92,
+          "yip"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-99b84e1ccfd6b3d9",
+            "object": "chat.completion",
+            "created": 1792780722,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 5.978,\n      \"end\": 6.438\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 6.748,\n      \"end\": 7.178\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 8.078,\n      \"end\": 8.518\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 8.778,\n      \"end\": 9.198\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 2.920\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 2.920\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 290,
+              "total_tokens": 508,
+              "completion_tokens": 218,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      2.92,
+      "dogs bark"
+    ],
+    [
+      5.978,
+      6.438,
+      "man speaking"
+    ],
+    [
+      6.748,
+      7.178,
+      "man speaking"
+    ],
+    [
+      8.078,
+      8.518,
+      "man speaking"
+    ],
+    [
+      8.778,
+      9.198,
+      "man speaking"
+    ],
+    [
+      0.0,
+      2.92,
+      "yip"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 14.293644428253174
+}

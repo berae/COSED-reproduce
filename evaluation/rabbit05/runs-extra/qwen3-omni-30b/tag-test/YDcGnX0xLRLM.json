@@ -1,0 +1,97 @@
+{
+  "clip_id": "YDcGnX0xLRLM",
+  "labels": [
+    "a horn honks close by",
+    "the horn honks a few more times",
+    "people talk far away"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/YDcGnX0xLRLM.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 7.4335,
+      "seconds": 7.503450870513916,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          1.158,
+          "a horn honks close by"
+        ],
+        [
+          5.196,
+          6.716,
+          "the horn honks a few more times"
+        ],
+        [
+          1.716,
+          4.516,
+          "people talk far away"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b47b054ed1efa949",
+            "object": "chat.completion",
+            "created": 1792782028,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 1.158\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 5.196,\n      \"end\": 6.716\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 1.716,\n      \"end\": 4.516\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 267,
+              "total_tokens": 381,
+              "completion_tokens": 114,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      1.158,
+      "a horn honks close by"
+    ],
+    [
+      1.716,
+      4.516,
+      "people talk far away"
+    ],
+    [
+      5.196,
+      6.716,
+      "the horn honks a few more times"
+    ]
+  ],
+  "duration": 7.4335,
+  "inference_seconds": 7.503450870513916
+}

@@ -1,0 +1,495 @@
+{
+  "clip_id": "556027",
+  "labels": [
+    "Man speaking outdoors with background noise.",
+    "Kids talking in the distance outdoors.",
+    "Children talking in the distance outdoors with background noise.",
+    "Vehicle engine sounds in the distance.",
+    "A sharp whistle sounds in the distance.",
+    "A man shouting in the distance.",
+    "Quiet ambient noise."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/556027.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 16.956711769104004,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          1.879,
+          "Man speaking outdoors with background noise."
+        ],
+        [
+          2.0,
+          4.0,
+          "Kids talking in the distance outdoors."
+        ],
+        [
+          2.0,
+          4.0,
+          "Children talking in the distance outdoors with background noise."
+        ],
+        [
+          6.0,
+          10.0,
+          "Vehicle engine sounds in the distance."
+        ],
+        [
+          4.0,
+          4.5,
+          "A sharp whistle sounds in the distance."
+        ],
+        [
+          8.0,
+          9.0,
+          "A man shouting in the distance."
+        ],
+        [
+          0.0,
+          10.0,
+          "Quiet ambient noise."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-bbebb1f44b61b0be",
+            "object": "chat.completion",
+            "created": 1792824382,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 1.879\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 2.000,\n      \"end\": 4.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 2.000,\n      \"end\": 4.000\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 6.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 4.000,\n      \"end\": 4.500\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 8.000,\n      \"end\": 9.000\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 340,
+              "total_tokens": 594,
+              "completion_tokens": 254,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 16.50248098373413,
+      "status": "complete",
+      "events": [
+        [
+          3.78,
+          6.92,
+          "Man speaking outdoors with background noise."
+        ],
+        [
+          7.42,
+          9.02,
+          "Kids talking in the distance outdoors."
+        ],
+        [
+          7.42,
+          9.02,
+          "Children talking in the distance outdoors with background noise."
+        ],
+        [
+          0.0,
+          10.0,
+          "Vehicle engine sounds in the distance."
+        ],
+        [
+          4.22,
+          4.52,
+          "A sharp whistle sounds in the distance."
+        ],
+        [
+          4.22,
+          4.52,
+          "A man shouting in the distance."
+        ],
+        [
+          0.0,
+          10.0,
+          "Quiet ambient noise."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-ac786b2288f74cdf",
+            "object": "chat.completion",
+            "created": 1792824399,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 3.78,\n      \"end\": 6.92\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 7.42,\n      \"end\": 9.02\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 7.42,\n      \"end\": 9.02\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.00,\n      \"end\": 10.00\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 4.22,\n      \"end\": 4.52\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 4.22,\n      \"end\": 4.52\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 0.00,\n      \"end\": 10.00\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 340,
+              "total_tokens": 580,
+              "completion_tokens": 240,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 10.0,
+      "seconds": 12.447042465209961,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          10.0,
+          "Man speaking outdoors with background noise."
+        ],
+        [
+          0.0,
+          10.0,
+          "Kids talking in the distance outdoors."
+        ],
+        [
+          0.0,
+          10.0,
+          "Children talking in the distance outdoors with background noise."
+        ],
+        [
+          0.0,
+          10.0,
+          "Vehicle engine sounds in the distance."
+        ],
+        [
+          9.0,
+          10.0,
+          "A sharp whistle sounds in the distance."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8818a66b0ae95bcf",
+            "object": "chat.completion",
+            "created": 1792824415,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 9.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 340,
+              "total_tokens": 529,
+              "completion_tokens": 189,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 240000,
+      "start": 15.0,
+      "duration": 10.0,
+      "seconds": 16.840802669525146,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          10.0,
+          "Man speaking outdoors with background noise."
+        ],
+        [
+          0.0,
+          10.0,
+          "Kids talking in the distance outdoors."
+        ],
+        [
+          0.0,
+          10.0,
+          "Children talking in the distance outdoors with background noise."
+        ],
+        [
+          0.0,
+          10.0,
+          "Vehicle engine sounds in the distance."
+        ],
+        [
+          4.178,
+          5.908,
+          "A sharp whistle sounds in the distance."
+        ],
+        [
+          8.178,
+          9.508,
+          "A man shouting in the distance."
+        ],
+        [
+          0.0,
+          10.0,
+          "Quiet ambient noise."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b9fdc2c48758d7e0",
+            "object": "chat.completion",
+            "created": 1792824428,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 4.178,\n      \"end\": 5.908\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 8.178,\n      \"end\": 9.508\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 340,
+              "total_tokens": 597,
+              "completion_tokens": 257,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 320000,
+      "start": 20.0,
+      "duration": 7.1771875,
+      "seconds": 9.251706600189209,
+      "status": "complete",
+      "events": [
+        [
+          3.89,
+          5.98,
+          "Man speaking outdoors with background noise."
+        ],
+        [
+          0.0,
+          0.71,
+          "A sharp whistle sounds in the distance."
+        ],
+        [
+          3.89,
+          5.98,
+          "A man shouting in the distance."
+        ],
+        [
+          0.0,
+          7.177,
+          "Quiet ambient noise."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b7df35c55065aff5",
+            "object": "chat.completion",
+            "created": 1792824445,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 3.89,\n      \"end\": 5.98\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 0.0,\n      \"end\": 0.71\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 3.89,\n      \"end\": 5.98\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 0.0,\n      \"end\": 7.177\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 302,
+              "total_tokens": 443,
+              "completion_tokens": 141,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      8.0,
+      9.0,
+      "A man shouting in the distance."
+    ],
+    [
+      9.219999999999999,
+      9.52,
+      "A man shouting in the distance."
+    ],
+    [
+      23.178,
+      25.98,
+      "A man shouting in the distance."
+    ],
+    [
+      4.0,
+      4.5,
+      "A sharp whistle sounds in the distance."
+    ],
+    [
+      9.219999999999999,
+      9.52,
+      "A sharp whistle sounds in the distance."
+    ],
+    [
+      19.0,
+      20.908,
+      "A sharp whistle sounds in the distance."
+    ],
+    [
+      2.0,
+      4.0,
+      "Children talking in the distance outdoors with background noise."
+    ],
+    [
+      10.0,
+      25.0,
+      "Children talking in the distance outdoors with background noise."
+    ],
+    [
+      2.0,
+      4.0,
+      "Kids talking in the distance outdoors."
+    ],
+    [
+      10.0,
+      25.0,
+      "Kids talking in the distance outdoors."
+    ],
+    [
+      0.0,
+      1.879,
+      "Man speaking outdoors with background noise."
+    ],
+    [
+      8.78,
+      25.98,
+      "Man speaking outdoors with background noise."
+    ],
+    [
+      0.0,
+      27.177,
+      "Quiet ambient noise."
+    ],
+    [
+      5.0,
+      25.0,
+      "Vehicle engine sounds in the distance."
+    ]
+  ],
+  "duration": 27.1771875,
+  "inference_seconds": 71.99874448776245
+}

@@ -1,0 +1,465 @@
+{
+  "clip_id": "464931",
+  "labels": [
+    "A kid inhales deeply.",
+    "A child exhales deeply, producing a light snoring sound."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/464931.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 17.1354763507843,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          0.589,
+          "A kid inhales deeply."
+        ],
+        [
+          2.347,
+          2.936,
+          "A kid inhales deeply."
+        ],
+        [
+          4.704,
+          5.293,
+          "A kid inhales deeply."
+        ],
+        [
+          7.051,
+          7.64,
+          "A kid inhales deeply."
+        ],
+        [
+          0.589,
+          2.347,
+          "A child exhales deeply, producing a light snoring sound."
+        ],
+        [
+          2.936,
+          4.704,
+          "A child exhales deeply, producing a light snoring sound."
+        ],
+        [
+          5.293,
+          7.051,
+          "A child exhales deeply, producing a light snoring sound."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a18aece5f1c93b89",
+            "object": "chat.completion",
+            "created": 1792810212,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 0.589\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 2.347,\n      \"end\": 2.936\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 4.704,\n      \"end\": 5.293\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 7.051,\n      \"end\": 7.640\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.589,\n      \"end\": 2.347\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 2.936,\n      \"end\": 4.704\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 5.293,\n      \"end\": 7.051\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 299,
+              "total_tokens": 551,
+              "completion_tokens": 252,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 14.447489976882935,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          0.528,
+          "A kid inhales deeply."
+        ],
+        [
+          0.973,
+          1.843,
+          "A child exhales deeply, producing a light snoring sound."
+        ],
+        [
+          3.618,
+          4.146,
+          "A kid inhales deeply."
+        ],
+        [
+          4.591,
+          5.461,
+          "A child exhales deeply, producing a light snoring sound."
+        ],
+        [
+          6.718,
+          7.246,
+          "A kid inhales deeply."
+        ],
+        [
+          7.691,
+          8.561,
+          "A child exhales deeply, producing a light snoring sound."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-ad1ebe6f51e03a8e",
+            "object": "chat.completion",
+            "created": 1792810229,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 0.528\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.973,\n      \"end\": 1.843\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 3.618,\n      \"end\": 4.146\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 4.591,\n      \"end\": 5.461\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 6.718,\n      \"end\": 7.246\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 7.691,\n      \"end\": 8.561\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 299,
+              "total_tokens": 517,
+              "completion_tokens": 218,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 10.0,
+      "seconds": 5.5603132247924805,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          0.572,
+          "A kid inhales deeply."
+        ],
+        [
+          0.0,
+          10.0,
+          "A child exhales deeply, producing a light snoring sound."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a214553f302c2672",
+            "object": "chat.completion",
+            "created": 1792810244,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 0.572\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 299,
+              "total_tokens": 382,
+              "completion_tokens": 83,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 240000,
+      "start": 15.0,
+      "duration": 10.0,
+      "seconds": 14.543789148330688,
+      "status": "complete",
+      "events": [
+        [
+          0.978,
+          2.348,
+          "A kid inhales deeply."
+        ],
+        [
+          2.568,
+          3.758,
+          "A child exhales deeply, producing a light snoring sound."
+        ],
+        [
+          4.578,
+          5.948,
+          "A kid inhales deeply."
+        ],
+        [
+          6.168,
+          7.358,
+          "A child exhales deeply, producing a light snoring sound."
+        ],
+        [
+          8.178,
+          9.548,
+          "A kid inhales deeply."
+        ],
+        [
+          9.768,
+          10.0,
+          "A child exhales deeply, producing a light snoring sound."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-bdc807235a411af5",
+            "object": "chat.completion",
+            "created": 1792810249,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.978,\n      \"end\": 2.348\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 2.568,\n      \"end\": 3.758\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 4.578,\n      \"end\": 5.948\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 6.168,\n      \"end\": 7.358\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 8.178,\n      \"end\": 9.548\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 9.768,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 299,
+              "total_tokens": 518,
+              "completion_tokens": 219,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 320000,
+      "start": 20.0,
+      "duration": 5.536,
+      "seconds": 5.481936693191528,
+      "status": "complete",
+      "events": [
+        [
+          0.829,
+          1.749,
+          "A kid inhales deeply."
+        ],
+        [
+          3.159,
+          5.536,
+          "A child exhales deeply, producing a light snoring sound."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a5e778b408c9be0f",
+            "object": "chat.completion",
+            "created": 1792810264,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.829,\n      \"end\": 1.749\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 3.159,\n      \"end\": 5.536\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 239,
+              "total_tokens": 321,
+              "completion_tokens": 82,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.589,
+      2.347,
+      "A child exhales deeply, producing a light snoring sound."
+    ],
+    [
+      2.936,
+      4.704,
+      "A child exhales deeply, producing a light snoring sound."
+    ],
+    [
+      5.293,
+      7.051,
+      "A child exhales deeply, producing a light snoring sound."
+    ],
+    [
+      9.591000000000001,
+      20.0,
+      "A child exhales deeply, producing a light snoring sound."
+    ],
+    [
+      21.168,
+      22.358,
+      "A child exhales deeply, producing a light snoring sound."
+    ],
+    [
+      23.159,
+      25.536,
+      "A child exhales deeply, producing a light snoring sound."
+    ],
+    [
+      0.0,
+      0.589,
+      "A kid inhales deeply."
+    ],
+    [
+      2.347,
+      2.936,
+      "A kid inhales deeply."
+    ],
+    [
+      4.704,
+      5.5280000000000005,
+      "A kid inhales deeply."
+    ],
+    [
+      7.051,
+      7.64,
+      "A kid inhales deeply."
+    ],
+    [
+      8.618,
+      9.146,
+      "A kid inhales deeply."
+    ],
+    [
+      10.0,
+      10.572,
+      "A kid inhales deeply."
+    ],
+    [
+      11.718,
+      12.246,
+      "A kid inhales deeply."
+    ],
+    [
+      15.978,
+      17.348,
+      "A kid inhales deeply."
+    ],
+    [
+      19.578,
+      21.749,
+      "A kid inhales deeply."
+    ],
+    [
+      23.178,
+      24.548000000000002,
+      "A kid inhales deeply."
+    ]
+  ],
+  "duration": 25.536,
+  "inference_seconds": 57.169005393981934
+}

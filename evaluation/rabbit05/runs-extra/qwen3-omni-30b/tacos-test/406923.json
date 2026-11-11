@@ -1,0 +1,245 @@
+{
+  "clip_id": "406923",
+  "labels": [
+    "A car horn honks nearby.",
+    "A car honks shortly from afar.",
+    "People are talking outdoors.",
+    "Vehicles driving on a busy street."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/406923.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 7.8715455532073975,
+      "status": "complete",
+      "events": [
+        [
+          2.458,
+          2.798,
+          "A car horn honks nearby."
+        ],
+        [
+          8.618,
+          8.958,
+          "A car honks shortly from afar."
+        ],
+        [
+          0.0,
+          10.0,
+          "Vehicles driving on a busy street."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a60634c65346ac59",
+            "object": "chat.completion",
+            "created": 1792789072,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 2.458,\n      \"end\": 2.798\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 8.618,\n      \"end\": 8.958\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 311,
+              "total_tokens": 428,
+              "completion_tokens": 117,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 7.85429310798645,
+      "status": "complete",
+      "events": [
+        [
+          3.458,
+          3.798,
+          "A car horn honks nearby."
+        ],
+        [
+          6.718,
+          7.118,
+          "A car honks shortly from afar."
+        ],
+        [
+          0.0,
+          10.0,
+          "Vehicles driving on a busy street."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-ada1f332830bdc46",
+            "object": "chat.completion",
+            "created": 1792789080,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 3.458,\n      \"end\": 3.798\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 6.718,\n      \"end\": 7.118\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 311,
+              "total_tokens": 428,
+              "completion_tokens": 117,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 5.9339375,
+      "seconds": 5.268970012664795,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          5.9339375,
+          "A car horn honks nearby."
+        ],
+        [
+          0.0,
+          5.9339375,
+          "People are talking outdoors."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-ac26f7989db1eb23",
+            "object": "chat.completion",
+            "created": 1792789088,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 5.934\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.0,\n      \"end\": 5.934\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 256,
+              "total_tokens": 334,
+              "completion_tokens": 78,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      8.618,
+      8.958,
+      "A car honks shortly from afar."
+    ],
+    [
+      11.718,
+      12.118,
+      "A car honks shortly from afar."
+    ],
+    [
+      2.458,
+      2.798,
+      "A car horn honks nearby."
+    ],
+    [
+      8.458,
+      8.798,
+      "A car horn honks nearby."
+    ],
+    [
+      10.0,
+      15.933937499999999,
+      "A car horn honks nearby."
+    ],
+    [
+      10.0,
+      15.933937499999999,
+      "People are talking outdoors."
+    ],
+    [
+      0.0,
+      15.0,
+      "Vehicles driving on a busy street."
+    ]
+  ],
+  "duration": 15.9339375,
+  "inference_seconds": 20.994808673858643
+}

@@ -1,0 +1,106 @@
+{
+  "clip_id": "Y5wfJoXRDF2g",
+  "labels": [
+    "train horn blowing",
+    "someone talking"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y5wfJoXRDF2g.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 10.222152709960938,
+      "status": "complete",
+      "events": [
+        [
+          1.027,
+          2.547,
+          "train horn blowing"
+        ],
+        [
+          4.187,
+          6.037,
+          "train horn blowing"
+        ],
+        [
+          6.097,
+          7.127,
+          "someone talking"
+        ],
+        [
+          8.917,
+          9.717,
+          "someone talking"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-bfa82ff8d691f6b0",
+            "object": "chat.completion",
+            "created": 1792781307,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 1.027,\n      \"end\": 2.547\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 4.187,\n      \"end\": 6.037\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 6.097,\n      \"end\": 7.127\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 8.917,\n      \"end\": 9.717\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 286,
+              "total_tokens": 436,
+              "completion_tokens": 150,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      6.097,
+      7.127,
+      "someone talking"
+    ],
+    [
+      8.917,
+      9.717,
+      "someone talking"
+    ],
+    [
+      1.027,
+      2.547,
+      "train horn blowing"
+    ],
+    [
+      4.187,
+      6.037,
+      "train horn blowing"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 10.222152709960938
+}

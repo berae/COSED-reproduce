@@ -1,0 +1,94 @@
+{
+  "clip_id": "DxwTRNxB62g_0_4",
+  "labels": [
+    "Alarm_bell_ringing",
+    "Blender",
+    "Cat",
+    "Dishes",
+    "Dog",
+    "Electric_shaver_toothbrush",
+    "Frying",
+    "Running_water",
+    "Speech",
+    "Vacuum_cleaner"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/desed/data/4560759/audio/eval/public/DxwTRNxB62g_0_4.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 4.0,
+      "seconds": 5.268285274505615,
+      "status": "complete",
+      "events": [
+        [
+          2.152,
+          3.992,
+          "Alarm_bell_ringing"
+        ],
+        [
+          0.0,
+          1.98,
+          "Speech"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8765bcdbd801043e",
+            "object": "chat.completion",
+            "created": 1792738521,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 2.152,\n      \"end\": 3.992\n    },\n    {\n      \"query_id\": 8,\n      \"start\": 0.0,\n      \"end\": 1.98\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 249,
+              "total_tokens": 328,
+              "completion_tokens": 79,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      2.152,
+      3.992,
+      "Alarm_bell_ringing"
+    ],
+    [
+      0.0,
+      1.98,
+      "Speech"
+    ]
+  ],
+  "duration": 4.0,
+  "inference_seconds": 5.268285274505615
+}

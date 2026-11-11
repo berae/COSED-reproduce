@@ -1,0 +1,260 @@
+{
+  "clip_id": "745104",
+  "labels": [
+    "A piano plays a single key.",
+    "A piano key is being played.",
+    "A piano plays melodically.",
+    "Wind instruments play softly in the background."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/745104.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 7.694976568222046,
+      "status": "complete",
+      "events": [
+        [
+          7.548,
+          7.968,
+          "A piano plays a single key."
+        ],
+        [
+          7.548,
+          7.968,
+          "A piano key is being played."
+        ],
+        [
+          8.228,
+          9.548,
+          "A piano plays melodically."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-abb9b33c7c99372e",
+            "object": "chat.completion",
+            "created": 1792801206,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 7.548,\n      \"end\": 7.968\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 7.548,\n      \"end\": 7.968\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 8.228,\n      \"end\": 9.548\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 312,
+              "total_tokens": 428,
+              "completion_tokens": 116,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 9.936345338821411,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          0.5,
+          "A piano plays a single key."
+        ],
+        [
+          2.4,
+          2.7,
+          "A piano key is being played."
+        ],
+        [
+          2.4,
+          9.8,
+          "A piano plays melodically."
+        ],
+        [
+          2.4,
+          9.8,
+          "Wind instruments play softly in the background."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-bf399b09a87624de",
+            "object": "chat.completion",
+            "created": 1792801213,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 0.500\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 2.400,\n      \"end\": 2.700\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 2.400,\n      \"end\": 9.800\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 2.400,\n      \"end\": 9.800\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 312,
+              "total_tokens": 462,
+              "completion_tokens": 150,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 6.2175,
+      "seconds": 9.80058741569519,
+      "status": "complete",
+      "events": [
+        [
+          2.974,
+          3.154,
+          "A piano plays a single key."
+        ],
+        [
+          2.974,
+          3.154,
+          "A piano key is being played."
+        ],
+        [
+          2.974,
+          3.154,
+          "A piano plays melodically."
+        ],
+        [
+          0.0,
+          6.2175,
+          "Wind instruments play softly in the background."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-bae17e8a25bd070a",
+            "object": "chat.completion",
+            "created": 1792801223,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 2.974,\n      \"end\": 3.154\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 2.974,\n      \"end\": 3.154\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 2.974,\n      \"end\": 3.154\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.0,\n      \"end\": 6.218\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 261,
+              "total_tokens": 409,
+              "completion_tokens": 148,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      7.4,
+      7.968,
+      "A piano key is being played."
+    ],
+    [
+      12.974,
+      13.154,
+      "A piano key is being played."
+    ],
+    [
+      5.0,
+      5.5,
+      "A piano plays a single key."
+    ],
+    [
+      7.548,
+      7.968,
+      "A piano plays a single key."
+    ],
+    [
+      12.974,
+      13.154,
+      "A piano plays a single key."
+    ],
+    [
+      7.4,
+      14.8,
+      "A piano plays melodically."
+    ],
+    [
+      7.4,
+      16.2175,
+      "Wind instruments play softly in the background."
+    ]
+  ],
+  "duration": 16.2175,
+  "inference_seconds": 27.431909322738647
+}

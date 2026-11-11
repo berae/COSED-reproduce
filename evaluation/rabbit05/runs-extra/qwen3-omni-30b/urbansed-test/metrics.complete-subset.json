@@ -1,0 +1,79 @@
+{
+  "metric": "generated-span pooled intersection F1, NOT PSDS",
+  "dtc": 0.7,
+  "gtc": 0.7,
+  "result": [
+    {
+      "event": 0.22104733131923465,
+      "macro_average": 0.22104733131923465,
+      "micro_average": 0.22104733131923465
+    },
+    {
+      "event": 0.41769743101807805,
+      "macro_average": 0.41769743101807805,
+      "micro_average": 0.41769743101807805
+    },
+    {
+      "event": 0.1502909962341664,
+      "macro_average": 0.1502909962341664,
+      "micro_average": 0.1502909962341664
+    },
+    {
+      "event": {
+        "fps": 1836.0,
+        "tps": 1317.0,
+        "cts": 0.0,
+        "n_ref": 8763,
+        "t_ref": 18524.985516868008,
+        "n_ref_other": {},
+        "t_ref_other": {}
+      }
+    }
+  ],
+  "clip": {
+    "tp": 2785,
+    "fp": 830,
+    "fn": 4886,
+    "tn": 11429,
+    "recall": 0.3630556641898058,
+    "precision": 0.7704011065006916,
+    "f1": 0.493531809321283,
+    "fpr": 0.06770535932784078,
+    "note": "Audio-class/query presence; repeated events collapsed; only supplied queries evaluated.",
+    "accuracy": 0.7131961866532865,
+    "exact_audio_accuracy": 0.09734069242348219,
+    "exact_audio_correct": 194,
+    "audio_count": 1993,
+    "binary_map": 0.5309442840322756,
+    "binary_ap_by_class": {
+      "air_conditioner": 0.39291962320729745,
+      "car_horn": 0.6235807980848707,
+      "children_playing": 0.5092950915704202,
+      "dog_bark": 0.6183464048189028,
+      "drilling": 0.5352967107931778,
+      "engine_idling": 0.4330838907378535,
+      "gun_shot": 0.5848172869863296,
+      "jackhammer": 0.5094082343190985,
+      "siren": 0.6201703079265211,
+      "street_music": 0.4825244918782827
+    },
+    "ap_classes_without_positive": [],
+    "map_note": "Macro average of sklearn non-interpolated AP per class with positive GT; scores are binary 0/1 generated presence, not native confidence. No evaluable mAP for positive-only grounding queries. All equal-score predictions are tied, no arbitrary tie ordering."
+  },
+  "note": "Binary masks encode text-generated intervals; no model frame probabilities or confidence sweep.",
+  "coverage": {
+    "total": 2000,
+    "scored": 1993,
+    "excluded": 7,
+    "excluded_ids": [
+      "soundscape_test_bimodal251",
+      "soundscape_test_bimodal32",
+      "soundscape_test_bimodal402",
+      "soundscape_test_uniform195",
+      "soundscape_test_uniform598",
+      "soundscape_test_unimodal174",
+      "soundscape_test_unimodal99"
+    ],
+    "policy": "Exclude incomplete audio entirely, including its successful windows; not a full-test-set score."
+  }
+}

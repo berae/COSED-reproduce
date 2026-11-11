@@ -1,0 +1,455 @@
+{
+  "clip_id": "702298",
+  "labels": [
+    "Rain is pouring with average intensity.",
+    "A fast car approaches.",
+    "A car passes by quickly.",
+    "A fast car sound fades into the distance.",
+    "A heavy truck passes by.",
+    "A helicopter is flying overhead.",
+    "Muffled traffic sounds and rain falling."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/702298.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 16.901837587356567,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          10.0,
+          "Rain is pouring with average intensity."
+        ],
+        [
+          2.789,
+          4.559,
+          "A fast car approaches."
+        ],
+        [
+          4.559,
+          6.559,
+          "A car passes by quickly."
+        ],
+        [
+          6.559,
+          10.0,
+          "A fast car sound fades into the distance."
+        ],
+        [
+          0.0,
+          10.0,
+          "A heavy truck passes by."
+        ],
+        [
+          0.0,
+          10.0,
+          "A helicopter is flying overhead."
+        ],
+        [
+          0.0,
+          10.0,
+          "Muffled traffic sounds and rain falling."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-baddbaea77a5a569",
+            "object": "chat.completion",
+            "created": 1792793715,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 2.789,\n      \"end\": 4.559\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 4.559,\n      \"end\": 6.559\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 6.559,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 337,
+              "total_tokens": 594,
+              "completion_tokens": 257,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 16.934245109558105,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          10.0,
+          "Rain is pouring with average intensity."
+        ],
+        [
+          0.0,
+          2.789,
+          "A fast car approaches."
+        ],
+        [
+          2.789,
+          4.789,
+          "A car passes by quickly."
+        ],
+        [
+          4.789,
+          8.789,
+          "A fast car sound fades into the distance."
+        ],
+        [
+          0.0,
+          10.0,
+          "A heavy truck passes by."
+        ],
+        [
+          0.0,
+          10.0,
+          "A helicopter is flying overhead."
+        ],
+        [
+          0.0,
+          10.0,
+          "Muffled traffic sounds and rain falling."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-88870bc68eb0cc70",
+            "object": "chat.completion",
+            "created": 1792793732,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 2.789\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 2.789,\n      \"end\": 4.789\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 4.789,\n      \"end\": 8.789\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 5,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 337,
+              "total_tokens": 593,
+              "completion_tokens": 256,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 10.0,
+      "seconds": 14.586040735244751,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          10.0,
+          "Rain is pouring with average intensity."
+        ],
+        [
+          0.0,
+          3.789,
+          "A fast car approaches."
+        ],
+        [
+          0.0,
+          3.789,
+          "A car passes by quickly."
+        ],
+        [
+          0.0,
+          3.789,
+          "A fast car sound fades into the distance."
+        ],
+        [
+          5.119,
+          9.119,
+          "A heavy truck passes by."
+        ],
+        [
+          0.0,
+          10.0,
+          "Muffled traffic sounds and rain falling."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-859cf43277d74470",
+            "object": "chat.completion",
+            "created": 1792793749,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 3.789\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 3.789\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.000,\n      \"end\": 3.789\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 5.119,\n      \"end\": 9.119\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 337,
+              "total_tokens": 557,
+              "completion_tokens": 220,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 240000,
+      "start": 15.0,
+      "duration": 10.0,
+      "seconds": 5.606963157653809,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          10.0,
+          "Rain is pouring with average intensity."
+        ],
+        [
+          0.0,
+          10.0,
+          "Muffled traffic sounds and rain falling."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-994e0eff87c9f926",
+            "object": "chat.completion",
+            "created": 1792793764,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 337,
+              "total_tokens": 421,
+              "completion_tokens": 84,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 320000,
+      "start": 20.0,
+      "duration": 5.6246875,
+      "seconds": 5.184814214706421,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          5.6246875,
+          "Rain is pouring with average intensity."
+        ],
+        [
+          0.0,
+          5.6246875,
+          "Muffled traffic sounds and rain falling."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-88232f6690058a35",
+            "object": "chat.completion",
+            "created": 1792793770,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 5.625\n    },\n    {\n      \"query_id\": 6,\n      \"start\": 0.0,\n      \"end\": 5.625\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 278,
+              "total_tokens": 356,
+              "completion_tokens": 78,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      4.559,
+      6.559,
+      "A car passes by quickly."
+    ],
+    [
+      7.789,
+      9.789,
+      "A car passes by quickly."
+    ],
+    [
+      10.0,
+      13.789,
+      "A car passes by quickly."
+    ],
+    [
+      2.789,
+      4.559,
+      "A fast car approaches."
+    ],
+    [
+      5.0,
+      7.789,
+      "A fast car approaches."
+    ],
+    [
+      10.0,
+      13.789,
+      "A fast car approaches."
+    ],
+    [
+      6.559,
+      13.789,
+      "A fast car sound fades into the distance."
+    ],
+    [
+      0.0,
+      15.0,
+      "A heavy truck passes by."
+    ],
+    [
+      15.119,
+      19.119,
+      "A heavy truck passes by."
+    ],
+    [
+      0.0,
+      15.0,
+      "A helicopter is flying overhead."
+    ],
+    [
+      0.0,
+      25.6246875,
+      "Muffled traffic sounds and rain falling."
+    ],
+    [
+      0.0,
+      25.6246875,
+      "Rain is pouring with average intensity."
+    ]
+  ],
+  "duration": 25.6246875,
+  "inference_seconds": 59.21390080451965
+}

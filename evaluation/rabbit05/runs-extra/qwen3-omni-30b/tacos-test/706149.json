@@ -1,0 +1,413 @@
+{
+  "clip_id": "706149",
+  "labels": [
+    "A person coughs loudly indoors.",
+    "A person is speaking softly indoors.",
+    "Continuous low-pitched buzzing of a hair clipper varying in intensity and loudness.",
+    "Multiple vehicles pass by with low, intermittent hums and high-pitched engine noises.",
+    "A vehicle passes by with a low, continuous hum that fades over time."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/706149.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 12.893213510513306,
+      "status": "complete",
+      "events": [
+        [
+          1.859,
+          2.679,
+          "A person coughs loudly indoors."
+        ],
+        [
+          0.0,
+          10.0,
+          "A person is speaking softly indoors."
+        ],
+        [
+          0.0,
+          10.0,
+          "Continuous low-pitched buzzing of a hair clipper varying in intensity and loudness."
+        ],
+        [
+          0.0,
+          10.0,
+          "Multiple vehicles pass by with low, intermittent hums and high-pitched engine noises."
+        ],
+        [
+          0.0,
+          10.0,
+          "A vehicle passes by with a low, continuous hum that fades over time."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-bb317ebbc3d3eb56",
+            "object": "chat.completion",
+            "created": 1792832683,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 1.859,\n      \"end\": 2.679\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 349,
+              "total_tokens": 537,
+              "completion_tokens": 188,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 12.838281393051147,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          1.578,
+          "A person coughs loudly indoors."
+        ],
+        [
+          2.698,
+          5.798,
+          "A person is speaking softly indoors."
+        ],
+        [
+          0.0,
+          10.0,
+          "Continuous low-pitched buzzing of a hair clipper varying in intensity and loudness."
+        ],
+        [
+          0.0,
+          10.0,
+          "Multiple vehicles pass by with low, intermittent hums and high-pitched engine noises."
+        ],
+        [
+          0.0,
+          10.0,
+          "A vehicle passes by with a low, continuous hum that fades over time."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b0d86e9bfe579e36",
+            "object": "chat.completion",
+            "created": 1792832696,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 1.578\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 2.698,\n      \"end\": 5.798\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 349,
+              "total_tokens": 536,
+              "completion_tokens": 187,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 10.0,
+      "seconds": 7.916501998901367,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          5.0,
+          "A person is speaking softly indoors."
+        ],
+        [
+          0.0,
+          10.0,
+          "Continuous low-pitched buzzing of a hair clipper varying in intensity and loudness."
+        ],
+        [
+          0.0,
+          10.0,
+          "Multiple vehicles pass by with low, intermittent hums and high-pitched engine noises."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-963c28ca45602c6d",
+            "object": "chat.completion",
+            "created": 1792832709,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 5.000\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 10.000\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 349,
+              "total_tokens": 467,
+              "completion_tokens": 118,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 240000,
+      "start": 15.0,
+      "duration": 10.0,
+      "seconds": 7.384210109710693,
+      "status": "complete",
+      "events": [
+        [
+          4.578,
+          6.098,
+          "A person is speaking softly indoors."
+        ],
+        [
+          0.0,
+          10.0,
+          "Continuous low-pitched buzzing of a hair clipper varying in intensity and loudness."
+        ],
+        [
+          0.0,
+          10.0,
+          "Multiple vehicles pass by with low, intermittent hums and high-pitched engine noises."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8ce6def4106197ac",
+            "object": "chat.completion",
+            "created": 1792832717,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 1,\n      \"start\": 4.578,\n      \"end\": 6.098\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.0,\n      \"end\": 10.0\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 0.0,\n      \"end\": 10.0\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 349,
+              "total_tokens": 459,
+              "completion_tokens": 110,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 320000,
+      "start": 20.0,
+      "duration": 9.458375,
+      "seconds": 7.28220796585083,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          1.0,
+          "A person is speaking softly indoors."
+        ],
+        [
+          2.67,
+          3.45,
+          "A person is speaking softly indoors."
+        ],
+        [
+          3.82,
+          9.458,
+          "A vehicle passes by with a low, continuous hum that fades over time."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a67f2d597d4fd811",
+            "object": "chat.completion",
+            "created": 1792832724,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 1,\n      \"start\": 0.0,\n      \"end\": 1.0\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 2.67,\n      \"end\": 3.45\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 3.82,\n      \"end\": 9.458\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 340,
+              "total_tokens": 449,
+              "completion_tokens": 109,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      1.859,
+      2.679,
+      "A person coughs loudly indoors."
+    ],
+    [
+      5.0,
+      6.578,
+      "A person coughs loudly indoors."
+    ],
+    [
+      0.0,
+      15.0,
+      "A person is speaking softly indoors."
+    ],
+    [
+      19.578,
+      21.098,
+      "A person is speaking softly indoors."
+    ],
+    [
+      22.67,
+      23.45,
+      "A person is speaking softly indoors."
+    ],
+    [
+      0.0,
+      15.0,
+      "A vehicle passes by with a low, continuous hum that fades over time."
+    ],
+    [
+      23.82,
+      29.458,
+      "A vehicle passes by with a low, continuous hum that fades over time."
+    ],
+    [
+      0.0,
+      25.0,
+      "Continuous low-pitched buzzing of a hair clipper varying in intensity and loudness."
+    ],
+    [
+      0.0,
+      25.0,
+      "Multiple vehicles pass by with low, intermittent hums and high-pitched engine noises."
+    ]
+  ],
+  "duration": 29.458375,
+  "inference_seconds": 48.314414978027344
+}

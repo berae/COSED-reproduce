@@ -1,0 +1,231 @@
+{
+  "clip_id": "595473",
+  "labels": [
+    "A fire burns briefly on a matchstick and then dies out.",
+    "Birds whistle with high-pitched sounds in the distance.",
+    "A person making a single vocal sound.",
+    "A fire burns intensely.",
+    "A fire burns steadily with varying intensity."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/595473.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 7.696748733520508,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          0.579,
+          "A fire burns briefly on a matchstick and then dies out."
+        ],
+        [
+          6.819,
+          9.179,
+          "Birds whistle with high-pitched sounds in the distance."
+        ],
+        [
+          0.0,
+          0.579,
+          "A person making a single vocal sound."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b8d25f9e2a7be095",
+            "object": "chat.completion",
+            "created": 1792793697,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 0.579\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 6.819,\n      \"end\": 9.179\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 0.579\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 331,
+              "total_tokens": 447,
+              "completion_tokens": 116,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 3.2989723682403564,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          10.0,
+          "Birds whistle with high-pitched sounds in the distance."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-9e79e488b3c2a127",
+            "object": "chat.completion",
+            "created": 1792793705,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 1,\n      \"start\": 0.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 331,
+              "total_tokens": 380,
+              "completion_tokens": 49,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 8.5954375,
+      "seconds": 7.288159608840942,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          2.76,
+          "A fire burns briefly on a matchstick and then dies out."
+        ],
+        [
+          3.12,
+          8.595,
+          "Birds whistle with high-pitched sounds in the distance."
+        ],
+        [
+          4.02,
+          4.22,
+          "A person making a single vocal sound."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b7068e49ffea3c37",
+            "object": "chat.completion",
+            "created": 1792793708,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 2.76\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 3.12,\n      \"end\": 8.595\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 4.02,\n      \"end\": 4.22\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 311,
+              "total_tokens": 421,
+              "completion_tokens": 110,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      0.579,
+      "A fire burns briefly on a matchstick and then dies out."
+    ],
+    [
+      10.0,
+      12.76,
+      "A fire burns briefly on a matchstick and then dies out."
+    ],
+    [
+      0.0,
+      0.579,
+      "A person making a single vocal sound."
+    ],
+    [
+      14.02,
+      14.219999999999999,
+      "A person making a single vocal sound."
+    ],
+    [
+      5.0,
+      18.595,
+      "Birds whistle with high-pitched sounds in the distance."
+    ]
+  ],
+  "duration": 18.5954375,
+  "inference_seconds": 18.283880710601807
+}

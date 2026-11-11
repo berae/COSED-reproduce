@@ -1,0 +1,87 @@
+{
+  "clip_id": "Y1vZNNVA7AMU",
+  "labels": [
+    "a woman talks",
+    "a dog barks",
+    "growls"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y1vZNNVA7AMU.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 9.2735,
+      "seconds": 5.174331188201904,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          6.35,
+          "a woman talks"
+        ],
+        [
+          6.35,
+          9.2735,
+          "a dog barks"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b1bc3207e0b2845c",
+            "object": "chat.completion",
+            "created": 1792780514,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 6.35\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 6.35,\n      \"end\": 9.274\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 282,
+              "total_tokens": 360,
+              "completion_tokens": 78,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      6.35,
+      9.2735,
+      "a dog barks"
+    ],
+    [
+      0.0,
+      6.35,
+      "a woman talks"
+    ]
+  ],
+  "duration": 9.2735,
+  "inference_seconds": 5.174331188201904
+}

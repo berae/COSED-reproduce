@@ -1,0 +1,83 @@
+{
+  "metric": "generated-span pooled intersection F1, NOT PSDS",
+  "dtc": 0.7,
+  "gtc": 0.7,
+  "result": [
+    {
+      "event": 0.42931937172774864,
+      "macro_average": 0.42931937172774864,
+      "micro_average": 0.42931937172774864
+    },
+    {
+      "event": 0.6057756883814641,
+      "macro_average": 0.6057756883814641,
+      "micro_average": 0.6057756883814641
+    },
+    {
+      "event": 0.33247327681533356,
+      "macro_average": 0.33247327681533356,
+      "micro_average": 0.33247327681533356
+    },
+    {
+      "event": {
+        "fps": 587.0,
+        "tps": 902.0,
+        "cts": 0.0,
+        "n_ref": 2713,
+        "t_ref": 5810.788000000011,
+        "n_ref_other": {},
+        "t_ref_other": {}
+      }
+    }
+  ],
+  "clip": {
+    "tp": 839,
+    "fp": 110,
+    "fn": 254,
+    "tn": 5607,
+    "recall": 0.7676120768526989,
+    "precision": 0.8840885142255005,
+    "f1": 0.821743388834476,
+    "fpr": 0.01924086059121917,
+    "note": "Audio-class/query presence; repeated events collapsed; only supplied queries evaluated.",
+    "accuracy": 0.9465491923641703,
+    "exact_audio_accuracy": 0.6299559471365639,
+    "exact_audio_correct": 429,
+    "audio_count": 681,
+    "binary_map": 0.7077772589309299,
+    "binary_ap_by_class": {
+      "Alarm_bell_ringing": 0.810525991280099,
+      "Blender": 0.5484535320791659,
+      "Cat": 0.9159705932833687,
+      "Dishes": 0.3329949299928089,
+      "Dog": 0.8571624703031171,
+      "Electric_shaver_toothbrush": 0.6528413107570652,
+      "Frying": 0.6467511013215859,
+      "Running_water": 0.6865174664446835,
+      "Speech": 0.9143682593294946,
+      "Vacuum_cleaner": 0.7121869345179104
+    },
+    "ap_classes_without_positive": [],
+    "map_note": "Macro average of sklearn non-interpolated AP per class with positive GT; scores are binary 0/1 generated presence, not native confidence. No evaluable mAP for positive-only grounding queries. All equal-score predictions are tied, no arbitrary tie ordering."
+  },
+  "note": "Binary masks encode text-generated intervals; no model frame probabilities or confidence sweep.",
+  "coverage": {
+    "total": 692,
+    "scored": 681,
+    "excluded": 11,
+    "excluded_ids": [
+      "1LKP1ZyHgVg_0_10",
+      "9VrPJEGvXXQ_510_520",
+      "BFWN_OXjYM0_14_24",
+      "O95I3N_hkA4_0_8",
+      "ToMpoUakDfw_252_262",
+      "eEX5cg27rYs_557_567",
+      "f_OA9Yqkhx4_0_9",
+      "jsP5oinHnMs_81_91",
+      "nV0SLvvXbOM_564_574",
+      "u9QePTCbeSs_106_116",
+      "vjEic9uZJts_47_57"
+    ],
+    "policy": "Exclude incomplete audio entirely, including its successful windows; not a full-test-set score."
+  }
+}

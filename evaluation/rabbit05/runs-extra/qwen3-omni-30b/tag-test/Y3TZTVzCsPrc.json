@@ -1,0 +1,97 @@
+{
+  "clip_id": "Y3TZTVzCsPrc",
+  "labels": [
+    "a whirring engine suddenly",
+    "a woman speaks",
+    "quickly loses power"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y3TZTVzCsPrc.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 9.5946875,
+      "seconds": 7.255750894546509,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          6.78,
+          "a whirring engine suddenly"
+        ],
+        [
+          6.78,
+          8.43,
+          "quickly loses power"
+        ],
+        [
+          8.43,
+          9.5946875,
+          "a woman speaks"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-995cc3bfb5672914",
+            "object": "chat.completion",
+            "created": 1792780904,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 6.78\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 6.78,\n      \"end\": 8.43\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 8.43,\n      \"end\": 9.595\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 289,
+              "total_tokens": 399,
+              "completion_tokens": 110,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      6.78,
+      "a whirring engine suddenly"
+    ],
+    [
+      8.43,
+      9.5946875,
+      "a woman speaks"
+    ],
+    [
+      6.78,
+      8.43,
+      "quickly loses power"
+    ]
+  ],
+  "duration": 9.5946875,
+  "inference_seconds": 7.255750894546509
+}

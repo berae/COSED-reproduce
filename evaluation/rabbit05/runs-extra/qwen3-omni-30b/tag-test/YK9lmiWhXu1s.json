@@ -1,0 +1,97 @@
+{
+  "clip_id": "YK9lmiWhXu1s",
+  "labels": [
+    "an engine",
+    "squealing brakes",
+    "a siren passing"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/YK9lmiWhXu1s.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 8.2135,
+      "seconds": 7.181490182876587,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          4.56,
+          "an engine"
+        ],
+        [
+          1.79,
+          2.82,
+          "squealing brakes"
+        ],
+        [
+          4.56,
+          7.01,
+          "a siren passing"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-81a00472b5250d09",
+            "object": "chat.completion",
+            "created": 1792782183,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 4.56\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 1.79,\n      \"end\": 2.82\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 4.56,\n      \"end\": 7.01\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 268,
+              "total_tokens": 377,
+              "completion_tokens": 109,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      4.56,
+      7.01,
+      "a siren passing"
+    ],
+    [
+      0.0,
+      4.56,
+      "an engine"
+    ],
+    [
+      1.79,
+      2.82,
+      "squealing brakes"
+    ]
+  ],
+  "duration": 8.2135,
+  "inference_seconds": 7.181490182876587
+}

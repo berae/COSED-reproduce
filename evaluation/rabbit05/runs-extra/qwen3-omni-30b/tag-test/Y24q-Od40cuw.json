@@ -1,0 +1,97 @@
+{
+  "clip_id": "Y24q-Od40cuw",
+  "labels": [
+    "a man talks to a dog",
+    "the dog then barks lowly at him",
+    "the man laughs"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y24q-Od40cuw.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 8.800375,
+      "seconds": 7.590148687362671,
+      "status": "complete",
+      "events": [
+        [
+          0.543,
+          1.273,
+          "a man talks to a dog"
+        ],
+        [
+          1.693,
+          2.273,
+          "the dog then barks lowly at him"
+        ],
+        [
+          2.713,
+          3.443,
+          "the man laughs"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-bd5c25b6b27bdac7",
+            "object": "chat.completion",
+            "created": 1792780601,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.543,\n      \"end\": 1.273\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 1.693,\n      \"end\": 2.273\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 2.713,\n      \"end\": 3.443\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 285,
+              "total_tokens": 401,
+              "completion_tokens": 116,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.543,
+      1.273,
+      "a man talks to a dog"
+    ],
+    [
+      1.693,
+      2.273,
+      "the dog then barks lowly at him"
+    ],
+    [
+      2.713,
+      3.443,
+      "the man laughs"
+    ]
+  ],
+  "duration": 8.800375,
+  "inference_seconds": 7.590148687362671
+}

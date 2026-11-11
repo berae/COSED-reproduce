@@ -1,0 +1,126 @@
+{
+  "clip_id": "Y487WZLlab7s",
+  "labels": [
+    "a dog barks loudly",
+    "a man talks"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y487WZLlab7s.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 14.587969303131104,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          0.325,
+          "a dog barks loudly"
+        ],
+        [
+          0.785,
+          1.145,
+          "a dog barks loudly"
+        ],
+        [
+          2.695,
+          3.425,
+          "a dog barks loudly"
+        ],
+        [
+          5.275,
+          5.725,
+          "a man talks"
+        ],
+        [
+          6.325,
+          6.725,
+          "a man talks"
+        ],
+        [
+          7.725,
+          9.225,
+          "a dog barks loudly"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-ada0a1ac913458f8",
+            "object": "chat.completion",
+            "created": 1792781044,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 0.325\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 0.785,\n      \"end\": 1.145\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 2.695,\n      \"end\": 3.425\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 5.275,\n      \"end\": 5.725\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 6.325,\n      \"end\": 6.725\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 7.725,\n      \"end\": 9.225\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 289,
+              "total_tokens": 507,
+              "completion_tokens": 218,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      0.0,
+      0.325,
+      "a dog barks loudly"
+    ],
+    [
+      0.785,
+      1.145,
+      "a dog barks loudly"
+    ],
+    [
+      2.695,
+      3.425,
+      "a dog barks loudly"
+    ],
+    [
+      7.725,
+      9.225,
+      "a dog barks loudly"
+    ],
+    [
+      5.275,
+      5.725,
+      "a man talks"
+    ],
+    [
+      6.325,
+      6.725,
+      "a man talks"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 14.587969303131104
+}

@@ -1,0 +1,96 @@
+{
+  "clip_id": "Y3ujCBi8VbLc",
+  "labels": [
+    "baby crying",
+    "a woman talking"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y3ujCBi8VbLc.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 7.660501003265381,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          5.487,
+          "baby crying"
+        ],
+        [
+          2.693,
+          3.523,
+          "a woman talking"
+        ],
+        [
+          4.853,
+          5.487,
+          "a woman talking"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8a0b057f50341235",
+            "object": "chat.completion",
+            "created": 1792780996,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 5.487\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 2.693,\n      \"end\": 3.523\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 4.853,\n      \"end\": 5.487\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 286,
+              "total_tokens": 402,
+              "completion_tokens": 116,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      2.693,
+      3.523,
+      "a woman talking"
+    ],
+    [
+      4.853,
+      5.487,
+      "a woman talking"
+    ],
+    [
+      0.0,
+      5.487,
+      "baby crying"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 7.660501003265381
+}

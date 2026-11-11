@@ -1,0 +1,382 @@
+{
+  "clip_id": "119768",
+  "labels": [
+    "The hammer hits the nail three times.",
+    "The hammer hits the nails repeatedly ten times.",
+    "Hammer hitting nails five times.",
+    "The sound of a carton box being opened.",
+    "A hammer hits something repeatedly ten times."
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tacos/data/15379789/119768.mp3",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 9.890324592590332,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          1.578,
+          "The hammer hits the nail three times."
+        ],
+        [
+          2.196,
+          7.556,
+          "The hammer hits the nails repeatedly ten times."
+        ],
+        [
+          8.556,
+          9.556,
+          "Hammer hitting nails five times."
+        ],
+        [
+          2.196,
+          7.556,
+          "A hammer hits something repeatedly ten times."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-aef73ec32076c399",
+            "object": "chat.completion",
+            "created": 1792818139,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 1.578\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 2.196,\n      \"end\": 7.556\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 8.556,\n      \"end\": 9.556\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 2.196,\n      \"end\": 7.556\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 327,
+              "total_tokens": 477,
+              "completion_tokens": 150,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 80000,
+      "start": 5.0,
+      "duration": 10.0,
+      "seconds": 12.089007377624512,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          2.578,
+          "The hammer hits the nail three times."
+        ],
+        [
+          3.698,
+          6.118,
+          "The hammer hits the nails repeatedly ten times."
+        ],
+        [
+          0.0,
+          2.578,
+          "Hammer hitting nails five times."
+        ],
+        [
+          6.298,
+          8.578,
+          "The sound of a carton box being opened."
+        ],
+        [
+          3.698,
+          6.118,
+          "A hammer hits something repeatedly ten times."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-9bb21599701e59ff",
+            "object": "chat.completion",
+            "created": 1792818148,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 2.578\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 3.698,\n      \"end\": 6.118\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.000,\n      \"end\": 2.578\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 6.298,\n      \"end\": 8.578\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 3.698,\n      \"end\": 6.118\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 327,
+              "total_tokens": 511,
+              "completion_tokens": 184,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 160000,
+      "start": 10.0,
+      "duration": 10.0,
+      "seconds": 12.067800760269165,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          0.85,
+          "The hammer hits the nail three times."
+        ],
+        [
+          4.97,
+          9.6,
+          "The hammer hits the nails repeatedly ten times."
+        ],
+        [
+          4.97,
+          9.6,
+          "Hammer hitting nails five times."
+        ],
+        [
+          1.35,
+          3.5,
+          "The sound of a carton box being opened."
+        ],
+        [
+          4.97,
+          9.6,
+          "A hammer hits something repeatedly ten times."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-b4af6afe0c964deb",
+            "object": "chat.completion",
+            "created": 1792818161,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 0.850\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 4.970,\n      \"end\": 9.600\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 4.970,\n      \"end\": 9.600\n    },\n    {\n      \"query_id\": 3,\n      \"start\": 1.350,\n      \"end\": 3.500\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 4.970,\n      \"end\": 9.600\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 327,
+              "total_tokens": 511,
+              "completion_tokens": 184,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    },
+    {
+      "offset": 240000,
+      "start": 15.0,
+      "duration": 6.162625,
+      "seconds": 8.83083963394165,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          5.0,
+          "The hammer hits the nail three times."
+        ],
+        [
+          0.0,
+          5.0,
+          "The hammer hits the nails repeatedly ten times."
+        ],
+        [
+          0.0,
+          5.0,
+          "Hammer hitting nails five times."
+        ],
+        [
+          0.0,
+          5.0,
+          "A hammer hits something repeatedly ten times."
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-8447d62c2c52c696",
+            "object": "chat.completion",
+            "created": 1792818173,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.0,\n      \"end\": 5.0\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 0.0,\n      \"end\": 5.0\n    },\n    {\n      \"query_id\": 2,\n      \"start\": 0.0,\n      \"end\": 5.0\n    },\n    {\n      \"query_id\": 4,\n      \"start\": 0.0,\n      \"end\": 5.0\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 276,
+              "total_tokens": 410,
+              "completion_tokens": 134,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      2.196,
+      7.556,
+      "A hammer hits something repeatedly ten times."
+    ],
+    [
+      8.698,
+      11.118,
+      "A hammer hits something repeatedly ten times."
+    ],
+    [
+      14.969999999999999,
+      20.0,
+      "A hammer hits something repeatedly ten times."
+    ],
+    [
+      5.0,
+      7.577999999999999,
+      "Hammer hitting nails five times."
+    ],
+    [
+      8.556,
+      9.556,
+      "Hammer hitting nails five times."
+    ],
+    [
+      14.969999999999999,
+      20.0,
+      "Hammer hitting nails five times."
+    ],
+    [
+      0.0,
+      1.578,
+      "The hammer hits the nail three times."
+    ],
+    [
+      5.0,
+      7.577999999999999,
+      "The hammer hits the nail three times."
+    ],
+    [
+      10.0,
+      10.85,
+      "The hammer hits the nail three times."
+    ],
+    [
+      15.0,
+      20.0,
+      "The hammer hits the nail three times."
+    ],
+    [
+      2.196,
+      7.556,
+      "The hammer hits the nails repeatedly ten times."
+    ],
+    [
+      8.698,
+      11.118,
+      "The hammer hits the nails repeatedly ten times."
+    ],
+    [
+      14.969999999999999,
+      20.0,
+      "The hammer hits the nails repeatedly ten times."
+    ],
+    [
+      11.298,
+      13.578,
+      "The sound of a carton box being opened."
+    ]
+  ],
+  "duration": 21.162625,
+  "inference_seconds": 42.87797236442566
+}

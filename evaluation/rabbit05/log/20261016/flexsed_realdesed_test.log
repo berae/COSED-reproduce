@@ -1,0 +1,94 @@
+Traceback (most recent call last):
+  File "/home/zhanghc/projects/ov-sed/benchmark/runner-v1.py", line 237, in <module>
+    elif args.action=='run':run(args)
+  File "/home/zhanghc/projects/ov-sed/benchmark/runner-v1.py", line 159, in run
+    import numpy as np, librosa, torch
+  File "/home/zhanghc/venvs/flexsed/lib/python3.10/site-packages/torch/__init__.py", line 2126, in <module>
+    from torch import _VF as _VF, functional as functional  # usort: skip
+  File "/home/zhanghc/venvs/flexsed/lib/python3.10/site-packages/torch/functional.py", line 8, in <module>
+    import torch.nn.functional as F
+  File "/home/zhanghc/venvs/flexsed/lib/python3.10/site-packages/torch/nn/__init__.py", line 8, in <module>
+    from torch.nn.modules import *  # usort: skip # noqa: F403
+  File "/home/zhanghc/venvs/flexsed/lib/python3.10/site-packages/torch/nn/modules/__init__.py", line 1, in <module>
+    from .module import Module  # usort: skip
+  File "/home/zhanghc/venvs/flexsed/lib/python3.10/site-packages/torch/nn/modules/module.py", line 17, in <module>
+    from torch.utils._python_dispatch import is_traceable_wrapper_subclass
+  File "/home/zhanghc/venvs/flexsed/lib/python3.10/site-packages/torch/utils/__init__.py", line 8, in <module>
+    from torch.utils import (
+  File "/home/zhanghc/venvs/flexsed/lib/python3.10/site-packages/torch/utils/data/__init__.py", line 1, in <module>
+    from torch.utils.data.dataloader import (
+  File "/home/zhanghc/venvs/flexsed/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 14, in <module>
+    import queue
+  File "/home/zhanghc/projects/ov-sed/benchmark/queue.py", line 13, in <module>
+    p=subprocess.run(cmd,stdout=f,stderr=subprocess.STDOUT,env=env)
+  File "/home/zhanghc/miniconda3/envs/nape/lib/python3.10/subprocess.py", line 503, in run
+    with Popen(*popenargs, **kwargs) as process:
+  File "/home/zhanghc/miniconda3/envs/nape/lib/python3.10/subprocess.py", line 971, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/zhanghc/miniconda3/envs/nape/lib/python3.10/subprocess.py", line 1863, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/zhanghc/venvs/--model/bin/python'
+/home/zhanghc/venvs/flexsed/lib/python3.10/site-packages/transformers/utils/hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/home/zhanghc/projects/ov-sed/FlexSED/src/models/dasheng.py:44: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+/home/zhanghc/projects/ov-sed/FlexSED/src/models/transformer.py:200: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=False):
+/home/zhanghc/projects/ov-sed/FlexSED/src/models/transformer.py:209: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=False):
+attention mode is flash
+Loading Dasheng weights for decoders...
+Block 6:
+✅ Expected missing keys: ['adaln.weight', 'adaln.bias']
+Block 7:
+✅ Expected missing keys: ['adaln.weight', 'adaln.bias']
+Block 8:
+✅ Expected missing keys: ['adaln.weight', 'adaln.bias']
+Block 9:
+✅ Expected missing keys: ['adaln.weight', 'adaln.bias']
+Block 10:
+✅ Expected missing keys: ['adaln.weight', 'adaln.bias']
+Block 11:
+✅ Expected missing keys: ['adaln.weight', 'adaln.bias']
+{"model": "flexsed", "dataset": "realdesed-test", "total": 1007, "completed": 1, "status": "running", "pid": 3883303, "started": 1792114690.9519868, "load_seconds": 5.998639345169067, "updated": 1792114698.3959606, "elapsed_seconds": 7.443974018096924}
+{"model": "flexsed", "dataset": "realdesed-test", "total": 1007, "completed": 25, "status": "running", "pid": 3883303, "started": 1792114690.9519868, "load_seconds": 5.998639345169067, "updated": 1792114702.720344, "elapsed_seconds": 11.768357515335083}
+{"model": "flexsed", "dataset": "realdesed-test", "total": 1007, "completed": 50, "status": "running", "pid": 3883303, "started": 1792114690.9519868, "load_seconds": 5.998639345169067, "updated": 1792114707.0160084, "elapsed_seconds": 16.064021825790405}
+{"model": "flexsed", "dataset": "realdesed-test", "total": 1007, "completed": 75, "status": "running", "pid": 3883303, "started": 1792114690.9519868, "load_seconds": 5.998639345169067, "updated": 1792114712.1195881, "elapsed_seconds": 21.167601585388184}
+{"model": "flexsed", "dataset": "realdesed-test", "total": 1007, "completed": 100, "status": "running", "pid": 3883303, "started": 1792114690.9519868, "load_seconds": 5.998639345169067, "updated": 1792114716.055102, "elapsed_seconds": 25.103115558624268}
+{"model": "flexsed", "dataset": "realdesed-test", "total": 1007, "completed": 125, "status": "running", "pid": 3883303, "started": 1792114690.9519868, "load_seconds": 5.998639345169067, "updated": 1792114719.8711524, "elapsed_seconds": 28.91916584968567}
+{"model": "flexsed", "dataset": "realdesed-test", "total": 1007, "completed": 150, "status": "running", "pid": 3883303, "started": 1792114690.9519868, "load_seconds": 5.998639345169067, "updated": 1792114723.8727736, "elapsed_seconds": 32.92078709602356}
+{"model": "flexsed", "dataset": "realdesed-test", "total": 1007, "completed": 175, "status": "running", "pid": 3883303, "started": 1792114690.9519868, "load_seconds": 5.998639345169067, "updated": 1792114727.5346217, "elapsed_seconds": 36.582635164260864}
+{"model": "flexsed", "dataset": "realdesed-test", "total": 1007, "completed": 200, "status": "running", "pid": 3883303, "started": 1792114690.9519868, "load_seconds": 5.998639345169067, "updated": 1792114731.2795835, "elapsed_seconds": 40.32759690284729}
+{"model": "flexsed", "dataset": "realdesed-test", "total": 1007, "completed": 225, "status": "running", "pid": 3883303, "started": 1792114690.9519868, "load_seconds": 5.998639345169067, "updated": 1792114735.4826715, "elapsed_seconds": 44.53068518638611}
+{"model": "flexsed", "dataset": "realdesed-test", "total": 1007, "completed": 250, "status": "running", "pid": 3883303, "started": 1792114690.9519868, "load_seconds": 5.998639345169067, "updated": 1792114739.6495097, "elapsed_seconds": 48.69752311706543}
+{"model": "flexsed", "dataset": "realdesed-test", "total": 1007, "completed": 275, "status": "running", "pid": 3883303, "started": 1792114690.9519868, "load_seconds": 5.998639345169067, "updated": 1792114743.8418417, "elapsed_seconds": 52.88985514640808}
+{"model": "flexsed", "dataset": "realdesed-test", "total": 1007, "completed": 300, "status": "running", "pid": 3883303, "started": 1792114690.9519868, "load_seconds": 5.998639345169067, "updated": 1792114748.0072145, "elapsed_seconds": 57.05522799491882}
+{"model": "flexsed", "dataset": "realdesed-test", "total": 1007, "completed": 325, "status": "running", "pid": 3883303, "started": 1792114690.9519868, "load_seconds": 5.998639345169067, "updated": 1792114752.4253695, "elapsed_seconds": 61.47338271141052}
+{"model": "flexsed", "dataset": "realdesed-test", "total": 1007, "completed": 350, "status": "running", "pid": 3883303, "started": 1792114690.9519868, "load_seconds": 5.998639345169067, "updated": 1792114756.5947497, "elapsed_seconds": 65.64276313781738}
+{"model": "flexsed", "dataset": "realdesed-test", "total": 1007, "completed": 375, "status": "running", "pid": 3883303, "started": 1792114690.9519868, "load_seconds": 5.998639345169067, "updated": 1792114760.8055403, "elapsed_seconds": 69.85355377197266}
+{"model": "flexsed", "dataset": "realdesed-test", "total": 1007, "completed": 400, "status": "running", "pid": 3883303, "started": 1792114690.9519868, "load_seconds": 5.998639345169067, "updated": 1792114764.528278, "elapsed_seconds": 73.57629156112671}
+{"model": "flexsed", "dataset": "realdesed-test", "total": 1007, "completed": 425, "status": "running", "pid": 3883303, "started": 1792114690.9519868, "load_seconds": 5.998639345169067, "updated": 1792114768.7221467, "elapsed_seconds": 77.77016019821167}
+{"model": "flexsed", "dataset": "realdesed-test", "total": 1007, "completed": 450, "status": "running", "pid": 3883303, "started": 1792114690.9519868, "load_seconds": 5.998639345169067, "updated": 1792114771.93601, "elapsed_seconds": 80.98402333259583}
+{"model": "flexsed", "dataset": "realdesed-test", "total": 1007, "completed": 475, "status": "running", "pid": 3883303, "started": 1792114690.9519868, "load_seconds": 5.998639345169067, "updated": 1792114775.7117388, "elapsed_seconds": 84.75975251197815}
+{"model": "flexsed", "dataset": "realdesed-test", "total": 1007, "completed": 500, "status": "running", "pid": 3883303, "started": 1792114690.9519868, "load_seconds": 5.998639345169067, "updated": 1792114779.3469276, "elapsed_seconds": 88.3949408531189}
+{"model": "flexsed", "dataset": "realdesed-test", "total": 1007, "completed": 525, "status": "running", "pid": 3883303, "started": 1792114690.9519868, "load_seconds": 5.998639345169067, "updated": 1792114783.1447256, "elapsed_seconds": 92.19273900985718}
+{"model": "flexsed", "dataset": "realdesed-test", "total": 1007, "completed": 550, "status": "running", "pid": 3883303, "started": 1792114690.9519868, "load_seconds": 5.998639345169067, "updated": 1792114786.6515431, "elapsed_seconds": 95.69955658912659}
+{"model": "flexsed", "dataset": "realdesed-test", "total": 1007, "completed": 575, "status": "running", "pid": 3883303, "started": 1792114690.9519868, "load_seconds": 5.998639345169067, "updated": 1792114790.1485424, "elapsed_seconds": 99.19655585289001}
+{"model": "flexsed", "dataset": "realdesed-test", "total": 1007, "completed": 600, "status": "running", "pid": 3883303, "started": 1792114690.9519868, "load_seconds": 5.998639345169067, "updated": 1792114794.1665692, "elapsed_seconds": 103.21458268165588}
+{"model": "flexsed", "dataset": "realdesed-test", "total": 1007, "completed": 625, "status": "running", "pid": 3883303, "started": 1792114690.9519868, "load_seconds": 5.998639345169067, "updated": 1792114797.7047381, "elapsed_seconds": 106.75275158882141}
+{"model": "flexsed", "dataset": "realdesed-test", "total": 1007, "completed": 650, "status": "running", "pid": 3883303, "started": 1792114690.9519868, "load_seconds": 5.998639345169067, "updated": 1792114801.8974285, "elapsed_seconds": 110.94544196128845}
+{"model": "flexsed", "dataset": "realdesed-test", "total": 1007, "completed": 675, "status": "running", "pid": 3883303, "started": 1792114690.9519868, "load_seconds": 5.998639345169067, "updated": 1792114805.5003467, "elapsed_seconds": 114.54836010932922}
+{"model": "flexsed", "dataset": "realdesed-test", "total": 1007, "completed": 700, "status": "running", "pid": 3883303, "started": 1792114690.9519868, "load_seconds": 5.998639345169067, "updated": 1792114809.0857074, "elapsed_seconds": 118.1337206363678}
+{"model": "flexsed", "dataset": "realdesed-test", "total": 1007, "completed": 725, "status": "running", "pid": 3883303, "started": 1792114690.9519868, "load_seconds": 5.998639345169067, "updated": 1792114812.6828732, "elapsed_seconds": 121.73088669776917}
+{"model": "flexsed", "dataset": "realdesed-test", "total": 1007, "completed": 750, "status": "running", "pid": 3883303, "started": 1792114690.9519868, "load_seconds": 5.998639345169067, "updated": 1792114816.3850172, "elapsed_seconds": 125.43303060531616}
+{"model": "flexsed", "dataset": "realdesed-test", "total": 1007, "completed": 775, "status": "running", "pid": 3883303, "started": 1792114690.9519868, "load_seconds": 5.998639345169067, "updated": 1792114819.6997497, "elapsed_seconds": 128.74776315689087}
+{"model": "flexsed", "dataset": "realdesed-test", "total": 1007, "completed": 800, "status": "running", "pid": 3883303, "started": 1792114690.9519868, "load_seconds": 5.998639345169067, "updated": 1792114823.2951696, "elapsed_seconds": 132.34318280220032}
+{"model": "flexsed", "dataset": "realdesed-test", "total": 1007, "completed": 825, "status": "running", "pid": 3883303, "started": 1792114690.9519868, "load_seconds": 5.998639345169067, "updated": 1792114827.1312401, "elapsed_seconds": 136.17925357818604}
+{"model": "flexsed", "dataset": "realdesed-test", "total": 1007, "completed": 850, "status": "running", "pid": 3883303, "started": 1792114690.9519868, "load_seconds": 5.998639345169067, "updated": 1792114830.397759, "elapsed_seconds": 139.4457724094391}
+{"model": "flexsed", "dataset": "realdesed-test", "total": 1007, "completed": 875, "status": "running", "pid": 3883303, "started": 1792114690.9519868, "load_seconds": 5.998639345169067, "updated": 1792114834.2827563, "elapsed_seconds": 143.33076977729797}
+{"model": "flexsed", "dataset": "realdesed-test", "total": 1007, "completed": 900, "status": "running", "pid": 3883303, "started": 1792114690.9519868, "load_seconds": 5.998639345169067, "updated": 1792114837.6188467, "elapsed_seconds": 146.66686010360718}
+{"model": "flexsed", "dataset": "realdesed-test", "total": 1007, "completed": 925, "status": "running", "pid": 3883303, "started": 1792114690.9519868, "load_seconds": 5.998639345169067, "updated": 1792114841.3161874, "elapsed_seconds": 150.3642008304596}
+{"model": "flexsed", "dataset": "realdesed-test", "total": 1007, "completed": 950, "status": "running", "pid": 3883303, "started": 1792114690.9519868, "load_seconds": 5.998639345169067, "updated": 1792114845.2332716, "elapsed_seconds": 154.28128504753113}
+{"model": "flexsed", "dataset": "realdesed-test", "total": 1007, "completed": 975, "status": "running", "pid": 3883303, "started": 1792114690.9519868, "load_seconds": 5.998639345169067, "updated": 1792114848.833326, "elapsed_seconds": 157.8813395500183}
+{"model": "flexsed", "dataset": "realdesed-test", "total": 1007, "completed": 1000, "status": "running", "pid": 3883303, "started": 1792114690.9519868, "load_seconds": 5.998639345169067, "updated": 1792114852.524008, "elapsed_seconds": 161.572021484375}
+PSDS1 0.017111126173098873

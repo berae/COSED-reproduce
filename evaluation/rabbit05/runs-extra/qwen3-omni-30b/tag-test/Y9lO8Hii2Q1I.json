@@ -1,0 +1,96 @@
+{
+  "clip_id": "Y9lO8Hii2Q1I",
+  "labels": [
+    "train horn",
+    "train engine chugging"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y9lO8Hii2Q1I.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 7.728246212005615,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          0.925,
+          "train horn"
+        ],
+        [
+          2.075,
+          2.485,
+          "train horn"
+        ],
+        [
+          3.0,
+          10.0,
+          "train engine chugging"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-ac43051af2916e97",
+            "object": "chat.completion",
+            "created": 1792781827,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 0.925\n    },\n    {\n      \"query_id\": 0,\n      \"start\": 2.075,\n      \"end\": 2.485\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 3.000,\n      \"end\": 10.000\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 287,
+              "total_tokens": 404,
+              "completion_tokens": 117,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      3.0,
+      10.0,
+      "train engine chugging"
+    ],
+    [
+      0.0,
+      0.925,
+      "train horn"
+    ],
+    [
+      2.075,
+      2.485,
+      "train horn"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 7.728246212005615
+}

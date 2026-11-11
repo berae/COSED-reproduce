@@ -1,0 +1,86 @@
+{
+  "clip_id": "Y5Iz0yNdnUWE",
+  "labels": [
+    "car horns beep",
+    "wind gusting by"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/Y5Iz0yNdnUWE.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 5.515446186065674,
+      "status": "complete",
+      "events": [
+        [
+          2.348,
+          3.158,
+          "car horns beep"
+        ],
+        [
+          7.698,
+          9.718,
+          "wind gusting by"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-996e6dc431fefadc",
+            "object": "chat.completion",
+            "created": 1792779388,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 2.348,\n      \"end\": 3.158\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 7.698,\n      \"end\": 9.718\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 288,
+              "total_tokens": 370,
+              "completion_tokens": 82,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      2.348,
+      3.158,
+      "car horns beep"
+    ],
+    [
+      7.698,
+      9.718,
+      "wind gusting by"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 5.515446186065674
+}

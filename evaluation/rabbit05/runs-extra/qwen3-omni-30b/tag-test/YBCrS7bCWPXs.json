@@ -1,0 +1,116 @@
+{
+  "clip_id": "YBCrS7bCWPXs",
+  "labels": [
+    "a very loud vibration",
+    "a man speaking"
+  ],
+  "audio_path": "/home/zhanghc/datasets/cosed-benchmarks/tag/data/10033508/test/audio/YBCrS7bCWPXs.wav",
+  "windows": [
+    {
+      "offset": 0,
+      "start": 0.0,
+      "duration": 10.0,
+      "seconds": 12.433824300765991,
+      "status": "complete",
+      "events": [
+        [
+          0.0,
+          1.528,
+          "a very loud vibration"
+        ],
+        [
+          2.743,
+          3.693,
+          "a man speaking"
+        ],
+        [
+          4.413,
+          4.813,
+          "a man speaking"
+        ],
+        [
+          5.713,
+          6.713,
+          "a man speaking"
+        ],
+        [
+          8.213,
+          9.713,
+          "a man speaking"
+        ]
+      ],
+      "attempts": [
+        {
+          "reply": {
+            "id": "chatcmpl-a212086a6c4601bd",
+            "object": "chat.completion",
+            "created": 1792781922,
+            "model": "/home/zhanghc/models/Qwen3-Omni-30B-A3B-Instruct",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": "```json\n{\n  \"events\": [\n    {\n      \"query_id\": 0,\n      \"start\": 0.000,\n      \"end\": 1.528\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 2.743,\n      \"end\": 3.693\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 4.413,\n      \"end\": 4.813\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 5.713,\n      \"end\": 6.713\n    },\n    {\n      \"query_id\": 1,\n      \"start\": 8.213,\n      \"end\": 9.713\n    }\n  ]\n}\n```",
+                  "refusal": null,
+                  "annotations": null,
+                  "audio": null,
+                  "function_call": null,
+                  "tool_calls": [],
+                  "reasoning": null,
+                  "reasoning_content": null
+                },
+                "logprobs": null,
+                "finish_reason": "stop",
+                "stop_reason": null,
+                "token_ids": null
+              }
+            ],
+            "service_tier": null,
+            "system_fingerprint": null,
+            "usage": {
+              "prompt_tokens": 288,
+              "total_tokens": 472,
+              "completion_tokens": 184,
+              "prompt_tokens_details": null
+            },
+            "prompt_logprobs": null,
+            "prompt_token_ids": null,
+            "kv_transfer_params": null
+          },
+          "format_repair": null
+        }
+      ]
+    }
+  ],
+  "status": "complete",
+  "events": [
+    [
+      2.743,
+      3.693,
+      "a man speaking"
+    ],
+    [
+      4.413,
+      4.813,
+      "a man speaking"
+    ],
+    [
+      5.713,
+      6.713,
+      "a man speaking"
+    ],
+    [
+      8.213,
+      9.713,
+      "a man speaking"
+    ],
+    [
+      0.0,
+      1.528,
+      "a very loud vibration"
+    ]
+  ],
+  "duration": 10.0,
+  "inference_seconds": 12.433824300765991
+}
