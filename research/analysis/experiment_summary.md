@@ -1,3 +1,5 @@
+> 当前 COSED 结果已于 2026-11-13 按作者反馈复核：DSD/RDS/MAE/URB/TAG/TAC = 0.440/0.190/0.602/0.190/0.662/0.173。DSD 使用可用 Validation 子集，TAC 改用 MPNet。详见文末同日期记录及 [当前对比表](comparison.html#cosed-final)；下文早期结果为历史记录。
+
 # SED Benchmark 实验总结
 
 更新日期：2026-10-19
@@ -560,3 +562,15 @@ scale10运行第21轮，检查时step7270（随后7280），loss0.00764423（随
 DESED Public与Validation分开计分。TACOS语义合并仍使用本地MiniLM-L6-v2，作者具体编码器/合并细节未确认；MAESTRO为development而非私有评测，COSED的精确划分仍未完全确认。数字不能直接作为超过论文或全流程一致复现的结论。当前训练明确摆脱旧scale0.1下AS-S验证长期为零的状态，但本次未重新测量完整表征塌缩指标。
 
 本地cosed/benchmark_summary.json保存完整汇总；同步更新analysis/comparison.html主表，保留论文表与旧协议结果。服务器完整结果：/work/zhanghc/Myllm/COSED/runs/seed31415926_grufp32_scale10/benchmark_7d401db9e827/summary.json。启动器在完成全部评测后因run.sh末尾CR换行报错；已统一脚本为LF并通过bash -n，无需因此重跑已完整保存的评测。
+
+
+## 2026-11-13 作者反馈后的结果更新与复核
+
+| 方法 | DSD | RDS | MAE | URB | TAG | TAC |
+|---|---:|---:|---:|---:|---:|---:|
+| COSED 论文（三种子平均） | 0.437 | 0.224 | 0.643 | 0.234 | 0.648 | 0.187 |
+| 本地重建（单种子） | 0.440 | 0.190 | 0.602 | 0.190 | 0.662 | 0.173 |
+
+2026-11-13 复核：六项均从已有预测重新计分。DSD 按作者确认使用 DESED Validation，本地可用 1,068/1,168 条，缺 100 条；Public Test 0.505185 仅作额外结果。MAE 使用作者确认的完整 development（49 条）。TAC 使用作者指定 all-mpnet-base-v2，精确值 0.1731993025；0.8 阈值和直接邻居合并仍为本地实现，邮件未明确确认。MiniLM 旧值 0.1713537470 和 exact 值 0.1021468748 均保留。DSD/RDS/URB/TAC 为 PSDS1，TAG 为 grounding PSDS，MAE 为 mpAUC；均越高越好。
+
+本次逐项复算与保存值一致；TACOS 重新生成 MPNet 嵌入与合并 GT，2,000 条音频、5,151 个查询，1,469 个查询包含合并邻居。旧 MiniLM 亦复算一致。仅更新汇总，不修改训练、权重、原始预测或冻结历史 summary。早期把 Public 0.505 与论文 0.437 直接比较的结论撤回。复现阶段已收尾，剩余实现差异作为基线限制记录。

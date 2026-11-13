@@ -1,0 +1,60 @@
+{
+  "desed-validation": {
+    "recomputed": 0.44019199216989013,
+    "stored": 0.44019199216989013,
+    "files": 1068
+  },
+  "realdesed-test": {
+    "recomputed": 0.18955103096971396,
+    "stored": 0.18955103096971396,
+    "files": 1007
+  },
+  "urbansed-test": {
+    "recomputed": 0.1901539607873828,
+    "stored": 0.1901539607873828,
+    "files": 2000
+  },
+  "tag-test": {
+    "recomputed": 0.661590370591366,
+    "stored": 0.661590370591366,
+    "files": 483
+  },
+  "maestro-development": {
+    "recomputed": 0.6017327508376712,
+    "stored": 0.6017327508376712,
+    "files": 49
+  },
+  "tacos-test": {
+    "status": "complete",
+    "psds1": 0.17319930250107607,
+    "files": 2000,
+    "pairs": 5151,
+    "protocol": {
+      "dtc_threshold": 0.7,
+      "gtc_threshold": 0.7,
+      "cttc_threshold": null,
+      "alpha_ct": 0,
+      "alpha_st": 1,
+      "max_efpr": 100,
+      "unit_of_time": "hour"
+    },
+    "annotation_policy": "semantic",
+    "score_field": "scores",
+    "encoder": "sentence-transformers/all-mpnet-base-v2",
+    "cosine_threshold": 0.8,
+    "merge_method": "direct neighbors, not transitive; retain original queries",
+    "manifest_sha256": "e70d6ac06d6b7b2512c419df5ae177eab6f63326d4094435aa3f1b6a8481b200",
+    "pooling": "all file-caption pairs pooled as one event class",
+    "comparability": "Author-confirmed encoder; threshold and direct-neighbor union are retained local settings.",
+    "encoder_revision": "e8c3b32edf5434bc2275fc9bab85f82640a19130",
+    "queries_with_merged_neighbors": 1469,
+    "minilm_psds1_recomputed": 0.1713537469752201,
+    "note": "Author-specified merge encoder; saved scores from runs/seed31415926_grufp32_scale10/benchmark_7d401db9e827"
+  },
+  "review": {
+    "date": "2026-11-13",
+    "method": "Recomputed all six metrics from existing saved predictions with frozen scorer; regenerated MPNet embeddings and GT unions on CPU. No new inference.",
+    "encoder_confirmation": "Author email 2026-11-12 confirms MPNet, DESED validation, full MAESTRO development. Threshold 0.8 and direct-neighbor policy remain local choices, not explicitly confirmed in that email.",
+    "checkpoint_sha256": "7d401db9e827acec282c1fe52a1d51462dfdd48d15019bbe0dc379ad8ac91365"
+  }
+}

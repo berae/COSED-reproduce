@@ -31,16 +31,12 @@ COSED 的独立研究复现。不是作者官方实现，不包含 Meta 内部�
 - 第21轮早停；AS-S验证最佳为第11轮EMA，PSDS1=0.2311966779。
 - best.pt SHA256：`7d401db9e827acec282c1fe52a1d51462dfdd48d15019bbe0dc379ad8ac91365`。
 
-| 本地benchmark划分 | 指标 | 本次结果 |
-|---|---|---:|
-| DESED Public Test | PSDS1 | 0.505185 |
-| RealDESED Test | PSDS1 | 0.189551 |
-| MAESTRO Development | mpAUC | 0.601733 |
-| UrbanSED Test | PSDS1 | 0.190154 |
-| TAG Test | Grounding PSDS | 0.661590 |
-| TACOS Test，近义真值合并 | PSDS1 | 0.171354 |
+| 方法 | DSD | RDS | MAE | URB | TAG | TAC |
+|---|---:|---:|---:|---:|---:|---:|
+| COSED 论文（三种子平均） | 0.437 | 0.224 | 0.643 | 0.234 | 0.648 | 0.187 |
+| 本地重建（单种子） | 0.440 | 0.190 | 0.602 | 0.190 | 0.662 | 0.173 |
 
-TACOS exact口径为0.102147。DESED Validation单独计分为0.440192（1068条，缺100条），不混入Public Test。MAESTRO划分、TACOS编码器及部分处理细节尚未与作者完全确认；本次为单种子，不能直接称为完整官方复现。
+2026-11-13 复核：六项均从已有预测重新计分。DSD 按作者确认使用 DESED Validation，本地可用 1,068/1,168 条，缺 100 条；Public Test 0.505185 仅作额外结果。MAE 使用作者确认的完整 development（49 条）。TAC 使用作者指定 all-mpnet-base-v2，精确值 0.1731993025；0.8 阈值和直接邻居合并仍为本地实现，邮件未明确确认。MiniLM 旧值 0.1713537470 和 exact 值 0.1021468748 均保留。DSD/RDS/URB/TAC 为 PSDS1，TAG 为 grounding PSDS，MAE 为 mpAUC；均越高越好。
 
 完整数字与协议见 [results/benchmark_summary.json](results/benchmark_summary.json)。
 
@@ -75,7 +71,7 @@ bash run.sh
 1. 旧版本cuDNN GRU的FP16梯度下溢已修正，BiGRU固定FP32。
 2. 根据作者澄清将乘法scale从0.1改为10；本表为重新初始化并训练的结果。
 3. 当前Mel的dB截断和mixup存在微批依赖，更换micro不能保证逐步等价。
-4. TACOS筛选/改写、ontology调整和增强细节仍有重建差异。
+4. 作者已确认 DESED validation、完整 MAESTRO development、TACOS MPNet 编码器；TACOS 合并细节、训练文本筛选/改写、ontology 与增强仍有重建差异。
 5. 后续优化实验应独立命名，保留本基线及原始预测。
 
 ## 来源

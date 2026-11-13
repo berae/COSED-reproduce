@@ -11,7 +11,7 @@
       "alpha_st": 1,
       "max_efpr": 100
     },
-    "comparability": "candidate reproduction; exact COSED split/checkpoint equivalence not yet verified"
+    "comparability": "Additional public-test result; not the DESED split used for the COSED paper comparison."
   },
   "realdesed-test": {
     "psds1": 0.18955103096971396,
@@ -82,6 +82,33 @@
       "comparability": "Local protocol; COSED exact encoder/query/split equivalence unconfirmed."
     },
     "semantic": {
+      "status": "complete",
+      "psds1": 0.17319930250107607,
+      "files": 2000,
+      "pairs": 5151,
+      "protocol": {
+        "dtc_threshold": 0.7,
+        "gtc_threshold": 0.7,
+        "cttc_threshold": null,
+        "alpha_ct": 0,
+        "alpha_st": 1,
+        "max_efpr": 100,
+        "unit_of_time": "hour"
+      },
+      "annotation_policy": "semantic",
+      "score_field": "scores",
+      "encoder": "sentence-transformers/all-mpnet-base-v2",
+      "cosine_threshold": 0.8,
+      "merge_method": "direct neighbors, not transitive; retain original queries",
+      "manifest_sha256": "e70d6ac06d6b7b2512c419df5ae177eab6f63326d4094435aa3f1b6a8481b200",
+      "pooling": "all file-caption pairs pooled as one event class",
+      "comparability": "Author-confirmed encoder; cosine >0.8 and direct-neighbor merging retained locally, not explicitly confirmed by the email.",
+      "encoder_revision": "e8c3b32edf5434bc2275fc9bab85f82640a19130",
+      "queries_with_merged_neighbors": 1469,
+      "minilm_psds1_recomputed": 0.1713537469752201,
+      "note": "Author-specified merge encoder; saved scores from runs/seed31415926_grufp32_scale10/benchmark_7d401db9e827"
+    },
+    "semantic_minilm_legacy": {
       "status": "complete",
       "psds1": 0.1713537469752201,
       "files": 2000,
@@ -157,7 +184,7 @@
     },
     "source": "https://github.com/DCASE-REPO/DESED_task/blob/master/recipes/dcase2024_task4_baseline/local/sed_trainer_pretrained.py",
     "independent_sklearn_check": "passed",
-    "comparability": "All 49 development recordings; not official validation split or private evaluation; not confirmed COSED split."
+    "comparability": "Full development set confirmed by author email 2026-11-12; remaining implementation equivalence not asserted."
   },
   "desed-validation": {
     "psds1": 0.44019199216989013,
@@ -171,6 +198,37 @@
       "alpha_st": 1,
       "max_efpr": 100
     },
-    "comparability": "candidate reproduction; exact COSED split/checkpoint equivalence not yet verified"
+    "comparability": "Author-confirmed paper split: validation. Local subset 1068/1168, missing 100; one seed versus paper three-seed mean."
+  },
+  "paper_comparison": {
+    "updated": "2026-11-13",
+    "order": [
+      "DSD",
+      "RDS",
+      "MAE",
+      "URB",
+      "TAG",
+      "TAC"
+    ],
+    "paper": [
+      0.437,
+      0.224,
+      0.643,
+      0.234,
+      0.648,
+      0.187
+    ],
+    "local": [
+      0.44019199216989013,
+      0.18955103096971396,
+      0.6017327508376712,
+      0.1901539607873828,
+      0.661590370591366,
+      0.17319930250107607
+    ],
+    "paper_seeds": 3,
+    "local_seeds": 1,
+    "desed_split": "validation (1068 available / 1168 expected)",
+    "tacos_encoder": "sentence-transformers/all-mpnet-base-v2"
   }
 }
